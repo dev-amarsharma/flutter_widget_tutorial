@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'widget_catalog_page.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(const MyApp());
@@ -77,11 +78,14 @@ class _MyHomePageState extends State<MyHomePage> {
   // Track read status for each asset
   final Set<String> _readAssets = {};
 
+  static const _prefsKey = 'read_assets_list';
+
   void _markAsRead() {
     if (_currentAssetPath != null) {
       setState(() {
         _readAssets.add(_currentAssetPath!);
       });
+      _saveReadAssets();
     }
   }
 
@@ -97,7 +101,32 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    _loadMarkdownFile(_currentAssetPath!);
+    _loadReadAssets().then((_) => _loadMarkdownFile(_currentAssetPath!));
+  }
+
+  Future<void> _loadReadAssets() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final List<String>? list = prefs.getStringList(_prefsKey);
+      if (list != null) {
+        setState(() {
+          _readAssets.addAll(list);
+        });
+      }
+    } catch (e) {
+      // ignore: avoid_print
+      print('Error loading read assets: $e');
+    }
+  }
+
+  Future<void> _saveReadAssets() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_prefsKey, _readAssets.toList());
+    } catch (e) {
+      // ignore: avoid_print
+      print('Error saving read assets: $e');
+    }
   }
 
   Future<void> _loadMarkdownFile(String assetPath) async {
@@ -136,6 +165,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   readAssets: _readAssets,
                   onOpenWidget: (assetPath) async {
                     await _loadMarkdownFile(assetPath);
+                  },
+                  onClear: () async {
+                    setState(() {
+                      _readAssets.clear();
+                    });
+                    try {
+                      final prefs = await SharedPreferences.getInstance();
+                      await prefs.remove('read_assets_list');
+                      await prefs.remove('catalog_scroll_offset');
+                    } catch (e) {
+                      // ignore: avoid_print
+                      print('Error clearing preferences: $e');
+                    }
                   },
                 )
                 : Padding(
