@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widget_catalog_page.dart';
+import 'widget_preview_page.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -164,7 +165,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 ? WidgetCatalogPage(
                   readAssets: _readAssets,
                   onOpenWidget: (assetPath) async {
-                    await _loadMarkdownFile(assetPath);
+                    // navigate to preview page
+                    await Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder:
+                            (_) => WidgetPreviewPage(
+                              assetPath: assetPath,
+                              readAssets: _readAssets,
+                              onMarkAsRead: (path) {
+                                setState(() {
+                                  _readAssets.add(path);
+                                });
+                                _saveReadAssets();
+                              },
+                            ),
+                      ),
+                    );
                   },
                   onClear: () async {
                     setState(() {
