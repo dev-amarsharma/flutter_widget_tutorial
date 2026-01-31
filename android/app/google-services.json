@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "323754460228",
+    "project_id": "mantraandsloka",
+    "storage_bucket": "mantraandsloka.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323754460228:android:52cbf23d39f84393232811",
+        "android_client_info": {
+          "package_name": "app.mantra.sloka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbRoz4KI18fSs1LHkqs24_3wf03VBoto8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      },
+      "admob_app_id": "ca-app-pub-7287011693739626~5512622455"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323754460228:android:203d3f41d41b87fb232811",
+        "android_client_info": {
+          "package_name": "digimonk.flutter.tutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbRoz4KI18fSs1LHkqs24_3wf03VBoto8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

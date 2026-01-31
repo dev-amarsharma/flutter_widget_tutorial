@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'widgets/banner_ad_widget.dart';
+import 'services/interstitial_ad_service.dart';
 
 class WidgetPreviewPage extends StatefulWidget {
   final String assetPath;
@@ -25,6 +27,8 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
   void initState() {
     super.initState();
     _loadMarkdown();
+    // Track navigation for interstitial ad
+    interstitialAdService.handleWidgetPageNavigation();
   }
 
   Future<void> _loadMarkdown() async {
@@ -89,35 +93,44 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
           ),
         ],
       ),
-      body:
-          _markdownData == null
-              ? const Center(child: CircularProgressIndicator())
-              : Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Markdown(
-                  data: _markdownData!,
-                  styleSheet: styleSheet,
-                  onTapLink: (text, href, title) async {
-                    if (href != null &&
-                        href.startsWith('assets/') &&
-                        href.endsWith('.md')) {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder:
-                              (_) => WidgetPreviewPage(
-                                assetPath: href,
-                                readAssets: widget.readAssets,
-                                onMarkAsRead: widget.onMarkAsRead,
-                              ),
-                        ),
-                      );
-                    } else if (href != null) {
-                      // ignore: avoid_print
-                      print('External link tapped: $href');
-                    }
-                  },
+      body: Column(
+        children: [
+          Expanded(
+            child: _markdownData == null
+                ? const Center(child: CircularProgressIndicator())
+                : Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Markdown(
+                    data: _markdownData!,
+                    styleSheet: styleSheet,
+                    onTapLink: (text, href, title) async {
+                      if (href != null &&
+                          href.startsWith('assets/') &&
+                          href.endsWith('.md')) {
+                        // Track navigation for interstitial ad
+                        await interstitialAdService.handleWidgetPageNavigation();
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder:
+                                (_) => WidgetPreviewPage(
+                                  assetPath: href,
+                                  readAssets: widget.readAssets,
+                                  onMarkAsRead: widget.onMarkAsRead,
+                                ),
+                          ),
+                        );
+                      } else if (href != null) {
+                        // ignore: avoid_print
+                        print('External link tapped: $href');
+                      }
+                    },
+                  ),
                 ),
-              ),
+          ),
+          // Banner ad at the bottom
+          const BannerAdWidget(),
+        ],
+      ),
     );
   }
 }

@@ -4,8 +4,25 @@ import 'widget_preview_page.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'services/interstitial_ad_service.dart';
+import 'widgets/banner_ad_widget.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize Mobile Ads SDK
+  await MobileAds.instance.initialize();
+  
+  // Configure test device IDs for testing
+  final RequestConfiguration requestConfiguration = RequestConfiguration(
+    testDeviceIds: ['B4B7D2919335B10A2648BC0F5DF2296C'],
+  );
+  MobileAds.instance.updateRequestConfiguration(requestConfiguration);
+  
+  // Initialize and preload interstitial ad
+  await interstitialAdService.loadInterstitialAd();
+  
   runApp(const MyApp());
 }
 
@@ -160,11 +177,15 @@ class _MyHomePageState extends State<MyHomePage> {
         return true;
       },
       child: Scaffold(
-        body:
-            _showCatalogPage
+        body: Column(
+        children: [
+          Expanded(
+            child: _showCatalogPage
                 ? WidgetCatalogPage(
                   readAssets: _readAssets,
                   onOpenWidget: (assetPath) async {
+                    // Track navigation for interstitial ad
+                    await interstitialAdService.handleWidgetPageNavigation();
                     // navigate to preview page
                     await Navigator.of(context).push(
                       MaterialPageRoute(
@@ -383,6 +404,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                 ),
+          ),
+          // Banner ad at the bottom
+          const BannerAdWidget(),
+        ],
+      ),
       ),
     );
   }
