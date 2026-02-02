@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Switch widget in Flutter?",
+    "options": [
+      "To select a numeric value from a range",
+      "To toggle between on and off states",
+      "To navigate between pages",
+      "To display long text content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Switch is commonly used for:",
+    "options": [
+      "Text input fields",
+      "Image carousels",
+      "Settings and preferences",
+      "Navigation drawers"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Switch indicates whether it is on or off?",
+    "options": [
+      "onChanged",
+      "value",
+      "activeColor",
+      "materialTapTargetSize"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Switch is called when the user toggles the switch?",
+    "options": [
+      "onChanged",
+      "onTap",
+      "onPressed",
+      "onSubmit"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameters of Switch are required?",
+    "options": [
+      "value and activeColor",
+      "value and inactiveThumbColor",
+      "value and onChanged",
+      "onChanged and activeTrackColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the color of the Switch when it is ON?",
+    "options": [
+      "inactiveThumbColor",
+      "inactiveTrackColor",
+      "activeColor",
+      "hoverColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter defines the color of the thumb when the Switch is OFF?",
+    "options": [
+      "activeThumbImage",
+      "inactiveThumbColor",
+      "inactiveTrackColor",
+      "focusColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the color of the track when the Switch is OFF?",
+    "options": [
+      "activeTrackColor",
+      "inactiveTrackColor",
+      "activeColor",
+      "hoverColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what type of values should Switch be used for?",
+    "options": [
+      "Integer values",
+      "String values",
+      "Boolean settings",
+      "Date-time values"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget is suggested to combine with Switch for labeled settings rows?",
+    "options": [
+      "Row",
+      "Column",
+      "ListTile",
+      "Stack"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with Switch?",
+    "options": [
+      "Using activeColor",
+      "Using for non-boolean values",
+      "Using inside a ListTile",
+      "Using autofocus"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you not forget when using the onChanged callback of a Switch?",
+    "options": [
+      "To always return false",
+      "To navigate to a new page",
+      "To handle the value change (e.g., update state)",
+      "To dispose the Switch"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, what does Switch extend?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the value field in the Switch class?",
+    "options": [
+      "int",
+      "double",
+      "bool",
+      "String"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the onChanged field in the Switch class?",
+    "options": [
+      "VoidCallback",
+      "ValueChanged<bool>",
+      "ValueChanged<double>",
+      "Future<void> Function()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the color of the Switch’s track when it is ON?",
+    "options": [
+      "activeTrackColor",
+      "inactiveTrackColor",
+      "activeColor",
+      "focusColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameters let you provide custom images for the Switch thumb?",
+    "options": [
+      "activeTrackColor and inactiveTrackColor",
+      "activeThumbImage and inactiveThumbImage",
+      "focusColor and hoverColor",
+      "mouseCursor and focusNode"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of dragStartBehavior in the Switch constructor?",
+    "options": [
+      "DragStartBehavior.down",
+      "DragStartBehavior.up",
+      "DragStartBehavior.start",
+      "It has no default"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of the autofocus parameter in Switch?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is a good use case for a Switch?",
+    "options": [
+      "Choosing a volume level from 0 to 100",
+      "Typing a username",
+      "Toggling dark mode on or off",
+      "Selecting a date from a calendar"
+    ],
+    "ans": "c"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the DecoratedBox widget in Flutter?",
+    "options": [
+      "To handle gestures",
+      "To paint a decoration before or after its child",
+      "To manage state",
+      "To perform animations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which class is used to define the decoration for DecoratedBox?",
+    "options": [
+      "Decoration",
+      "ShapeDecoration",
+      "BoxDecoration",
+      "ContainerDecoration"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what color is used in the BoxDecoration?",
+    "options": [
+      "Colors.red",
+      "Colors.green",
+      "Colors.blue",
+      "Colors.black"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget is used inside DecoratedBox in the example to provide inner spacing?",
+    "options": [
+      "Container",
+      "SizedBox",
+      "Padding",
+      "Align"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What text is displayed in the example DecoratedBox?",
+    "options": [
+      "Hello",
+      "Decorated",
+      "Sample",
+      "Flutter"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of DecoratedBox is required?",
+    "options": [
+      "child",
+      "position",
+      "decoration",
+      "key"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the decoration parameter in DecoratedBox represent?",
+    "options": [
+      "The layout constraints",
+      "The decoration to paint",
+      "The alignment of the child",
+      "The margin around the box"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the position parameter in DecoratedBox control?",
+    "options": [
+      "The position of the box on screen",
+      "Whether to paint before or after the child",
+      "The alignment of the child",
+      "The z-index of the box"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the child parameter in DecoratedBox represent?",
+    "options": [
+      "The decoration pattern",
+      "The widget below this box",
+      "The background color",
+      "The padding value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which of the following is DecoratedBox recommended for?",
+    "options": [
+      "Network requests",
+      "Backgrounds, borders, gradients, and shadows",
+      "Navigation between pages",
+      "Form validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is suggested to combine with DecoratedBox for inner spacing?",
+    "options": [
+      "Align",
+      "Center",
+      "Padding",
+      "Expanded"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is listed as something to avoid with DecoratedBox?",
+    "options": [
+      "Using gradients",
+      "Using borders",
+      "Using for simple color backgrounds—use Container instead",
+      "Using shadows"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For interactive ripple effects, what should you use instead of DecoratedBox?",
+    "options": [
+      "AnimatedContainer",
+      "Ink or Material",
+      "GestureDetector",
+      "Opacity"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, DecoratedBox extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "SingleChildRenderObjectWidget",
+      "MultiChildRenderObjectWidget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of the position parameter in DecoratedBox?",
+    "options": [
+      "DecorationPosition.foreground",
+      "DecorationPosition.background",
+      "DecorationPosition.behind",
+      "DecorationPosition.above"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which property is used to round the corners of the box?",
+    "options": [
+      "shape",
+      "border",
+      "borderRadius",
+      "clipBehavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the padding value used in the example inside DecoratedBox?",
+    "options": [
+      "EdgeInsets.all(8)",
+      "EdgeInsets.all(12)",
+      "EdgeInsets.all(16)",
+      "EdgeInsets.all(20)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is NOT mentioned as a use case for DecoratedBox?",
+    "options": [
+      "Backgrounds",
+      "Borders",
+      "Gradients",
+      "HTTP requests"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which of the following is NOT recommended with DecoratedBox according to the file?",
+    "options": [
+      "Using it with Padding",
+      "Using it for shadows",
+      "Using it for simple solid color backgrounds",
+      "Using it for gradients"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the DecoratedBox widget?",
+    "options": [
+      "A widget that paints a decoration such as a background or border before or after its single child, useful for visual styling",
+      "A widget that manages animations for its child",
+      "A widget that handles input validation",
+      "A widget that provides scrolling behavior"
+    ],
+    "ans": "a"
+  }
+]

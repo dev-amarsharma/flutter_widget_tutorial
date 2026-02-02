@@ -1,0 +1,94 @@
+[
+  {
+    "que": "What is the primary purpose of the AnimatedPositioned widget in Flutter?",
+    "options": [
+      "To animate opacity changes",
+      "To automatically animate changes to its position within a Stack",
+      "To animate color changes",
+      "To manage navigation between pages"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "AnimatedPositioned is commonly used for which kind of effect?",
+    "options": [
+      "Moving widgets smoothly in a Stack",
+      "Fading widgets in and out",
+      "Scaling widgets in a Column",
+      "Scrolling lists of items"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In the example, inside which parent widget is AnimatedPositioned placed?",
+    "options": [
+      "Column",
+      "Row",
+      "Stack",
+      "ListView"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which property of AnimatedPositioned is toggled between 0 and 100?",
+    "options": [
+      "top",
+      "left",
+      "right",
+      "bottom"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the duration of the position change animation?",
+    "options": [
+      "Duration(milliseconds: 200)",
+      "Duration(milliseconds: 300)",
+      "Duration(milliseconds: 500)",
+      "Duration(seconds: 1)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which group of properties in AnimatedPositioned represents the target positions?",
+    "options": [
+      "width and height",
+      "left, right, top, bottom",
+      "padding and margin",
+      "alignment and transform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedPositioned specifies how long the movement animation lasts and is required?",
+    "options": [
+      "curve",
+      "duration",
+      "left",
+      "child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedPositioned defines the animation curve?",
+    "options": [
+      "curve",
+      "onEnd",
+      "width",
+      "height"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter of AnimatedPositioned holds the widget being animated?",
+    "options": [
+      "left",
+      "duration",
+      "child",
+      "curve"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, where should AnimatedPositioned be used?",
+    "options"

@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the Image widget in Flutter display?",
+    "options": [
+      "Only vector icons",
+      "Only local asset images",
+      "Images from various sources such as assets, network, or file",
+      "Only network images"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is Image commonly used to show in a Flutter app?",
+    "options": [
+      "Database records",
+      "Pictures and icons",
+      "Only text",
+      "Only animations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which constructor is shown in the example to load an image from the internet?",
+    "options": [
+      "Image.asset",
+      "Image.file",
+      "Image.memory",
+      "Image.network"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In the example, what is the width of the Image.network?",
+    "options": [
+      "50",
+      "80",
+      "100",
+      "120"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the value of the fit parameter?",
+    "options": [
+      "BoxFit.fill",
+      "BoxFit.contain",
+      "BoxFit.cover",
+      "BoxFit.none"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter specifies the image to display when using the base Image constructor?",
+    "options": [
+      "imageProvider",
+      "image",
+      "source",
+      "file"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the width of the image?",
+    "options": [
+      "size",
+      "scale",
+      "width",
+      "extent"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the height of the image?",
+    "options": [
+      "length",
+      "height",
+      "size",
+      "extent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the fit parameter control?",
+    "options": [
+      "The image’s file format",
+      "How to inscribe the image into the allocated space",
+      "The network loading strategy",
+      "The alignment of the image"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter specifies how the image is aligned within its bounds?",
+    "options": [
+      "fit",
+      "alignment",
+      "repeat",
+      "anchor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the alignment parameter in the Image constructor shown?",
+    "options": [
+      "Alignment.topLeft",
+      "Alignment.bottomRight",
+      "Alignment.center",
+      "Alignment.topCenter"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls how the image repeats if it does not fill its space?",
+    "options": [
+      "fit",
+      "alignment",
+      "repeat",
+      "filterQuality"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of the repeat parameter in the constructor?",
+    "options": [
+      "ImageRepeat.repeat",
+      "ImageRepeat.noRepeat",
+      "ImageRepeat.repeatX",
+      "ImageRepeat.repeatY"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter specifies a color to blend with the image?",
+    "options": [
+      "blend",
+      "color",
+      "tint",
+      "overlay"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter works with color to define how the color is blended with the image?",
+    "options": [
+      "blendMode",
+      "colorBlend",
+      "colorBlendMode",
+      "filterQuality"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the rendering quality of the image?",
+    "options": [
+      "filterQuality",
+      "quality",
+      "resolution",
+      "dpi"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to the quick tips, which constructor should you use for local images?",
+    "options": [
+      "Image.network",
+      "Image.file",
+      "Image.asset",
+      "Image.memory"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, which constructor should you use for web images?",
+    "options": [
+      "Image.asset",
+      "Image.network",
+      "Image.file",
+      "Image.memory"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is listed to avoid when using Image?",
+    "options": [
+      "Using Image.network",
+      "Using fit",
+      "Loading large images without specifying width/height",
+      "Using alignment"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you use instead of Image for Material icons?",
+    "options": [
+      "Picture",
+      "ImageIcon",
+      "Icon",
+      "CustomPainter"
+    ],
+    "ans": "c"
+  }
+]

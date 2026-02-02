@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the TextField widget in Flutter?",
+    "options": [
+      "To display read-only text",
+      "To get text input from the user",
+      "To show images",
+      "To create dropdown menus"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "TextField is commonly used in which of the following?",
+    "options": [
+      "Navigation bars",
+      "Snackbars",
+      "Forms and search bars",
+      "Bottom sheets"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of TextField controls the text being edited?",
+    "options": [
+      "decoration",
+      "keyboardType",
+      "controller",
+      "style"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of TextField controls the visual appearance (label, hint, icon, etc.)?",
+    "options": [
+      "keyboardType",
+      "decoration",
+      "textAlign",
+      "textDirection"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextField specifies the type of keyboard to use?",
+    "options": [
+      "textInputAction",
+      "keyboardType",
+      "textCapitalization",
+      "obscureText"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextField should be set to true for password fields?",
+    "options": [
+      "autofocus",
+      "enabled",
+      "obscureText",
+      "maxLines"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of TextField is called whenever the user changes the text?",
+    "options": [
+      "onSubmitted",
+      "onTap",
+      "onEditingComplete",
+      "onChanged"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter of TextField controls the maximum number of lines?",
+    "options": [
+      "minLines",
+      "maxLines",
+      "textAlign",
+      "textDirection"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextField determines whether the field is interactive?",
+    "options": [
+      "enabled",
+      "autofocus",
+      "obscureText",
+      "controller"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In the example, which decoration is used on the TextField?",
+    "options": [
+      "InputDecoration(hintText: 'Hint')",
+      "InputDecoration(labelText: 'Enter text')",
+      "InputDecoration(errorText: 'Error')",
+      "No decoration"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the decoration parameter in TextField?",
+    "options": [
+      "null",
+      "InputDecoration()",
+      "InputDecoration.collapsed()",
+      "const InputDecoration()"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of textAlign in TextField?",
+    "options": [
+      "TextAlign.center",
+      "TextAlign.justify",
+      "TextAlign.end",
+      "TextAlign.start"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of autofocus in TextField?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of obscureText in TextField?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on keyboardType"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of textCapitalization in TextField?",
+    "options": [
+      "TextCapitalization.sentences",
+      "TextCapitalization.words",
+      "TextCapitalization.characters",
+      "TextCapitalization.none"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter of TextField controls how many lines the field can grow to at most?",
+    "options": [
+      "minLines",
+      "maxLines",
+      "textInputAction",
+      "enabled"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextField can be used to control focus behavior?",
+    "options": [
+      "controller",
+      "focusNode",
+      "keyboardType",
+      "style"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which object should you use to read or modify the text?",
+    "options": [
+      "FocusNode",
+      "TextStyle",
+      "TextEditingController",
+      "InputDecoration"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what should you use for labels, hints, and icons around a TextField?",
+    "options": [
+      "TextStyle",
+      "InputDecoration",
+      "ThemeData",
+      "Align"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with TextField?",
+    "options": [
+      "Using InputDecoration",
+      "Using TextEditingController",
+      "Using TextField for read-only text—use Text instead",
+      "Using obscureText for passwords"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What must you not forget to do when you create a TextEditingController for a TextField?",
+    "options": [
+      "Call setState() after every change",
+      "Dispose of the controller when it is no longer needed",
+      "Set obscureText to true",
+      "Set enabled to false"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextField controls the action button on the keyboard (e.g., done, next)?",
+    "options": [
+      "keyboardType",
+      "textInputAction",
+      "textDirection",
+      "textAlign"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextField can be used to change the style of the input text?",
+    "options": [
+      "decoration",
+      "style",
+      "textDirection",
+      "strutStyle"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to control how the text is capitalized as the user types?",
+    "options": [
+      "textAlign",
+      "textCapitalization",
+      "keyboardType",
+      "enabled"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is a good use case for TextField?",
+    "options": [
+      "Displaying static description text",
+      "Letting the user type a search query",
+      "Showing an image banner",
+      "Rendering a grid of items"
+    ],
+    "ans": "b"
+  }
+]

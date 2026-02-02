@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the Checkbox widget in Flutter?",
+    "options": [
+      "To select from multiple exclusive options",
+      "To let the user select between two options: checked and unchecked",
+      "To display a progress indicator",
+      "To navigate between pages"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Checkbox is commonly used in which types of UI?",
+    "options": [
+      "Splash screens",
+      "Forms and settings",
+      "Navigation drawers",
+      "Bottom sheets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the initial value of the Checkbox?",
+    "options": [
+      "false",
+      "null",
+      "true",
+      "0"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Checkbox indicates whether it is checked and is required?",
+    "options": [
+      "onChanged",
+      "value",
+      "activeColor",
+      "checkColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Checkbox is called when the user toggles the checkbox and is required?",
+    "options": [
+      "onTap",
+      "onPressed",
+      "onChanged",
+      "onToggle"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the color of the checkbox when it is checked?",
+    "options": [
+      "checkColor",
+      "activeColor",
+      "fillColor",
+      "overlayColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the color of the check icon inside the Checkbox?",
+    "options": [
+      "activeColor",
+      "checkColor",
+      "overlayColor",
+      "stateLayerColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter enables three-state behavior (true, false, null) for Checkbox?",
+    "options": [
+      "triMode",
+      "isError",
+      "tristate",
+      "multiState"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what should you set to true for an indeterminate state?",
+    "options": [
+      "isError",
+      "autofocus",
+      "tristate",
+      "materialTapTargetSize"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget is suggested to combine with Checkbox for labeled checkboxes?",
+    "options": [
+      "AppBar",
+      "ListTile",
+      "Stack",
+      "GridTile"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with Checkbox?",
+    "options": [
+      "Using it with ListTile",
+      "Using it with activeColor",
+      "Using Checkbox for mutually exclusive options",
+      "Using checkColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For mutually exclusive options, which widget should you use instead of Checkbox?",
+    "options": [
+      "Switch",
+      "Slider",
+      "Radio",
+      "ToggleButtons"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When using tristate, what must you not forget to handle?",
+    "options": [
+      "The true state",
+      "The false state",
+      "The null state",
+      "The disabled state"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, Checkbox extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "ImplicitlyAnimatedWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of tristate in the Checkbox constructor?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of autofocus in the Checkbox constructor?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on theme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of isError in the Checkbox constructor?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to change the color when the Checkbox or its focus node is focused?",
+    "options": [
+      "focusColor",
+      "hoverColor",
+      "overlayColor",
+      "stateLayerColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to customize the color when the mouse hovers over the Checkbox?",
+    "options": [
+      "hoverColor",
+      "focusColor",
+      "fillColor",
+      "splashRadius"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls the minimum tap target size of the Checkbox?",
+    "options": [
+      "materialTapTargetSize",
+      "visualDensity",
+      "splashRadius",
+      "side"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to adjust how compact or expanded the Checkbox’s layout is?",
+    "options": [
+      "visualDensity",
+      "materialTapTargetSize",
+      "splashRadius",
+      "mouseCursor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter lets you provide a custom FocusNode to the Checkbox?",
+    "options": [
+      "focusColor",
+      "focusNode",
+      "mouseCursor",
+      "overlayColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the shape of the Checkbox’s border?",
+    "options": [
+      "side",
+      "shape",
+      "fillColor",
+      "overlayColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the border side of the Checkbox?",
+    "options": [
+      "side",
+      "shape",
+      "stateLayerColor",
+      "visualDensity"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following best summarizes the Checkbox widget?",
+    "options": [
+      "A widget that lets the user choose exactly one option from many",
+      "A widget that lets the user toggle a boolean (or tri-state) value, often used in forms and settings",
+      "A widget that displays progress",
+      "A text input field"
+    ],
+    "ans": "b"
+  }
+]

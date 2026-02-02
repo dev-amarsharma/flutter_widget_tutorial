@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the PopupMenuButton widget display when pressed?",
+    "options": [
+      "A dialog",
+      "A bottom sheet",
+      "A menu",
+      "A snackbar"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "PopupMenuButton is commonly used for what type of actions?",
+    "options": [
+      "Primary actions",
+      "Navigation between pages",
+      "Additional actions and options",
+      "Form submission"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter is required in the PopupMenuButton constructor?",
+    "options": [
+      "onSelected",
+      "icon",
+      "itemBuilder",
+      "tooltip"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the generic type of PopupMenuButton?",
+    "options": [
+      "int",
+      "bool",
+      "String",
+      "double"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, how many PopupMenuItem entries are built?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what are the values used for the two menu items?",
+    "options": [
+      "'A' and 'B'",
+      "'One' and 'Two'",
+      "'Yes' and 'No'",
+      "'Edit' and 'Delete'"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is called when a menu item is selected?",
+    "options": [
+      "onCanceled",
+      "onSelected",
+      "itemBuilder",
+      "enabled"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter builds the list of menu items?",
+    "options": [
+      "onSelected",
+      "itemBuilder",
+      "offset",
+      "icon"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the icon shown for the PopupMenuButton?",
+    "options": [
+      "tooltip",
+      "icon",
+      "shape",
+      "color"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the button is interactive?",
+    "options": [
+      "enabled",
+      "elevation",
+      "offset",
+      "shape"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of the offset parameter?",
+    "options": [
+      "Offset(0, 8)",
+      "Offset(8, 0)",
+      "Offset.zero",
+      "No default"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter is triggered when the menu is dismissed without selection?",
+    "options": [
+      "onSelected",
+      "onCanceled",
+      "itemBuilder",
+      "tooltip"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to adjust the shape of the popup menu?",
+    "options": [
+      "shape",
+      "color",
+      "offset",
+      "enabled"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter sets the background color of the popup menu?",
+    "options": [
+      "shape",
+      "color",
+      "tooltip",
+      "icon"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the elevation (shadow) of the popup menu?",
+    "options": [
+      "offset",
+      "enabled",
+      "elevation",
+      "initialValue"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what is a recommended use case for PopupMenuButton?",
+    "options": [
+      "Primary call-to-action buttons",
+      "Overflow menus and extra actions",
+      "Navigation drawer toggles",
+      "Form submission"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what is recommended for compact menus?",
+    "options": [
+      "Use text labels only",
+      "Use icons",
+      "Use images",
+      "Use large buttons"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is listed to avoid with PopupMenuButton?",
+    "options": [
+      "Using icons",
+      "Using it for overflow actions",
+      "Using it for primary actions",
+      "Using tooltips"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What guideline is given about the number of items in the menu?",
+    "options": [
+      "Use as many as possible",
+      "Limit to one item",
+      "Put exactly three items",
+      "Do not put too many items in the menu"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement best summarizes PopupMenuButton?",
+    "options": [
+      "A button that opens a full-screen dialog",
+      "A widget that displays a popup menu of items when pressed, built via itemBuilder, with callbacks like onSelected and options such as icon, offset, and enabled",
+      "A widget that manages navigation routes",
+      "A widget used only for bottom navigation"
+    ],
+    "ans": "b"
+  }
+]

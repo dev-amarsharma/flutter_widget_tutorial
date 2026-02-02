@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the AnimatedOpacity widget in Flutter?",
+    "options": [
+      "To animate size changes",
+      "To animate color changes",
+      "To automatically animate changes to its opacity value",
+      "To handle user input events"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "AnimatedOpacity is commonly used for which visual effect?",
+    "options": [
+      "Slide transitions",
+      "Rotation animations",
+      "Fade-in and fade-out effects",
+      "Scaling effects only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which property is toggled between 1.0 and 0.0?",
+    "options": [
+      "width",
+      "opacity",
+      "height",
+      "curve"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the duration of the fade animation?",
+    "options": [
+      "Duration(milliseconds: 200)",
+      "Duration(milliseconds: 300)",
+      "Duration(milliseconds: 500)",
+      "Duration(seconds: 1)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedOpacity represents the target opacity and is required?",
+    "options": [
+      "curve",
+      "child",
+      "opacity",
+      "clipBehavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedOpacity specifies how long the fade animation lasts and is required?",
+    "options": [
+      "curve",
+      "duration",
+      "opacity",
+      "onEnd"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedOpacity defines the animation curve?",
+    "options": [
+      "opacity",
+      "duration",
+      "curve",
+      "clipBehavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedOpacity holds the widget to be faded in or out?",
+    "options": [
+      "opacity",
+      "child",
+      "onEnd",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what is a recommended use case for AnimatedOpacity?",
+    "options": [
+      "Smooth fade transitions",
+      "Complex physics-based animations",
+      "Layout measurements",
+      "Gesture detection only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to the quick tips, what should AnimatedOpacity be combined with to create effects?",
+    "options": [
+      "Network calls",
+      "State changes",
+      "PageRouteBuilder",
+      "Hero widgets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with AnimatedOpacity?",
+    "options": [
+      "Using it with Text widgets",
+      "Using it with Images",
+      "Using it for non-visual widgets",
+      "Using it inside a Column"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What important configuration should you not forget when using AnimatedOpacity?",
+    "options": [
+      "Specifying the alignment",
+      "Specifying the duration",
+      "Specifying the margin",
+      "Specifying the padding"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, AnimatedOpacity extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "AnimatedWidget",
+      "ImplicitlyAnimatedWidget",
+      "StatelessWidget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the constructor, which parameter has a default value of Curves.linear?",
+    "options": [
+      "opacity",
+      "duration",
+      "curve",
+      "clipBehavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameters are passed up to the ImplicitlyAnimatedWidget super constructor?",
+    "options": [
+      "opacity and child",
+      "duration, curve, and onEnd",
+      "child and clipBehavior",
+      "opacity and clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the opacity property in AnimatedOpacity?",
+    "options": [
+      "int",
+      "double",
+      "double?",
+      "num?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the child property in AnimatedOpacity?",
+    "options": [
+      "Widget",
+      "Widget?",
+      "List<Widget>?",
+      "Text?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the clipBehavior property in AnimatedOpacity?",
+    "options": [
+      "Clip",
+      "Clip?",
+      "BorderRadius",
+      "ShapeBorder"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of the curve parameter in AnimatedOpacity?",
+    "options": [
+      "Curves.easeIn",
+      "Curves.easeOut",
+      "Curves.linear",
+      "Curves.bounceIn"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the AnimatedOpacity constructor?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedOpacity can be used to run code after the animation completes?",
+    "options": [
+      "curve",
+      "onEnd",
+      "child",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best summarizes a good use case for AnimatedOpacity?",
+    "options": [
+      "Animating between different pages",
+      "Fading a widget in and out based on a boolean flag",
+      "Animating complex transforms and rotations",
+      "Handling user input validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is NOT mentioned as a main parameter of AnimatedOpacity?",
+    "options": [
+      "opacity",
+      "duration",
+      "curve",
+      "alignment"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about using AnimatedOpacity with non-visual widgets is correct according to the file?",
+    "options": [
+      "It is recommended for all widget types",
+      "It should be avoided",
+      "It only works with non-visual widgets",
+      "It automatically converts them to visual widgets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best describes AnimatedOpacity overall?",
+    "options": [
+      "An implicit animation widget that fades its child by animating opacity",
+      "A layout widget that positions children in a grid",
+      "A controller class for managing multiple animations",
+      "A widget that only handles gesture events"
+    ],
+    "ans": "a"
+  }
+]

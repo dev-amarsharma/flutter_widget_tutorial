@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the TextButton widget in Flutter?",
+    "options": [
+      "To create a raised primary action button",
+      "To create a Material Design flat button for less prominent actions",
+      "To display only icons without text",
+      "To show a floating circular button"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "TextButton is commonly used for:",
+    "options": [
+      "Primary actions like 'Submit'",
+      "Navigation between pages",
+      "Secondary or less important actions",
+      "Background tasks"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of TextButton is called when the button is tapped?",
+    "options": [
+      "onTap",
+      "onPressed",
+      "onClick",
+      "onSubmit"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextButton is required and represents the button’s child widget?",
+    "options": [
+      "style",
+      "child",
+      "focusNode",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what widget is used as the child of TextButton?",
+    "options": [
+      "Icon(Icons.add)",
+      "Text('Text Button')",
+      "Row with Icon and Text",
+      "Container()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextButton allows you to customize its visual appearance?",
+    "options": [
+      "onPressed",
+      "style",
+      "focusNode",
+      "autofocus"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextButton is used to handle a long-press gesture?",
+    "options": [
+      "onPressed",
+      "onHold",
+      "onLongPress",
+      "onTapDown"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, when should you use TextButton?",
+    "options": [
+      "For primary call-to-action buttons",
+      "For destructive actions only",
+      "For secondary or less important actions",
+      "For navigation bars"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with TextButton?",
+    "options": [
+      "Using style to customize it",
+      "Using it for secondary actions",
+      "Using for primary actions—prefer ElevatedButton instead",
+      "Using icons inside the child"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to provide for a functional TextButton?",
+    "options": [
+      "A FocusNode",
+      "A non-null onPressed callback",
+      "A custom clipBehavior",
+      "An onLongPress callback"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, what does TextButton extend?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the onPressed parameter in TextButton?",
+    "options": [
+      "VoidCallback?",
+      "Future<void> Function()",
+      "ValueChanged<bool>?",
+      "GestureTapCallback"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the type of the style parameter in TextButton?",
+    "options": [
+      "ButtonThemeData?",
+      "ButtonStyle?",
+      "TextStyle?",
+      "Decoration?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextButton controls whether it should automatically receive focus?",
+    "options": [
+      "focusNode",
+      "autofocus",
+      "clipBehavior",
+      "style"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the autofocus parameter in TextButton?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on theme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextButton controls how its content is clipped?",
+    "options": [
+      "clipBehavior",
+      "style",
+      "focusNode",
+      "onLongPress"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of clipBehavior in TextButton?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter lets you specify the focus node used for keyboard focus on TextButton?",
+    "options": [
+      "style",
+      "focusNode",
+      "autofocus",
+      "onPressed"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best describes the child parameter of TextButton?",
+    "options": [
+      "It must always be a Text widget",
+      "It must always be an Icon widget",
+      "It can be any Widget, usually a Text or Icon",
+      "It is optional and can be omitted"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of these is a good example use case for TextButton?",
+    "options": [
+      "A main 'Sign Up' action button",
+      "A 'Forgot password?' secondary action below a form",
+      "A floating action button in the corner",
+      "A persistent bottom navigation item"
+    ],
+    "ans": "b"
+  }
+]

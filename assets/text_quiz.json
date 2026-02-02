@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the Text widget in Flutter?",
+    "options": [
+      "To edit user input",
+      "To display a string of text with a single style",
+      "To render images",
+      "To manage app navigation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Text is required?",
+    "options": [
+      "style",
+      "textAlign",
+      "data",
+      "overflow"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the visual appearance such as font size, weight, and color?",
+    "options": [
+      "textAlign",
+      "style",
+      "softWrap",
+      "locale"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the text is aligned horizontally?",
+    "options": [
+      "textDirection",
+      "textAlign",
+      "textWidthBasis",
+      "maxLines"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the text direction (LTR or RTL)?",
+    "options": [
+      "softWrap",
+      "textDirection",
+      "textHeightBehavior",
+      "semanticsLabel"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines whether the text should break at soft line breaks?",
+    "options": [
+      "softWrap",
+      "maxLines",
+      "overflow",
+      "textScaleFactor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter decides how visual overflow (clip, fade, ellipsis, visible) is handled?",
+    "options": [
+      "softWrap",
+      "overflow",
+      "textWidthBasis",
+      "locale"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter limits how many lines of text can be shown?",
+    "options": [
+      "maxLines",
+      "textScaleFactor",
+      "textHeightBehavior",
+      "semanticsLabel"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter scales the text size, typically for accessibility?",
+    "options": [
+      "textHeightBehavior",
+      "textWidthBasis",
+      "textScaleFactor",
+      "softWrap"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter is used to select region-specific glyphs?",
+    "options": [
+      "locale",
+      "semanticsLabel",
+      "textDirection",
+      "style"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter provides an alternative description for accessibility tools?",
+    "options": [
+      "textWidthBasis",
+      "textHeightBehavior",
+      "semanticsLabel",
+      "softWrap"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter affects how the width of the text is calculated?",
+    "options": [
+      "textWidthBasis",
+      "textHeightBehavior",
+      "textAlign",
+      "maxLines"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter affects how the height of text is applied?",
+    "options": [
+      "textScaleFactor",
+      "textHeightBehavior",
+      "softWrap",
+      "overflow"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what string is displayed by the Text widget?",
+    "options": [
+      "Hello World",
+      "Hello Flutter",
+      "Flutter Rocks",
+      "Sample Text"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what fontSize is used in TextStyle?",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "24"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which fontWeight is applied?",
+    "options": [
+      "FontWeight.w400",
+      "FontWeight.bold",
+      "FontWeight.w600",
+      "FontWeight.w300"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what color is used for the text?",
+    "options": [
+      "Colors.red",
+      "Colors.black",
+      "Colors.green",
+      "Colors.blue"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "According to the quick tips, what is recommended for long text to avoid overflow?",
+    "options": [
+      "Increase font size",
+      "Use maxLines with overflow: TextOverflow.ellipsis",
+      "Disable softWrap",
+      "Set textScaleFactor to 1.0"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what should you wrap Text with in a Row or Column to avoid layout issues?",
+    "options": [
+      "Padding",
+      "Container",
+      "Flexible or Expanded",
+      "Align"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is suggested to keep text styling consistent across the app?",
+    "options": [
+      "Use Container everywhere",
+      "Use TextStyle (and possibly themes)",
+      "Use hardcoded colors only",
+      "Use many different fonts"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is listed as something to avoid?",
+    "options": [
+      "Handling overflow",
+      "Using TextStyle",
+      "Hardcoding large font sizes without considering text scaling",
+      "Using semanticsLabel for accessibility"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not ignore when displaying dynamic text, according to Things to Avoid?",
+    "options": [
+      "Locale",
+      "Overflow handling",
+      "TextDirection",
+      "StrutStyle"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is discouraged in performance-critical lists?",
+    "options": [
+      "Reusing Text widgets",
+      "Using small font sizes",
+      "Rebuilding heavy text widgets unnecessarily",
+      "Using maxLines"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "If you need multiple text styles in one logical text block, what should you use instead of a single Text widget?",
+    "options": [
+      "Column",
+      "RichText",
+      "SelectableText",
+      "ListTile"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is a good example use case for Text?",
+    "options": [
+      "Showing a static label or dynamic value like a counter",
+      "Drawing custom shapes",
+      "Playing a video",
+      "Handling gestures only"
+    ],
+    "ans": "a"
+  }
+]

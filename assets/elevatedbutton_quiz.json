@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the ElevatedButton widget in Flutter?",
+    "options": [
+      "To create a flat text button",
+      "To create a Material Design raised button",
+      "To create an iOS-style button",
+      "To create an icon-only button"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "ElevatedButton is commonly used for which type of actions?",
+    "options": [
+      "Secondary actions",
+      "Destructive actions only",
+      "Primary actions",
+      "Background tasks"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what text is displayed on the ElevatedButton?",
+    "options": [
+      "Submit",
+      "Click",
+      "Press",
+      "Click Me"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter of ElevatedButton is required and defines the callback when the button is pressed?",
+    "options": [
+      "child",
+      "style",
+      "onPressed",
+      "onLongPress"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of ElevatedButton defines the widget inside the button, usually a Text or Icon?",
+    "options": [
+      "onPressed",
+      "child",
+      "style",
+      "focusNode"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is used to customize the appearance of an ElevatedButton (color, shape, padding, etc.)?",
+    "options": [
+      "onPressed",
+      "child",
+      "style",
+      "clipBehavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter provides a callback for a long-press gesture on ElevatedButton?",
+    "options": [
+      "onLongPress",
+      "onHold",
+      "onDoubleTap",
+      "onHover"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to the quick tips, what should you use the style parameter for?",
+    "options": [
+      "To control navigation",
+      "To customize color, shape, and padding",
+      "To manage focus only",
+      "To define text content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, when should you typically use ElevatedButton?",
+    "options": [
+      "For secondary actions only",
+      "For primary actions in your UI",
+      "For background layout",
+      "For static labels"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with ElevatedButton?",
+    "options": [
+      "Using custom styles",
+      "Using icons as children",
+      "Using for secondary or less important actions",
+      "Using in forms"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which alternative widgets are suggested for secondary or less important actions instead of ElevatedButton?",
+    "options": [
+      "IconButton or FloatingActionButton",
+      "TextButton or OutlinedButton",
+      "Switch or Checkbox",
+      "Slider or RangeSlider"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What must you not forget to provide when using ElevatedButton?",
+    "options": [
+      "A focusNode",
+      "A border radius",
+      "An onPressed callback",
+      "An onLongPress callback"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, ElevatedButton extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the onPressed property in ElevatedButton?",
+    "options": [
+      "Future<void> Function()?",
+      "VoidCallback?",
+      "ValueChanged<bool>?",
+      "Function(String)?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the style property in ElevatedButton?",
+    "options": [
+      "ThemeData?",
+      "TextStyle?",
+      "ButtonStyle?",
+      "Decoration?"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter allows you to control focus handling for ElevatedButton?",
+    "options": [
+      "autofocus",
+      "focusNode",
+      "clipBehavior",
+      "style"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the autofocus parameter in ElevatedButton?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the ElevatedButton constructor shown?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which properties of ElevatedButton are marked as required in the constructor?",
+    "options": [
+      "onPressed and style",
+      "child and style",
+      "onPressed and child",
+      "onLongPress and child"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the ElevatedButton widget?",
+    "options": [
+      "A flat text button for low-emphasis actions",
+      "A Material Design raised button for primary actions, with customizable style and callbacks",
+      "An iOS-style button for Cupertino apps",
+      "A widget used only for navigation"
+    ],
+    "ans": "b"
+  }
+]

@@ -1,0 +1,492 @@
+[
+  {
+    "que": "What is the primary purpose of the DefaultTextStyle widget in Flutter?",
+    "options": [
+      "To display a single line of text",
+      "To define the default text style for its descendants",
+      "To manage navigation routes",
+      "To handle user input"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "DefaultTextStyle mainly affects which type of widgets?",
+    "options": [
+      "All widgets",
+      "Only Icon widgets",
+      "Text widgets without an explicit style",
+      "Only ElevatedButton widgets"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which design pattern does DefaultTextStyle rely on to propagate styles?",
+    "options": [
+      "Singleton",
+      "Inherited theme",
+      "Factory",
+      "Mixin"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which color is used in the DefaultTextStyle?",
+    "options": [
+      "Colors.blue",
+      "Colors.green",
+      "Colors.deepOrange",
+      "Colors.black"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what fontSize is used in the DefaultTextStyle?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In the example, what fontWeight is set in the DefaultTextStyle?",
+    "options": [
+      "FontWeight.normal",
+      "FontWeight.w300",
+      "FontWeight.bold",
+      "FontWeight.w900"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget wraps the Text widgets in the example?",
+    "options": [
+      "Row",
+      "Column",
+      "Stack",
+      "ListView"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What happens to Text widgets inside DefaultTextStyle that do NOT specify a style?",
+    "options": [
+      "They use system default style",
+      "They inherit the style from DefaultTextStyle",
+      "They are not displayed",
+      "They throw an error"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a common use case of DefaultTextStyle?",
+    "options": [
+      "Animating widgets",
+      "Applying a consistent text style to a group of widgets",
+      "Managing HTTP calls",
+      "Handling touch events"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is another common use case of DefaultTextStyle?",
+    "options": [
+      "Overriding the inherited text style in a subtree",
+      "Managing app routes",
+      "Controlling device orientation",
+      "Handling background services"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the base class of DefaultTextStyle according to the class definition?",
+    "options": [
+      "StatelessWidget",
+      "InheritedWidget",
+      "InheritedTheme",
+      "StatefulWidget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of DefaultTextStyle is required?",
+    "options": [
+      "textAlign",
+      "softWrap",
+      "child",
+      "style"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter must also be provided (required) in the constructor besides style?",
+    "options": [
+      "textAlign",
+      "child",
+      "overflow",
+      "maxLines"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the style property in DefaultTextStyle?",
+    "options": [
+      "TextTheme",
+      "TextStyle",
+      "String",
+      "Widget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the textAlign property in DefaultTextStyle?",
+    "options": [
+      "TextAlign",
+      "TextAlign?",
+      "Alignment",
+      "AlignmentGeometry?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the softWrap property in DefaultTextStyle?",
+    "options": [
+      "bool",
+      "bool?",
+      "int",
+      "double"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of softWrap in DefaultTextStyle?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on Theme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the overflow property in DefaultTextStyle?",
+    "options": [
+      "TextOverflow",
+      "TextOverflow?",
+      "Overflow",
+      "Clip"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of overflow in DefaultTextStyle?",
+    "options": [
+      "TextOverflow.visible",
+      "TextOverflow.ellipsis",
+      "TextOverflow.fade",
+      "TextOverflow.clip"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the type of the maxLines property in DefaultTextStyle?",
+    "options": [
+      "int",
+      "int?",
+      "double?",
+      "String?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the textWidthBasis property in DefaultTextStyle?",
+    "options": [
+      "TextWidthBasis",
+      "TextWidthBasis?",
+      "TextAlign",
+      "TextAlign?"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of textWidthBasis in DefaultTextStyle?",
+    "options": [
+      "TextWidthBasis.longestLine",
+      "TextWidthBasis.parent",
+      "TextWidthBasis.character",
+      "TextWidthBasis.intrinsic"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the textHeightBehavior property in DefaultTextStyle?",
+    "options": [
+      "TextHeightBehavior",
+      "TextHeightBehavior?",
+      "TextStyle?",
+      "TextAlign?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter specifies how to align the default text?",
+    "options": [
+      "softWrap",
+      "textAlign",
+      "overflow",
+      "maxLines"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter specifies whether the text should break at soft line breaks?",
+    "options": [
+      "overflow",
+      "textWidthBasis",
+      "softWrap",
+      "maxLines"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls how visual overflow of text is handled?",
+    "options": [
+      "textAlign",
+      "overflow",
+      "maxLines",
+      "textHeightBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can limit the number of lines used by descendant Text widgets?",
+    "options": [
+      "overflow",
+      "maxLines",
+      "softWrap",
+      "textAlign"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines how to measure the width of the text?",
+    "options": [
+      "textWidthBasis",
+      "textAlign",
+      "overflow",
+      "softWrap"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter defines how to apply height to the text?",
+    "options": [
+      "textAlign",
+      "textHeightBehavior",
+      "textWidthBasis",
+      "softWrap"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the child property in DefaultTextStyle?",
+    "options": [
+      "Text",
+      "Widget",
+      "Widget?",
+      "List<Widget>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these best describes what happens when a descendant Text provides its own style?",
+    "options": [
+      "It ignores DefaultTextStyle completely",
+      "It replaces DefaultTextStyle entirely",
+      "It can override or merge with DefaultTextStyle depending on usage",
+      "It causes an error"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a key advantage of using DefaultTextStyle?",
+    "options": [
+      "Reduces rendering cost for images",
+      "Allows centralized control of text appearance in a subtree",
+      "Automatically translates text",
+      "Handles text input validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is NOT a property of DefaultTextStyle listed in the table?",
+    "options": [
+      "style",
+      "textAlign",
+      "softWrap",
+      "fontFamilyFallback"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which property in DefaultTextStyle is responsible for defining the default text appearance?",
+    "options": [
+      "style",
+      "textAlign",
+      "overflow",
+      "softWrap"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property in DefaultTextStyle can help control if text wraps onto multiple lines?",
+    "options": [
+      "softWrap",
+      "overflow",
+      "textAlign",
+      "textWidthBasis"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property in DefaultTextStyle affects how overflowing text is visually treated (e.g., clipped)?",
+    "options": [
+      "softWrap",
+      "maxLines",
+      "overflow",
+      "textAlign"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property in DefaultTextStyle could you adjust to center text by default?",
+    "options": [
+      "softWrap",
+      "textAlign",
+      "textWidthBasis",
+      "textHeightBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a correct description of DefaultTextStyle from the file?",
+    "options": [
+      "A widget that paints a background image",
+      "A widget that defines the default text style for the subtree below it",
+      "A widget that manages text input focus",
+      "A widget that handles HTTP requests"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, how many Text widgets are shown as children under DefaultTextStyle?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the main benefit of using DefaultTextStyle instead of styling each Text individually?",
+    "options": [
+      "Better performance for images",
+      "Less code duplication and consistent styling",
+      "Automatic localization",
+      "Automatic animations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following correctly describes the relationship between DefaultTextStyle and its descendants?",
+    "options": [
+      "Descendants must manually pull style from DefaultTextStyle",
+      "Descendants inherit style automatically if they do not specify one",
+      "Descendants can never override DefaultTextStyle",
+      "DefaultTextStyle only affects the nearest Text widget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Flutter documentation URL is referenced in the 'See Also' section?",
+    "options": [
+      "https://api.flutter.dev/flutter/material/DefaultTextStyle-class.html",
+      "https://api.flutter.dev/flutter/widgets/DefaultTextStyle-class.html",
+      "https://flutter.dev/docs/text-style",
+      "https://pub.dev/packages/default_text_style"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "DefaultTextStyle is categorized under which Flutter library according to the docs link?",
+    "options": [
+      "material",
+      "cupertino",
+      "widgets",
+      "services"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property combination would you primarily adjust to control both how text wraps and how overflow is handled?",
+    "options": [
+      "textAlign and textWidthBasis",
+      "softWrap and overflow",
+      "maxLines and textHeightBehavior",
+      "style and child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property would you modify to change how many lines of text are shown before truncation?",
+    "options": [
+      "softWrap",
+      "overflow",
+      "maxLines",
+      "textWidthBasis"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following scenarios is ideal for using DefaultTextStyle?",
+    "options": [
+      "Styling a single isolated Text widget only",
+      "Styling all text globally across the entire app",
+      "Styling a specific section of the widget tree with consistent text appearance",
+      "Applying different styles to every Text widget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property of DefaultTextStyle would you most likely adjust to change the default line-height behavior?",
+    "options": [
+      "textAlign",
+      "textWidthBasis",
+      "textHeightBehavior",
+      "softWrap"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about DefaultTextStyle and inheritance is correct?",
+    "options": [
+      "DefaultTextStyle does not participate in the inherited widget system",
+      "Text widgets must call a method to get the DefaultTextStyle",
+      "DefaultTextStyle uses inherited theming to pass styles down the tree",
+      "DefaultTextStyle only works on Android"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which field in the properties table explicitly refers to the subtree affected by DefaultTextStyle?",
+    "options": [
+      "style",
+      "textAlign",
+      "child",
+      "maxLines"
+    ],
+    "ans": "c"
+  }
+]

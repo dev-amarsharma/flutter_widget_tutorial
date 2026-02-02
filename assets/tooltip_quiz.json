@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Tooltip widget in Flutter?",
+    "options": [
+      "To display dialogs",
+      "To display a message when the user long-presses or hovers over a widget",
+      "To handle navigation",
+      "To validate form fields"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Tooltip is commonly used for:",
+    "options": [
+      "Layout management only",
+      "Accessibility and providing hints",
+      "Network requests",
+      "State management"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what widget is wrapped by Tooltip as its child?",
+    "options": [
+      "Text('Info')",
+      "Icon(Icons.info)",
+      "Container()",
+      "Button()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Tooltip is required and holds the text to display?",
+    "options": [
+      "child",
+      "decoration",
+      "message",
+      "textStyle"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Tooltip specifies the widget to which the tooltip applies?",
+    "options": [
+      "message",
+      "child",
+      "preferBelow",
+      "waitDuration"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Tooltip controls the decoration (background, border, etc.) of the tooltip?",
+    "options": [
+      "textStyle",
+      "decoration",
+      "margin",
+      "padding"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Tooltip controls the style of the tooltip text?",
+    "options": [
+      "decoration",
+      "textStyle",
+      "triggerMode",
+      "height"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter determines whether the tooltip is displayed below the widget by default?",
+    "options": [
+      "verticalOffset",
+      "excludeFromSemantics",
+      "preferBelow",
+      "enableFeedback"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, where is it especially useful to add tooltips?",
+    "options": [
+      "Background images",
+      "Icons and buttons to provide extra info",
+      "Full-screen forms",
+      "App bars only"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, how should tooltip messages be written?",
+    "options": [
+      "As long paragraphs",
+      "With complex formatting",
+      "Short and clear",
+      "Only using emojis"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with Tooltip?",
+    "options": [
+      "Using for hints",
+      "Using for accessibility",
+      "Overusing tooltips",
+      "Customizing decoration"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why should you avoid using tooltips for essential information?",
+    "options": [
+      "Because tooltips are always invisible",
+      "Because users might miss them or not trigger them",
+      "Because they cannot be localized",
+      "Because they break layouts"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, what does Tooltip extend?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of verticalOffset in Tooltip?",
+    "options": [
+      "8.0",
+      "16.0",
+      "24.0",
+      "32.0"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of preferBelow in Tooltip?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of excludeFromSemantics in Tooltip?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on theme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether haptic/auditory feedback is produced when the tooltip is shown?",
+    "options": [
+      "triggerMode",
+      "enableFeedback",
+      "waitDuration",
+      "showDuration"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameters control how long to wait before showing the tooltip and how long to show it?",
+    "options": [
+      "height and margin",
+      "waitDuration and showDuration",
+      "verticalOffset and preferBelow",
+      "decoration and textStyle"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the tooltip is triggered (tap, long press, etc.)?",
+    "options": [
+      "triggerMode",
+      "enableFeedback",
+      "excludeFromSemantics",
+      "margin"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a good example use case for Tooltip?",
+    "options": [
+      "Showing an explanation when the user hovers over an info icon",
+      "Displaying a full-screen alert dialog",
+      "Implementing form validation errors",
+      "Rendering a list of items"
+    ],
+    "ans": "a"
+  }
+]

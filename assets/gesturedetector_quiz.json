@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the GestureDetector widget in Flutter?",
+    "options": [
+      "To display images",
+      "To detect gestures such as taps, drags, and swipes",
+      "To manage navigation between screens",
+      "To build forms"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "GestureDetector is commonly used for what?",
+    "options": [
+      "Styling widgets",
+      "Handling user interaction",
+      "Managing app themes",
+      "Displaying dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which gesture callback is implemented?",
+    "options": [
+      "onDoubleTap",
+      "onLongPress",
+      "onPanUpdate",
+      "onTap"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In the example, which widget is wrapped by GestureDetector?",
+    "options": [
+      "Text",
+      "Icon",
+      "Container",
+      "Image"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What color is the Container in the example GestureDetector?",
+    "options": [
+      "Colors.blue",
+      "Colors.red",
+      "Colors.green",
+      "Colors.amber"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What are the width and height of the Container in the example?",
+    "options": [
+      "50 and 50",
+      "80 and 80",
+      "100 and 100",
+      "120 and 120"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which callback is used for a simple tap gesture in GestureDetector?",
+    "options": [
+      "onTapDown",
+      "onTapUp",
+      "onTap",
+      "onTapCancel"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which callback is used for detecting a double-tap?",
+    "options": [
+      "onTap",
+      "onDoubleTap",
+      "onTapDown",
+      "onTapUp"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which callback is used for detecting a long press?",
+    "options": [
+      "onTap",
+      "onPanUpdate",
+      "onLongPress",
+      "onScaleStart"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which callback is mentioned as a main parameter for handling drag (pan) gestures?",
+    "options": [
+      "onPanStart",
+      "onPanUpdate",
+      "onPanEnd",
+      "onPanCancel"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the child parameter of GestureDetector represent?",
+    "options": [
+      "The gesture configuration",
+      "The widget to detect gestures on",
+      "The list of allowed gestures",
+      "The semantics label"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, when should you use GestureDetector?",
+    "options": [
+      "For styling buttons only",
+      "For custom touch interactions",
+      "Only for scroll detection",
+      "Only for keyboard input"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what can you combine with GestureDetector for interactive effects?",
+    "options": [
+      "Navigation",
+      "Animations",
+      "Themes",
+      "Forms"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with GestureDetector?",
+    "options": [
+      "Using with Container",
+      "Using multiple callbacks",
+      "Using for simple buttons instead of ElevatedButton or CupertinoButton",
+      "Using inside a Stack"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What else should you not forget when using GestureDetector according to the file?",
+    "options": [
+      "To always wrap it with Padding",
+      "To always give it a key",
+      "To handle all relevant gestures",
+      "To set a heroTag"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, GestureDetector extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property can be used to control how GestureDetector participates in the hit test behavior?",
+    "options": [
+      "excludeFromSemantics",
+      "behavior",
+      "child",
+      "key"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of excludeFromSemantics in GestureDetector?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Platform dependent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which group of callbacks in GestureDetector is used for scaling gestures like pinch zoom?",
+    "options": [
+      "onPanStart, onPanUpdate, onPanEnd",
+      "onScaleStart, onScaleUpdate, onScaleEnd",
+      "onTapDown, onTapUp, onTapCancel",
+      "onVerticalDragStart, onVerticalDragUpdate, onVerticalDragEnd"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes the GestureDetector widget?",
+    "options": [
+      "A widget that only detects tap gestures on its child",
+      "A widget that detects a wide range of gestures (taps, drags, scales, etc.) on its child and triggers corresponding callbacks, used for custom user interactions",
+      "A widget that manages navigation between pages",
+      "A widget that provides built-in button styles"
+    ],
+    "ans": "b"
+  }
+]

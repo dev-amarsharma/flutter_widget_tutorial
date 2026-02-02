@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the CustomScrollView widget in Flutter?",
+    "options": [
+      "To display dialogs",
+      "To create custom scroll effects with slivers",
+      "To manage app navigation",
+      "To paint custom graphics"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "CustomScrollView is commonly used for what type of layouts?",
+    "options": [
+      "Simple static layouts",
+      "Forms only",
+      "Advanced scrollable layouts",
+      "Bottom navigation layouts"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which sliver widget is used inside CustomScrollView?",
+    "options": [
+      "SliverAppBar",
+      "SliverGrid",
+      "SliverList",
+      "SliverToBoxAdapter"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, how many Text widgets are provided to SliverChildListDelegate?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of CustomScrollView holds the list of sliver widgets?",
+    "options": [
+      "children",
+      "slivers",
+      "items",
+      "widgets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the axis along which CustomScrollView scrolls?",
+    "options": [
+      "controller",
+      "reverse",
+      "scrollDirection",
+      "physics"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of CustomScrollView is responsible for controlling the scroll position?",
+    "options": [
+      "scrollDirection",
+      "controller",
+      "reverse",
+      "primary"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the reverse parameter do in CustomScrollView?",
+    "options": [
+      "Disables scrolling",
+      "Scrolls in the opposite direction",
+      "Reverses the slivers list",
+      "Reverses the text direction"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which sliver widgets are commonly combined with CustomScrollView?",
+    "options": [
+      "SliverList and SliverGrid",
+      "ListView and GridView",
+      "Row and Column",
+      "Stack and Positioned"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is listed as something to avoid with CustomScrollView?",
+    "options": [
+      "Using SliverList",
+      "Using for simple lists—use ListView or GridView instead",
+      "Using scrollDirection",
+      "Using controller"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What important management task is mentioned for scroll controllers?",
+    "options": [
+      "Never using them",
+      "Sharing them across all scroll views",
+      "Not forgetting to manage scroll controllers",
+      "Setting them to null always"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, CustomScrollView extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "ScrollView",
+      "ListView"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default scrollDirection in the CustomScrollView constructor shown?",
+    "options": [
+      "Axis.horizontal",
+      "Axis.vertical",
+      "Axis.both",
+      "No default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of reverse in the CustomScrollView constructor shown?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on locale"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter decides whether the scroll view is the primary scroll view for the parent?",
+    "options": [
+      "primary",
+      "controller",
+      "physics",
+      "scrollBehavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls the scroll physics (e.g., bouncing, clamping) of CustomScrollView?",
+    "options": [
+      "scrollBehavior",
+      "physics",
+      "dragStartBehavior",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter customizes the ScrollBehavior of CustomScrollView?",
+    "options": [
+      "physics",
+      "scrollBehavior",
+      "clipBehavior",
+      "semanticChildCount"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how drag gestures are recognized at the start?",
+    "options": [
+      "dragStartBehavior",
+      "scrollDirection",
+      "keyboardDismissBehavior",
+      "reverse"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In the constructor shown, which default value is used for dragStartBehavior?",
+    "options": [
+      "DragStartBehavior.down",
+      "DragStartBehavior.start",
+      "DragStartBehavior.end",
+      "No default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter specifies how many semantic children the scroll view has for accessibility?",
+    "options": [
+      "semanticChildCount",
+      "restorationId",
+      "clipBehavior",
+      "primary"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter is used for state restoration ID in CustomScrollView?",
+    "options": [
+      "semanticChildCount",
+      "restorationId",
+      "controller",
+      "scrollBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the content is clipped in CustomScrollView?",
+    "options": [
+      "keyboardDismissBehavior",
+      "clipBehavior",
+      "physics",
+      "scrollDirection"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the CustomScrollView constructor shown?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the keyboard is dismissed during scrolling?",
+    "options": [
+      "dragStartBehavior",
+      "keyboardDismissBehavior",
+      "physics",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes the CustomScrollView widget?",
+    "options": [
+      "A simple list widget for basic scrolling",
+      "A ScrollView subclass that builds advanced scrollable layouts using sliver widgets and rich configuration options",
+      "A canvas for custom painting",
+      "A fixed grid layout for icons"
+    ],
+    "ans": "b"
+  }
+]

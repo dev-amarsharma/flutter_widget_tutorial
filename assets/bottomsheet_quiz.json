@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the BottomSheet widget in Flutter?",
+    "options": [
+      "To display a toolbar at the top",
+      "To display a modal or persistent sheet from the bottom of the screen",
+      "To handle navigation routes",
+      "To show full-screen dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "BottomSheet is commonly used for which of the following?",
+    "options": [
+      "Main page layout",
+      "Authentication screens",
+      "Additional actions or menus",
+      "App theming"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which function is shown in the example for displaying a bottom sheet?",
+    "options": [
+      "showBottomSheet",
+      "showDialog",
+      "showModalBottomSheet",
+      "showPersistentBottomSheet"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used as the content of the modal bottom sheet?",
+    "options": [
+      "Scaffold",
+      "Container",
+      "ListView",
+      "AlertDialog"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the height of the Container inside the bottom sheet?",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what text is displayed in the Center widget inside the bottom sheet?",
+    "options": [
+      "Sheet",
+      "Bottom",
+      "Bottom Sheet",
+      "Options"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomSheet provides the content of the sheet and is required?",
+    "options": [
+      "backgroundColor",
+      "shape",
+      "builder",
+      "enableDrag"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomSheet specifies the background color?",
+    "options": [
+      "backgroundColor",
+      "surfaceColor",
+      "sheetColor",
+      "overlayColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter of BottomSheet defines the shape of the sheet?",
+    "options": [
+      "clipBehavior",
+      "shape",
+      "elevation",
+      "constraints"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of BottomSheet sets the z-coordinate (shadow depth) of the sheet?",
+    "options": [
+      "backgroundColor",
+      "shape",
+      "elevation",
+      "enableDrag"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomSheet controls whether the sheet can be dragged?",
+    "options": [
+      "draggable",
+      "enableDrag",
+      "canDrag",
+      "dragEnabled"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, BottomSheet should be used for what?",
+    "options": [
+      "Main navigation only",
+      "Menus, actions, or additional content",
+      "App initialization",
+      "Theme switching"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which function should you use for modal bottom sheets?",
+    "options": [
+      "showBottomSheet",
+      "showPersistentBottomSheet",
+      "showModalBottomSheet",
+      "showDialog"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is listed as something to avoid with BottomSheet?",
+    "options": [
+      "Using it for menus",
+      "Using it for additional content",
+      "Overusing it for critical actions",
+      "Styling it with a custom shape"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What must you not forget to provide when using a BottomSheet?",
+    "options": [
+      "A title",
+      "An AppBar",
+      "A way to dismiss the sheet",
+      "A floating action button"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, BottomSheet extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "ImplicitlyAnimatedWidget",
+      "InheritedWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of BottomSheet is required in its constructor?",
+    "options": [
+      "backgroundColor",
+      "elevation",
+      "builder",
+      "enableDrag"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of enableDrag in the BottomSheet constructor?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the BottomSheet content is clipped?",
+    "options": [
+      "shape",
+      "clipBehavior",
+      "constraints",
+      "backgroundColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to specify layout constraints for the BottomSheet?",
+    "options": [
+      "constraints",
+      "shape",
+      "elevation",
+      "enableDrag"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to react when the BottomSheet is about to close?",
+    "options": [
+      "onClosing",
+      "onDismiss",
+      "onClose",
+      "onHide"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following best summarizes the BottomSheet widget?",
+    "options": [
+      "A full-screen dialog for confirmation",
+      "A persistent app bar at the bottom",
+      "A widget that displays modal or persistent content from the bottom of the screen",
+      "A widget for in-app notifications at the top"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which parameter of showModalBottomSheet provides the bottom sheet’s UI?",
+    "options": [
+      "context",
+      "builder",
+      "child",
+      "content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which use case is more appropriate for a BottomSheet according to the file?",
+    "options": [
+      "Displaying app settings permanently",
+      "Showing a list of share options as a menu",
+      "Showing the main app navigation bar",
+      "Rendering the app's home page"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about dismissing a BottomSheet is emphasized?",
+    "options": [
+      "It will always auto-dismiss after 5 seconds",
+      "It cannot be dismissed by the user",
+      "You must provide a way to dismiss the sheet",
+      "It only dismisses when the app closes"
+    ],
+    "ans": "c"
+  }
+]

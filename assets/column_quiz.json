@@ -1,0 +1,292 @@
+[
+  {
+    "que": "What is the primary purpose of the Column widget in Flutter?",
+    "options": [
+      "Arrange children horizontally in a row",
+      "Arrange children vertically in a single line",
+      "Overlay children on top of each other",
+      "Provide scrollable content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Column is commonly used to do what with widgets?",
+    "options": [
+      "Place widgets side by side",
+      "Stack widgets on top of each other vertically",
+      "Animate widgets",
+      "Handle gestures"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which aspect of layout can you control with Column?",
+    "options": [
+      "Only padding",
+      "Only margin",
+      "Alignment, spacing, and how children expand",
+      "Only color and elevation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, how many children does the Column have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used first inside the Column?",
+    "options": [
+      "Text('Starred')",
+      "SizedBox(height: 8)",
+      "Icon(Icons.star, color: Colors.orange)",
+      "Container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget provides vertical spacing between the icon and text?",
+    "options": [
+      "Padding",
+      "Spacer",
+      "SizedBox",
+      "Divider"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the value of mainAxisAlignment?",
+    "options": [
+      "MainAxisAlignment.start",
+      "MainAxisAlignment.center",
+      "MainAxisAlignment.end",
+      "MainAxisAlignment.spaceBetween"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Column holds the list of widgets to display vertically?",
+    "options": [
+      "children",
+      "items",
+      "widgets",
+      "content"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls how children are placed along the vertical axis in a Column?",
+    "options": [
+      "crossAxisAlignment",
+      "mainAxisAlignment",
+      "mainAxisSize",
+      "verticalDirection"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how children are aligned horizontally in a Column?",
+    "options": [
+      "mainAxisAlignment",
+      "crossAxisAlignment",
+      "textDirection",
+      "textBaseline"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter decides whether the Column takes all available vertical space or just enough for its children?",
+    "options": [
+      "mainAxisAlignment",
+      "crossAxisAlignment",
+      "mainAxisSize",
+      "verticalDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of mainAxisAlignment in the Column constructor shown?",
+    "options": [
+      "MainAxisAlignment.center",
+      "MainAxisAlignment.end",
+      "MainAxisAlignment.spaceBetween",
+      "MainAxisAlignment.start"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of mainAxisSize in the Column constructor shown?",
+    "options": [
+      "MainAxisSize.min",
+      "MainAxisSize.max",
+      "MainAxisSize.shrinkWrap",
+      "No default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of crossAxisAlignment in the Column constructor shown?",
+    "options": [
+      "CrossAxisAlignment.start",
+      "CrossAxisAlignment.end",
+      "CrossAxisAlignment.center",
+      "CrossAxisAlignment.stretch"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of verticalDirection in the Column constructor shown?",
+    "options": [
+      "VerticalDirection.up",
+      "VerticalDirection.down",
+      "Depends on textDirection",
+      "No default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the direction in which children are laid out horizontally (for baseline and start/end)?",
+    "options": [
+      "verticalDirection",
+      "textDirection",
+      "mainAxisAlignment",
+      "mainAxisSize"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the order in which children are placed vertically (top-to-bottom or bottom-to-top)?",
+    "options": [
+      "verticalDirection",
+      "textDirection",
+      "mainAxisAlignment",
+      "crossAxisAlignment"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter is used for aligning text when crossAxisAlignment is CrossAxisAlignment.baseline?",
+    "options": [
+      "mainAxisAlignment",
+      "verticalDirection",
+      "textBaseline",
+      "textDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the file, which parameter is conceptually required because it defines what the Column shows?",
+    "options": [
+      "mainAxisAlignment",
+      "crossAxisAlignment",
+      "children",
+      "textDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is mentioned as a common use of Expanded or Flexible in a Column?",
+    "options": [
+      "To add borders around children",
+      "For children that should share available space",
+      "To change text direction",
+      "To apply animations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widgets are suggested to add gaps between Column children?",
+    "options": [
+      "Spacer or SizedBox",
+      "Container or Card",
+      "Align or Center",
+      "Padding or Stack"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which quick tip is given about mainAxisAlignment and crossAxisAlignment?",
+    "options": [
+      "Use them only with Row",
+      "Use them to control alignment and spacing",
+      "Avoid using them together",
+      "They are deprecated"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What problem can occur if you place too many widgets in a Column?",
+    "options": [
+      "Compilation error",
+      "The Column will become scrollable automatically",
+      "They may overflow the screen",
+      "The app theme will reset"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended way to handle tall content that might overflow in a Column?",
+    "options": [
+      "Decrease font size",
+      "Use Expanded, Flexible, or wrap the Column in a SingleChildScrollView",
+      "Use more Columns",
+      "Remove mainAxisAlignment"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with Column?",
+    "options": [
+      "Using SizedBox",
+      "Using Expanded",
+      "Placing too many widgets without handling overflow",
+      "Using crossAxisAlignment"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is suggested when mixing widgets with different widths inside a Column?",
+    "options": [
+      "Avoid it completely",
+      "Control horizontal alignment with crossAxisAlignment",
+      "Always wrap them in Containers",
+      "Always center them"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which mainAxisAlignment value would you use to distribute free space evenly between children?",
+    "options": [
+      "MainAxisAlignment.spaceBetween",
+      "MainAxisAlignment.start",
+      "MainAxisAlignment.end",
+      "MainAxisAlignment.center"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which crossAxisAlignment value would stretch children to fill the horizontal space?",
+    "options": [
+      "CrossAxisAlignment.center",
+      "CrossAxisAlignment.start",
+      "CrossAxisAlignment.end",
+      "CrossAxisAlignment.stretch"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement best summarizes the Column widget?",
+    "options": [
+      "A widget that arranges its children horizontally",
+      "A widget that arranges its children vertically, with rich alignment and spacing controls",
+      "A widget that overlays children on top of each other",
+      "A widget that provides scrollable lists"
+    ],
+    "ans": "b"
+  }
+]

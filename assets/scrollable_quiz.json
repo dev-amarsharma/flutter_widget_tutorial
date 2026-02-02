@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Scrollable widget in Flutter?",
+    "options": [
+      "To display static text content",
+      "To provide scrolling behavior for its child",
+      "To handle navigation between pages",
+      "To manage app state"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Scrollable is described as what kind of widget?",
+    "options": [
+      "High-level convenience widget",
+      "Stateless-only widget",
+      "Low-level widget for scrolling behavior",
+      "Widget only for vertical lists"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Scrollable is commonly used for:",
+    "options": [
+      "Standard lists only",
+      "Custom scrollable widgets",
+      "Form validation",
+      "Network calls"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Scrollable parameter defines the direction in which the child scrolls?",
+    "options": [
+      "viewportBuilder",
+      "controller",
+      "axisDirection",
+      "physics"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which Scrollable parameter is responsible for building the viewport?",
+    "options": [
+      "axisDirection",
+      "viewportBuilder",
+      "controller",
+      "scrollBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Scrollable controls the scroll position?",
+    "options": [
+      "axisDirection",
+      "viewportBuilder",
+      "controller",
+      "physics"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Scrollable defines the scroll physics?",
+    "options": [
+      "controller",
+      "physics",
+      "dragStartBehavior",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the value of axisDirection?",
+    "options": [
+      "AxisDirection.up",
+      "AxisDirection.left",
+      "AxisDirection.right",
+      "AxisDirection.down"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In the example viewportBuilder, which widget is returned?",
+    "options": [
+      "SingleChildScrollView",
+      "GridView",
+      "ListView",
+      "PageView"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following parameters of Scrollable is required?",
+    "options": [
+      "controller and physics",
+      "axisDirection and viewportBuilder",
+      "semanticChildCount and scrollBehavior",
+      "clipBehavior and dragStartBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Scrollable extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the semanticChildCount parameter in Scrollable represent?",
+    "options": [
+      "The number of semantic children for accessibility",
+      "The number of pixels to scroll",
+      "The number of controllers",
+      "The number of physics configurations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of dragStartBehavior in Scrollable?",
+    "options": [
+      "DragStartBehavior.down",
+      "DragStartBehavior.up",
+      "DragStartBehavior.start",
+      "No default value"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls how the Scrollable content is clipped?",
+    "options": [
+      "scrollBehavior",
+      "clipBehavior",
+      "physics",
+      "controller"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of clipBehavior in Scrollable?",
+    "options": [
+      "Clip.none",
+      "Clip.antiAlias",
+      "Clip.hardEdge",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can be used to customize how scrolling behaves globally for this Scrollable?",
+    "options": [
+      "scrollBehavior",
+      "semanticChildCount",
+      "restorationId",
+      "axisDirection"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is a recommended use case for Scrollable?",
+    "options": [
+      "Standard lists with no customization",
+      "Simple static pages",
+      "Custom scrollable widgets",
+      "Only for horizontal carousels"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with Scrollable?",
+    "options": [
+      "Using it with custom slivers",
+      "Using it for standard lists instead of ListView or GridView",
+      "Using a controller",
+      "Setting physics"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you not forget when using custom scroll behavior with Scrollable?",
+    "options": [
+      "To always disable physics",
+      "To manage scroll controllers for custom behavior",
+      "To avoid semanticChildCount",
+      "To always use AxisDirection.up"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a good advanced use case mentioned for Scrollable?",
+    "options": [
+      "Combine with custom slivers for advanced layouts",
+      "Replace all ListView usages",
+      "Build only static forms",
+      "Create only horizontal lists"
+    ],
+    "ans": "a"
+  }
+]

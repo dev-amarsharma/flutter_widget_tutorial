@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the NestedScrollView widget allow you to create in Flutter?",
+    "options": [
+      "Only single scrollable lists",
+      "Scrollable views that contain other scrollable views",
+      "Static layouts without scrolling",
+      "Only horizontal carousels"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "NestedScrollView is commonly used for which UI patterns?",
+    "options": [
+      "Bottom navigation bars",
+      "Forms and dialogs",
+      "Collapsible app bars and tab views",
+      "Splash screens"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used inside headerSliverBuilder?",
+    "options": [
+      "AppBar",
+      "SliverList",
+      "SliverAppBar",
+      "SliverGrid"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is used as the body of NestedScrollView?",
+    "options": [
+      "CustomScrollView",
+      "SingleChildScrollView",
+      "ListView with Text items",
+      "GridView.builder"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of NestedScrollView builds the sliver headers?",
+    "options": [
+      "body",
+      "controller",
+      "headerSliverBuilder",
+      "physics"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter holds the main scrollable content in NestedScrollView?",
+    "options": [
+      "headerSliverBuilder",
+      "body",
+      "scrollDirection",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the scroll position of NestedScrollView?",
+    "options": [
+      "physics",
+      "controller",
+      "reverse",
+      "restorationId"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the file, which two parameters are required for NestedScrollView?",
+    "options": [
+      "controller and body",
+      "headerSliverBuilder and controller",
+      "headerSliverBuilder and body",
+      "body and physics"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what should you combine NestedScrollView with for advanced effects?",
+    "options": [
+      "PageView",
+      "SliverAppBar",
+      "Drawer",
+      "Hero"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which use case is recommended for NestedScrollView?",
+    "options": [
+      "Simple one-dimensional lists",
+      "Non-scrollable static pages",
+      "Collapsible headers and tab views",
+      "Form validation only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which practice is listed to avoid with NestedScrollView?",
+    "options": [
+      "Using it with SliverAppBar",
+      "Using for simple lists instead of ListView or GridView",
+      "Using a controller",
+      "Providing a body"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you not forget to manage when using custom scroll behavior with NestedScrollView?",
+    "options": [
+      "Route settings",
+      "Locale settings",
+      "Scroll controllers",
+      "Theme brightness"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the class definition, NestedScrollView extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of scrollDirection in the NestedScrollView constructor?",
+    "options": [
+      "Axis.horizontal",
+      "Axis.vertical",
+      "Axis.horizontalThenVertical",
+      "No default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of reverse in the NestedScrollView constructor?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Platform dependent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the NestedScrollView responds to user drag start behavior?",
+    "options": [
+      "physics",
+      "dragStartBehavior",
+      "keyboardDismissBehavior",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls how the scroll view should dismiss the keyboard?",
+    "options": [
+      "restorationId",
+      "clipBehavior",
+      "keyboardDismissBehavior",
+      "floatHeaderSlivers"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the constructor shown?",
+    "options": [
+      "Clip.none",
+      "Clip.softEdge",
+      "Clip.hardEdge",
+      "Clip.antiAlias"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter, when true, allows header slivers to float?",
+    "options": [
+      "reverse",
+      "floatHeaderSlivers",
+      "physics",
+      "restorationId"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes NestedScrollView?",
+    "options": [
+      "A simple vertical list widget",
+      "A widget that manages only a single scrollable child",
+      "A StatefulWidget that coordinates scrolling between a header made of slivers and a body scrollable, ideal for collapsible app bars and nested scroll effects",
+      "A widget that replaces CustomScrollView"
+    ],
+    "ans": "c"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the Scaffold widget in Flutter?",
+    "options": [
+      "To manage app state globally",
+      "To provide the basic Material Design visual layout structure",
+      "To render only text widgets",
+      "To handle HTTP requests"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Scaffold is commonly used as:",
+    "options": [
+      "A child of every button",
+      "The top-level container for app screens",
+      "A layout for list items only",
+      "A replacement for MaterialApp"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Scaffold defines the top app bar?",
+    "options": [
+      "body",
+      "drawer",
+      "appBar",
+      "bottomNavigationBar"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Scaffold defines the main content of the screen?",
+    "options": [
+      "body",
+      "appBar",
+      "drawer",
+      "bottomSheet"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Scaffold parameter is used to add a navigation drawer?",
+    "options": [
+      "drawer",
+      "endDrawer",
+      "bottomNavigationBar",
+      "floatingActionButton"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter is used to show a bottom navigation bar in Scaffold?",
+    "options": [
+      "bottomSheet",
+      "bottomNavigationBar",
+      "persistentFooterButtons",
+      "floatingActionButton"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter adds a floating action button to the Scaffold?",
+    "options": [
+      "floatingActionButton",
+      "bottomSheet",
+      "drawer",
+      "appBar"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls the background color of the Scaffold?",
+    "options": [
+      "canvasColor",
+      "themeColor",
+      "backgroundColor",
+      "primaryColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the tips, how should Scaffold typically be used?",
+    "options": [
+      "As the root of each screen",
+      "Nested inside small widgets",
+      "Only once in the entire app",
+      "Only for dialog windows"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is an example of something you can easily add when using Scaffold?",
+    "options": [
+      "Database connections",
+      "Drawers, snackbars, and bottom sheets",
+      "Platform channels",
+      "Animation controllers"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is listed as a thing to avoid with Scaffold?",
+    "options": [
+      "Using an appBar",
+      "Using a drawer",
+      "Nesting multiple Scaffolds",
+      "Using a floatingActionButton"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For what kind of UI element should you avoid using Scaffold?",
+    "options": [
+      "Full screens",
+      "Small widgets or components",
+      "Pages with lists",
+      "Pages with forms"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which widget is used as the body of the Scaffold?",
+    "options": [
+      "Container",
+      "Center with a Text child",
+      "Column",
+      "ListView"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what does the AppBar display as its title?",
+    "options": [
+      "Scaffold",
+      "Home",
+      "Title",
+      "AppBar"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the base class of Scaffold according to the class definition?",
+    "options": [
+      "StatelessWidget",
+      "InheritedWidget",
+      "StatefulWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls where the floatingActionButton is placed?",
+    "options": [
+      "floatingActionButtonAnimator",
+      "floatingActionButtonLocation",
+      "bottomNavigationBar",
+      "persistentFooterButtons"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter allows you to provide buttons that always appear at the bottom of the Scaffold above the bottomNavigationBar?",
+    "options": [
+      "bottomSheet",
+      "persistentFooterButtons",
+      "drawer",
+      "endDrawer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is used for a sheet that appears at the bottom of the Scaffold?",
+    "options": [
+      "bottomSheet",
+      "bottomNavigationBar",
+      "drawer",
+      "body"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter lets you know when the drawer is opened or closed?",
+    "options": [
+      "drawerScrimColor",
+      "onDrawerChanged",
+      "drawerEdgeDragWidth",
+      "restorationId"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the Scaffold should resize when the onscreen keyboard appears?",
+    "options": [
+      "extendBody",
+      "resizeToAvoidBottomInset",
+      "primary",
+      "drawerEnableOpenDragGesture"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the primary parameter in Scaffold?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "It depends on the theme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the body extends behind the bottomNavigationBar?",
+    "options": [
+      "extendBody",
+      "extendBodyBehindAppBar",
+      "drawerScrimColor",
+      "backgroundColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls whether the body extends behind the app bar?",
+    "options": [
+      "extendBody",
+      "extendBodyBehindAppBar",
+      "primary",
+      "drawerEdgeDragWidth"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the color overlay that appears over the body when the drawer is open?",
+    "options": [
+      "backgroundColor",
+      "drawerScrimColor",
+      "drawerEdgeDragWidth",
+      "drawerDragStartBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether users can open the drawer with a drag gesture?",
+    "options": [
+      "drawerEnableOpenDragGesture",
+      "endDrawerEnableOpenDragGesture",
+      "drawerEdgeDragWidth",
+      "drawerScrimColor"
+    ],
+    "ans": "a"
+  }
+]

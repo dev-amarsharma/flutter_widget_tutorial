@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the Icon widget in Flutter display?",
+    "options": [
+      "Bitmap images only",
+      "Graphical icons from icon fonts",
+      "Text labels",
+      "Video thumbnails"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "From which common font source does Icon usually display icons?",
+    "options": [
+      "System emoji font",
+      "Google Fonts",
+      "Material Icons font",
+      "Custom TTF files only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Icon is commonly used for which of the following?",
+    "options": [
+      "Database connections",
+      "Buttons, navigation, and visual cues",
+      "Networking",
+      "Background services"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the first positional parameter in the Icon constructor?",
+    "options": [
+      "Color color",
+      "double size",
+      "IconData icon",
+      "String semanticLabel"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which icon is used?",
+    "options": [
+      "Icons.home",
+      "Icons.star",
+      "Icons.favorite",
+      "Icons.settings"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what color is the Icon?",
+    "options": [
+      "Colors.blue",
+      "Colors.green",
+      "Colors.red",
+      "Colors.black"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the size of the Icon?",
+    "options": [
+      "16",
+      "24",
+      "32",
+      "48"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Icon is required?",
+    "options": [
+      "size",
+      "color",
+      "semanticLabel",
+      "icon"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter sets the color used to draw the icon?",
+    "options": [
+      "size",
+      "semanticLabel",
+      "textDirection",
+      "color"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter controls the size of the icon in logical pixels?",
+    "options": [
+      "icon",
+      "size",
+      "scale",
+      "padding"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter provides a label for accessibility technologies?",
+    "options": [
+      "tooltip",
+      "semanticLabel",
+      "textDirection",
+      "description"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter influences how the icon is rendered in left-to-right or right-to-left layouts?",
+    "options": [
+      "locale",
+      "alignment",
+      "textDirection",
+      "semanticLabel"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, how can you access built-in Material icons?",
+    "options": [
+      "Using the MaterialIcons() constructor",
+      "Using the Icons class",
+      "Using the Images class",
+      "Using the Fonts class"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which widget should you combine with Icon for interactivity?",
+    "options": [
+      "TextButton",
+      "IconButton",
+      "FloatingActionButton",
+      "GestureDetector"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with Icon?",
+    "options": [
+      "Using Icon with IconButton",
+      "Using Icon inside an AppBar",
+      "Using Icon for images instead of Image widget",
+      "Using custom colors"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What UI issue can occur if you use too many icons in a small space?",
+    "options": [
+      "Layout overflow exceptions",
+      "Network errors",
+      "Cluttered UI",
+      "Compilation failures"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about semanticLabel is correct?",
+    "options": [
+      "It changes the visual shape of the icon",
+      "It is only used for debug builds",
+      "It helps screen readers describe the icon",
+      "It is required for every Icon"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "If you want a tappable icon, what is a recommended approach?",
+    "options": [
+      "Wrap Icon with Center",
+      "Wrap Icon with Padding",
+      "Use Icon inside IconButton",
+      "Use Icon as an AppBar title"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which type describes the icon parameter in the Icon constructor?",
+    "options": [
+      "String",
+      "IconData",
+      "Widget",
+      "int"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes the Icon widget?",
+    "options": [
+      "A widget that displays bitmap images from assets",
+      "A widget that displays vector-based icons from icon fonts with configurable size, color, and accessibility labels",
+      "A widget that manages navigation",
+      "A widget that builds complex forms"
+    ],
+    "ans": "b"
+  }
+]

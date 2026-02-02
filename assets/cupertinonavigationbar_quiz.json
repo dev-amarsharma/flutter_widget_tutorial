@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the CupertinoNavigationBar widget in Flutter?",
+    "options": [
+      "To create a Material-style app bar",
+      "To create an iOS-style navigation bar",
+      "To create a bottom navigation bar",
+      "To create a floating action button"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where is CupertinoNavigationBar commonly used in a screen?",
+    "options": [
+      "At the bottom of the screen",
+      "In the middle of the screen",
+      "At the top of Cupertino screens",
+      "As a background widget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the basic example, which parameter is set on CupertinoNavigationBar?",
+    "options": [
+      "leading",
+      "trailing",
+      "backgroundColor",
+      "middle"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In the basic example, what text is shown in the middle of the bar?",
+    "options": [
+      "Home",
+      "Title",
+      "Back",
+      "Cupertino"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter represents the main widget in the center of CupertinoNavigationBar?",
+    "options": [
+      "leading",
+      "middle",
+      "trailing",
+      "backgroundColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter typically appears before the middle widget?",
+    "options": [
+      "leading",
+      "trailing",
+      "backgroundColor",
+      "padding"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter typically appears after the middle widget?",
+    "options": [
+      "leading",
+      "trailing",
+      "border",
+      "heroTag"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the background color of the CupertinoNavigationBar?",
+    "options": [
+      "border",
+      "backgroundColor",
+      "padding",
+      "heroTag"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, for what use case is CupertinoNavigationBar recommended?",
+    "options": [
+      "Top navigation in Cupertino apps",
+      "Bottom navigation in Material apps",
+      "Side navigation drawers",
+      "Modal dialogs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which widget is suggested to combine with CupertinoNavigationBar?",
+    "options": [
+      "Scaffold",
+      "CupertinoPageScaffold",
+      "MaterialApp",
+      "AlertDialog"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with CupertinoNavigationBar?",
+    "options": [
+      "Using a middle widget",
+      "Providing a backgroundColor",
+      "Using for Material apps—instead use AppBar",
+      "Using a leading widget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What layout issue should you avoid according to the file?",
+    "options": [
+      "Using only a middle widget",
+      "Using only a leading widget",
+      "Overcrowding the bar with too many widgets",
+      "Using a transparent backgroundColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, CupertinoNavigationBar extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of automaticallyImplyLeading in the constructor shown?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to customize the border at the bottom of the navigation bar?",
+    "options": [
+      "padding",
+      "border",
+      "heroTag",
+      "backgroundColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the padding around the navigation bar’s contents?",
+    "options": [
+      "border",
+      "padding",
+      "heroTag",
+      "transitionBetweenRoutes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the navigation bar transitions smoothly between routes?",
+    "options": [
+      "transitionBetweenRoutes",
+      "heroTag",
+      "automaticallyImplyLeading",
+      "backgroundColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of transitionBetweenRoutes in the constructor shown?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on Navigator"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is used for the Hero widget tag when transitioning between routes?",
+    "options": [
+      "heroTag",
+      "border",
+      "padding",
+      "leading"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement best summarizes the CupertinoNavigationBar widget?",
+    "options": [
+      "A Material-style top app bar for Android apps",
+      "An iOS-style Stateless navigation bar for the top of Cupertino screens, with configurable middle, leading, trailing, and styling",
+      "A bottom tab bar for Cupertino apps",
+      "A dialog-style title bar"
+    ],
+    "ans": "b"
+  }
+]

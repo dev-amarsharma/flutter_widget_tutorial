@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the PageView widget display in Flutter?",
+    "options": [
+      "A static single page",
+      "A scrollable list of pages, one at a time",
+      "A grid of pages",
+      "An infinite scrolling list of items"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "PageView is commonly used for which UI patterns?",
+    "options": [
+      "Forms and dialogs",
+      "Settings screens",
+      "Onboarding screens and carousels",
+      "Navigation drawers"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default scrollDirection of PageView?",
+    "options": [
+      "Axis.vertical",
+      "Axis.horizontal",
+      "Axis.horizontalThenVertical",
+      "No default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the children parameter represent?",
+    "options": [
+      "The controllers for each page",
+      "The list of pages to display",
+      "The physics for scrolling",
+      "The initial page index"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, how many pages are defined in the children list?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what text is shown on the first page?",
+    "options": [
+      "Page 0",
+      "First Page",
+      "Page 1",
+      "Welcome"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the page position?",
+    "options": [
+      "scrollDirection",
+      "physics",
+      "PageController",
+      "controller"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter specifies the axis along which the pages scroll?",
+    "options": [
+      "controller",
+      "scrollDirection",
+      "reverse",
+      "onPageChanged"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is called when the active page changes?",
+    "options": [
+      "onScroll",
+      "onChanged",
+      "onPageChanged",
+      "onUpdate"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of the reverse parameter?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Platform dependent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of pageSnapping in the constructor?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on controller"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to customize the scroll behavior (e.g., bouncing)?",
+    "options": [
+      "scrollDirection",
+      "physics",
+      "reverse",
+      "pageSnapping"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the children parameter?",
+    "options": [
+      "List<String>",
+      "List<int>",
+      "List<Widget>",
+      "Widget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the controller parameter?",
+    "options": [
+      "ScrollController?",
+      "PageController?",
+      "AnimationController?",
+      "TabController?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which controller should be used for custom behavior?",
+    "options": [
+      "ScrollController",
+      "AnimationController",
+      "PageController",
+      "TabController"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is a recommended use case for PageView?",
+    "options": [
+      "Long, scrollable chat lists",
+      "Onboarding flows with multiple screens",
+      "Static profile pages",
+      "Settings forms"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is listed to avoid with PageView?",
+    "options": [
+      "Using it for carousels",
+      "Using PageController",
+      "Using it for lists instead of ListView",
+      "Using onPageChanged"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to manage when using PageController for custom behavior?",
+    "options": [
+      "Routing",
+      "State restoration",
+      "Page controllers",
+      "Theme changes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Conceptually, how does PageView present its children?",
+    "options": [
+      "All at once in a column",
+      "In a grid layout",
+      "One page at a time, swipable along an axis",
+      "Stacked with overlays"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the PageView widget?",
+    "options": [
+      "A widget that lays out children in a vertical list",
+      "A widget that displays a scrollable list of pages one at a time, controlled by a PageController and scrollable horizontally or vertically, ideal for onboarding and carousels",
+      "A widget that manages navigation routes",
+      "A widget that shows modal dialogs"
+    ],
+    "ans": "b"
+  }
+]

@@ -1,0 +1,512 @@
+[
+  {
+    "que": "What is the main difference between TextField and TextFormField in Flutter?",
+    "options": [
+      "TextFormField supports form validation and saving, while TextField does not",
+      "TextField supports form validation and saving, while TextFormField does not",
+      "TextFormField is only for read-only text, while TextField is editable",
+      "There is no difference; both are identical widgets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which widget should typically wrap TextFormField to enable validation and saving?",
+    "options": [
+      "Scaffold",
+      "Form",
+      "Container",
+      "Column"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of TextFormField is used to control the text being edited?",
+    "options": [
+      "validator",
+      "decoration",
+      "controller",
+      "initialValue"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the purpose of the validator parameter in TextFormField?",
+    "options": [
+      "To format the displayed text",
+      "To validate user input and return an error message if invalid",
+      "To save the field value to a database",
+      "To control the keyboard type"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which error message is returned when the field is empty?",
+    "options": [
+      "Invalid input",
+      "Required",
+      "Cannot be empty",
+      "Please enter value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the onSaved parameter of TextFormField do?",
+    "options": [
+      "It is called when the user submits the form via keyboard",
+      "It is called when the Form is saved and can store the field value",
+      "It is called whenever the text changes",
+      "It is called when the field receives focus"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the role of the decoration parameter in TextFormField?",
+    "options": [
+      "It sets the keyboard behavior",
+      "It controls the visual appearance of the input field",
+      "It defines the validation rules",
+      "It defines the initial text value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the type of keyboard that appears for a TextFormField?",
+    "options": [
+      "keyboardType",
+      "textInputAction",
+      "textCapitalization",
+      "inputFormatters"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter should you use to hide entered text (for example, for passwords)?",
+    "options": [
+      "readOnly",
+      "obscuringCharacter only",
+      "obscureText",
+      "enableSuggestions"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "If you need validation for a TextFormField, which practice should you avoid?",
+    "options": [
+      "Wrapping it in a Form widget",
+      "Providing a validator function",
+      "Using it outside of a Form when validation is required",
+      "Calling FormState.validate()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What method must be called to trigger all onSaved callbacks in a Form?",
+    "options": [
+      "FormState.reset()",
+      "FormState.validate()",
+      "FormState.save()",
+      "FormState.dispose()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the TextFormField constructor, what happens to initialValue when a controller is provided?",
+    "options": [
+      "Both controller and initialValue are used together",
+      "initialValue is ignored and must be null",
+      "initialValue is applied first, then controller overwrites it",
+      "The code will throw an exception"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the TextFormField can be edited by the user?",
+    "options": [
+      "readOnly",
+      "autofocus",
+      "enabled",
+      "showCursor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of the maxLines parameter in TextFormField as shown in the definition?",
+    "options": [
+      "null",
+      "0",
+      "1",
+      "2"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls automatic validation behavior in TextFormField?",
+    "options": [
+      "autocorrect",
+      "autofillHints",
+      "autovalidateMode",
+      "enableSuggestions"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the purpose of the inputFormatters parameter?",
+    "options": [
+      "To control cursor appearance",
+      "To modify or restrict the text input as the user types",
+      "To control keyboard type",
+      "To define text style"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter determines whether the TextFormField should expand to fill available space vertically?",
+    "options": [
+      "maxLines",
+      "minLines",
+      "expands",
+      "scrollPadding"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default textAlign value in the provided TextFormField constructor?",
+    "options": [
+      "TextAlign.center",
+      "TextAlign.justify",
+      "TextAlign.right",
+      "TextAlign.start"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter is used to handle changes to the text as the user types?",
+    "options": [
+      "onFieldSubmitted",
+      "onEditingComplete",
+      "onChanged",
+      "onTap"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the builder function in the FormField<String> super constructor represent?",
+    "options": [
+      "It builds the visual representation of the form field based on its state",
+      "It builds the keyboard layout",
+      "It builds only the validation messages",
+      "It builds the Form widget itself"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter of TextFormField controls whether the text is automatically capitalized?",
+    "options": [
+      "textDirection",
+      "textAlign",
+      "textCapitalization",
+      "autofillHints"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of textCapitalization in TextFormField?",
+    "options": [
+      "TextCapitalization.words",
+      "TextCapitalization.sentences",
+      "TextCapitalization.characters",
+      "TextCapitalization.none"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter controls the action button on the soft keyboard (e.g., done, next)?",
+    "options": [
+      "keyboardType",
+      "textInputAction",
+      "onFieldSubmitted",
+      "onEditingComplete"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the purpose of the focusNode parameter in TextFormField?",
+    "options": [
+      "To control the keyboard type",
+      "To manage and listen to the focus state of the field",
+      "To validate input",
+      "To specify the cursor color"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the visual style of text inside TextFormField?",
+    "options": [
+      "style",
+      "decoration",
+      "textAlign",
+      "scrollPadding"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the autofocus parameter do in TextFormField?",
+    "options": [
+      "Prevents the field from receiving focus",
+      "Automatically focuses the field when the widget is built",
+      "Disables the keyboard",
+      "Enables read-only mode"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to make the TextFormField read-only while still showing the cursor optionally?",
+    "options": [
+      "enabled",
+      "readOnly",
+      "autocorrect",
+      "obscureText"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default obscuringCharacter used when obscureText is true?",
+    "options": [
+      "*",
+      "•",
+      "#",
+      "• (bullet) is specified as default"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter enables or disables autocorrect for the TextFormField?",
+    "options": [
+      "enableSuggestions",
+      "autocorrect",
+      "smartDashesType",
+      "smartQuotesType"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameters control smart punctuation behavior in TextFormField?",
+    "options": [
+      "smartDashesType and smartQuotesType",
+      "autocorrect and enableSuggestions",
+      "textAlign and textDirection",
+      "toolbarOptions and showCursor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the purpose of the enableSuggestions parameter?",
+    "options": [
+      "Controls whether the keyboard shows input suggestions",
+      "Controls validation behavior",
+      "Controls whether the field is enabled",
+      "Controls the scroll behavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameters control the minimum and maximum number of lines for a TextFormField?",
+    "options": [
+      "minLines and maxLines",
+      "maxLines and expands",
+      "scrollPadding and maxLines",
+      "minLines and expands"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens if expands is true in TextFormField?",
+    "options": [
+      "The field ignores minLines and maxLines and fills available space",
+      "The field doubles the font size",
+      "The field automatically scrolls to fit content",
+      "The field becomes read-only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to limit the maximum number of characters in TextFormField?",
+    "options": [
+      "maxLength",
+      "maxLines",
+      "minLines",
+      "scrollPadding"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which callback is triggered when the user taps on the TextFormField?",
+    "options": [
+      "onChanged",
+      "onTap",
+      "onFieldSubmitted",
+      "onEditingComplete"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which callback is typically used to handle when the user submits the field via the keyboard action?",
+    "options": [
+      "onFieldSubmitted",
+      "onChanged",
+      "onTap",
+      "onSaved"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which callback runs after the user finishes editing, often after focus is lost?",
+    "options": [
+      "onEditingComplete",
+      "onTap",
+      "onFieldSubmitted",
+      "validator"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What type is the onSaved callback in TextFormField?",
+    "options": [
+      "ValueChanged<bool>",
+      "VoidCallback",
+      "FormFieldSetter<String>",
+      "FormFieldValidator<String>"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What type is the validator callback in TextFormField?",
+    "options": [
+      "FormFieldSetter<String>",
+      "FormFieldValidator<String>",
+      "ValueChanged<bool>",
+      "VoidCallback"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the width of the cursor in TextFormField?",
+    "options": [
+      "cursorHeight",
+      "cursorWidth",
+      "cursorRadius",
+      "cursorColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the color of the cursor in TextFormField?",
+    "options": [
+      "style",
+      "decoration",
+      "cursorColor",
+      "selectionControls"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can be used to adjust how much padding is added when scrolling to bring the field into view?",
+    "options": [
+      "scrollPadding",
+      "scrollPhysics",
+      "scrollController",
+      "textAlignVertical"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls whether interactive selection (copy, paste) is enabled?",
+    "options": [
+      "enableInteractiveSelection",
+      "selectionControls",
+      "toolbarOptions",
+      "enabled"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter allows customizing the selection handles and toolbar for text selection?",
+    "options": [
+      "selectionControls",
+      "enableInteractiveSelection",
+      "toolbarOptions",
+      "cursorRadius"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to provide custom toolbar options like copy, cut, paste?",
+    "options": [
+      "toolbarOptions",
+      "selectionControls",
+      "scrollPhysics",
+      "autovalidateMode"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter allows providing hints to the platform for autofill behavior?",
+    "options": [
+      "autofillHints",
+      "autovalidateMode",
+      "smartQuotesType",
+      "scrollController"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of autovalidateMode when not specified?",
+    "options": [
+      "AutovalidateMode.always",
+      "AutovalidateMode.onUserInteraction",
+      "AutovalidateMode.disabled",
+      "It depends on the Form"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can be used to control the scroll behavior of the TextFormField?",
+    "options": [
+      "scrollController",
+      "scrollPhysics",
+      "scrollPadding",
+      "All of the above, each for a different aspect"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which parameter is used to integrate TextFormField with Flutter's state restoration system?",
+    "options": [
+      "restorationId",
+      "enabled",
+      "autovalidateMode",
+      "keyboardAppearance"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the enableIMEPersonalizedLearning parameter control?",
+    "options": [
+      "Whether to enable smart quotes",
+      "Whether the IME (keyboard) can use the text for personalized learning",
+      "Whether suggestions are shown",
+      "Whether autocorrect is enabled"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the super constructor of FormField<String>, which parameter is directly passed from TextFormField for validation?",
+    "options": [
+      "controller",
+      "validator",
+      "focusNode",
+      "scrollController"
+    ],
+    "ans": "b"
+  }
+]

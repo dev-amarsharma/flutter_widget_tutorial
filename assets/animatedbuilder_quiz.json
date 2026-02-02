@@ -1,0 +1,292 @@
+[
+  {
+    "que": "What is the primary purpose of the AnimatedBuilder widget in Flutter?",
+    "options": [
+      "To provide simple implicit animations",
+      "To rebuild its child whenever the animation changes",
+      "To manage navigation between pages",
+      "To handle user input events"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "AnimatedBuilder is commonly used for which type of animations?",
+    "options": [
+      "Very simple property animations only",
+      "Predefined Material animations",
+      "Complex custom animations",
+      "System-level window animations"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is returned inside the builder of AnimatedBuilder?",
+    "options": [
+      "FadeTransition",
+      "ScaleTransition",
+      "Transform.rotate",
+      "SlideTransition"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is being animated by Transform.rotate?",
+    "options": [
+      "A Text widget",
+      "A Container",
+      "An Icon(Icons.refresh)",
+      "An Image"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedBuilder specifies the animation to listen to?",
+    "options": [
+      "builder",
+      "child",
+      "animation",
+      "listenable"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedBuilder is a function that builds the animated widget tree?",
+    "options": [
+      "animation",
+      "builder",
+      "child",
+      "key"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedBuilder can hold a static child subtree passed into the builder?",
+    "options": [
+      "animation",
+      "curve",
+      "child",
+      "transition"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what is a recommended use for AnimatedBuilder?",
+    "options": [
+      "Use for simple property animations only",
+      "Use for complex, custom animations",
+      "Use only for opacity transitions",
+      "Use only for list animations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which class is AnimatedBuilder commonly combined with for full animation control?",
+    "options": [
+      "ScrollController",
+      "AnimationController",
+      "TabController",
+      "TextEditingController"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid when deciding to use AnimatedBuilder?",
+    "options": [
+      "Avoid using for simple property animations",
+      "Avoid using with AnimationController",
+      "Avoid using inside a Column",
+      "Avoid using with Transform widgets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What important lifecycle step must not be forgotten when using AnimationController with AnimatedBuilder?",
+    "options": [
+      "Calling setState after every tick",
+      "Disposing of the AnimationController",
+      "Wrapping it in a FutureBuilder",
+      "Restarting the controller in initState"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, AnimatedBuilder extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "AnimatedWidget",
+      "ImplicitlyAnimatedWidget",
+      "StatelessWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the class constructor, what is the type of the animation parameter?",
+    "options": [
+      "Animation<double>",
+      "Listenable",
+      "AnimationController",
+      "Tween"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the constructor, which super property is initialized with the animation?",
+    "options": [
+      "super(listenable: animation)",
+      "super(animation: animation)",
+      "super(controller: animation)",
+      "super(parent: animation)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the type of the builder field in AnimatedBuilder?",
+    "options": [
+      "WidgetBuilder",
+      "TransitionBuilder",
+      "RouteBuilder",
+      "LayoutBuilder"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the child field in AnimatedBuilder?",
+    "options": [
+      "Widget",
+      "Widget?",
+      "Animation?",
+      "Listenable?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the build method, how is the local child variable obtained?",
+    "options": [
+      "final Widget? child = builder(context, null);",
+      "final Widget? child = this.builder;",
+      "final Widget? child = this.child;",
+      "final Widget? child = super.build(context);"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the build method of AnimatedBuilder return?",
+    "options": [
+      "child",
+      "animation",
+      "builder(context, child)",
+      "super.build(context)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which field of the AnimationController is used to compute the rotation angle?",
+    "options": [
+      "_controller.status",
+      "_controller.reverseDuration",
+      "_controller.value",
+      "_controller.upperBound"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what constant factor is multiplied with _controller.value?",
+    "options": [
+      "3.14",
+      "2 * 3.14",
+      "0.5 * 3.14",
+      "4 * 3.14"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best describes how AnimatedBuilder improves performance?",
+    "options": [
+      "By automatically caching all widgets",
+      "By allowing you to pass an unchanging child subtree that is not rebuilt on every tick",
+      "By limiting the frame rate of animations",
+      "By skipping all rebuilds during animation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedBuilder is required according to the main parameters list?",
+    "options": [
+      "child",
+      "builder only",
+      "animation only",
+      "Both animation and builder"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which of the following is a correct description from the file?",
+    "options": [
+      "AnimatedBuilder directly animates numeric values",
+      "AnimatedBuilder rebuilds its child whenever the animation changes",
+      "AnimatedBuilder is only for fading transitions",
+      "AnimatedBuilder cannot be combined with Transform widgets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is a recommended pattern with AnimatedBuilder?",
+    "options": [
+      "Put heavy build logic outside the builder and reuse child",
+      "Always rebuild the entire widget tree inside builder",
+      "Avoid using child parameter",
+      "Use it without any Animation or Listenable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of object must the animation parameter implement?",
+    "options": [
+      "ChangeNotifier",
+      "Listenable",
+      "Future",
+      "Stream"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which part of AnimatedBuilder is responsible for reacting when the animation ticks?",
+    "options": [
+      "The Listenable passed as animation",
+      "The Icon child",
+      "The Transform widget",
+      "The Scaffold"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is NOT mentioned as a use or tip for AnimatedBuilder?",
+    "options": [
+      "Use for complex, custom animations",
+      "Combine with AnimationController for full control",
+      "Use for simple property animations only",
+      "Don’t forget to dispose the AnimationController"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which argument name is used for the static child in the builder callback?",
+    "options": [
+      "animation",
+      "listenable",
+      "child",
+      "contextChild"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following best summarizes AnimatedBuilder’s role?",
+    "options": [
+      "It is a high-level convenience widget for simple size or color changes only",
+      "It is a low-level building block for custom animations that rebuilds using a builder callback",
+      "It is a dedicated widget only for rotation animations",
+      "It is a widget that only manages AnimationController lifecycles"
+    ],
+    "ans": "b"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Drawer widget in Flutter?",
+    "options": [
+      "To show dialogs",
+      "To provide a navigation drawer that slides in from the side",
+      "To display bottom sheets",
+      "To manage app state"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Drawer is commonly used for what in Flutter apps?",
+    "options": [
+      "Form validation",
+      "Theming",
+      "App navigation",
+      "Image loading"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used as the child of Drawer?",
+    "options": [
+      "Column",
+      "Row",
+      "ListView",
+      "GridView"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used to represent a single navigation item?",
+    "options": [
+      "TextButton",
+      "ListTile",
+      "IconButton",
+      "CheckboxListTile"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What text is shown inside the ListTile in the example Drawer?",
+    "options": [
+      "Home",
+      "Menu",
+      "Settings",
+      "Profile"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the file, what does the child parameter of Drawer usually contain?",
+    "options": [
+      "A GridView",
+      "A Center widget",
+      "A ListView",
+      "A Stack"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Drawer controls its z-coordinate (elevation)?",
+    "options": [
+      "backgroundColor",
+      "width",
+      "elevation",
+      "clipBehavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter in Drawer sets its background color?",
+    "options": [
+      "color",
+      "themeColor",
+      "backgroundColor",
+      "drawerColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, which widget is recommended for navigation items inside Drawer?",
+    "options": [
+      "Text",
+      "Icon",
+      "ListTile",
+      "Container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, with which widget should Drawer typically be combined for easy integration?",
+    "options": [
+      "AppBar",
+      "Scaffold",
+      "MaterialApp",
+      "Navigator"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid when using Drawer?",
+    "options": [
+      "Using a background color",
+      "Using ListTile",
+      "Using Drawer without a Scaffold",
+      "Using elevation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What else should you avoid doing with Drawer according to the file?",
+    "options": [
+      "Using icons",
+      "Using text labels",
+      "Putting too many items in the drawer",
+      "Using custom shapes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, Drawer extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Drawer can control its shape (e.g., rounded corners)?",
+    "options": [
+      "clipBehavior",
+      "shape",
+      "semanticLabel",
+      "restorationId"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Drawer can be used to control its width?",
+    "options": [
+      "maxWidth",
+      "size",
+      "width",
+      "extent"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Drawer can be used to provide an accessibility label?",
+    "options": [
+      "restorationId",
+      "semanticLabel",
+      "clipBehavior",
+      "elevation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the Drawer constructor shown?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter of Drawer can be used for state restoration?",
+    "options": [
+      "semanticLabel",
+      "restorationId",
+      "shape",
+      "width"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is NOT listed as a main parameter of Drawer in the description?",
+    "options": [
+      "child",
+      "elevation",
+      "backgroundColor",
+      "iconTheme"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement best summarizes the Drawer widget?",
+    "options": [
+      "A bottom navigation bar for switching tabs",
+      "A side navigation drawer that slides in, typically containing a ListView of navigation items and integrated with Scaffold",
+      "A full-screen dialog replacement",
+      "A widget for displaying snack bars"
+    ],
+    "ans": "b"
+  }
+]

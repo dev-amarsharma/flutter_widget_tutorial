@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the Card widget in Flutter primarily used for?",
+    "options": [
+      "Handling user input",
+      "Presenting related information in a concise container",
+      "Managing app navigation",
+      "Displaying full-screen dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which design language does the Card widget follow?",
+    "options": [
+      "Cupertino Design",
+      "Flat Design",
+      "Material Design",
+      "Neumorphism"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What visual characteristics are mentioned for a Card?",
+    "options": [
+      "Sharp corners and no shadow",
+      "Slightly rounded corners and a shadow",
+      "Circular shape only",
+      "Transparent background and no border"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which constructor signature matches the Card widget described?",
+    "options": [
+      "Card({Key? key, Widget? child})",
+      "Card({Key? key, Color? color, double? elevation, ShapeBorder? shape, EdgeInsetsGeometry? margin, Clip clipBehavior = Clip.none, Widget? child, bool semanticContainer = true})",
+      "Card({required Widget child})",
+      "Card({Color color, double elevation})"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property controls the background color of the Card?",
+    "options": [
+      "elevation",
+      "shape",
+      "color",
+      "margin"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property controls the z-coordinate shadow depth of the Card?",
+    "options": [
+      "margin",
+      "clipBehavior",
+      "semanticContainer",
+      "elevation"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does a higher elevation value do to the Card?",
+    "options": [
+      "Removes the shadow",
+      "Adds a border",
+      "Gives a bigger shadow",
+      "Rounds the corners more"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property defines the outline shape of the Card?",
+    "options": [
+      "shape",
+      "margin",
+      "clipBehavior",
+      "semanticContainer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which ShapeBorder is suggested to round the Card’s corners?",
+    "options": [
+      " StadiumBorder",
+      "RoundedRectangleBorder",
+      "CircleBorder",
+      "UnderlineInputBorder"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property adds outer spacing around the Card?",
+    "options": [
+      "padding",
+      "margin",
+      "shape",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property controls how the Card’s contents are clipped?",
+    "options": [
+      "shape",
+      "elevation",
+      "clipBehavior",
+      "semanticContainer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property typically holds the content of the Card?",
+    "options": [
+      "child",
+      "shape",
+      "margin",
+      "semanticContainer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which widgets are mentioned as common children of a Card?",
+    "options": [
+      "AppBar or Scaffold",
+      "Column or ListTile",
+      "Navigator or Router",
+      "TextField or TextFormField"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the elevation set to?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which border radius is used on the Card shape?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "16"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used to add inner spacing inside the Card?",
+    "options": [
+      "Container",
+      "Padding",
+      "SizedBox",
+      "Align"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the padding value applied inside the Card?",
+    "options": [
+      "EdgeInsets.all(8.0)",
+      "EdgeInsets.all(12.0)",
+      "EdgeInsets.all(16.0)",
+      "EdgeInsets.all(24.0)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What text is used as the title inside the example Card?",
+    "options": [
+      "Title",
+      "Card",
+      "Card title",
+      "Main title"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which style is applied to the Card title text in the example?",
+    "options": [
+      "Font size 14, italic",
+      "Font size 16, normal weight",
+      "Font size 18, bold",
+      "Font size 20, light"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What widget is used to add vertical spacing between the title and the supporting text?",
+    "options": [
+      "Padding",
+      "Spacer",
+      "Divider",
+      "SizedBox"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which tip is given about using ListTile with Card?",
+    "options": [
+      "Avoid ListTile inside Card",
+      "Use ListTile inside a Card for standard row layouts",
+      "ListTile must replace Card",
+      "ListTile only works outside Card"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which tip is given for making a Card tappable?",
+    "options": [
+      "Wrap Card directly with GestureDetector only",
+      "Use InkWell or GestureDetector; prefer InkWell inside a Material for ripple effects",
+      "Use only onTap on Card",
+      "It cannot be made tappable"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which properties are suggested to adjust for different visual emphasis?",
+    "options": [
+      "color and margin",
+      "shape and margin",
+      "elevation and shape",
+      "clipBehavior and semanticContainer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the Card constructor shown?",
+    "options": [
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.none",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the Card widget?",
+    "options": [
+      "A generic container with no styling",
+      "A Material Design panel with rounded corners and shadow, used to group related information",
+      "A widget only for list items",
+      "A widget that replaces Scaffold"
+    ],
+    "ans": "b"
+  }
+]

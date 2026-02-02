@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Stack widget in Flutter?",
+    "options": [
+      "To arrange widgets horizontally",
+      "To arrange widgets vertically",
+      "To overlay widgets on top of each other",
+      "To display scrollable lists"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Stack is commonly used for:",
+    "options": [
+      "Simple linear layouts",
+      "Complex layouts where widgets need to overlap or be positioned relative to each other",
+      "Navigation between screens",
+      "Handling user input forms"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Stack holds the widgets to overlay?",
+    "options": [
+      "alignment",
+      "fit",
+      "clipBehavior",
+      "children"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of the alignment parameter in Stack?",
+    "options": [
+      "Alignment.center",
+      "AlignmentDirectional.topStart",
+      "Alignment.bottomRight",
+      "AlignmentDirectional.centerStart"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter in Stack controls how non-positioned children are aligned?",
+    "options": [
+      "children",
+      "alignment",
+      "fit",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter in Stack controls how non-positioned children are sized?",
+    "options": [
+      "alignment",
+      "fit",
+      "clipBehavior",
+      "textDirection"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the fit parameter in Stack?",
+    "options": [
+      "StackFit.expand",
+      "StackFit.tight",
+      "StackFit.loose",
+      "StackFit.cover"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter in Stack controls how children that overflow are clipped?",
+    "options": [
+      "alignment",
+      "fit",
+      "clipBehavior",
+      "textDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of clipBehavior in Stack?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which widget is used as the background of the Stack?",
+    "options": [
+      "Icon",
+      "Positioned",
+      "Container with width 100, height 100, and red color",
+      "Text widget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used to position the star icon inside the Stack?",
+    "options": [
+      "Align",
+      "Padding",
+      "Positioned",
+      "Center"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, where is the Positioned icon placed relative to the Stack?",
+    "options": [
+      "top: 0, left: 0",
+      "top: 10, left: 10",
+      "bottom: 10, right: 10",
+      "center of the Stack"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a main parameter of the Stack widget?",
+    "options": [
+      "spacing",
+      "runAlignment",
+      "fit",
+      "scrollDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget is recommended to control the position of children inside a Stack?",
+    "options": [
+      "Expanded",
+      "Positioned",
+      "ListTile",
+      "Flexible"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the tips, which widget can be combined with Stack for flexible overlays?",
+    "options": [
+      "Align",
+      "Row",
+      "Column",
+      "ListView"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with Stack?",
+    "options": [
+      "Using Positioned",
+      "Combining with Align",
+      "Using Stack for simple layouts; prefer Row or Column",
+      "Handling overflow"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget when using Stack with children that may extend beyond its bounds?",
+    "options": [
+      "To always center all children",
+      "To handle overflow if children exceed the Stack’s bounds",
+      "To wrap Stack with ListView",
+      "To use only one child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which axis does Stack primarily arrange its children on?",
+    "options": [
+      "Vertical axis only",
+      "Horizontal axis only",
+      "No primary axis, children are overlaid",
+      "Diagonal axis"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Stack can be used when you need to respect a specific text direction for alignment?",
+    "options": [
+      "textDirection",
+      "fit",
+      "clipBehavior",
+      "children"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a good use case for Stack?",
+    "options": [
+      "Creating a basic vertical list",
+      "Overlaying an icon on top of an image or colored box",
+      "Arranging buttons in a row",
+      "Building a simple centered screen title"
+    ],
+    "ans": "b"
+  }
+]

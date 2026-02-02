@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the CupertinoSwitch widget in Flutter?",
+    "options": [
+      "To create a Material-style switch",
+      "To create an iOS-style switch",
+      "To create a radio button",
+      "To create a checkbox"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "CupertinoSwitch is commonly used for what type of interaction?",
+    "options": [
+      "Submitting forms",
+      "Toggling settings in Cupertino apps",
+      "Navigating between pages",
+      "Displaying dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what is the initial value of the CupertinoSwitch?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "0"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of CupertinoSwitch indicates whether the switch is on or off?",
+    "options": [
+      "onChanged",
+      "value",
+      "activeColor",
+      "trackColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of CupertinoSwitch is called when the user toggles the switch?",
+    "options": [
+      "onTap",
+      "onPressed",
+      "onChanged",
+      "callback"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the file, which two parameters are required for CupertinoSwitch?",
+    "options": [
+      "activeColor and trackColor",
+      "value and onChanged",
+      "trackColor and thumbColor",
+      "value and activeColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the color of the switch when it is on?",
+    "options": [
+      "thumbColor",
+      "trackColor",
+      "activeColor",
+      "backgroundColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what type of data is CupertinoSwitch best suited for?",
+    "options": [
+      "String values",
+      "Numeric values",
+      "Boolean settings",
+      "List selections"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget is suggested to combine with CupertinoSwitch for labeled switches?",
+    "options": [
+      "AppBar",
+      "ListTile",
+      "Scaffold",
+      "Card"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with CupertinoSwitch?",
+    "options": [
+      "Using it in Cupertino apps",
+      "Giving it an activeColor",
+      "Using for Material apps—use Switch instead",
+      "Using it with ListTile"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to provide when using CupertinoSwitch?",
+    "options": [
+      "trackColor",
+      "thumbColor",
+      "onChanged callback",
+      "background image"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, CupertinoSwitch extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the value property in CupertinoSwitch?",
+    "options": [
+      "int",
+      "String",
+      "bool",
+      "double"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the onChanged callback in CupertinoSwitch?",
+    "options": [
+      "VoidCallback",
+      "ValueChanged<bool>",
+      "Function()",
+      "Future<void> Function(bool)"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to customize the color of the switch’s track?",
+    "options": [
+      "activeColor",
+      "thumbColor",
+      "trackColor",
+      "backgroundColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can be used to customize the color of the switch’s thumb?",
+    "options": [
+      "activeColor",
+      "thumbColor",
+      "trackColor",
+      "foregroundColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In which type of apps is CupertinoSwitch specifically recommended?",
+    "options": [
+      "Material-only apps",
+      "Desktop apps only",
+      "Cupertino (iOS-style) apps",
+      "Web apps only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which Material widget is suggested instead of CupertinoSwitch for Material apps?",
+    "options": [
+      "Checkbox",
+      "Radio",
+      "Switch",
+      "Slider"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best describes the behavior of CupertinoSwitch when tapped?",
+    "options": [
+      "It animates but does not call any callback",
+      "It toggles its boolean value and calls onChanged with the new value",
+      "It navigates to a new page",
+      "It shows a dialog"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes the CupertinoSwitch widget?",
+    "options": [
+      "A Material slider for numeric input",
+      "An iOS-style Stateless switch for toggling boolean settings, with customizable colors",
+      "A checkbox replacement for forms",
+      "A navigation control for Cupertino apps"
+    ],
+    "ans": "b"
+  }
+]

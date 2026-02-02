@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of PageRouteBuilder in Flutter?",
+    "options": [
+      "To manage app themes",
+      "To create custom route transitions",
+      "To handle HTTP requests",
+      "To manage global state"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "PageRouteBuilder is commonly used for what?",
+    "options": [
+      "Form validation",
+      "Custom animations between screens",
+      "Database queries",
+      "Logging errors"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter builds the content of the route?",
+    "options": [
+      "transitionsBuilder",
+      "transitionDuration",
+      "pageBuilder",
+      "settings"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter builds the transition animation?",
+    "options": [
+      "pageBuilder",
+      "transitionsBuilder",
+      "reverseTransitionDuration",
+      "opaque"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which widget is returned by pageBuilder?",
+    "options": [
+      "HomePage()",
+      "PreviousPage()",
+      "NextPage()",
+      "DialogPage()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which transition widget is used in transitionsBuilder?",
+    "options": [
+      "ScaleTransition",
+      "SlideTransition",
+      "FadeTransition",
+      "RotationTransition"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter specifies how long the forward transition lasts?",
+    "options": [
+      "reverseTransitionDuration",
+      "transitionDuration",
+      "opaque",
+      "maintainState"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter specifies how long the reverse transition lasts?",
+    "options": [
+      "reverseTransitionDuration",
+      "transitionDuration",
+      "barrierDismissible",
+      "fullscreenDialog"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to the file, which parameters are required in PageRouteBuilder?",
+    "options": [
+      "settings and pageBuilder",
+      "pageBuilder and transitionsBuilder",
+      "transitionDuration and opaque",
+      "barrierColor and barrierLabel"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of transitionDuration in the class definition?",
+    "options": [
+      "100 milliseconds",
+      "200 milliseconds",
+      "300 milliseconds",
+      "500 milliseconds"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of reverseTransitionDuration?",
+    "options": [
+      "Same as transitionDuration (300 milliseconds)",
+      "100 milliseconds",
+      "400 milliseconds",
+      "No default"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of opaque in PageRouteBuilder?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Platform dependent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of barrierDismissible?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on barrierColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter determines if the route’s state is kept when it is inactive?",
+    "options": [
+      "maintainState",
+      "opaque",
+      "fullscreenDialog",
+      "barrierDismissible"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter indicates whether the route is a fullscreen dialog?",
+    "options": [
+      "opaque",
+      "fullscreenDialog",
+      "barrierColor",
+      "settings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can provide a color for a modal barrier?",
+    "options": [
+      "barrierColor",
+      "barrierLabel",
+      "opaque",
+      "transitionDuration"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can provide a semantic label for the modal barrier?",
+    "options": [
+      "maintainState",
+      "barrierColor",
+      "barrierLabel",
+      "settings"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what is a recommended use of PageRouteBuilder?",
+    "options": [
+      "For standard Material transitions only",
+      "For custom page transitions with animations",
+      "Only for dialog routes",
+      "Only for initial route"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the file, what should you avoid with PageRouteBuilder?",
+    "options": [
+      "Using animations",
+      "Using in large apps",
+      "Overcomplicating transitions",
+      "Using default transition durations"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What important step should you not forget when using routes created with PageRouteBuilder?",
+    "options": [
+      "Call setState on every frame",
+      "Wrap in Hero widgets",
+      "Pop the route when done",
+      "Restart the app after navigation"
+    ],
+    "ans": "c"
+  }
+]

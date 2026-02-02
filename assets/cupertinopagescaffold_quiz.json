@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the CupertinoPageScaffold widget in Flutter?",
+    "options": [
+      "To create a Material page layout",
+      "To provide the basic structure for a Cupertino page",
+      "To manage app-wide navigation",
+      "To display dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "CupertinoPageScaffold is commonly used as what in a Cupertino app?",
+    "options": [
+      "A list item",
+      "A bottom sheet",
+      "The root of each screen",
+      "A background image container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which widget is used for the navigation bar of CupertinoPageScaffold?",
+    "options": [
+      "AppBar",
+      "CupertinoAppBar",
+      "CupertinoNavigationBar",
+      "NavigationToolbar"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what text is displayed in the middle of the navigation bar?",
+    "options": [
+      "Home",
+      "Cupertino",
+      "Title",
+      "Page"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what widget is used as the main content (child) of the page?",
+    "options": [
+      "ListView",
+      "Center(child: Text('Content'))",
+      "Column",
+      "Container() with no child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of CupertinoPageScaffold represents the navigation bar at the top?",
+    "options": [
+      "child",
+      "backgroundColor",
+      "navigationBar",
+      "appBar"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of CupertinoPageScaffold is required?",
+    "options": [
+      "navigationBar",
+      "child",
+      "backgroundColor",
+      "restorationId"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the main content of the CupertinoPageScaffold?",
+    "options": [
+      "navigationBar",
+      "backgroundColor",
+      "child",
+      "resizeToAvoidBottomInset"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter sets the background color of the CupertinoPageScaffold?",
+    "options": [
+      "color",
+      "theme",
+      "backgroundColor",
+      "barColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, how should CupertinoPageScaffold typically be used?",
+    "options": [
+      "As the root of each Cupertino screen",
+      "Only for dialogs",
+      "Only for bottom navigation",
+      "Only for web pages"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which widget is recommended to combine with CupertinoPageScaffold?",
+    "options": [
+      "AppBar",
+      "CupertinoNavigationBar",
+      "BottomNavigationBar",
+      "Drawer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with CupertinoPageScaffold?",
+    "options": [
+      "Using a navigationBar",
+      "Using a backgroundColor",
+      "Using for Material apps—use Scaffold instead",
+      "Using Center as child"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What layout mistake should you avoid with CupertinoPageScaffold?",
+    "options": [
+      "Using it without a navigation bar",
+      "Nesting multiple CupertinoPageScaffolds",
+      "Using it with Center",
+      "Using it with a ListView"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, CupertinoPageScaffold extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the body should avoid the onscreen keyboard?",
+    "options": [
+      "resizeToAvoidBottomInset",
+      "backgroundColor",
+      "restorationId",
+      "navigationBar"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of resizeToAvoidBottomInset in the constructor shown?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used for state restoration ID in CupertinoPageScaffold?",
+    "options": [
+      "key",
+      "restorationId",
+      "navigationBar",
+      "child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best describes the role of navigationBar in CupertinoPageScaffold?",
+    "options": [
+      "Mandatory app-wide navigation",
+      "Optional top bar, often a CupertinoNavigationBar",
+      "Bottom navigation only",
+      "A floating action button"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which platform style is CupertinoPageScaffold specifically designed for?",
+    "options": [
+      "Android Material",
+      "Desktop only",
+      "iOS-style Cupertino",
+      "Web-only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the CupertinoPageScaffold widget?",
+    "options": [
+      "A Material page layout with app bar and body",
+      "A basic iOS-style page layout widget providing navigation bar and body area for Cupertino apps",
+      "A bottom sheet implementation",
+      "A low-level rendering widget"
+    ],
+    "ans": "b"
+  }
+]

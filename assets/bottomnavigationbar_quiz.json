@@ -1,0 +1,302 @@
+[
+  {
+    "que": "What is the primary purpose of the BottomNavigationBar widget in Flutter?",
+    "options": [
+      "To display a top app bar",
+      "To display a bar at the bottom for navigation between top-level views",
+      "To show temporary messages",
+      "To handle form submissions"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, how many BottomNavigationBarItem entries are defined?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which icon is used for the 'Home' item?",
+    "options": [
+      "Icons.dashboard",
+      "Icons.home",
+      "Icons.house",
+      "Icons.start"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which label is paired with Icons.settings?",
+    "options": [
+      "Options",
+      "Config",
+      "Settings",
+      "Tools"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomNavigationBar holds the list of navigation items and is required?",
+    "options": [
+      "currentIndex",
+      "items",
+      "onTap",
+      "type"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of BottomNavigationBar represents the index of the currently selected item?",
+    "options": [
+      "selectedIndex",
+      "currentTab",
+      "currentIndex",
+      "index"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomNavigationBar is a callback when a user taps an item?",
+    "options": [
+      "onPressed",
+      "onChanged",
+      "onTap",
+      "onSelect"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomNavigationBar defines the layout type (fixed or shifting)?",
+    "options": [
+      "style",
+      "mode",
+      "type",
+      "layout"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of BottomNavigationBar sets the background color of the bar?",
+    "options": [
+      "fixedColor",
+      "backgroundColor",
+      "selectedItemColor",
+      "unselectedItemColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, BottomNavigationBar should be used for what kind of navigation?",
+    "options": [
+      "Nested navigation",
+      "Secondary navigation only",
+      "Top-level navigation",
+      "Modal navigation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, what should you combine with icons for clarity?",
+    "options": [
+      "Tooltips",
+      "Labels",
+      "Dividers",
+      "Snackbars"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with BottomNavigationBar?",
+    "options": [
+      "Using icons",
+      "Using labels",
+      "Using for more than 5 items",
+      "Using for exactly 3 items"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For what should you NOT use BottomNavigationBar according to 'Things to Avoid'?",
+    "options": [
+      "Top-level navigation",
+      "Secondary navigation",
+      "Displaying a single action",
+      "Dialog actions"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, BottomNavigationBar extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "ImplicitlyAnimatedWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of currentIndex in BottomNavigationBar?",
+    "options": [
+      "1",
+      "0",
+      "null",
+      "-1"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the elevation (z-position shadow) of the BottomNavigationBar?",
+    "options": [
+      "iconSize",
+      "elevation",
+      "type",
+      "backgroundColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter was historically used for the selected item color in older APIs?",
+    "options": [
+      "fixedColor",
+      "selectedColor",
+      "primaryColor",
+      "iconColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter sets the default icon size in BottomNavigationBar?",
+    "options": [
+      "iconSize",
+      "selectedFontSize",
+      "unselectedFontSize",
+      "leadingWidth"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of iconSize in BottomNavigationBar?",
+    "options": [
+      "16.0",
+      "20.0",
+      "24.0",
+      "28.0"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameters directly control the colors of selected and unselected items?",
+    "options": [
+      "backgroundColor and fixedColor",
+      "selectedItemColor and unselectedItemColor",
+      "selectedFontSize and unselectedFontSize",
+      "selectedIconTheme and unselectedIconTheme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameters allow customizing icon theming for selected vs unselected items?",
+    "options": [
+      "fixedColor and backgroundColor",
+      "selectedFontSize and unselectedFontSize",
+      "selectedIconTheme and unselectedIconTheme",
+      "showSelectedLabels and showUnselectedLabels"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What are the default font sizes for selected and unselected labels?",
+    "options": [
+      "Selected 16.0, Unselected 14.0",
+      "Selected 14.0, Unselected 12.0",
+      "Selected 12.0, Unselected 10.0",
+      "Selected 18.0, Unselected 16.0"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameters allow providing custom TextStyle for selected vs unselected labels?",
+    "options": [
+      "toolbarTextStyle and titleTextStyle",
+      "selectedLabelStyle and unselectedLabelStyle",
+      "selectedItemColor and unselectedItemColor",
+      "selectedIconTheme and unselectedIconTheme"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether selected item labels are shown?",
+    "options": [
+      "showSelectedLabels",
+      "showUnselectedLabels",
+      "enableFeedback",
+      "useLegacyColorScheme"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of showSelectedLabels in BottomNavigationBar?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "Depends on type"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether unselected item labels are shown?",
+    "options": [
+      "showSelectedLabels",
+      "showUnselectedLabels",
+      "enableFeedback",
+      "landscapeLayout"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be used to specify the mouse cursor when hovering over items?",
+    "options": [
+      "mouseCursor",
+      "enableFeedback",
+      "landscapeLayout",
+      "type"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls whether haptic/audio feedback is enabled on tap?",
+    "options": [
+      "useLegacyColorScheme",
+      "enableFeedback",
+      "mouseCursor",
+      "backgroundColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter relates to layout behavior when the device is in landscape orientation?",
+    "options": [
+      "landscapeLayout",
+      "type",
+      "iconSize",
+      "elevation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter toggles between legacy and newer color behavior for BottomNavigationBar?",
+    "options": [
+      "useLegacyColorScheme",
+      "fixedColor",
+      "type",
+      "backgroundColor"
+    ],
+    "ans": "a"
+  }
+]

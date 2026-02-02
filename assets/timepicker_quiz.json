@@ -1,0 +1,202 @@
+[
+  {
+    "que": "In Flutter, what is TimePicker primarily implemented as?",
+    "options": [
+      "A standalone widget",
+      "A function that shows a time selection dialog",
+      "A layout manager",
+      "A form field"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which function is used to let the user pick a time in Flutter?",
+    "options": [
+      "TimePicker()",
+      "showDialog()",
+      "showTimePicker()",
+      "pickTime()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of showTimePicker is required and provides the build context?",
+    "options": [
+      "initialTime",
+      "context",
+      "builder",
+      "routeSettings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of showTimePicker specifies the initially selected time?",
+    "options": [
+      "initialTime",
+      "onTimeChanged",
+      "timeOfDay",
+      "defaultTime"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In the basic example, what is passed as initialTime?",
+    "options": [
+      "TimeOfDay(hour: 0, minute: 0)",
+      "TimeOfDay(hour: 12, minute: 0)",
+      "TimeOfDay.now()",
+      "null"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter (mentioned in the summary) can be used to customize the dialog’s appearance?",
+    "options": [
+      "context",
+      "initialTime",
+      "builder",
+      "routeSettings"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, when should showTimePicker typically be called?",
+    "options": [
+      "During app startup automatically",
+      "In response to a button or field tap",
+      "On every frame build",
+      "Whenever the theme changes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what should you do with the selected time before saving?",
+    "options": [
+      "Convert it to a string only",
+      "Always discard it",
+      "Validate the selected time",
+      "Ignore validation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with showTimePicker?",
+    "options": [
+      "Using it for time selection",
+      "Using showTimePicker for date selection instead of time",
+      "Customizing with builder",
+      "Validating the result"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What must you remember to handle when using showTimePicker?",
+    "options": [
+      "The dialog always returns a valid time",
+      "The dialog never closes automatically",
+      "The result can be null if the user cancels",
+      "The context will be null"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the return type of showTimePicker?",
+    "options": [
+      "TimeOfDay",
+      "Future<TimeOfDay?>",
+      "Future<TimeOfDay>",
+      "void"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the root navigator is used?",
+    "options": [
+      "useRootNavigator",
+      "initialEntryMode",
+      "routeSettings",
+      "anchorPoint"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of initialEntryMode in showTimePicker?",
+    "options": [
+      "TimePickerEntryMode.input",
+      "TimePickerEntryMode.dial",
+      "TimePickerEntryMode.spinner",
+      "It has no default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter lets you customize the text of the cancel button in the time picker dialog?",
+    "options": [
+      "confirmText",
+      "helpText",
+      "cancelText",
+      "errorInvalidText"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter lets you customize the text of the confirm button?",
+    "options": [
+      "confirmText",
+      "cancelText",
+      "helpText",
+      "hourLabelText"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter lets you provide helper text at the top of the time picker dialog?",
+    "options": [
+      "helpText",
+      "errorInvalidText",
+      "hourLabelText",
+      "minuteLabelText"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameters let you customize the hour and minute labels?",
+    "options": [
+      "helpText and errorInvalidText",
+      "hourLabelText and minuteLabelText",
+      "cancelText and confirmText",
+      "useRootNavigator and routeSettings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter allows you to specify whether to use 24-hour dials?",
+    "options": [
+      "initialEntryMode",
+      "use24HourDials",
+      "keyboardAppearance",
+      "anchorPoint"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter allows you to respond when the entry mode (dial/input) changes?",
+    "options": [
+      "onEntryModeChanged",
+      "transitionBuilder",
+      "builder",
+      "routeSettings"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a good example use case for showTimePicker?",
+    "options": [
+      "Letting the user pick a meeting time in a scheduling form",
+      "Choosing a calendar date",
+      "Picking a file from storage",
+      "Selecting a color theme"
+    ],
+    "ans": "a"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the Navigator widget manage in Flutter?",
+    "options": [
+      "A list of widgets for ListView",
+      "A stack of route objects",
+      "Only the app theme",
+      "Network requests"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Navigator is commonly used for what purpose?",
+    "options": [
+      "State management",
+      "Dependency injection",
+      "Page transitions between screens",
+      "Rendering images"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which method is used to push a new route onto the Navigator stack?",
+    "options": [
+      "Navigator.add",
+      "Navigator.push",
+      "Navigator.insert",
+      "Navigator.open"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which route class is used with Navigator.push?",
+    "options": [
+      "CupertinoPageRoute",
+      "PageRouteBuilder",
+      "MaterialPageRoute",
+      "ModalRoute"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what widget is navigated to?",
+    "options": [
+      "HomePage()",
+      "PreviousPage()",
+      "NextPage()",
+      "DialogPage()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Navigator is used for declarative navigation?",
+    "options": [
+      "routes",
+      "pages",
+      "onPopPage",
+      "initialRoute"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is a callback invoked when a page is popped?",
+    "options": [
+      "onGenerateRoute",
+      "onUnknownRoute",
+      "onPopPage",
+      "onRemoveRoute"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter identifies a specific Navigator in the widget tree?",
+    "options": [
+      "id",
+      "name",
+      "key",
+      "tag"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which methods does the file recommend for imperative navigation?",
+    "options": [
+      "Navigator.add and Navigator.remove",
+      "Navigator.show and Navigator.hide",
+      "Navigator.push and Navigator.pop",
+      "Navigator.open and Navigator.close"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is Navigator 2.0 recommended for?",
+    "options": [
+      "Basic push/pop only",
+      "Advanced routing",
+      "Theming widgets",
+      "Handling animations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you avoid with Navigator according to the file?",
+    "options": [
+      "Using Navigator.push",
+      "Using Navigator.pop",
+      "Deep nesting of navigators unless needed",
+      "Using keys with Navigator"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What must you not forget to handle when using Navigator?",
+    "options": [
+      "Theme changes",
+      "Back navigation",
+      "Localization",
+      "Logging"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What data structure best describes how routes are stored by Navigator?",
+    "options": [
+      "Queue",
+      "Set",
+      "Stack",
+      "Map"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which method would you typically call to return to the previous screen?",
+    "options": [
+      "Navigator.exit",
+      "Navigator.close",
+      "Navigator.pop",
+      "Navigator.back"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In declarative navigation, which parameter defines the current navigation history?",
+    "options": [
+      "routes",
+      "pages",
+      "initialRoute",
+      "onPopPage"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does onPopPage allow you to do?",
+    "options": [
+      "Customize how pages are built",
+      "Intercept and handle page pop behavior",
+      "Change the app theme",
+      "Register global shortcuts"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why might deep nesting of Navigators be discouraged?",
+    "options": [
+      "It is not supported by Flutter",
+      "It can complicate navigation and back handling",
+      "It disables animations",
+      "It breaks theming"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best describes imperative navigation?",
+    "options": [
+      "Declaring a list of pages in a pages parameter",
+      "Using Navigator.push and Navigator.pop calls in response to events",
+      "Using URL-based routing only",
+      "Using only initialRoute"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best describes declarative navigation with Navigator?",
+    "options": [
+      "Manually pushing routes",
+      "Using a fixed home widget only",
+      "Describing the desired stack via pages list and letting the framework reconcile it",
+      "Using only onGenerateRoute"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the Navigator widget?",
+    "options": [
+      "A widget that displays lists of data",
+      "A widget that manages a stack of routes, enabling imperative and declarative navigation with push/pop operations and page lists",
+      "A widget that only handles bottom navigation",
+      "A widget used exclusively for dialogs"
+    ],
+    "ans": "b"
+  }
+]

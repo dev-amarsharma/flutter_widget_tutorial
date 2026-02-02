@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Hero widget in Flutter?",
+    "options": [
+      "To fade widgets in and out",
+      "To animate a widget from one screen to another during navigation",
+      "To handle form validation",
+      "To manage app themes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Hero is commonly used for which type of UI effect?",
+    "options": [
+      "List scrolling",
+      "Shared element transitions between screens",
+      "Button press feedback",
+      "Text input formatting"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which widget is used as the child of Hero?",
+    "options": [
+      "Text",
+      "Icon",
+      "Image.asset",
+      "Container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Hero uniquely identifies a hero across routes?",
+    "options": [
+      "child",
+      "key",
+      "tag",
+      "flightShuttleBuilder"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the file, which parameters of Hero are required?",
+    "options": [
+      "tag and child",
+      "tag and flightShuttleBuilder",
+      "child and placeholderBuilder",
+      "createRectTween and child"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the purpose of the flightShuttleBuilder parameter?",
+    "options": [
+      "To build the initial hero child",
+      "To customize the transition animation between routes",
+      "To handle tap gestures",
+      "To manage state restoration"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, what must be the same on both source and destination widgets?",
+    "options": [
+      "child type",
+      "image asset",
+      "tag",
+      "route name"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the recommended use case mentioned for Hero?",
+    "options": [
+      "Form submissions",
+      "Shared element transitions",
+      "Bottom navigation",
+      "List pagination"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid when using Hero?",
+    "options": [
+      "Using Image.asset as child",
+      "Using Hero inside a Column",
+      "Using the same tag for multiple heroes on the same screen",
+      "Using Hero with animations"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to provide for each Hero?",
+    "options": [
+      "A GlobalKey",
+      "A unique tag",
+      "An AnimationController",
+      "A HeroController"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, Hero extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the tag property in the Hero class?",
+    "options": [
+      "String",
+      "int",
+      "Object",
+      "Key"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property allows you to customize how the hero’s bounding rectangle changes during the animation?",
+    "options": [
+      "flightShuttleBuilder",
+      "createRectTween",
+      "placeholderBuilder",
+      "transitionOnUserGestures"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property allows you to build a placeholder while the hero is in flight?",
+    "options": [
+      "placeholderBuilder",
+      "flightShuttleBuilder",
+      "createRectTween",
+      "transitionOnUserGestures"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of transitionOnUserGestures in the Hero constructor?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Platform dependent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following best describes a shared element transition?",
+    "options": [
+      "A fade-in of a whole page",
+      "An element that remains static while routes change",
+      "An element that visually moves and transforms between two screens during navigation",
+      "A slide transition of a dialog"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the provided example, what is the value of the tag parameter?",
+    "options": [
+      "\"image-tag\"",
+      "\"hero\"",
+      "\"hero-tag\"",
+      "\"shared-element\""
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why is it important that Hero tags are unique per screen?",
+    "options": [
+      "To avoid performance issues",
+      "To prevent route name conflicts",
+      "To avoid animation conflicts and undefined behavior",
+      "To improve accessibility labels"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which two properties of Hero must match between the source and destination heroes for a correct transition?",
+    "options": [
+      "child and key",
+      "tag and child type",
+      "tag and route name",
+      "key and route name"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes the Hero widget?",
+    "options": [
+      "A widget that applies basic opacity animations to its child",
+      "A stateful widget that tags a child for shared element transitions, animating it between routes with optional custom flight and placeholder behaviors",
+      "A widget that provides default page transitions",
+      "A widget that manages navigation stacks"
+    ],
+    "ans": "b"
+  }
+]

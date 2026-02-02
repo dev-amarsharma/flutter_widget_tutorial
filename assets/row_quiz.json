@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the Row widget in Flutter?",
+    "options": [
+      "To arrange children vertically in a column",
+      "To arrange children horizontally in a single line",
+      "To display text only",
+      "To handle user input"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How are the children of a Row arranged?",
+    "options": [
+      "Vertically",
+      "In a grid",
+      "Horizontally in a single line",
+      "In a stack"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Row holds the widgets to be displayed horizontally?",
+    "options": [
+      "mainAxisAlignment",
+      "crossAxisAlignment",
+      "children",
+      "textDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of mainAxisAlignment in Row?",
+    "options": [
+      "MainAxisAlignment.center",
+      "MainAxisAlignment.end",
+      "MainAxisAlignment.spaceBetween",
+      "MainAxisAlignment.start"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of mainAxisSize in Row?",
+    "options": [
+      "MainAxisSize.min",
+      "MainAxisSize.max",
+      "MainAxisSize.shrink",
+      "MainAxisSize.expand"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of crossAxisAlignment in Row?",
+    "options": [
+      "CrossAxisAlignment.start",
+      "CrossAxisAlignment.end",
+      "CrossAxisAlignment.center",
+      "CrossAxisAlignment.stretch"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls how Row aligns its children horizontally?",
+    "options": [
+      "crossAxisAlignment",
+      "mainAxisSize",
+      "mainAxisAlignment",
+      "verticalDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls how Row aligns its children vertically?",
+    "options": [
+      "crossAxisAlignment",
+      "mainAxisAlignment",
+      "mainAxisSize",
+      "textDirection"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter decides whether the Row takes all available horizontal space or just enough for its children?",
+    "options": [
+      "crossAxisAlignment",
+      "mainAxisAlignment",
+      "mainAxisSize",
+      "verticalDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the textDirection parameter in Row specify?",
+    "options": [
+      "Vertical order of children",
+      "Animation direction",
+      "Direction to arrange children (left-to-right or right-to-left)",
+      "Text style in Row"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of verticalDirection in Row?",
+    "options": [
+      "VerticalDirection.up",
+      "VerticalDirection.down",
+      "Depends on theme",
+      "It has no default"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When is the textBaseline parameter used in Row?",
+    "options": [
+      "Always, for any alignment",
+      "Only when crossAxisAlignment is baseline",
+      "Only when using Expanded",
+      "Only when there is a SingleChildScrollView"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what does mainAxisAlignment: MainAxisAlignment.center do?",
+    "options": [
+      "Centers children vertically",
+      "Centers children horizontally within the Row",
+      "Stretches children across the Row",
+      "Aligns children to the start"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which widget is used to create horizontal space between Icon and Text?",
+    "options": [
+      "Spacer",
+      "Padding",
+      "SizedBox",
+      "Container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter list in the Row constructor holds its child widgets?",
+    "options": [
+      "List<Widget> items",
+      "List<Widget> children",
+      "List<Widget> widgets",
+      "List<Widget> rows"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a main parameter of the Flutter Row widget?",
+    "options": [
+      "padding",
+      "margin",
+      "children",
+      "elevation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which MainAxisAlignment value places free space evenly between children but not at the ends?",
+    "options": [
+      "MainAxisAlignment.spaceAround",
+      "MainAxisAlignment.spaceBetween",
+      "MainAxisAlignment.spaceEvenly",
+      "MainAxisAlignment.center"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a recommended way to make Row children share available horizontal space?",
+    "options": [
+      "Wrap them with Container",
+      "Wrap them with Expanded or Flexible",
+      "Use Padding only",
+      "Increase font size"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is suggested to add gaps between Row children besides SizedBox?",
+    "options": [
+      "Expanded",
+      "Flexible",
+      "Spacer",
+      "PaddingDirection"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a potential issue when placing too many widgets in a Row?",
+    "options": [
+      "They will be hidden automatically",
+      "They may overflow the screen horizontally",
+      "They will be wrapped to the next line",
+      "They will change to a Column"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a suggested solution if Row children are too wide and overflow?",
+    "options": [
+      "Ignore the overflow",
+      "Only reduce font size",
+      "Use Expanded, Flexible, or wrap Row in a SingleChildScrollView",
+      "Change Row to Center"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you avoid when mixing widgets with different heights in a Row?",
+    "options": [
+      "Using mainAxisAlignment",
+      "Using crossAxisAlignment",
+      "Ignoring vertical alignment with crossAxisAlignment",
+      "Using icons and text together"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which axis is considered the main axis for a Row?",
+    "options": [
+      "Vertical axis",
+      "Diagonal axis",
+      "Horizontal axis",
+      "No axis"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which axis is considered the cross axis for a Row?",
+    "options": [
+      "Horizontal axis",
+      "Vertical axis",
+      "Diagonal axis",
+      "It has no cross axis"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is a good use case for a Row?",
+    "options": [
+      "Stacking widgets on top of each other",
+      "Placing widgets side by side horizontally",
+      "Creating a vertical list",
+      "Overlaying widgets"
+    ],
+    "ans": "b"
+  }
+]

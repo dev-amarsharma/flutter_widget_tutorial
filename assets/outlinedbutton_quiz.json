@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What kind of button does OutlinedButton create in Flutter?",
+    "options": [
+      "A filled Material button",
+      "A text-only button with no border",
+      "A Material Design button with an outline border",
+      "A floating circular button"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "OutlinedButton is commonly used for which type of actions?",
+    "options": [
+      "High emphasis primary actions",
+      "Low emphasis secondary actions only",
+      "Medium emphasis actions",
+      "Background tasks"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter is required in the OutlinedButton constructor?",
+    "options": [
+      "style",
+      "focusNode",
+      "onPressed",
+      "onLongPress"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter specifies the widget displayed inside the OutlinedButton?",
+    "options": [
+      "label",
+      "child",
+      "title",
+      "content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what widget is used as the child of OutlinedButton?",
+    "options": [
+      "Icon",
+      "Row",
+      "Text('Outlined')",
+      "Column"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is passed to onPressed?",
+    "options": [
+      "null",
+      "A non-empty function body",
+      "() {}",
+      "print('Pressed')"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter customizes the appearance of the OutlinedButton?",
+    "options": [
+      "focusNode",
+      "style",
+      "clipBehavior",
+      "autofocus"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is used for handling long-press actions?",
+    "options": [
+      "onPressed",
+      "onTap",
+      "onLongPress",
+      "onHold"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the onPressed parameter?",
+    "options": [
+      "Function()",
+      "VoidCallback?",
+      "Future<void>",
+      "bool Function()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the child parameter?",
+    "options": [
+      "Widget",
+      "Widget?",
+      "String",
+      "List<Widget>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of the autofocus parameter?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Platform dependent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of clipBehavior in the constructor?",
+    "options": [
+      "Clip.none",
+      "Clip.hardEdge",
+      "Clip.antiAlias",
+      "Clip.antiAliasWithSaveLayer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to the quick tips, what is style commonly used to customize?",
+    "options": [
+      "Animations only",
+      "Border and color",
+      "Navigator routes",
+      "Text direction"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is listed to avoid with OutlinedButton?",
+    "options": [
+      "Using style",
+      "Using it with Text children",
+      "Using for primary actions instead of ElevatedButton",
+      "Providing onLongPress"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to provide when using OutlinedButton?",
+    "options": [
+      "A focusNode",
+      "A style",
+      "An onPressed callback",
+      "An icon child"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "If onPressed is null, what typically happens to the button?",
+    "options": [
+      "It throws a compile-time error",
+      "It becomes disabled and non-interactive",
+      "It becomes invisible",
+      "It expands to full width"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is a typical use case for OutlinedButton?",
+    "options": [
+      "The main 'Submit' action",
+      "Destructive actions only",
+      "Secondary or medium emphasis actions like 'Cancel' or 'More options'",
+      "Background data sync"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter helps manage focus for keyboard and accessibility navigation?",
+    "options": [
+      "style",
+      "focusNode",
+      "clipBehavior",
+      "autofocus"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which other button type is explicitly recommended for primary actions instead of OutlinedButton?",
+    "options": [
+      "TextButton",
+      "IconButton",
+      "ElevatedButton",
+      "FloatingActionButton"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes OutlinedButton?",
+    "options": [
+      "A high-emphasis filled button for primary actions",
+      "A borderless text button for very low emphasis actions",
+      "A Material Design button with an outline border, suitable for medium emphasis actions and customizable via style, with required onPressed and child",
+      "A circular button floating above content"
+    ],
+    "ans": "c"
+  }
+]

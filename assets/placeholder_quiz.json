@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the Placeholder widget draw by default?",
+    "options": [
+      "A solid colored box",
+      "A box with a dashed border and an X",
+      "A circle with an icon",
+      "A transparent container"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the main purpose of the Placeholder widget?",
+    "options": [
+      "Display network images",
+      "Mark where a widget will be added later",
+      "Handle user input",
+      "Manage app navigation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When is Placeholder primarily intended to be used?",
+    "options": [
+      "In production UIs",
+      "Only in tests",
+      "During development to visualize layout structure",
+      "Only in web builds"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default color of the Placeholder border and X?",
+    "options": [
+      "Black",
+      "Red",
+      "Blue",
+      "Blue-grey"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which constructor parameter controls the color of the border and X?",
+    "options": [
+      "strokeWidth",
+      "fallbackWidth",
+      "fallbackHeight",
+      "color"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of strokeWidth in the constructor?",
+    "options": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the strokeWidth property control?",
+    "options": [
+      "The opacity of the placeholder",
+      "The width of the border lines",
+      "The font size of the X label",
+      "The padding around the placeholder"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default fallbackWidth used when the widget is unbounded?",
+    "options": [
+      "100.0",
+      "200.0",
+      "300.0",
+      "400.0"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default fallbackHeight used when the widget is unbounded?",
+    "options": [
+      "100.0",
+      "200.0",
+      "300.0",
+      "400.0"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In the example, what color is used for the Placeholder?",
+    "options": [
+      "Colors.blueGrey",
+      "Colors.green",
+      "Colors.red",
+      "Colors.black"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the value of strokeWidth?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what are the values of fallbackHeight and fallbackWidth?",
+    "options": [
+      "50 and 50",
+      "100 and 100",
+      "200 and 200",
+      "400 and 400"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about fallbackWidth and fallbackHeight is correct?",
+    "options": [
+      "They are ignored if constraints are unbounded",
+      "They are used when the widget is unbounded",
+      "They only apply on web",
+      "They only apply when color is null"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended usage guidance for Placeholder in production?",
+    "options": [
+      "Safe to use everywhere",
+      "Use only for icons",
+      "Should not be used in production UIs",
+      "Use only on splash screens"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of these is a good use case for Placeholder?",
+    "options": [
+      "Final button design in a released app",
+      "Temporary marker for a widget to be implemented later",
+      "Permanent background decoration",
+      "Network loading indicator"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What type of widget is Placeholder conceptually?",
+    "options": [
+      "A layout widget that arranges children",
+      "A visual debugging aid for layouts",
+      "A state management widget",
+      "A gesture detector"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter would you modify to make the Placeholder occupy more space when unconstrained?",
+    "options": [
+      "color",
+      "strokeWidth",
+      "fallbackWidth and fallbackHeight",
+      "padding"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What visual shape does Placeholder most closely resemble?",
+    "options": [
+      "A circle with a plus sign",
+      "A box with a dashed border and an X",
+      "A triangle warning sign",
+      "A filled rectangle with text"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is Placeholder useful during development?",
+    "options": [
+      "It optimizes performance",
+      "It automatically generates code",
+      "It helps visualize the layout structure before real widgets are added",
+      "It validates JSON responses"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the Placeholder widget?",
+    "options": [
+      "A production-ready image component",
+      "A layout manager for complex grids",
+      "A simple visual box with an X used during development to mark where widgets will go, with configurable color, strokeWidth, and fallback size",
+      "A widget for animating transitions"
+    ],
+    "ans": "c"
+  }
+]

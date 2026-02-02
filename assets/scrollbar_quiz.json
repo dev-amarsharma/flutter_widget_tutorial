@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the Scrollbar widget in Flutter?",
+    "options": [
+      "To provide scrolling behavior",
+      "To add a scroll thumb to a scrollable widget",
+      "To build custom slivers",
+      "To manage focus traversal"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Scrollbar is commonly used to:",
+    "options": [
+      "Handle tap gestures",
+      "Indicate scroll position",
+      "Layout children in a column",
+      "Animate route transitions"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Scrollbar is required?",
+    "options": [
+      "controller",
+      "isAlwaysShown",
+      "thickness",
+      "child"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What should the child of a Scrollbar typically be?",
+    "options": [
+      "Any StatelessWidget",
+      "A scrollable widget like ListView or GridView",
+      "Only a Container",
+      "Only a Column"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the scroll position when using Scrollbar?",
+    "options": [
+      "thickness",
+      "controller",
+      "isAlwaysShown",
+      "radius"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the isAlwaysShown parameter control in Scrollbar?",
+    "options": [
+      "Whether the thumb is draggable",
+      "Whether the scrollbar is always visible",
+      "The color of the scrollbar",
+      "The orientation of the scrollbar"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter defines the thickness of the Scrollbar?",
+    "options": [
+      "radius",
+      "hoverThickness",
+      "thickness",
+      "scrollbarOrientation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the tips, for which type of content is Scrollbar recommended?",
+    "options": [
+      "Very short lists only",
+      "Forms with a few fields",
+      "Long lists and grids",
+      "Static single-page content"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Scrollbar is typically combined with which widgets?",
+    "options": [
+      "Column or Row",
+      "Stack or Align",
+      "ListView or GridView",
+      "AlertDialog or SnackBar"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid when using Scrollbar?",
+    "options": [
+      "Using it with ListView",
+      "Using it for short lists",
+      "Using a controller",
+      "Using custom thickness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you not forget when using custom scroll behavior with a Scrollbar?",
+    "options": [
+      "To always set isAlwaysShown to true",
+      "To manage scroll controllers for custom behavior",
+      "To disable thumb interaction",
+      "To always hide the track"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the base class of Scrollbar according to the class definition?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the Scrollbar thumb can be interacted with (dragged)?",
+    "options": [
+      "interactive",
+      "thumbVisibility",
+      "trackVisibility",
+      "scrollbarOrientation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of the interactive parameter in Scrollbar?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "It depends on the platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the scrollbar track is shown when hovered?",
+    "options": [
+      "thumbVisibility",
+      "trackVisibility",
+      "showTrackOnHover",
+      "hoverThickness"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can be used to increase the thickness of the scrollbar when hovered?",
+    "options": [
+      "hoverThickness",
+      "radius",
+      "scrollbarOrientation",
+      "notificationPredicate"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter defines the corner radius of the scrollbar thumb?",
+    "options": [
+      "thickness",
+      "radius",
+      "hoverThickness",
+      "scrollbarOrientation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the scrollbar thumb is visible (in newer APIs)?",
+    "options": [
+      "thumbVisibility",
+      "isAlwaysShown",
+      "trackVisibility",
+      "interactive"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter controls whether the scrollbar track is visible?",
+    "options": [
+      "thumbVisibility",
+      "trackVisibility",
+      "showTrackOnHover",
+      "hoverThickness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Scrollbar determines its side or orientation relative to the scrollable?",
+    "options": [
+      "scrollbarOrientation",
+      "notificationPredicate",
+      "hoverThickness",
+      "radius"
+    ],
+    "ans": "a"
+  }
+]

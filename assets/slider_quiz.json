@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the Slider widget in Flutter?",
+    "options": [
+      "To select from a list of strings",
+      "To select a value from a numeric range by sliding a thumb",
+      "To toggle between true and false",
+      "To navigate between pages"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a common use case for Slider?",
+    "options": [
+      "Username input",
+      "Navigation drawer",
+      "Settings like volume or brightness",
+      "Showing dialog popups"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Slider represents the current value?",
+    "options": [
+      "min",
+      "max",
+      "value",
+      "label"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameters are required for a basic Slider?",
+    "options": [
+      "value, min, max, onChanged",
+      "value, divisions, label",
+      "min, max, activeColor",
+      "value, inactiveColor, thumbColor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In the example, what is the range of the Slider?",
+    "options": [
+      "0 to 1",
+      "0 to 50",
+      "0 to 100",
+      "1 to 100"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the initial value of the Slider?",
+    "options": [
+      "0",
+      "25",
+      "50",
+      "100"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter defines the minimum value of a Slider?",
+    "options": [
+      "min",
+      "max",
+      "value",
+      "label"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter defines the maximum value of a Slider?",
+    "options": [
+      "value",
+      "label",
+      "max",
+      "divisions"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter is called whenever the user drags the Slider thumb?",
+    "options": [
+      "onChangeStart",
+      "onChanged",
+      "onChangeEnd",
+      "semanticFormatterCallback"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the purpose of the divisions parameter in Slider?",
+    "options": [
+      "To set the minimum value",
+      "To set the maximum value",
+      "To define the number of discrete steps",
+      "To define the slider orientation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the label parameter in Slider do?",
+    "options": [
+      "Sets the semantic description only",
+      "Shows a label above the slider, often reflecting the current value",
+      "Sets the slider’s min value",
+      "Sets the slider’s max value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the color of the active part of the Slider track?",
+    "options": [
+      "inactiveColor",
+      "thumbColor",
+      "activeColor",
+      "label"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the tips, when should you use divisions in a Slider?",
+    "options": [
+      "When you need continuous values only",
+      "When you want discrete values",
+      "When you want to hide the thumb",
+      "When you want a vertical slider"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the tips, why might you use label with Slider?",
+    "options": [
+      "To add an icon",
+      "To show the current value to the user",
+      "To change the slider orientation",
+      "To disable the slider"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is listed as something to avoid with Slider?",
+    "options": [
+      "Using divisions",
+      "Using label",
+      "Using Slider for non-numeric values",
+      "Using activeColor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to do inside onChanged when using a Slider?",
+    "options": [
+      "Rebuild the entire app",
+      "Update the value in state so the UI reflects the change",
+      "Reset the slider to min",
+      "Call dispose()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, Slider extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "RenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the min parameter in the Slider constructor?",
+    "options": [
+      "0.0",
+      "1.0",
+      "0.5",
+      "It has no default"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default value of the max parameter in the Slider constructor?",
+    "options": [
+      "0.0",
+      "0.5",
+      "1.0",
+      "10.0"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the default value of the autofocus parameter in Slider?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "Depends on platform"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter allows you to customize the color of the Slider thumb?",
+    "options": [
+      "activeColor",
+      "inactiveColor",
+      "thumbColor",
+      "label"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can you use to react when the user starts dragging the Slider?",
+    "options": [
+      "onChanged",
+      "onChangeStart",
+      "onChangeEnd",
+      "semanticFormatterCallback"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can you use to react when the user finishes dragging the Slider?",
+    "options": [
+      "onChanged",
+      "onChangeStart",
+      "onChangeEnd",
+      "mouseCursor"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter can be used to customize how the value is announced for accessibility?",
+    "options": [
+      "semanticFormatterCallback",
+      "mouseCursor",
+      "focusNode",
+      "label"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a good use case for Slider?",
+    "options": [
+      "Selecting a username from a list",
+      "Choosing a precise numeric value like playback speed",
+      "Showing static text",
+      "Triggering one-time actions"
+    ],
+    "ans": "b"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "que": "What is the primary purpose of the DropdownButton widget in Flutter?",
+    "options": [
+      "To select multiple values from a list",
+      "To let the user select one value from a list of items",
+      "To display static text",
+      "To navigate between pages"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In which contexts is DropdownButton commonly used?",
+    "options": [
+      "Animations only",
+      "Navigation bars",
+      "Forms and settings",
+      "Splash screens"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the generic type of DropdownButton?",
+    "options": [
+      "int",
+      "double",
+      "String",
+      "bool"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which value is initially selected in the DropdownButton?",
+    "options": [
+      "null",
+      "One",
+      "Two",
+      "Three"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is used for each item inside DropdownButton?",
+    "options": [
+      "ListTile",
+      "DropdownMenuItem",
+      "PopupMenuItem",
+      "TextButton"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of DropdownButton provides the list of items to display?",
+    "options": [
+      "value",
+      "onChanged",
+      "items",
+      "hint"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of DropdownButton holds the currently selected value?",
+    "options": [
+      "items",
+      "value",
+      "hint",
+      "icon"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of DropdownButton is called when the user selects an item?",
+    "options": [
+      "onTap",
+      "onPressed",
+      "onChanged",
+      "onSelect"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the description, which two parameters are required for DropdownButton?",
+    "options": [
+      "items and value",
+      "items and onChanged",
+      "value and hint",
+      "hint and icon"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter shows a widget when no value is selected?",
+    "options": [
+      "icon",
+      "hint",
+      "disabledHint",
+      "alignment"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls the dropdown arrow icon of DropdownButton?",
+    "options": [
+      "icon",
+      "underline",
+      "style",
+      "borderRadius"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter makes the DropdownButton expand to fill the parent width?",
+    "options": [
+      "isDense",
+      "isExpanded",
+      "autofocus",
+      "enableFeedback"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, which widget should you use for each item in DropdownButton?",
+    "options": [
+      "Text",
+      "ListTile",
+      "DropdownMenuItem",
+      "Container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, when should you use isExpanded?",
+    "options": [
+      "For compact dropdowns",
+      "For icon-only dropdowns",
+      "For full-width dropdowns",
+      "For disabled dropdowns"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is listed as something to avoid with DropdownButton?",
+    "options": [
+      "Using custom icons",
+      "Using with forms",
+      "Using DropdownButton for large lists without search",
+      "Using isExpanded"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What must you not forget to handle when using DropdownButton?",
+    "options": [
+      "The elevation",
+      "The borderRadius",
+      "The onChanged callback",
+      "The focusNode disposal"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, DropdownButton<T> extends which base class?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of the elevation parameter in the DropdownButton constructor shown?",
+    "options": [
+      "0",
+      "4",
+      "8",
+      "16"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter controls the text style of the selected item in DropdownButton?",
+    "options": [
+      "style",
+      "underline",
+      "dropdownColor",
+      "alignment"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter can be used to customize the widget displayed below the DropdownButton (e.g., a line)?",
+    "options": [
+      "icon",
+      "underline",
+      "isDense",
+      "borderRadius"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameters control the colors of the dropdown icon when enabled or disabled?",
+    "options": [
+      "focusColor and dropdownColor",
+      "iconEnabledColor and iconDisabledColor",
+      "style and alignment",
+      "borderRadius and menuMaxHeight"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the default value of iconSize in the DropdownButton constructor shown?",
+    "options": [
+      "16.0",
+      "20.0",
+      "24.0",
+      "28.0"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter affects whether the dropdown is visually denser (less vertical space)?",
+    "options": [
+      "isExpanded",
+      "isDense",
+      "autofocus",
+      "enableFeedback"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter sets the default height for each item in the dropdown menu?",
+    "options": [
+      "itemHeight",
+      "menuMaxHeight",
+      "iconSize",
+      "elevation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement best summarizes the DropdownButton widget?",
+    "options": [
+      "A widget that shows a searchable multi-select list",
+      "A stateful widget that lets users select a single value from a list of DropdownMenuItem items, with many customization options",
+      "A stateless widget for static text",
+      "A dialog-based date picker"
+    ],
+    "ans": "b"
+  }
+]

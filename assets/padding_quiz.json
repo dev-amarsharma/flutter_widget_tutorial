@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What does the Padding widget do in Flutter?",
+    "options": [
+      "Aligns its child in the center",
+      "Adds empty space around its child",
+      "Changes the color of its child",
+      "Makes its child scrollable"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Padding is commonly used to create what?",
+    "options": [
+      "Animations",
+      "Navigation flows",
+      "Space inside layouts and between widgets",
+      "Database connections"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which EdgeInsets constructor is used?",
+    "options": [
+      "EdgeInsets.only",
+      "EdgeInsets.symmetric",
+      "EdgeInsets.all",
+      "EdgeInsets.fromLTRB"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the padding value applied on all sides?",
+    "options": [
+      "8",
+      "12",
+      "16",
+      "20"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What text is used as the child in the example?",
+    "options": [
+      "Text('Text')",
+      "Text('Padding')",
+      "Text('Padded Text')",
+      "Text('Sample')"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter specifies the amount of space to add around the child?",
+    "options": [
+      "margin",
+      "spacing",
+      "padding",
+      "gap"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter specifies the widget that receives the padding?",
+    "options": [
+      "content",
+      "label",
+      "child",
+      "body"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the file, which two parameters are required for Padding?",
+    "options": [
+      "padding and key",
+      "padding and child",
+      "child and alignment",
+      "child and margin"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which EdgeInsets constructor can be used for different vertical and horizontal padding?",
+    "options": [
+      "EdgeInsets.all",
+      "EdgeInsets.symmetric",
+      "EdgeInsets.only",
+      "EdgeInsets.zero"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which EdgeInsets constructor can be used to set padding only on specific sides?",
+    "options": [
+      "EdgeInsets.all",
+      "EdgeInsets.symmetric",
+      "EdgeInsets.only",
+      "EdgeInsets.fromWindowPadding"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the quick tips, Padding should be combined with what for flexible designs?",
+    "options": [
+      "Only with Row",
+      "Only with Column",
+      "Other layout widgets",
+      "Only with Stack"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which practice is listed to avoid with Padding?",
+    "options": [
+      "Using EdgeInsets.all",
+      "Using with Text widgets",
+      "Excessive nesting of Padding",
+      "Combining Padding with layout widgets"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a suggested alternative to excessive nesting of Padding?",
+    "options": [
+      "Using Container only",
+      "Combining paddings when possible",
+      "Removing padding entirely",
+      "Using margin instead"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should Padding NOT be used for according to the file?",
+    "options": [
+      "Adding space around children",
+      "Creating flexible designs",
+      "Alignment or positioning",
+      "Spacing between list items"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widgets are recommended for alignment instead of Padding?",
+    "options": [
+      "Row or Column",
+      "Align or Center",
+      "ListView or GridView",
+      "Stack or Positioned"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Conceptually, where is the padding space added?",
+    "options": [
+      "Inside the child widget itself",
+      "Between sibling widgets only",
+      "Around the child inside the Padding's own box",
+      "Outside the parent widget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of these is a typical use case for Padding?",
+    "options": [
+      "Centering a widget on the screen",
+      "Adding inner spacing in a button or card",
+      "Managing navigation routes",
+      "Animating opacity"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How would you add different left and right padding values?",
+    "options": [
+      "padding: EdgeInsets.all(8)",
+      "padding: EdgeInsets.symmetric(vertical: 8)",
+      "padding: EdgeInsets.only(left: 8, right: 16)",
+      "padding: EdgeInsets.zero"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why is excessive nesting of Padding discouraged?",
+    "options": [
+      "It breaks hot reload",
+      "It can make the widget tree unnecessarily deep and harder to read",
+      "It disables gestures",
+      "It prevents theming"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes the Padding widget?",
+    "options": [
+      "A widget that aligns its child in the available space",
+      "A widget that draws a border around its child",
+      "A widget that adds configurable empty space around a single child, useful for spacing inside layouts but not for alignment",
+      "A widget that makes its child scrollable"
+    ],
+    "ans": "c"
+  }
+]

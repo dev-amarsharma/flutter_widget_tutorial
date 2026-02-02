@@ -1,0 +1,212 @@
+[
+  {
+    "que": "What is the primary purpose of the Theme widget in Flutter?",
+    "options": [
+      "To manage navigation between screens",
+      "To apply a ThemeData to descendant widgets for consistent visual styling",
+      "To handle animations",
+      "To display dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What type of object does the Theme widget apply to its descendants?",
+    "options": [
+      "TextStyle",
+      "ColorScheme",
+      "ThemeData",
+      "MaterialApp"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What happens to widgets below a Theme widget in the widget tree?",
+    "options": [
+      "They ignore the theme data",
+      "They inherit the ThemeData defined by the Theme",
+      "They must define their own ThemeData",
+      "They can no longer be styled"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a common use case of the Theme widget?",
+    "options": [
+      "Managing network calls",
+      "Applying a consistent theme across your app",
+      "Handling gestures",
+      "Rendering lists efficiently"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of these is mentioned as a use case for Theme?",
+    "options": [
+      "Implementing routing",
+      "Implementing dark mode or light mode",
+      "Managing app state",
+      "Handling push notifications"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which widget is used as the child of Theme?",
+    "options": [
+      "Container",
+      "MaterialApp",
+      "Scaffold",
+      "Column"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the primaryColor set to in ThemeData?",
+    "options": [
+      "Colors.red",
+      "Colors.green",
+      "Colors.blue",
+      "Colors.orange"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which brightness is used in ThemeData?",
+    "options": [
+      "Brightness.dark",
+      "Brightness.light",
+      "Brightness.auto",
+      "Brightness.highContrast"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which TextTheme property is customized?",
+    "options": [
+      "bodyMedium",
+      "titleMedium",
+      "headlineLarge",
+      "labelSmall"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what text is shown in the AppBar title?",
+    "options": [
+      "Hello, Themed World!",
+      "Themed App",
+      "Flutter Theme",
+      "Dark Mode"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, what text is displayed in the body?",
+    "options": [
+      "Themed App",
+      "Welcome",
+      "Hello, Themed World!",
+      "Theme Demo"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, what does Theme extend?",
+    "options": [
+      "StatelessWidget",
+      "StatefulWidget",
+      "InheritedTheme",
+      "InheritedWidget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Theme holds the ThemeData to apply?",
+    "options": [
+      "child",
+      "isMaterialAppTheme",
+      "data",
+      "key"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of Theme indicates whether this is the MaterialApp’s theme?",
+    "options": [
+      "data",
+      "isMaterialAppTheme",
+      "child",
+      "key"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of Theme represents the widget below it in the tree?",
+    "options": [
+      "data",
+      "isMaterialAppTheme",
+      "child",
+      "context"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the data property in the Theme class?",
+    "options": [
+      "ColorScheme",
+      "ThemeData",
+      "TextTheme",
+      "MaterialApp"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the isMaterialAppTheme property in Theme?",
+    "options": [
+      "int",
+      "String",
+      "bool",
+      "double"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is listed as a way to override the default Material theme?",
+    "options": [
+      "Wrap parts of the UI in a Theme widget with custom ThemeData",
+      "Use Container instead of Scaffold",
+      "Disable MaterialApp",
+      "Use only Cupertino widgets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which method is mentioned for accessing the current theme from the BuildContext?",
+    "options": [
+      "ThemeData.of(context)",
+      "Theme(context)",
+      "Theme.of(context)",
+      "ThemeData(context)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which related class is mentioned as defining the actual theme properties?",
+    "options": [
+      "ThemeController",
+      "ThemeConfig",
+      "ThemeData",
+      "ThemeOptions"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of these is a good use case for wrapping a subtree with a Theme widget?",
+    "options": [
+      "To apply a special color scheme to just one section of the app",
+      "To improve list performance",
+      "To manage navigation stack",
+      "To cache network images"
+    ],
+    "ans": "a"
+  }
+]

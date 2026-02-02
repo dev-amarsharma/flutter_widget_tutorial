@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is MaterialPageRoute in Flutter?",
+    "options": [
+      "A widget for building forms",
+      "A modal route that uses a material page transition",
+      "A route for Cupertino-style apps only",
+      "A widget that displays dialogs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "MaterialPageRoute is commonly used for what?",
+    "options": [
+      "Network calls",
+      "Theme changes",
+      "Navigation between screens",
+      "Managing state"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which parameter is passed to MaterialPageRoute?",
+    "options": [
+      "onGenerateRoute",
+      "settings",
+      "builder",
+      "fullscreenDialog"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what does the builder return?",
+    "options": [
+      "PreviousPage()",
+      "HomePage()",
+      "NextPage()",
+      "DialogPage()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of MaterialPageRoute is required?",
+    "options": [
+      "settings",
+      "maintainState",
+      "fullscreenDialog",
+      "builder"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does the settings parameter represent?",
+    "options": [
+      "Route settings such as name and arguments",
+      "Animation configuration",
+      "App theme data",
+      "Device orientation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the fullscreenDialog parameter indicate?",
+    "options": [
+      "Whether the route uses a fade transition",
+      "Whether the route is a fullscreen dialog",
+      "Whether the route can be popped",
+      "Whether the route is initial"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, when should you use MaterialPageRoute?",
+    "options": [
+      "For custom slide transitions only",
+      "For standard page transitions",
+      "Only for bottom sheets",
+      "Only for nested navigation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the quick tips, when should fullscreenDialog be used?",
+    "options": [
+      "For background tasks",
+      "For modal screens",
+      "For list items",
+      "For tab navigation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is listed to avoid with MaterialPageRoute?",
+    "options": [
+      "Using it for standard page transitions",
+      "Using it with RouteSettings",
+      "Using it for Cupertino apps instead of CupertinoPageRoute",
+      "Popping the route when done"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you not forget to do after finishing work on a pushed MaterialPageRoute?",
+    "options": [
+      "Rebuild the widget",
+      "Restart the app",
+      "Pop the route",
+      "Change the theme"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the class definition, MaterialPageRoute<T> extends which class?",
+    "options": [
+      "Route<T>",
+      "PageRoute<T>",
+      "ModalRoute<T>",
+      "NavigatorRoute<T>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter controls whether the route’s state is maintained when it is inactive?",
+    "options": [
+      "fullscreenDialog",
+      "settings",
+      "maintainState",
+      "builder"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the constructor, which parameters are forwarded to the super class?",
+    "options": [
+      "builder only",
+      "builder and fullscreenDialog",
+      "settings and fullscreenDialog",
+      "maintainState only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the builder field in MaterialPageRoute?",
+    "options": [
+      "Widget Function()",
+      "RouteFactory",
+      "WidgetBuilder",
+      "PageBuilder"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What generic type does MaterialPageRoute use?",
+    "options": [
+      "<R>",
+      "<S>",
+      "<T>",
+      "<V>"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following best describes a typical usage pattern with MaterialPageRoute?",
+    "options": [
+      "Navigator.pop(context, MaterialPageRoute(...))",
+      "Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()))",
+      "MaterialPageRoute.push(context, NextPage())",
+      "NextPage.push(MaterialPageRoute())"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is CupertinoPageRoute recommended instead of MaterialPageRoute for Cupertino apps?",
+    "options": [
+      "It is faster",
+      "It uses iOS-style transitions and behaviors",
+      "It supports more parameters",
+      "It is the only route type that can be popped"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does 'modal route' generally mean in the context of MaterialPageRoute?",
+    "options": [
+      "A route that cannot be dismissed",
+      "A route that floats above other routes and usually requires user interaction to dismiss",
+      "A background service",
+      "A notification-only route"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement best summarizes MaterialPageRoute?",
+    "options": [
+      "A low-level route class with no transition",
+      "A Cupertino-styled route for iOS apps",
+      "A PageRoute that implements Material Design page transitions with configurable builder, settings, state maintenance, and fullscreen dialog behavior",
+      "A widget for building nested navigators"
+    ],
+    "ans": "c"
+  }
+]

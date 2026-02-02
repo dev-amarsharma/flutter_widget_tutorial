@@ -1,0 +1,302 @@
+[
+  {
+    "que": "What is the primary purpose of the AnimatedContainer widget in Flutter?",
+    "options": [
+      "To display lists of data",
+      "To automatically animate changes to its properties like size and color",
+      "To manage navigation between pages",
+      "To handle HTTP requests"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "AnimatedContainer is commonly used for what kind of visual effect?",
+    "options": [
+      "Static layouts only",
+      "Smooth transitions",
+      "Text formatting",
+      "Keyboard input"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In the example, which property is toggled between Colors.red and Colors.blue?",
+    "options": [
+      "width",
+      "height",
+      "color",
+      "alignment"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, what is the duration of the animation?",
+    "options": [
+      "Duration(milliseconds: 300)",
+      "Duration(milliseconds: 500)",
+      "Duration(seconds: 1)",
+      "Duration(seconds: 2)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer specifies how long the animation lasts and is required?",
+    "options": [
+      "curve",
+      "alignment",
+      "duration",
+      "width"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer defines the animation curve?",
+    "options": [
+      "alignment",
+      "curve",
+      "clipBehavior",
+      "margin"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer controls the width of the container?",
+    "options": [
+      "height",
+      "width",
+      "constraints",
+      "margin"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer controls the height of the container?",
+    "options": [
+      "width",
+      "alignment",
+      "height",
+      "padding"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer sets its background color?",
+    "options": [
+      "color",
+      "decoration",
+      "foregroundDecoration",
+      "transform"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer controls how its child is positioned inside it?",
+    "options": [
+      "constraints",
+      "alignment",
+      "margin",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of AnimatedContainer holds the widget below this container?",
+    "options": [
+      "child",
+      "alignment",
+      "transformAlignment",
+      "clipBehavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to the quick tips, what is a recommended use case for AnimatedContainer?",
+    "options": [
+      "Complex low-level animations",
+      "Simple property animations",
+      "Network retries",
+      "Form validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is suggested to combine with AnimatedContainer for interactive effects?",
+    "options": [
+      "ListView",
+      "GestureDetector",
+      "GridView",
+      "Scaffold"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with AnimatedContainer?",
+    "options": [
+      "Using it for simple animations",
+      "Using it with color changes",
+      "Using it for complex animations instead of AnimationController",
+      "Using it with GestureDetector"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What important configuration should you not forget when using AnimatedContainer?",
+    "options": [
+      "Setting padding",
+      "Setting alignment",
+      "Specifying the duration",
+      "Specifying a key"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the class definition, AnimatedContainer extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "AnimatedWidget",
+      "ImplicitlyAnimatedWidget",
+      "StatelessWidget"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the constructor, which parameter has a default value of Curves.linear?",
+    "options": [
+      "alignment",
+      "curve",
+      "clipBehavior",
+      "margin"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameters are passed to the ImplicitlyAnimatedWidget super constructor?",
+    "options": [
+      "alignment and padding",
+      "curve and duration and onEnd",
+      "width and height",
+      "margin and constraints"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the alignment property in AnimatedContainer?",
+    "options": [
+      "Alignment",
+      "AlignmentGeometry?",
+      "EdgeInsetsGeometry?",
+      "BoxConstraints?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the padding property in AnimatedContainer?",
+    "options": [
+      "EdgeInsets",
+      "EdgeInsetsGeometry?",
+      "AlignmentGeometry?",
+      "Matrix4?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the color property in AnimatedContainer?",
+    "options": [
+      "Color",
+      "Color?",
+      "Decoration?",
+      "BoxDecoration?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the decoration property in AnimatedContainer?",
+    "options": [
+      "BoxDecoration",
+      "Decoration",
+      "Decoration?",
+      "Border?"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which property allows painting a decoration in front of the child?",
+    "options": [
+      "decoration",
+      "foregroundDecoration",
+      "transformAlignment",
+      "clipBehavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What are the types of width and height properties in AnimatedContainer?",
+    "options": [
+      "int?",
+      "double?",
+      "Size?",
+      "num?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property in AnimatedContainer can specify additional layout rules like min and max sizes?",
+    "options": [
+      "constraints",
+      "margin",
+      "transform",
+      "padding"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property applies a transformation such as rotation or scaling to AnimatedContainer?",
+    "options": [
+      "transformAlignment",
+      "transform",
+      "clipBehavior",
+      "foregroundDecoration"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property defines the alignment origin used by the transform matrix?",
+    "options": [
+      "alignment",
+      "transform",
+      "transformAlignment",
+      "constraints"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the type of the child property in AnimatedContainer?",
+    "options": [
+      "Widget",
+      "Widget?",
+      "List<Widget>?",
+      "Text?"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the type of the clipBehavior property in AnimatedContainer?",
+    "options": [
+      "Clip",
+      "Clip?",
+      "BorderRadius",
+      "ShapeBorder"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following best summarizes when to choose AnimatedContainer?",
+    "options": [
+      "When you need full manual control with AnimationController and AnimatedBuilder",
+      "When you want simple implicit animations of properties like size, color, or alignment",
+      "When you need to animate complex custom paths",
+      "When you only need static layout with no animation"
+    ],
+    "ans": "b"
+  }
+]

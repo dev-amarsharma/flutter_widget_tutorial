@@ -1,0 +1,202 @@
+[
+  {
+    "que": "What is the primary purpose of the CustomPaint widget in Flutter?",
+    "options": [
+      "To layout children in a column",
+      "To provide a canvas for custom graphics",
+      "To handle gesture detection",
+      "To display images from assets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a common use case of CustomPaint?",
+    "options": [
+      "Forms and text input",
+      "Dialogs and modals",
+      "Custom shapes, charts, and visualizations",
+      "Networking and HTTP calls"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In the example, which parameter is passed to CustomPaint?",
+    "options": [
+      "child: MyPainter()",
+      "painter: MyPainter()",
+      "foregroundPainter: MyPainter()",
+      "size: MyPainter()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of CustomPaint specifies the custom painter for the main painting?",
+    "options": [
+      "foregroundPainter",
+      "child",
+      "painter",
+      "size"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "According to the file, what is the role of the foregroundPainter parameter?",
+    "options": [
+      "Custom painter for the background",
+      "Custom painter for the foreground",
+      "Custom painter for hit-testing",
+      "Custom painter for layout"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter of CustomPaint allows you to place a widget beneath the painting?",
+    "options": [
+      "painter",
+      "foregroundPainter",
+      "child",
+      "size"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which parameter defines the size of the painting canvas when there is no child?",
+    "options": [
+      "painter",
+      "foregroundPainter",
+      "isComplex",
+      "size"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "According to the quick tips, what is a recommended use of CustomPaint?",
+    "options": [
+      "Simple padding and margins",
+      "Custom drawing and graphics",
+      "Basic layout of rows and columns",
+      "Async data fetching"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is suggested to combine with CustomPaint for interactive graphics?",
+    "options": [
+      "Scaffold",
+      "GestureDetector",
+      "ListView",
+      "Container"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is listed as something to avoid with CustomPaint?",
+    "options": [
+      "Using a painter",
+      "Using a child",
+      "Using for simple shapes when built-in widgets exist",
+      "Using size"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What important cleanup step is mentioned for custom painters?",
+    "options": [
+      "Always calling setState",
+      "Disposing of resources in your painter",
+      "Wrapping in a Scaffold",
+      "Resetting the canvas manually"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "According to the class definition, CustomPaint extends which base class?",
+    "options": [
+      "StatefulWidget",
+      "StatelessWidget",
+      "RenderObjectWidget",
+      "SingleChildRenderObjectWidget"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the default value of the size parameter in the CustomPaint constructor shown?",
+    "options": [
+      "Size.infinite",
+      "Size.zero",
+      "null",
+      "Depends on child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be set to hint that the painting is complex and may benefit from caching?",
+    "options": [
+      "willChange",
+      "isComplex",
+      "painter",
+      "foregroundPainter"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter can be set to true if the painting output is expected to change frequently?",
+    "options": [
+      "size",
+      "willChange",
+      "child",
+      "foregroundPainter"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What happens if both painter and foregroundPainter are provided?",
+    "options": [
+      "Only painter is used",
+      "Only foregroundPainter is used",
+      "They are both used, one behind and one in front of the child",
+      "It throws an error"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is NOT mentioned as a main parameter of CustomPaint in the file?",
+    "options": [
+      "painter",
+      "foregroundPainter",
+      "child",
+      "backgroundColor"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which type of tasks should you prefer built-in widgets instead of CustomPaint for?",
+    "options": [
+      "Highly custom charts",
+      "Advanced data visualizations",
+      "Simple shapes and common UI elements",
+      "Interactive games"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best describes the child parameter in CustomPaint?",
+    "options": [
+      "It replaces the canvas completely",
+      "It is painted on top of the painters",
+      "It is placed beneath the painters’ drawing",
+      "It must be a Container"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the CustomPaint widget?",
+    "options": [
+      "A simple container with padding",
+      "A layout widget for lists",
+      "A widget that provides a canvas for custom painting via CustomPainter, with optional child and size configuration",
+      "A widget that handles gestures automatically"
+    ],
+    "ans": "c"
+  }
+]
