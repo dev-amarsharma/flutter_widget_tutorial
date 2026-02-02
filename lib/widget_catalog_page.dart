@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:flutter/services.dart';
+import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+import 'models/quiz_question.dart';
+import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
+import 'services/rewarded_ad_service.dart';
 
 class WidgetCatalogPage extends StatefulWidget {
   final Set<String> readAssets;
@@ -191,6 +197,170 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
   late ScrollController _scrollController;
   Timer? _saveTimer;
   static const _prefsScrollKey = 'catalog_scroll_offset';
+
+  /// Load all quiz questions from widgets in a category
+  Future<List<QuizQuestion>> _loadCategoryQuizQuestions(
+      List<Map<String, dynamic>> widgets) async {
+    final List<QuizQuestion> allQuestions = [];
+
+    for (final widget in widgets) {
+      final assetPath = widget['asset'] as String?;
+      if (assetPath == null) continue;
+
+      // Convert asset path from assets/textview.md to assets/textview_quiz.json
+      final basePath = assetPath.replaceAll('.md', '');
+      final quizPath = '${basePath}_quiz.json';
+
+      try {
+        // Try to load the quiz file
+        final quizData = await rootBundle.loadString(quizPath);
+        final List<dynamic> jsonList = jsonDecode(quizData);
+        final questions = QuizQuestion.fromJsonList(jsonList);
+        allQuestions.addAll(questions);
+      } catch (e) {
+        // Quiz file doesn't exist for this widget, skip it
+        // ignore: avoid_print
+        print('Quiz file not found: $quizPath');
+      }
+    }
+
+    return allQuestions;
+  }
+
+  /// Check internet connectivity
+  Future<bool> _checkConnectivity() async {
+    try {
+      final connectivityResult = await Connectivity().checkConnectivity();
+      return connectivityResult != ConnectivityResult.none;
+    } catch (e) {
+      print('Error checking connectivity: $e');
+      return false;
+    }
+  }
+
+  /// Start quiz for a category
+  Future<void> _startCategoryQuiz(
+      BuildContext context, Map<String, dynamic> section) async {
+    final widgets = section['widgets'] as List<Map<String, dynamic>>;
+    final categoryName = section['category'] as String;
+
+    // Check internet connectivity first
+    if (!mounted) return;
+    final hasInternet = await _checkConnectivity();
+    
+    if (!hasInternet) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('No internet connection. Please check your connection and try again.'),
+          backgroundColor: Colors.red,
+          duration: Duration(seconds: 3),
+        ),
+      );
+      return;
+    }
+
+    // Show loading indicator
+    if (!mounted) return;
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => const Center(
+        child: Card(
+          child: Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                CircularProgressIndicator(),
+                SizedBox(height: 16),
+                Text('Loading quiz questions...'),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+
+    try {
+      // Load rewarded ad before starting quiz
+      String? adError;
+      
+      await rewardedAdService.loadRewardedAd(
+        onAdFailed: (error) {
+          adError = error;
+        },
+      );
+
+      // Wait a bit for ad to load
+      await Future.delayed(const Duration(seconds: 2));
+
+      // Load all quiz questions from the category
+      final questions = await _loadCategoryQuizQuestions(widgets);
+
+      if (!mounted) return;
+      Navigator.of(context).pop(); // Close loading dialog
+
+      if (questions.isEmpty) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'No quiz questions available for $categoryName',
+            ),
+            backgroundColor: Colors.orange,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+        return;
+      }
+
+      // Show ad loading error if applicable
+      if (adError != null && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: const Text('Content loading failed. Please try after some time.'),
+            backgroundColor: Colors.orange,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
+
+      // Navigate to quiz screen
+      if (!mounted) return;
+      final result = await Navigator.of(context).push<QuizResult>(
+        MaterialPageRoute(
+          builder: (context) => QuizScreen(
+            questions: questions,
+            timerDurationSeconds: 30,
+          ),
+        ),
+      );
+
+      // Show result summary
+      if (result != null && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Quiz completed! Score: ${result.score} (${result.correctAnswers}/${result.totalQuestions} correct)',
+            ),
+            duration: const Duration(seconds: 3),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
+      Navigator.of(context).pop(); // Close loading dialog
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error loading quiz: $e'),
+          backgroundColor: Colors.red,
+          duration: const Duration(seconds: 3),
+        ),
+      );
+    }
+  }
 
   @override
   void initState() {
@@ -469,20 +639,10 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton.icon(
-                          onPressed: () {
-                            // TODO: Implement quiz functionality
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text(
-                                  'Starting quiz for ${section['category']}',
-                                ),
-                                duration: const Duration(seconds: 2),
-                              ),
-                            );
-                          },
+                          onPressed: () => _startCategoryQuiz(context, section),
                           icon: const Icon(Icons.quiz, size: 20),
                           label: const Text(
-                            'Start Quiz',
+                            'Start Quiz (40 Questions)',
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,

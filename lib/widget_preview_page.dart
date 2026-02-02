@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'dart:convert';
 import 'widgets/banner_ad_widget.dart';
 import 'services/interstitial_ad_service.dart';
+import 'models/quiz_question.dart';
+import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
 
 class WidgetPreviewPage extends StatefulWidget {
   final String assetPath;
@@ -22,11 +25,13 @@ class WidgetPreviewPage extends StatefulWidget {
 
 class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
   String? _markdownData;
+  bool _hasQuiz = false;
 
   @override
   void initState() {
     super.initState();
     _loadMarkdown();
+    _checkQuizExists();
     // Track navigation for interstitial ad
     interstitialAdService.handleWidgetPageNavigation();
   }
@@ -37,6 +42,78 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
       setState(() => _markdownData = data);
     } catch (e) {
       setState(() => _markdownData = 'Error loading ${widget.assetPath}');
+    }
+  }
+
+  Future<void> _checkQuizExists() async {
+    try {
+      // Convert asset path from assets/textview.md to assets/textview_quiz.json
+      final basePath = widget.assetPath.replaceAll('.md', '');
+      final quizPath = '${basePath}_quiz.json';
+      
+      // Try to load the quiz file to check if it exists
+      await rootBundle.loadString(quizPath);
+      setState(() => _hasQuiz = true);
+    } catch (e) {
+      // Quiz file doesn't exist
+      setState(() => _hasQuiz = false);
+    }
+  }
+
+  Future<void> _startQuiz() async {
+    try {
+      final basePath = widget.assetPath.replaceAll('.md', '');
+      final quizPath = '${basePath}_quiz.json';
+      final quizData = await rootBundle.loadString(quizPath);
+      
+      // Parse JSON data
+      final List<dynamic> jsonList = jsonDecode(quizData);
+      final List<QuizQuestion> questions = QuizQuestion.fromJsonList(jsonList);
+      
+      if (questions.isEmpty) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('No questions available in quiz file'),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        }
+        return;
+      }
+      
+      // Navigate to quiz screen
+      if (!mounted) return;
+      
+      final result = await Navigator.of(context).push<QuizResult>(
+        MaterialPageRoute(
+          builder: (context) => QuizScreen(
+            questions: questions,
+            timerDurationSeconds: 30,
+          ),
+        ),
+      );
+      
+      // Optionally show result summary
+      if (result != null && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Quiz completed! Score: ${result.score} (${result.correctAnswers}/${result.totalQuestions} correct)',
+            ),
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error loading quiz: $e'),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      }
     }
   }
 
@@ -127,6 +204,40 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
                   ),
                 ),
           ),
+          // Start Quiz button (if quiz exists)
+          if (_hasQuiz)
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 12.0,
+              ),
+              child: SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: _startQuiz,
+                  icon: const Icon(Icons.quiz, size: 20),
+                  label: const Text(
+                    'Start Quiz',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepOrange[400],
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 14,
+                      horizontal: 20,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    elevation: 4,
+                  ),
+                ),
+              ),
+            ),
           // Banner ad at the bottom
           const BannerAdWidget(),
         ],
