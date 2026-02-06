@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is the primary purpose of the FutureBuilder widget?",
+    "options": [
+      "To build widgets based on the latest snapshot of interaction with a Future",
+      "To create animations based on time",
+      "To handle stream events",
+      "To build a list of items lazily"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property is required to provide the asynchronous computation?",
+    "options": [
+      "stream",
+      "future",
+      "task",
+      "computation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What object is passed to the builder function containing the current state?",
+    "options": [
+      "FutureResult",
+      "AsyncSnapshot",
+      "StreamState",
+      "BuildState"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which ConnectionState indicates the future is currently running?",
+    "options": [
+      "none",
+      "active",
+      "waiting",
+      "done"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you check before accessing snapshot.data?",
+    "options": [
+      "snapshot.hasData",
+      "snapshot.isDone",
+      "snapshot.isValid",
+      "snapshot.exists"
+    ],
+    "ans": "a"
+  }
+]

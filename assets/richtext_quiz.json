@@ -140,36 +140,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what is the base text shown before the styled children?",
-    "options": [
-      "bold world!",
-      "Hello ",
-      "world!",
-      "Hello world!"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, how is the word 'bold' styled?",
-    "options": [
-      "With a larger font size",
-      "With italic style",
-      "With bold font weight",
-      "With underlined text"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, how is the word 'world!' styled?",
-    "options": [
-      "With red color",
-      "With blue color",
-      "With bold weight",
-      "With underline"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter in RichText can be used to specify the locale for text rendering?",
     "options": [
       "strutStyle",

@@ -40,26 +40,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which delegate is used to provide the children of SliverList?",
-    "options": [
-      "SliverChildBuilderDelegate",
-      "SliverChildListDelegate",
-      "SliverGridDelegate",
-      "SliverFixedExtentList"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what type of widgets are used as children of SliverList?",
-    "options": [
-      "Container widgets",
-      "Icon widgets",
-      "Text widgets",
-      "Image widgets"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which of the following is a recommended use case for SliverList?",
     "options": [
       "A simple, standalone list with no slivers",
@@ -118,16 +98,6 @@
       "SliverGridDelegate"
     ],
     "ans": "c"
-  },
-  {
-    "que": "In the example, how are the children of SliverList provided?",
-    "options": [
-      "Through a builder function with an index",
-      "Through a list of widgets passed to SliverChildListDelegate",
-      "Through a stream of widgets",
-      "Through a FutureBuilder"
-    ],
-    "ans": "b"
   },
   {
     "que": "Which of these is a good scenario for using SliverList?",

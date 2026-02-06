@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what does mainAxisAlignment: MainAxisAlignment.center do?",
+    "que": "What does mainAxisAlignment: MainAxisAlignment.center do?",
     "options": [
       "Centers children vertically",
       "Centers children horizontally within the Row",
@@ -128,16 +128,6 @@
       "Aligns children to the start"
     ],
     "ans": "b"
-  },
-  {
-    "que": "In the example, which widget is used to create horizontal space between Icon and Text?",
-    "options": [
-      "Spacer",
-      "Padding",
-      "SizedBox",
-      "Container"
-    ],
-    "ans": "c"
   },
   {
     "que": "Which parameter list in the Row constructor holds its child widgets?",

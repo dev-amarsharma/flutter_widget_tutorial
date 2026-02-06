@@ -50,66 +50,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget is used as the child of Theme?",
-    "options": [
-      "Container",
-      "MaterialApp",
-      "Scaffold",
-      "Column"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the primaryColor set to in ThemeData?",
-    "options": [
-      "Colors.red",
-      "Colors.green",
-      "Colors.blue",
-      "Colors.orange"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which brightness is used in ThemeData?",
-    "options": [
-      "Brightness.dark",
-      "Brightness.light",
-      "Brightness.auto",
-      "Brightness.highContrast"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which TextTheme property is customized?",
-    "options": [
-      "bodyMedium",
-      "titleMedium",
-      "headlineLarge",
-      "labelSmall"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what text is shown in the AppBar title?",
-    "options": [
-      "Hello, Themed World!",
-      "Themed App",
-      "Flutter Theme",
-      "Dark Mode"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what text is displayed in the body?",
-    "options": [
-      "Themed App",
-      "Welcome",
-      "Hello, Themed World!",
-      "Theme Demo"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "According to the class definition, what does Theme extend?",
     "options": [
       "StatelessWidget",
@@ -130,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter of Theme indicates whether this is the MaterialApp’s theme?",
+    "que": "Which parameter of Theme indicates whether this is the MaterialApp\u2019s theme?",
     "options": [
       "data",
       "isMaterialAppTheme",

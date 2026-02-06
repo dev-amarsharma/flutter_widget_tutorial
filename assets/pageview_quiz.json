@@ -40,26 +40,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, how many pages are defined in the children list?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what text is shown on the first page?",
-    "options": [
-      "Page 0",
-      "First Page",
-      "Page 1",
-      "Welcome"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter controls the page position?",
     "options": [
       "scrollDirection",

@@ -50,16 +50,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what widget is used as the child of ScaleTransition?",
-    "options": [
-      "Text('Zoom')",
-      "Container()",
-      "Icon(Icons.zoom_in)",
-      "Image.asset('zoom.png')"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "ScaleTransition should typically be used together with which object for custom effects?",
     "options": [
       "Ticker",

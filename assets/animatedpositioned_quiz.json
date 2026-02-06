@@ -20,36 +20,6 @@
     "ans": "a"
   },
   {
-    "que": "In the example, inside which parent widget is AnimatedPositioned placed?",
-    "options": [
-      "Column",
-      "Row",
-      "Stack",
-      "ListView"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which property of AnimatedPositioned is toggled between 0 and 100?",
-    "options": [
-      "top",
-      "left",
-      "right",
-      "bottom"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the duration of the position change animation?",
-    "options": [
-      "Duration(milliseconds: 200)",
-      "Duration(milliseconds: 300)",
-      "Duration(milliseconds: 500)",
-      "Duration(seconds: 1)"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which group of properties in AnimatedPositioned represents the target positions?",
     "options": [
       "width and height",
@@ -88,7 +58,5 @@
       "curve"
     ],
     "ans": "c"
-  },
-  {
-    "que": "According to the quick tips, where should AnimatedPositioned be used?",
-    "options"
+  }
+]

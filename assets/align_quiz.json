@@ -80,26 +80,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which alignment value is used?",
-    "options": [
-      "Alignment.center",
-      "Alignment.topLeft",
-      "Alignment.bottomRight",
-      "Alignment.centerRight"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what widget is aligned by the Align widget?",
-    "options": [
-      "Container",
-      "Icon",
-      "Text('Bottom Right')",
-      "Row"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "According to the main parameters list, which of these is required conceptually even if not marked with 'required' in the signature?",
     "options": [
       "alignment and child",

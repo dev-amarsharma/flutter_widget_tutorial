@@ -1,5 +1,6 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'dart:io';
 
 /// Service class for managing banner ads
@@ -12,14 +13,13 @@ class BannerAdService {
   // iOS: 'ca-app-pub-3940256099942544/2934735716'
   static String get bannerAdUnitId {
     // In debug mode, you might want to use test ad unit IDs
-    // Uncomment the lines below for testing:
-    // if (kDebugMode) {
-    //   if (Platform.isAndroid) {
-    //     return 'ca-app-pub-3940256099942544/6300978111';
-    //   } else if (Platform.isIOS) {
-    //     return 'ca-app-pub-3940256099942544/2934735716';
-    //   }
-    // }
+    if (kDebugMode) {
+      if (Platform.isAndroid) {
+        return 'ca-app-pub-3940256099942544/6300978111';
+      } else if (Platform.isIOS) {
+        return 'ca-app-pub-3940256099942544/2934735716';
+      }
+    }
     return _bannerAdUnitId;
   }
 

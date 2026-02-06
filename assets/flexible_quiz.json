@@ -80,26 +80,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example Row, what are the flex values of the two Flexible widgets?",
-    "options": [
-      "1 and 1",
-      "2 and 1",
-      "1 and 2",
-      "2 and 2"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example Row, what colors are used for the two Container widgets inside Flexible?",
-    "options": [
-      "Red and green",
-      "Blue and green",
-      "Red and blue",
-      "Blue and yellow"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "If one Flexible has flex 2 and another has flex 1 in the same Row, how is horizontal space divided?",
     "options": [
       "Equally (1:1)",

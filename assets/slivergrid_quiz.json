@@ -50,36 +50,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which delegate is used to lazily build children for SliverGrid?",
-    "options": [
-      "SliverGridDelegate",
-      "SliverChildListDelegate",
-      "SliverChildBuilderDelegate",
-      "SliverFixedExtentList"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which grid delegate is used to define a fixed number of columns?",
-    "options": [
-      "SliverGridDelegateWithMaxCrossAxisExtent",
-      "SliverGridDelegateWithFixedCrossAxisCount",
-      "SliverGridDelegateFixed",
-      "SliverGridDelegateExtent"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the value of crossAxisCount in SliverGridDelegateWithFixedCrossAxisCount?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "What does the childCount parameter in SliverChildBuilderDelegate specify in the example?",
     "options": [
       "The maximum scroll extent",
@@ -160,16 +130,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what does each grid item widget contain?",
-    "options": [
-      "Only a Text widget",
-      "Only an Icon widget",
-      "A Container with blue color and a Text showing the item index",
-      "A Card with an image"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which of these is a good scenario for using SliverGrid?",
     "options": [
       "A simple 2x2 static grid on a non-scrollable page",
@@ -193,7 +153,7 @@
     "que": "Which statement best describes the role of gridDelegate in SliverGrid?",
     "options": [
       "It provides the children widgets",
-      "It controls the grid’s layout, such as number of columns and spacing",
+      "It controls the grid\u2019s layout, such as number of columns and spacing",
       "It handles scroll physics",
       "It manages state restoration"
     ],

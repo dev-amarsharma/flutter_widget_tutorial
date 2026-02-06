@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is the visual difference between Linear and Circular progress indicators?",
+    "options": [
+      "Linear is a bar, Circular is a spinner",
+      "Linear is blue, Circular is red",
+      "Linear is for iOS, Circular for Android",
+      "There is no difference"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do you represent a task with unknown duration?",
+    "options": [
+      "Set value to 0.0",
+      "Set value to null",
+      "Set value to 1.0",
+      "Use a different widget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property sets the color of the progress bar itself?",
+    "options": [
+      "backgroundColor",
+      "color",
+      "progressColor",
+      "barColor"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Can you control the height of the LinearProgressIndicator?",
+    "options": [
+      "No, it's fixed",
+      "Yes, using minHeight property (or wrapping in SizedBox)",
+      "Yes, using the height property",
+      "No, it fills the parent"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What represents 100% completion?",
+    "options": [
+      "100",
+      "1.0",
+      "true",
+      "done"
+    ],
+    "ans": "b"
+  }
+]

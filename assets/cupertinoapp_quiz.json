@@ -20,46 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is used as the home of CupertinoApp?",
-    "options": [
-      "Scaffold",
-      "CupertinoPageScaffold",
-      "CupertinoTabScaffold",
-      "MaterialApp"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which widget is used for the navigation bar?",
-    "options": [
-      "AppBar",
-      "CupertinoAppBar",
-      "CupertinoNavigationBar",
-      "NavigationToolbar"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what text is shown in the navigation bar title?",
-    "options": [
-      "Cupertino",
-      "Cupertino Home",
-      "Cupertino App",
-      "Hello, Cupertino!"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what text is displayed in the body of the page?",
-    "options": [
-      "Welcome",
-      "Hello, Cupertino!",
-      "Cupertino Page",
-      "Home"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of CupertinoApp specifies the widget for the default route?",
     "options": [
       "routes",
@@ -80,7 +40,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter of CupertinoApp defines the app’s visual styling?",
+    "que": "Which parameter of CupertinoApp defines the app\u2019s visual styling?",
     "options": [
       "color",
       "theme",
@@ -200,7 +160,7 @@
     "ans": "d"
   },
   {
-    "que": "Which parameter defines the app’s primary color on some platforms?",
+    "que": "Which parameter defines the app\u2019s primary color on some platforms?",
     "options": [
       "color",
       "theme",

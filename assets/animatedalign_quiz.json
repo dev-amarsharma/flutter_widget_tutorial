@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is the primary purpose of the AnimatedAlign widget?",
+    "options": [
+      "To animate the size of a child",
+      "To animate the alignment of a child within a parent",
+      "To fade a child in and out",
+      "To rotate a child"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter is required for AnimatedAlign?",
+    "options": [
+      "duration",
+      "curve",
+      "onEnd",
+      "child"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which parameter specifies the target alignment?",
+    "options": [
+      "alignment",
+      "position",
+      "offset",
+      "center"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens when the alignment property changes?",
+    "options": [
+      "The child snaps to the new position instantly",
+      "The child animates to the new position over the specified duration",
+      "The child fades out and reappears",
+      "Nothing happens until setState is called"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter allows defining the speed curve of the animation?",
+    "options": [
+      "duration",
+      "curve",
+      "alignment",
+      "onEnd"
+    ],
+    "ans": "b"
+  }
+]

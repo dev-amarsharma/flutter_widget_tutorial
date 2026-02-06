@@ -30,26 +30,6 @@
     "ans": "d"
   },
   {
-    "que": "In the example, what is the width of the Image.network?",
-    "options": [
-      "50",
-      "80",
-      "100",
-      "120"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the value of the fit parameter?",
-    "options": [
-      "BoxFit.fill",
-      "BoxFit.contain",
-      "BoxFit.cover",
-      "BoxFit.none"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter specifies the image to display when using the base Image constructor?",
     "options": [
       "imageProvider",
@@ -82,7 +62,7 @@
   {
     "que": "What does the fit parameter control?",
     "options": [
-      "The image’s file format",
+      "The image\u2019s file format",
       "How to inscribe the image into the allocated space",
       "The network loading strategy",
       "The alignment of the image"

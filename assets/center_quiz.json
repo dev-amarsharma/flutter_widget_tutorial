@@ -20,16 +20,6 @@
     "ans": "a"
   },
   {
-    "que": "In the example, which widget is centered?",
-    "options": [
-      "Icon",
-      "Button",
-      "Text('Centered Text')",
-      "Image"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of Center holds the widget to be centered?",
     "options": [
       "child",
@@ -50,7 +40,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter scales the width of the Center based on the child’s width?",
+    "que": "Which parameter scales the width of the Center based on the child\u2019s width?",
     "options": [
       "heightFactor",
       "widthFactor",
@@ -60,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter scales the height of the Center based on the child’s height?",
+    "que": "Which parameter scales the height of the Center based on the child\u2019s height?",
     "options": [
       "heightFactor",
       "widthFactor",
@@ -152,9 +142,9 @@
   {
     "que": "What does widthFactor do when set to 2.0 (conceptually)?",
     "options": [
-      "Makes Center take half the child’s width",
-      "Makes Center ignore the child’s width",
-      "Makes Center’s width equal to twice the child’s width",
+      "Makes Center take half the child\u2019s width",
+      "Makes Center ignore the child\u2019s width",
+      "Makes Center\u2019s width equal to twice the child\u2019s width",
       "Has no effect"
     ],
     "ans": "c"
@@ -162,9 +152,9 @@
   {
     "que": "What does heightFactor do when set to 0.5 (conceptually)?",
     "options": [
-      "Center’s height is half of the child’s height",
-      "Center’s height is double the child’s height",
-      "Center ignores the child’s height",
+      "Center\u2019s height is half of the child\u2019s height",
+      "Center\u2019s height is double the child\u2019s height",
+      "Center ignores the child\u2019s height",
       "Center expands to full screen height"
     ],
     "ans": "a"
@@ -180,7 +170,7 @@
     "ans": "b"
   },
   {
-    "que": "Which statement best describes Center’s alignment behavior?",
+    "que": "Which statement best describes Center\u2019s alignment behavior?",
     "options": [
       "Centers only horizontally",
       "Centers only vertically",

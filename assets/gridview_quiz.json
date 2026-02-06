@@ -20,36 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which constructor is used to create a GridView?",
-    "options": [
-      "GridView.builder",
-      "GridView.extent",
-      "GridView.custom",
-      "GridView.count"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example, what is the value of crossAxisCount?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which widget type is used as each child inside the GridView?",
-    "options": [
-      "Container",
-      "Card",
-      "ListTile",
-      "Image"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of GridView defines the list of widgets to display?",
     "options": [
       "children",

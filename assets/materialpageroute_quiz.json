@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which parameter is passed to MaterialPageRoute?",
-    "options": [
-      "onGenerateRoute",
-      "settings",
-      "builder",
-      "fullscreenDialog"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what does the builder return?",
-    "options": [
-      "PreviousPage()",
-      "HomePage()",
-      "NextPage()",
-      "DialogPage()"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of MaterialPageRoute is required?",
     "options": [
       "settings",
@@ -120,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter controls whether the route’s state is maintained when it is inactive?",
+    "que": "Which parameter controls whether the route\u2019s state is maintained when it is inactive?",
     "options": [
       "fullscreenDialog",
       "settings",

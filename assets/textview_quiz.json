@@ -30,7 +30,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter of Text controls the text’s visual appearance such as font, size, and color?",
+    "que": "Which parameter of Text controls the text\u2019s visual appearance such as font, size, and color?",
     "options": [
       "textAlign",
       "style",
@@ -48,56 +48,6 @@
       "textHeightBehavior"
     ],
     "ans": "a"
-  },
-  {
-    "que": "In the example, what string does the Text widget display?",
-    "options": [
-      "Hello World",
-      "Hello, Flutter!",
-      "Welcome to Flutter",
-      "Flutter Text"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the fontSize used in the TextStyle?",
-    "options": [
-      "16",
-      "18",
-      "20",
-      "24"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what color is applied to the text?",
-    "options": [
-      "Colors.blue",
-      "Colors.black",
-      "Colors.deepPurple",
-      "Colors.red"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which fontWeight is applied to the text?",
-    "options": [
-      "FontWeight.normal",
-      "FontWeight.w300",
-      "FontWeight.bold",
-      "FontWeight.w900"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the value of textAlign?",
-    "options": [
-      "TextAlign.left",
-      "TextAlign.right",
-      "TextAlign.start",
-      "TextAlign.center"
-    ],
-    "ans": "d"
   },
   {
     "que": "Which property of Text limits how many lines of text can be shown?",

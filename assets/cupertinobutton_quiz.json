@@ -20,16 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what text is shown inside the CupertinoButton?",
-    "options": [
-      "Click Me",
-      "Tap",
-      "Press Me",
-      "Submit"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of CupertinoButton defines the content displayed inside the button?",
     "options": [
       "onPressed",
@@ -94,7 +84,7 @@
     "options": [
       "Using it in iOS apps",
       "Giving it a child",
-      "Using it for Material apps—instead use ElevatedButton",
+      "Using it for Material apps\u2014instead use ElevatedButton",
       "Providing padding"
     ],
     "ans": "c"

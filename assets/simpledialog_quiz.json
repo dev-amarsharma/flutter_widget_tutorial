@@ -30,16 +30,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what does the title of the SimpleDialog display?",
-    "options": [
-      "Options",
-      "Select",
-      "Choose an option",
-      "Dialog Title"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which widget is used for each selectable option inside a SimpleDialog?",
     "options": [
       "ListTile",
@@ -150,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter controls the padding around the dialog’s content in SimpleDialog?",
+    "que": "Which parameter controls the padding around the dialog\u2019s content in SimpleDialog?",
     "options": [
       "titlePadding",
       "contentPadding",
@@ -200,7 +190,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter controls how the dialog’s content is clipped in SimpleDialog?",
+    "que": "Which parameter controls how the dialog\u2019s content is clipped in SimpleDialog?",
     "options": [
       "shape",
       "clipBehavior",

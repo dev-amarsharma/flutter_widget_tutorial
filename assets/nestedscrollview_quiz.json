@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is used inside headerSliverBuilder?",
-    "options": [
-      "AppBar",
-      "SliverList",
-      "SliverAppBar",
-      "SliverGrid"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is used as the body of NestedScrollView?",
-    "options": [
-      "CustomScrollView",
-      "SingleChildScrollView",
-      "ListView with Text items",
-      "GridView.builder"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of NestedScrollView builds the sliver headers?",
     "options": [
       "body",

@@ -50,36 +50,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, how many BottomNavigationBarItem entries are provided to CupertinoTabBar?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which icon is used for the 'Home' tab?",
-    "options": [
-      "CupertinoIcons.house",
-      "CupertinoIcons.home",
-      "CupertinoIcons.square",
-      "Icons.home"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which icon is used for the 'Settings' tab?",
-    "options": [
-      "CupertinoIcons.gear",
-      "CupertinoIcons.settings",
-      "CupertinoIcons.slider_horizontal_3",
-      "Icons.settings"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of CupertinoTabBar indicates the index of the selected tab?",
     "options": [
       "currentIndex",
@@ -110,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter controls the color of the selected tab’s icon and label?",
+    "que": "Which parameter controls the color of the selected tab\u2019s icon and label?",
     "options": [
       "inactiveColor",
       "backgroundColor",
@@ -174,7 +144,7 @@
     "options": [
       "Using icons",
       "Using text labels",
-      "Using for Material apps—use BottomNavigationBar instead",
+      "Using for Material apps\u2014use BottomNavigationBar instead",
       "Using backgroundColor"
     ],
     "ans": "c"

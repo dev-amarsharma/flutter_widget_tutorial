@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which EdgeInsets constructor is used?",
-    "options": [
-      "EdgeInsets.only",
-      "EdgeInsets.symmetric",
-      "EdgeInsets.all",
-      "EdgeInsets.fromLTRB"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the padding value applied on all sides?",
-    "options": [
-      "8",
-      "12",
-      "16",
-      "20"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "What text is used as the child in the example?",
     "options": [
       "Text('Text')",

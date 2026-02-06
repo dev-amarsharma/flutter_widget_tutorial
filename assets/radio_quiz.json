@@ -20,26 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what is the value passed to the Radio widget?",
-    "options": [
-      "0",
-      "1",
-      "selectedValue",
-      "null"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which variable represents the currently selected value?",
-    "options": [
-      "value",
-      "onChanged",
-      "groupValue",
-      "activeColor"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter represents the value of an individual Radio button?",
     "options": [
       "groupValue",

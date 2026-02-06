@@ -90,36 +90,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget is used as the background of the Stack?",
-    "options": [
-      "Icon",
-      "Positioned",
-      "Container with width 100, height 100, and red color",
-      "Text widget"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which widget is used to position the star icon inside the Stack?",
-    "options": [
-      "Align",
-      "Padding",
-      "Positioned",
-      "Center"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, where is the Positioned icon placed relative to the Stack?",
-    "options": [
-      "top: 0, left: 0",
-      "top: 10, left: 10",
-      "bottom: 10, right: 10",
-      "center of the Stack"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which of the following is a main parameter of the Stack widget?",
     "options": [
       "spacing",
@@ -163,7 +133,7 @@
     "que": "What should you not forget when using Stack with children that may extend beyond its bounds?",
     "options": [
       "To always center all children",
-      "To handle overflow if children exceed the Stack’s bounds",
+      "To handle overflow if children exceed the Stack\u2019s bounds",
       "To wrap Stack with ListView",
       "To use only one child"
     ],

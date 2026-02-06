@@ -1,4 +1,6 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:flutter/foundation.dart';
+import 'dart:io';
 
 /// Service class for managing rewarded ads
 /// Follows AdMob policies for rewarded ad implementation
@@ -15,8 +17,13 @@ class RewardedAdService {
   // Ad unit ID getter
   static String get rewardedAdUnitId {
     // For testing, you can temporarily replace with test IDs:
-    // Android: 'ca-app-pub-3940256099942544/5224354917'
-    // iOS: 'ca-app-pub-3940256099942544/1712485313'
+    if (kDebugMode) {
+      if (Platform.isAndroid) {
+        return 'ca-app-pub-3940256099942544/5224354917';
+      } else if (Platform.isIOS) {
+        return 'ca-app-pub-3940256099942544/1712485313';
+      }
+    }
     return _rewardedAdUnitId;
   }
 

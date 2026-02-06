@@ -12,7 +12,7 @@
   {
     "que": "In a typical setup, what does TabBar display?",
     "options": [
-      "Only the current tab’s content",
+      "Only the current tab\u2019s content",
       "A list of pages",
       "The tabs that the user can tap",
       "A navigation drawer"
@@ -36,56 +36,6 @@
       "DefaultTabController",
       "Navigator",
       "SingleChildScrollView"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the length passed to DefaultTabController?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, how many Tab widgets are provided to TabBar?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what text labels are used for the tabs?",
-    "options": [
-      "First and Second",
-      "Home and Settings",
-      "Tab 1 and Tab 2",
-      "Page A and Page B"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which widget wraps TabBarView to take remaining space?",
-    "options": [
-      "Container",
-      "SizedBox",
-      "Expanded",
-      "Align"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what widgets are used as the children of TabBarView?",
-    "options": [
-      "Two Icon widgets",
-      "Two Text widgets: 'Content 1' and 'Content 2'",
-      "Two ListView widgets",
-      "Two Column widgets"
     ],
     "ans": "b"
   },
@@ -220,7 +170,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter controls the color of the selected tab’s label in TabBar?",
+    "que": "Which parameter controls the color of the selected tab\u2019s label in TabBar?",
     "options": [
       "unselectedLabelColor",
       "indicatorColor",

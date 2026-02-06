@@ -80,7 +80,7 @@
     "ans": "a"
   },
   {
-    "que": "Which ShapeBorder is suggested to round the Card’s corners?",
+    "que": "Which ShapeBorder is suggested to round the Card\u2019s corners?",
     "options": [
       " StadiumBorder",
       "RoundedRectangleBorder",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "Which property controls how the Card’s contents are clipped?",
+    "que": "Which property controls how the Card\u2019s contents are clipped?",
     "options": [
       "shape",
       "elevation",
@@ -128,46 +128,6 @@
       "TextField or TextFormField"
     ],
     "ans": "b"
-  },
-  {
-    "que": "In the example, what is the elevation set to?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "8"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which border radius is used on the Card shape?",
-    "options": [
-      "8",
-      "10",
-      "12",
-      "16"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which widget is used to add inner spacing inside the Card?",
-    "options": [
-      "Container",
-      "Padding",
-      "SizedBox",
-      "Align"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the padding value applied inside the Card?",
-    "options": [
-      "EdgeInsets.all(8.0)",
-      "EdgeInsets.all(12.0)",
-      "EdgeInsets.all(16.0)",
-      "EdgeInsets.all(24.0)"
-    ],
-    "ans": "c"
   },
   {
     "que": "What text is used as the title inside the example Card?",

@@ -50,26 +50,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what opacity value is used?",
-    "options": [
-      "0.2",
-      "0.5",
-      "0.8",
-      "1.0"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what text is displayed by the child?",
-    "options": [
-      "Invisible",
-      "Fully visible",
-      "Half visible",
-      "Opacity demo"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Opacity is described as which kind of widget in the class definition?",
     "options": [
       "StatefulWidget",
@@ -164,7 +144,7 @@
     "options": [
       "To permanently hide a widget without rebuilding",
       "To visually downplay or dim a UI element",
-      "To change the widget’s layout constraints",
+      "To change the widget\u2019s layout constraints",
       "To manage app routes"
     ],
     "ans": "b"
@@ -178,7 +158,5 @@
       "A ListView"
     ],
     "ans": "c"
-  },
-  {
-    "que": "Which parameter in the constructor has a default value of false?",
-    "options":
+  }
+]

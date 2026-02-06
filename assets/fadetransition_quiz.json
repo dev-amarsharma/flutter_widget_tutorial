@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is used as the child of FadeTransition?",
-    "options": [
-      "Icon",
-      "Container",
-      "Text('Fade')",
-      "Image"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of FadeTransition is required and controls the opacity?",
     "options": [
       "child",

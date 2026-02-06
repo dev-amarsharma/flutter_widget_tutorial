@@ -30,26 +30,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which route class is used with Navigator.push?",
-    "options": [
-      "CupertinoPageRoute",
-      "PageRouteBuilder",
-      "MaterialPageRoute",
-      "ModalRoute"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what widget is navigated to?",
-    "options": [
-      "HomePage()",
-      "PreviousPage()",
-      "NextPage()",
-      "DialogPage()"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of Navigator is used for declarative navigation?",
     "options": [
       "routes",

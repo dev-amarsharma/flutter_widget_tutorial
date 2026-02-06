@@ -20,26 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which gesture callback is implemented?",
-    "options": [
-      "onDoubleTap",
-      "onLongPress",
-      "onPanUpdate",
-      "onTap"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example, which widget is wrapped by GestureDetector?",
-    "options": [
-      "Text",
-      "Icon",
-      "Container",
-      "Image"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "What color is the Container in the example GestureDetector?",
     "options": [
       "Colors.blue",

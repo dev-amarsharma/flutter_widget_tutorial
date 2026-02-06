@@ -30,27 +30,7 @@
     "ans": "c"
   },
   {
-    "que": "In the example, how many children does the Column have?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which widget is used first inside the Column?",
-    "options": [
-      "Text('Starred')",
-      "SizedBox(height: 8)",
-      "Icon(Icons.star, color: Colors.orange)",
-      "Container"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which widget provides vertical spacing between the icon and text?",
+    "que": "Which widget commonly provides vertical spacing between widgets?",
     "options": [
       "Padding",
       "Spacer",
@@ -58,16 +38,6 @@
       "Divider"
     ],
     "ans": "c"
-  },
-  {
-    "que": "In the example, what is the value of mainAxisAlignment?",
-    "options": [
-      "MainAxisAlignment.start",
-      "MainAxisAlignment.center",
-      "MainAxisAlignment.end",
-      "MainAxisAlignment.spaceBetween"
-    ],
-    "ans": "b"
   },
   {
     "que": "Which parameter of Column holds the list of widgets to display vertically?",

@@ -30,46 +30,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget is used as the child of ColorFiltered?",
-    "options": [
-      "Container",
-      "Icon",
-      "Image.asset",
-      "Text"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which image asset path is used?",
-    "options": [
-      "assets/image.png",
-      "assets/sample.png",
-      "assets/picture.png",
-      "assets/photo.jpg"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which Color is used in ColorFilter.mode?",
-    "options": [
-      "Colors.black",
-      "Colors.white",
-      "Colors.blue",
-      "Colors.grey"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example, which BlendMode is used?",
-    "options": [
-      "BlendMode.multiply",
-      "BlendMode.overlay",
-      "BlendMode.saturation",
-      "BlendMode.screen"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "According to the class definition, which class does ColorFiltered extend?",
     "options": [
       "StatelessWidget",
@@ -170,7 +130,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter in the example directly determines how the color and the child’s content are combined?",
+    "que": "Which parameter in the example directly determines how the color and the child\u2019s content are combined?",
     "options": [
       "colorFilter",
       "BlendMode.saturation",

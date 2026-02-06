@@ -30,36 +30,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which color is used in the DefaultTextStyle?",
-    "options": [
-      "Colors.blue",
-      "Colors.green",
-      "Colors.deepOrange",
-      "Colors.black"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what fontSize is used in the DefaultTextStyle?",
-    "options": [
-      "14",
-      "16",
-      "18",
-      "20"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example, what fontWeight is set in the DefaultTextStyle?",
-    "options": [
-      "FontWeight.normal",
-      "FontWeight.w300",
-      "FontWeight.bold",
-      "FontWeight.w900"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which widget wraps the Text widgets in the example?",
     "options": [
       "Row",
@@ -376,16 +346,6 @@
       "A widget that defines the default text style for the subtree below it",
       "A widget that manages text input focus",
       "A widget that handles HTTP requests"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, how many Text widgets are shown as children under DefaultTextStyle?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
     ],
     "ans": "b"
   },

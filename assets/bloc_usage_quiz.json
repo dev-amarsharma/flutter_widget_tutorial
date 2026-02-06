@@ -60,16 +60,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what is the abstract base class for counter events?",
-    "options": [
-      "CounterState",
-      "CounterBloc",
-      "CounterEvent",
-      "BlocEvent"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which event class is used to represent an increment action?",
     "options": [
       "Increase",
@@ -178,16 +168,6 @@
       "provider"
     ],
     "ans": "b"
-  },
-  {
-    "que": "In the example, which widget is used to rebuild the UI in response to CounterBloc state changes?",
-    "options": [
-      "StreamBuilder",
-      "FutureBuilder",
-      "BlocBuilder<CounterBloc, CounterState>",
-      "AnimatedBuilder"
-    ],
-    "ans": "c"
   },
   {
     "que": "Inside BlocBuilder, how is the current state accessed?",

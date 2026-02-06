@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which property is toggled between 1.0 and 0.0?",
-    "options": [
-      "width",
-      "opacity",
-      "height",
-      "curve"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the duration of the fade animation?",
-    "options": [
-      "Duration(milliseconds: 200)",
-      "Duration(milliseconds: 300)",
-      "Duration(milliseconds: 500)",
-      "Duration(seconds: 1)"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of AnimatedOpacity represents the target opacity and is required?",
     "options": [
       "curve",

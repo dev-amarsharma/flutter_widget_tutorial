@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which parameter is passed to CustomPaint?",
-    "options": [
-      "child: MyPainter()",
-      "painter: MyPainter()",
-      "foregroundPainter: MyPainter()",
-      "size: MyPainter()"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of CustomPaint specifies the custom painter for the main painting?",
     "options": [
       "foregroundPainter",
@@ -184,7 +174,7 @@
     "options": [
       "It replaces the canvas completely",
       "It is painted on top of the painters",
-      "It is placed beneath the painters’ drawing",
+      "It is placed beneath the painters\u2019 drawing",
       "It must be a Container"
     ],
     "ans": "c"

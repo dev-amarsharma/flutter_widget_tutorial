@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what color is used for the Divider?",
-    "options": [
-      "Colors.black",
-      "Colors.blue",
-      "Colors.grey",
-      "Colors.red"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter controls the thickness of the line in Divider?",
     "options": [
       "height",
@@ -158,26 +148,6 @@
       "color"
     ],
     "ans": "a"
-  },
-  {
-    "que": "In the example, what is the height value of the Divider?",
-    "options": [
-      "8",
-      "12",
-      "16",
-      "24"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the thickness value of the Divider?",
-    "options": [
-      "0.5",
-      "1",
-      "2",
-      "4"
-    ],
-    "ans": "b"
   },
   {
     "que": "Which of the following is NOT a main parameter of Divider listed in the file?",

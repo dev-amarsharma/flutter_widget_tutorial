@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which parameter is used to show 'Title' in the AppBar?",
-    "options": [
-      "leading",
-      "title",
-      "actions",
-      "bottom"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which widget is used inside actions?",
-    "options": [
-      "Text('Settings')",
-      "Icon(Icons.settings)",
-      "IconButton",
-      "PopupMenuButton"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which AppBar parameter displays widgets at the end (right side in LTR) of the bar?",
     "options": [
       "leading",
@@ -180,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter can be used to place a widget behind the AppBar’s toolbar and tab bar?",
+    "que": "Which parameter can be used to place a widget behind the AppBar\u2019s toolbar and tab bar?",
     "options": [
       "flexibleSpace",
       "bottom",

@@ -10,26 +10,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which class is used to define the decoration for DecoratedBox?",
-    "options": [
-      "Decoration",
-      "ShapeDecoration",
-      "BoxDecoration",
-      "ContainerDecoration"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what color is used in the BoxDecoration?",
-    "options": [
-      "Colors.red",
-      "Colors.green",
-      "Colors.blue",
-      "Colors.black"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which widget is used inside DecoratedBox in the example to provide inner spacing?",
     "options": [
       "Container",
@@ -114,7 +94,7 @@
     "options": [
       "Using gradients",
       "Using borders",
-      "Using for simple color backgrounds—use Container instead",
+      "Using for simple color backgrounds\u2014use Container instead",
       "Using shadows"
     ],
     "ans": "c"
@@ -148,16 +128,6 @@
       "DecorationPosition.above"
     ],
     "ans": "b"
-  },
-  {
-    "que": "In the example, which property is used to round the corners of the box?",
-    "options": [
-      "shape",
-      "border",
-      "borderRadius",
-      "clipBehavior"
-    ],
-    "ans": "c"
   },
   {
     "que": "What is the padding value used in the example inside DecoratedBox?",

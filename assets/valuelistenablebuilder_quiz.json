@@ -20,36 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what generic type is used with ValueListenableBuilder?",
-    "options": [
-      "String",
-      "bool",
-      "double",
-      "int"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example, which parameter specifies the ValueListenable to listen to?",
-    "options": [
-      "builder",
-      "child",
-      "valueListenable",
-      "notifier"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what does the builder return?",
-    "options": [
-      "A Container with padding",
-      "A Text widget showing 'Value: ' followed by the current value",
-      "An Icon widget",
-      "A ListView of values"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of ValueListenableBuilder is required and provides the build logic?",
     "options": [
       "child",
@@ -93,7 +63,7 @@
     "que": "Which of the following is listed as something to avoid with ValueListenableBuilder?",
     "options": [
       "Using it with ValueNotifier",
-      "Using it for complex state—prefer a state management package",
+      "Using it for complex state\u2014prefer a state management package",
       "Using it for small counters",
       "Listening to a single value"
     ],
@@ -123,7 +93,7 @@
     "que": "Which of these is a good example use case for ValueListenableBuilder?",
     "options": [
       "Rebuilding a Text widget whenever a counter ValueNotifier changes",
-      "Managing an entire app’s authentication state",
+      "Managing an entire app\u2019s authentication state",
       "Rendering large paginated lists from the network",
       "Handling complex form validation across multiple pages"
     ],

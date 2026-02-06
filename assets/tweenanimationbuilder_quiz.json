@@ -20,46 +20,6 @@
     "ans": "a"
   },
   {
-    "que": "In the example, which type parameter is used with TweenAnimationBuilder?",
-    "options": [
-      "int",
-      "double",
-      "String",
-      "Color"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what are the begin and end values of the Tween?",
-    "options": [
-      "begin: 1, end: 0",
-      "begin: 0, end: 1",
-      "begin: -1, end: 1",
-      "begin: 0.5, end: 1"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which widget’s property is being animated using the Tween value?",
-    "options": [
-      "Container height",
-      "Padding",
-      "Opacity opacity",
-      "Border radius"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is used as the child of TweenAnimationBuilder?",
-    "options": [
-      "Icon(Icons.star)",
-      "Text('Tween')",
-      "Container()",
-      "SizedBox()"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of TweenAnimationBuilder specifies the Tween to animate?",
     "options": [
       "curve",

@@ -30,16 +30,6 @@
     "ans": "d"
   },
   {
-    "que": "In the example, which widget is used as the child of SingleChildScrollView?",
-    "options": [
-      "Row",
-      "ListView",
-      "Column",
-      "GridView"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter defines the axis along which the child scrolls?",
     "options": [
       "controller",
@@ -103,7 +93,7 @@
     "que": "Which of the following is listed as something to avoid with SingleChildScrollView?",
     "options": [
       "Using it with a Column",
-      "Using for large lists—use ListView or GridView instead",
+      "Using for large lists\u2014use ListView or GridView instead",
       "Using a scroll controller",
       "Using vertical scrolling"
     ],

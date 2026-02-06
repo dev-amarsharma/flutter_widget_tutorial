@@ -20,16 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which class extends StatefulWidget?",
-    "options": [
-      "State<MyWidget>",
-      "_MyWidgetState",
-      "MyWidget",
-      "WidgetState"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which method must a StatefulWidget override to provide its state?",
     "options": [
       "build",
@@ -38,16 +28,6 @@
       "createState"
     ],
     "ans": "d"
-  },
-  {
-    "que": "In the example, what is the name of the State class associated with MyWidget?",
-    "options": [
-      "MyWidgetState",
-      "_MyWidgetState",
-      "StateMyWidget",
-      "_StateMyWidget"
-    ],
-    "ans": "b"
   },
   {
     "que": "Where is the mutable state (counter variable) stored in the example?",

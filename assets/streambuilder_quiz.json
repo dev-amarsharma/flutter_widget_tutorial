@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What does StreamBuilder use to trigger a rebuild?",
+    "options": [
+      "Future completion",
+      "Events from a Stream",
+      "User gestures",
+      "Timer ticks"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property specifies the source of events?",
+    "options": [
+      "source",
+      "future",
+      "stream",
+      "flow"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What happens if you don't provide initialData?",
+    "options": [
+      "The builder is not called until the first event",
+      "The initial snapshot has no data and is in waiting state",
+      "The app crashes",
+      "It uses a default null value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which snapshot property checks for errors?",
+    "options": [
+      "hasError",
+      "isError",
+      "errorState",
+      "failed"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the typical use case for StreamBuilder?",
+    "options": [
+      "One-time data fetching",
+      "Real-time data updates",
+      "Static layout building",
+      "Page navigation"
+    ],
+    "ans": "b"
+  }
+]

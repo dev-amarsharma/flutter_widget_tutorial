@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what text is displayed on the ElevatedButton?",
-    "options": [
-      "Submit",
-      "Click",
-      "Press",
-      "Click Me"
-    ],
-    "ans": "d"
-  },
-  {
     "que": "Which parameter of ElevatedButton is required and defines the callback when the button is pressed?",
     "options": [
       "child",

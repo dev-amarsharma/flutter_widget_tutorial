@@ -20,16 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what widget is wrapped by Tooltip as its child?",
-    "options": [
-      "Text('Info')",
-      "Icon(Icons.info)",
-      "Container()",
-      "Button()"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of Tooltip is required and holds the text to display?",
     "options": [
       "child",

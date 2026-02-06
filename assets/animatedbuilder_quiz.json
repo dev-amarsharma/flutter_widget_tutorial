@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is returned inside the builder of AnimatedBuilder?",
-    "options": [
-      "FadeTransition",
-      "ScaleTransition",
-      "Transform.rotate",
-      "SlideTransition"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is being animated by Transform.rotate?",
-    "options": [
-      "A Text widget",
-      "A Container",
-      "An Icon(Icons.refresh)",
-      "An Image"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of AnimatedBuilder specifies the animation to listen to?",
     "options": [
       "builder",
@@ -180,26 +160,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which field of the AnimationController is used to compute the rotation angle?",
-    "options": [
-      "_controller.status",
-      "_controller.reverseDuration",
-      "_controller.value",
-      "_controller.upperBound"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what constant factor is multiplied with _controller.value?",
-    "options": [
-      "3.14",
-      "2 * 3.14",
-      "0.5 * 3.14",
-      "4 * 3.14"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which of the following best describes how AnimatedBuilder improves performance?",
     "options": [
       "By automatically caching all widgets",
@@ -265,7 +225,7 @@
       "Use for complex, custom animations",
       "Combine with AnimationController for full control",
       "Use for simple property animations only",
-      "Don’t forget to dispose the AnimationController"
+      "Don\u2019t forget to dispose the AnimationController"
     ],
     "ans": "c"
   },
@@ -280,7 +240,7 @@
     "ans": "c"
   },
   {
-    "que": "Which of the following best summarizes AnimatedBuilder’s role?",
+    "que": "Which of the following best summarizes AnimatedBuilder\u2019s role?",
     "options": [
       "It is a high-level convenience widget for simple size or color changes only",
       "It is a low-level building block for custom animations that rebuilds using a builder callback",

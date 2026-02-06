@@ -63,6 +63,7 @@ class _QuizScreenState extends State<QuizScreen> {
   int _timeRemaining = 30;
   bool _isAnswered = false;
   bool _isPaused = false;
+  int? _selectedOptionIndex;
 
   @override
   void initState() {
@@ -85,6 +86,7 @@ class _QuizScreenState extends State<QuizScreen> {
   void _startTimer() {
     _timeRemaining = widget.timerDurationSeconds;
     _isAnswered = false;
+    _selectedOptionIndex = null;
     
     _timer?.cancel();
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
@@ -123,6 +125,7 @@ class _QuizScreenState extends State<QuizScreen> {
     
     _timer?.cancel();
     _isAnswered = true;
+    _selectedOptionIndex = selectedIndex;
     
     final question = _selectedQuestions[_currentQuestionIndex];
     final isCorrect = selectedIndex == question.ans;
@@ -931,6 +934,7 @@ class _QuizScreenState extends State<QuizScreen> {
                                 index: index,
                                 correctIndex: question.ans,
                                 isAnswered: _isAnswered,
+                                selectedOptionIndex: _selectedOptionIndex,
                                 onTap: () => _handleAnswer(index),
                               ),
                             );
@@ -951,11 +955,12 @@ class _QuizScreenState extends State<QuizScreen> {
 
 /// Answer option button widget
 /// Shows visual feedback (green for correct, red for wrong)
-class _AnswerButton extends StatefulWidget {
+class _AnswerButton extends StatelessWidget {
   final String option;
   final int index;
   final int correctIndex;
   final bool isAnswered;
+  final int? selectedOptionIndex;
   final VoidCallback onTap;
 
   const _AnswerButton({
@@ -963,15 +968,9 @@ class _AnswerButton extends StatefulWidget {
     required this.index,
     required this.correctIndex,
     required this.isAnswered,
+    required this.selectedOptionIndex,
     required this.onTap,
   });
-
-  @override
-  State<_AnswerButton> createState() => _AnswerButtonState();
-}
-
-class _AnswerButtonState extends State<_AnswerButton> {
-  bool _isSelected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -980,10 +979,12 @@ class _AnswerButtonState extends State<_AnswerButton> {
     late Color textColor;
     late Color borderColor;
     IconData? icon;
+
+    final bool isSelected = index == selectedOptionIndex;
     
-    if (widget.isAnswered && _isSelected) {
+    if (isAnswered && isSelected) {
       // User selected this option
-      if (widget.index == widget.correctIndex) {
+      if (index == correctIndex) {
         backgroundColor = Colors.green.shade500;
         textColor = Colors.white;
         borderColor = Colors.green.shade700;
@@ -994,7 +995,7 @@ class _AnswerButtonState extends State<_AnswerButton> {
         borderColor = Colors.red.shade700;
         icon = Icons.cancel;
       }
-    } else if (widget.isAnswered && widget.index == widget.correctIndex) {
+    } else if (isAnswered && index == correctIndex) {
       // Show correct answer in green
       backgroundColor = Colors.green.shade500;
       textColor = Colors.white;
@@ -1010,12 +1011,12 @@ class _AnswerButtonState extends State<_AnswerButton> {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        boxShadow: widget.isAnswered
+        boxShadow: isAnswered
             ? [
                 BoxShadow(
-                  color: (widget.index == widget.correctIndex
+                  color: (index == correctIndex
                           ? Colors.green
-                          : _isSelected
+                          : isSelected
                               ? Colors.red
                               : Colors.grey)
                       .withOpacity(0.3),
@@ -1035,10 +1036,7 @@ class _AnswerButtonState extends State<_AnswerButton> {
         color: backgroundColor,
         borderRadius: BorderRadius.circular(16),
         child: InkWell(
-          onTap: widget.isAnswered ? null : () {
-            setState(() => _isSelected = true);
-            widget.onTap();
-          },
+          onTap: isAnswered ? null : onTap,
           borderRadius: BorderRadius.circular(16),
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
@@ -1056,18 +1054,18 @@ class _AnswerButtonState extends State<_AnswerButton> {
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
-                    color: widget.isAnswered
+                    color: isAnswered
                         ? textColor.withOpacity(0.2)
                         : Theme.of(context).colorScheme.primary.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                     child: Text(
-                      optionLetters[widget.index],
+                      optionLetters[index],
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: widget.isAnswered
+                        color: isAnswered
                             ? textColor
                             : Theme.of(context).colorScheme.primary,
                       ),
@@ -1078,7 +1076,7 @@ class _AnswerButtonState extends State<_AnswerButton> {
                 // Option text
                 Expanded(
                   child: Text(
-                    widget.option,
+                    option,
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -1088,7 +1086,7 @@ class _AnswerButtonState extends State<_AnswerButton> {
                   ),
                 ),
                 // Icon indicator
-                if (icon != null && widget.isAnswered)
+                if (icon != null && isAnswered)
                   Padding(
                     padding: const EdgeInsets.only(left: 12),
                     child: Icon(

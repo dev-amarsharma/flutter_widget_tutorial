@@ -70,26 +70,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what is the value of axisDirection?",
-    "options": [
-      "AxisDirection.up",
-      "AxisDirection.left",
-      "AxisDirection.right",
-      "AxisDirection.down"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example viewportBuilder, which widget is returned?",
-    "options": [
-      "SingleChildScrollView",
-      "GridView",
-      "ListView",
-      "PageView"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which of the following parameters of Scrollable is required?",
     "options": [
       "controller and physics",

@@ -20,16 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what is the initial value of the CupertinoSwitch?",
-    "options": [
-      "false",
-      "true",
-      "null",
-      "0"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of CupertinoSwitch indicates whether the switch is on or off?",
     "options": [
       "onChanged",
@@ -94,7 +84,7 @@
     "options": [
       "Using it in Cupertino apps",
       "Giving it an activeColor",
-      "Using for Material apps—use Switch instead",
+      "Using for Material apps\u2014use Switch instead",
       "Using it with ListTile"
     ],
     "ans": "c"
@@ -140,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter can be used to customize the color of the switch’s track?",
+    "que": "Which parameter can be used to customize the color of the switch\u2019s track?",
     "options": [
       "activeColor",
       "thumbColor",
@@ -150,7 +140,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter can be used to customize the color of the switch’s thumb?",
+    "que": "Which parameter can be used to customize the color of the switch\u2019s thumb?",
     "options": [
       "activeColor",
       "thumbColor",

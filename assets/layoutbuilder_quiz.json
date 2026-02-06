@@ -40,16 +40,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what is displayed by the Text widget?",
-    "options": [
-      "The min height",
-      "The max width",
-      "The device orientation",
-      "The screen density"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "What is the type of the builder property in the LayoutBuilder class definition?",
     "options": [
       "Widget Function(BuildContext)",
@@ -106,16 +96,6 @@
       "InheritedWidget",
       "StatelessWidget",
       "RenderObjectWidget"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the name of the second parameter in the builder function?",
-    "options": [
-      "context",
-      "size",
-      "constraints",
-      "settings"
     ],
     "ans": "c"
   },

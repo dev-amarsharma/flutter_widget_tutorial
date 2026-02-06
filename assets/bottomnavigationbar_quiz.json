@@ -10,36 +10,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, how many BottomNavigationBarItem entries are defined?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which icon is used for the 'Home' item?",
-    "options": [
-      "Icons.dashboard",
-      "Icons.home",
-      "Icons.house",
-      "Icons.start"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which label is paired with Icons.settings?",
-    "options": [
-      "Options",
-      "Config",
-      "Settings",
-      "Tools"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of BottomNavigationBar holds the list of navigation items and is required?",
     "options": [
       "currentIndex",

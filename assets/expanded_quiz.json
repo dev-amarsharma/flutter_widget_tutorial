@@ -60,16 +60,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example Row, how many Expanded children are used?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "What text is displayed in the first Expanded widget in the example Row?",
     "options": [
       "Right",

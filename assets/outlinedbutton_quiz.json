@@ -40,26 +40,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what widget is used as the child of OutlinedButton?",
-    "options": [
-      "Icon",
-      "Row",
-      "Text('Outlined')",
-      "Column"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is passed to onPressed?",
-    "options": [
-      "null",
-      "A non-empty function body",
-      "() {}",
-      "print('Pressed')"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter customizes the appearance of the OutlinedButton?",
     "options": [
       "focusNode",

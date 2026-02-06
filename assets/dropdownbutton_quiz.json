@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what is the generic type of DropdownButton?",
-    "options": [
-      "int",
-      "double",
-      "String",
-      "bool"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which value is initially selected in the DropdownButton?",
-    "options": [
-      "null",
-      "One",
-      "Two",
-      "Three"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which widget is used for each item inside DropdownButton?",
     "options": [
       "ListTile",

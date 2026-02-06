@@ -30,36 +30,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, what is the generic type of PopupMenuButton?",
-    "options": [
-      "int",
-      "bool",
-      "String",
-      "double"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, how many PopupMenuItem entries are built?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what are the values used for the two menu items?",
-    "options": [
-      "'A' and 'B'",
-      "'One' and 'Two'",
-      "'Yes' and 'No'",
-      "'Edit' and 'Delete'"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter is called when a menu item is selected?",
     "options": [
       "onCanceled",

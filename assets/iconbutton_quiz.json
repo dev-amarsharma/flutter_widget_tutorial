@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which icon is used inside IconButton?",
-    "options": [
-      "Icons.home",
-      "Icons.settings",
-      "Icons.favorite",
-      "Icons.search"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of IconButton specifies the icon to display?",
     "options": [
       "child",

@@ -40,36 +40,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which icon is used?",
-    "options": [
-      "Icons.home",
-      "Icons.star",
-      "Icons.favorite",
-      "Icons.settings"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what color is the Icon?",
-    "options": [
-      "Colors.blue",
-      "Colors.green",
-      "Colors.red",
-      "Colors.black"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the size of the Icon?",
-    "options": [
-      "16",
-      "24",
-      "32",
-      "48"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of Icon is required?",
     "options": [
       "size",

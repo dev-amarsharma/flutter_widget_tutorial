@@ -20,16 +20,6 @@
     "ans": "a"
   },
   {
-    "que": "In the example, what widget is returned inside the Builder?",
-    "options": [
-      "Container",
-      "Scaffold",
-      "Text('Inside Builder')",
-      "Column"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of Builder is required?",
     "options": [
       "key",
@@ -84,7 +74,7 @@
     "options": [
       "Always wrap them in Builder",
       "Use Builder only for simple layouts",
-      "Don’t overuse Builder for simple layouts",
+      "Don\u2019t overuse Builder for simple layouts",
       "Avoid layouts when using Builder"
     ],
     "ans": "c"
@@ -126,16 +116,6 @@
       "To access an inherited widget like Scaffold or Theme at a different position",
       "To rebuild the whole app",
       "To access platform channels"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which named parameter is passed to the Builder constructor?",
-    "options": [
-      "child",
-      "builder",
-      "context",
-      "widget"
     ],
     "ans": "b"
   },

@@ -30,16 +30,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which icon is used inside the FloatingActionButton?",
-    "options": [
-      "Icons.edit",
-      "Icons.add",
-      "Icons.delete",
-      "Icons.home"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of FloatingActionButton defines the callback when the button is pressed?",
     "options": [
       "child",

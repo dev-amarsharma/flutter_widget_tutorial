@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widgets are used as children of Wrap?",
-    "options": [
-      "Text widgets only",
-      "Container widgets",
-      "Chip widgets with text labels",
-      "IconButton widgets"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of Wrap holds the list of widgets to display?",
     "options": [
       "direction",

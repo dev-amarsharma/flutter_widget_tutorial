@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is used as the child of Drawer?",
-    "options": [
-      "Column",
-      "Row",
-      "ListView",
-      "GridView"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which widget is used to represent a single navigation item?",
-    "options": [
-      "TextButton",
-      "ListTile",
-      "IconButton",
-      "CheckboxListTile"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "What text is shown inside the ListTile in the example Drawer?",
     "options": [
       "Home",

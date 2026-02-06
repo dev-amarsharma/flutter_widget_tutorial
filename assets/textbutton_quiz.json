@@ -30,22 +30,12 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter of TextButton is required and represents the button’s child widget?",
+    "que": "Which parameter of TextButton is required and represents the button\u2019s child widget?",
     "options": [
       "style",
       "child",
       "focusNode",
       "clipBehavior"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what widget is used as the child of TextButton?",
-    "options": [
-      "Icon(Icons.add)",
-      "Text('Text Button')",
-      "Row with Icon and Text",
-      "Container()"
     ],
     "ans": "b"
   },
@@ -84,7 +74,7 @@
     "options": [
       "Using style to customize it",
       "Using it for secondary actions",
-      "Using for primary actions—prefer ElevatedButton instead",
+      "Using for primary actions\u2014prefer ElevatedButton instead",
       "Using icons inside the child"
     ],
     "ans": "c"

@@ -30,16 +30,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget directly wraps the Text inside the Dialog?",
-    "options": [
-      "Container",
-      "Center",
-      "Padding",
-      "Align"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "What text is shown inside the example Dialog?",
     "options": [
       "Alert",

@@ -30,26 +30,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget wraps the TextFormField and ElevatedButton inside the Form?",
-    "options": [
-      "Row",
-      "Column",
-      "ListView",
-      "Stack"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what happens when the ElevatedButton is pressed?",
-    "options": [
-      "The app closes",
-      "The form is always submitted without checks",
-      "The form validates, and data is processed if valid",
-      "Nothing happens"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which property of Form is used to access validation and saving methods?",
     "options": [
       "context",

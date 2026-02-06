@@ -60,26 +60,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what widget is used as the child of SizedBox?",
-    "options": [
-      "Text('Star')",
-      "Icon(Icons.star)",
-      "Container()",
-      "Image.asset('star.png')"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what are the width and height values of the SizedBox?",
-    "options": [
-      "20 and 20",
-      "40 and 40",
-      "60 and 60",
-      "80 and 80"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which of the following is a recommended way to use SizedBox for spacing?",
     "options": [
       "SizedBox(width: 0)",

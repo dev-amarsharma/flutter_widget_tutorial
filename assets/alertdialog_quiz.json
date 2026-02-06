@@ -30,56 +30,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which parameter of showDialog provides the AlertDialog widget?",
-    "options": [
-      "context",
-      "builder",
-      "barrierDismissible",
-      "routeSettings"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the title of the AlertDialog?",
-    "options": [
-      "Warning",
-      "Alert",
-      "Confirm",
-      "Notice"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the content text of the AlertDialog?",
-    "options": [
-      "Are you sure?",
-      "This is an alert",
-      "Do you want to exit?",
-      "Operation completed"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which widget is used as an action button in the AlertDialog?",
-    "options": [
-      "ElevatedButton",
-      "OutlinedButton",
-      "TextButton",
-      "IconButton"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what does the action button do when pressed?",
-    "options": [
-      "Pushes a new route",
-      "Closes the dialog using Navigator.pop(context)",
-      "Shows another dialog",
-      "Restarts the app"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which main parameter of AlertDialog sets the heading of the dialog?",
     "options": [
       "content",
@@ -418,16 +368,6 @@
       "semanticLabel"
     ],
     "ans": "c"
-  },
-  {
-    "que": "In the example, which Navigator method is used to close the AlertDialog?",
-    "options": [
-      "Navigator.push",
-      "Navigator.pop",
-      "Navigator.replace",
-      "Navigator.removeRoute"
-    ],
-    "ans": "b"
   },
   {
     "que": "Which layout class is AlertDialog most closely associated with in terms of design language?",

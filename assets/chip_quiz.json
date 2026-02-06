@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What are Chips typically used for?",
+    "options": [
+      "To display large amounts of text",
+      "To represent tags, contacts, or choices compactly",
+      "To create complex layouts",
+      "To show video content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property adds a delete button to the Chip?",
+    "options": [
+      "showDelete",
+      "onDeleted",
+      "isDeletable",
+      "deleteButton"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What widget is often used in the 'avatar' property?",
+    "options": [
+      "Container",
+      "CircleAvatar",
+      "SizedBox",
+      "Card"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is a specialized Chip for selecting options?",
+    "options": [
+      "SelectChip",
+      "ChoiceChip",
+      "OptionChip",
+      "PickChip"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Can you change the background color of a Chip?",
+    "options": [
+      "Yes, using backgroundColor",
+      "No, it is always grey",
+      "Yes, using color",
+      "No, it depends on the theme"
+    ],
+    "ans": "a"
+  }
+]

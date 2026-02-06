@@ -20,16 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is wrapped by RepaintBoundary?",
-    "options": [
-      "Container()",
-      "CustomPaint()",
-      "MyWidget()",
-      "Text('Demo')"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "What is the main parameter of RepaintBoundary?",
     "options": [
       "key",

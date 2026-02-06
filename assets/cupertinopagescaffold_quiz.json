@@ -20,36 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is used for the navigation bar of CupertinoPageScaffold?",
-    "options": [
-      "AppBar",
-      "CupertinoAppBar",
-      "CupertinoNavigationBar",
-      "NavigationToolbar"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what text is displayed in the middle of the navigation bar?",
-    "options": [
-      "Home",
-      "Cupertino",
-      "Title",
-      "Page"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what widget is used as the main content (child) of the page?",
-    "options": [
-      "ListView",
-      "Center(child: Text('Content'))",
-      "Column",
-      "Container() with no child"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of CupertinoPageScaffold represents the navigation bar at the top?",
     "options": [
       "child",
@@ -114,7 +84,7 @@
     "options": [
       "Using a navigationBar",
       "Using a backgroundColor",
-      "Using for Material apps—use Scaffold instead",
+      "Using for Material apps\u2014use Scaffold instead",
       "Using Center as child"
     ],
     "ans": "c"

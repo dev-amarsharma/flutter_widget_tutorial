@@ -120,26 +120,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget is used as the body of the Scaffold?",
-    "options": [
-      "Container",
-      "Center with a Text child",
-      "Column",
-      "ListView"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what does the AppBar display as its title?",
-    "options": [
-      "Scaffold",
-      "Home",
-      "Title",
-      "AppBar"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "What is the base class of Scaffold according to the class definition?",
     "options": [
       "StatelessWidget",

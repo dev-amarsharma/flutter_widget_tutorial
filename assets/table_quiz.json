@@ -10,36 +10,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which property is used to draw borders around all table cells?",
-    "options": [
-      "columnWidths",
-      "defaultColumnWidth",
-      "border",
-      "textDirection"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, how many TableRow widgets are provided in the children of Table?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the text in the first cell of the first row?",
-    "options": [
-      "Row 1, Col 2",
-      "Row 2, Col 1",
-      "Row 1, Col 1",
-      "Row 2, Col 2"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which property of Table holds the rows of the table?",
     "options": [
       "border",

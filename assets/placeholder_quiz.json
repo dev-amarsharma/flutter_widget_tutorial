@@ -90,36 +90,6 @@
     "ans": "d"
   },
   {
-    "que": "In the example, what color is used for the Placeholder?",
-    "options": [
-      "Colors.blueGrey",
-      "Colors.green",
-      "Colors.red",
-      "Colors.black"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the value of strokeWidth?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what are the values of fallbackHeight and fallbackWidth?",
-    "options": [
-      "50 and 50",
-      "100 and 100",
-      "200 and 200",
-      "400 and 400"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which statement about fallbackWidth and fallbackHeight is correct?",
     "options": [
       "They are ignored if constraints are unbounded",

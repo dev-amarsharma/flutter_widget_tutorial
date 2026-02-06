@@ -20,26 +20,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which sliver widget is used inside CustomScrollView?",
-    "options": [
-      "SliverAppBar",
-      "SliverGrid",
-      "SliverList",
-      "SliverToBoxAdapter"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, how many Text widgets are provided to SliverChildListDelegate?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "Which parameter of CustomScrollView holds the list of sliver widgets?",
     "options": [
       "children",
@@ -93,7 +73,7 @@
     "que": "Which is listed as something to avoid with CustomScrollView?",
     "options": [
       "Using SliverList",
-      "Using for simple lists—use ListView or GridView instead",
+      "Using for simple lists\u2014use ListView or GridView instead",
       "Using scrollDirection",
       "Using controller"
     ],

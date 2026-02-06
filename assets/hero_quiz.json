@@ -20,16 +20,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget is used as the child of Hero?",
-    "options": [
-      "Text",
-      "Icon",
-      "Image.asset",
-      "Container"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of Hero uniquely identifies a hero across routes?",
     "options": [
       "child",
@@ -120,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "Which property allows you to customize how the hero’s bounding rectangle changes during the animation?",
+    "que": "Which property allows you to customize how the hero\u2019s bounding rectangle changes during the animation?",
     "options": [
       "flightShuttleBuilder",
       "createRectTween",

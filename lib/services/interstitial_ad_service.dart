@@ -1,5 +1,6 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter/foundation.dart';
 import 'dart:io';
 
 /// Service class for managing interstitial ads
@@ -17,14 +18,13 @@ class InterstitialAdService {
   // iOS: 'ca-app-pub-3940256099942544/4411468910'
   static String get interstitialAdUnitId {
     // In debug mode, you might want to use test ad unit IDs
-    // Uncomment the lines below for testing:
-    // if (kDebugMode) {
-    //   if (Platform.isAndroid) {
-    //     return 'ca-app-pub-3940256099942544/1033173712';
-    //   } else if (Platform.isIOS) {
-    //     return 'ca-app-pub-3940256099942544/4411468910';
-    //   }
-    // }
+    if (kDebugMode) {
+      if (Platform.isAndroid) {
+        return 'ca-app-pub-3940256099942544/1033173712';
+      } else if (Platform.isIOS) {
+        return 'ca-app-pub-3940256099942544/4411468910';
+      }
+    }
     return _interstitialAdUnitId;
   }
 

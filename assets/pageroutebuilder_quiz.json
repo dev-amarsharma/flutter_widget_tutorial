@@ -40,26 +40,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which widget is returned by pageBuilder?",
-    "options": [
-      "HomePage()",
-      "PreviousPage()",
-      "NextPage()",
-      "DialogPage()"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, which transition widget is used in transitionsBuilder?",
-    "options": [
-      "ScaleTransition",
-      "SlideTransition",
-      "FadeTransition",
-      "RotationTransition"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter specifies how long the forward transition lasts?",
     "options": [
       "reverseTransitionDuration",
@@ -130,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter determines if the route’s state is kept when it is inactive?",
+    "que": "Which parameter determines if the route\u2019s state is kept when it is inactive?",
     "options": [
       "maintainState",
       "opaque",

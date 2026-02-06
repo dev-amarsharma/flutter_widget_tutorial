@@ -30,26 +30,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which route name maps to HomePage?",
-    "options": [
-      "/home",
-      "/main",
-      "/details",
-      "/"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In the example, which route name maps to DetailsPage?",
-    "options": [
-      "/",
-      "/info",
-      "/details",
-      "/page"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "What does the routes parameter in MaterialApp represent?",
     "options": [
       "A map of route names to widget builders",
@@ -68,16 +48,6 @@
       "To define the debug banner"
     ],
     "ans": "b"
-  },
-  {
-    "que": "In the example, what is the value of initialRoute?",
-    "options": [
-      "/home",
-      "/details",
-      "/start",
-      "/"
-    ],
-    "ans": "d"
   },
   {
     "que": "What is the purpose of onGenerateRoute in MaterialApp?",

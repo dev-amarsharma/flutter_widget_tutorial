@@ -40,16 +40,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, which error message is returned when the field is empty?",
-    "options": [
-      "Invalid input",
-      "Required",
-      "Cannot be empty",
-      "Please enter value"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "What does the onSaved parameter of TextFormField do?",
     "options": [
       "It is called when the user submits the form via keyboard",
@@ -273,9 +263,9 @@
     "que": "What is the default obscuringCharacter used when obscureText is true?",
     "options": [
       "*",
-      "•",
+      "\u2022",
       "#",
-      "• (bullet) is specified as default"
+      "\u2022 (bullet) is specified as default"
     ],
     "ans": "d"
   },

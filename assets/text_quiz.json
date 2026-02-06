@@ -130,46 +130,6 @@
     "ans": "b"
   },
   {
-    "que": "In the example, what string is displayed by the Text widget?",
-    "options": [
-      "Hello World",
-      "Hello Flutter",
-      "Flutter Rocks",
-      "Sample Text"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what fontSize is used in TextStyle?",
-    "options": [
-      "16",
-      "18",
-      "20",
-      "24"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, which fontWeight is applied?",
-    "options": [
-      "FontWeight.w400",
-      "FontWeight.bold",
-      "FontWeight.w600",
-      "FontWeight.w300"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what color is used for the text?",
-    "options": [
-      "Colors.red",
-      "Colors.black",
-      "Colors.green",
-      "Colors.blue"
-    ],
-    "ans": "d"
-  },
-  {
     "que": "According to the quick tips, what is recommended for long text to avoid overflow?",
     "options": [
       "Increase font size",

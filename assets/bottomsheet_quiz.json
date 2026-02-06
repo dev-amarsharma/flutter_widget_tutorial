@@ -30,36 +30,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget is used as the content of the modal bottom sheet?",
-    "options": [
-      "Scaffold",
-      "Container",
-      "ListView",
-      "AlertDialog"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In the example, what is the height of the Container inside the bottom sheet?",
-    "options": [
-      "100",
-      "150",
-      "200",
-      "250"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what text is displayed in the Center widget inside the bottom sheet?",
-    "options": [
-      "Sheet",
-      "Bottom",
-      "Bottom Sheet",
-      "Options"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter of BottomSheet provides the content of the sheet and is required?",
     "options": [
       "backgroundColor",
@@ -218,16 +188,6 @@
       "A widget for in-app notifications at the top"
     ],
     "ans": "c"
-  },
-  {
-    "que": "In the example, which parameter of showModalBottomSheet provides the bottom sheet’s UI?",
-    "options": [
-      "context",
-      "builder",
-      "child",
-      "content"
-    ],
-    "ans": "b"
   },
   {
     "que": "Which use case is more appropriate for a BottomSheet according to the file?",

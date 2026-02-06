@@ -142,6 +142,38 @@ class WidgetCatalogPage extends StatefulWidget {
       ],
     },
     {
+      'category': 'Async Widgets',
+      'widgets': [
+        {'name': 'Future Builder', 'asset': 'assets/futurebuilder.md'},
+        {'name': 'Stream Builder', 'asset': 'assets/streambuilder.md'},
+      ],
+    },
+    {
+      'category': 'Interaction Models',
+      'widgets': [
+        {'name': 'Dismissible', 'asset': 'assets/dismissible.md'},
+        {'name': 'Draggable', 'asset': 'assets/draggable.md'},
+        {'name': 'Interactive Viewer', 'asset': 'assets/interactiveviewer.md'},
+      ],
+    },
+    {
+      'category': 'Painting & Effects',
+      'widgets': [
+        {'name': 'ClipRRect', 'asset': 'assets/cliprrect.md'},
+        {'name': 'Transform', 'asset': 'assets/transform.md'},
+        {'name': 'Backdrop Filter', 'asset': 'assets/backdropfilter.md'},
+      ],
+    },
+    {
+      'category': 'Indicators & Chips',
+      'widgets': [
+        {'name': 'Circular Progress', 'asset': 'assets/circularprogressindicator.md'},
+        {'name': 'Linear Progress', 'asset': 'assets/linearprogressindicator.md'},
+        {'name': 'Chip', 'asset': 'assets/chip.md'},
+        {'name': 'Circle Avatar', 'asset': 'assets/circleavatar.md'},
+      ],
+    },
+    {
       'category': 'Animations',
       'widgets': [
         {'name': 'Animated Container', 'asset': 'assets/animatedcontainer.md'},

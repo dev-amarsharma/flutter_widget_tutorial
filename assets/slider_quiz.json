@@ -40,26 +40,6 @@
     "ans": "a"
   },
   {
-    "que": "In the example, what is the range of the Slider?",
-    "options": [
-      "0 to 1",
-      "0 to 50",
-      "0 to 100",
-      "1 to 100"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what is the initial value of the Slider?",
-    "options": [
-      "0",
-      "25",
-      "50",
-      "100"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter defines the minimum value of a Slider?",
     "options": [
       "min",
@@ -104,8 +84,8 @@
     "options": [
       "Sets the semantic description only",
       "Shows a label above the slider, often reflecting the current value",
-      "Sets the slider’s min value",
-      "Sets the slider’s max value"
+      "Sets the slider\u2019s min value",
+      "Sets the slider\u2019s max value"
     ],
     "ans": "b"
   },

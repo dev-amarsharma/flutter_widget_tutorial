@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is CircleAvatar primarily used for?",
+    "options": [
+      "To draw circles",
+      "To represent users with images or initials",
+      "To create circular buttons",
+      "To clip content"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property sets the image of the avatar?",
+    "options": [
+      "image",
+      "src",
+      "backgroundImage",
+      "picture"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How do you set the size of the CircleAvatar?",
+    "options": [
+      "width and height",
+      "size",
+      "radius",
+      "diameter"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is typically put in the 'child' property?",
+    "options": [
+      "Another image",
+      "Text (initials) or an Icon",
+      "A button",
+      "A list"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "If backgroundImage fails to load, what is shown?",
+    "options": [
+      "Nothing",
+      "The child widget (and backgroundColor)",
+      "An error icon",
+      "A black circle"
+    ],
+    "ans": "b"
+  }
+]

@@ -60,26 +60,6 @@
     "ans": "c"
   },
   {
-    "que": "In the example, which widget type is used as items inside the ListView?",
-    "options": [
-      "Container",
-      "Card",
-      "ListTile",
-      "TextButton"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In the example, what are the titles of the two ListTile items?",
-    "options": [
-      "Item A and Item B",
-      "First and Second",
-      "Item 1 and Item 2",
-      "One and Two"
-    ],
-    "ans": "c"
-  },
-  {
     "que": "Which parameter defines the axis along which the ListView scrolls?",
     "options": [
       "primary",

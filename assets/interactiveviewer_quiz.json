@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is the main purpose of InteractiveViewer?",
+    "options": [
+      "To display a list of items",
+      "To enable pan and zoom interactions on a child widget",
+      "To handle button clicks",
+      "To show 3D models"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which property limits how much you can zoom in?",
+    "options": [
+      "zoomLimit",
+      "maxScale",
+      "upperBound",
+      "scaleMax"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How do you disable panning?",
+    "options": [
+      "Set panEnabled to false",
+      "Set canPan to false",
+      "Set scrollable to false",
+      "Set draggable to false"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the 'constrained' property do?",
+    "options": [
+      "Forces the child to fit within the viewport",
+      "Prevents the child from scaling",
+      "Locks the aspect ratio",
+      "Disables all interactions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which gesture is typically used to zoom in InteractiveViewer?",
+    "options": [
+      "Tap",
+      "Long press",
+      "Pinch",
+      "Swipe"
+    ],
+    "ans": "c"
+  }
+]

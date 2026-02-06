@@ -90,16 +90,6 @@
     "ans": "a"
   },
   {
-    "que": "In the example, which decoration is used on the TextField?",
-    "options": [
-      "InputDecoration(hintText: 'Hint')",
-      "InputDecoration(labelText: 'Enter text')",
-      "InputDecoration(errorText: 'Error')",
-      "No decoration"
-    ],
-    "ans": "b"
-  },
-  {
     "que": "What is the default value of the decoration parameter in TextField?",
     "options": [
       "null",
@@ -194,7 +184,7 @@
     "options": [
       "Using InputDecoration",
       "Using TextEditingController",
-      "Using TextField for read-only text—use Text instead",
+      "Using TextField for read-only text\u2014use Text instead",
       "Using obscureText for passwords"
     ],
     "ans": "c"

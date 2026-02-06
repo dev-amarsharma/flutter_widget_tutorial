@@ -4,6 +4,8 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'dart:convert';
 import 'widgets/banner_ad_widget.dart';
 import 'services/interstitial_ad_service.dart';
+import 'services/rewarded_ad_service.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'models/quiz_question.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
 
@@ -34,6 +36,8 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
     _checkQuizExists();
     // Track navigation for interstitial ad
     interstitialAdService.handleWidgetPageNavigation();
+    // Load rewarded ad
+    rewardedAdService.loadRewardedAd();
   }
 
   Future<void> _loadMarkdown() async {
@@ -61,6 +65,39 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
   }
 
   Future<void> _startQuiz() async {
+    // Check internet connection
+    final connectivityResult = await Connectivity().checkConnectivity();
+    if (connectivityResult.contains(ConnectivityResult.none)) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Please check your internet connection to attempt the quiz'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+      return;
+    }
+
+    // Check rewarded ad
+    if (!rewardedAdService.isAdReady) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Ad is loading... Please try again.'),
+          ),
+        );
+        // Try to load again
+        rewardedAdService.loadRewardedAd();
+      }
+      return;
+    }
+
+    // Launch quiz directly without showing ad
+    _launchQuiz();
+  }
+
+  Future<void> _launchQuiz() async {
     try {
       final basePath = widget.assetPath.replaceAll('.md', '');
       final quizPath = '${basePath}_quiz.json';
