@@ -8,6 +8,7 @@ import 'services/rewarded_ad_service.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'models/quiz_question.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
+import 'services/performance_service.dart';
 
 class WidgetPreviewPage extends StatefulWidget {
   final String assetPath;
@@ -133,6 +134,13 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
       
       // Optionally show result summary
       if (result != null && mounted) {
+        // Save score
+        await performanceService.saveQuizScore(
+          widget.assetPath,
+          result.correctAnswers,
+          result.totalQuestions,
+        );
+
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(

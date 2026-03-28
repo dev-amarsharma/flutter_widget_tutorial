@@ -7,6 +7,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'models/quiz_question.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
 import 'services/rewarded_ad_service.dart';
+import 'widgets/custom_dialog.dart';
 
 class WidgetCatalogPage extends StatefulWidget {
   final Set<String> readAssets;
@@ -297,19 +298,13 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
     showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (context) => const Center(
-        child: Card(
-          child: Padding(
-            padding: EdgeInsets.all(20.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                CircularProgressIndicator(),
-                SizedBox(height: 16),
-                Text('Loading quiz questions...'),
-              ],
-            ),
-          ),
+      builder: (context) => const CustomDialog(
+        title: 'Loading Quiz',
+        message: 'Please wait while we prepare your questions...',
+        showCloseButton: false,
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 20),
+          child: CircularProgressIndicator(color: Colors.deepOrange),
         ),
       ),
     );
@@ -463,23 +458,16 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
               onPressed: () async {
                 final confirm = await showDialog<bool>(
                   context: context,
-                  builder:
-                      (ctx) => AlertDialog(
-                        title: const Text('Clear read history?'),
-                        content: const Text(
-                          'This will clear saved "read" marks and scroll position.',
-                        ),
-                        actions: [
-                          TextButton(
-                            onPressed: () => Navigator.of(ctx).pop(false),
-                            child: const Text('Cancel'),
-                          ),
-                          TextButton(
-                            onPressed: () => Navigator.of(ctx).pop(true),
-                            child: const Text('Clear'),
-                          ),
-                        ],
-                      ),
+                  builder: (ctx) => CustomDialog(
+                    title: 'Clear History?',
+                    message: 'This will clear all saved "read" marks and your scroll position. This action cannot be undone.',
+                    icon: Icons.delete_forever_rounded,
+                    iconColor: Colors.red,
+                    primaryButtonText: 'Clear',
+                    onPrimaryPressed: () => Navigator.of(ctx).pop(true),
+                    secondaryButtonText: 'Cancel',
+                    onSecondaryPressed: () => Navigator.of(ctx).pop(false),
+                  ),
                 );
                 if (confirm == true) {
                   widget.onClear();

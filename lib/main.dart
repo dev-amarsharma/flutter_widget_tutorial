@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'widget_catalog_page.dart';
 import 'widget_preview_page.dart';
+import 'screens/performance_screen.dart';
+import 'services/performance_service.dart';
+import 'widgets/custom_dialog.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -11,6 +14,9 @@ import 'widgets/banner_ad_widget.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
+  // Initialize Performance Service
+  await performanceService.init();
+
   // Initialize Mobile Ads SDK
   await MobileAds.instance.initialize();
   
@@ -94,16 +100,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   // Track read status for each asset
-  final Set<String> _readAssets = {};
-
-  static const _prefsKey = 'read_assets_list';
+  Set<String> _readAssets = {};
 
   void _markAsRead() {
     if (_currentAssetPath != null) {
+      performanceService.markAsRead(_currentAssetPath!);
       setState(() {
-        _readAssets.add(_currentAssetPath!);
+        _readAssets = performanceService.readAssets;
       });
-      _saveReadAssets();
     }
   }
 
@@ -119,32 +123,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    _loadReadAssets().then((_) => _loadMarkdownFile(_currentAssetPath!));
-  }
-
-  Future<void> _loadReadAssets() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      final List<String>? list = prefs.getStringList(_prefsKey);
-      if (list != null) {
-        setState(() {
-          _readAssets.addAll(list);
-        });
-      }
-    } catch (e) {
-      // ignore: avoid_print
-      print('Error loading read assets: $e');
-    }
-  }
-
-  Future<void> _saveReadAssets() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setStringList(_prefsKey, _readAssets.toList());
-    } catch (e) {
-      // ignore: avoid_print
-      print('Error saving read assets: $e');
-    }
+    setState(() {
+      _readAssets = performanceService.readAssets;
+    });
+    _loadMarkdownFile(_currentAssetPath!);
   }
 
   Future<void> _loadMarkdownFile(String assetPath) async {
@@ -174,9 +156,41 @@ class _MyHomePageState extends State<MyHomePage> {
           await _loadMarkdownFile(prevAsset);
           return false;
         }
-        return true;
+        
+        final shouldExit = await showDialog<bool>(
+          context: context,
+          builder: (context) => CustomDialog(
+            title: 'Exit App?',
+            message: 'Are you sure you want to close the application?',
+            icon: Icons.exit_to_app_rounded,
+            iconColor: Colors.deepOrange,
+            primaryButtonText: 'Exit',
+            onPrimaryPressed: () => Navigator.of(context).pop(true),
+            secondaryButtonText: 'Cancel',
+            onSecondaryPressed: () => Navigator.of(context).pop(false),
+          ),
+        );
+
+        return shouldExit ?? false;
       },
       child: Scaffold(
+        floatingActionButton: _showCatalogPage
+            ? Padding(
+                padding: const EdgeInsets.only(bottom: 60),
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PerformanceScreen(),
+                      ),
+                    );
+                  },
+                  child: const Icon(Icons.bar_chart),
+                  tooltip: 'My Performance',
+                ),
+              )
+            : null,
         body: Column(
         children: [
           Expanded(
@@ -194,27 +208,20 @@ class _MyHomePageState extends State<MyHomePage> {
                               assetPath: assetPath,
                               readAssets: _readAssets,
                               onMarkAsRead: (path) {
+                                performanceService.markAsRead(path);
                                 setState(() {
-                                  _readAssets.add(path);
+                                  _readAssets = performanceService.readAssets;
                                 });
-                                _saveReadAssets();
                               },
                             ),
                       ),
                     );
                   },
                   onClear: () async {
+                    await performanceService.clearAll();
                     setState(() {
-                      _readAssets.clear();
+                      _readAssets = performanceService.readAssets;
                     });
-                    try {
-                      final prefs = await SharedPreferences.getInstance();
-                      await prefs.remove('read_assets_list');
-                      await prefs.remove('catalog_scroll_offset');
-                    } catch (e) {
-                      // ignore: avoid_print
-                      print('Error clearing preferences: $e');
-                    }
                   },
                 )
                 : Padding(

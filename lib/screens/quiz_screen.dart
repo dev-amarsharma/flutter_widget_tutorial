@@ -5,6 +5,7 @@ import '../models/quiz_question.dart';
 import '../services/rewarded_ad_service.dart';
 import '../services/interstitial_ad_service.dart';
 import '../widgets/banner_ad_widget.dart';
+import '../widgets/custom_dialog.dart';
 
 /// Quiz result data class
 class QuizResult {
@@ -174,125 +175,25 @@ class _QuizScreenState extends State<QuizScreen> {
       context: context,
       barrierDismissible: false,
       barrierColor: Colors.black54,
-      builder: (context) => Dialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-        ),
-        child: Container(
-          padding: const EdgeInsets.all(24),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Colors.red.shade400,
-                Colors.orange.shade400,
-              ],
-            ),
-            borderRadius: BorderRadius.circular(24),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Icon
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  shape: BoxShape.circle,
-                ),
-                child: const Icon(
-                  Icons.sentiment_dissatisfied,
-                  size: 64,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 20),
-              // Title
-              const Text(
-                'Better Luck Next Time!',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 12),
-              // Message
-              const Text(
-                'You\'ve run out of lives!\nWatch a reward video to continue.',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  height: 1.5,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 24),
-              // Buttons
-              Row(
-                children: [
-                  Expanded(
-                    child: OutlinedButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                        _exitQuiz();
-                      },
-                      style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: Colors.white, width: 2),
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: const Text(
-                        'Exit',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                        _watchRewardVideo();
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.red.shade600,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(Icons.play_circle_outline, size: 20),
-                          SizedBox(width: 8),
-                          Text(
-                            'Watch Ad',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+      builder: (context) => CustomDialog(
+        title: 'Better Luck Next Time!',
+        message: 'You\'ve run out of lives!\nWatch a reward video to continue.',
+        icon: Icons.sentiment_dissatisfied,
+        iconColor: Colors.white,
+        gradientColors: [
+          Colors.red.shade400,
+          Colors.orange.shade400,
+        ],
+        primaryButtonText: 'Watch Ad',
+        onPrimaryPressed: () {
+          Navigator.of(context).pop();
+          _watchRewardVideo();
+        },
+        secondaryButtonText: 'Exit',
+        onSecondaryPressed: () {
+          Navigator.of(context).pop();
+          _exitQuiz();
+        },
       ),
     );
   }
@@ -426,150 +327,77 @@ class _QuizScreenState extends State<QuizScreen> {
       context: context,
       barrierDismissible: false,
       barrierColor: Colors.black54,
-      builder: (context) => Dialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-        ),
-        child: Container(
-          padding: const EdgeInsets.all(24),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: isExcellent
-                  ? [Colors.green.shade400, Colors.teal.shade400]
-                  : isGood
-                      ? [Colors.blue.shade400, Colors.purple.shade400]
-                      : [Colors.orange.shade400, Colors.pink.shade400],
+      builder: (context) => CustomDialog(
+        title: isExcellent ? 'Excellent!' : isGood ? 'Good Job!' : 'Quiz Complete!',
+        icon: isExcellent ? Icons.emoji_events : isGood ? Icons.star : Icons.thumb_up,
+        iconColor: Colors.white,
+        gradientColors: isExcellent
+            ? [Colors.green.shade400, Colors.teal.shade400]
+            : isGood
+                ? [Colors.blue.shade400, Colors.purple.shade400]
+                : [Colors.orange.shade400, Colors.pink.shade400],
+        primaryButtonText: 'Done',
+        onPrimaryPressed: () {
+          Navigator.of(context).pop();
+          Navigator.of(context).pop(result);
+        },
+        child: Column(
+          children: [
+            Text(
+              'Score: ${result.score}',
+              style: const TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
-            borderRadius: BorderRadius.circular(24),
-          ),
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                // Trophy/Icon
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
-                    shape: BoxShape.circle,
+            const SizedBox(height: 24),
+            Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.95),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Column(
+                children: [
+                  _buildResultRow(
+                    Icons.help_outline,
+                    'Total Questions',
+                    '${result.totalQuestions}',
+                    Colors.blue,
                   ),
-                  child: Icon(
-                    isExcellent
-                        ? Icons.emoji_events
-                        : isGood
-                            ? Icons.star
-                            : Icons.thumb_up,
-                    size: 64,
-                    color: Colors.white,
+                  const Divider(height: 24),
+                  _buildResultRow(
+                    Icons.check_circle,
+                    'Correct',
+                    '${result.correctAnswers}',
+                    Colors.green,
                   ),
-                ),
-                const SizedBox(height: 16),
-                // Title
-                Text(
-                  isExcellent
-                      ? 'Excellent!'
-                      : isGood
-                          ? 'Good Job!'
-                          : 'Quiz Complete!',
-                  style: const TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                  const Divider(height: 24),
+                  _buildResultRow(
+                    Icons.cancel,
+                    'Wrong',
+                    '${result.wrongAnswers}',
+                    Colors.red,
                   ),
-                ),
-                const SizedBox(height: 8),
-                // Score
-                Text(
-                  'Score: ${result.score}',
-                  style: const TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                  const Divider(height: 24),
+                  _buildResultRow(
+                    Icons.favorite,
+                    'Remaining Lives',
+                    '${result.remainingLives}',
+                    Colors.pink,
                   ),
-                ),
-                const SizedBox(height: 24),
-                // Results card
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.95),
-                    borderRadius: BorderRadius.circular(16),
+                  const Divider(height: 24),
+                  _buildResultRow(
+                    Icons.percent,
+                    'Accuracy',
+                    '$percentage%',
+                    Colors.purple,
                   ),
-                  child: Column(
-                    children: [
-                      _buildResultRow(
-                        Icons.help_outline,
-                        'Total Questions',
-                        '${result.totalQuestions}',
-                        Colors.blue,
-                      ),
-                      const Divider(height: 24),
-                      _buildResultRow(
-                        Icons.check_circle,
-                        'Correct',
-                        '${result.correctAnswers}',
-                        Colors.green,
-                      ),
-                      const Divider(height: 24),
-                      _buildResultRow(
-                        Icons.cancel,
-                        'Wrong',
-                        '${result.wrongAnswers}',
-                        Colors.red,
-                      ),
-                      const Divider(height: 24),
-                      _buildResultRow(
-                        Icons.favorite,
-                        'Remaining Lives',
-                        '${result.remainingLives}',
-                        Colors.pink,
-                      ),
-                      const Divider(height: 24),
-                      _buildResultRow(
-                        Icons.percent,
-                        'Accuracy',
-                        '$percentage%',
-                        Colors.purple,
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 24),
-                // Done button
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                      Navigator.of(context).pop(result);
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: isExcellent
-                          ? Colors.green.shade600
-                          : isGood
-                              ? Colors.blue.shade600
-                              : Colors.orange.shade600,
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                    child: const Text(
-                      'Done',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );
@@ -641,104 +469,15 @@ class _QuizScreenState extends State<QuizScreen> {
         final shouldExit = await showDialog<bool>(
           context: context,
           barrierColor: Colors.black54,
-          builder: (context) => Dialog(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Container(
-              padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  // Warning icon
-                  Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: Colors.orange.shade50,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(
-                      Icons.warning_amber_rounded,
-                      size: 48,
-                      color: Colors.orange.shade600,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  // Title
-                  const Text(
-                    'Exit Quiz?',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  // Message
-                  const Text(
-                    'Your progress will be lost.\nAre you sure you want to exit?',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black54,
-                      height: 1.5,
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  // Buttons
-                  Row(
-                    children: [
-                      Expanded(
-                        child: OutlinedButton(
-                          onPressed: () => Navigator.of(context).pop(false),
-                          style: OutlinedButton.styleFrom(
-                            side: BorderSide(color: Colors.grey.shade300),
-                            foregroundColor: Colors.black87,
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                          child: const Text(
-                            'Cancel',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: ElevatedButton(
-                          onPressed: () => Navigator.of(context).pop(true),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.red.shade600,
-                            foregroundColor: Colors.white,
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            elevation: 2,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                          child: const Text(
-                            'Exit',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
+          builder: (context) => CustomDialog(
+            title: 'Quit Quiz?',
+            message: 'Are you sure you want to quit? You\'ll lose your current progress.',
+            icon: Icons.warning_amber_rounded,
+            iconColor: Colors.orange,
+            primaryButtonText: 'Quit',
+            onPrimaryPressed: () => Navigator.of(context).pop(true),
+            secondaryButtonText: 'Cancel',
+            onSecondaryPressed: () => Navigator.of(context).pop(false),
           ),
         );
         
