@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of the maxLines parameter in TextFormField as shown in the definition?",
+    "que": "What is the default value of maxLines in TextFormField?",
     "options": [
       "null",
       "0",
@@ -160,7 +160,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default textAlign value in the provided TextFormField constructor?",
+    "que": "What is the default value of textAlign in TextFormField?",
     "options": [
       "TextAlign.center",
       "TextAlign.justify",
@@ -170,7 +170,7 @@
     "ans": "d"
   },
   {
-    "que": "Which parameter is used to handle changes to the text as the user types?",
+    "que": "Which parameter of TextFormField is used to handle changes to the text as the user types?",
     "options": [
       "onFieldSubmitted",
       "onEditingComplete",
@@ -180,7 +180,7 @@
     "ans": "c"
   },
   {
-    "que": "What does the builder function in the FormField<String> super constructor represent?",
+    "que": "What does the builder function passed to FormField<String> represent in TextFormField?",
     "options": [
       "It builds the visual representation of the form field based on its state",
       "It builds the keyboard layout",
@@ -263,9 +263,9 @@
     "que": "What is the default obscuringCharacter used when obscureText is true?",
     "options": [
       "*",
-      "\u2022",
+      "•",
       "#",
-      "\u2022 (bullet) is specified as default"
+      "• (bullet) is specified as default"
     ],
     "ans": "d"
   },

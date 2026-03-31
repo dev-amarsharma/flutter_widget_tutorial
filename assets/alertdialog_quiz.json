@@ -80,7 +80,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, what is a recommended use of AlertDialog?",
+    "que": "what is a recommended use of AlertDialog?",
     "options": [
       "For complex multi-page forms",
       "For simple confirmations and alerts",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what can you add to provide choices in an AlertDialog?",
+    "que": "what can you add to provide choices in an AlertDialog?",
     "options": [
       "Multiple contents",
       "Multiple actions",
@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the base class of AlertDialog according to the class definition?",
+    "que": "What is the base class of AlertDialog?",
     "options": [
       "StatefulWidget",
       "InheritedWidget",
@@ -340,7 +340,7 @@
     "ans": "b"
   },
   {
-    "que": "Which statement is true about AlertDialog usage, according to the document?",
+    "que": "Which statement is true about AlertDialog usage,?",
     "options": [
       "It should be used for every small notification",
       "It is commonly used for simple messages and actions",
@@ -400,7 +400,7 @@
     "ans": "b"
   },
   {
-    "que": "Which of the following is NOT listed as a main parameter of AlertDialog in the summary section?",
+    "que": "Which of the following is not a standard parameter of AlertDialog?",
     "options": [
       "title",
       "content",
@@ -410,7 +410,7 @@
     "ans": "d"
   },
   {
-    "que": "Which of the following best describes the AlertDialog class definition in the document?",
+    "que": "Which of the following best describes AlertDialog?",
     "options": [
       "A stateful dialog with internal state management",
       "A StatelessWidget that builds a material design alert dialog",

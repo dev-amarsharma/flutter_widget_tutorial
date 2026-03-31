@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, for what use case is CupertinoNavigationBar recommended?",
+    "que": "for what use case is CupertinoNavigationBar recommended?",
     "options": [
       "Top navigation in Cupertino apps",
       "Bottom navigation in Material apps",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "What layout issue should you avoid according to the file?",
+    "que": "What layout issue should you avoid?",
     "options": [
       "Using only a middle widget",
       "Using only a leading widget",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, CupertinoNavigationBar extends which base class?",
+    "que": "CupertinoNavigationBar extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of automaticallyImplyLeading in the constructor shown?",
+    "que": "What is the default value of automaticallyImplyLeading in CupertinoNavigationBar?",
     "options": [
       "false",
       "true",
@@ -170,7 +170,7 @@
     "ans": "a"
   },
   {
-    "que": "What is the default value of transitionBetweenRoutes in the constructor shown?",
+    "que": "What is the default value of transitionBetweenRoutes in CupertinoNavigationBar?",
     "options": [
       "false",
       "true",

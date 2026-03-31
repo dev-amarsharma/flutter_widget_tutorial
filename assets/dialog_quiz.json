@@ -40,7 +40,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which parameter is considered the main content of the Dialog?",
+    "que": "which parameter is considered the main content of the Dialog?",
     "options": [
       "backgroundColor",
       "shape",
@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, when should you use Dialog?",
+    "que": "when should you use Dialog?",
     "options": [
       "Only for confirmation alerts",
       "For custom dialog content",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, Dialog extends which base class?",
+    "que": "Dialog extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of insetAnimationDuration in the Dialog constructor shown?",
+    "que": "What is the default value of insetAnimationDuration in the Dialog Dialog?",
     "options": [
       "Duration(milliseconds: 50)",
       "Duration(milliseconds: 100)",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of insetPadding in the Dialog constructor shown?",
+    "que": "What is the default value of insetPadding in the Dialog Dialog?",
     "options": [
       "EdgeInsets.all(16.0)",
       "EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0)",

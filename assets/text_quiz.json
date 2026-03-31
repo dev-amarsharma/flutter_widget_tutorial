@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what is recommended for long text to avoid overflow?",
+    "que": "what is recommended for long text to avoid overflow?",
     "options": [
       "Increase font size",
       "Use maxLines with overflow: TextOverflow.ellipsis",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what should you wrap Text with in a Row or Column to avoid layout issues?",
+    "que": "what should you wrap Text with in a Row or Column to avoid layout issues?",
     "options": [
       "Padding",
       "Container",
@@ -170,7 +170,7 @@
     "ans": "c"
   },
   {
-    "que": "What should you not ignore when displaying dynamic text, according to Things to Avoid?",
+    "que": "What should you not ignore when displaying dynamic text with Text?",
     "options": [
       "Locale",
       "Overflow handling",

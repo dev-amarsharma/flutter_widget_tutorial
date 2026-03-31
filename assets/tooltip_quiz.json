@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, where is it especially useful to add tooltips?",
+    "que": "Where is it especially useful to add tooltips?",
     "options": [
       "Background images",
       "Icons and buttons to provide extra info",
@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, how should tooltip messages be written?",
+    "que": "how should tooltip messages be written?",
     "options": [
       "As long paragraphs",
       "With complex formatting",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, what does Tooltip extend?",
+    "que": "what does Tooltip extend?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

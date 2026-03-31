@@ -70,7 +70,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what is a good use case for TweenAnimationBuilder?",
+    "que": "what is a good use case for TweenAnimationBuilder?",
     "options": [
       "Custom value animations",
       "Networking",
@@ -80,7 +80,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, how can TweenAnimationBuilder be used with other widgets?",
+    "que": "how can TweenAnimationBuilder be used with other widgets?",
     "options": [
       "Only with Container",
       "Only with Text",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, what does TweenAnimationBuilder extend?",
+    "que": "what does TweenAnimationBuilder extend?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

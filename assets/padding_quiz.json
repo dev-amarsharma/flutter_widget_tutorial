@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which two parameters are required for Padding?",
+    "que": "which two parameters are required for Padding?",
     "options": [
       "padding and key",
       "padding and child",
@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, Padding should be combined with what for flexible designs?",
+    "que": "Padding should be combined with what for flexible designs?",
     "options": [
       "Only with Row",
       "Only with Column",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "What should Padding NOT be used for according to the file?",
+    "que": "What should Padding NOT be used for?",
     "options": [
       "Adding space around children",
       "Creating flexible designs",

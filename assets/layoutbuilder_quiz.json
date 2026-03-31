@@ -40,7 +40,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the type of the builder property in the LayoutBuilder class definition?",
+    "que": "What is the type of the builder property in LayoutBuilder?",
     "options": [
       "Widget Function(BuildContext)",
       "Widget Function(BoxConstraints)",
@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, LayoutBuilder is especially useful for which kind of layouts?",
+    "que": "LayoutBuilder is especially useful for which kind of layouts?",
     "options": [
       "Static layouts",
       "Responsive and adaptive layouts",
@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "What is another thing to avoid with LayoutBuilder according to the file?",
+    "que": "What is another thing to avoid with LayoutBuilder?",
     "options": [
       "Using constraints inside builder",
       "Returning different widgets",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "In the class definition, LayoutBuilder extends which class?",
+    "que": "LayoutBuilder extends which class?",
     "options": [
       "StatefulWidget",
       "InheritedWidget",
@@ -170,7 +170,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the name of the single main field declared in the LayoutBuilder class definition?",
+    "que": "What is the name of the main field declared in LayoutBuilder?",
     "options": [
       "child",
       "layout",

@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, what does Theme extend?",
+    "que": "what does Theme extend?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter of Theme indicates whether this is the MaterialApp\u2019s theme?",
+    "que": "Which parameter of Theme indicates whether this is the MaterialApp’s theme?",
     "options": [
       "data",
       "isMaterialAppTheme",

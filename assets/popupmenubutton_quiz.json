@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what is a recommended use case for PopupMenuButton?",
+    "que": "what is a recommended use case for PopupMenuButton?",
     "options": [
       "Primary call-to-action buttons",
       "Overflow menus and extra actions",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what is recommended for compact menus?",
+    "que": "what is recommended for compact menus?",
     "options": [
       "Use text labels only",
       "Use icons",

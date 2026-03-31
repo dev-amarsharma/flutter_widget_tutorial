@@ -40,10 +40,14 @@ class QuizScreen extends StatefulWidget {
   /// Optional: Custom timer duration per question (default: 30 seconds)
   final int timerDurationSeconds;
 
+  /// Whether an ad was shown before starting the quiz
+  final bool adShownAtStart;
+
   const QuizScreen({
     super.key,
     required this.questions,
     this.timerDurationSeconds = 30,
+    this.adShownAtStart = false,
   });
 
   @override
@@ -105,7 +109,7 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   /// Handle timeout: treat as wrong answer
-  void _handleTimeout() {
+  Future<void> _handleTimeout() async {
     if (_isAnswered) return;
     
     _timer?.cancel();
@@ -114,7 +118,7 @@ class _QuizScreenState extends State<QuizScreen> {
     _lives--;
     
     if (_lives <= 0) {
-      _showLivesLostDialog();
+      await _showLivesLostDialog();
     } else {
       _moveToNextQuestion();
     }
@@ -142,34 +146,43 @@ class _QuizScreenState extends State<QuizScreen> {
     });
     
     // Show visual feedback briefly before moving on
-    Future.delayed(const Duration(milliseconds: 1500), () {
+    Future.delayed(const Duration(milliseconds: 1500), () async {
       if (!mounted) return;
       
       if (_lives <= 0) {
-        _showLivesLostDialog();
+        await _showLivesLostDialog();
       } else if (_currentQuestionIndex < _selectedQuestions.length - 1) {
         _moveToNextQuestion();
       } else {
-        _showResultScreen();
+        await _showResultScreen();
       }
     });
   }
 
   /// Move to next question
-  void _moveToNextQuestion() {
+  Future<void> _moveToNextQuestion() async {
     if (_currentQuestionIndex < _selectedQuestions.length - 1) {
       setState(() {
         _currentQuestionIndex++;
       });
       _startTimer();
     } else {
-      _showResultScreen();
+      await _showResultScreen();
     }
   }
 
   /// Show dialog when all lives are lost
-  void _showLivesLostDialog() {
+  Future<void> _showLivesLostDialog() async {
     _isPaused = true;
+    
+    // If no ad was shown at the start, show one now before the lives lost dialog
+    if (!widget.adShownAtStart) {
+      await interstitialAdService.showInterstitialAd(forceLoad: true);
+      // Small delay after ad dismissal
+      await Future.delayed(const Duration(milliseconds: 300));
+    }
+
+    if (!mounted) return;
     
     showDialog(
       context: context,
@@ -243,11 +256,7 @@ class _QuizScreenState extends State<QuizScreen> {
         });
         
         // Resume quiz from next question
-        if (_currentQuestionIndex < _selectedQuestions.length - 1) {
-          _moveToNextQuestion();
-        } else {
-          _showResultScreen();
-        }
+        _moveToNextQuestion();
       },
       onAdDismissed: () {
         // Ad was dismissed without reward
@@ -284,15 +293,8 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   /// Exit quiz and return result
-  /// Shows interstitial ad before exiting (following AdMob policies)
   Future<void> _exitQuiz() async {
     _timer?.cancel();
-    
-    // Show interstitial ad before exiting
-    await interstitialAdService.showInterstitialAd();
-    
-    // Small delay to ensure ad is shown
-    await Future.delayed(const Duration(milliseconds: 500));
     
     if (!mounted) return;
     
@@ -307,9 +309,18 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   /// Show result screen/dialog
-  void _showResultScreen() {
+  Future<void> _showResultScreen() async {
     _timer?.cancel();
     _isPaused = true;
+    
+    // If no ad was shown at the start, show one now before the result screen
+    if (!widget.adShownAtStart) {
+      await interstitialAdService.showInterstitialAd(forceLoad: true);
+      // Small delay after ad dismissal
+      await Future.delayed(const Duration(milliseconds: 300));
+    }
+
+    if (!mounted) return;
     
     final result = QuizResult(
       totalQuestions: _selectedQuestions.length,
@@ -483,12 +494,7 @@ class _QuizScreenState extends State<QuizScreen> {
         
         if (shouldExit == true && mounted) {
           _timer?.cancel();
-          // Show interstitial ad before exiting (following AdMob policies)
-          await interstitialAdService.showInterstitialAd();
-          await Future.delayed(const Duration(milliseconds: 500));
-          if (mounted) {
-            navigator.pop();
-          }
+          navigator.pop();
         }
       },
       child: Scaffold(

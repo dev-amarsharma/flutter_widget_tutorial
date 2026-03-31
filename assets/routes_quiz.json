@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "Which of the following is a recommended practice mentioned in the file?",
+    "que": "Which of the following is a recommended practice mentioned for routes?",
     "options": [
       "Use only unnamed routes",
       "Use named routes for easier navigation",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "Which of the following is listed under 'Things to Avoid'?",
+    "que": "Which of the following should be avoided when defining routes?",
     "options": [
       "Using onGenerateRoute",
       "Using named routes",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "Where are routes typically defined in a Flutter app according to the file?",
+    "que": "Where are routes typically defined in a Flutter app?",
     "options": [
       "Inside each widget",
       "Inside the Scaffold",

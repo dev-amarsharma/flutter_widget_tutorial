@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which constructor should you prefer for large or infinite grids?",
+    "que": "which constructor should you prefer for large or infinite grids?",
     "options": [
       "GridView.count",
       "GridView.builder",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, GridView extends which base class?",
+    "que": "GridView extends which base class?",
     "options": [
       "ListView",
       "StatelessWidget",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of the scrollDirection parameter in the GridView constructor shown?",
+    "que": "What is the default value of the scrollDirection parameter in the GridView GridView?",
     "options": [
       "Axis.horizontal",
       "Axis.vertical",

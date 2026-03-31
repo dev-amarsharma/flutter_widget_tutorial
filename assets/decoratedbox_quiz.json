@@ -70,7 +70,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which of the following is DecoratedBox recommended for?",
+    "que": "which of the following is DecoratedBox recommended for?",
     "options": [
       "Network requests",
       "Backgrounds, borders, gradients, and shadows",
@@ -94,7 +94,7 @@
     "options": [
       "Using gradients",
       "Using borders",
-      "Using for simple color backgrounds\u2014use Container instead",
+      "Using for simple color backgrounds—use Container instead",
       "Using shadows"
     ],
     "ans": "c"
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, DecoratedBox extends which base class?",
+    "que": "DecoratedBox extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -150,7 +150,7 @@
     "ans": "d"
   },
   {
-    "que": "Which of the following is NOT recommended with DecoratedBox according to the file?",
+    "que": "Which of the following is NOT recommended with DecoratedBox?",
     "options": [
       "Using it with Padding",
       "Using it for shadows",

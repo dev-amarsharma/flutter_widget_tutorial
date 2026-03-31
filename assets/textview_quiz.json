@@ -30,7 +30,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter of Text controls the text\u2019s visual appearance such as font, size, and color?",
+    "que": "Which parameter of Text controls the text’s visual appearance such as font, size, and color?",
     "options": [
       "textAlign",
       "style",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, what is the required positional parameter for Text?",
+    "que": "what is the required positional parameter for Text?",
     "options": [
       "Key key",
       "String data",

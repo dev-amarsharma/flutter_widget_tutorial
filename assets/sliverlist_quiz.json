@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, what does SliverList extend?",
+    "que": "what does SliverList extend?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",

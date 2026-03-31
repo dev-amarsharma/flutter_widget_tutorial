@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of mainAxisAlignment in the Column constructor shown?",
+    "que": "What is the default value of mainAxisAlignment in the Column Column?",
     "options": [
       "MainAxisAlignment.center",
       "MainAxisAlignment.end",
@@ -90,7 +90,7 @@
     "ans": "d"
   },
   {
-    "que": "What is the default value of mainAxisSize in the Column constructor shown?",
+    "que": "What is the default value of mainAxisSize in the Column Column?",
     "options": [
       "MainAxisSize.min",
       "MainAxisSize.max",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of crossAxisAlignment in the Column constructor shown?",
+    "que": "What is the default value of crossAxisAlignment in the Column Column?",
     "options": [
       "CrossAxisAlignment.start",
       "CrossAxisAlignment.end",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of verticalDirection in the Column constructor shown?",
+    "que": "What is the default value of verticalDirection in the Column Column?",
     "options": [
       "VerticalDirection.up",
       "VerticalDirection.down",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which parameter is conceptually required because it defines what the Column shows?",
+    "que": "which parameter is conceptually required because it defines what the Column shows?",
     "options": [
       "mainAxisAlignment",
       "crossAxisAlignment",

@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, how can you access built-in Material icons?",
+    "que": "how can you access built-in Material icons?",
     "options": [
       "Using the MaterialIcons() constructor",
       "Using the Icons class",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which widget should you combine with Icon for interactivity?",
+    "que": "which widget should you combine with Icon for interactivity?",
     "options": [
       "TextButton",
       "IconButton",

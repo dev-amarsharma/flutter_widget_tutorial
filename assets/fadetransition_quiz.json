@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which class is FadeTransition typically used with for custom fade effects?",
+    "que": "which class is FadeTransition typically used with for custom fade effects?",
     "options": [
       "Ticker",
       "PageController",
@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what can you combine FadeTransition with for complex animations?",
+    "que": "what can you combine FadeTransition with for complex animations?",
     "options": [
       "Only SlideTransition",
       "Other transitions",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, FadeTransition extends which base class?",
+    "que": "FadeTransition extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

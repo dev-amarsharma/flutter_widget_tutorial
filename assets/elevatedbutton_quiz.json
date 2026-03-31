@@ -60,7 +60,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, what should you use the style parameter for?",
+    "que": "what should you use the style parameter for?",
     "options": [
       "To control navigation",
       "To customize color, shape, and padding",
@@ -70,7 +70,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, when should you typically use ElevatedButton?",
+    "que": "when should you typically use ElevatedButton?",
     "options": [
       "For secondary actions only",
       "For primary actions in your UI",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, ElevatedButton extends which base class?",
+    "que": "ElevatedButton extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of clipBehavior in the ElevatedButton constructor shown?",
+    "que": "What is the default value of clipBehavior in the ElevatedButton ElevatedButton?",
     "options": [
       "Clip.none",
       "Clip.hardEdge",

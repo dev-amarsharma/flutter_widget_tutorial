@@ -12,7 +12,7 @@
   {
     "que": "In a typical setup, what does TabBar display?",
     "options": [
-      "Only the current tab\u2019s content",
+      "Only the current tab’s content",
       "A list of pages",
       "The tabs that the user can tap",
       "A navigation drawer"
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what should you use for simple tab setups?",
+    "que": "what should you use for simple tab setups?",
     "options": [
       "Custom TabController only",
       "DefaultTabController",
@@ -130,7 +130,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, TabBar extends which base class?",
+    "que": "TabBar extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -170,7 +170,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter controls the color of the selected tab\u2019s label in TabBar?",
+    "que": "Which parameter controls the color of the selected tab’s label in TabBar?",
     "options": [
       "unselectedLabelColor",
       "indicatorColor",

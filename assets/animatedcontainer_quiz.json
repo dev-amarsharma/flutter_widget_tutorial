@@ -90,7 +90,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, what is a recommended use case for AnimatedContainer?",
+    "que": "what is a recommended use case for AnimatedContainer?",
     "options": [
       "Complex low-level animations",
       "Simple property animations",
@@ -130,7 +130,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, AnimatedContainer extends which base class?",
+    "que": "AnimatedContainer extends which base class?",
     "options": [
       "StatefulWidget",
       "AnimatedWidget",

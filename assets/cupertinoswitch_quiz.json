@@ -40,7 +40,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which two parameters are required for CupertinoSwitch?",
+    "que": "which two parameters are required for CupertinoSwitch?",
     "options": [
       "activeColor and trackColor",
       "value and onChanged",
@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what type of data is CupertinoSwitch best suited for?",
+    "que": "what type of data is CupertinoSwitch best suited for?",
     "options": [
       "String values",
       "Numeric values",
@@ -84,7 +84,7 @@
     "options": [
       "Using it in Cupertino apps",
       "Giving it an activeColor",
-      "Using for Material apps\u2014use Switch instead",
+      "Using for Material apps—use Switch instead",
       "Using it with ListTile"
     ],
     "ans": "c"
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, CupertinoSwitch extends which base class?",
+    "que": "CupertinoSwitch extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter can be used to customize the color of the switch\u2019s track?",
+    "que": "Which parameter can be used to customize the color of the switch’s track?",
     "options": [
       "activeColor",
       "thumbColor",
@@ -140,7 +140,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter can be used to customize the color of the switch\u2019s thumb?",
+    "que": "Which parameter can be used to customize the color of the switch’s thumb?",
     "options": [
       "activeColor",
       "thumbColor",

@@ -40,7 +40,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter of CupertinoApp defines the app\u2019s visual styling?",
+    "que": "Which parameter of CupertinoApp defines the app’s visual styling?",
     "options": [
       "color",
       "theme",
@@ -60,7 +60,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, when should you use CupertinoApp?",
+    "que": "when should you use CupertinoApp?",
     "options": [
       "For Android-styled apps",
       "For web-only apps",
@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what should you combine with CupertinoApp for a native look?",
+    "que": "what should you combine with CupertinoApp for a native look?",
     "options": [
       "Only Material widgets",
       "Cupertino widgets",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "For which platform style should you NOT use CupertinoApp according to the file?",
+    "que": "For which platform style should you NOT use CupertinoApp?",
     "options": [
       "iOS-styled apps",
       "Android-styled apps",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, CupertinoApp extends which base class?",
+    "que": "CupertinoApp extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -160,7 +160,7 @@
     "ans": "d"
   },
   {
-    "que": "Which parameter defines the app\u2019s primary color on some platforms?",
+    "que": "Which parameter defines the app’s primary color on some platforms?",
     "options": [
       "color",
       "theme",
@@ -180,7 +180,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of supportedLocales in the CupertinoApp constructor shown?",
+    "que": "What is the default value of supportedLocales in the CupertinoApp CupertinoApp?",
     "options": [
       "const <Locale>[]",
       "const <Locale>[Locale('en', 'US')]",

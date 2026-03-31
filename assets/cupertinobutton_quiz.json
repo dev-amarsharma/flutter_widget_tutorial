@@ -40,7 +40,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which two parameters are required for CupertinoButton?",
+    "que": "which two parameters are required for CupertinoButton?",
     "options": [
       "color and padding",
       "child and onPressed",
@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, with which widget should you combine CupertinoButton for a native iOS look?",
+    "que": "with which widget should you combine CupertinoButton for a native iOS look?",
     "options": [
       "MaterialApp",
       "CupertinoApp",
@@ -84,7 +84,7 @@
     "options": [
       "Using it in iOS apps",
       "Giving it a child",
-      "Using it for Material apps\u2014instead use ElevatedButton",
+      "Using it for Material apps—instead use ElevatedButton",
       "Providing padding"
     ],
     "ans": "c"
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, CupertinoButton extends which base class?",
+    "que": "CupertinoButton extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of minSize in the CupertinoButton constructor shown?",
+    "que": "What is the default value of minSize in the CupertinoButton CupertinoButton?",
     "options": [
       "36.0",
       "40.0",
@@ -130,7 +130,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of pressedOpacity in the CupertinoButton constructor shown?",
+    "que": "What is the default value of pressedOpacity in the CupertinoButton CupertinoButton?",
     "options": [
       "0.2",
       "0.3",
@@ -140,7 +140,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default borderRadius of CupertinoButton in the given definition?",
+    "que": "What is the default borderRadius of CupertinoButton in CupertinoButton?",
     "options": [
       "BorderRadius.zero",
       "BorderRadius.circular(4.0)",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of autofocus in the CupertinoButton constructor shown?",
+    "que": "What is the default value of autofocus in the CupertinoButton CupertinoButton?",
     "options": [
       "true",
       "false",

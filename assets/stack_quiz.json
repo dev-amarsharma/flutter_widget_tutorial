@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the tips, which widget can be combined with Stack for flexible overlays?",
+    "que": "which widget can be combined with Stack for flexible overlays?",
     "options": [
       "Align",
       "Row",
@@ -133,7 +133,7 @@
     "que": "What should you not forget when using Stack with children that may extend beyond its bounds?",
     "options": [
       "To always center all children",
-      "To handle overflow if children exceed the Stack\u2019s bounds",
+      "To handle overflow if children exceed the Stack’s bounds",
       "To wrap Stack with ListView",
       "To use only one child"
     ],

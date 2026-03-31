@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "Which three parameters are required in the Radio constructor according to the class definition?",
+    "que": "Which three parameters are required in the Radio constructor?",
     "options": [
       "value, groupValue, onChanged",
       "value, activeColor, onChanged",
@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what must be the same for all radios in a group?",
+    "que": "what must be the same for all radios in a group?",
     "options": [
       "value",
       "activeColor",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the file, what should you use instead of Radio for multiple selections?",
+    "que": "what should you use instead of Radio for multiple selections?",
     "options": [
       "Switch",
       "Slider",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of the autofocus parameter in the class definition?",
+    "que": "What is the default value of the autofocus parameter in Radio?",
     "options": [
       "true",
       "false",

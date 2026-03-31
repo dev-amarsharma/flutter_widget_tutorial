@@ -40,7 +40,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the description, which two parameters are required for IconButton?",
+    "que": "Which two parameters are required for IconButton?",
     "options": [
       "icon and color",
       "icon and iconSize",
@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, where is IconButton especially useful?",
+    "que": "where is IconButton especially useful?",
     "options": [
       "As large primary buttons",
       "For compact actions in app bars and cards",

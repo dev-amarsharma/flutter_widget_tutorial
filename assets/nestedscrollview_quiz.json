@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the file, which two parameters are required for NestedScrollView?",
+    "que": "which two parameters are required for NestedScrollView?",
     "options": [
       "controller and body",
       "headerSliverBuilder and controller",
@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what should you combine NestedScrollView with for advanced effects?",
+    "que": "what should you combine NestedScrollView with for advanced effects?",
     "options": [
       "PageView",
       "SliverAppBar",
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "In the class definition, NestedScrollView extends which base class?",
+    "que": "NestedScrollView extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of clipBehavior in the constructor shown?",
+    "que": "What is the default value of clipBehavior in NestedScrollView?",
     "options": [
       "Clip.none",
       "Clip.softEdge",

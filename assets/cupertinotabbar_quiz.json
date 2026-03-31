@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "Which parameter controls the color of the selected tab\u2019s icon and label?",
+    "que": "Which parameter controls the color of the selected tab’s icon and label?",
     "options": [
       "inactiveColor",
       "backgroundColor",
@@ -100,7 +100,7 @@
     "ans": "a"
   },
   {
-    "que": "What is the default value of iconSize in the CupertinoTabBar constructor shown?",
+    "que": "What is the default value of iconSize in the CupertinoTabBar CupertinoTabBar?",
     "options": [
       "24.0",
       "28.0",
@@ -120,7 +120,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, for what specific use case should you use CupertinoTabBar?",
+    "que": "for what specific use case should you use CupertinoTabBar?",
     "options": [
       "Top navigation in Material apps",
       "Bottom navigation in Cupertino apps",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what should you use on each tab item for clarity?",
+    "que": "what should you use on each tab item for clarity?",
     "options": [
       "Only icons",
       "Only labels",
@@ -144,7 +144,7 @@
     "options": [
       "Using icons",
       "Using text labels",
-      "Using for Material apps\u2014use BottomNavigationBar instead",
+      "Using for Material apps—use BottomNavigationBar instead",
       "Using backgroundColor"
     ],
     "ans": "c"

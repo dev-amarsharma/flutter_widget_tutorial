@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the notes, where should you avoid using SliverGrid?",
+    "que": "Where should you avoid using SliverGrid?",
     "options": [
       "Inside ListView",
       "Outside of CustomScrollView",
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, what does SliverGrid extend?",
+    "que": "what does SliverGrid extend?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "In the class definition, which parameter type is required for delegate?",
+    "que": "Which parameter type is required for delegate in SliverGrid?",
     "options": [
       "SliverGridDelegate",
       "SliverChildDelegate",
@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "In the class definition, which parameter type is required for gridDelegate?",
+    "que": "Which parameter type is required for gridDelegate in SliverGrid?",
     "options": [
       "SliverChildDelegate",
       "SliverGridDelegate",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "What is one of the quick tips mentioned for SliverGrid?",
+    "que": "Which tip is useful when working with SliverGrid?",
     "options": [
       "Use alone without any scroll view",
       "Use inside CustomScrollView for advanced grids",
@@ -153,7 +153,7 @@
     "que": "Which statement best describes the role of gridDelegate in SliverGrid?",
     "options": [
       "It provides the children widgets",
-      "It controls the grid\u2019s layout, such as number of columns and spacing",
+      "It controls the grid’s layout, such as number of columns and spacing",
       "It handles scroll physics",
       "It manages state restoration"
     ],

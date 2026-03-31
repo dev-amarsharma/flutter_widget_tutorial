@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the tips, for which type of content is Scrollbar recommended?",
+    "que": "for which type of content is Scrollbar recommended?",
     "options": [
       "Very short lists only",
       "Forms with a few fields",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the base class of Scrollbar according to the class definition?",
+    "que": "What is the base class of Scrollbar?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

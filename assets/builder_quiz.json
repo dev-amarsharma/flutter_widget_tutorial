@@ -40,7 +40,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, Builder is useful for which of the following?",
+    "que": "Builder is useful for which of the following?",
     "options": [
       "Showing dialogs or snackbars",
       "Managing app state",
@@ -70,17 +70,17 @@
     "ans": "b"
   },
   {
-    "que": "What does the 'Things to Avoid' section say about simple layouts?",
+    "que": "Which practice should be avoided when using simple layouts?",
     "options": [
       "Always wrap them in Builder",
       "Use Builder only for simple layouts",
-      "Don\u2019t overuse Builder for simple layouts",
+      "Don’t overuse Builder for simple layouts",
       "Avoid layouts when using Builder"
     ],
     "ans": "c"
   },
   {
-    "que": "According to the class definition, Builder extends which base class?",
+    "que": "Builder extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "In the Builder class definition, what does the build method return?",
+    "que": "What does Builder.build return?",
     "options": [
       "child",
       "context",

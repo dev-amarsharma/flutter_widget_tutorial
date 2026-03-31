@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the tips, what is a good use case for SnackBar?",
+    "que": "what is a good use case for SnackBar?",
     "options": [
       "Critical system alerts that must not be missed",
       "Brief messages and feedback such as form submissions",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "What do the tips suggest you can add to a SnackBar for undo or retry?",
+    "que": "What can you add to a SnackBar for undo or retry?",
     "options": [
       "A second SnackBar",
       "A bottom sheet",
@@ -130,7 +130,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the class definition, SnackBar extends which base class?",
+    "que": "SnackBar extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",

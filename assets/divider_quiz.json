@@ -70,7 +70,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which widgets are mentioned as common parents for Divider?",
+    "que": "which widgets are mentioned as common parents for Divider?",
     "options": [
       "Row or Stack",
       "ListView or Column",
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "What is another thing to avoid with Divider according to the file?",
+    "que": "What is another thing to avoid with Divider?",
     "options": [
       "Using it with padding",
       "Using for decorative purposes only",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, Divider extends which base class?",
+    "que": "Divider extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "Which constructor parameters in Divider are nullable according to the class definition?",
+    "que": "Which constructor parameters in Divider are nullable?",
     "options": [
       "height, thickness, indent, endIndent, color",
       "height only",
@@ -150,7 +150,7 @@
     "ans": "a"
   },
   {
-    "que": "Which of the following is NOT a main parameter of Divider listed in the file?",
+    "que": "Which of the following is NOT a main parameter of Divider listed for Divider?",
     "options": [
       "color",
       "thickness",

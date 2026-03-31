@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which four parameters of showDatePicker are required?",
+    "que": "which four parameters of showDatePicker are required?",
     "options": [
       "context, initialDate, firstDate, lastDate",
       "context, helpText, cancelText, confirmText",
@@ -100,7 +100,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, when should you typically call showDatePicker?",
+    "que": "when should you typically call showDatePicker?",
     "options": [
       "On app startup",
       "In response to a button or field tap",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "What should you do with the selected date according to the quick tips?",
+    "que": "What should you do with the selected date after picking it?",
     "options": [
       "Store without checking",
       "Ignore it",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of initialEntryMode in the function definition?",
+    "que": "What is the default value of initialEntryMode in showDatePicker?",
     "options": [
       "DatePickerEntryMode.input",
       "DatePickerEntryMode.calendar",

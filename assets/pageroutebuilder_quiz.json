@@ -60,7 +60,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the file, which parameters are required in PageRouteBuilder?",
+    "que": "which parameters are required in PageRouteBuilder?",
     "options": [
       "settings and pageBuilder",
       "pageBuilder and transitionsBuilder",
@@ -70,7 +70,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of transitionDuration in the class definition?",
+    "que": "What is the default value of transitionDuration in PageRouteBuilder?",
     "options": [
       "100 milliseconds",
       "200 milliseconds",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter determines if the route\u2019s state is kept when it is inactive?",
+    "que": "Which parameter determines if the route’s state is kept when it is inactive?",
     "options": [
       "maintainState",
       "opaque",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what is a recommended use of PageRouteBuilder?",
+    "que": "what is a recommended use of PageRouteBuilder?",
     "options": [
       "For standard Material transitions only",
       "For custom page transitions with animations",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the file, what should you avoid with PageRouteBuilder?",
+    "que": "what should you avoid with PageRouteBuilder?",
     "options": [
       "Using animations",
       "Using in large apps",

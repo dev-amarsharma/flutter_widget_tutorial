@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what type of values should Switch be used for?",
+    "que": "what type of values should Switch be used for?",
     "options": [
       "Integer values",
       "String values",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, what does Switch extend?",
+    "que": "what does Switch extend?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

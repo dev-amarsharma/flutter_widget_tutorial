@@ -30,7 +30,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the constructor, what is the default value of the flex parameter in Flexible?",
+    "que": "What is the default value of flex in Flexible?",
     "options": [
       "0",
       "1",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, when should you use Flexible?",
+    "que": "when should you use Flexible?",
     "options": [
       "For widgets that should always have a fixed size",
       "For widgets that should take up available space but not necessarily all of it",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "What is another thing to avoid with Flexible according to the file?",
+    "que": "What is another thing to avoid with Flexible?",
     "options": [
       "Using it with colors",
       "Using it with padding",

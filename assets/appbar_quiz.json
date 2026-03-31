@@ -70,7 +70,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, what should you use the actions parameter for?",
+    "que": "what should you use the actions parameter for?",
     "options": [
       "Navigation icons",
       "Icons and buttons",
@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what should you use the leading parameter for?",
+    "que": "what should you use the leading parameter for?",
     "options": [
       "Status indicators",
       "Navigation icons",
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "Where should you NOT use AppBar according to the 'Things to Avoid' section?",
+    "que": "Where should you NOT use AppBar?",
     "options": [
       "Inside a Column",
       "Outside of a Scaffold",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, AppBar extends which base class?",
+    "que": "AppBar extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "Which interface does AppBar implement according to the class definition?",
+    "que": "Which interface does AppBar implement?",
     "options": [
       "TickerProvider",
       "PreferredSizeWidget",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter can be used to place a widget behind the AppBar\u2019s toolbar and tab bar?",
+    "que": "Which parameter can be used to place a widget behind the AppBar’s toolbar and tab bar?",
     "options": [
       "flexibleSpace",
       "bottom",

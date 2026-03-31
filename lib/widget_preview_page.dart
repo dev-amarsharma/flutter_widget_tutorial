@@ -65,6 +65,8 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
     }
   }
 
+  bool _adShownAtStart = false;
+
   Future<void> _startQuiz() async {
     // Check internet connection
     final connectivityResult = await Connectivity().checkConnectivity();
@@ -80,21 +82,39 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
       return;
     }
 
-    // Check rewarded ad
-    if (!rewardedAdService.isAdReady) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Ad is loading... Please try again.'),
+    // Show interstitial ad before quiz starts
+    // Use forceLoad: true to ensure ad is loaded if not already ready
+    if (!interstitialAdService.isAdReady && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Row(
+            children: [
+              SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+              ),
+              SizedBox(width: 16),
+              Text('Preparing quiz ...'),
+            ],
           ),
-        );
-        // Try to load again
-        rewardedAdService.loadRewardedAd();
-      }
-      return;
+          duration: Duration(seconds: 3),
+        ),
+      );
     }
 
-    // Launch quiz directly without showing ad
+    _adShownAtStart = await interstitialAdService.showInterstitialAd(forceLoad: true);
+    
+    if (!_adShownAtStart && mounted) {
+       print('Ad could not be shown, starting quiz anyway');
+    }
+    
+    // Small delay after ad dismissal to ensure smooth transition
+    await Future.delayed(const Duration(milliseconds: 300));
+
+    if (!mounted) return;
+
+    // Launch quiz
     _launchQuiz();
   }
 
@@ -128,6 +148,7 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
           builder: (context) => QuizScreen(
             questions: questions,
             timerDurationSeconds: 30,
+            adShownAtStart: _adShownAtStart,
           ),
         ),
       );

@@ -84,8 +84,8 @@
     "options": [
       "Sets the semantic description only",
       "Shows a label above the slider, often reflecting the current value",
-      "Sets the slider\u2019s min value",
-      "Sets the slider\u2019s max value"
+      "Sets the slider’s min value",
+      "Sets the slider’s max value"
     ],
     "ans": "b"
   },
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the tips, when should you use divisions in a Slider?",
+    "que": "when should you use divisions in a Slider?",
     "options": [
       "When you need continuous values only",
       "When you want discrete values",
@@ -110,7 +110,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the tips, why might you use label with Slider?",
+    "que": "why might you use label with Slider?",
     "options": [
       "To add an icon",
       "To show the current value to the user",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, Slider extends which base class?",
+    "que": "Slider extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

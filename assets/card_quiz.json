@@ -80,7 +80,7 @@
     "ans": "a"
   },
   {
-    "que": "Which ShapeBorder is suggested to round the Card\u2019s corners?",
+    "que": "Which ShapeBorder is suggested to round the Card’s corners?",
     "options": [
       " StadiumBorder",
       "RoundedRectangleBorder",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "Which property controls how the Card\u2019s contents are clipped?",
+    "que": "Which property controls how the Card’s contents are clipped?",
     "options": [
       "shape",
       "elevation",
@@ -190,7 +190,7 @@
     "ans": "c"
   },
   {
-    "que": "What is the default value of clipBehavior in the Card constructor shown?",
+    "que": "What is the default value of clipBehavior in the Card Card?",
     "options": [
       "Clip.hardEdge",
       "Clip.antiAlias",

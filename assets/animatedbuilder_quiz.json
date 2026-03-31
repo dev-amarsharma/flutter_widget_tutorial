@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what is a recommended use for AnimatedBuilder?",
+    "que": "what is a recommended use for AnimatedBuilder?",
     "options": [
       "Use for simple property animations only",
       "Use for complex, custom animations",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, AnimatedBuilder extends which base class?",
+    "que": "AnimatedBuilder extends which base class?",
     "options": [
       "StatefulWidget",
       "AnimatedWidget",
@@ -180,7 +180,7 @@
     "ans": "d"
   },
   {
-    "que": "Which of the following is a correct description from the file?",
+    "que": "Which of the following correctly describes AnimatedBuilder?",
     "options": [
       "AnimatedBuilder directly animates numeric values",
       "AnimatedBuilder rebuilds its child whenever the animation changes",
@@ -225,7 +225,7 @@
       "Use for complex, custom animations",
       "Combine with AnimationController for full control",
       "Use for simple property animations only",
-      "Don\u2019t forget to dispose the AnimationController"
+      "Don’t forget to dispose the AnimationController"
     ],
     "ans": "c"
   },
@@ -240,7 +240,7 @@
     "ans": "c"
   },
   {
-    "que": "Which of the following best summarizes AnimatedBuilder\u2019s role?",
+    "que": "Which of the following best summarizes AnimatedBuilder’s role?",
     "options": [
       "It is a high-level convenience widget for simple size or color changes only",
       "It is a low-level building block for custom animations that rebuilds using a builder callback",

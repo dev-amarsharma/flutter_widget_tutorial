@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which controller should be used for custom behavior?",
+    "que": "which controller should be used for custom behavior?",
     "options": [
       "ScrollController",
       "AnimationController",

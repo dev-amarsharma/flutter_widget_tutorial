@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what should you set to true for an indeterminate state?",
+    "que": "what should you set to true for an indeterminate state?",
     "options": [
       "isError",
       "autofocus",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, Checkbox extends which base class?",
+    "que": "Checkbox extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -190,7 +190,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter can be used to adjust how compact or expanded the Checkbox\u2019s layout is?",
+    "que": "Which parameter can be used to adjust how compact or expanded the Checkbox’s layout is?",
     "options": [
       "visualDensity",
       "materialTapTargetSize",
@@ -210,7 +210,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter controls the shape of the Checkbox\u2019s border?",
+    "que": "Which parameter controls the shape of the Checkbox’s border?",
     "options": [
       "side",
       "shape",

@@ -30,7 +30,7 @@
     "ans": "d"
   },
   {
-    "que": "What is the default value of the alignment parameter in Align?",
+    "que": "What is the default value of alignment in Align?",
     "options": [
       "Alignment.topLeft",
       "Alignment.bottomRight",
@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the main parameters list, which of these is required conceptually even if not marked with 'required' in the signature?",
+    "que": "which of these is required conceptually even if not marked with 'required' in the signature?",
     "options": [
       "alignment and child",
       "widthFactor and heightFactor",
@@ -170,7 +170,7 @@
     "ans": "a"
   },
   {
-    "que": "Which description from the file summarizes Align's usefulness?",
+    "que": "Which statement best summarizes Align's usefulness?",
     "options": [
       "Useful for building scrollable lists",
       "Useful for precise positioning inside a parent widget",

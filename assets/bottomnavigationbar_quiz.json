@@ -60,7 +60,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, BottomNavigationBar should be used for what kind of navigation?",
+    "que": "BottomNavigationBar should be used for what kind of navigation?",
     "options": [
       "Nested navigation",
       "Secondary navigation only",
@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what should you combine with icons for clarity?",
+    "que": "what should you combine with icons for clarity?",
     "options": [
       "Tooltips",
       "Labels",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "For what should you NOT use BottomNavigationBar according to 'Things to Avoid'?",
+    "que": "For what should you NOT use BottomNavigationBar?",
     "options": [
       "Top-level navigation",
       "Secondary navigation",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, BottomNavigationBar extends which base class?",
+    "que": "BottomNavigationBar extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

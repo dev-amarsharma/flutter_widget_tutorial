@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "Which class definition keyword indicates ThemeData's constructor is constant?",
+    "que": "Which keyword indicates that ThemeData's constructor is constant?",
     "options": [
       "factory",
       "const",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "In the class definition, what is the type of brightness property?",
+    "que": "What is the type of the brightness property in ThemeData?",
     "options": [
       "Brightness",
       "Brightness?",
@@ -170,7 +170,7 @@
     "ans": "b"
   },
   {
-    "que": "In the class definition, what is the type of primaryColor property?",
+    "que": "What is the type of the primaryColor property in ThemeData?",
     "options": [
       "Color",
       "Color?",
@@ -180,7 +180,7 @@
     "ans": "b"
   },
   {
-    "que": "In the class definition, what is the type of scaffoldBackgroundColor property?",
+    "que": "What is the type of the scaffoldBackgroundColor property in ThemeData?",
     "options": [
       "Color",
       "Color?",
@@ -290,22 +290,22 @@
     "ans": "a"
   },
   {
-    "que": "Which file is referenced in 'See Also' as the widget that applies ThemeData to its descendants?",
+    "que": "Which widget is commonly given a ThemeData object through its theme property?",
     "options": [
-      "theme.md",
-      "scaffold.md",
-      "materialapp.md",
-      "appbar.md"
+      "Theme",
+      "Scaffold",
+      "MaterialApp",
+      "AppBar"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Where can you find the official documentation for ThemeData as mentioned in the file?",
+    "que": "Which Flutter library contains ThemeData?",
     "options": [
-      "https://api.flutter.dev/flutter/widgets/ThemeData-class.html",
-      "https://api.flutter.dev/flutter/material/ThemeData-class.html",
-      "https://flutter.dev/docs/theme",
-      "https://pub.dev/packages/theme_data"
+      "flutter/widgets.dart",
+      "flutter/material.dart",
+      "flutter/services.dart",
+      "flutter/rendering.dart"
     ],
     "ans": "b"
   },

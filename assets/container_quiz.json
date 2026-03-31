@@ -320,7 +320,7 @@
     "ans": "b"
   },
   {
-    "que": "Which of the following is listed as a main parameter of Container in the document?",
+    "que": "Which of the following is listed as a main parameter of Container for Container?",
     "options": [
       "onTap",
       "child",
@@ -350,7 +350,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the document, which of the following can you do exclusively with Container using decoration?",
+    "que": "which of the following can you do exclusively with Container using decoration?",
     "options": [
       "Handle user gestures",
       "Add rounded corners, shadows, gradients, and borders",
@@ -400,7 +400,7 @@
     "ans": "b"
   },
   {
-    "que": "Which usage is listed under 'Things to Avoid' for Container?",
+    "que": "Which usage should be avoided when using Container?",
     "options": [
       "Using decoration for gradients",
       "Using Container for simple padding or alignment",
@@ -440,7 +440,7 @@
     "ans": "b"
   },
   {
-    "que": "Which of the following is a 'Things to Avoid' guideline regarding color and decoration?",
+    "que": "Which guideline about color and decoration should you follow when using Container?",
     "options": [
       "Avoid setting decoration without color",
       "Avoid setting both color and decoration with a color; prefer decoration for advanced styling",
@@ -450,7 +450,7 @@
     "ans": "b"
   },
   {
-    "que": "Which statement about Container and decoration is correct according to the document?",
+    "que": "Which statement about Container and decoration is correct?",
     "options": [
       "You must always set both color and decoration",
       "If you set decoration with a color, you should not also set the color property",

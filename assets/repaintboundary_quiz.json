@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, for which widgets should you use RepaintBoundary?",
+    "que": "for which widgets should you use RepaintBoundary?",
     "options": [
       "Widgets that never change",
       "Widgets that repaint frequently",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the constructor signature of RepaintBoundary shown in the file?",
+    "que": "What is the constructor signature of RepaintBoundary shown for RepaintBoundary?",
     "options": [
       "const RepaintBoundary({ Widget child })",
       "const RepaintBoundary({ Key? key, Widget? child })",

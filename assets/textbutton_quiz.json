@@ -30,7 +30,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter of TextButton is required and represents the button\u2019s child widget?",
+    "que": "Which parameter of TextButton is required and represents the button’s child widget?",
     "options": [
       "style",
       "child",
@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, when should you use TextButton?",
+    "que": "when should you use TextButton?",
     "options": [
       "For primary call-to-action buttons",
       "For destructive actions only",
@@ -74,7 +74,7 @@
     "options": [
       "Using style to customize it",
       "Using it for secondary actions",
-      "Using for primary actions\u2014prefer ElevatedButton instead",
+      "Using for primary actions—prefer ElevatedButton instead",
       "Using icons inside the child"
     ],
     "ans": "c"
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, what does TextButton extend?",
+    "que": "what does TextButton extend?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",

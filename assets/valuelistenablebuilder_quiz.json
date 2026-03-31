@@ -40,7 +40,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what is a good pairing with ValueListenableBuilder for local state?",
+    "que": "what is a good pairing with ValueListenableBuilder for local state?",
     "options": [
       "ChangeNotifier",
       "StreamController",
@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, ValueListenableBuilder is best suited for:",
+    "que": "ValueListenableBuilder is best suited for:",
     "options": [
       "Simple reactive state updates",
       "Heavy background computations",
@@ -63,7 +63,7 @@
     "que": "Which of the following is listed as something to avoid with ValueListenableBuilder?",
     "options": [
       "Using it with ValueNotifier",
-      "Using it for complex state\u2014prefer a state management package",
+      "Using it for complex state—prefer a state management package",
       "Using it for small counters",
       "Listening to a single value"
     ],
@@ -93,7 +93,7 @@
     "que": "Which of these is a good example use case for ValueListenableBuilder?",
     "options": [
       "Rebuilding a Text widget whenever a counter ValueNotifier changes",
-      "Managing an entire app\u2019s authentication state",
+      "Managing an entire app’s authentication state",
       "Rendering large paginated lists from the network",
       "Handling complex form validation across multiple pages"
     ],

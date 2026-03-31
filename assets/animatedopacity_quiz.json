@@ -60,7 +60,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what is a recommended use case for AnimatedOpacity?",
+    "que": "what is a recommended use case for AnimatedOpacity?",
     "options": [
       "Smooth fade transitions",
       "Complex physics-based animations",
@@ -70,7 +70,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, what should AnimatedOpacity be combined with to create effects?",
+    "que": "what should AnimatedOpacity be combined with to create effects?",
     "options": [
       "Network calls",
       "State changes",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, AnimatedOpacity extends which base class?",
+    "que": "AnimatedOpacity extends which base class?",
     "options": [
       "StatefulWidget",
       "AnimatedWidget",
@@ -210,7 +210,7 @@
     "ans": "d"
   },
   {
-    "que": "Which statement about using AnimatedOpacity with non-visual widgets is correct according to the file?",
+    "que": "Which statement about using AnimatedOpacity with non-visual widgets is correct?",
     "options": [
       "It is recommended for all widget types",
       "It should be avoided",

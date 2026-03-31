@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "Which methods does the file recommend for imperative navigation?",
+    "que": "Which methods are commonly used for imperative navigation?",
     "options": [
       "Navigator.add and Navigator.remove",
       "Navigator.show and Navigator.hide",
@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "What should you avoid with Navigator according to the file?",
+    "que": "What should you avoid with Navigator?",
     "options": [
       "Using Navigator.push",
       "Using Navigator.pop",

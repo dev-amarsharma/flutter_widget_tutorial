@@ -30,7 +30,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the constructor, what is the default value of the flex parameter in Expanded?",
+    "que": "What is the default value of flex in Expanded?",
     "options": [
       "0",
       "1",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what is a common use of Expanded?",
+    "que": "what is a common use of Expanded?",
     "options": [
       "To make widgets share available space equally",
       "To add margins around widgets",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "What is another thing to avoid with Expanded according to the file?",
+    "que": "What is another thing to avoid with Expanded?",
     "options": [
       "Wrapping only one child in Expanded",
       "Wrapping all children in Expanded unless you want them to share space equally",

@@ -50,7 +50,7 @@
     "ans": "a"
   },
   {
-    "que": "What is the type of the children parameter in the ListView constructor shown?",
+    "que": "What is the type of the children parameter in the ListView ListView?",
     "options": [
       "List<String>",
       "List<int>",
@@ -140,7 +140,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, which constructor should you use for large or infinite lists?",
+    "que": "which constructor should you use for large or infinite lists?",
     "options": [
       "ListView.separated",
       "ListView.custom",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, ListView can be used for which orientations?",
+    "que": "ListView can be used for which orientations?",
     "options": [
       "Only vertical lists",
       "Only horizontal lists",

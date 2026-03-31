@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the tips, how should Scaffold typically be used?",
+    "que": "how should Scaffold typically be used?",
     "options": [
       "As the root of each screen",
       "Nested inside small widgets",
@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the base class of Scaffold according to the class definition?",
+    "que": "What is the base class of Scaffold?",
     "options": [
       "StatelessWidget",
       "InheritedWidget",

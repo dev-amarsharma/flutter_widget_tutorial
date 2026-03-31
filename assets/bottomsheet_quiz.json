@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, BottomSheet should be used for what?",
+    "que": "BottomSheet should be used for what?",
     "options": [
       "Main navigation only",
       "Menus, actions, or additional content",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which function should you use for modal bottom sheets?",
+    "que": "which function should you use for modal bottom sheets?",
     "options": [
       "showBottomSheet",
       "showPersistentBottomSheet",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, BottomSheet extends which base class?",
+    "que": "BottomSheet extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -190,7 +190,7 @@
     "ans": "c"
   },
   {
-    "que": "Which use case is more appropriate for a BottomSheet according to the file?",
+    "que": "Which use case is more appropriate for a BottomSheet?",
     "options": [
       "Displaying app settings permanently",
       "Showing a list of share options as a menu",

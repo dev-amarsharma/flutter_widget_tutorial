@@ -93,7 +93,7 @@
     "que": "Which of the following is listed as something to avoid with SingleChildScrollView?",
     "options": [
       "Using it with a Column",
-      "Using for large lists\u2014use ListView or GridView instead",
+      "Using for large lists—use ListView or GridView instead",
       "Using a scroll controller",
       "Using vertical scrolling"
     ],
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, SingleChildScrollView extends which base class?",
+    "que": "SingleChildScrollView extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",

@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, how should CupertinoPageScaffold typically be used?",
+    "que": "how should CupertinoPageScaffold typically be used?",
     "options": [
       "As the root of each Cupertino screen",
       "Only for dialogs",
@@ -84,7 +84,7 @@
     "options": [
       "Using a navigationBar",
       "Using a backgroundColor",
-      "Using for Material apps\u2014use Scaffold instead",
+      "Using for Material apps—use Scaffold instead",
       "Using Center as child"
     ],
     "ans": "c"
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, CupertinoPageScaffold extends which base class?",
+    "que": "CupertinoPageScaffold extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -120,7 +120,7 @@
     "ans": "a"
   },
   {
-    "que": "What is the default value of resizeToAvoidBottomInset in the constructor shown?",
+    "que": "What is the default value of resizeToAvoidBottomInset in CupertinoPageScaffold?",
     "options": [
       "false",
       "true",

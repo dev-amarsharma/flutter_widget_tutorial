@@ -30,7 +30,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, what is the role of the foregroundPainter parameter?",
+    "que": "what is the role of the foregroundPainter parameter?",
     "options": [
       "Custom painter for the background",
       "Custom painter for the foreground",
@@ -60,7 +60,7 @@
     "ans": "d"
   },
   {
-    "que": "According to the quick tips, what is a recommended use of CustomPaint?",
+    "que": "what is a recommended use of CustomPaint?",
     "options": [
       "Simple padding and margins",
       "Custom drawing and graphics",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, CustomPaint extends which base class?",
+    "que": "CustomPaint extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -110,7 +110,7 @@
     "ans": "d"
   },
   {
-    "que": "What is the default value of the size parameter in the CustomPaint constructor shown?",
+    "que": "What is the default value of the size parameter in the CustomPaint CustomPaint?",
     "options": [
       "Size.infinite",
       "Size.zero",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "Which of the following is NOT mentioned as a main parameter of CustomPaint in the file?",
+    "que": "Which of the following is NOT mentioned as a main parameter of CustomPaint for CustomPaint?",
     "options": [
       "painter",
       "foregroundPainter",
@@ -174,7 +174,7 @@
     "options": [
       "It replaces the canvas completely",
       "It is painted on top of the painters",
-      "It is placed beneath the painters\u2019 drawing",
+      "It is placed beneath the painters’ drawing",
       "It must be a Container"
     ],
     "ans": "c"

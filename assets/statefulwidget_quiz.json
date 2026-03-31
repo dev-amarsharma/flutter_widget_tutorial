@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, when should you use StatefulWidget?",
+    "que": "when should you use StatefulWidget?",
     "options": [
       "For widgets that never change after build",
       "For widgets that need to update their UI",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "Where should you keep the state logic according to the tips?",
+    "que": "Where should you keep the state logic in a StatefulWidget?",
     "options": [
       "In the StatefulWidget class",
       "In a global function",
@@ -130,7 +130,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, StatefulWidget is:",
+    "que": "StatefulWidget is:",
     "options": [
       "A concrete class",
       "An abstract class",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the base class of StatefulWidget as shown in the definition?",
+    "que": "What is the base class of StatefulWidget in StatefulWidget?",
     "options": [
       "StatelessWidget",
       "State",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "What annotation is used for the createState method in the class definition?",
+    "que": "What annotation is used for the createState method in StatefulWidget?",
     "options": [
       "@override",
       "@mustCallSuper",
@@ -160,7 +160,7 @@
     "ans": "c"
   },
   {
-    "que": "What does the constructor of StatefulWidget take in the definition?",
+    "que": "What does the StatefulWidget constructor take?",
     "options": [
       "A required State object",
       "A BuildContext",

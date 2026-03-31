@@ -90,7 +90,7 @@
     "ans": "a"
   },
   {
-    "que": "What is the default value of the decoration parameter in TextField?",
+    "que": "What is the default value of decoration in TextField?",
     "options": [
       "null",
       "InputDecoration()",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which object should you use to read or modify the text?",
+    "que": "which object should you use to read or modify the text?",
     "options": [
       "FocusNode",
       "TextStyle",
@@ -170,7 +170,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what should you use for labels, hints, and icons around a TextField?",
+    "que": "what should you use for labels, hints, and icons around a TextField?",
     "options": [
       "TextStyle",
       "InputDecoration",
@@ -184,7 +184,7 @@
     "options": [
       "Using InputDecoration",
       "Using TextEditingController",
-      "Using TextField for read-only text\u2014use Text instead",
+      "Using TextField for read-only text—use Text instead",
       "Using obscureText for passwords"
     ],
     "ans": "c"

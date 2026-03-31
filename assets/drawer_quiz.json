@@ -30,7 +30,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the file, what does the child parameter of Drawer usually contain?",
+    "que": "what does the child parameter of Drawer usually contain?",
     "options": [
       "A GridView",
       "A Center widget",
@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, which widget is recommended for navigation items inside Drawer?",
+    "que": "which widget is recommended for navigation items inside Drawer?",
     "options": [
       "Text",
       "Icon",
@@ -70,7 +70,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, with which widget should Drawer typically be combined for easy integration?",
+    "que": "with which widget should Drawer typically be combined for easy integration?",
     "options": [
       "AppBar",
       "Scaffold",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "What else should you avoid doing with Drawer according to the file?",
+    "que": "What else should you avoid doing with Drawer?",
     "options": [
       "Using icons",
       "Using text labels",
@@ -100,7 +100,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, Drawer extends which base class?",
+    "que": "Drawer extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of clipBehavior in the Drawer constructor shown?",
+    "que": "What is the default value of clipBehavior in the Drawer Drawer?",
     "options": [
       "Clip.none",
       "Clip.hardEdge",

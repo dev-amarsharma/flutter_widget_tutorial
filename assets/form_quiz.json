@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the description, what does the child parameter of Form usually contain?",
+    "que": "What does the child parameter of Form usually contain?",
     "options": [
       "A Row",
       "A ListView",
@@ -90,7 +90,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, why should you group related fields inside a Form?",
+    "que": "why should you group related fields inside a Form?",
     "options": [
       "For better theming",
       "For easier validation",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, Form extends which base class?",
+    "que": "Form extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

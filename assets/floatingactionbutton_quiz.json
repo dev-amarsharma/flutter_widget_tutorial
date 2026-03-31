@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the description, what is usually used as the child of a FloatingActionButton?",
+    "que": "What is usually used as the child of a FloatingActionButton?",
     "options": [
       "Text",
       "Image",
@@ -90,7 +90,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, what is a recommended use of FloatingActionButton?",
+    "que": "what is a recommended use of FloatingActionButton?",
     "options": [
       "For secondary actions only",
       "For the main action on a screen",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, why should you use the tooltip parameter?",
+    "que": "why should you use the tooltip parameter?",
     "options": [
       "For performance",
       "For animations",
@@ -160,7 +160,7 @@
     "ans": "d"
   },
   {
-    "que": "Which of the following is NOT mentioned as a main parameter of FloatingActionButton in the file?",
+    "que": "Which of the following is NOT mentioned as a main parameter of FloatingActionButton for FloatingActionButton?",
     "options": [
       "onPressed",
       "child",

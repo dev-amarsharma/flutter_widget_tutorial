@@ -120,7 +120,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, SimpleDialog extends which base class?",
+    "que": "SimpleDialog extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of the children parameter in SimpleDialog?",
+    "que": "What is the default value of children in SimpleDialog?",
     "options": [
       "null",
       "An empty list <Widget>[]",
@@ -140,7 +140,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter controls the padding around the dialog\u2019s content in SimpleDialog?",
+    "que": "Which parameter controls the padding around the dialog’s content in SimpleDialog?",
     "options": [
       "titlePadding",
       "contentPadding",
@@ -190,7 +190,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter controls how the dialog\u2019s content is clipped in SimpleDialog?",
+    "que": "Which parameter controls how the dialog’s content is clipped in SimpleDialog?",
     "options": [
       "shape",
       "clipBehavior",

@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, when should you use MaterialPageRoute?",
+    "que": "when should you use MaterialPageRoute?",
     "options": [
       "For custom slide transitions only",
       "For standard page transitions",
@@ -60,7 +60,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, when should fullscreenDialog be used?",
+    "que": "when should fullscreenDialog be used?",
     "options": [
       "For background tasks",
       "For modal screens",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "In the class definition, MaterialPageRoute<T> extends which class?",
+    "que": "MaterialPageRoute<T> extends which class?",
     "options": [
       "Route<T>",
       "PageRoute<T>",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter controls whether the route\u2019s state is maintained when it is inactive?",
+    "que": "Which parameter controls whether the route’s state is maintained when it is inactive?",
     "options": [
       "fullscreenDialog",
       "settings",

@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, when should you use GestureDetector?",
+    "que": "when should you use GestureDetector?",
     "options": [
       "For styling buttons only",
       "For custom touch interactions",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what can you combine with GestureDetector for interactive effects?",
+    "que": "what can you combine with GestureDetector for interactive effects?",
     "options": [
       "Navigation",
       "Animations",
@@ -120,7 +120,7 @@
     "ans": "c"
   },
   {
-    "que": "What else should you not forget when using GestureDetector according to the file?",
+    "que": "What else should you not forget when using GestureDetector?",
     "options": [
       "To always wrap it with Padding",
       "To always give it a key",
@@ -130,7 +130,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, GestureDetector extends which base class?",
+    "que": "GestureDetector extends which base class?",
     "options": [
       "StatefulWidget",
       "StatelessWidget",

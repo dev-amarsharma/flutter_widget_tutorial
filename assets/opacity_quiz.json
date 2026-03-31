@@ -50,7 +50,7 @@
     "ans": "c"
   },
   {
-    "que": "Opacity is described as which kind of widget in the class definition?",
+    "que": "Opacity is described as which kind of widget in Opacity?",
     "options": [
       "StatefulWidget",
       "InheritedWidget",
@@ -144,7 +144,7 @@
     "options": [
       "To permanently hide a widget without rebuilding",
       "To visually downplay or dim a UI element",
-      "To change the widget\u2019s layout constraints",
+      "To change the widget’s layout constraints",
       "To manage app routes"
     ],
     "ans": "b"

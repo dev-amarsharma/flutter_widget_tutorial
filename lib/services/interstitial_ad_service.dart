@@ -2,6 +2,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/foundation.dart';
 import 'dart:io';
+import 'dart:async';
 
 /// Service class for managing interstitial ads
 class InterstitialAdService {
@@ -11,6 +12,8 @@ class InterstitialAdService {
   InterstitialAd? _interstitialAd;
   bool _isLoading = false;
   bool _isAdReady = false;
+  Completer<void>? _adCompleter;
+  Completer<bool>? _loadCompleter;
 
   // Ad unit ID getter - returns actual ad unit ID
   // For testing, you can temporarily replace with test IDs:
@@ -29,12 +32,18 @@ class InterstitialAdService {
   }
 
   /// Load an interstitial ad
-  Future<void> loadInterstitialAd() async {
-    if (_isLoading || _isAdReady) {
-      return;
+  /// Returns a Future that completes with true if loaded successfully, false otherwise
+  Future<bool> loadInterstitialAd() async {
+    if (_isAdReady) {
+      return true;
+    }
+
+    if (_isLoading) {
+      return _loadCompleter?.future ?? Future.value(false);
     }
 
     _isLoading = true;
+    _loadCompleter = Completer<bool>();
 
     await InterstitialAd.load(
       adUnitId: interstitialAdUnitId,
@@ -51,7 +60,9 @@ class InterstitialAdService {
               ad.dispose();
               _interstitialAd = null;
               _isAdReady = false;
-              // Load a new ad after the current one is dismissed
+              _adCompleter?.complete();
+              _adCompleter = null;
+              // Preload next ad
               loadInterstitialAd();
             },
             onAdFailedToShowFullScreenContent: (ad, error) {
@@ -59,7 +70,9 @@ class InterstitialAdService {
               _interstitialAd = null;
               _isAdReady = false;
               _isLoading = false;
-              // Load a new ad after failure
+              _adCompleter?.complete();
+              _adCompleter = null;
+              // Preload next ad
               loadInterstitialAd();
             },
             onAdShowedFullScreenContent: (ad) {
@@ -68,29 +81,51 @@ class InterstitialAdService {
           );
 
           print('Interstitial ad loaded successfully');
+          _loadCompleter?.complete(true);
+          _loadCompleter = null;
         },
         onAdFailedToLoad: (error) {
           _isLoading = false;
           _isAdReady = false;
           print('Interstitial ad failed to load: ${error.message}');
+          _loadCompleter?.complete(false);
+          _loadCompleter = null;
           // Retry loading after a delay
-          Future.delayed(const Duration(seconds: 5), () {
+          Future.delayed(const Duration(seconds: 10), () {
             loadInterstitialAd();
           });
         },
       ),
     );
+
+    return _loadCompleter?.future ?? Future.value(false);
   }
 
-  /// Show the interstitial ad if it's ready
-  Future<bool> showInterstitialAd() async {
+  /// Show the interstitial ad if it's ready, or load and then show
+  /// Returns a Future that completes when the ad is dismissed or failed to show
+  Future<bool> showInterstitialAd({bool forceLoad = false}) async {
+    if (forceLoad && !_isAdReady) {
+      print('Forcing ad load before showing');
+      await loadInterstitialAd();
+    }
+
     if (_interstitialAd != null && _isAdReady) {
+      _adCompleter = Completer<void>();
       _interstitialAd!.show();
       _isAdReady = false;
+      await _adCompleter!.future;
       return true;
     }
+    
+    print('No interstitial ad ready to show');
     return false;
   }
+
+  /// Check if an ad is ready
+  bool get isAdReady => _isAdReady;
+
+  /// Check if currently loading
+  bool get isLoading => _isLoading;
 
   /// Track navigation to widget page and show ad on 5th visit
   Future<void> handleWidgetPageNavigation() async {

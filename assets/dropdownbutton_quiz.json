@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the description, which two parameters are required for DropdownButton?",
+    "que": "Which two parameters are required for DropdownButton?",
     "options": [
       "items and value",
       "items and onChanged",
@@ -100,7 +100,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, which widget should you use for each item in DropdownButton?",
+    "que": "which widget should you use for each item in DropdownButton?",
     "options": [
       "Text",
       "ListTile",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, when should you use isExpanded?",
+    "que": "when should you use isExpanded?",
     "options": [
       "For compact dropdowns",
       "For icon-only dropdowns",
@@ -140,7 +140,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the class definition, DropdownButton<T> extends which base class?",
+    "que": "DropdownButton<T> extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -150,7 +150,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of the elevation parameter in the DropdownButton constructor shown?",
+    "que": "What is the default value of the elevation parameter in the DropdownButton DropdownButton?",
     "options": [
       "0",
       "4",
@@ -190,7 +190,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of iconSize in the DropdownButton constructor shown?",
+    "que": "What is the default value of iconSize in the DropdownButton DropdownButton?",
     "options": [
       "16.0",
       "20.0",

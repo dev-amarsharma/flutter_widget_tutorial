@@ -30,7 +30,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, which class does ColorFiltered extend?",
+    "que": "which class does ColorFiltered extend?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -130,7 +130,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter in the example directly determines how the color and the child\u2019s content are combined?",
+    "que": "Which parameter in the example directly determines how the color and the child’s content are combined?",
     "options": [
       "colorFilter",
       "BlendMode.saturation",

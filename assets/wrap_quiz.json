@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what is a good use case for Wrap?",
+    "que": "what is a good use case for Wrap?",
     "options": [
       "Full-screen forms only",
       "Scrollable lists of hundreds of items",
@@ -90,7 +90,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, what should you adjust to improve the Wrap layout?",
+    "que": "what should you adjust to improve the Wrap layout?",
     "options": [
       "textDirection only",
       "spacing and runSpacing",
@@ -120,7 +120,7 @@
     "ans": "d"
   },
   {
-    "que": "According to the class definition, what does Wrap extend?",
+    "que": "what does Wrap extend?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",

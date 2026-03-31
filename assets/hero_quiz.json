@@ -30,7 +30,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the file, which parameters of Hero are required?",
+    "que": "which parameters of Hero are required?",
     "options": [
       "tag and child",
       "tag and flightShuttleBuilder",
@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what must be the same on both source and destination widgets?",
+    "que": "what must be the same on both source and destination widgets?",
     "options": [
       "child type",
       "image asset",
@@ -90,7 +90,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the class definition, Hero extends which base class?",
+    "que": "Hero extends which base class?",
     "options": [
       "StatelessWidget",
       "StatefulWidget",
@@ -110,7 +110,7 @@
     "ans": "c"
   },
   {
-    "que": "Which property allows you to customize how the hero\u2019s bounding rectangle changes during the animation?",
+    "que": "Which property allows you to customize how the hero’s bounding rectangle changes during the animation?",
     "options": [
       "flightShuttleBuilder",
       "createRectTween",

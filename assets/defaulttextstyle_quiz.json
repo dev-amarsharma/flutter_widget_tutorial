@@ -70,7 +70,7 @@
     "ans": "a"
   },
   {
-    "que": "What is the base class of DefaultTextStyle according to the class definition?",
+    "que": "What is the base class of DefaultTextStyle?",
     "options": [
       "StatelessWidget",
       "InheritedWidget",
@@ -90,7 +90,7 @@
     "ans": "d"
   },
   {
-    "que": "Which parameter must also be provided (required) in the constructor besides style?",
+    "que": "Which parameter must also be provided along with style in DefaultTextStyle?",
     "options": [
       "textAlign",
       "child",
@@ -340,7 +340,7 @@
     "ans": "b"
   },
   {
-    "que": "Which of the following is a correct description of DefaultTextStyle from the file?",
+    "que": "Which of the following correctly describes DefaultTextStyle?",
     "options": [
       "A widget that paints a background image",
       "A widget that defines the default text style for the subtree below it",
@@ -370,12 +370,12 @@
     "ans": "b"
   },
   {
-    "que": "Which Flutter documentation URL is referenced in the 'See Also' section?",
+    "que": "Which Flutter library contains DefaultTextStyle?",
     "options": [
-      "https://api.flutter.dev/flutter/material/DefaultTextStyle-class.html",
-      "https://api.flutter.dev/flutter/widgets/DefaultTextStyle-class.html",
-      "https://flutter.dev/docs/text-style",
-      "https://pub.dev/packages/default_text_style"
+      "flutter/animation.dart",
+      "flutter/widgets.dart",
+      "flutter/services.dart",
+      "flutter/rendering.dart"
     ],
     "ans": "b"
   },

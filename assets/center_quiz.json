@@ -30,7 +30,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the file, is the child parameter conceptually required?",
+    "que": "is the child parameter conceptually required?",
     "options": [
       "Yes, it is the widget to center",
       "No, Center cannot have a child",
@@ -40,7 +40,7 @@
     "ans": "a"
   },
   {
-    "que": "Which parameter scales the width of the Center based on the child\u2019s width?",
+    "que": "Which parameter scales the width of the Center based on the child’s width?",
     "options": [
       "heightFactor",
       "widthFactor",
@@ -50,7 +50,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter scales the height of the Center based on the child\u2019s height?",
+    "que": "Which parameter scales the height of the Center based on the child’s height?",
     "options": [
       "heightFactor",
       "widthFactor",
@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what is a suggested use of Center?",
+    "que": "what is a suggested use of Center?",
     "options": [
       "To quickly center any widget in its parent",
       "To animate a widget",
@@ -130,7 +130,7 @@
     "ans": "b"
   },
   {
-    "que": "Which parameter is NOT listed as a main parameter of Center in the file?",
+    "que": "Which parameter is NOT listed as a main parameter of Center for Center?",
     "options": [
       "child",
       "widthFactor",
@@ -142,9 +142,9 @@
   {
     "que": "What does widthFactor do when set to 2.0 (conceptually)?",
     "options": [
-      "Makes Center take half the child\u2019s width",
-      "Makes Center ignore the child\u2019s width",
-      "Makes Center\u2019s width equal to twice the child\u2019s width",
+      "Makes Center take half the child’s width",
+      "Makes Center ignore the child’s width",
+      "Makes Center’s width equal to twice the child’s width",
       "Has no effect"
     ],
     "ans": "c"
@@ -152,9 +152,9 @@
   {
     "que": "What does heightFactor do when set to 0.5 (conceptually)?",
     "options": [
-      "Center\u2019s height is half of the child\u2019s height",
-      "Center\u2019s height is double the child\u2019s height",
-      "Center ignores the child\u2019s height",
+      "Center’s height is half of the child’s height",
+      "Center’s height is double the child’s height",
+      "Center ignores the child’s height",
       "Center expands to full screen height"
     ],
     "ans": "a"
@@ -170,7 +170,7 @@
     "ans": "b"
   },
   {
-    "que": "Which statement best describes Center\u2019s alignment behavior?",
+    "que": "Which statement best describes Center’s alignment behavior?",
     "options": [
       "Centers only horizontally",
       "Centers only vertically",

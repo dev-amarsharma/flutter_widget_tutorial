@@ -60,7 +60,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, when should showTimePicker typically be called?",
+    "que": "when should showTimePicker typically be called?",
     "options": [
       "During app startup automatically",
       "In response to a button or field tap",
@@ -70,7 +70,7 @@
     "ans": "b"
   },
   {
-    "que": "According to the quick tips, what should you do with the selected time before saving?",
+    "que": "what should you do with the selected time before saving?",
     "options": [
       "Convert it to a string only",
       "Always discard it",

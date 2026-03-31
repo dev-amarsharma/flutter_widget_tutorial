@@ -62,7 +62,7 @@
   {
     "que": "What does the fit parameter control?",
     "options": [
-      "The image\u2019s file format",
+      "The image’s file format",
       "How to inscribe the image into the allocated space",
       "The network loading strategy",
       "The alignment of the image"
@@ -80,7 +80,7 @@
     "ans": "b"
   },
   {
-    "que": "What is the default value of the alignment parameter in the Image constructor shown?",
+    "que": "What is the default value of the alignment parameter in the Image Image?",
     "options": [
       "Alignment.topLeft",
       "Alignment.bottomRight",
@@ -140,7 +140,7 @@
     "ans": "a"
   },
   {
-    "que": "According to the quick tips, which constructor should you use for local images?",
+    "que": "which constructor should you use for local images?",
     "options": [
       "Image.network",
       "Image.file",
@@ -150,7 +150,7 @@
     "ans": "c"
   },
   {
-    "que": "According to the quick tips, which constructor should you use for web images?",
+    "que": "which constructor should you use for web images?",
     "options": [
       "Image.asset",
       "Image.network",
