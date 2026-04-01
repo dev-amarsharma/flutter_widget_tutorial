@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+import 'models/app_config.dart';
 import 'screens/performance_screen.dart';
+import 'services/app_config_service.dart';
 import 'services/interstitial_ad_service.dart';
 import 'services/performance_service.dart';
 import 'widget_catalog_page.dart';
@@ -10,85 +13,77 @@ import 'widgets/custom_dialog.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // Initialize Performance Service
-  await performanceService.init();
 
-  // Initialize Mobile Ads SDK
+  await performanceService.init();
+  await appConfigService.loadConfig();
   await MobileAds.instance.initialize();
-  
-  // Configure test device IDs for testing
-  final RequestConfiguration requestConfiguration = RequestConfiguration(
+
+  final requestConfiguration = RequestConfiguration(
     testDeviceIds: ['B4B7D2919335B10A2648BC0F5DF2296C'],
   );
   MobileAds.instance.updateRequestConfiguration(requestConfiguration);
-  
-  // Initialize and preload interstitial ad
+
   await interstitialAdService.loadInterstitialAd();
-  
+
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // Custom color palette
-    const goldust = Color(0xFFFF8C00); // Dark Orange
-    const brown = Color(0xFF795548);
-    const gray = Color(0xFFBDBDBD);
-    const black = Colors.black;
-    const white = Colors.white;
+    final AppConfig config = appConfigService.config;
+    final theme = config.theme;
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: config.materialAppTitle,
       theme: ThemeData(
         colorScheme: ColorScheme(
           brightness: Brightness.light,
-          primary: goldust,
-          onPrimary: black,
-          secondary: brown,
-          onSecondary: white,
+          primary: theme.primary,
+          onPrimary: theme.onPrimary,
+          secondary: theme.secondary,
+          onSecondary: theme.onSecondary,
           error: Colors.red,
-          onError: white,
-          background: white,
-          onBackground: black,
-          surface: gray,
-          onSurface: black,
+          onError: Colors.white,
+          background: theme.background,
+          onBackground: theme.onBackground,
+          surface: theme.surface,
+          onSurface: theme.onSurface,
         ),
-        scaffoldBackgroundColor: white,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: goldust,
-          foregroundColor: black,
-          iconTheme: IconThemeData(color: black),
+        scaffoldBackgroundColor: theme.background,
+        appBarTheme: AppBarTheme(
+          backgroundColor: theme.primary,
+          foregroundColor: theme.onPrimary,
+          iconTheme: IconThemeData(color: theme.onPrimary),
           titleTextStyle: TextStyle(
-            color: black,
+            color: theme.onPrimary,
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
         ),
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: black),
-          bodyMedium: TextStyle(color: black),
-          bodySmall: TextStyle(color: brown),
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(color: theme.onBackground),
+          bodyMedium: TextStyle(color: theme.onBackground),
+          bodySmall: TextStyle(color: theme.secondary),
         ),
-        dividerColor: gray,
-        cardColor: goldust,
-        iconTheme: const IconThemeData(color: brown),
-        floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: brown,
-          foregroundColor: white,
+        dividerColor: theme.surface,
+        cardColor: theme.primary,
+        iconTheme: IconThemeData(color: theme.icon),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: theme.fabBackground,
+          foregroundColor: theme.fabForeground,
         ),
       ),
-      home: const MyHomePage(title: 'Flutter Learning Catalog'),
+      home: MyHomePage(title: config.catalogTitle),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -112,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
           context: context,
           builder: (context) => CustomDialog(
             title: 'Exit App?',
-            message: 'Are you sure you want to close the application?',
+            message: 'Are you sure you want to close ${widget.title}?',
             icon: Icons.exit_to_app_rounded,
             iconColor: Colors.deepOrange,
             primaryButtonText: 'Exit',
@@ -145,36 +140,35 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Expanded(
               child: WidgetCatalogPage(
-                  onOpenWidget: (item) async {
-                    await interstitialAdService.handleWidgetPageNavigation();
-                    await Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder:
-                            (_) => WidgetPreviewPage(
-                              assetPath: item.assetPath,
-                              quizAssetPath: item.quizAssetPath,
-                              topicId: item.topicId,
-                              title: item.name,
-                              onMarkAsRead: (path, {topicId}) {
-                                performanceService.markAsRead(
-                                  path,
-                                  topicId: topicId,
-                                );
-                                setState(() {
-                                  _readAssets = performanceService.readAssets;
-                                });
-                              },
-                            ),
+                onOpenWidget: (item) async {
+                  await interstitialAdService.handleWidgetPageNavigation();
+                  await Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => WidgetPreviewPage(
+                        assetPath: item.assetPath,
+                        quizAssetPath: item.quizAssetPath,
+                        topicId: item.topicId,
+                        title: item.name,
+                        onMarkAsRead: (path, {topicId}) {
+                          performanceService.markAsRead(
+                            path,
+                            topicId: topicId,
+                          );
+                          setState(() {
+                            _readAssets = performanceService.readAssets;
+                          });
+                        },
                       ),
-                    );
-                  },
-                  onClear: () async {
-                    await performanceService.clearAll();
-                    setState(() {
-                      _readAssets = performanceService.readAssets;
-                    });
-                  },
-                )
+                    ),
+                  );
+                },
+                onClear: () async {
+                  await performanceService.clearAll();
+                  setState(() {
+                    _readAssets = performanceService.readAssets;
+                  });
+                },
+              ),
             ),
           ],
         ),

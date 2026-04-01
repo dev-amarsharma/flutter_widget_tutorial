@@ -1,0 +1,24 @@
+{
+  "appName": "Flutter Learning Catalog",
+  "materialAppTitle": "Flutter Learning Catalog",
+  "catalogTitle": "Flutter Learning Catalog",
+  "primaryTopic": "Flutter",
+  "description": "Learn Flutter with structured lessons, quizzes, and progress tracking.",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=digimonk.flutter.tutorial",
+  "features": {
+    "enableLegacyCatalogFallback": true
+  },
+  "theme": {
+    "primary": "#FF8C00",
+    "onPrimary": "#000000",
+    "secondary": "#795548",
+    "onSecondary": "#FFFFFF",
+    "background": "#FFFFFF",
+    "onBackground": "#000000",
+    "surface": "#BDBDBD",
+    "onSurface": "#000000",
+    "icon": "#795548",
+    "fabBackground": "#795548",
+    "fabForeground": "#FFFFFF"
+  }
+}

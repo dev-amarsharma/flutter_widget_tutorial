@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/catalog_section.dart';
 import '../services/catalog_service.dart';
 import '../services/app_share_service.dart';
+import '../services/app_config_service.dart';
 import '../services/performance_service.dart';
 import '../widgets/banner_ad_widget.dart';
 
@@ -94,7 +95,8 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
             onPressed: () {
               appShareService.shareApp(
                 context,
-                extraText: 'Track your Flutter learning progress with quizzes and lessons.',
+                extraText:
+                    'Track your ${appConfigService.config.primaryTopic} learning progress with lessons and quizzes.',
               );
             },
           ),

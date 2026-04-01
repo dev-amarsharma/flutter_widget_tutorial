@@ -9,6 +9,7 @@ import 'models/quiz_question.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
 import 'services/catalog_service.dart';
 import 'services/app_share_service.dart';
+import 'services/app_config_service.dart';
 import 'services/performance_service.dart';
 import 'services/rewarded_ad_service.dart';
 import 'widgets/custom_dialog.dart';
@@ -323,6 +324,7 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
   Widget build(BuildContext context) {
     final filteredSections = _filteredSections;
     final continueLearning = _continueLearningItems;
+    final appConfig = appConfigService.config;
 
     return CustomScrollView(
       controller: _scrollController,
@@ -365,7 +367,7 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
           flexibleSpace: FlexibleSpaceBar(
             titlePadding: const EdgeInsets.only(left: 24, bottom: 16),
             title: Text(
-              'Flutter Learning Catalog',
+              appConfig.catalogTitle,
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

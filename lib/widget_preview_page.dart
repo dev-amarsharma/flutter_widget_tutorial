@@ -11,6 +11,7 @@ import 'models/topic_manifest.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
 import 'services/performance_service.dart';
 import 'services/app_share_service.dart';
+import 'services/app_config_service.dart';
 import 'services/topics_manifest_repository.dart';
 
 class WidgetPreviewPage extends StatefulWidget {
@@ -300,7 +301,8 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
             onPressed: () {
               appShareService.shareApp(
                 context,
-                extraText: 'I am learning "$effectiveTitle" in the app.',
+                extraText:
+                    'I am learning "$effectiveTitle" in ${appConfigService.config.appName}.',
               );
             },
           ),

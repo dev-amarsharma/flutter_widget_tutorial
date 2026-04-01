@@ -1,5 +1,6 @@
 import '../models/catalog_section.dart';
 import '../models/topic_manifest.dart';
+import 'app_config_service.dart';
 import 'topics_manifest_repository.dart';
 
 class CatalogService {
@@ -246,14 +247,20 @@ class CatalogService {
         );
       }
 
-      final fallbackSections = _legacySectionsExcluding(manifestAssetPaths);
+      final fallbackSections =
+          appConfigService.config.features.enableLegacyCatalogFallback
+          ? _legacySectionsExcluding(manifestAssetPaths)
+          : const <CatalogSection>[];
       if (manifestSections.isEmpty) {
         return fallbackSections;
       }
 
       return [...manifestSections, ...fallbackSections];
     } catch (_) {
-      return _legacySectionsExcluding(const <String>{});
+      if (appConfigService.config.features.enableLegacyCatalogFallback) {
+        return _legacySectionsExcluding(const <String>{});
+      }
+      return const <CatalogSection>[];
     }
   }
 

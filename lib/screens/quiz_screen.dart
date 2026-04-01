@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import '../models/quiz_question.dart';
 import '../services/app_share_service.dart';
+import '../services/app_config_service.dart';
 import '../services/rewarded_ad_service.dart';
 import '../services/interstitial_ad_service.dart';
 import '../widgets/banner_ad_widget.dart';
@@ -468,7 +469,8 @@ class _QuizScreenState extends State<QuizScreen> {
               onPressed: () {
                 appShareService.shareApp(
                   context,
-                  extraText: 'Practice Flutter quizzes in this learning app.',
+                  extraText:
+                      'Practice ${appConfigService.config.primaryTopic} quizzes in this learning app.',
                 );
               },
             ),
@@ -550,7 +552,8 @@ class _QuizScreenState extends State<QuizScreen> {
               onPressed: () {
                 appShareService.shareApp(
                   context,
-                  extraText: 'Practice Flutter quizzes in this learning app.',
+                  extraText:
+                      'Practice ${appConfigService.config.primaryTopic} quizzes in this learning app.',
                 );
               },
             ),
