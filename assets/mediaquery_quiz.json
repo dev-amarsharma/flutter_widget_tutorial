@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is MediaQuery mainly used for in Flutter?",
+    "options": [
+      "Reading screen and environment information",
+      "Creating HTTP requests",
+      "Storing local preferences",
+      "Parsing markdown"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which expression is commonly used to access MediaQuery data?",
+    "options": [
+      "MediaQuery.load(context)",
+      "MediaQuery.of(context)",
+      "context.media()",
+      "MediaQuery.getSize()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which value can MediaQuery provide?",
+    "options": [
+      "Screen size",
+      "API token",
+      "Git branch name",
+      "Quiz answer key"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is MediaQuery useful in responsive design?",
+    "options": [
+      "It helps widgets adapt to different device sizes and padding",
+      "It removes the need for layout widgets",
+      "It makes all widgets stateless",
+      "It automatically creates routes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good companion tool for more local layout constraints?",
+    "options": [
+      "LayoutBuilder",
+      "SharedPreferences",
+      "Tooltip",
+      "IconButton"
+    ],
+    "ans": "a"
+  }
+]

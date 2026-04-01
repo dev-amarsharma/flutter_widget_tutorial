@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What does BuildContext represent in Flutter?",
+    "options": [
+      "A widget's location in the widget tree",
+      "A global state store",
+      "A package import",
+      "A theme configuration file"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which method commonly receives a BuildContext parameter?",
+    "options": [
+      "dispose",
+      "build",
+      "createState",
+      "main"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a common use of BuildContext?",
+    "options": [
+      "Compiling assets",
+      "Reading inherited data like Theme.of(context)",
+      "Declaring classes",
+      "Converting JSON automatically"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does Theme.of(context) depend on?",
+    "options": [
+      "A context that is in the widget tree below a Theme",
+      "A global variable",
+      "An internet connection",
+      "A static method on MaterialApp only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why might a Builder widget be useful?",
+    "options": [
+      "It creates a new BuildContext lower in the tree",
+      "It replaces StatelessWidget",
+      "It removes the need for Scaffold",
+      "It creates animations automatically"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about BuildContext is correct?",
+    "options": [
+      "Any context can always access any widget in the app",
+      "A context can only look up ancestors above it",
+      "Context is only used in navigation",
+      "Context stores all app data"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you be careful about after an async operation?",
+    "options": [
+      "Using context after the widget may be unmounted",
+      "Calling setState too early in main()",
+      "Importing Material twice",
+      "Creating too many constants"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is NOT a good use of BuildContext?",
+    "options": [
+      "Showing a dialog",
+      "Finding theme data",
+      "Storing long-term business state",
+      "Navigating to another page"
+    ],
+    "ans": "c"
+  }
+]

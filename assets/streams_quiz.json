@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the main difference between a Stream and a Future?",
+    "options": [
+      "A Stream emits multiple values over time, while a Future completes once",
+      "A Future emits multiple values, while a Stream completes once",
+      "They are exactly the same",
+      "A Stream is only for widgets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When should you usually use a Stream?",
+    "options": [
+      "When data updates repeatedly over time",
+      "Only when defining themes",
+      "Only for compile-time constants",
+      "Only inside main()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which syntax is commonly used to define a stream generator in Dart?",
+    "options": [
+      "async*",
+      "const*",
+      "yield const",
+      "stream()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which keyword is commonly used inside a stream generator to emit a value?",
+    "options": [
+      "emit",
+      "send",
+      "yield",
+      "return"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which loop syntax can listen to stream events in sequence?",
+    "options": [
+      "for each",
+      "await for",
+      "while await",
+      "listen for"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Flutter widget is commonly used to render stream data in the UI?",
+    "options": [
+      "FutureBuilder",
+      "LayoutBuilder",
+      "StreamBuilder",
+      "Builder"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you do with long-lived stream subscriptions when they are no longer needed?",
+    "options": [
+      "Ignore them",
+      "Cancel or dispose them",
+      "Convert them to const",
+      "Put them in build()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice should you avoid with streams?",
+    "options": [
+      "Using StreamBuilder for simple UI updates",
+      "Handling stream errors",
+      "Using a stream when a single Future is enough",
+      "Cancelling unused subscriptions"
+    ],
+    "ans": "c"
+  }
+]

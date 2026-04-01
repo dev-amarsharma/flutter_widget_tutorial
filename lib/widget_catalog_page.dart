@@ -4,245 +4,47 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'models/catalog_section.dart';
 import 'models/quiz_question.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
+import 'services/catalog_service.dart';
+import 'services/app_share_service.dart';
+import 'services/performance_service.dart';
 import 'services/rewarded_ad_service.dart';
 import 'widgets/custom_dialog.dart';
 
 class WidgetCatalogPage extends StatefulWidget {
-  final Set<String> readAssets;
-  final void Function(String assetPath) onOpenWidget;
+  final void Function(CatalogItem item) onOpenWidget;
   final VoidCallback onClear;
 
   const WidgetCatalogPage({
     Key? key,
-    required this.readAssets,
     required this.onOpenWidget,
     required this.onClear,
   }) : super(key: key);
 
   @override
   State<WidgetCatalogPage> createState() => _WidgetCatalogPageState();
-
-  // Catalog data: category, list of (display name, asset path)
-  static const List<Map<String, dynamic>> catalog = [
-    {
-      'category': 'Basic Widgets',
-      'widgets': [
-        {'name': 'Text', 'asset': 'assets/textview.md'},
-        {'name': 'Icon', 'asset': 'assets/icon.md'},
-        {'name': 'Image', 'asset': 'assets/image.md'},
-        {'name': 'Placeholder', 'asset': 'assets/placeholder.md'},
-        {'name': 'Rich Text', 'asset': 'assets/richtext.md'},
-      ],
-    },
-    {
-      'category': 'Container & Box Widgets',
-      'widgets': [
-        {'name': 'Container', 'asset': 'assets/container.md'},
-        {'name': 'Card', 'asset': 'assets/card.md'},
-        {'name': 'Sized Box', 'asset': 'assets/sizedbox.md'},
-        {'name': 'Decorated Box', 'asset': 'assets/decoratedbox.md'},
-        {'name': 'Divider', 'asset': 'assets/divider.md'},
-      ],
-    },
-    {
-      'category': 'Layout Widgets',
-      'widgets': [
-        {'name': 'Row', 'asset': 'assets/row.md'},
-        {'name': 'Column', 'asset': 'assets/column.md'},
-        {'name': 'Stack', 'asset': 'assets/stack.md'},
-        {'name': 'Wrap', 'asset': 'assets/wrap.md'},
-        {'name': 'Table', 'asset': 'assets/table.md'},
-      ],
-    },
-    {
-      'category': 'Scrollable Widgets',
-      'widgets': [
-        {'name': 'List View', 'asset': 'assets/listview.md'},
-        {'name': 'Grid View', 'asset': 'assets/gridview.md'},
-        {'name': 'Page View', 'asset': 'assets/pageview.md'},
-        {
-          'name': 'Single Child Scroll View',
-          'asset': 'assets/singlechildscrollview.md',
-        },
-        {'name': 'Scrollbar', 'asset': 'assets/scrollbar.md'},
-      ],
-    },
-    {
-      'category': 'Styling & Theming',
-      'widgets': [
-        {'name': 'Theme', 'asset': 'assets/theme.md'},
-        {'name': 'ThemeData', 'asset': 'assets/themedata.md'},
-        {'name': 'Opacity', 'asset': 'assets/opacity.md'},
-        {'name': 'Color Filtered', 'asset': 'assets/colorfiltered.md'},
-        {'name': 'Default Text Style', 'asset': 'assets/defaulttextstyle.md'},
-      ],
-    },
-    {
-      'category': 'Buttons',
-      'widgets': [
-        {'name': 'Elevated Button', 'asset': 'assets/elevatedbutton.md'},
-        {'name': 'Text Button', 'asset': 'assets/textbutton.md'},
-        {'name': 'Outlined Button', 'asset': 'assets/outlinedbutton.md'},
-        {'name': 'Icon Button', 'asset': 'assets/iconbutton.md'},
-        {
-          'name': 'Floating Action Button',
-          'asset': 'assets/floatingactionbutton.md',
-        },
-      ],
-    },
-    {
-      'category': 'App Structure',
-      'widgets': [
-        {'name': 'Scaffold', 'asset': 'assets/scaffold.md'},
-        {'name': 'App Bar', 'asset': 'assets/appbar.md'},
-        {'name': 'Drawer', 'asset': 'assets/drawer.md'},
-        {
-          'name': 'Bottom Navigation Bar',
-          'asset': 'assets/bottomnavigationbar.md',
-        },
-        {'name': 'Tab Bar', 'asset': 'assets/tabbar.md'},
-      ],
-    },
-    {
-      'category': 'Input & Forms',
-      'widgets': [
-        {'name': 'Text Field', 'asset': 'assets/textfield.md'},
-        {'name': 'Text Form Field', 'asset': 'assets/textformfield.md'},
-        {'name': 'Form', 'asset': 'assets/form.md'},
-        {'name': 'Checkbox', 'asset': 'assets/checkbox.md'},
-        {'name': 'Radio', 'asset': 'assets/radio.md'},
-        {'name': 'Switch', 'asset': 'assets/switch.md'},
-        {'name': 'Slider', 'asset': 'assets/slider.md'},
-        {'name': 'Dropdown Button', 'asset': 'assets/dropdownbutton.md'},
-        {'name': 'Date Picker', 'asset': 'assets/datepicker.md'},
-        {'name': 'Time Picker', 'asset': 'assets/timepicker.md'},
-      ],
-    },
-    {
-      'category': 'Dialogs & Overlays',
-      'widgets': [
-        {'name': 'Alert Dialog', 'asset': 'assets/alertdialog.md'},
-        {'name': 'Simple Dialog', 'asset': 'assets/simpledialog.md'},
-        {'name': 'Dialog', 'asset': 'assets/dialog.md'},
-        {'name': 'Bottom Sheet', 'asset': 'assets/bottomsheet.md'},
-        {'name': 'Snack Bar', 'asset': 'assets/snackbar.md'},
-        {'name': 'Tooltip', 'asset': 'assets/tooltip.md'},
-        {'name': 'Popup Menu Button', 'asset': 'assets/popupmenubutton.md'},
-      ],
-    },
-    {
-      'category': 'Navigation',
-      'widgets': [
-        {'name': 'Navigator', 'asset': 'assets/navigator.md'},
-        {'name': 'Material Page Route', 'asset': 'assets/materialpageroute.md'},
-        {'name': 'Page Route Builder', 'asset': 'assets/pageroutebuilder.md'},
-        {'name': 'Hero', 'asset': 'assets/hero.md'},
-        {'name': 'Routes', 'asset': 'assets/routes.md'},
-      ],
-    },
-    {
-      'category': 'Async Widgets',
-      'widgets': [
-        {'name': 'Future Builder', 'asset': 'assets/futurebuilder.md'},
-        {'name': 'Stream Builder', 'asset': 'assets/streambuilder.md'},
-      ],
-    },
-    {
-      'category': 'Interaction Models',
-      'widgets': [
-        {'name': 'Dismissible', 'asset': 'assets/dismissible.md'},
-        {'name': 'Draggable', 'asset': 'assets/draggable.md'},
-        {'name': 'Interactive Viewer', 'asset': 'assets/interactiveviewer.md'},
-      ],
-    },
-    {
-      'category': 'Painting & Effects',
-      'widgets': [
-        {'name': 'ClipRRect', 'asset': 'assets/cliprrect.md'},
-        {'name': 'Transform', 'asset': 'assets/transform.md'},
-        {'name': 'Backdrop Filter', 'asset': 'assets/backdropfilter.md'},
-      ],
-    },
-    {
-      'category': 'Indicators & Chips',
-      'widgets': [
-        {'name': 'Circular Progress', 'asset': 'assets/circularprogressindicator.md'},
-        {'name': 'Linear Progress', 'asset': 'assets/linearprogressindicator.md'},
-        {'name': 'Chip', 'asset': 'assets/chip.md'},
-        {'name': 'Circle Avatar', 'asset': 'assets/circleavatar.md'},
-      ],
-    },
-    {
-      'category': 'Animations',
-      'widgets': [
-        {'name': 'Animated Container', 'asset': 'assets/animatedcontainer.md'},
-        {'name': 'Animated Opacity', 'asset': 'assets/animatedopacity.md'},
-        {'name': 'Animated Align', 'asset': 'assets/animatedalign.md'},
-        {
-          'name': 'Animated Positioned',
-          'asset': 'assets/animatedpositioned.md',
-        },
-        {
-          'name': 'Tween Animation Builder',
-          'asset': 'assets/tweenanimationbuilder.md',
-        },
-        {'name': 'Animated Builder', 'asset': 'assets/animatedbuilder.md'},
-        {'name': 'Fade Transition', 'asset': 'assets/fadetransition.md'},
-        {'name': 'Scale Transition', 'asset': 'assets/scaletransition.md'},
-      ],
-    },
-    {
-      'category': 'Cupertino (iOS)',
-      'widgets': [
-        {'name': 'Cupertino App', 'asset': 'assets/cupertinoapp.md'},
-        {'name': 'Cupertino Button', 'asset': 'assets/cupertinobutton.md'},
-        {'name': 'Cupertino Switch', 'asset': 'assets/cupertinoswitch.md'},
-        {
-          'name': 'Cupertino Navigation Bar',
-          'asset': 'assets/cupertinonavigationbar.md',
-        },
-        {'name': 'Cupertino Tab Bar', 'asset': 'assets/cupertinotabbar.md'},
-        {
-          'name': 'Cupertino Page Scaffold',
-          'asset': 'assets/cupertinopagescaffold.md',
-        },
-      ],
-    },
-    {
-      'category': 'Custom/Advanced',
-      'widgets': [
-        {'name': 'Custom Paint', 'asset': 'assets/custompaint.md'},
-        {'name': 'Custom Scroll View', 'asset': 'assets/customscrollview.md'},
-        {'name': 'Sliver List', 'asset': 'assets/sliverlist.md'},
-        {'name': 'Sliver Grid', 'asset': 'assets/slivergrid.md'},
-        {'name': 'Layout Builder', 'asset': 'assets/layoutbuilder.md'},
-        {'name': 'Builder', 'asset': 'assets/builder.md'},
-        {'name': 'Gesture Detector', 'asset': 'assets/gesturedetector.md'},
-        {'name': 'Repaint Boundary', 'asset': 'assets/repaintboundary.md'},
-      ],
-    },
-  ];
 }
 
 class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
   late ScrollController _scrollController;
+  late TextEditingController _searchController;
+  List<CatalogSection> _catalogSections = const [];
+  bool _isLoadingCatalog = true;
+  String? _catalogLoadError;
   Timer? _saveTimer;
+  String _searchQuery = '';
   static const _prefsScrollKey = 'catalog_scroll_offset';
 
   /// Load all quiz questions from widgets in a category
   Future<List<QuizQuestion>> _loadCategoryQuizQuestions(
-      List<Map<String, dynamic>> widgets) async {
+    List<CatalogItem> items,
+  ) async {
     final List<QuizQuestion> allQuestions = [];
 
-    for (final widget in widgets) {
-      final assetPath = widget['asset'] as String?;
-      if (assetPath == null) continue;
-
-      // Convert asset path from assets/textview.md to assets/textview_quiz.json
-      final basePath = assetPath.replaceAll('.md', '');
-      final quizPath = '${basePath}_quiz.json';
+    for (final item in items) {
+      final quizPath = item.quizAssetPath;
 
       try {
         // Try to load the quiz file
@@ -273,9 +75,11 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
 
   /// Start quiz for a category
   Future<void> _startCategoryQuiz(
-      BuildContext context, Map<String, dynamic> section) async {
-    final widgets = section['widgets'] as List<Map<String, dynamic>>;
-    final categoryName = section['category'] as String;
+    BuildContext context,
+    CatalogSection section,
+  ) async {
+    final items = section.items;
+    final categoryName = section.title;
 
     // Check internet connectivity first
     if (!mounted) return;
@@ -323,7 +127,7 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
       await Future.delayed(const Duration(seconds: 2));
 
       // Load all quiz questions from the category
-      final questions = await _loadCategoryQuizQuestions(widgets);
+      final questions = await _loadCategoryQuizQuestions(items);
 
       if (!mounted) return;
       Navigator.of(context).pop(); // Close loading dialog
@@ -393,8 +197,27 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
   void initState() {
     super.initState();
     _scrollController = ScrollController();
+    _searchController = TextEditingController();
     _scrollController.addListener(_onScroll);
+    _loadCatalogSections();
     _loadScrollOffset();
+  }
+
+  Future<void> _loadCatalogSections() async {
+    try {
+      final sections = await catalogService.loadCatalogSections();
+      if (!mounted) return;
+      setState(() {
+        _catalogSections = sections;
+        _isLoadingCatalog = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _catalogLoadError = '$e';
+        _isLoadingCatalog = false;
+      });
+    }
   }
 
   void _onScroll() {
@@ -439,11 +262,68 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
     _saveScrollOffset();
     _scrollController.removeListener(_onScroll);
     _scrollController.dispose();
+    _searchController.dispose();
     super.dispose();
+  }
+
+  bool _matchesFilters(CatalogItem item) {
+    final query = _searchQuery.trim().toLowerCase();
+    return query.isEmpty ||
+        item.name.toLowerCase().contains(query) ||
+        item.category.toLowerCase().contains(query) ||
+        item.type.toLowerCase().contains(query) ||
+        item.level.toLowerCase().contains(query) ||
+        (item.description?.toLowerCase().contains(query) ?? false);
+  }
+
+  List<CatalogSection> get _filteredSections {
+    return _catalogSections
+        .map(
+          (section) => CatalogSection(
+            title: section.title,
+            description: section.description,
+            level: section.level,
+            items: section.items.where(_matchesFilters).toList(),
+          ),
+        )
+        .where((section) => section.items.isNotEmpty)
+        .toList();
+  }
+
+  List<CatalogItem> get _continueLearningItems {
+    final seenIds = <String>{};
+    final items = <CatalogItem>[];
+
+    for (final section in _catalogSections) {
+      for (final item in section.items) {
+        final key = item.topicId ?? item.assetPath;
+        if (!seenIds.add(key) || item.isLegacy) {
+          continue;
+        }
+        final isRead = performanceService.isRead(
+          topicId: item.topicId,
+          assetPath: item.assetPath,
+        );
+        final prerequisitesMet = item.prerequisites.every(
+          (topicId) => performanceService.isRead(
+            topicId: topicId,
+            assetPath: '',
+          ),
+        );
+        if (!isRead && prerequisitesMet && _matchesFilters(item)) {
+          items.add(item);
+        }
+      }
+    }
+
+    return items.take(6).toList();
   }
 
   @override
   Widget build(BuildContext context) {
+    final filteredSections = _filteredSections;
+    final continueLearning = _continueLearningItems;
+
     return CustomScrollView(
       controller: _scrollController,
       slivers: [
@@ -452,6 +332,13 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
           expandedHeight: 140,
           backgroundColor: Colors.deepOrange[400],
           actions: [
+            IconButton(
+              tooltip: 'Share app',
+              icon: const Icon(Icons.share, color: Colors.white),
+              onPressed: () {
+                appShareService.shareApp(context);
+              },
+            ),
             IconButton(
               tooltip: 'Clear read history',
               icon: const Icon(Icons.delete_outline, color: Colors.white),
@@ -478,7 +365,7 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
           flexibleSpace: FlexibleSpaceBar(
             titlePadding: const EdgeInsets.only(left: 24, bottom: 16),
             title: Text(
-              'Flutter Widgets Catalog',
+              'Flutter Learning Catalog',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -517,179 +404,526 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
           ),
           stretch: true,
         ),
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextField(
+                  controller: _searchController,
+                  onChanged: (value) {
+                    setState(() {
+                      _searchQuery = value;
+                    });
+                  },
+                  decoration: InputDecoration(
+                    hintText: 'Search topics, categories, or learning types',
+                    prefixIcon: const Icon(Icons.search),
+                    suffixIcon: _searchQuery.isEmpty
+                        ? null
+                        : IconButton(
+                            onPressed: () {
+                              _searchController.clear();
+                              setState(() {
+                                _searchQuery = '';
+                              });
+                            },
+                            icon: const Icon(Icons.close),
+                          ),
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(14),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 14),
+                Text(
+                  'Search by topic, category, level, or type.',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.brown[400],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        if (continueLearning.isNotEmpty)
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Continue Learning',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF795548),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    height: 168,
+                    child: ListView.separated(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: continueLearning.length,
+                      separatorBuilder: (_, __) => const SizedBox(width: 12),
+                      itemBuilder: (context, index) {
+                        final item = continueLearning[index];
+                        return SizedBox(
+                          width: 240,
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(18),
+                            onTap: () => widget.onOpenWidget(item),
+                            child: Ink(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Colors.deepOrange.shade300,
+                                    Colors.orange.shade200,
+                                  ],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    _buildMetaBadge(item.level),
+                                    const SizedBox(height: 10),
+                                    Expanded(
+                                      child: Text(
+                                        item.name,
+                                        maxLines: 3,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                    ),
+                                    Text(
+                                      '${item.category} • ${item.type}',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        color: Colors.white.withOpacity(0.9),
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    if (item.estimatedMinutes != null)
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 6),
+                                        child: Text(
+                                          '${item.estimatedMinutes} min lesson',
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: TextStyle(
+                                            color: Colors.white.withOpacity(0.95),
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         SliverPadding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-          sliver: SliverList(
-            delegate: SliverChildBuilderDelegate((context, index) {
-              final section = WidgetCatalogPage.catalog[index];
-              final widgets = section['widgets'] as List;
-              final readCount =
-                  widgets
-                      .where((w) => widget.readAssets.contains(w['asset']))
-                      .length;
-              return Card(
-                color: Colors.orange[50],
-                elevation: 6,
-                margin: const EdgeInsets.symmetric(vertical: 14, horizontal: 4),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 22,
-                    horizontal: 20,
+          sliver: _isLoadingCatalog
+              ? const SliverToBoxAdapter(
+                  child: Padding(
+                    padding: EdgeInsets.all(32),
+                    child: Center(child: CircularProgressIndicator()),
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.deepOrange[400]!,
-                                  Colors.orange[200]!,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.deepOrange.withOpacity(0.18),
-                                  blurRadius: 10,
-                                  offset: const Offset(0, 2),
-                                ),
-                              ],
-                            ),
-                            padding: const EdgeInsets.all(12),
-                            child: Icon(
-                              Icons.category,
-                              color: Colors.white,
-                              size: 28,
-                            ),
-                          ),
-                          const SizedBox(width: 20),
-                          Expanded(
-                            child: Text(
-                              section['category'],
-                              style: const TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xFF795548),
-                                letterSpacing: 0.7,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 4,
-                              horizontal: 12,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.orange[100],
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Text(
-                              '$readCount/${widgets.length} read',
-                              style: TextStyle(
-                                color: Colors.deepOrange[400],
-                                fontWeight: FontWeight.w600,
-                                fontSize: 13,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 16),
-                      Wrap(
-                        spacing: 12,
-                        runSpacing: 10,
-                        children:
-                            widgets.map<Widget>((w) {
-                              final isRead = widget.readAssets.contains(
-                                w['asset'],
-                              );
-                              return GestureDetector(
-                                onTap: () {
-                                  final asset = w['asset'];
-                                  if (asset != null) widget.onOpenWidget(asset);
-                                },
-                                child: Chip(
-                                  label: Text(
-                                    w['name'] ?? '',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color:
-                                          isRead
-                                              ? Colors.green[900]
-                                              : Colors.brown[900],
-                                    ),
-                                  ),
-                                  backgroundColor:
-                                      isRead
-                                          ? Colors.green[100]
-                                          : Colors.orange[50],
-                                  avatar: Icon(
-                                    isRead ? Icons.check_circle : Icons.widgets,
-                                    color:
-                                        isRead
-                                            ? Colors.green
-                                            : Colors.brown[300],
-                                    size: 20,
-                                  ),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  elevation: isRead ? 2 : 0,
-                                  shadowColor:
-                                      isRead
-                                          ? Colors.green.withOpacity(0.15)
-                                          : null,
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 6,
-                                    horizontal: 10,
-                                  ),
-                                ),
-                              );
-                            }).toList(),
-                      ),
-                      const SizedBox(height: 16),
-                      SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton.icon(
-                          onPressed: () => _startCategoryQuiz(context, section),
-                          icon: const Icon(Icons.quiz, size: 20),
-                          label: const Text(
-                            'Start Quiz (40 Questions)',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.deepOrange[400],
-                            foregroundColor: Colors.white,
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 14,
-                              horizontal: 20,
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            elevation: 4,
+                )
+              : _catalogLoadError != null
+                  ? SliverToBoxAdapter(
+                      child: Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Center(
+                          child: Text(
+                            'Failed to load catalog: $_catalogLoadError',
+                            textAlign: TextAlign.center,
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              );
-            }, childCount: WidgetCatalogPage.catalog.length),
-          ),
+                    )
+                  : filteredSections.isEmpty
+                      ? const SliverToBoxAdapter(
+                          child: Padding(
+                            padding: EdgeInsets.all(24),
+                            child: Center(
+                              child: Text(
+                                'No topics match the current search and filters.',
+                              ),
+                            ),
+                          ),
+                        )
+                      : SliverList(
+                          delegate: SliverChildBuilderDelegate((context, index) {
+                            final section = filteredSections[index];
+                            final readCount = section.items
+                                .where(
+                                  (item) => performanceService.isRead(
+                                    topicId: item.topicId,
+                                    assetPath: item.assetPath,
+                                  ),
+                                )
+                                .length;
+                            return Card(
+                              color: Colors.orange[50],
+                              elevation: 6,
+                              margin: const EdgeInsets.symmetric(
+                                vertical: 14,
+                                horizontal: 4,
+                              ),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 22,
+                                  horizontal: 20,
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            gradient: LinearGradient(
+                                              colors: [
+                                                Colors.deepOrange[400]!,
+                                                Colors.orange[200]!,
+                                              ],
+                                              begin: Alignment.topLeft,
+                                              end: Alignment.bottomRight,
+                                            ),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.deepOrange
+                                                    .withOpacity(0.18),
+                                                blurRadius: 10,
+                                                offset: const Offset(0, 2),
+                                              ),
+                                            ],
+                                          ),
+                                          padding: const EdgeInsets.all(12),
+                                          child: const Icon(
+                                            Icons.category,
+                                            color: Colors.white,
+                                            size: 28,
+                                          ),
+                                        ),
+                                        const SizedBox(width: 20),
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                section.title,
+                                                style: const TextStyle(
+                                                  fontSize: 22,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Color(0xFF795548),
+                                                  letterSpacing: 0.7,
+                                                ),
+                                              ),
+                                              if (section.description != null &&
+                                                  section
+                                                      .description!
+                                                      .isNotEmpty)
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                        top: 4,
+                                                      ),
+                                                  child: Text(
+                                                    section.description!,
+                                                    style: TextStyle(
+                                                      color: Colors.brown[400],
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ),
+                                              if (section.level != null)
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                        top: 6,
+                                                      ),
+                                                  child: _buildSectionBadge(
+                                                    section.level!,
+                                                  ),
+                                                ),
+                                            ],
+                                          ),
+                                        ),
+                                        Container(
+                                          padding: const EdgeInsets.symmetric(
+                                            vertical: 4,
+                                            horizontal: 12,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.orange[100],
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                          ),
+                                          child: Text(
+                                            '$readCount/${section.items.length} read',
+                                            style: TextStyle(
+                                              color: Colors.deepOrange[400],
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 13,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 16),
+                                    Wrap(
+                                      spacing: 12,
+                                      runSpacing: 10,
+                                      children: section.items
+                                          .map<Widget>((item) {
+                                            final isRead =
+                                                performanceService.isRead(
+                                                  topicId: item.topicId,
+                                                  assetPath: item.assetPath,
+                                                );
+                                            return InkWell(
+                                              borderRadius:
+                                                  BorderRadius.circular(14),
+                                              onTap: () =>
+                                                  widget.onOpenWidget(item),
+                                              child: Ink(
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                      vertical: 10,
+                                                      horizontal: 12,
+                                                    ),
+                                                decoration: BoxDecoration(
+                                                  color: isRead
+                                                      ? Colors.green[100]
+                                                      : Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(14),
+                                                  border: Border.all(
+                                                    color: isRead
+                                                        ? Colors.green.shade200
+                                                        : Colors.orange
+                                                            .shade100,
+                                                  ),
+                                                  boxShadow: [
+                                                    BoxShadow(
+                                                      color: Colors.black
+                                                          .withOpacity(0.04),
+                                                      blurRadius: 8,
+                                                      offset:
+                                                          const Offset(0, 2),
+                                                    ),
+                                                  ],
+                                                ),
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.min,
+                                                      children: [
+                                                        Icon(
+                                                          isRead
+                                                              ? Icons
+                                                                  .check_circle
+                                                              : Icons
+                                                                  .menu_book_rounded,
+                                                          color: isRead
+                                                              ? Colors.green
+                                                              : Colors
+                                                                  .deepOrange,
+                                                          size: 18,
+                                                        ),
+                                                        const SizedBox(
+                                                          width: 8,
+                                                        ),
+                                                        Flexible(
+                                                          child: Text(
+                                                            item.name,
+                                                            style: TextStyle(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              color: isRead
+                                                                  ? Colors
+                                                                      .green[900]
+                                                                  : Colors
+                                                                      .brown[900],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    const SizedBox(height: 8),
+                                                    Wrap(
+                                                      spacing: 6,
+                                                      runSpacing: 6,
+                                                      children: [
+                                                        _buildTopicBadge(
+                                                          item.level,
+                                                          Colors.deepOrange,
+                                                        ),
+                                                        _buildTopicBadge(
+                                                          item.category,
+                                                          Colors.brown,
+                                                        ),
+                                                        _buildTopicBadge(
+                                                          item.type,
+                                                          Colors.teal,
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    if (item.estimatedMinutes !=
+                                                        null)
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8),
+                                                        child: Text(
+                                                          '${item.estimatedMinutes} min',
+                                                          style: TextStyle(
+                                                            fontSize: 12,
+                                                            color: Colors
+                                                                .brown[400],
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                  ],
+                                                ),
+                                              ),
+                                            );
+                                          })
+                                          .toList(),
+                                    ),
+                                    const SizedBox(height: 16),
+                                    SizedBox(
+                                      width: double.infinity,
+                                      child: ElevatedButton.icon(
+                                        onPressed: () =>
+                                            _startCategoryQuiz(context, section),
+                                        icon: const Icon(Icons.quiz, size: 20),
+                                        label: const Text(
+                                          'Start Quiz (40 Questions)',
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor:
+                                              Colors.deepOrange[400],
+                                          foregroundColor: Colors.white,
+                                          padding: const EdgeInsets.symmetric(
+                                            vertical: 14,
+                                            horizontal: 20,
+                                          ),
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                          ),
+                                          elevation: 4,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            );
+                          }, childCount: filteredSections.length),
+                        ),
         ),
       ],
+    );
+  }
+
+  Widget _buildMetaBadge(String value) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.18),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        value,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSectionBadge(String value) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: Colors.orange.shade100,
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        value,
+        style: TextStyle(
+          color: Colors.deepOrange.shade700,
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTopicBadge(String value, MaterialColor color) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: color.shade50,
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        value,
+        style: TextStyle(
+          color: color.shade700,
+          fontSize: 11,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
     );
   }
 }

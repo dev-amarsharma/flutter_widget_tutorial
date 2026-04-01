@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is Cloud Firestore mainly used for in Flutter apps?",
+    "options": [
+      "A cloud-hosted NoSQL database",
+      "Rendering animations",
+      "Managing widget keys",
+      "Replacing every local cache"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How is data commonly organized in Firestore?",
+    "options": [
+      "Pages and routes",
+      "Collections and documents",
+      "Rows and columns only",
+      "Widgets and states"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which object is commonly used to access Firestore?",
+    "options": [
+      "FirebaseStore.instance",
+      "CloudStore.global",
+      "FirebaseFirestore.instance",
+      "FirestoreApp.instance"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common Firestore use case?",
+    "options": [
+      "Storing user profiles or app content",
+      "Creating app themes only",
+      "Compiling Dart code",
+      "Replacing BuildContext"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of updates can Firestore support?",
+    "options": [
+      "Only compile-time updates",
+      "Live real-time updates",
+      "Only widget rebuild updates",
+      "Only app startup updates"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is recommended when using Firestore?",
+    "options": [
+      "Keep document structures consistent",
+      "Treat it exactly like relational SQL",
+      "Skip model mapping",
+      "Ignore read/write errors"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which practice should you avoid with Firestore?",
+    "options": [
+      "Planning document structure",
+      "Handling read and write errors",
+      "Treating it as a relational SQL database without planning",
+      "Using it for synced app data"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which topic is most closely related to Cloud Firestore?",
+    "options": [
+      "Firebase Initialization",
+      "Tooltip",
+      "Hero animation",
+      "Divider"
+    ],
+    "ans": "a"
+  }
+]

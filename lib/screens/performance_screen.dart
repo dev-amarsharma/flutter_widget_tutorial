@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import '../models/catalog_section.dart';
+import '../services/catalog_service.dart';
+import '../services/app_share_service.dart';
 import '../services/performance_service.dart';
-import '../widget_catalog_page.dart';
+import '../widgets/banner_ad_widget.dart';
 
 class PerformanceScreen extends StatefulWidget {
   const PerformanceScreen({Key? key}) : super(key: key);
@@ -10,37 +13,54 @@ class PerformanceScreen extends StatefulWidget {
 }
 
 class _PerformanceScreenState extends State<PerformanceScreen> {
+  late Future<List<CatalogSection>> _sectionsFuture;
+  final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _sectionsFuture = catalogService.loadCatalogSections();
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  bool _matchesFilters(CatalogItem item) {
+    final query = _searchQuery.trim().toLowerCase();
+    return query.isEmpty ||
+        item.name.toLowerCase().contains(query) ||
+        item.category.toLowerCase().contains(query) ||
+        item.level.toLowerCase().contains(query) ||
+        item.type.toLowerCase().contains(query) ||
+        (item.description?.toLowerCase().contains(query) ?? false);
+  }
+
+  List<CatalogSection> _filterSections(List<CatalogSection> sections) {
+    return sections
+        .map(
+          (section) => CatalogSection(
+            title: section.title,
+            description: section.description,
+            level: section.level,
+            items: section.items.where(_matchesFilters).toList(),
+          ),
+        )
+        .where((section) => section.items.isNotEmpty)
+        .toList();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final readAssets = performanceService.readAssets;
-    final quizScores = performanceService.quizScores;
-    
-    // Calculate total stats
-    int totalWidgets = 0;
-    int readCount = 0;
-    int attemptedQuizzes = 0;
-    int totalScore = 0;
-
-    for (final category in WidgetCatalogPage.catalog) {
-      final widgets = category['widgets'] as List<Map<String, dynamic>>;
-      totalWidgets += widgets.length;
-      for (final widget in widgets) {
-        final asset = widget['asset'] as String;
-        if (readAssets.contains(asset)) {
-          readCount++;
-        }
-        if (quizScores.containsKey(asset)) {
-          attemptedQuizzes++;
-          totalScore += quizScores[asset]!;
-        }
-      }
-    }
-
-    final double averageScore = attemptedQuizzes > 0 ? totalScore / attemptedQuizzes : 0;
-    final double readProgress = totalWidgets > 0 ? readCount / totalWidgets : 0;
-
     return Scaffold(
       backgroundColor: Colors.grey.shade50,
+      bottomNavigationBar: const SafeArea(
+        top: false,
+        child: BannerAdWidget(),
+      ),
       appBar: AppBar(
         elevation: 0,
         title: const Text(
@@ -67,91 +87,172 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.share, color: Colors.white),
+            tooltip: 'Share app',
+            onPressed: () {
+              appShareService.shareApp(
+                context,
+                extraText: 'Track your Flutter learning progress with quizzes and lessons.',
+              );
+            },
+          ),
+        ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Summary Card
-            Container(
-              margin: const EdgeInsets.only(bottom: 24),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    Colors.blue.shade400,
-                    Colors.purple.shade400,
-                  ],
-                ),
-                borderRadius: BorderRadius.circular(16),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.blue.withOpacity(0.3),
-                    blurRadius: 10,
-                    offset: const Offset(0, 4),
-                  ),
-                ],
-              ),
+      body: FutureBuilder<List<CatalogSection>>(
+        future: _sectionsFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.done) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          if (snapshot.hasError) {
+            return Center(
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Column(
-                  children: [
-                    const Text(
-                      'Overall Progress',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
+                padding: const EdgeInsets.all(24.0),
+                child: Text(
+                  'Failed to load progress data: ${snapshot.error}',
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            );
+          }
+
+          final sections = snapshot.data ?? const <CatalogSection>[];
+          final filteredSections = _filterSections(sections);
+          int totalWidgets = 0;
+          int readCount = 0;
+          int attemptedQuizzes = 0;
+          int totalScore = 0;
+
+          for (final section in filteredSections) {
+            totalWidgets += section.items.length;
+            for (final item in section.items) {
+              if (performanceService.isRead(
+                topicId: item.topicId,
+                assetPath: item.assetPath,
+              )) {
+                readCount++;
+              }
+              final score = performanceService.getQuizScore(
+                topicId: item.topicId,
+                assetPath: item.assetPath,
+              );
+              if (score != null) {
+                attemptedQuizzes++;
+                totalScore += score;
+              }
+            }
+          }
+
+          final averageScore =
+              attemptedQuizzes > 0 ? totalScore / attemptedQuizzes : 0.0;
+          final readProgress = totalWidgets > 0 ? readCount / totalWidgets : 0.0;
+
+          return SingleChildScrollView(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(bottom: 24),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.blue.shade400,
+                        Colors.purple.shade400,
+                      ],
                     ),
-                    const SizedBox(height: 20),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.blue.withOpacity(0.3),
+                        blurRadius: 10,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Column(
                       children: [
-                        _buildStatItem(
-                          'Reading Progress',
-                          '${(readProgress * 100).toInt()}%',
-                          '$readCount / $totalWidgets',
-                          Icons.menu_book,
+                        const Text(
+                          'Overall Progress',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        Container(
-                          width: 1,
-                          height: 50,
-                          color: Colors.white24,
-                        ),
-                        _buildStatItem(
-                          'Avg Quiz Score',
-                          '${averageScore.toInt()}%',
-                          'Attempted: $attemptedQuizzes',
-                          Icons.emoji_events,
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            _buildStatItem(
+                              'Reading Progress',
+                              '${(readProgress * 100).toInt()}%',
+                              '$readCount / $totalWidgets',
+                              Icons.menu_book,
+                            ),
+                            Container(
+                              width: 1,
+                              height: 50,
+                              color: Colors.white24,
+                            ),
+                            _buildStatItem(
+                              'Avg Quiz Score',
+                              '${averageScore.toInt()}%',
+                              'Attempted: $attemptedQuizzes',
+                              Icons.emoji_events,
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
-            
-            const Padding(
-              padding: EdgeInsets.only(left: 4, bottom: 16),
-              child: Text(
-                'Detailed Progress',
-                style: TextStyle(
-                  fontSize: 20, 
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black87,
+                const Padding(
+                  padding: EdgeInsets.only(left: 4, bottom: 16),
+                  child: Text(
+                    'Detailed Progress',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
+                  ),
                 ),
-              ),
+                _buildSearchAndFilters(
+                  topicCount: filteredSections.fold<int>(
+                    0,
+                    (sum, section) => sum + section.items.length,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                if (filteredSections.isEmpty)
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: const Text(
+                      'No progress entries match the current search and filters.',
+                      textAlign: TextAlign.center,
+                    ),
+                  )
+                else
+                  ...filteredSections.map((section) {
+                    return _buildCategorySection(section);
+                  }),
+              ],
             ),
-            
-            // Categories List
-            ...WidgetCatalogPage.catalog.map((category) {
-              return _buildCategorySection(category, readAssets, quizScores);
-            }).toList(),
-          ],
-        ),
+          );
+        },
       ),
     );
   }
@@ -191,18 +292,19 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
   }
 
   Widget _buildCategorySection(
-    Map<String, dynamic> category,
-    Set<String> readAssets,
-    Map<String, int> quizScores,
+    CatalogSection category,
   ) {
-    final widgets = category['widgets'] as List<Map<String, dynamic>>;
-    final categoryName = category['category'] as String;
+    final widgets = category.items;
+    final categoryName = category.title;
     
     // Calculate category specific stats
     int catReadCount = 0;
     int catTotalWidgets = widgets.length;
     for (final widget in widgets) {
-      if (readAssets.contains(widget['asset'])) {
+      if (performanceService.isRead(
+        topicId: widget.topicId,
+        assetPath: widget.assetPath,
+      )) {
         catReadCount++;
       }
     }
@@ -276,9 +378,15 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
             ),
           ),
           children: widgets.map((widget) {
-            final asset = widget['asset'] as String;
-            final isRead = readAssets.contains(asset);
-            final score = quizScores[asset];
+            final asset = widget.assetPath;
+            final isRead = performanceService.isRead(
+              topicId: widget.topicId,
+              assetPath: asset,
+            );
+            final score = performanceService.getQuizScore(
+              topicId: widget.topicId,
+              assetPath: asset,
+            );
 
             return Container(
               decoration: BoxDecoration(
@@ -303,10 +411,22 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
                   ),
                 ),
                 title: Text(
-                  widget['name'] as String,
+                  widget.name,
                   style: TextStyle(
                     fontWeight: isRead ? FontWeight.w600 : FontWeight.normal,
                     color: isRead ? Colors.black87 : Colors.black54,
+                  ),
+                ),
+                subtitle: Padding(
+                  padding: const EdgeInsets.only(top: 6),
+                  child: Wrap(
+                    spacing: 6,
+                    runSpacing: 6,
+                    children: [
+                      _buildChip(widget.level, Colors.deepOrange),
+                      _buildChip(widget.category, Colors.brown),
+                      _buildChip(widget.type, Colors.teal),
+                    ],
                   ),
                 ),
                 trailing: score != null 
@@ -341,5 +461,86 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
     if (score >= 80) return Colors.green.shade600;
     if (score >= 50) return Colors.orange.shade600;
     return Colors.red.shade600;
+  }
+
+  Widget _buildSearchAndFilters({
+    required int topicCount,
+  }) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.04),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          TextField(
+            controller: _searchController,
+            onChanged: (value) {
+              setState(() {
+                _searchQuery = value;
+              });
+            },
+            decoration: InputDecoration(
+              hintText: 'Search topics, categories, or levels',
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: _searchQuery.isEmpty
+                  ? null
+                  : IconButton(
+                      onPressed: () {
+                        _searchController.clear();
+                        setState(() {
+                          _searchQuery = '';
+                        });
+                      },
+                      icon: const Icon(Icons.close),
+                    ),
+              filled: true,
+              fillColor: Colors.grey.shade50,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(14),
+                borderSide: BorderSide.none,
+              ),
+            ),
+          ),
+          const SizedBox(height: 14),
+          Text(
+            '$topicCount topics in view',
+            style: TextStyle(
+              color: Colors.grey.shade600,
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildChip(String value, MaterialColor color) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: color.shade50,
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        value,
+        style: TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w600,
+          color: color.shade700,
+        ),
+      ),
+    );
   }
 }

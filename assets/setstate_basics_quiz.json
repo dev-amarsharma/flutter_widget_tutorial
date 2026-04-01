@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the main purpose of setState() in Flutter?",
+    "options": [
+      "To navigate to another screen",
+      "To notify Flutter that local state changed and the UI should rebuild",
+      "To create a StatelessWidget",
+      "To save data to shared preferences"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where is setState() typically used?",
+    "options": [
+      "Inside the State class of a StatefulWidget",
+      "Inside main() only",
+      "Inside a StatelessWidget constructor",
+      "Only inside MaterialApp"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should be wrapped inside setState()?",
+    "options": [
+      "The state change itself",
+      "All network requests",
+      "Every build method",
+      "Only print statements"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which type of state is setState() best suited for?",
+    "options": [
+      "Global app architecture",
+      "Database replication",
+      "Simple local UI state",
+      "Package dependency resolution"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What happens after setState() is called?",
+    "options": [
+      "The whole app restarts",
+      "Flutter rebuilds the affected widget",
+      "The widget becomes const",
+      "The route stack is cleared"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is recommended when using setState()?",
+    "options": [
+      "Put long-running async work inside setState()",
+      "Keep the setState() callback small",
+      "Call setState() in every build method",
+      "Use setState() for all app-wide state"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you avoid doing with setState()?",
+    "options": [
+      "Updating a counter",
+      "Changing local UI flags",
+      "Calling it after the widget is disposed",
+      "Refreshing a label"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why might you check mounted before calling setState()?",
+    "options": [
+      "To confirm the widget is still in the tree",
+      "To find the current theme",
+      "To open a dialog",
+      "To infer a variable type"
+    ],
+    "ans": "a"
+  }
+]

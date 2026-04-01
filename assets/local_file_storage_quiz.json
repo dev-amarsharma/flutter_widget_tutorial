@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is local file storage useful for in Flutter?",
+    "options": [
+      "Storing file-like or larger local data on the device",
+      "Only handling routes",
+      "Only theming widgets",
+      "Replacing BuildContext"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which package is commonly used to get safe app directories in Flutter?",
+    "options": [
+      "provider",
+      "path_provider",
+      "http",
+      "flutter_markdown"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why might you choose file storage instead of shared preferences?",
+    "options": [
+      "Because shared preferences is better for large file-like data",
+      "Because file storage is more suitable for larger or structured files",
+      "Because shared preferences does not support bool values",
+      "Because file storage removes async work"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Dart library is commonly used for file operations?",
+    "options": [
+      "dart:ui",
+      "dart:convert",
+      "dart:io",
+      "dart:developer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you handle when reading or writing local files?",
+    "options": [
+      "Only successful writes",
+      "Missing files and I/O errors",
+      "Only theme changes",
+      "Only navigation events"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice should you avoid with local file storage?",
+    "options": [
+      "Using path_provider for directories",
+      "Handling errors carefully",
+      "Separating file logic from widgets",
+      "Hard-coding unsafe directory paths"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a simple and common file format for local app data?",
+    "options": [
+      "JSON",
+      "GPU shader source only",
+      "APK",
+      "Gradle build cache"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which topic is most closely related to local file storage?",
+    "options": [
+      "SharedPreferences",
+      "AppBar",
+      "Hero animation",
+      "Divider"
+    ],
+    "ans": "a"
+  }
+]

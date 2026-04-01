@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the main purpose of integration tests in Flutter?",
+    "options": [
+      "To verify larger user flows across multiple parts of the app",
+      "To replace all unit tests",
+      "To style app themes",
+      "To define routes only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do integration tests compare to widget tests?",
+    "options": [
+      "They are broader and test more complete user flows",
+      "They only test a single widget in isolation",
+      "They can never interact with navigation",
+      "They replace all manual QA automatically"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is pumpAndSettle commonly used for in integration tests?",
+    "options": [
+      "To wait for animations and async UI to finish settling",
+      "To delete app state",
+      "To initialize Firebase automatically",
+      "To create a Hive box"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a good candidate for an integration test?",
+    "options": [
+      "A full sign-in and navigation flow",
+      "A single private helper function only",
+      "A constant color value",
+      "A single enum declaration"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should integration tests usually focus on?",
+    "options": [
+      "Realistic user journeys",
+      "Only private implementation details",
+      "Only compile-time constants",
+      "Only typography values"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which practice should you avoid with integration tests?",
+    "options": [
+      "Keeping environments predictable",
+      "Writing one giant test for too many unrelated behaviors",
+      "Testing important flows",
+      "Waiting for async UI carefully"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why are integration tests valuable?",
+    "options": [
+      "They can catch flow-level regressions across screens and systems",
+      "They remove the need for all other testing",
+      "They only test layout colors",
+      "They work only without user interaction"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which topic is most closely related to integration tests?",
+    "options": [
+      "Widget Tests",
+      "Divider",
+      "Transform",
+      "Tooltip"
+    ],
+    "ans": "a"
+  }
+]

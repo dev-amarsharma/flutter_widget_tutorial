@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the purpose of a variable in Dart?",
+    "options": [
+      "To draw widgets on the screen",
+      "To store a value in memory",
+      "To navigate between pages",
+      "To compile the app"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Dart type is used to store whole numbers?",
+    "options": [
+      "double",
+      "String",
+      "int",
+      "bool"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which Dart type is used to store text?",
+    "options": [
+      "String",
+      "char",
+      "text",
+      "label"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which keyword lets Dart infer a variable's type from its initial value?",
+    "options": [
+      "dynamic",
+      "var",
+      "value",
+      "let"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which type would you use for true or false values?",
+    "options": [
+      "bool",
+      "binary",
+      "flag",
+      "switch"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of data does a List usually store?",
+    "options": [
+      "A single number only",
+      "An ordered collection of values",
+      "Only text values",
+      "Only widget classes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a good reason to use clear variable names?",
+    "options": [
+      "They make code easier to read and maintain",
+      "They make the app compile faster",
+      "They reduce widget rebuilds",
+      "They replace comments automatically"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about var in Dart is correct?",
+    "options": [
+      "It always means the variable can change types later",
+      "It means the variable has no type",
+      "It asks Dart to infer the variable's type",
+      "It only works inside widgets"
+    ],
+    "ans": "c"
+  }
+]

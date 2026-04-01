@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is the main purpose of a function in Dart?",
+    "options": [
+      "To permanently store app data",
+      "To group reusable logic under a name",
+      "To replace all widget classes",
+      "To navigate between screens"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How are named optional parameters written in Dart?",
+    "options": [
+      "Inside curly braces {}",
+      "Inside angle brackets <>",
+      "Inside parentheses () only",
+      "Inside quotes \"\""
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are named parameters often easier to read?",
+    "options": [
+      "They compile faster",
+      "They show the meaning of each argument at the call site",
+      "They remove the need for return values",
+      "They can only be used in Flutter widgets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does a default value do for an optional parameter?",
+    "options": [
+      "Prevents the function from being called",
+      "Makes the parameter required",
+      "Provides a fallback when no value is passed",
+      "Changes the function name at runtime"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which return type should you use for a function that does not return a value?",
+    "options": [
+      "empty",
+      "void",
+      "null",
+      "dynamicOnly"
+    ],
+    "ans": "b"
+  }
+]

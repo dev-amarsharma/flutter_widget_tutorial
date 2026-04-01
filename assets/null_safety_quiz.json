@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the main goal of null safety in Dart?",
+    "options": [
+      "To increase widget animation speed",
+      "To prevent null-related runtime errors",
+      "To replace all exceptions",
+      "To remove type annotations"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which type declaration allows a String to be null?",
+    "options": [
+      "String!",
+      "nullable String",
+      "String?",
+      "null String"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the question mark in String? mean?",
+    "options": [
+      "The variable is required",
+      "The variable can hold null",
+      "The variable is constant",
+      "The variable is private"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the exclamation mark operator do in Dart null safety?",
+    "options": [
+      "It marks a variable as constant",
+      "It converts a nullable value to non-null by force",
+      "It creates a new object",
+      "It checks equality"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which operator provides a fallback value when the left side is null?",
+    "options": [
+      "?.",
+      "??",
+      "::",
+      "=>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which operator safely accesses a property on a nullable object?",
+    "options": [
+      "?.",
+      "!!",
+      "??",
+      "=="
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you do before reading a nullable variable?",
+    "options": [
+      "Restart the app",
+      "Convert it to const",
+      "Check whether it is null or use safe access",
+      "Ignore the warning"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which practice should you avoid with null safety?",
+    "options": [
+      "Using null checks",
+      "Using fallback values",
+      "Using safe navigation",
+      "Force unwrapping when you are not sure the value exists"
+    ],
+    "ans": "d"
+  }
+]

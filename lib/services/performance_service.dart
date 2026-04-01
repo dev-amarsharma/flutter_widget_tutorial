@@ -43,21 +43,45 @@ class PerformanceService {
   Set<String> get readAssets => _readAssets;
   Map<String, int> get quizScores => _quizScores;
 
-  Future<void> markAsRead(String assetPath) async {
-    if (!_readAssets.contains(assetPath)) {
-      _readAssets.add(assetPath);
+  bool isRead({
+    String? topicId,
+    required String assetPath,
+  }) {
+    return _readAssets.contains(topicId) || _readAssets.contains(assetPath);
+  }
+
+  int? getQuizScore({
+    String? topicId,
+    required String assetPath,
+  }) {
+    return _quizScores[topicId] ?? _quizScores[assetPath];
+  }
+
+  Future<void> markAsRead(
+    String assetPath, {
+    String? topicId,
+  }) async {
+    final progressKey = topicId ?? assetPath;
+    if (!_readAssets.contains(progressKey)) {
+      _readAssets.add(progressKey);
       await _saveReadAssets();
     }
   }
 
-  Future<void> saveQuizScore(String assetPath, int score, int totalQuestions) async {
+  Future<void> saveQuizScore(
+    String assetPath,
+    int score,
+    int totalQuestions, {
+    String? topicId,
+  }) async {
     // Calculate percentage
     final percentage = (score / totalQuestions * 100).round();
+    final progressKey = topicId ?? assetPath;
     
     // Only update if new score is higher or doesn't exist
-    final currentScore = _quizScores[assetPath] ?? -1;
+    final currentScore = _quizScores[progressKey] ?? _quizScores[assetPath] ?? -1;
     if (percentage > currentScore) {
-      _quizScores[assetPath] = percentage;
+      _quizScores[progressKey] = percentage;
       await _saveQuizScores();
     }
   }

@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is Hive commonly used for in Flutter?",
+    "options": [
+      "Lightweight local data storage",
+      "HTTP request routing",
+      "Rendering Markdown only",
+      "Navigation transitions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a box in Hive?",
+    "options": [
+      "A layout widget",
+      "A storage container for local data",
+      "A type of animation",
+      "A route manager"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What do you usually do before reading or writing values in Hive?",
+    "options": [
+      "Open a box",
+      "Create a Scaffold",
+      "Run a FutureBuilder",
+      "Call setState"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why might Hive be attractive for many Flutter apps?",
+    "options": [
+      "It is often simpler than SQL for lightweight storage needs",
+      "It replaces all backend APIs",
+      "It removes the need for models",
+      "It can only store strings"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good practice when using Hive?",
+    "options": [
+      "Use clear and consistent box names",
+      "Store every unrelated thing in one box without structure",
+      "Skip initialization",
+      "Use it for every relational database need"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When might you need adapters in Hive?",
+    "options": [
+      "When storing custom model objects",
+      "When showing a SnackBar",
+      "When changing themes",
+      "When defining routes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which practice should you avoid with Hive?",
+    "options": [
+      "Initializing Hive before access",
+      "Using it for lightweight local structured data",
+      "Expecting relational SQL behavior without planning for it",
+      "Keeping box names consistent"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which topic is most closely related to Hive?",
+    "options": [
+      "SharedPreferences and local storage",
+      "Hero animation",
+      "AppBar styling",
+      "Custom painting"
+    ],
+    "ans": "a"
+  }
+]

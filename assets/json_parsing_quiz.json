@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is JSON parsing used for in Flutter apps?",
+    "options": [
+      "To turn API JSON data into Dart values or models",
+      "To create themes automatically",
+      "To rebuild widgets after setState",
+      "To open routes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function is commonly used to decode a JSON string in Dart?",
+    "options": [
+      "mapDecode",
+      "jsonDecode",
+      "parseMap",
+      "decodeString"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does jsonDecode usually return for an object-shaped JSON value?",
+    "options": [
+      "A Widget",
+      "A Map<String, dynamic>",
+      "A BuildContext",
+      "A ThemeData"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why are model classes useful after decoding JSON?",
+    "options": [
+      "They remove the need for API responses",
+      "They make data handling more strongly typed and maintainable",
+      "They replace all widgets",
+      "They stop async code from running"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which constructor style is commonly used to create a model from JSON?",
+    "options": [
+      "factory fromJson",
+      "async build",
+      "const parse",
+      "static widget"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you do before trusting decoded API fields?",
+    "options": [
+      "Assume all keys and types are correct",
+      "Validate expected keys and types",
+      "Convert everything to String",
+      "Ignore missing values"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice should you avoid with JSON parsing?",
+    "options": [
+      "Mapping JSON into model objects",
+      "Keeping parsing logic organized",
+      "Passing raw API maps everywhere in the UI",
+      "Using typed fields in models"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What kind of JSON structure often becomes a Dart List after decoding?",
+    "options": [
+      "A JSON array",
+      "A JSON object only",
+      "A boolean",
+      "A null value"
+    ],
+    "ans": "a"
+  }
+]

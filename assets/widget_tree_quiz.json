@@ -1,0 +1,52 @@
+[
+  {
+    "que": "How does Flutter describe its UI structure?",
+    "options": [
+      "As a widget tree",
+      "As a SQL table",
+      "As a single image",
+      "As a route map only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a child widget?",
+    "options": [
+      "A widget nested inside another widget",
+      "A widget that cannot rebuild",
+      "A platform-specific file",
+      "A quiz result row"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is the widget tree important?",
+    "options": [
+      "It helps you understand layout and UI composition",
+      "It removes the need for state",
+      "It replaces all constructors",
+      "It is only used in animations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is closely tied to a widget's position in the tree?",
+    "options": [
+      "BuildContext",
+      "pubspec.yaml",
+      "List index",
+      "Android manifest only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good practice for very large build methods?",
+    "options": [
+      "Split them into smaller widgets",
+      "Add more nested containers everywhere",
+      "Avoid using child widgets",
+      "Replace them with comments"
+    ],
+    "ans": "a"
+  }
+]

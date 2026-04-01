@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What does final mean in Dart?",
+    "options": [
+      "The value can be assigned once",
+      "The value can change type later",
+      "The value must be known at compile time",
+      "The value is private"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does const mean in Dart?",
+    "options": [
+      "The value is mutable",
+      "The value must be created at runtime",
+      "The value is a compile-time constant",
+      "The value can be reassigned once"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement is valid to use with const?",
+    "options": [
+      "const now = DateTime.now();",
+      "const title = 'Learn Flutter';",
+      "const userName = getName();",
+      "const total = int.parse('4');"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which keyword is more appropriate for DateTime.now()?",
+    "options": [
+      "const",
+      "static",
+      "late",
+      "final"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why is const often used with widgets in Flutter?",
+    "options": [
+      "It enables navigation automatically",
+      "It can reduce unnecessary rebuild work",
+      "It allows mutable widget fields",
+      "It replaces StatefulWidget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about final is true?",
+    "options": [
+      "It requires a compile-time constant",
+      "It can be assigned only once",
+      "It always creates immutable objects",
+      "It is the same as var"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following should you avoid?",
+    "options": [
+      "Using const for a fixed string",
+      "Using final for a runtime-created object",
+      "Reassigning a final variable",
+      "Using const for a compile-time number"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the main difference between final and const?",
+    "options": [
+      "final is local only, const is global only",
+      "final is runtime single-assignment, const is compile-time constant",
+      "final works only in classes, const works only in functions",
+      "There is no difference"
+    ],
+    "ans": "b"
+  }
+]

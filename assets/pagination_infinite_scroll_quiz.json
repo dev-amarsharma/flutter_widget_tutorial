@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the purpose of pagination in an app?",
+    "options": [
+      "To load all data at once",
+      "To load data in smaller chunks",
+      "To replace local storage",
+      "To prevent scrolling"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is infinite scroll?",
+    "options": [
+      "A list that keeps loading more data as the user nears the bottom",
+      "A list with no end and no backend",
+      "A widget that disables pagination",
+      "A theme setting for long pages"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is pagination useful for large datasets?",
+    "options": [
+      "It increases initial memory usage",
+      "It improves performance and initial load time",
+      "It removes all loading states",
+      "It forces the whole app to rebuild"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you track to avoid requesting the same page repeatedly?",
+    "options": [
+      "A loading state flag",
+      "Only the theme mode",
+      "Only the app title",
+      "Only the device orientation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should happen when the backend indicates there are no more pages?",
+    "options": [
+      "Keep requesting forever",
+      "Stop loading additional pages",
+      "Restart from page 1 automatically",
+      "Clear the whole list"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widget is commonly involved in pagination UI in Flutter?",
+    "options": [
+      "ListView",
+      "Tooltip",
+      "AlertDialog",
+      "AppBar only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which practice should you avoid with infinite scroll?",
+    "options": [
+      "Guarding duplicate requests",
+      "Showing end-of-list loading feedback",
+      "Firing duplicate requests while a page is already loading",
+      "Tracking page or cursor state"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good way to trigger loading the next page?",
+    "options": [
+      "Watch when the user approaches the bottom of the scrollable list",
+      "Load all pages during app startup",
+      "Call build() manually",
+      "Disable scrolling entirely"
+    ],
+    "ans": "a"
+  }
+]

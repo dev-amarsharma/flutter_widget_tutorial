@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the goal of clean architecture in an app?",
+    "options": [
+      "To mix UI, API, and storage code together",
+      "To separate responsibilities into clear layers",
+      "To remove all state management",
+      "To avoid repositories entirely"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which layer commonly contains widgets and screens?",
+    "options": [
+      "Data layer",
+      "Domain layer",
+      "Presentation layer",
+      "Storage layer only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which layer commonly contains repositories and API access?",
+    "options": [
+      "Presentation layer",
+      "Data layer",
+      "Theme layer",
+      "Animation layer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a common purpose of a use case in clean architecture?",
+    "options": [
+      "To hold raw widget styles",
+      "To express a domain action or business rule",
+      "To replace BuildContext",
+      "To draw custom painters"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why can clean architecture help larger Flutter apps?",
+    "options": [
+      "It can improve maintainability and testability",
+      "It removes the need for all packages",
+      "It makes every app smaller automatically",
+      "It avoids asynchronous code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which practice should you avoid with clean architecture?",
+    "options": [
+      "Keeping layers focused",
+      "Using repositories to separate data access",
+      "Over-engineering very small apps with unnecessary abstraction",
+      "Separating business logic from UI"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should presentation code usually avoid?",
+    "options": [
+      "Rendering UI state",
+      "Displaying widgets",
+      "Directly mixing raw API and storage logic everywhere",
+      "Reacting to user input"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which topic is most closely related to clean architecture basics?",
+    "options": [
+      "REST API Integration",
+      "Divider",
+      "SnackBar",
+      "Tooltip"
+    ],
+    "ans": "a"
+  }
+]

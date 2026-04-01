@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'screens/performance_screen.dart';
+import 'services/interstitial_ad_service.dart';
+import 'services/performance_service.dart';
 import 'widget_catalog_page.dart';
 import 'widget_preview_page.dart';
-import 'screens/performance_screen.dart';
-import 'services/performance_service.dart';
-import 'widgets/custom_dialog.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'services/interstitial_ad_service.dart';
 import 'widgets/banner_ad_widget.dart';
+import 'widgets/custom_dialog.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -85,7 +82,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: white,
         ),
       ),
-      home: const MyHomePage(title: 'Flutter Widgets Categorized List'),
+      home: const MyHomePage(title: 'Flutter Learning Catalog'),
     );
   }
 }
@@ -99,64 +96,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // Track read status for each asset
   Set<String> _readAssets = {};
-
-  void _markAsRead() {
-    if (_currentAssetPath != null) {
-      performanceService.markAsRead(_currentAssetPath!);
-      setState(() {
-        _readAssets = performanceService.readAssets;
-      });
-    }
-  }
-
-  String? _markdownData;
-  String? _currentAssetPath = 'assets/flutter_widgets_categorized_list.md';
-  final List<String> _assetHistory = [
-    'assets/flutter_widgets_categorized_list.md',
-  ];
-
-  bool get _showCatalogPage =>
-      _currentAssetPath == 'assets/flutter_widgets_categorized_list.md';
 
   @override
   void initState() {
     super.initState();
-    setState(() {
-      _readAssets = performanceService.readAssets;
-    });
-    _loadMarkdownFile(_currentAssetPath!);
-  }
-
-  Future<void> _loadMarkdownFile(String assetPath) async {
-    try {
-      final String data = await rootBundle.loadString(assetPath);
-      setState(() {
-        _markdownData = data;
-        if (_currentAssetPath != assetPath) {
-          _assetHistory.add(assetPath);
-        }
-        _currentAssetPath = assetPath;
-      });
-    } catch (e) {
-      setState(() {
-        _markdownData = 'Error loading file: $assetPath';
-      });
-    }
+    _readAssets = performanceService.readAssets;
   }
 
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        if (_assetHistory.length > 1) {
-          _assetHistory.removeLast();
-          final prevAsset = _assetHistory.last;
-          await _loadMarkdownFile(prevAsset);
-          return false;
-        }
-        
         final shouldExit = await showDialog<bool>(
           context: context,
           builder: (context) => CustomDialog(
@@ -174,41 +125,41 @@ class _MyHomePageState extends State<MyHomePage> {
         return shouldExit ?? false;
       },
       child: Scaffold(
-        floatingActionButton: _showCatalogPage
-            ? Padding(
-                padding: const EdgeInsets.only(bottom: 60),
-                child: FloatingActionButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const PerformanceScreen(),
-                      ),
-                    );
-                  },
-                  child: const Icon(Icons.bar_chart),
-                  tooltip: 'My Performance',
-                ),
-              )
-            : null,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const PerformanceScreen(),
+              ),
+            );
+          },
+          child: const Icon(Icons.bar_chart),
+          tooltip: 'My Performance',
+        ),
+        bottomNavigationBar: const SafeArea(
+          top: false,
+          child: BannerAdWidget(),
+        ),
         body: Column(
-        children: [
-          Expanded(
-            child: _showCatalogPage
-                ? WidgetCatalogPage(
-                  readAssets: _readAssets,
-                  onOpenWidget: (assetPath) async {
-                    // Track navigation for interstitial ad
+          children: [
+            Expanded(
+              child: WidgetCatalogPage(
+                  onOpenWidget: (item) async {
                     await interstitialAdService.handleWidgetPageNavigation();
-                    // navigate to preview page
                     await Navigator.of(context).push(
                       MaterialPageRoute(
                         builder:
                             (_) => WidgetPreviewPage(
-                              assetPath: assetPath,
-                              readAssets: _readAssets,
-                              onMarkAsRead: (path) {
-                                performanceService.markAsRead(path);
+                              assetPath: item.assetPath,
+                              quizAssetPath: item.quizAssetPath,
+                              topicId: item.topicId,
+                              title: item.name,
+                              onMarkAsRead: (path, {topicId}) {
+                                performanceService.markAsRead(
+                                  path,
+                                  topicId: topicId,
+                                );
                                 setState(() {
                                   _readAssets = performanceService.readAssets;
                                 });
@@ -224,198 +175,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     });
                   },
                 )
-                : Padding(
-                  padding: const EdgeInsets.only(top: 50.0),
-                  child: Column(
-                    children: <Widget>[
-                      // Back button row
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          left: 8,
-                          right: 8,
-                          top: 0,
-                          bottom: 8,
-                        ),
-                        child: Row(
-                          children: [
-                            IconButton(
-                              icon: const Icon(
-                                Icons.arrow_back,
-                                color: Color(0xFF795548),
-                              ),
-                              tooltip: 'Back',
-                              onPressed: () async {
-                                if (_assetHistory.length > 1) {
-                                  _assetHistory.removeLast();
-                                  final prevAsset = _assetHistory.last;
-                                  await _loadMarkdownFile(prevAsset);
-                                } else {
-                                  Navigator.of(context).maybePop();
-                                }
-                              },
-                            ),
-                            const Spacer(),
-                            if (_currentAssetPath != null &&
-                                _currentAssetPath !=
-                                    'assets/flutter_widgets_categorized_list.md')
-                              ElevatedButton.icon(
-                                icon: const Icon(
-                                  Icons.check,
-                                  color: Colors.white,
-                                ),
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      _readAssets.contains(_currentAssetPath!)
-                                          ? Color(0xFF388E3C) // green
-                                          : Color(0xFF795548), // brown
-                                  foregroundColor: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  elevation: 2,
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 16,
-                                    vertical: 10,
-                                  ),
-                                ),
-                                onPressed:
-                                    _readAssets.contains(_currentAssetPath!)
-                                        ? null
-                                        : _markAsRead,
-                                label: Text(
-                                  _readAssets.contains(_currentAssetPath!)
-                                      ? 'Read'
-                                      : 'Mark as Read',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15,
-                                  ),
-                                ),
-                              ),
-                          ],
-                        ),
-                      ),
-                      Expanded(
-                        child:
-                            _markdownData != null
-                                ? Padding(
-                                  padding: const EdgeInsets.all(16.0),
-                                  child: Markdown(
-                                    data: _markdownData!,
-                                    styleSheet: MarkdownStyleSheet(
-                                      h1: const TextStyle(
-                                        fontSize: 28,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xFFFF8C00), // dark orange
-                                      ),
-                                      h2: const TextStyle(
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xFF795548), // brown
-                                      ),
-                                      h3: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xFFBDBDBD), // gray
-                                      ),
-                                      h4: const TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.black,
-                                      ),
-                                      p: const TextStyle(
-                                        fontSize: 16,
-                                        height: 1.6,
-                                        color: Colors.black,
-                                      ),
-                                      code: const TextStyle(
-                                        fontStyle: FontStyle.normal,
-                                        fontFamily: 'monospace',
-                                        fontSize: 12,
-                                        color: Color(0xFF795548), // brown
-                                      ),
-                                      codeblockDecoration: BoxDecoration(
-                                        color: Color(
-                                          0xFFFFF8E1,
-                                        ), // light gold background
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(8),
-                                        ),
-                                        border: Border.all(
-                                          color: Color(0xFFBDBDBD), // gray
-                                          width: 1,
-                                        ),
-                                      ),
-                                      blockquote: const TextStyle(
-                                        color: Color(0xFF795548), // brown
-                                        fontStyle: FontStyle.italic,
-                                      ),
-                                      listBullet: const TextStyle(
-                                        fontSize: 16,
-                                        color: Color(0xFFFF8C00), // dark orange
-                                      ),
-                                      tableHead: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.black,
-                                        fontSize: 14,
-                                      ),
-                                      tableCellsDecoration: const BoxDecoration(
-                                        color: Colors.white,
-                                      ),
-                                      tableCellsPadding:
-                                          const EdgeInsets.symmetric(
-                                            horizontal: 4.0,
-                                            vertical: 12,
-                                          ),
-                                      tableHeadAlign: TextAlign.center,
-                                      tableBorder: TableBorder.all(
-                                        color: Color(0xFF795548), // brown
-                                        width: 1,
-                                      ),
-                                      tableColumnWidth: const FlexColumnWidth(),
-                                      blockSpacing: 16,
-                                      horizontalRuleDecoration:
-                                          const BoxDecoration(
-                                            border: Border(
-                                              top: BorderSide(
-                                                width: 2,
-                                                color: Color(
-                                                  0xFFBDBDBD,
-                                                ), // gray
-                                              ),
-                                            ),
-                                          ),
-                                      a: const TextStyle(
-                                        color: Color(0xFF795548), // brown
-                                        decoration: TextDecoration.underline,
-                                        fontSize: 16,
-                                      ),
-                                    ),
-                                    onTapLink: (text, href, title) async {
-                                      if (href != null &&
-                                          href.startsWith('assets/') &&
-                                          href.endsWith('.md')) {
-                                        await _loadMarkdownFile(href);
-                                      } else if (href != null) {
-                                        // For web links, open in browser
-                                        // ignore: avoid_print
-                                        print('Tapped link: $href');
-                                      }
-                                    },
-                                  ),
-                                )
-                                : const Center(
-                                  child: CircularProgressIndicator(),
-                                ),
-                      ),
-                    ],
-                  ),
-                ),
-          ),
-          // Banner ad at the bottom
-          const BannerAdWidget(),
-        ],
-      ),
+            ),
+          ],
+        ),
       ),
     );
   }

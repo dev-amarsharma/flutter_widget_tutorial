@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is MaterialApp commonly used for in Flutter?",
+    "options": [
+      "As the top-level app widget for Material Design apps",
+      "As a replacement for every page widget",
+      "As a local storage service",
+      "As a JSON parser"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property of MaterialApp often sets the first screen shown?",
+    "options": [
+      "child",
+      "themeMode",
+      "home",
+      "builderOnly"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What kind of styling does MaterialApp help configure?",
+    "options": [
+      "Material Design themes",
+      "Only iOS navigation bars",
+      "Only markdown tables",
+      "Only platform channels"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should you usually avoid nesting multiple MaterialApp widgets?",
+    "options": [
+      "It can create confusing app-level configuration and navigation behavior",
+      "It makes every widget const",
+      "It disables themes entirely",
+      "It prevents all rebuilds"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which feature can MaterialApp help manage?",
+    "options": [
+      "Routes and navigation configuration",
+      "Only JSON encoding",
+      "Only animation tweens",
+      "Only file system writes"
+    ],
+    "ans": "a"
+  }
+]

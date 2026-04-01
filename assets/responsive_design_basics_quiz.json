@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What is the goal of responsive design in Flutter?",
+    "options": [
+      "To make every screen look identical at every size",
+      "To adapt the UI to different screen sizes and constraints",
+      "To remove the need for layout widgets",
+      "To disable scrolling"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Flutter API is commonly used to read screen size information?",
+    "options": [
+      "Theme.of(context)",
+      "Navigator.of(context)",
+      "MediaQuery.of(context)",
+      "setState()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which widget helps respond to parent layout constraints?",
+    "options": [
+      "Scaffold",
+      "LayoutBuilder",
+      "SnackBar",
+      "Tooltip"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice is recommended for responsive design?",
+    "options": [
+      "Use hard-coded sizes everywhere",
+      "Test on multiple screen sizes",
+      "Assume phone layouts work on tablets unchanged",
+      "Put all layout logic in main()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which widgets are often useful in responsive layouts?",
+    "options": [
+      "Expanded and Flexible",
+      "Only AppBar and Drawer",
+      "Only Hero and Transform",
+      "Only Tooltip and SnackBar"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you avoid in many responsive layouts?",
+    "options": [
+      "Using adaptable spacing",
+      "Using MediaQuery",
+      "Relying too heavily on fixed pixel sizes",
+      "Testing different form factors"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why might a Row overflow on smaller screens?",
+    "options": [
+      "Because Row always disables scrolling",
+      "Because rigid child sizing may not fit the available width",
+      "Because MediaQuery changes the theme",
+      "Because LayoutBuilder blocks rebuilds"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a sensible design approach for responsive layouts?",
+    "options": [
+      "Design for narrow screens first and scale up",
+      "Only support tablets",
+      "Only support portrait mode",
+      "Avoid breakpoints entirely"
+    ],
+    "ans": "a"
+  }
+]

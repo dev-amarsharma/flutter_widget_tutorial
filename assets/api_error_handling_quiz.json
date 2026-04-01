@@ -1,0 +1,82 @@
+[
+  {
+    "que": "Why is API error handling important in a Flutter app?",
+    "options": [
+      "It makes widgets const automatically",
+      "It helps the app stay stable when requests fail",
+      "It removes the need for networking packages",
+      "It replaces JSON parsing"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Dart construct is commonly used to catch API request failures?",
+    "options": [
+      "switch",
+      "for",
+      "try and catch",
+      "assert"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which of the following is a common API failure case?",
+    "options": [
+      "A widget tree rebuild",
+      "A timeout",
+      "A const constructor",
+      "A successful parse"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What kind of feedback should users usually see on API failure?",
+    "options": [
+      "A clear user-friendly message",
+      "A full stack trace only",
+      "No message at all",
+      "A compiler warning"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which practice is recommended for retryable network problems?",
+    "options": [
+      "Crash the screen immediately",
+      "Offer a retry when appropriate",
+      "Delete local state automatically",
+      "Ignore the error"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you avoid showing directly to end users?",
+    "options": [
+      "Helpful messages",
+      "Retry buttons",
+      "Friendly explanations",
+      "Raw technical exception details"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why might you handle status codes differently?",
+    "options": [
+      "Because all failures mean the same thing",
+      "Because different failures may need different UI responses",
+      "Because status codes replace exceptions",
+      "Because Flutter requires it for build methods"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice should you avoid in API error handling?",
+    "options": [
+      "Ignoring failed requests",
+      "Catching exceptions",
+      "Showing retry options",
+      "Logging useful error information"
+    ],
+    "ans": "a"
+  }
+]

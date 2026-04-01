@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../models/quiz_question.dart';
+import '../services/app_share_service.dart';
 import '../services/rewarded_ad_service.dart';
 import '../services/interstitial_ad_service.dart';
 import '../widgets/banner_ad_widget.dart';
@@ -458,7 +459,25 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     if (_selectedQuestions.isEmpty) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Quiz')),
+        appBar: AppBar(
+          title: const Text('Quiz'),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.share),
+              tooltip: 'Share app',
+              onPressed: () {
+                appShareService.shareApp(
+                  context,
+                  extraText: 'Practice Flutter quizzes in this learning app.',
+                );
+              },
+            ),
+          ],
+        ),
+        bottomNavigationBar: const SafeArea(
+          top: false,
+          child: BannerAdWidget(),
+        ),
         body: const Center(
           child: Text('No questions available'),
         ),
@@ -499,6 +518,10 @@ class _QuizScreenState extends State<QuizScreen> {
       },
       child: Scaffold(
         backgroundColor: Colors.grey.shade50,
+        bottomNavigationBar: const SafeArea(
+          top: false,
+          child: BannerAdWidget(),
+        ),
         appBar: AppBar(
           elevation: 0,
           title: Text(
@@ -521,6 +544,16 @@ class _QuizScreenState extends State<QuizScreen> {
             ),
           ),
           actions: [
+            IconButton(
+              icon: const Icon(Icons.share, color: Colors.white),
+              tooltip: 'Share app',
+              onPressed: () {
+                appShareService.shareApp(
+                  context,
+                  extraText: 'Practice Flutter quizzes in this learning app.',
+                );
+              },
+            ),
             // Lives display (hearts)
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 12.0),
@@ -689,8 +722,6 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                   ),
                   
-                  // Banner ad at the bottom (following AdMob policies)
-                  const BannerAdWidget(),
                 ],
               ),
       ),

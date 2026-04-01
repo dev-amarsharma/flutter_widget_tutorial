@@ -1,0 +1,82 @@
+[
+  {
+    "que": "What does REST API integration usually combine in a Flutter app?",
+    "options": [
+      "Only theming and navigation",
+      "HTTP requests, JSON parsing, and model mapping",
+      "Only widget animations",
+      "Only local storage"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where should REST API request logic usually live?",
+    "options": [
+      "Inside the build method",
+      "Inside a repository or service layer",
+      "Inside AppBar only",
+      "Inside every Text widget"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is model mapping useful when integrating APIs?",
+    "options": [
+      "It removes the need for error handling",
+      "It makes external data easier to use safely in app code",
+      "It makes routes load faster",
+      "It replaces asynchronous code"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which UI states should you commonly handle around API integration?",
+    "options": [
+      "Loading, empty, and error states",
+      "Only the success state",
+      "Only the animation state",
+      "Only dark mode"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you do before trusting a server response?",
+    "options": [
+      "Assume it is always valid",
+      "Validate the status and expected data shape",
+      "Convert everything to String immediately",
+      "Ignore missing fields"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which practice should you avoid with REST API integration?",
+    "options": [
+      "Keeping API logic separate from widgets",
+      "Parsing JSON into models",
+      "Putting large API workflows directly in widget build methods",
+      "Checking response status codes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a common role of a repository in API integration?",
+    "options": [
+      "To style widgets",
+      "To organize data-fetching logic",
+      "To replace BuildContext",
+      "To define gradients"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which topic is most closely related to REST API integration?",
+    "options": [
+      "Row and Column layout",
+      "HTTP Requests and JSON Parsing",
+      "Tooltip usage",
+      "ClipRRect styling"
+    ],
+    "ans": "b"
+  }
+]

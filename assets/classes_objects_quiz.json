@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is a class in Dart?",
+    "options": [
+      "A blueprint for creating objects",
+      "A package manager",
+      "A widget tree optimizer",
+      "A type of route"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is an object?",
+    "options": [
+      "A comment block in code",
+      "An instance created from a class",
+      "A special type of import",
+      "A required widget in every app"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a constructor used for?",
+    "options": [
+      "To initialize a new object",
+      "To destroy a widget tree",
+      "To replace imports",
+      "To write JSON files"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why might you use final fields in a model class?",
+    "options": [
+      "To make values immutable after initialization",
+      "To force every method to be async",
+      "To make the app run only in debug mode",
+      "To remove the need for constructors"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a good use of a class in Flutter?",
+    "options": [
+      "Modeling user profile data",
+      "Replacing the build method entirely",
+      "Avoiding all functions",
+      "Skipping state management"
+    ],
+    "ans": "a"
+  }
+]
