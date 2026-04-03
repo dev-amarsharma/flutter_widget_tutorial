@@ -1,51 +1,101 @@
 [
   {
-    "que": "Composable Functions: which statement is most accurate?",
+    "que": "What annotation marks a composable function?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Composable Functions?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "@Composable",
+      "@UiFunction",
+      "@Render",
+      "@Stateful"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Composable Functions?",
+    "que": "What do composable functions primarily do?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
+      "Describe UI based on input data",
+      "Mutate View objects manually",
+      "Configure Gradle tasks",
+      "Define database schemas"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does Android recommend composables should generally be?",
+    "options": [
+      "Fast, idempotent, and side-effect free",
+      "Slow and stateful",
+      "Global and mutable",
+      "Only class-based"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Do composable functions usually return Android View objects?",
+    "options": [
+      "Yes",
+      "No",
+      "Only in release builds",
+      "Only in tests"
     ],
     "ans": "b"
   },
   {
-    "que": "After studying Composable Functions, what should you do next?",
+    "que": "How does Compose generally update UI?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "By recomposing with new state",
+      "By walking the view tree and mutating widgets manually only",
+      "By editing XML at runtime",
+      "By restarting the process"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "What is a common composable mistake?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Passing clear parameters",
+      "Keeping UI logic focused",
+      "Writing side effects directly in the composable body",
+      "Calling other composables"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why is declarative UI useful in Compose?",
+    "options": [
+      "It reduces manual UI mutation complexity",
+      "It removes all state handling",
+      "It makes recomposition impossible",
+      "It disables reuse"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should happen when app state changes?",
+    "options": [
+      "Composable functions can be called again with new data",
+      "You must edit XML manually",
+      "You must recreate all Kotlin files",
+      "The app must restart"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good composable design practice?",
+    "options": [
+      "Make composables small and focused",
+      "Put all business logic in a single giant composable",
+      "Depend on execution order side effects",
+      "Avoid parameters"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose tutorial and Thinking in Compose",
+      "Only app bundle docs",
+      "Only CI docs",
+      "Only Firebase docs"
     ],
     "ans": "a"
   }

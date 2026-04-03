@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does a coroutine dispatcher control?",
+    "options": [
+      "Which thread or thread pool executes coroutine work",
+      "Which XML file is inflated",
+      "Which app icon is used",
+      "Which Room table is created"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which dispatcher is used for UI-related work on Android?",
+    "options": [
+      "Dispatchers.Main",
+      "Dispatchers.IO",
+      "Dispatchers.Default",
+      "Dispatchers.Tablet"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which dispatcher is optimized for disk and network I/O?",
+    "options": [
+      "Dispatchers.IO",
+      "Dispatchers.Main",
+      "Dispatchers.Default",
+      "Dispatchers.Dialog"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which dispatcher is a common choice for CPU-intensive work?",
+    "options": [
+      "Dispatchers.Default",
+      "Dispatchers.Main",
+      "Dispatchers.IO",
+      "Dispatchers.UIOnly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `withContext(Dispatchers.IO)` help accomplish?",
+    "options": [
+      "Moves blocking work off the main thread",
+      "Creates an activity",
+      "Writes a manifest filter",
+      "Builds a Baseline Profile"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which elements can be part of a coroutine context?",
+    "options": [
+      "Dispatcher, job, name, and exception handler",
+      "Only a layout direction",
+      "Only a view tree",
+      "Only a SQL query"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common dispatcher mistake?",
+    "options": [
+      "Using IO for blocking network requests",
+      "Using Main for quick UI updates",
+      "Running blocking I/O on Main",
+      "Injecting dispatchers for tests"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why can dispatcher injection be useful?",
+    "options": [
+      "It makes tests easier by allowing replacement with test dispatchers",
+      "It removes the need for scopes",
+      "It disables coroutines",
+      "It replaces repositories"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What generally happens to coroutine context in child coroutines?",
+    "options": [
+      "It is inherited from the parent with child-specific job handling",
+      "It is always empty",
+      "It always switches to IO",
+      "It cannot be inherited"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Android coroutines guide, advanced coroutines, and best practices",
+      "Only app bundle docs",
+      "Only dialog docs",
+      "Only collections docs"
+    ],
+    "ans": "a"
+  }
+]

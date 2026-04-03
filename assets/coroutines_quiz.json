@@ -1,51 +1,101 @@
 [
   {
-    "que": "Coroutines: which statement is most accurate?",
+    "que": "What is a coroutine in Kotlin?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "A suspendable computation for asynchronous and concurrent code",
+      "A database schema",
+      "A navigation destination",
+      "A build variant"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are coroutines considered lightweight compared with threads?",
+    "options": [
+      "They can suspend without blocking a thread",
+      "They are always faster than any code",
+      "They do not need scopes",
+      "They only run on the main thread"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which keyword marks a suspending function?",
+    "options": [
+      "suspend",
+      "async",
+      "mutable",
+      "static"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Android guidance applies to coroutines?",
+    "options": [
+      "They are the recommended solution for asynchronous programming on Android",
+      "They are deprecated for Android UI work",
+      "They only work in tests",
+      "They replace Flow completely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does structured concurrency mean?",
+    "options": [
+      "Coroutines run within scopes with connected parent-child lifecycles",
+      "Every coroutine runs globally forever",
+      "Coroutines cannot be cancelled",
+      "Only one coroutine can exist at a time"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common coroutine builder?",
+    "options": [
+      "launch",
+      "inflate",
+      "render",
+      "measure"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which dispatcher is commonly used for blocking I/O work?",
+    "options": [
+      "Dispatchers.IO",
+      "Dispatchers.Main only",
+      "Dispatchers.None",
+      "Dispatchers.Render"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common coroutine mistake?",
+    "options": [
+      "Using lifecycle-aware scopes",
+      "Launching unmanaged work in global scopes",
+      "Using suspend functions",
+      "Handling async work off the main thread"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Coroutines?",
+    "que": "Why should Android apps avoid blocking the main thread?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "Because it can make the app unresponsive",
+      "Because the compiler forbids UI",
+      "Because it disables recomposition",
+      "Because it breaks lists"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Coroutines?",
+    "que": "Which official docs best support this topic?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "After studying Coroutines, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Kotlin coroutines docs and Android coroutines guide",
+      "Only Canvas docs",
+      "Only app bundle docs",
+      "Only Firebase docs"
     ],
     "ans": "a"
   }

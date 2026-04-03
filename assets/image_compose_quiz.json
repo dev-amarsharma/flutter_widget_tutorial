@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the main purpose of the `Image` composable in Compose?",
+    "options": [
+      "To display graphic content on screen",
+      "To handle click events only",
+      "To create a navigation graph",
+      "To manage ViewModel state"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API is commonly used to load a drawable resource into `Image`?",
+    "options": [
+      "`painterResource()`",
+      "`rememberSaveable()`",
+      "`collectAsState()`",
+      "`derivedStateOf()`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to Android docs, what is commonly used for loading images from the internet in Compose?",
+    "options": [
+      "A third-party image loading library such as Coil",
+      "Only `ImageBitmap.imageResource()`",
+      "A Room DAO",
+      "A BroadcastReceiver"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Compose API is commonly shown with Coil for remote image loading?",
+    "options": [
+      "`AsyncImage`",
+      "`BasicText`",
+      "`Canvas`",
+      "`Scaffold`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When should `contentDescription` be `null`?",
+    "options": [
+      "When the image is purely decorative",
+      "When the image is loaded from a URL",
+      "When the image is larger than the screen",
+      "When using `painterResource()`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is `contentDescription` important?",
+    "options": [
+      "It improves accessibility for screen readers",
+      "It compresses image files",
+      "It changes image caching strategy",
+      "It avoids recomposition"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which drawable type is supported by `painterResource()` according to the docs?",
+    "options": [
+      "VectorDrawable",
+      "Only GIF files",
+      "Only SVG from network",
+      "Only MP4 animations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is `Icon` usually preferred over `Image`?",
+    "options": [
+      "For small symbolic graphics that follow icon conventions",
+      "For full-screen photo galleries",
+      "For all network-loaded content",
+      "For JSON parsing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when showing images in Compose?",
+    "options": [
+      "Forgetting accessibility descriptions for meaningful images",
+      "Using `Image` for photos",
+      "Loading local drawables with `painterResource()`",
+      "Using app resources"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are dedicated image-loading libraries useful for remote images?",
+    "options": [
+      "They handle networking, decoding, and caching",
+      "They remove the need for internet permission",
+      "They replace Compose modifiers",
+      "They generate vector drawables automatically"
+    ],
+    "ans": "a"
+  }
+]

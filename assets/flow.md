@@ -1,30 +1,51 @@
-# Kotlin Flow Basics
+# Flow
 
 ## Overview
-Flow represents a cold async stream of values and works naturally with coroutines.
+Kotlin Flow is an asynchronous stream type for emitting multiple values over time. The official Kotlin docs position Flow as the answer to a common question: if a suspending function returns one asynchronous value, how do we model many asynchronously produced values? Flow is the answer.
 
-## When to use
-- In production Android apps using Kotlin/Compose stacks.
-- As a foundational concept for advanced topics in the manifest path.
+## Key characteristics
+From Kotlin docs:
 
-## Example
+- Flow emits multiple values over time
+- flows are cold by default
+- operators are lazy and usually return new flows quickly
+- collection is sequential unless special operators change that behavior
+
+## Cold streams
+“Cold” means the code inside a flow builder does not run until the flow is collected.
+
+Example:
+
 ```kotlin
-val ticker = flow {
-  repeat(3) {
-    emit(it)
-    delay(1000)
+fun simple(): Flow<Int> = flow {
+  println("Flow started")
+  for (i in 1..3) {
+    delay(100)
+    emit(i)
   }
 }
 ```
 
+Every new collection starts the flow again.
+
+## Operators
+Flow supports:
+
+- intermediate operators such as `map`, `filter`, and `transform`
+- terminal operators such as `collect`, `toList`, `first`, `reduce`
+
+Intermediate operators define the pipeline. Terminal operators actually start collection.
+
 ## Best practices
-- Keep functions small and focused.
-- Prefer readable names and explicit intent.
-- Validate behavior with tests where possible.
+- Model multi-value async streams with Flow.
+- Keep business streams in repositories or state holders.
+- Remember that a flow does nothing until collected.
+- Be explicit about terminal operators in UI or business logic.
 
 ## Common mistakes
-- Skipping state/error handling.
-- Mixing too many responsibilities in one layer.
+- Assuming a flow starts eagerly.
+- Confusing a flow definition with a collected result.
+- Forgetting collection context matters.
 
-## Next step
-Complete the quiz file for this topic and implement a tiny sample in your project.
+## References
+- Kotlin Flow: https://kotlinlang.org/docs/flow.html

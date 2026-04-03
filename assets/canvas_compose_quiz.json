@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the `Canvas` composable in Compose described as?",
+    "options": [
+      "A wrapper around `Modifier.drawBehind`",
+      "A database adapter",
+      "A navigation controller",
+      "A baseline profile generator"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scoped environment is used for drawing inside Canvas?",
+    "options": [
+      "DrawScope",
+      "ViewModelScope",
+      "CoroutineScope",
+      "NavScope"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property gives the current dimensions of the drawing area?",
+    "options": [
+      "size",
+      "route",
+      "alpha",
+      "enabled"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a valid Canvas drawing function?",
+    "options": [
+      "drawRect",
+      "saveToDatabase",
+      "navigateTo",
+      "enqueueWork"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is Canvas especially useful?",
+    "options": [
+      "When you need custom graphics beyond standard composables",
+      "Only for network calls",
+      "Only for Room queries",
+      "Only for manifest configuration"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does Compose simplify compared with classic view-based canvas drawing?",
+    "options": [
+      "Some lower-level paint-management complexity",
+      "All app architecture decisions",
+      "All lifecycle handling",
+      "All database schema creation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good practice when drawing on Canvas?",
+    "options": [
+      "Use `size` instead of hardcoding every coordinate when possible",
+      "Ignore screen size",
+      "Use Canvas for every button and text label",
+      "Avoid any geometry calculations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with Canvas?",
+    "options": [
+      "Using it only when needed",
+      "Hardcoding coordinates without considering the canvas dimensions",
+      "Drawing rectangles",
+      "Using color"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which of the following is a likely Canvas use case?",
+    "options": [
+      "Custom chart or progress indicator",
+      "Configuring product flavors",
+      "Scheduling WorkManager sync",
+      "Logging Firebase events"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose graphics draw overview",
+      "Only navigation docs",
+      "Only app bundle docs",
+      "Only battery docs"
+    ],
+    "ans": "a"
+  }
+]

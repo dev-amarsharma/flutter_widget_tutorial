@@ -1,0 +1,122 @@
+[
+  {
+    "que": "What is pagination?",
+    "options": [
+      "Loading data in smaller chunks",
+      "Loading all data into memory first",
+      "Only sorting a list",
+      "Only caching images"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is pagination useful?",
+    "options": [
+      "It reduces memory and bandwidth pressure",
+      "It removes networking",
+      "It disables scrolling",
+      "It replaces repositories"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common pagination style?",
+    "options": [
+      "Cursor-based loading",
+      "Manifest pagination",
+      "Drawable pagination",
+      "Theme pagination"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What often triggers infinite scroll loading?",
+    "options": [
+      "Approaching the end of a list",
+      "Opening settings",
+      "Changing app icon",
+      "Running Gradle sync"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Android use case for pagination?",
+    "options": [
+      "Feeds or search results",
+      "Static splash screens only",
+      "Only app icons",
+      "Only local constants"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good pagination practice?",
+    "options": [
+      "Handle loading, empty, and error states clearly",
+      "Ignore duplicates",
+      "Reload everything after each item",
+      "Hide retry options"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake?",
+    "options": [
+      "Respecting backend limits",
+      "Ignoring retry behavior",
+      "Keeping page merges consistent",
+      "Using lazy lists"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why should merged pages be handled carefully?",
+    "options": [
+      "To avoid duplicates and ordering problems",
+      "To remove all caching",
+      "To disable back stack",
+      "To avoid ViewModels"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What can users gain from pagination?",
+    "options": [
+      "They can see content sooner",
+      "They must wait for all data first",
+      "They lose scroll ability",
+      "They cannot refresh"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement is accurate?",
+    "options": [
+      "Pagination helps scale list loading for large datasets",
+      "Pagination is only for web browsers",
+      "Pagination replaces local storage",
+      "Pagination is unrelated to performance"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What backend detail matters for implementation?",
+    "options": [
+      "Whether it uses pages, offsets, or cursors",
+      "Only app theme",
+      "Only package name",
+      "Only manifest entries"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What Compose feature is often paired with pagination?",
+    "options": [
+      "Lazy lists",
+      "Only Canvas drawing",
+      "Only previews",
+      "Only Dialogs"
+    ],
+    "ans": "a"
+  }
+]

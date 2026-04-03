@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is MockK mainly used for?",
+    "options": [
+      "Mocking dependencies in Kotlin tests",
+      "Styling Compose themes",
+      "Parsing navigation routes",
+      "Generating APKs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function creates a mock in MockK?",
+    "options": [
+      "`mockk<T>()`",
+      "`rememberMock()`",
+      "`createIntentMock()`",
+      "`fakek<T>()`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which MockK construct is used to stub behavior?",
+    "options": [
+      "`every { ... } returns ...`",
+      "`verify { ... } returns ...`",
+      "`assertMock { ... }`",
+      "`runMock { ... }`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which MockK construct verifies that a call happened?",
+    "options": [
+      "`verify { ... }`",
+      "`every { ... }`",
+      "`returns { ... }`",
+      "`buildMock { ... }`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is `justRun { ... }` useful for?",
+    "options": [
+      "Stubbing `Unit`-returning functions",
+      "Creating JSON fixtures",
+      "Starting Compose previews",
+      "Building interceptors"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which APIs should be used for suspend functions in MockK?",
+    "options": [
+      "`coEvery` and `coVerify`",
+      "`lazy` and `lateinit`",
+      "`remember` and `derivedStateOf`",
+      "`map` and `filter`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation creates an annotated mock field in MockK?",
+    "options": [
+      "`@MockK`",
+      "`@Composable`",
+      "`@Serializable`",
+      "`@Dao`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How are annotated MockK fields commonly initialized?",
+    "options": [
+      "With `MockKAnnotations.init(this)`",
+      "With `MaterialTheme.init()`",
+      "With `launchMockScope()`",
+      "With `rememberMockK()`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good testing practice with MockK?",
+    "options": [
+      "Mock boundaries and dependencies, not every internal detail",
+      "Verify every single call in all tests",
+      "Mock the Kotlin standard library everywhere",
+      "Avoid readable test names"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common MockK mistake?",
+    "options": [
+      "Using normal `every` or `verify` for suspend functions instead of coroutine-specific APIs",
+      "Using `mockk<T>()`",
+      "Stubbing return values",
+      "Keeping tests focused"
+    ],
+    "ans": "a"
+  }
+]

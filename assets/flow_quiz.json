@@ -1,51 +1,101 @@
 [
   {
-    "que": "Flow: which statement is most accurate?",
+    "que": "What does Kotlin Flow represent?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "An asynchronous stream of multiple values over time",
+      "A single immutable value only",
+      "A build variant",
+      "A custom layout API"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does it mean that flows are cold?",
+    "options": [
+      "Their code does not run until they are collected",
+      "They only work offline",
+      "They run only on Dispatchers.IO",
+      "They are deprecated"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a terminal Flow operator?",
+    "options": [
+      "collect",
+      "map",
+      "filter",
+      "transform"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which are intermediate Flow operators?",
+    "options": [
+      "map and filter",
+      "collect and first only",
+      "launch and async",
+      "copy and data"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What starts a flow’s execution?",
+    "options": [
+      "A terminal operator such as `collect`",
+      "Declaring the function",
+      "Importing kotlinx.coroutines",
+      "Adding a ViewModel"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens when a cold flow is collected again?",
+    "options": [
+      "It starts fresh for that new collection",
+      "It cannot be collected twice",
+      "It becomes a hot stream automatically",
+      "It returns the old list directly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Flow mistake?",
+    "options": [
+      "Remembering that flows are cold",
+      "Assuming a flow definition is already running eagerly",
+      "Using `collect`",
+      "Using `map`"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Flow?",
+    "que": "Which statement about Flow collection is true by default?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "It is sequential unless special operators change that behavior",
+      "It is always parallel",
+      "It never suspends",
+      "It always runs on Main"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Flow?",
+    "que": "Why is Flow useful?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
+      "It models asynchronous streams of changing values",
+      "It replaces all collections",
+      "It replaces Room and Retrofit entirely",
+      "It only works in tests"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "After studying Flow, what should you do next?",
+    "que": "Which official doc best supports this topic?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Kotlin Flow documentation",
+      "Only fragment docs",
+      "Only Espresso docs",
+      "Only app bundle docs"
     ],
     "ans": "a"
   }

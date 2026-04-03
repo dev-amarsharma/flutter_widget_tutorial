@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does a default argument do in Kotlin?",
+    "options": [
+      "Makes a parameter optional by providing a fallback value",
+      "Makes the function abstract",
+      "Turns the function into a coroutine",
+      "Prevents overloading completely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are default arguments useful?",
+    "options": [
+      "They reduce the need for multiple overloads",
+      "They remove return types",
+      "They replace classes",
+      "They force named calls"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When are named arguments especially helpful?",
+    "options": [
+      "When calls have many parameters or booleans and need clarity",
+      "Only for lists",
+      "Only for one-parameter functions",
+      "Only for Java APIs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can Kotlin named arguments usually be used when calling Java methods on the JVM?",
+    "options": [
+      "No",
+      "Yes, always",
+      "Only in debug builds",
+      "Only with coroutines"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens after you skip some defaulted parameters in a call?",
+    "options": [
+      "Later arguments often need to be named",
+      "The function becomes invalid",
+      "All parameters become nullable",
+      "The compiler ignores the call"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a valid named-argument call style?",
+    "options": [
+      "reformat(str = \"Hello\", wordSeparator = '_')",
+      "reformat(str: \"Hello\")",
+      "reformat(name -> \"Hello\")",
+      "reformat(= \"Hello\")"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good use case for named arguments per Kotlin conventions?",
+    "options": [
+      "When several parameters share the same primitive type or use booleans",
+      "Only when there is one argument",
+      "Only in constructors",
+      "Only for Java interop"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with default and named arguments?",
+    "options": [
+      "Using defaults to simplify APIs",
+      "Using named arguments where clarity helps",
+      "Assuming Java functions support Kotlin named arguments the same way",
+      "Reducing overloads"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "If a defaulted parameter comes before a required one, what often becomes necessary when skipping the default?",
+    "options": [
+      "Naming the later argument",
+      "Converting the function to inline",
+      "Using a mutable list",
+      "Adding a coroutine scope"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Kotlin functions and coding conventions docs",
+      "Only dialog docs",
+      "Only app bundle docs",
+      "Only Firebase docs"
+    ],
+    "ans": "a"
+  }
+]

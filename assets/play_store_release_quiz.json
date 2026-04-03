@@ -1,0 +1,122 @@
+[
+  {
+    "que": "What is a common release artifact for Google Play?",
+    "options": [
+      "Android App Bundle",
+      "Only debug APK",
+      "Room schema file",
+      "Navigation graph file"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is versionCode important?",
+    "options": [
+      "It identifies app updates for Play distribution",
+      "It changes app theme automatically",
+      "It stores navigation routes",
+      "It replaces signing keys"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should happen before a Play release?",
+    "options": [
+      "The app should be tested and release assets prepared",
+      "Only icons need review",
+      "Only the manifest matters",
+      "Testing can be skipped"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where is a release commonly uploaded?",
+    "options": [
+      "Google Play Console",
+      "colors.xml",
+      "README only",
+      "Firebase Remote Config"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good rollout strategy?",
+    "options": [
+      "Use testing tracks or staged rollout first",
+      "Release untested to everyone at once",
+      "Skip monitoring after launch",
+      "Avoid version updates"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake?",
+    "options": [
+      "Ignoring policy or data safety requirements",
+      "Using testing tracks",
+      "Updating store listing content",
+      "Monitoring crashes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are signing keys important?",
+    "options": [
+      "They prove the app identity and secure releases",
+      "They render Compose lists",
+      "They replace version names",
+      "They remove ANRs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should continue after release?",
+    "options": [
+      "Crash and ANR monitoring",
+      "Nothing else matters",
+      "Only icon redesign",
+      "Only Gradle sync"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why use internal or closed testing?",
+    "options": [
+      "To reduce risk before wider rollout",
+      "To avoid all QA",
+      "To skip store policies",
+      "To disable analytics"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of content is part of release readiness?",
+    "options": [
+      "Store listing assets like screenshots and notes",
+      "Only route names",
+      "Only package imports",
+      "Only composable previews"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement is accurate?",
+    "options": [
+      "Play Store release includes build, signing, console setup, and rollout planning",
+      "Publishing is only pressing one button",
+      "Policies do not matter",
+      "Versioning is optional"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is one good pre-release check?",
+    "options": [
+      "Verify versioning, signing, and production behavior together",
+      "Upload debug builds only",
+      "Change package name each release",
+      "Skip release notes"
+    ],
+    "ans": "a"
+  }
+]

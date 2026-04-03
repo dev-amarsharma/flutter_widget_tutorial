@@ -1,0 +1,102 @@
+[
+  {
+    "que": "On which Android version and above is system dark theme available?",
+    "options": [
+      "Android 10 and higher",
+      "Android 5 and higher only",
+      "Android 15 only",
+      "Only on tablets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a listed benefit of dark theme from Android Developers?",
+    "options": [
+      "Reduced power usage on some display technologies",
+      "Guaranteed faster network performance",
+      "Automatic crash prevention",
+      "Removal of all accessibility needs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In Compose Material 3, where should dark-mode support usually live?",
+    "options": [
+      "In theme-level color schemes",
+      "In random hardcoded screen colors",
+      "Only in XML resources",
+      "Only in Gradle files"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Compose function is commonly used to check whether dark theme is active?",
+    "options": [
+      "isSystemInDarkTheme()",
+      "isNightWorker()",
+      "isDarkVariant()",
+      "isUiModeEnabled()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common dark-mode mistake?",
+    "options": [
+      "Testing contrast in both themes",
+      "Assuming dark mode means simply inverting every color",
+      "Using theme-level color roles",
+      "Checking text readability"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why should contrast be checked in dark mode?",
+    "options": [
+      "To maintain readability and accessibility",
+      "To reduce app size",
+      "To disable theme switching",
+      "To avoid using Material 3"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following can enable dark theme at the system level?",
+    "options": [
+      "System settings or quick settings on supported devices",
+      "Only app install time",
+      "Only Play Console",
+      "Only changing the manifest package name"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is hardcoding light-only colors a problem?",
+    "options": [
+      "They may fail visually in dark theme",
+      "They always crash the app",
+      "They disable Kotlin",
+      "They remove all semantics"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Compose APIs are commonly paired for light and dark theming?",
+    "options": [
+      "lightColorScheme() and darkColorScheme()",
+      "launch() and async()",
+      "Row() and Column()",
+      "Map and Set"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Android dark theme docs and Compose Material 3 docs",
+      "Only app bundle docs",
+      "Only CI docs",
+      "Only collections docs"
+    ],
+    "ans": "a"
+  }
+]

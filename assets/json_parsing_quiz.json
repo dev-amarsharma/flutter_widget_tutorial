@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is JSON parsing?",
+    "options": [
+      "Converting JSON text into runtime objects and back when needed",
+      "Only encrypting files",
+      "Only drawing UI state",
+      "Only creating Gradle tasks"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is serialization?",
+    "options": [
+      "Converting app data into a transferable or storable format",
+      "Launching a coroutine on Main",
+      "Writing a JUnit assertion",
+      "Creating a navigation graph"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is deserialization?",
+    "options": [
+      "Reading external data and converting it into runtime objects",
+      "Deleting cached network data",
+      "Converting a lambda to inline bytecode",
+      "Turning a service into an activity"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Kotlin library component is commonly used for structured JSON parsing?",
+    "options": [
+      "`kotlinx.serialization`",
+      "`android.graphics`",
+      "`androidx.navigation`",
+      "`junit.runner`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation marks a Kotlin class as serializable?",
+    "options": [
+      "`@Serializable`",
+      "`@Composable`",
+      "`@Test`",
+      "`@ParcelizeOnly`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function serializes an object to JSON with Kotlin serialization?",
+    "options": [
+      "`Json.encodeToString(...)`",
+      "`Json.toIntent(...)`",
+      "`Json.launch(...)`",
+      "`Json.asFlow(...)`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function reads an object from JSON text?",
+    "options": [
+      "`Json.decodeFromString(...)`",
+      "`Json.collect(...)`",
+      "`Json.navigate(...)`",
+      "`Json.inflate(...)`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should apps avoid manual JSON parsing with string operations?",
+    "options": [
+      "It is brittle and easy to break",
+      "It is required for AndroidX",
+      "It makes all payloads smaller",
+      "It prevents networking"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common place where Android apps use JSON parsing?",
+    "options": [
+      "Network responses",
+      "Only XML layouts",
+      "Only app icons",
+      "Only battery stats"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake in JSON parsing?",
+    "options": [
+      "Using models that do not match the payload structure",
+      "Using a data class for parsed data",
+      "Using a structured parser",
+      "Handling JSON from APIs"
+    ],
+    "ans": "a"
+  }
+]

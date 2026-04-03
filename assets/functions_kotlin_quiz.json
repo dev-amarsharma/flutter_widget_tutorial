@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which keyword declares a function in Kotlin?",
+    "options": [
+      "fun",
+      "function",
+      "def",
+      "method"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How are Kotlin parameters declared?",
+    "options": [
+      "name: Type",
+      "Type name",
+      "name -> Type",
+      "Type:name"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is true about function parameters inside a Kotlin function body?",
+    "options": [
+      "They are read-only",
+      "They are always mutable",
+      "They have no type",
+      "They are enums"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When can a Kotlin function omit an explicit return type?",
+    "options": [
+      "When using an expression body and the type is clear",
+      "Never",
+      "Only in Java interop",
+      "Only for suspend functions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `Unit` represent in Kotlin functions?",
+    "options": [
+      "No meaningful return value",
+      "A list of values",
+      "A nullable value",
+      "A coroutine scope"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which example uses an expression body?",
+    "options": [
+      "fun square(x: Int) = x * x",
+      "fun square { x * x }",
+      "function square(x) => x * x",
+      "fun square(x: Int): = x * x"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good Kotlin function practice?",
+    "options": [
+      "Keep functions small and focused",
+      "Put unrelated logic in one large function",
+      "Avoid clear names",
+      "Always use block bodies even for one-line functions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with Kotlin functions?",
+    "options": [
+      "Using descriptive names",
+      "Treating parameters as reassignable variables",
+      "Returning values clearly",
+      "Using expression bodies selectively"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What separates multiple parameters in a function declaration?",
+    "options": [
+      "Commas",
+      "Semicolons only",
+      "Pipes",
+      "Arrows"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official doc best supports this topic?",
+    "options": [
+      "Kotlin functions documentation",
+      "Only Hilt docs",
+      "Only Espresso docs",
+      "Only app bundle docs"
+    ],
+    "ans": "a"
+  }
+]

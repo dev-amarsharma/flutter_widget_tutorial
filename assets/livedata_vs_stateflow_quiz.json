@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is `StateFlow` according to Android's docs?",
+    "options": [
+      "A state-holder observable flow",
+      "A database migration tool",
+      "A Material theme object",
+      "A manifest entry type"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property lets you read the current value of a `StateFlow`?",
+    "options": [
+      "`.value`",
+      "`.currentState()`",
+      "`.observe()`",
+      "`.latest()`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do you update a `MutableStateFlow`?",
+    "options": [
+      "Assign a new value to `.value`",
+      "Call `emitNow()` only",
+      "Use `observeForever()`",
+      "Change the manifest"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of flow is `StateFlow`?",
+    "options": [
+      "Hot",
+      "Cold only",
+      "Lazy file-based",
+      "Blocking only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which technology is more naturally aligned with Kotlin coroutines and Flow APIs?",
+    "options": [
+      "StateFlow",
+      "XML drawables",
+      "Manifest permissions",
+      "Intent filters"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which observable type is older and strongly associated with Android architecture components?",
+    "options": [
+      "LiveData",
+      "StateFlow",
+      "LazyRow",
+      "Modifier"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is StateFlow often preferred in modern Android ViewModels?",
+    "options": [
+      "It integrates well with coroutines and Compose",
+      "It replaces lifecycle handling automatically everywhere",
+      "It removes the need for state models",
+      "It only works in Java"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a key difference between StateFlow and many other flows?",
+    "options": [
+      "StateFlow always has a current value",
+      "StateFlow cannot emit updates",
+      "StateFlow works only in tests",
+      "StateFlow is not observable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when comparing LiveData and StateFlow?",
+    "options": [
+      "Assuming they are identical in behavior and ecosystem fit",
+      "Noticing that both can expose UI state",
+      "Using ViewModels with state holders",
+      "Thinking about architecture intentionally"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement is accurate?",
+    "options": [
+      "LiveData and StateFlow can both expose UI state, but StateFlow fits coroutine-based modern patterns better",
+      "Only LiveData can expose UI state",
+      "Only StateFlow works in ViewModels",
+      "StateFlow is a Compose layout"
+    ],
+    "ans": "a"
+  }
+]

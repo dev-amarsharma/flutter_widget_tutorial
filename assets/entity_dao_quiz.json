@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does `@Entity` represent in Room?",
+    "options": [
+      "A table definition",
+      "A navigation route",
+      "A coroutine dispatcher",
+      "A Compose theme"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does DAO stand for?",
+    "options": [
+      "Data Access Object",
+      "Draw Alignment Option",
+      "Default Argument Override",
+      "Dynamic Activity Output"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the role of a DAO in Room?",
+    "options": [
+      "Define how the app reads and writes persisted data",
+      "Draw custom graphics",
+      "Handle deep links",
+      "Create build variants"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation is used to declare a Room DAO?",
+    "options": [
+      "@Dao",
+      "@Composable",
+      "@Serializable",
+      "@Inject"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation is used for SQL queries in a DAO?",
+    "options": [
+      "@Query",
+      "@UpdateState",
+      "@Launch",
+      "@Graph"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation inserts rows into the database?",
+    "options": [
+      "@Insert",
+      "@Emit",
+      "@Place",
+      "@Filter"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are DAOs valuable?",
+    "options": [
+      "They centralize database access logic",
+      "They remove the need for entities",
+      "They replace coroutines",
+      "They only matter in tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with entities and DAOs?",
+    "options": [
+      "Keeping SQL in DAOs",
+      "Using Flow for queries when appropriate",
+      "Spreading SQL across unrelated classes",
+      "Separating persistence structure from access methods"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good reactive return type for a Room query in modern Android apps?",
+    "options": [
+      "Flow<List<User>>",
+      "Only String",
+      "Only Dialog",
+      "Only Canvas"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Room overview and accessing-data docs",
+      "Only app bundle docs",
+      "Only dialog docs",
+      "Only Firebase docs"
+    ],
+    "ans": "a"
+  }
+]

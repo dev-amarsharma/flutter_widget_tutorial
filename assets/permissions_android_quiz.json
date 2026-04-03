@@ -1,0 +1,122 @@
+[
+  {
+    "que": "What is a dangerous permission on Android?",
+    "options": [
+      "A permission that needs runtime user approval",
+      "A permission that always installs silently",
+      "A Gradle plugin",
+      "A navigation argument"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When should a dangerous permission usually be requested?",
+    "options": [
+      "When the related feature is actually needed",
+      "At app launch for every app",
+      "Only in Gradle sync",
+      "After publishing to Play Store"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good permission UX practice?",
+    "options": [
+      "Explain why access is needed when useful",
+      "Request every permission immediately",
+      "Hide denial states",
+      "Assume the user will agree"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should happen if a permission is denied?",
+    "options": [
+      "The app should handle it gracefully with fallback or guidance",
+      "The app should crash",
+      "The NavHost should reset",
+      "The app icon should change"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where is a required permission typically declared?",
+    "options": [
+      "AndroidManifest.xml",
+      "colors.xml",
+      "settings.gradle.kts",
+      "README only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake?",
+    "options": [
+      "Requesting too many permissions up front",
+      "Requesting near feature use",
+      "Providing context",
+      "Supporting denial states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Do Compose apps still follow Android permission rules?",
+    "options": [
+      "Yes",
+      "No, Compose bypasses them",
+      "Only on tablets",
+      "Only with fragments"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should permission requests match user intent?",
+    "options": [
+      "It improves trust and acceptance",
+      "It removes runtime dialogs",
+      "It disables denial",
+      "It replaces the manifest"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What type of permission is typically granted automatically?",
+    "options": [
+      "Normal permission",
+      "Every dangerous permission",
+      "Every special permission",
+      "Only camera permission"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should UI state often reflect?",
+    "options": [
+      "Whether permission is granted, denied, or needed",
+      "Only app version name",
+      "Only route constants",
+      "Only theme mode"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement is accurate?",
+    "options": [
+      "Android permissions protect sensitive capabilities and require careful UX",
+      "Permissions are only for old XML apps",
+      "Permissions are unrelated to privacy",
+      "Permissions replace repositories"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is one good maintenance step?",
+    "options": [
+      "Remove permissions the app no longer needs",
+      "Keep every old permission forever",
+      "Request all permissions at install time",
+      "Hide permission failures"
+    ],
+    "ans": "a"
+  }
+]

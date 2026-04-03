@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which of the following is an example of an Android configuration change?",
+    "options": [
+      "Screen orientation change",
+      "Adding a Kotlin file",
+      "Opening Android Studio",
+      "Pushing to Git"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the default Android behavior for most configuration changes?",
+    "options": [
+      "The activity is destroyed and recreated",
+      "The app process always restarts",
+      "Nothing changes",
+      "The manifest is rewritten"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why does Android usually recreate activities on configuration changes?",
+    "options": [
+      "To reload resources appropriate for the new configuration",
+      "To clear app data",
+      "To force network refreshes",
+      "To disable dark mode"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a major risk if your app does not handle recreation correctly?",
+    "options": [
+      "Loss of UI state like text input or scroll position",
+      "Instant APK corruption",
+      "Permanent device reboot",
+      "Kotlin compiler failure"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does Android recommend about `android:configChanges` for most apps?",
+    "options": [
+      "Avoid using it unless you truly need to handle changes manually",
+      "Use it on every activity by default",
+      "Use it only for coroutines",
+      "Use it to replace ViewModel"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is a good practice for configuration changes?",
+    "options": [
+      "Store longer-lived screen state in a ViewModel",
+      "Store all important state only in activity fields",
+      "Disable recreation everywhere",
+      "Ignore resizing on large screens"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which user action can trigger a configuration change?",
+    "options": [
+      "Changing locale or font size",
+      "Typing a variable name",
+      "Running a unit test",
+      "Opening Logcat"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with configuration changes?",
+    "options": [
+      "Testing rotation and resizing",
+      "Relying on activity fields as the only source of important screen state",
+      "Saving transient UI state",
+      "Letting the system recreate the activity"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why are configuration changes especially important on large-screen devices?",
+    "options": [
+      "Because resizing and multi-window changes can happen more often",
+      "Because they do not support activities",
+      "Because they disable resources",
+      "Because they use a different Kotlin language"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Handle configuration changes and configuration continuity docs",
+      "Only app bundle docs",
+      "Only Firebase docs",
+      "Only Canvas docs"
+    ],
+    "ans": "a"
+  }
+]

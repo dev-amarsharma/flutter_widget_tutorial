@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What data structure best describes the navigation back stack?",
+    "options": [
+      "Queue",
+      "Tree",
+      "Last-in, first-out stack",
+      "Hash map"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What usually happens when you call `NavController.navigate()`?",
+    "options": [
+      "The current destination is deleted permanently",
+      "A new destination is pushed onto the back stack",
+      "The app process is restarted",
+      "All history is cleared automatically"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does `popBackStack()` usually do?",
+    "options": [
+      "Push a new destination",
+      "Pop the current top destination from the stack",
+      "Save analytics state",
+      "Create a deep link"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does a `false` result from `popBackStack()` typically indicate?",
+    "options": [
+      "The database is locked",
+      "The top destination could not be popped, often because nothing remains to pop",
+      "Navigation is disabled in Compose",
+      "The app is in the background"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which option helps remove parts of navigation history during a forward navigation action?",
+    "options": [
+      "padding",
+      "popUpTo",
+      "rememberSaveable",
+      "derivedStateOf"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does `inclusive = true` mean with `popUpTo`?",
+    "options": [
+      "The target destination is also removed",
+      "The target destination is always restored",
+      "The route becomes nullable",
+      "The stack can no longer grow"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why might `saveState` and `restoreState` be useful?",
+    "options": [
+      "To help restore navigation state for flows like bottom navigation",
+      "To replace ViewModel entirely",
+      "To disable back navigation",
+      "To avoid all recomposition"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about Up and Back is correct?",
+    "options": [
+      "They are always identical in all apps",
+      "Up is app hierarchy navigation, while Back follows history",
+      "Back is only for fragments and Up is only for Compose",
+      "Up always clears the stack"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a common back stack mistake?",
+    "options": [
+      "Testing auth and deep-link flows with the Back button",
+      "Using `popUpTo` intentionally",
+      "Assuming every screen should stay in history forever",
+      "Understanding LIFO behavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which official doc best supports this topic?",
+    "options": [
+      "Android Navigation and back stack guide",
+      "Only Firebase Analytics docs",
+      "Only baseline profile docs",
+      "Only battery vitals docs"
+    ],
+    "ans": "a"
+  }
+]

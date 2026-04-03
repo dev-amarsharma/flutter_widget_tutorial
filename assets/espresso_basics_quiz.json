@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is Espresso used for?",
+    "options": [
+      "Android UI testing for view-based interfaces",
+      "Building APK bundles",
+      "Managing coroutines",
+      "Creating Room entities"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the common Espresso interaction pattern?",
+    "options": [
+      "Find a view, perform an action, assert a result",
+      "Create a fragment, delete the activity, rebuild the app",
+      "Open a network socket, sort a list, export APK",
+      "Only use assertions with no actions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function starts a view interaction in Espresso?",
+    "options": [
+      "onView(...)",
+      "collect(...)",
+      "draw(...)",
+      "navigate(...)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is Espresso synchronization valuable?",
+    "options": [
+      "It waits for the app to be idle before acting, reducing flaky timing issues",
+      "It removes all need for assertions",
+      "It compiles the app faster",
+      "It only works with Compose"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you use for custom asynchronous work not covered automatically by Espresso?",
+    "options": [
+      "Idling resources",
+      "Thread.sleep only",
+      "Build variants",
+      "Enum entries"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Espresso mistake?",
+    "options": [
+      "Using idling resources appropriately",
+      "Relying on `Thread.sleep`",
+      "Writing clear assertions",
+      "Matching visible text carefully"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which package contains the core Espresso matchers, actions, and assertions?",
+    "options": [
+      "espresso-core",
+      "espresso-graphics",
+      "espresso-build",
+      "espresso-db"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should Espresso tests ideally focus on?",
+    "options": [
+      "User-visible behavior",
+      "Private implementation details only",
+      "Gradle internal tasks",
+      "Compiler internals"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `check(matches(...))` represent in Espresso?",
+    "options": [
+      "An assertion step",
+      "A dependency injection step",
+      "A navigation back stack step",
+      "A DataStore write"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official doc best supports this topic?",
+    "options": [
+      "Android Espresso documentation",
+      "Only Kotlin exceptions docs",
+      "Only app bundle docs",
+      "Only fragment docs"
+    ],
+    "ans": "a"
+  }
+]

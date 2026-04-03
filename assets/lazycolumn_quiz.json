@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is `LazyColumn`?",
+    "options": [
+      "A vertically scrolling lazy list in Compose",
+      "A horizontal pager",
+      "A JSON parser",
+      "A test runner"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is `LazyColumn` preferred over a plain `Column` for large lists?",
+    "options": [
+      "It composes and lays out only visible items",
+      "It requires no item content",
+      "It can only show one item",
+      "It disables scrolling"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which block adds a single item to a `LazyColumn`?",
+    "options": [
+      "`item { ... }`",
+      "`singleItem { ... }`",
+      "`emit { ... }`",
+      "`child { ... }`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which block commonly adds a list of items to a `LazyColumn`?",
+    "options": [
+      "`items(list) { ... }`",
+      "`forEachColumn(list)`",
+      "`repeatLazy(list)`",
+      "`children(list)`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What object stores and exposes lazy list scroll state?",
+    "options": [
+      "`LazyListState`",
+      "`ModifierState`",
+      "`ScrollIntent`",
+      "`ColumnScope`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why can stable item keys matter in `LazyColumn`?",
+    "options": [
+      "They help preserve remembered item state when positions change",
+      "They make the app compile faster",
+      "They are required for all static lists",
+      "They disable recomposition"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of content is `LazyColumn` designed for?",
+    "options": [
+      "Vertically scrolling collections",
+      "Only horizontal carousels",
+      "Only fixed-size one-screen layouts",
+      "Only navigation bars"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when rendering large lists in Compose?",
+    "options": [
+      "Using a plain `Column` instead of a lazy layout",
+      "Using `items()`",
+      "Remembering list state",
+      "Providing content padding"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `itemsIndexed(...)` provide that `items(...)` does not directly provide?",
+    "options": [
+      "The item index",
+      "Automatic paging",
+      "Network caching",
+      "Coroutine cancellation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement best matches `LazyColumn`?",
+    "options": [
+      "It uses a DSL via `LazyListScope` instead of directly emitting children like a normal layout",
+      "It has no support for collections",
+      "It cannot react to scroll position",
+      "It only works in XML"
+    ],
+    "ans": "a"
+  }
+]

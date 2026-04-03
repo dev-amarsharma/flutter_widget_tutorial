@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What are Baseline Profiles used for?",
+    "options": [
+      "Profile-guided optimization of important code paths",
+      "Creating Room entities",
+      "Managing navigation routes",
+      "Logging analytics events"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to Android Developers, what is a common benefit of Baseline Profiles?",
+    "options": [
+      "They can improve execution speed from first launch by about 30%",
+      "They replace all benchmarks",
+      "They eliminate all ANRs automatically",
+      "They reduce APK size to zero"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which runtime uses Baseline Profiles for optimization?",
+    "options": [
+      "SQLite",
+      "ART",
+      "Gradle daemon",
+      "ADB"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which user journey is a strong candidate for a Baseline Profile?",
+    "options": [
+      "A hidden debug-only screen",
+      "A critical startup and home screen flow",
+      "A comment in README",
+      "The Gradle wrapper download"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What kind of performance issues can Baseline Profiles help reduce?",
+    "options": [
+      "Startup slowness and interaction jank",
+      "Only database corruption",
+      "Only network authorization failures",
+      "Only XML merge conflicts"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is it still important to benchmark after adding Baseline Profiles?",
+    "options": [
+      "Because profiles do not replace measurement and validation",
+      "Because profiles disable AOT compilation",
+      "Because they only work in debug builds",
+      "Because Android requires benchmarks before every install"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement best describes how Baseline Profiles help first launch?",
+    "options": [
+      "They avoid some interpretation and JIT work by giving ART useful profile data ahead of time",
+      "They eliminate the need for code execution",
+      "They replace the splash screen",
+      "They bypass the app process"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with Baseline Profiles?",
+    "options": [
+      "Keeping them aligned to critical user journeys",
+      "Validating performance changes after adding them",
+      "Profiling code users rarely execute and assuming the job is done",
+      "Using them for startup-sensitive flows"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Can Baseline Profiles be shipped in apps or libraries?",
+    "options": [
+      "Yes",
+      "No, only in the OS",
+      "Only in XML resources",
+      "Only in tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Android Baseline Profiles overview and startup best practices",
+      "Only Navigation docs",
+      "Only Compose modifier docs",
+      "Only Firebase Analytics docs"
+    ],
+    "ans": "a"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the defining property of a Kotlin `Set`?",
+    "options": [
+      "Indexed access",
+      "Unique elements",
+      "Key-value storage",
+      "Guaranteed sorting"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Can a logical Kotlin set contain duplicate elements?",
+    "options": [
+      "Yes",
+      "No",
+      "Only in mutable sets",
+      "Only in sorted sets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When is a set a better choice than a list?",
+    "options": [
+      "When uniqueness matters more than position",
+      "When you need ordered duplicates",
+      "When you need indexed access",
+      "When you need key-value lookup"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Kotlin type allows adding and removing elements from a set?",
+    "options": [
+      "Set<T>",
+      "MutableSet<T>",
+      "List<T>",
+      "Map<K,V>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a common mistake with sets?",
+    "options": [
+      "Using them for unique values",
+      "Expecting duplicates to be preserved",
+      "Reading membership",
+      "Using read-only sets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What should you be careful about with set iteration order?",
+    "options": [
+      "Some implementations preserve order, others do not",
+      "Order is always alphabetical",
+      "Order is always random",
+      "Sets cannot be iterated"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which default mutable set implementation in Kotlin often preserves insertion order?",
+    "options": [
+      "LinkedHashSet",
+      "TreeOnlySet",
+      "MutableList",
+      "ArrayMap"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which example fits a set well?",
+    "options": [
+      "Unique user roles",
+      "A ranked leaderboard",
+      "Ordered chat history",
+      "Navigation route stack"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is true about Kotlin sets?",
+    "options": [
+      "They are used for unique elements",
+      "They always provide index-based access",
+      "They require duplicate values",
+      "They are maps with hidden keys"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Kotlin collections overview and collection elements docs",
+      "Only Compose animation docs",
+      "Only app startup docs",
+      "Only Firebase docs"
+    ],
+    "ans": "a"
+  }
+]

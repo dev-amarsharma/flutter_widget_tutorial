@@ -1,13 +1,38 @@
 # Jetpack Compose Introduction
 
 ## Overview
-Compose is Android's modern declarative UI toolkit. UI is built from composable functions instead of XML layouts.
+Jetpack Compose is Android’s modern toolkit for building native UI with Kotlin. Android Developers describes Compose as a declarative toolkit that simplifies and accelerates UI development.
 
-## When to use
-- In production Android apps using Kotlin/Compose stacks.
-- As a foundational concept for advanced topics in the manifest path.
+Instead of defining UI in XML and mutating views imperatively, Compose lets you describe the UI directly in Kotlin with composable functions.
+
+## Why Compose matters
+Compose aims to improve:
+
+- UI development speed
+- consistency of state-driven UI
+- code readability
+- reuse across Android form factors
+
+Android positions Compose as the recommended modern UI toolkit for Android development.
+
+## Key ideas
+Compose transforms state into UI through:
+
+- composition
+- layout
+- drawing
+
+A composable function takes data and emits UI. When the state changes, Compose recomposes the affected parts of the tree.
 
 ## Example
+```kotlin
+setContent {
+  MaterialTheme {
+    Greeting("Android")
+  }
+}
+```
+
 ```kotlin
 @Composable
 fun Greeting(name: String) {
@@ -16,13 +41,17 @@ fun Greeting(name: String) {
 ```
 
 ## Best practices
-- Keep functions small and focused.
-- Prefer readable names and explicit intent.
-- Validate behavior with tests where possible.
+- Learn the declarative model early.
+- Keep state outside UI where appropriate and pass it in.
+- Build screens from small composables.
+- Use Material components and theme roles consistently.
 
 ## Common mistakes
-- Skipping state/error handling.
-- Mixing too many responsibilities in one layer.
+- Thinking in terms of mutating old view hierarchies.
+- Putting too much stateful logic directly into UI functions.
+- Ignoring recomposition and state flow.
 
-## Next step
-Complete the quiz file for this topic and implement a tiny sample in your project.
+## References
+- Develop UI with Compose: https://developer.android.com/develop/ui
+- Android Compose tutorial: https://developer.android.com/develop/ui/compose/tutorial
+- Thinking in Compose: https://developer.android.com/jetpack/compose/mental-model

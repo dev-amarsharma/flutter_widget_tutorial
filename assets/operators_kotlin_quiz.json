@@ -1,0 +1,122 @@
+[
+  {
+    "que": "Which operator checks structural equality in Kotlin?",
+    "options": [
+      "==",
+      "===",
+      "=",
+      "!="
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which operator checks reference equality?",
+    "options": [
+      "===",
+      "==",
+      "+=",
+      "&&"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `in` commonly do?",
+    "options": [
+      "Checks membership in a range or collection",
+      "Creates a class",
+      "Parses JSON",
+      "Declares a package"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which are arithmetic operators?",
+    "options": [
+      "+, -, *, /, %",
+      "&&, ||, !",
+      "==, ===, !=",
+      "in, is, as"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What do logical operators help with?",
+    "options": [
+      "Combining boolean conditions",
+      "Creating layouts",
+      "Declaring modules",
+      "Parsing navigation graphs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake in Kotlin operators?",
+    "options": [
+      "Understanding `==` vs `===`",
+      "Confusing `==` and `===`",
+      "Using readable expressions",
+      "Using range checks"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does `+=` do?",
+    "options": [
+      "Adds and assigns in one operation",
+      "Checks equality",
+      "Creates a nullable type",
+      "Builds an APK"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `!` usually mean in boolean expressions?",
+    "options": [
+      "Logical NOT",
+      "String concatenation",
+      "Range creation",
+      "Safe call"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should operator-heavy code stay readable?",
+    "options": [
+      "Dense expressions can hide bugs and intent",
+      "Operators are always self-explanatory",
+      "Kotlin forbids comments",
+      "Compose removes conditions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement is true?",
+    "options": [
+      "Kotlin has both general-purpose and Kotlin-specific operators",
+      "Kotlin only supports arithmetic operators",
+      "Kotlin has no equality operators",
+      "Operators cannot be overloaded"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `>=` check?",
+    "options": [
+      "Whether a value is greater than or equal to another",
+      "Whether a value is nullable",
+      "Whether a string is empty",
+      "Whether a module is public"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is `==` vs `===` important?",
+    "options": [
+      "They compare different kinds of equality",
+      "They are identical always",
+      "One is only for XML",
+      "One is only for Compose previews"
+    ],
+    "ans": "a"
+  }
+]

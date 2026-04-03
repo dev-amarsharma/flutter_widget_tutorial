@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does `LazyVerticalGrid` do?",
+    "options": [
+      "Displays items in a vertically scrolling grid across columns",
+      "Displays items in a horizontal row only",
+      "Draws custom graphics",
+      "Creates a navigation graph"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `LazyHorizontalGrid` do?",
+    "options": [
+      "Displays items in a horizontally scrolling grid across rows",
+      "Displays items only one at a time",
+      "Creates fragments",
+      "Builds APKs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are lazy grids useful?",
+    "options": [
+      "They render grid content efficiently for scrollable datasets",
+      "They replace all lists",
+      "They remove all recomposition",
+      "They only work on tablets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `GridCells.Adaptive(minSize = 128.dp)` help with?",
+    "options": [
+      "Automatically fitting as many columns as possible with a minimum size",
+      "Disabling scrolling",
+      "Forcing one row",
+      "Creating fixed SQL rows"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When might `GridCells.Fixed` be more appropriate?",
+    "options": [
+      "When the design needs a strict number of columns",
+      "When no grid is needed",
+      "When handling deep links",
+      "When injecting ViewModels"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common lazy-grid mistake?",
+    "options": [
+      "Using adaptive sizing for responsive layouts",
+      "Making item composables lightweight",
+      "Using a manual non-lazy grid for large datasets",
+      "Using grid content for photo galleries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What should you keep in mind for grid item composables?",
+    "options": [
+      "Keep them lightweight for efficient rendering",
+      "Make each item as heavy as possible",
+      "Always add custom Canvas drawing",
+      "Always use dialogs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API family do lazy grids resemble in style?",
+    "options": [
+      "Lazy lists",
+      "Only Flow operators",
+      "Only Hilt modules",
+      "Only DataStore"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is a lazy grid a good fit?",
+    "options": [
+      "For naturally grid-like content with scrollable datasets",
+      "For one fixed text label only",
+      "For manifest declarations",
+      "For exception handling"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose lists and grids docs plus the scrollable grid quick guide",
+      "Only Hilt docs",
+      "Only enum docs",
+      "Only app bundle docs"
+    ],
+    "ans": "a"
+  }
+]

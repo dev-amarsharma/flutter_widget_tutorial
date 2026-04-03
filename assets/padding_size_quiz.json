@@ -1,0 +1,122 @@
+[
+  {
+    "que": "What does `Modifier.padding()` do?",
+    "options": [
+      "Adds spacing around the content inside layout boundaries",
+      "Changes only text color",
+      "Creates navigation routes",
+      "Parses JSON"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `Modifier.size()` set?",
+    "options": [
+      "Both width and height",
+      "Only height",
+      "Only padding",
+      "Only alignment"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which modifier can make a composable use the full available width?",
+    "options": [
+      "fillMaxWidth()",
+      "clip()",
+      "rotate()",
+      "alpha()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why does modifier order matter in Compose?",
+    "options": [
+      "Different order can change layout and drawing results",
+      "Modifiers are always commutative",
+      "Only size order matters in XML",
+      "It affects only Gradle"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with padding and size?",
+    "options": [
+      "Using consistent spacing tokens",
+      "Ignoring modifier order",
+      "Using flexible layouts",
+      "Testing on multiple screen sizes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which modifier can fill both width and height constraints?",
+    "options": [
+      "fillMaxSize()",
+      "offset()",
+      "border()",
+      "clickable()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why avoid too many fixed sizes?",
+    "options": [
+      "Flexible layouts adapt better across devices",
+      "Fixed size always improves responsiveness",
+      "Compose forbids fill modifiers",
+      "It removes recomposition"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What can side-specific padding do?",
+    "options": [
+      "Apply different spacing to each edge",
+      "Only change font size",
+      "Force dark mode",
+      "Replace Spacer composables"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What helps keep spacing consistent?",
+    "options": [
+      "A small design spacing system",
+      "Random dp values per screen",
+      "Only previews",
+      "Only XML drawables"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What affects the final size of a composable besides its own modifier?",
+    "options": [
+      "Parent constraints",
+      "Only the package name",
+      "Only theme colors",
+      "Only ViewModel state"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement is accurate?",
+    "options": [
+      "Padding and size modifiers are core Compose layout tools",
+      "Padding is only for Text",
+      "Size always overrides parent constraints completely",
+      "Compose has no spacing APIs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is spacing important in UI?",
+    "options": [
+      "It improves readability and usability",
+      "It replaces navigation",
+      "It removes state",
+      "It avoids recomposition"
+    ],
+    "ans": "a"
+  }
+]

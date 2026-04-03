@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which Compose API is best for showing or hiding content with animation?",
+    "options": [
+      "AnimatedVisibility",
+      "LazyColumn",
+      "rememberSaveable",
+      "NavHost"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API is best when one numeric value changes based on state?",
+    "options": [
+      "animate*AsState",
+      "Scaffold",
+      "pointerInput",
+      "LaunchedEffect"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is `AnimatedContent` mainly used for?",
+    "options": [
+      "Persisting state across process death",
+      "Animating between different pieces of content",
+      "Loading network data",
+      "Managing the database schema"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which modifier animates size changes automatically?",
+    "options": [
+      "animateContentSize()",
+      "fillMaxSize()",
+      "requiredSize()",
+      "padding()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When should you use a `Transition` API?",
+    "options": [
+      "When multiple values should animate together",
+      "Only for XML-based UIs",
+      "Only for list rendering",
+      "Only when no state changes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API is appropriate for continuously repeating animation?",
+    "options": [
+      "rememberInfiniteTransition",
+      "rememberNavController",
+      "rememberLauncherForActivityResult",
+      "derivedStateOf"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good principle for Compose motion design?",
+    "options": [
+      "Animate every UI update",
+      "Use animation only when it clarifies state or feedback",
+      "Prefer the longest duration possible",
+      "Always animate five properties at once"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which API can animate between composables that have different content?",
+    "options": [
+      "AnimatedContent",
+      "Spacer",
+      "CompositionLocalProvider",
+      "rememberCoroutineScope"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake in animation basics?",
+    "options": [
+      "Choosing the simplest fitting API",
+      "Testing on real devices",
+      "Adding too much decorative motion",
+      "Using animation to clarify hierarchy"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which official docs are most relevant for this topic?",
+    "options": [
+      "Compose animation introduction and value-based animation docs",
+      "Only Room docs",
+      "Only Activity lifecycle docs",
+      "Only Play Console policy docs"
+    ],
+    "ans": "a"
+  }
+]

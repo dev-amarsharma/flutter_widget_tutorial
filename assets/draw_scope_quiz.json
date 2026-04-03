@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is `DrawScope` in Compose?",
+    "options": [
+      "The drawing environment used by Canvas and related APIs",
+      "A navigation graph",
+      "A DI container",
+      "A DataStore serializer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a `DrawScope` drawing function?",
+    "options": [
+      "drawCircle",
+      "navigate",
+      "edit",
+      "launch"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property gives the current drawing bounds?",
+    "options": [
+      "size",
+      "route",
+      "graph",
+      "variant"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is `DrawScope` useful?",
+    "options": [
+      "It provides coordinates and helpers for custom drawing",
+      "It automatically creates Room DAOs",
+      "It replaces all composables",
+      "It only works in tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good drawing practice with `DrawScope`?",
+    "options": [
+      "Base geometry on available size when possible",
+      "Hardcode every coordinate",
+      "Use it for all text and button UIs",
+      "Mix it with manifest configuration"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common DrawScope mistake?",
+    "options": [
+      "Keeping drawing logic separate from business logic",
+      "Hardcoding coordinates that do not adapt to size changes",
+      "Using standard composables where possible",
+      "Drawing based on the available bounds"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where do you commonly work with `DrawScope`?",
+    "options": [
+      "Inside Canvas drawing lambdas",
+      "Inside Gradle build scripts",
+      "Inside manifest intent filters",
+      "Inside Room migrations only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about custom drawing is correct?",
+    "options": [
+      "It should be used when standard composables are not sufficient",
+      "It should replace all standard UI components",
+      "It can ignore layout size completely",
+      "It cannot draw arcs or paths"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `size.minDimension` help with?",
+    "options": [
+      "Scaling drawing based on available space",
+      "Editing DataStore values",
+      "Starting a service",
+      "Creating a deep link"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose graphics draw overview",
+      "Only CI docs",
+      "Only app bundle docs",
+      "Only Kotlin collections docs"
+    ],
+    "ans": "a"
+  }
+]

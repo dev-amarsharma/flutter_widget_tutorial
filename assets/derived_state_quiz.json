@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is `derivedStateOf` used for in Compose?",
+    "options": [
+      "Creating derived state that updates only when the derived result changes",
+      "Starting activities",
+      "Writing to DataStore",
+      "Creating build variants"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is `derivedStateOf` most appropriate?",
+    "options": [
+      "When source state changes more often than the UI actually needs to recompose",
+      "For every computed value",
+      "Only for dialogs",
+      "Only in tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Android doc compares `derivedStateOf` conceptually to `distinctUntilChanged()`?",
+    "options": [
+      "The Compose side-effects docs",
+      "The app bundle docs",
+      "The CI docs",
+      "The Room docs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common example for `derivedStateOf`?",
+    "options": [
+      "Showing a button only after a list scroll threshold is crossed",
+      "Creating a constant string",
+      "Saving shared preferences",
+      "Parsing a manifest URI"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does Android warn about `derivedStateOf`?",
+    "options": [
+      "It is expensive and should not be overused",
+      "It is deprecated",
+      "It only works in Java",
+      "It disables recomposition completely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is `derivedStateOf` unnecessary?",
+    "options": [
+      "When the derived value should update as often as the inputs already do",
+      "When list state changes often",
+      "When recomposition should be reduced",
+      "When using `remember`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good practice with `derivedStateOf`?",
+    "options": [
+      "Wrap it in `remember` when appropriate",
+      "Use it for every string template",
+      "Replace all expressions with it",
+      "Never read state directly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with `derivedStateOf`?",
+    "options": [
+      "Using it only for recomposition-frequency mismatches",
+      "Using it for every computed value by habit",
+      "Thinking about scroll thresholds",
+      "Reading official docs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why can `derivedStateOf` reduce unnecessary recomposition?",
+    "options": [
+      "Because the UI can observe the derived result instead of every intermediate source change",
+      "Because it removes state from Compose",
+      "Because it blocks scroll updates",
+      "Because it replaces Flow"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose side-effects docs and advanced state codelab",
+      "Only app bundle docs",
+      "Only Firebase docs",
+      "Only CI docs"
+    ],
+    "ans": "a"
+  }
+]

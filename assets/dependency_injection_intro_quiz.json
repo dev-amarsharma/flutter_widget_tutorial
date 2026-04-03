@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is dependency injection?",
+    "options": [
+      "Providing a class's dependencies from the outside instead of creating them inside the class",
+      "Creating every dependency inside the UI layer",
+      "Replacing constructors with XML",
+      "A testing-only pattern"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which benefit of dependency injection does Android explicitly call out?",
+    "options": [
+      "Ease of testing",
+      "Guaranteed zero bugs",
+      "Removal of all architecture decisions",
+      "Automatic UI design"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is constructor injection often preferred?",
+    "options": [
+      "It makes dependencies explicit in the class API",
+      "It hides dependencies from callers",
+      "It removes the need for classes",
+      "It only works in Compose"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens when a class creates all its own dependencies?",
+    "options": [
+      "It becomes harder to test and refactor as complexity grows",
+      "It automatically becomes lifecycle-aware",
+      "It removes all boilerplate",
+      "It creates a Baseline Profile"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How does a service locator differ from DI according to Android docs?",
+    "options": [
+      "Classes ask a global source for dependencies instead of receiving them explicitly",
+      "It is the exact same pattern",
+      "It only works for Hilt",
+      "It is only for XML-based apps"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why can service locators be problematic?",
+    "options": [
+      "They can hide dependencies and make testing harder",
+      "They always improve API clarity",
+      "They eliminate object graphs",
+      "They replace repositories"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which DI library does Android recommend for Android apps?",
+    "options": [
+      "Hilt",
+      "Only Guice",
+      "Only ServiceLocator",
+      "Only LiveData"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common DI mistake?",
+    "options": [
+      "Using constructor injection",
+      "Keeping dependencies explicit",
+      "Creating dependencies directly inside business classes",
+      "Passing fakes in tests"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why does DI help with testing?",
+    "options": [
+      "You can inject fake implementations instead of real dependencies",
+      "It removes the need for assertions",
+      "It only runs in instrumentation tests",
+      "It disables coroutines"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Android DI, manual DI, and Hilt docs",
+      "Only collections docs",
+      "Only dark mode docs",
+      "Only app bundle docs"
+    ],
+    "ans": "a"
+  }
+]

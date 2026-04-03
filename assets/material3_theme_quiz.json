@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What composable provides Material 3 theme values in Compose?",
+    "options": [
+      "`MaterialTheme`",
+      "`LazyColumn`",
+      "`rememberSaveable`",
+      "`NavHost`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which three main subsystems make up an M3 theme according to Android docs?",
+    "options": [
+      "Color scheme, typography, and shapes",
+      "Navigation, permissions, and intents",
+      "Room, Retrofit, and Flow",
+      "Padding, alignment, and offset"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property accesses theme colors in Material 3?",
+    "options": [
+      "`MaterialTheme.colorScheme`",
+      "`MaterialTheme.paletteOnly`",
+      "`MaterialTheme.colors2`",
+      "`MaterialTheme.tintMap`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property accesses theme text styles in Material 3?",
+    "options": [
+      "`MaterialTheme.typography`",
+      "`MaterialTheme.fontSet`",
+      "`MaterialTheme.textSchema`",
+      "`MaterialTheme.labels`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property accesses shape values in Material 3?",
+    "options": [
+      "`MaterialTheme.shapes`",
+      "`MaterialTheme.rounding`",
+      "`MaterialTheme.borders`",
+      "`MaterialTheme.padding`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the benefit of using role-based colors such as `primary` and `onPrimary`?",
+    "options": [
+      "They help components stay visually consistent",
+      "They remove the need for theming",
+      "They only work in dark mode",
+      "They are only for previews"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does dynamic color support in Material 3 do on supported devices?",
+    "options": [
+      "Generates theme color schemes based on system or user colors",
+      "Disables all custom theming",
+      "Loads fonts from the network",
+      "Creates navigation graphs automatically"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good theming practice in Compose?",
+    "options": [
+      "Use `MaterialTheme` values instead of hard-coded styling everywhere",
+      "Hard-code every color per screen",
+      "Ignore shapes and typography",
+      "Mix M2 and M3 APIs without checking imports"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with Material 3 theming?",
+    "options": [
+      "Only changing colors while ignoring typography and shapes",
+      "Using theme roles in components",
+      "Defining a central theme layer",
+      "Supporting dark theme"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens when you customize theme values used by M3 components?",
+    "options": [
+      "Those components reflect the customized values automatically",
+      "The app stops using Compose",
+      "Only Text changes",
+      "Nothing changes unless XML is edited"
+    ],
+    "ans": "a"
+  }
+]

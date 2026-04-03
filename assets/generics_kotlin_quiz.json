@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What do generics help you do in Kotlin?",
+    "options": [
+      "Write reusable type-safe code across multiple types",
+      "Draw graphics",
+      "Create app manifests",
+      "Only run coroutines"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In `class Box<T>`, what is `T`?",
+    "options": [
+      "A type parameter",
+      "A function body",
+      "A coroutine dispatcher",
+      "A package name"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can Kotlin functions be generic?",
+    "options": [
+      "Yes",
+      "No",
+      "Only suspend functions",
+      "Only extension functions"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is one benefit of generics?",
+    "options": [
+      "Reduced need for casts and duplicated logic",
+      "Automatic deep copies",
+      "Built-in UI rendering",
+      "Manifest generation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `out` indicate in Kotlin variance?",
+    "options": [
+      "Producer position",
+      "Consumer position",
+      "Mutable only",
+      "Nullability"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `in` indicate in Kotlin variance?",
+    "options": [
+      "Consumer position",
+      "Producer position",
+      "Immutable only",
+      "A package import"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is `List<*>` an example of?",
+    "options": [
+      "A star projection",
+      "A flow operator",
+      "A DI binding",
+      "A lazy grid"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common generics mistake?",
+    "options": [
+      "Using generics only when behavior truly generalizes",
+      "Overcomplicating simple code with unnecessary type parameters",
+      "Learning variance",
+      "Using generic functions"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why are generics valuable for API design?",
+    "options": [
+      "They preserve type safety while enabling reuse",
+      "They remove all compile errors",
+      "They replace inheritance completely",
+      "They disable nullability"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official doc best supports this topic?",
+    "options": [
+      "Kotlin generics documentation",
+      "Only Hilt docs",
+      "Only Compose icon docs",
+      "Only Gradle docs"
+    ],
+    "ans": "a"
+  }
+]
