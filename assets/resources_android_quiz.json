@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Android Resources, what is the primary goal?",
+    "options": [
+      "skip state/data modeling",
+      "externalize strings/dimens/drawables per config",
+      "avoid understanding requirements",
+      "replace testing entirely"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which API/concept is most central to Android Resources?",
+    "options": [
+      "res/",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a recommended best practice for Android Resources?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "use qualifiers for locale/night/screen",
+      "optimize before verifying correctness",
+      "ignore edge/error states"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing Android Resources?",
+    "options": [
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "hardcoding all user-facing text"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits Android Resources best?",
+    "options": [
+      "Use Android Resources with clear state flow and testable logic",
+      "Use Android Resources while bypassing architecture boundaries",
+      "Use Android Resources and suppress all warnings",
+      "Use Android Resources only as theory with no implementation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Android Resources. What is best advice?",
+    "options": [
+      "Read official docs (https://developer.android.com/guide/topics/resources/providing-resources) and implement a small sample",
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about Android Resources is most accurate?",
+    "options": [
+      "Android Resources should be applied identically in every layer",
+      "Android Resources removes the need for any testing",
+      "Android Resources is most effective when paired with clear ownership of state/data",
+      "Android Resources is mainly about adding boilerplate"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Android Resources, what would you flag?",
+    "options": [
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Android Resources correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates res/ in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Android Resources deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using Android Resources patterns",
+      "avoid official references"
+    ],
+    "ans": "c"
+  }
+]

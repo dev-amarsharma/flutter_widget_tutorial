@@ -1,52 +1,102 @@
 [
   {
-    "que": "Build Todo App: which statement is most accurate?",
+    "que": "In Project: Todo App, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "skip state/data modeling",
+      "plan and ship a complete todo feature",
+      "replace testing entirely",
+      "avoid understanding requirements"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Build Todo App?",
+    "que": "Which API/concept is most central to Project: Todo App?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "CRUD tasks + filtering"
     ],
     "ans": "d"
   },
   {
-    "que": "Which concept is directly associated with Build Todo App?",
+    "que": "What is a recommended best practice for Project: Todo App?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "After studying Build Todo App, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "model task state transitions clearly",
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing Project: Todo App?",
+    "options": [
+      "keep boundaries clear",
+      "building features without acceptance criteria",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "For production code, which approach fits Project: Todo App best?",
+    "options": [
+      "Use Project: Todo App while bypassing architecture boundaries",
+      "Use Project: Todo App and suppress all warnings",
+      "Use Project: Todo App with clear state flow and testable logic",
+      "Use Project: Todo App only as theory with no implementation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with Project: Todo App. What is best advice?",
+    "options": [
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state) and implement a small sample",
+      "skip running the app after changes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Project: Todo App is most accurate?",
+    "options": [
+      "Project: Todo App is most effective when paired with clear ownership of state/data",
+      "Project: Todo App should be applied identically in every layer",
+      "Project: Todo App is mainly about adding boilerplate",
+      "Project: Todo App removes the need for any testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for Project: Todo App, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Project: Todo App correctly?",
+    "options": [
+      "an implementation with no error states",
+      "A small, working feature that demonstrates CRUD tasks + filtering in context",
+      "a slide deck with no runnable code",
+      "a large refactor without tests"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "To learn Project: Todo App deeply, what should you do next?",
+    "options": [
+      "skip verification to save time",
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using Project: Todo App patterns",
+      "avoid official references"
+    ],
+    "ans": "c"
   }
 ]

@@ -1,51 +1,101 @@
 [
   {
-    "que": "Variables: which statement is most accurate?",
+    "que": "In Kotlin Variables, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "store values with named identifiers"
     ],
-    "ans": "b"
+    "ans": "d"
   },
   {
-    "que": "What is the recommended learning level for Variables?",
+    "que": "Which API/concept is most central to Kotlin Variables?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "val / var",
+      "manual polling loop for all tasks"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Variables?",
+    "que": "What is a recommended best practice for Kotlin Variables?",
     "options": [
-      "val/var basics",
-      "mutable value",
-      "hardware drivers",
-      "game engine shaders"
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "prefer clear immutable declarations",
+      "optimize before verifying correctness"
     ],
-    "ans": "b"
+    "ans": "c"
   },
   {
-    "que": "After studying Variables, what should you do next?",
+    "que": "Which is a common mistake when implementing Kotlin Variables?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "using mutable globals for everything",
+      "keep boundaries clear"
     ],
-    "ans": "b"
+    "ans": "c"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "For production code, which approach fits Kotlin Variables best?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Use Kotlin Variables while bypassing architecture boundaries",
+      "Use Kotlin Variables only as theory with no implementation",
+      "Use Kotlin Variables and suppress all warnings",
+      "Use Kotlin Variables with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Kotlin Variables. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Kotlin Variables is most accurate?",
+    "options": [
+      "Kotlin Variables should be applied identically in every layer",
+      "Kotlin Variables is mainly about adding boilerplate",
+      "Kotlin Variables is most effective when paired with clear ownership of state/data",
+      "Kotlin Variables removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Kotlin Variables, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Kotlin Variables correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates val / var in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Kotlin Variables deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Kotlin Variables patterns",
+      "avoid official references",
+      "skip verification to save time",
+      "memorize definitions only"
     ],
     "ans": "a"
   }

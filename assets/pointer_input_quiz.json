@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Pointer Input in Compose, what is the primary goal?",
+    "options": [
+      "handle gestures and pointer events",
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to Pointer Input in Compose?",
+    "options": [
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "Modifier.pointerInput"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Pointer Input in Compose?",
+    "options": [
+      "ignore edge/error states",
+      "await pointer events inside pointerInput scope",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing Pointer Input in Compose?",
+    "options": [
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "handling gestures only with polling loops",
+      "keep boundaries clear"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Pointer Input in Compose best?",
+    "options": [
+      "Use Pointer Input in Compose only as theory with no implementation",
+      "Use Pointer Input in Compose and suppress all warnings",
+      "Use Pointer Input in Compose with clear state flow and testable logic",
+      "Use Pointer Input in Compose while bypassing architecture boundaries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with Pointer Input in Compose. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "Read official docs (https://developer.android.com/develop/ui/compose/touch-input/pointer-input) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Pointer Input in Compose is most accurate?",
+    "options": [
+      "Pointer Input in Compose should be applied identically in every layer",
+      "Pointer Input in Compose removes the need for any testing",
+      "Pointer Input in Compose is most effective when paired with clear ownership of state/data",
+      "Pointer Input in Compose is mainly about adding boilerplate"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Pointer Input in Compose, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "traceable data flow between layers"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Pointer Input in Compose correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates Modifier.pointerInput in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Pointer Input in Compose deeply, what should you do next?",
+    "options": [
+      "skip verification to save time",
+      "memorize definitions only",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Pointer Input in Compose patterns"
+    ],
+    "ans": "d"
+  }
+]

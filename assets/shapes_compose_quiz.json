@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Shapes in Compose, what is the primary goal?",
+    "options": [
+      "skip state/data modeling",
+      "replace testing entirely",
+      "define corner treatments and component shape",
+      "avoid understanding requirements"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to Shapes in Compose?",
+    "options": [
+      "MaterialTheme.shapes",
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a recommended best practice for Shapes in Compose?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness",
+      "reuse shape system across components",
+      "ignore edge/error states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake when implementing Shapes in Compose?",
+    "options": [
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "hardcoding shape values per widget"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits Shapes in Compose best?",
+    "options": [
+      "Use Shapes in Compose with clear state flow and testable logic",
+      "Use Shapes in Compose while bypassing architecture boundaries",
+      "Use Shapes in Compose and suppress all warnings",
+      "Use Shapes in Compose only as theory with no implementation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Shapes in Compose. What is best advice?",
+    "options": [
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/develop/ui/compose/designsystems/material3) and implement a small sample",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Shapes in Compose is most accurate?",
+    "options": [
+      "Shapes in Compose is mainly about adding boilerplate",
+      "Shapes in Compose should be applied identically in every layer",
+      "Shapes in Compose removes the need for any testing",
+      "Shapes in Compose is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Shapes in Compose, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "traceable data flow between layers"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Shapes in Compose correctly?",
+    "options": [
+      "A small, working feature that demonstrates MaterialTheme.shapes in context",
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "a large refactor without tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Shapes in Compose deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using Shapes in Compose patterns",
+      "skip verification to save time"
+    ],
+    "ans": "c"
+  }
+]

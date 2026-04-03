@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In kotlinx Serialization, what is the primary goal?",
+    "options": [
+      "replace testing entirely",
+      "skip state/data modeling",
+      "avoid understanding requirements",
+      "encode/decode Kotlin objects to JSON"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which API/concept is most central to kotlinx Serialization?",
+    "options": [
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "@Serializable",
+      "random utility class name"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for kotlinx Serialization?",
+    "options": [
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "configure Json options explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing kotlinx Serialization?",
+    "options": [
+      "follow official docs for API usage",
+      "keep boundaries clear",
+      "manual string concatenation for JSON",
+      "write focused tests for behavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits kotlinx Serialization best?",
+    "options": [
+      "Use kotlinx Serialization only as theory with no implementation",
+      "Use kotlinx Serialization while bypassing architecture boundaries",
+      "Use kotlinx Serialization and suppress all warnings",
+      "Use kotlinx Serialization with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with kotlinx Serialization. What is best advice?",
+    "options": [
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review",
+      "Read official docs (https://github.com/Kotlin/kotlinx.serialization/blob/master/docs/basic-serialization.md) and implement a small sample",
+      "skip running the app after changes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about kotlinx Serialization is most accurate?",
+    "options": [
+      "kotlinx Serialization removes the need for any testing",
+      "kotlinx Serialization should be applied identically in every layer",
+      "kotlinx Serialization is mainly about adding boilerplate",
+      "kotlinx Serialization is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for kotlinx Serialization, what would you flag?",
+    "options": [
+      "small pure functions with clear names",
+      "traceable data flow between layers",
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using kotlinx Serialization correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates @Serializable in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn kotlinx Serialization deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using kotlinx Serialization patterns",
+      "skip verification to save time",
+      "memorize definitions only"
+    ],
+    "ans": "b"
+  }
+]

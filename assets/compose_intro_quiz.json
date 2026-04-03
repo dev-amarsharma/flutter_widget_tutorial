@@ -1,51 +1,101 @@
 [
   {
-    "que": "Compose Introduction: which statement is most accurate?",
+    "que": "In Compose Intro, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "replace testing entirely",
+      "avoid understanding requirements",
+      "build native UI declaratively",
+      "skip state/data modeling"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to Compose Intro?",
+    "options": [
+      "random utility class name",
+      "Compose",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Compose Introduction?",
+    "que": "What is a recommended best practice for Compose Intro?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "ignore edge/error states",
+      "state-driven UI updates",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing Compose Intro?",
+    "options": [
+      "treating UI as imperative XML updates",
+      "follow official docs for API usage",
+      "keep boundaries clear",
+      "write focused tests for behavior"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Compose Introduction?",
+    "que": "For production code, which approach fits Compose Intro best?",
     "options": [
-      "declarative UI",
-      "@Composable",
-      "hardware drivers",
-      "game engine shaders"
+      "Use Compose Intro while bypassing architecture boundaries",
+      "Use Compose Intro only as theory with no implementation",
+      "Use Compose Intro and suppress all warnings",
+      "Use Compose Intro with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Compose Intro. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context"
     ],
     "ans": "b"
   },
   {
-    "que": "After studying Compose Introduction, what should you do next?",
+    "que": "Which statement about Compose Intro is most accurate?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "Compose Intro removes the need for any testing",
+      "Compose Intro should be applied identically in every layer",
+      "Compose Intro is most effective when paired with clear ownership of state/data",
+      "Compose Intro is mainly about adding boilerplate"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Compose Intro, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "traceable data flow between layers"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which scenario is the strongest example of using Compose Intro correctly?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates Compose in context",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn Compose Intro deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Compose Intro patterns",
+      "skip verification to save time",
+      "memorize definitions only",
+      "avoid official references"
     ],
     "ans": "a"
   }

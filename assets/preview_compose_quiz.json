@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Compose Preview, what is the primary goal?",
+    "options": [
+      "replace testing entirely",
+      "render composables in Android Studio preview",
+      "skip state/data modeling",
+      "avoid understanding requirements"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which API/concept is most central to Compose Preview?",
+    "options": [
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "@Preview"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Compose Preview?",
+    "options": [
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "iterate UI quickly without deploying each change"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Compose Preview?",
+    "options": [
+      "follow official docs for API usage",
+      "using Preview for runtime navigation logic",
+      "write focused tests for behavior",
+      "keep boundaries clear"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "For production code, which approach fits Compose Preview best?",
+    "options": [
+      "Use Compose Preview with clear state flow and testable logic",
+      "Use Compose Preview while bypassing architecture boundaries",
+      "Use Compose Preview and suppress all warnings",
+      "Use Compose Preview only as theory with no implementation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Compose Preview. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "Read official docs (https://developer.android.com/develop/ui/compose/tooling/previews) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Compose Preview is most accurate?",
+    "options": [
+      "Compose Preview is most effective when paired with clear ownership of state/data",
+      "Compose Preview is mainly about adding boilerplate",
+      "Compose Preview should be applied identically in every layer",
+      "Compose Preview removes the need for any testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for Compose Preview, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "small pure functions with clear names"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Compose Preview correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates @Preview in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Compose Preview deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Compose Preview patterns",
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references"
+    ],
+    "ans": "a"
+  }
+]

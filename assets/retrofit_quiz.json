@@ -1,52 +1,102 @@
 [
   {
-    "que": "Retrofit Setup: which statement is most accurate?",
+    "que": "In Retrofit Setup, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Retrofit Setup?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which concept is directly associated with Retrofit Setup?",
-    "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "After studying Retrofit Setup, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "define type-safe HTTP APIs",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "avoid understanding requirements"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to Retrofit Setup?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "Retrofit interface annotations"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Retrofit Setup?",
+    "options": [
+      "use converter + suspend APIs",
+      "optimize before verifying correctness",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing Retrofit Setup?",
+    "options": [
+      "follow official docs for API usage",
+      "parsing raw JSON in activities",
+      "keep boundaries clear",
+      "write focused tests for behavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "For production code, which approach fits Retrofit Setup best?",
+    "options": [
+      "Use Retrofit Setup and suppress all warnings",
+      "Use Retrofit Setup with clear state flow and testable logic",
+      "Use Retrofit Setup while bypassing architecture boundaries",
+      "Use Retrofit Setup only as theory with no implementation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with Retrofit Setup. What is best advice?",
+    "options": [
+      "Read official docs (https://square.github.io/retrofit/) and implement a small sample",
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about Retrofit Setup is most accurate?",
+    "options": [
+      "Retrofit Setup removes the need for any testing",
+      "Retrofit Setup is most effective when paired with clear ownership of state/data",
+      "Retrofit Setup is mainly about adding boilerplate",
+      "Retrofit Setup should be applied identically in every layer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In a code review for Retrofit Setup, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Retrofit Setup correctly?",
+    "options": [
+      "A small, working feature that demonstrates Retrofit interface annotations in context",
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Retrofit Setup deeply, what should you do next?",
+    "options": [
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using Retrofit Setup patterns",
+      "memorize definitions only",
+      "avoid official references"
+    ],
+    "ans": "b"
   }
 ]

@@ -1,52 +1,102 @@
 [
   {
-    "que": "Hilt Dependency Injection: which statement is most accurate?",
+    "que": "In Hilt, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "replace testing entirely",
+      "provide dependencies with DI graph",
+      "avoid understanding requirements",
+      "skip state/data modeling"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Hilt Dependency Injection?",
+    "que": "Which API/concept is most central to Hilt?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "@HiltAndroidApp",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a recommended best practice for Hilt?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "constructor injection with @Inject"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Hilt?",
+    "options": [
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "manually creating every dependency in activities",
+      "keep boundaries clear"
     ],
     "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Hilt Dependency Injection?",
+    "que": "For production code, which approach fits Hilt best?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
+      "Use Hilt while bypassing architecture boundaries",
+      "Use Hilt and suppress all warnings",
+      "Use Hilt only as theory with no implementation",
+      "Use Hilt with clear state flow and testable logic"
     ],
-    "ans": "b"
+    "ans": "d"
   },
   {
-    "que": "After studying Hilt Dependency Injection, what should you do next?",
+    "que": "A teammate asks where to start with Hilt. What is best advice?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which statement about Hilt is most accurate?",
+    "options": [
+      "Hilt should be applied identically in every layer",
+      "Hilt is most effective when paired with clear ownership of state/data",
+      "Hilt removes the need for any testing",
+      "Hilt is mainly about adding boilerplate"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In a code review for Hilt, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Hilt correctly?",
+    "options": [
+      "A small, working feature that demonstrates @HiltAndroidApp in context",
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "a large refactor without tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Hilt deeply, what should you do next?",
+    "options": [
+      "skip verification to save time",
+      "memorize definitions only",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Hilt patterns"
+    ],
+    "ans": "d"
   }
 ]

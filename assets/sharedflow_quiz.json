@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In SharedFlow, what is the primary goal?",
+    "options": [
+      "skip state/data modeling",
+      "replace testing entirely",
+      "avoid understanding requirements",
+      "broadcast events to multiple collectors"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which API/concept is most central to SharedFlow?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "MutableSharedFlow"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for SharedFlow?",
+    "options": [
+      "ignore edge/error states",
+      "use for one-off events/signals",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing SharedFlow?",
+    "options": [
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "using StateFlow for consumable events"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits SharedFlow best?",
+    "options": [
+      "Use SharedFlow only as theory with no implementation",
+      "Use SharedFlow while bypassing architecture boundaries",
+      "Use SharedFlow and suppress all warnings",
+      "Use SharedFlow with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with SharedFlow. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "Read official docs (https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-shared-flow/) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about SharedFlow is most accurate?",
+    "options": [
+      "SharedFlow should be applied identically in every layer",
+      "SharedFlow removes the need for any testing",
+      "SharedFlow is mainly about adding boilerplate",
+      "SharedFlow is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for SharedFlow, what would you flag?",
+    "options": [
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using SharedFlow correctly?",
+    "options": [
+      "A small, working feature that demonstrates MutableSharedFlow in context",
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "an implementation with no error states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn SharedFlow deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using SharedFlow patterns",
+      "avoid official references"
+    ],
+    "ans": "c"
+  }
+]
