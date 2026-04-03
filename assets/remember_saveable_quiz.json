@@ -1,52 +1,102 @@
 [
   {
-    "que": "Remember Saveable: which statement is most accurate?",
+    "que": "In rememberSaveable, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "replace testing entirely",
+      "skip state/data modeling",
+      "save UI state across config changes",
+      "avoid understanding requirements"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to rememberSaveable?",
+    "options": [
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "rememberSaveable",
+      "legacy XML-only patterns unrelated to this topic"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for rememberSaveable?",
+    "options": [
+      "optimize before verifying correctness",
+      "use Bundle-saveable types or Saver",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Remember Saveable?",
+    "que": "Which is a common mistake when implementing rememberSaveable?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "follow official docs for API usage",
+      "keep boundaries clear",
+      "write focused tests for behavior",
+      "storing unsaveable objects directly"
     ],
-    "ans": "b"
+    "ans": "d"
   },
   {
-    "que": "Which concept is directly associated with Remember Saveable?",
+    "que": "For production code, which approach fits rememberSaveable best?",
     "options": [
-      "state restoration",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "Use rememberSaveable and suppress all warnings",
+      "Use rememberSaveable only as theory with no implementation",
+      "Use rememberSaveable with clear state flow and testable logic",
+      "Use rememberSaveable while bypassing architecture boundaries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with rememberSaveable. What is best advice?",
+    "options": [
+      "Read official docs (https://developer.android.com/develop/ui/compose/state-saving) and implement a small sample",
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "avoid feedback from tests/review"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Remember Saveable, what should you do next?",
+    "que": "Which statement about rememberSaveable is most accurate?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "rememberSaveable removes the need for any testing",
+      "rememberSaveable is mainly about adding boilerplate",
+      "rememberSaveable is most effective when paired with clear ownership of state/data",
+      "rememberSaveable should be applied identically in every layer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for rememberSaveable, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using rememberSaveable correctly?",
+    "options": [
+      "an implementation with no error states",
+      "A small, working feature that demonstrates rememberSaveable in context",
+      "a large refactor without tests",
+      "a slide deck with no runnable code"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "To learn rememberSaveable deeply, what should you do next?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using rememberSaveable patterns",
+      "skip verification to save time",
+      "avoid official references"
     ],
-    "ans": "a"
+    "ans": "b"
   }
 ]

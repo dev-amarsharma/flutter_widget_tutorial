@@ -1,51 +1,101 @@
 [
   {
-    "que": "Suspend Functions: which statement is most accurate?",
+    "que": "In Suspend Functions, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Suspend Functions?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "mark functions that can suspend without blocking thread",
+      "avoid understanding requirements",
+      "skip state/data modeling",
+      "replace testing entirely"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Suspend Functions?",
+    "que": "Which API/concept is most central to Suspend Functions?",
     "options": [
-      "suspending APIs",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "suspend"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Suspend Functions?",
+    "options": [
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "call from coroutine or another suspend function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake when implementing Suspend Functions?",
+    "options": [
+      "wrapping long tasks on main thread",
+      "keep boundaries clear",
+      "write focused tests for behavior",
+      "follow official docs for API usage"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Suspend Functions, what should you do next?",
+    "que": "For production code, which approach fits Suspend Functions best?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "Use Suspend Functions while bypassing architecture boundaries",
+      "Use Suspend Functions only as theory with no implementation",
+      "Use Suspend Functions and suppress all warnings",
+      "Use Suspend Functions with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Suspend Functions. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "Read official docs (https://kotlinlang.org/docs/coroutines-basics.html#extract-function-refactoring) and implement a small sample",
+      "skip running the app after changes",
+      "copy an unknown snippet without context"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which statement about Suspend Functions is most accurate?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Suspend Functions removes the need for any testing",
+      "Suspend Functions should be applied identically in every layer",
+      "Suspend Functions is mainly about adding boilerplate",
+      "Suspend Functions is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Suspend Functions, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Suspend Functions correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates suspend in context",
+      "a large refactor without tests",
+      "an implementation with no error states"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "To learn Suspend Functions deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Suspend Functions patterns",
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references"
     ],
     "ans": "a"
   }

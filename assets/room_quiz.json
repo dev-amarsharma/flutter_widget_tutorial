@@ -1,52 +1,102 @@
 [
   {
-    "que": "Room Database: which statement is most accurate?",
+    "que": "In Room Database, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "persist structured local data with SQLite abstraction",
+      "skip state/data modeling",
+      "avoid understanding requirements",
+      "replace testing entirely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to Room Database?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "@Entity/@Dao/@Database"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Room Database?",
+    "options": [
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function",
+      "query through DAO and observe updates"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Room Database?",
+    "options": [
+      "running heavy DB work on main thread",
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "For production code, which approach fits Room Database best?",
+    "options": [
+      "Use Room Database while bypassing architecture boundaries",
+      "Use Room Database with clear state flow and testable logic",
+      "Use Room Database only as theory with no implementation",
+      "Use Room Database and suppress all warnings"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Room Database?",
+    "que": "A teammate asks where to start with Room Database. What is best advice?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "avoid feedback from tests/review",
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/training/data-storage/room) and implement a small sample",
+      "copy an unknown snippet without context"
     ],
     "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Room Database?",
+    "que": "Which statement about Room Database is most accurate?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
+      "Room Database should be applied identically in every layer",
+      "Room Database is most effective when paired with clear ownership of state/data",
+      "Room Database is mainly about adding boilerplate",
+      "Room Database removes the need for any testing"
     ],
     "ans": "b"
   },
   {
-    "que": "After studying Room Database, what should you do next?",
+    "que": "In a code review for Room Database, what would you flag?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Room Database correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates @Entity/@Dao/@Database in context",
+      "a large refactor without tests",
+      "an implementation with no error states"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "To learn Room Database deeply, what should you do next?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "avoid official references",
+      "memorize definitions only",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using Room Database patterns"
     ],
-    "ans": "a"
+    "ans": "d"
   }
 ]

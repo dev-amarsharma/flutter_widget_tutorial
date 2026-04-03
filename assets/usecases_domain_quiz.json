@@ -1,52 +1,102 @@
 [
   {
-    "que": "Usecases Domain: which statement is most accurate?",
+    "que": "In Use Cases in Domain Layer, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "replace testing entirely",
+      "encapsulate single business actions",
+      "skip state/data modeling",
+      "avoid understanding requirements"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Usecases Domain?",
+    "que": "Which API/concept is most central to Use Cases in Domain Layer?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "UseCase class"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Use Cases in Domain Layer?",
+    "options": [
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "keep use cases focused and framework-agnostic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Use Cases in Domain Layer?",
+    "options": [
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "placing business rules in UI controllers",
+      "write focused tests for behavior"
     ],
     "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Usecases Domain?",
+    "que": "For production code, which approach fits Use Cases in Domain Layer best?",
     "options": [
-      "domain use cases",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "Use Use Cases in Domain Layer while bypassing architecture boundaries",
+      "Use Use Cases in Domain Layer only as theory with no implementation",
+      "Use Use Cases in Domain Layer and suppress all warnings",
+      "Use Use Cases in Domain Layer with clear state flow and testable logic"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "After studying Usecases Domain, what should you do next?",
+    "que": "A teammate asks where to start with Use Cases in Domain Layer. What is best advice?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/topic/architecture/domain-layer) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Use Cases in Domain Layer is most accurate?",
+    "options": [
+      "Use Cases in Domain Layer removes the need for any testing",
+      "Use Cases in Domain Layer is most effective when paired with clear ownership of state/data",
+      "Use Cases in Domain Layer is mainly about adding boilerplate",
+      "Use Cases in Domain Layer should be applied identically in every layer"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "In a code review for Use Cases in Domain Layer, what would you flag?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Use Cases in Domain Layer correctly?",
+    "options": [
+      "A small, working feature that demonstrates UseCase class in context",
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Use Cases in Domain Layer deeply, what should you do next?",
+    "options": [
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using Use Cases in Domain Layer patterns",
+      "avoid official references",
+      "memorize definitions only"
+    ],
+    "ans": "b"
   }
 ]

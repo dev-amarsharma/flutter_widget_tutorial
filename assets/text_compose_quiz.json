@@ -1,51 +1,101 @@
 [
   {
-    "que": "Text Compose: which statement is most accurate?",
+    "que": "In Text in Compose, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "skip state/data modeling",
+      "replace testing entirely",
+      "avoid understanding requirements",
+      "display styled read-only text"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which API/concept is most central to Text in Compose?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "Text",
+      "manual polling loop for all tasks"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for Text in Compose?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness",
+      "ignore edge/error states",
+      "use style/overflow/maxLines appropriately"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Text in Compose?",
+    "options": [
+      "follow official docs for API usage",
+      "using editable field for static labels",
+      "write focused tests for behavior",
+      "keep boundaries clear"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Text Compose?",
+    "que": "For production code, which approach fits Text in Compose best?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which concept is directly associated with Text Compose?",
-    "options": [
-      "text rendering",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "After studying Text Compose, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "Use Text in Compose while bypassing architecture boundaries",
+      "Use Text in Compose with clear state flow and testable logic",
+      "Use Text in Compose only as theory with no implementation",
+      "Use Text in Compose and suppress all warnings"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "A teammate asks where to start with Text in Compose. What is best advice?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Read official docs (https://developer.android.com/develop/ui/compose/text) and implement a small sample",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "skip running the app after changes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about Text in Compose is most accurate?",
+    "options": [
+      "Text in Compose should be applied identically in every layer",
+      "Text in Compose is mainly about adding boilerplate",
+      "Text in Compose removes the need for any testing",
+      "Text in Compose is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Text in Compose, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Text in Compose correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates Text in context",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn Text in Compose deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Text in Compose patterns",
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references"
     ],
     "ans": "a"
   }

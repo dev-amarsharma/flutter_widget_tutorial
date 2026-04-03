@@ -1,52 +1,102 @@
 [
   {
-    "que": "Spacer: which statement is most accurate?",
+    "que": "In Spacer in Compose, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "skip state/data modeling",
+      "add deliberate empty space in layouts",
+      "avoid understanding requirements",
+      "replace testing entirely"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Spacer?",
+    "que": "Which API/concept is most central to Spacer in Compose?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "Spacer"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Spacer in Compose?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "use Modifier.size/weight for spacing",
+      "optimize before verifying correctness"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake when implementing Spacer in Compose?",
+    "options": [
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "adding fake empty Text for gaps",
+      "keep boundaries clear"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Spacer in Compose best?",
+    "options": [
+      "Use Spacer in Compose only as theory with no implementation",
+      "Use Spacer in Compose and suppress all warnings",
+      "Use Spacer in Compose while bypassing architecture boundaries",
+      "Use Spacer in Compose with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Spacer in Compose. What is best advice?",
+    "options": [
+      "Read official docs (https://developer.android.com/develop/ui/compose/layouts/basics) and implement a small sample",
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "avoid feedback from tests/review"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Spacer?",
+    "que": "Which statement about Spacer in Compose is most accurate?",
     "options": [
-      "layout spacing",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "Spacer in Compose is most effective when paired with clear ownership of state/data",
+      "Spacer in Compose is mainly about adding boilerplate",
+      "Spacer in Compose removes the need for any testing",
+      "Spacer in Compose should be applied identically in every layer"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Spacer, what should you do next?",
+    "que": "In a code review for Spacer in Compose, what would you flag?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which scenario is the strongest example of using Spacer in Compose correctly?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "a large refactor without tests",
+      "A small, working feature that demonstrates Spacer in context",
+      "an implementation with no error states",
+      "a slide deck with no runnable code"
     ],
-    "ans": "a"
+    "ans": "b"
+  },
+  {
+    "que": "To learn Spacer in Compose deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "memorize definitions only",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using Spacer in Compose patterns"
+    ],
+    "ans": "d"
   }
 ]

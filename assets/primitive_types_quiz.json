@@ -1,52 +1,102 @@
 [
   {
-    "que": "Primitive Types: which statement is most accurate?",
+    "que": "In Kotlin Primitive Types, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "represent basic values like Int/Boolean/Double",
+      "replace testing entirely",
+      "skip state/data modeling"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Primitive Types?",
+    "que": "Which API/concept is most central to Kotlin Primitive Types?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which concept is directly associated with Primitive Types?",
-    "options": [
-      "numeric and boolean types",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "After studying Primitive Types, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "legacy XML-only patterns unrelated to this topic",
+      "Int / Long / Boolean",
+      "manual polling loop for all tasks",
+      "random utility class name"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "What is a recommended best practice for Kotlin Primitive Types?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "choose types matching domain constraints",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness",
+      "ignore edge/error states"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing Kotlin Primitive Types?",
+    "options": [
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "treating all numbers as interchangeable",
+      "follow official docs for API usage"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Kotlin Primitive Types best?",
+    "options": [
+      "Use Kotlin Primitive Types and suppress all warnings",
+      "Use Kotlin Primitive Types while bypassing architecture boundaries",
+      "Use Kotlin Primitive Types only as theory with no implementation",
+      "Use Kotlin Primitive Types with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Kotlin Primitive Types. What is best advice?",
+    "options": [
+      "Read official docs (https://kotlinlang.org/docs/basic-types.html) and implement a small sample",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review",
+      "skip running the app after changes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about Kotlin Primitive Types is most accurate?",
+    "options": [
+      "Kotlin Primitive Types should be applied identically in every layer",
+      "Kotlin Primitive Types removes the need for any testing",
+      "Kotlin Primitive Types is mainly about adding boilerplate",
+      "Kotlin Primitive Types is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Kotlin Primitive Types, what would you flag?",
+    "options": [
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Kotlin Primitive Types correctly?",
+    "options": [
+      "an implementation with no error states",
+      "A small, working feature that demonstrates Int / Long / Boolean in context",
+      "a slide deck with no runnable code",
+      "a large refactor without tests"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "To learn Kotlin Primitive Types deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using Kotlin Primitive Types patterns",
+      "memorize definitions only"
+    ],
+    "ans": "c"
   }
 ]

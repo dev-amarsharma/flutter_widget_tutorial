@@ -1,51 +1,101 @@
 [
   {
-    "que": "Sealed Classes: which statement is most accurate?",
+    "que": "In Kotlin Sealed Classes, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Sealed Classes?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "model restricted type hierarchies",
+      "skip state/data modeling",
+      "avoid understanding requirements",
+      "replace testing entirely"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Sealed Classes?",
+    "que": "Which API/concept is most central to Kotlin Sealed Classes?",
     "options": [
-      "restricted hierarchies",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "After studying Sealed Classes, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "random utility class name",
+      "sealed class",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "What is a recommended best practice for Kotlin Sealed Classes?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "exhaustive when expressions",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "optimize before verifying correctness"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing Kotlin Sealed Classes?",
+    "options": [
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "using nullable flags for state variants"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits Kotlin Sealed Classes best?",
+    "options": [
+      "Use Kotlin Sealed Classes and suppress all warnings",
+      "Use Kotlin Sealed Classes only as theory with no implementation",
+      "Use Kotlin Sealed Classes with clear state flow and testable logic",
+      "Use Kotlin Sealed Classes while bypassing architecture boundaries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with Kotlin Sealed Classes. What is best advice?",
+    "options": [
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "Read official docs (https://kotlinlang.org/docs/sealed-classes.html) and implement a small sample",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Kotlin Sealed Classes is most accurate?",
+    "options": [
+      "Kotlin Sealed Classes is most effective when paired with clear ownership of state/data",
+      "Kotlin Sealed Classes is mainly about adding boilerplate",
+      "Kotlin Sealed Classes should be applied identically in every layer",
+      "Kotlin Sealed Classes removes the need for any testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for Kotlin Sealed Classes, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "small pure functions with clear names"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Kotlin Sealed Classes correctly?",
+    "options": [
+      "A small, working feature that demonstrates sealed class in context",
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "an implementation with no error states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Kotlin Sealed Classes deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Kotlin Sealed Classes patterns",
+      "skip verification to save time",
+      "avoid official references",
+      "memorize definitions only"
     ],
     "ans": "a"
   }

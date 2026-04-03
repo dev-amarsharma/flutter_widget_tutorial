@@ -1,52 +1,102 @@
 [
   {
-    "que": "Scope Functions: which statement is most accurate?",
+    "que": "In Kotlin Scope Functions, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "operate on objects in a scoped block",
+      "replace testing entirely",
+      "skip state/data modeling"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Scope Functions?",
+    "que": "Which API/concept is most central to Kotlin Scope Functions?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "let/run/with/apply/also",
+      "random utility class name"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Scope Functions?",
+    "que": "What is a recommended best practice for Kotlin Scope Functions?",
     "options": [
-      "let, run, apply, also, with",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "optimize before verifying correctness",
+      "ignore edge/error states",
+      "choose function based on receiver/return value",
+      "mix unrelated responsibilities in one function"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "After studying Scope Functions, what should you do next?",
+    "que": "Which is a common mistake when implementing Kotlin Scope Functions?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "write focused tests for behavior",
+      "using scope functions just to reduce lines",
+      "follow official docs for API usage",
+      "keep boundaries clear"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "For production code, which approach fits Kotlin Scope Functions best?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Use Kotlin Scope Functions and suppress all warnings",
+      "Use Kotlin Scope Functions with clear state flow and testable logic",
+      "Use Kotlin Scope Functions while bypassing architecture boundaries",
+      "Use Kotlin Scope Functions only as theory with no implementation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with Kotlin Scope Functions. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "Read official docs (https://kotlinlang.org/docs/scope-functions.html) and implement a small sample",
+      "skip running the app after changes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Kotlin Scope Functions is most accurate?",
+    "options": [
+      "Kotlin Scope Functions is most effective when paired with clear ownership of state/data",
+      "Kotlin Scope Functions is mainly about adding boilerplate",
+      "Kotlin Scope Functions should be applied identically in every layer",
+      "Kotlin Scope Functions removes the need for any testing"
     ],
     "ans": "a"
+  },
+  {
+    "que": "In a code review for Kotlin Scope Functions, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Kotlin Scope Functions correctly?",
+    "options": [
+      "A small, working feature that demonstrates let/run/with/apply/also in context",
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "an implementation with no error states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Kotlin Scope Functions deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Kotlin Scope Functions patterns",
+      "skip verification to save time",
+      "memorize definitions only"
+    ],
+    "ans": "b"
   }
 ]

@@ -1,102 +1,102 @@
 [
   {
-    "que": "What is Hilt?",
+    "que": "In Hilt, what is the primary goal?",
     "options": [
-      "Android’s recommended DI library built on Dagger",
-      "A graphics API",
-      "A navigation component",
-      "A database engine"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What does `@HiltAndroidApp` annotate?",
-    "options": [
-      "The Application class",
-      "Only a Fragment",
-      "Only a DAO",
-      "Only a composable"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What does `@HiltAndroidApp` trigger?",
-    "options": [
-      "Code generation for the application-level dependency container",
-      "Flow collection",
-      "Grid rendering",
-      "App store upload"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which annotation marks Android classes that receive Hilt injection?",
-    "options": [
-      "@AndroidEntryPoint",
-      "@Composable",
-      "@Entity",
-      "@Serializable"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "When do you usually need a Hilt module with `@Provides` or `@Binds`?",
-    "options": [
-      "When Hilt cannot constructor-inject a type directly",
-      "For every class automatically",
-      "Only for enums",
-      "Only for Compose UI"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a good Hilt practice?",
-    "options": [
-      "Prefer constructor injection where possible",
-      "Always use field injection first",
-      "Put all bindings in one giant module without scopes",
-      "Avoid thinking about component lifetimes"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What does `@InstallIn(...)` define for a Hilt module?",
-    "options": [
-      "Which generated component the bindings belong to",
-      "Which app store to publish to",
-      "Which coroutine dispatcher to use",
-      "Which icon style to load"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a common Hilt mistake?",
-    "options": [
-      "Aligning bindings with component lifetimes",
-      "Installing modules in the wrong component",
-      "Using constructor injection thoughtfully",
-      "Adding qualifiers when needed"
+      "replace testing entirely",
+      "provide dependencies with DI graph",
+      "avoid understanding requirements",
+      "skip state/data modeling"
     ],
     "ans": "b"
   },
   {
-    "que": "Why are qualifiers sometimes needed in Hilt?",
+    "que": "Which API/concept is most central to Hilt?",
     "options": [
-      "To distinguish multiple bindings of the same type",
-      "To enable recomposition",
-      "To define draw layers",
-      "To replace generics"
+      "@HiltAndroidApp",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks"
     ],
     "ans": "a"
   },
   {
-    "que": "Which official docs best support this topic?",
+    "que": "What is a recommended best practice for Hilt?",
     "options": [
-      "Hilt Android and Android DI docs",
-      "Only Espresso docs",
-      "Only Flow docs",
-      "Only grid docs"
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "constructor injection with @Inject"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Hilt?",
+    "options": [
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "manually creating every dependency in activities",
+      "keep boundaries clear"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Hilt best?",
+    "options": [
+      "Use Hilt while bypassing architecture boundaries",
+      "Use Hilt and suppress all warnings",
+      "Use Hilt only as theory with no implementation",
+      "Use Hilt with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Hilt. What is best advice?",
+    "options": [
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which statement about Hilt is most accurate?",
+    "options": [
+      "Hilt should be applied identically in every layer",
+      "Hilt is most effective when paired with clear ownership of state/data",
+      "Hilt removes the need for any testing",
+      "Hilt is mainly about adding boilerplate"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In a code review for Hilt, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Hilt correctly?",
+    "options": [
+      "A small, working feature that demonstrates @HiltAndroidApp in context",
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "a large refactor without tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Hilt deeply, what should you do next?",
+    "options": [
+      "skip verification to save time",
+      "memorize definitions only",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Hilt patterns"
+    ],
+    "ans": "d"
   }
 ]

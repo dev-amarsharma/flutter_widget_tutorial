@@ -1,51 +1,101 @@
 [
   {
-    "que": "Repository Pattern: which statement is most accurate?",
+    "que": "In Repository Pattern, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Repository Pattern?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which concept is directly associated with Repository Pattern?",
-    "options": [
-      "data access abstraction",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "abstract data sources behind a clean API",
+      "replace testing entirely",
+      "avoid understanding requirements",
+      "skip state/data modeling"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Repository Pattern, what should you do next?",
+    "que": "Which API/concept is most central to Repository Pattern?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "Repository",
+      "legacy XML-only patterns unrelated to this topic"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for Repository Pattern?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "merge local/remote sources consistently",
+      "optimize before verifying correctness"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake when implementing Repository Pattern?",
+    "options": [
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "calling network/database directly from UI",
+      "write focused tests for behavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Repository Pattern best?",
+    "options": [
+      "Use Repository Pattern with clear state flow and testable logic",
+      "Use Repository Pattern while bypassing architecture boundaries",
+      "Use Repository Pattern and suppress all warnings",
+      "Use Repository Pattern only as theory with no implementation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Repository Pattern. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/topic/architecture/data-layer) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Repository Pattern is most accurate?",
+    "options": [
+      "Repository Pattern is most effective when paired with clear ownership of state/data",
+      "Repository Pattern removes the need for any testing",
+      "Repository Pattern is mainly about adding boilerplate",
+      "Repository Pattern should be applied identically in every layer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for Repository Pattern, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which scenario is the strongest example of using Repository Pattern correctly?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "A small, working feature that demonstrates Repository in context",
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "a large refactor without tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Repository Pattern deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Repository Pattern patterns",
+      "skip verification to save time",
+      "memorize definitions only",
+      "avoid official references"
     ],
     "ans": "a"
   }

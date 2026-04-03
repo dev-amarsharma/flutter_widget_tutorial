@@ -1,26 +1,34 @@
-# Room Database Setup
+# Room Database
 
 ## Overview
-Room provides an abstraction over SQLite with compile-time query checks.
+Room Database is a key topic for building reliable Android apps with Kotlin and Jetpack Compose.
 
-## When to use
-- In production Android apps using Kotlin/Compose stacks.
-- As a foundational concept for advanced topics in the manifest path.
+## Learning goals
+- Understand what Room Database solves.
+- Know when to apply it in production code.
+- Avoid common implementation mistakes.
+
+## Key points
+- Start simple and keep responsibilities focused.
+- Prefer predictable state/data flow.
+- Validate behavior with tests and small iterations.
 
 ## Example
 ```kotlin
-@Entity data class Note(@PrimaryKey val id: Int, val text: String)
-@Dao interface NoteDao { @Query("SELECT * FROM Note") suspend fun all(): List<Note> }
+class ExampleRepository(
+    private val api: ExampleApi,
+    private val dao: ExampleDao
+) {
+    suspend fun refresh() { /* ... */ }
+}
 ```
 
-## Best practices
-- Keep functions small and focused.
-- Prefer readable names and explicit intent.
-- Validate behavior with tests where possible.
-
 ## Common mistakes
-- Skipping state/error handling.
-- Mixing too many responsibilities in one layer.
+- Overcomplicating the first implementation.
+- Skipping edge cases and error handling.
+- Not measuring behavior (performance/tests) when needed.
 
-## Next step
-Complete the quiz file for this topic and implement a tiny sample in your project.
+## Official references
+- Primary: https://developer.android.com/training/data-storage/room
+- Android docs hub: https://developer.android.com/
+- Kotlin docs hub: https://kotlinlang.org/docs/home.html

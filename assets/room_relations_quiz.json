@@ -1,51 +1,101 @@
 [
   {
-    "que": "Room Relations: which statement is most accurate?",
+    "que": "In Room Relationships, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "model one-to-many/many-to-many entities",
+      "skip state/data modeling"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to Room Relationships?",
+    "options": [
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "@Relation",
+      "legacy XML-only patterns unrelated to this topic"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for Room Relationships?",
+    "options": [
+      "optimize before verifying correctness",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "compose result DTOs for joins"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Room Relationships?",
+    "options": [
+      "follow official docs for API usage",
+      "duplicating relation data manually everywhere",
+      "write focused tests for behavior",
+      "keep boundaries clear"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Room Relations?",
+    "que": "For production code, which approach fits Room Relationships best?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "Use Room Relationships and suppress all warnings",
+      "Use Room Relationships while bypassing architecture boundaries",
+      "Use Room Relationships with clear state flow and testable logic",
+      "Use Room Relationships only as theory with no implementation"
     ],
-    "ans": "b"
+    "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Room Relations?",
+    "que": "A teammate asks where to start with Room Relationships. What is best advice?",
     "options": [
-      "Room relationships",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "Read official docs (https://developer.android.com/training/data-storage/room/relationships) and implement a small sample",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "skip running the app after changes"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Room Relations, what should you do next?",
+    "que": "Which statement about Room Relationships is most accurate?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "Room Relationships should be applied identically in every layer",
+      "Room Relationships is most effective when paired with clear ownership of state/data",
+      "Room Relationships removes the need for any testing",
+      "Room Relationships is mainly about adding boilerplate"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "In a code review for Room Relationships, what would you flag?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Room Relationships correctly?",
+    "options": [
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates @Relation in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Room Relationships deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Room Relationships patterns",
+      "memorize definitions only",
+      "avoid official references",
+      "skip verification to save time"
     ],
     "ans": "a"
   }

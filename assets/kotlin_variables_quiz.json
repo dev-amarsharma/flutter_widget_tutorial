@@ -1,121 +1,101 @@
 [
   {
-    "que": "Which Kotlin keyword declares a read-only reference?",
+    "que": "In Kotlin Variables, what is the primary goal?",
     "options": [
-      "let",
-      "var",
-      "val",
-      "const"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which keyword should you use when a variable must be reassigned later?",
-    "options": [
-      "var",
-      "val",
-      "fun",
-      "object"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What happens if you try to reassign a local variable declared with `val`?",
-    "options": [
-      "Kotlin silently ignores the new value",
-      "The code compiles and runs normally",
-      "The variable changes only once",
-      "The code fails to compile"
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "store values with named identifiers"
     ],
     "ans": "d"
   },
   {
-    "que": "Which declaration relies on Kotlin type inference?",
+    "que": "Which API/concept is most central to Kotlin Variables?",
     "options": [
-      "val name: String = \"Kotlin\"",
-      "val name = \"Kotlin\"",
-      "val = \"Kotlin\"",
-      "String name = \"Kotlin\""
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "If a local variable is declared without an initial value, what is required?",
-    "options": [
-      "It must be declared inside a class only",
-      "Its type must be specified explicitly",
-      "It must use `var`, not `val`",
-      "It must be nullable"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which statement about `val` is correct?",
-    "options": [
-      "`val` makes every referenced object immutable",
-      "`val` means the reference cannot be reassigned",
-      "`val` can be reassigned exactly twice",
-      "`val` is only for top-level properties"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Given `val items = mutableListOf(\"A\")`, which operation is valid?",
-    "options": [
-      "items = mutableListOf(\"B\")",
-      "items = null",
-      "items.add(\"B\")",
-      "items++"
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "val / var",
+      "manual polling loop for all tasks"
     ],
     "ans": "c"
   },
   {
-    "que": "Which choice best reflects Kotlin best practice in most app code?",
+    "que": "What is a recommended best practice for Kotlin Variables?",
     "options": [
-      "Prefer `var` everywhere for flexibility",
-      "Prefer `val` unless reassignment is required",
-      "Never use local variables",
-      "Always write explicit types for every variable"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which declaration is valid Kotlin?",
-    "options": [
-      "var score Int = 10",
-      "val score := 10",
-      "val score = 10",
-      "int score = 10"
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "prefer clear immutable declarations",
+      "optimize before verifying correctness"
     ],
     "ans": "c"
   },
   {
-    "que": "Why is `val` often preferred in Android and Compose code?",
+    "que": "Which is a common mistake when implementing Kotlin Variables?",
     "options": [
-      "It makes all objects thread-safe",
-      "It avoids all runtime errors",
-      "It reduces accidental reassignment and clarifies data flow",
-      "It is required by the Android compiler"
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "using mutable globals for everything",
+      "keep boundaries clear"
     ],
     "ans": "c"
   },
   {
-    "que": "Which example shows a mutable variable?",
+    "que": "For production code, which approach fits Kotlin Variables best?",
     "options": [
-      "val title = \"Home\"",
-      "val count: Int = 0",
-      "var count = 0",
-      "val isReady = true"
+      "Use Kotlin Variables while bypassing architecture boundaries",
+      "Use Kotlin Variables only as theory with no implementation",
+      "Use Kotlin Variables and suppress all warnings",
+      "Use Kotlin Variables with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Kotlin Variables. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "copy an unknown snippet without context",
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "avoid feedback from tests/review"
     ],
     "ans": "c"
   },
   {
-    "que": "Where are Kotlin variables for this lesson officially documented?",
+    "que": "Which statement about Kotlin Variables is most accurate?",
     "options": [
-      "Kotlin basic syntax documentation",
-      "Only in AndroidManifest.xml",
-      "Only in Gradle release notes",
-      "Only in pubspec.lock"
+      "Kotlin Variables should be applied identically in every layer",
+      "Kotlin Variables is mainly about adding boilerplate",
+      "Kotlin Variables is most effective when paired with clear ownership of state/data",
+      "Kotlin Variables removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Kotlin Variables, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Kotlin Variables correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates val / var in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Kotlin Variables deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Kotlin Variables patterns",
+      "avoid official references",
+      "skip verification to save time",
+      "memorize definitions only"
     ],
     "ans": "a"
   }

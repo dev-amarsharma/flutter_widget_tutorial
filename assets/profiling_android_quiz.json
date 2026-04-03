@@ -1,52 +1,102 @@
 [
   {
-    "que": "Profiling Android: which statement is most accurate?",
+    "que": "In Android Profiling, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Profiling Android?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "replace testing entirely",
+      "avoid understanding requirements",
+      "measure CPU/memory/network behavior",
+      "skip state/data modeling"
     ],
     "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Profiling Android?",
+    "que": "Which API/concept is most central to Android Profiling?",
     "options": [
-      "profiling tools",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "After studying Profiling Android, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "manual polling loop for all tasks",
+      "Android Profiler",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "What is a recommended best practice for Android Profiling?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function",
+      "profile before optimizing",
+      "ignore edge/error states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake when implementing Android Profiling?",
+    "options": [
+      "follow official docs for API usage",
+      "guessing performance bottlenecks",
+      "write focused tests for behavior",
+      "keep boundaries clear"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "For production code, which approach fits Android Profiling best?",
+    "options": [
+      "Use Android Profiling with clear state flow and testable logic",
+      "Use Android Profiling only as theory with no implementation",
+      "Use Android Profiling and suppress all warnings",
+      "Use Android Profiling while bypassing architecture boundaries"
     ],
     "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Android Profiling. What is best advice?",
+    "options": [
+      "Read official docs (https://developer.android.com/studio/profile/android-profiler) and implement a small sample",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "skip running the app after changes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about Android Profiling is most accurate?",
+    "options": [
+      "Android Profiling removes the need for any testing",
+      "Android Profiling is most effective when paired with clear ownership of state/data",
+      "Android Profiling is mainly about adding boilerplate",
+      "Android Profiling should be applied identically in every layer"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In a code review for Android Profiling, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Android Profiling correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates Android Profiler in context",
+      "a large refactor without tests"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn Android Profiling deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "skip verification to save time",
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using Android Profiling patterns"
+    ],
+    "ans": "d"
   }
 ]
