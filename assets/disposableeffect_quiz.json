@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is `DisposableEffect` used for?",
+    "options": [
+      "Effects that require cleanup when keys change or composition ends",
+      "Creating build variants",
+      "Running SQL joins",
+      "Drawing custom paths"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When does `onDispose` run?",
+    "options": [
+      "When the effect leaves the composition or its keys change",
+      "Only when the app is installed",
+      "Only after process death",
+      "Only in previews"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a good use case for `DisposableEffect`?",
+    "options": [
+      "Registering and unregistering a lifecycle observer",
+      "Sorting a list of strings",
+      "Creating a DataStore serializer",
+      "Generating app icons"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What do Android docs require `DisposableEffect` to include?",
+    "options": [
+      "An `onDispose` clause",
+      "A NavController",
+      "A mutable map",
+      "A SQL cursor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens if a `DisposableEffect` key changes?",
+    "options": [
+      "The current effect is disposed and restarted with new keys",
+      "Nothing happens",
+      "The app restarts",
+      "The effect becomes global"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why do restart keys matter?",
+    "options": [
+      "They determine when the effect should be disposed and recreated",
+      "They choose the app icon",
+      "They replace composition",
+      "They control Gradle builds"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common `DisposableEffect` mistake?",
+    "options": [
+      "Pairing setup with cleanup",
+      "Using it for lifecycle observers",
+      "Omitting proper cleanup logic",
+      "Thinking about keys"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When might `rememberUpdatedState` be used alongside `DisposableEffect`?",
+    "options": [
+      "When a value should update without forcing effect restart",
+      "When replacing all keys",
+      "When removing cleanup",
+      "When disabling recomposition"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of work is most appropriate in `DisposableEffect`?",
+    "options": [
+      "UI-related setup/teardown work",
+      "Random global business logic",
+      "Manifest editing",
+      "Room migrations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose side-effects docs",
+      "Only CI docs",
+      "Only app bundle docs",
+      "Only Firebase docs"
+    ],
+    "ans": "a"
+  }
+]

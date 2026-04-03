@@ -1,0 +1,102 @@
+[
+  {
+    "que": "When should you usually use a checkbox instead of a switch?",
+    "options": [
+      "When selecting one or more items in a list",
+      "When toggling an app setting",
+      "When showing a loading spinner",
+      "When navigating between screens"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is a switch typically the better choice?",
+    "options": [
+      "For immediate on/off settings",
+      "For many-item selection lists",
+      "For drawing custom shapes",
+      "For Room schema migrations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How many states can a Compose checkbox support according to Android docs?",
+    "options": [
+      "Two only",
+      "Three including indeterminate",
+      "Four",
+      "Unlimited"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which state is unique to checkboxes in the official guidance here?",
+    "options": [
+      "Invisible",
+      "Indeterminate",
+      "Deferred",
+      "Pending"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which parameter updates state when a checkbox or switch changes?",
+    "options": [
+      "onCheckedChange",
+      "onCreate",
+      "onNavigate",
+      "onMeasure"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with checkbox vs switch choice?",
+    "options": [
+      "Using a switch for an app setting",
+      "Using a checkbox for multi-select items",
+      "Using switches for multi-select lists",
+      "Adding labels"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What kind of setting is a switch good for?",
+    "options": [
+      "Notifications enabled",
+      "Selecting favorite toppings from many options",
+      "Drawing on Canvas",
+      "Creating a build flavor"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why do labels matter for checkboxes and switches?",
+    "options": [
+      "They improve clarity and accessibility",
+      "They reduce APK size",
+      "They enable coroutines",
+      "They disable recomposition"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about switches is correct?",
+    "options": [
+      "They are designed for binary on/off state",
+      "They support an indeterminate state by default",
+      "They are only for tablets",
+      "They replace radio buttons in all cases"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose checkbox and switch component docs",
+      "Only app startup docs",
+      "Only baseline profile docs",
+      "Only navigation docs"
+    ],
+    "ans": "a"
+  }
+]

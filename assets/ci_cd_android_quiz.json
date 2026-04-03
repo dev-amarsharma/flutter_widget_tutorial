@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is Continuous Integration (CI)?",
+    "options": [
+      "A practice where code changes are merged frequently and automated checks run",
+      "A UI component in Compose",
+      "A database migration format",
+      "A battery optimization tool"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which check is a basic recommended CI job for Android?",
+    "options": [
+      "Build verification",
+      "Manual Play Store screenshots only",
+      "Removing tests",
+      "Disabling lint"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What are host-side Android tests usually called in CI guidance?",
+    "options": [
+      "Local JVM tests",
+      "Manifest tests",
+      "Render tests only",
+      "ADB-only tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where can Android instrumented tests run in CI?",
+    "options": [
+      "Gradle Managed Devices or device farms",
+      "Only in browser tabs",
+      "Only on production users' phones",
+      "Only in XML"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are lint and style checks useful in CI?",
+    "options": [
+      "They help catch issues early and keep reviews focused",
+      "They replace all testing",
+      "They disable Kotlin warnings",
+      "They only affect icons"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good practice for heavy benchmark suites?",
+    "options": [
+      "Run them as scheduled or nightly jobs when appropriate",
+      "Run them never",
+      "Run them only on debug previews",
+      "Replace them with screenshots"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common CI mistake?",
+    "options": [
+      "Running builds and tests automatically",
+      "Treating CI as build-only and skipping meaningful test coverage",
+      "Using device farms when needed",
+      "Adding lint checks"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does CD usually add beyond CI?",
+    "options": [
+      "Delivery or deployment automation",
+      "A new layout system",
+      "A database engine",
+      "A replacement for tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official Android docs best support this topic?",
+    "options": [
+      "Continuous Integration basics and automation docs",
+      "Only Compose layout docs",
+      "Only checkbox docs",
+      "Only app bundle FAQ"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why does CI help repository health?",
+    "options": [
+      "It catches broken builds and regressions earlier",
+      "It removes the need for code review",
+      "It eliminates all runtime bugs",
+      "It guarantees perfect architecture"
+    ],
+    "ans": "a"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is an APK?",
+    "options": [
+      "An Android publishing-only bundle",
+      "An installable and executable Android app package",
+      "A Compose animation API",
+      "A test coverage report"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is an AAB?",
+    "options": [
+      "An installable XML file",
+      "An Android App Bundle used as a publishing format",
+      "A Room database schema",
+      "A boot-time profiler"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Can users directly install an `.aab` file on Android devices like an APK?",
+    "options": [
+      "Yes, always",
+      "Only on Android 14 and above",
+      "No, app bundles are for publishing and must be processed into APKs",
+      "Only in debug builds"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does Google Play do with an uploaded app bundle?",
+    "options": [
+      "Deletes it after validation",
+      "Converts it into optimized APKs for device configurations",
+      "Turns it into a Room database",
+      "Runs it directly on user devices"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why can AAB improve user downloads?",
+    "options": [
+      "Because users download only resources and code relevant to their device",
+      "Because it disables images",
+      "Because it removes code shrinking",
+      "Because it forces one universal package for all devices"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about AAB is correct according to Android Developers?",
+    "options": [
+      "It is proprietary and only works conceptually on Play",
+      "It is open source and can be supported by other stores",
+      "It replaces Kotlin",
+      "It cannot contain modules"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which file format do developers usually upload to Google Play now for new apps?",
+    "options": [
+      ".apk only",
+      ".jar",
+      ".aab",
+      ".xml"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement best summarizes the relationship between APK and AAB?",
+    "options": [
+      "They are identical names for the same artifact",
+      "AAB is the publishing input and APK is the installable output",
+      "APK is only for tablets and AAB is only for phones",
+      "AAB is for debug and APK is for release"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a common misunderstanding about app bundles?",
+    "options": [
+      "That Play generates optimized APKs from them",
+      "That they organize code and resources into modules",
+      "That they are directly installable like APKs",
+      "That they are used for publishing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Android App Bundle overview, format docs, and FAQ",
+      "Only Activity lifecycle docs",
+      "Only Compose animation docs",
+      "Only Firebase Analytics docs"
+    ],
+    "ans": "a"
+  }
+]

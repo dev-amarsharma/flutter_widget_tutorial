@@ -1,51 +1,101 @@
 [
   {
-    "que": "Compose Testing: which statement is most accurate?",
+    "que": "What is the purpose of Compose UI testing?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "To verify that Compose UI behavior is correct",
+      "To replace all unit tests",
+      "To generate app icons",
+      "To create build variants"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which rule factory is commonly used for Compose tests without needing activity access?",
+    "options": [
+      "createComposeRule()",
+      "createWorkRule()",
+      "createNavRule()",
+      "createCanvasRule()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which rule factory is commonly used when you need activity access in Compose tests?",
+    "options": [
+      "createAndroidComposeRule()",
+      "createButtonRule()",
+      "createStateRule()",
+      "createManifestRule()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What do Compose tests commonly use to locate UI elements?",
+    "options": [
+      "Finders like `onNodeWithText`",
+      "Only raw pixel coordinates",
+      "Only manifest IDs",
+      "Only Gradle tasks"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are semantics important in Compose testing?",
+    "options": [
+      "They give meaning to UI elements for tests and accessibility",
+      "They disable recomposition",
+      "They replace ViewModel",
+      "They sort collections"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good Compose testing practice?",
+    "options": [
+      "Test behavior rather than brittle internal details",
+      "Assert implementation internals whenever possible",
+      "Avoid semantics",
+      "Manually sleep instead of relying on synchronization"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which library is commonly added for Compose UI tests?",
+    "options": [
+      "ui-test-junit4",
+      "room-runtime only",
+      "navigation-compose only",
+      "material-icons only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake in Compose UI tests?",
+    "options": [
+      "Using Compose test APIs",
+      "Ignoring synchronization and assuming the UI is immediately idle",
+      "Testing key user flows",
+      "Using assertions"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Compose Testing?",
+    "que": "Which operation is a valid Compose test action?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "performClick()",
+      "drawRect()",
+      "enqueueWork()",
+      "buildVariant()"
     ],
-    "ans": "c"
+    "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Compose Testing?",
+    "que": "Which official docs best support this topic?",
     "options": [
-      "test rule",
-      "node finder",
-      "hardware drivers",
-      "game engine shaders"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "After studying Compose Testing, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Compose testing docs and testing quick guide",
+      "Only app startup docs",
+      "Only Kotlin collections docs",
+      "Only app bundle docs"
     ],
     "ans": "a"
   }

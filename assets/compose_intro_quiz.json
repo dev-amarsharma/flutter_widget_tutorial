@@ -1,51 +1,101 @@
 [
   {
-    "que": "Compose Introduction: which statement is most accurate?",
+    "que": "What is Jetpack Compose?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Compose Introduction?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "Android’s modern declarative UI toolkit",
+      "A database engine",
+      "A build variant system",
+      "A Play Console feature"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Compose Introduction?",
+    "que": "Which language is primarily used to write Compose UI?",
     "options": [
-      "declarative UI",
-      "@Composable",
-      "hardware drivers",
-      "game engine shaders"
+      "Kotlin",
+      "SQL",
+      "Swift",
+      "Rust only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which best describes Compose’s UI model?",
+    "options": [
+      "Declarative",
+      "Only XML-based",
+      "Only imperative view mutation",
+      "Manifest-driven"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What function is commonly used in an Activity to host Compose content?",
+    "options": [
+      "setContent",
+      "setViewTree",
+      "setLayoutXml",
+      "setManifestContent"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which three broad stages does Android describe for Compose UI transformation?",
+    "options": [
+      "Composition, layout, and drawing",
+      "Build, ship, publish",
+      "Fetch, cache, sync",
+      "Input, database, render thread"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens when state changes in Compose?",
+    "options": [
+      "Compose can recompose affected UI parts",
+      "The app must restart",
+      "XML files are regenerated",
+      "All code is recompiled"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is Compose considered modern compared with old Android UI workflows?",
+    "options": [
+      "It simplifies state-driven UI and reduces manual view mutation",
+      "It removes all architecture needs",
+      "It only works for toy apps",
+      "It disables Kotlin"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when learning Compose?",
+    "options": [
+      "Keeping declarative state flow in mind",
+      "Thinking only in terms of old view mutation patterns",
+      "Breaking screens into smaller composables",
+      "Using Material components"
     ],
     "ans": "b"
   },
   {
-    "que": "After studying Compose Introduction, what should you do next?",
+    "que": "Which statement about Compose is correct?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "It is recommended by Android as the modern native UI toolkit",
+      "It can only be used on TVs",
+      "It requires XML for all screens",
+      "It replaces Kotlin coroutines"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which official docs best support this topic?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Develop UI, Compose tutorial, and Thinking in Compose",
+      "Only app bundle docs",
+      "Only Firebase docs",
+      "Only battery docs"
     ],
     "ans": "a"
   }

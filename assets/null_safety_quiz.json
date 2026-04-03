@@ -1,0 +1,122 @@
+[
+  {
+    "que": "What does `String?` mean in Kotlin?",
+    "options": [
+      "A string that cannot be empty",
+      "A nullable string type",
+      "A constant string",
+      "A private string"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which operator safely calls a member on a nullable value?",
+    "options": [
+      "?.",
+      "!!",
+      "::",
+      "+="
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the Elvis operator `?:` do?",
+    "options": [
+      "Throws an exception",
+      "Provides a fallback when the left side is null",
+      "Creates a list",
+      "Marks a type as nullable"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is `!!` risky?",
+    "options": [
+      "It can crash if the value is null",
+      "It removes all warnings permanently",
+      "It converts strings to ints",
+      "It makes types immutable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a key benefit of Kotlin null safety?",
+    "options": [
+      "Compile-time help against null mistakes",
+      "Automatic UI theming",
+      "Smaller APK icons",
+      "No need for testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which type cannot normally hold null?",
+    "options": [
+      "String",
+      "String?",
+      "Int?",
+      "User?"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good null-safety practice?",
+    "options": [
+      "Use non-null types unless absence is valid",
+      "Make every value nullable",
+      "Use `!!` everywhere",
+      "Ignore API nullability"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What can `name?.length` return?",
+    "options": [
+      "Only Int",
+      "Int? because the result can be null",
+      "String only",
+      "Boolean only"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where is null handling especially important in Android?",
+    "options": [
+      "When reading external or optional data",
+      "Only in XML colors",
+      "Only in Gradle wrappers",
+      "Never in Compose"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake?",
+    "options": [
+      "Modeling optional data clearly",
+      "Replacing `!!` with safe flow",
+      "Using `!!` too often",
+      "Using fallback values"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement is true?",
+    "options": [
+      "Nullability is part of Kotlin’s type system",
+      "Kotlin ignores null values completely",
+      "All Kotlin types are nullable by default",
+      "Safe calls are only for Java"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why does null safety improve apps?",
+    "options": [
+      "It reduces crashes caused by unexpected nulls",
+      "It removes all runtime logic",
+      "It replaces architecture patterns",
+      "It avoids modules"
+    ],
+    "ans": "a"
+  }
+]

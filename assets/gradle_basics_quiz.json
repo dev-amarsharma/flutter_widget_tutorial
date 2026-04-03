@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does the Android build system produce from source code and resources?",
+    "options": [
+      "APKs or Android App Bundles",
+      "Only SQL files",
+      "Only vector icons",
+      "Only annotations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is Gradle’s execution model described as?",
+    "options": [
+      "Task-based",
+      "Only event-based",
+      "Only UI-based",
+      "Only database-based"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the purpose of the Gradle Wrapper (`gradlew`)?",
+    "options": [
+      "Provide consistent Gradle execution for the project",
+      "Generate database schemas",
+      "Replace Kotlin",
+      "Manage navigation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which file usually defines modules included in the build?",
+    "options": [
+      "settings.gradle.kts",
+      "AndroidManifest.xml",
+      "README.md",
+      "proguard-rules.pro only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which file usually configures a specific Android module?",
+    "options": [
+      "Module-level build.gradle.kts",
+      "Only gradle-wrapper.properties",
+      "Only local.properties",
+      "Only MainActivity.kt"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Android build concept managed by Gradle?",
+    "options": [
+      "Build variants",
+      "Only data classes",
+      "Only deep links",
+      "Only dialogs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Gradle mistake?",
+    "options": [
+      "Using the wrapper",
+      "Editing the wrong build file for the concern",
+      "Understanding source sets",
+      "Keeping module config focused"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does `gradle-wrapper.properties` mainly help define?",
+    "options": [
+      "The Gradle distribution version",
+      "The app navigation graph",
+      "The Room schema",
+      "The app icon set"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which concept groups code/resources for specific build conditions?",
+    "options": [
+      "Source sets",
+      "Semantics",
+      "DrawScope",
+      "Companion objects"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Configure your build and Gradle build overview",
+      "Only Hilt docs",
+      "Only Espresso docs",
+      "Only Flow docs"
+    ],
+    "ans": "a"
+  }
+]

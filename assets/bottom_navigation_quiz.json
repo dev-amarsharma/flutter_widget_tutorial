@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which Material 3 composable represents bottom navigation in Compose?",
+    "options": [
+      "BottomSheet",
+      "NavigationBar",
+      "TopAppBar",
+      "Pager"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which composable represents one destination inside a navigation bar?",
+    "options": [
+      "NavigationBarItem",
+      "NavigationRail",
+      "ScaffoldItem",
+      "TabRowItem"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "According to Android guidance, a navigation bar is best for how many destinations?",
+    "options": [
+      "One or two",
+      "Three to five",
+      "Six to ten",
+      "Any number"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which window size is a navigation bar especially recommended for?",
+    "options": [
+      "Compact window sizes",
+      "Only desktop windows",
+      "Only TVs",
+      "Only foldables in tabletop mode"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the `selected` parameter on `NavigationBarItem` control?",
+    "options": [
+      "Whether the destination is visually highlighted",
+      "Whether the app compiles",
+      "Whether the icon loads from network",
+      "Whether the app uses Material 2"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should usually happen in `onClick` for a navigation bar item?",
+    "options": [
+      "Update destination state and trigger navigation",
+      "Run database migrations",
+      "Create a wake lock",
+      "Compile a baseline profile"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with bottom navigation?",
+    "options": [
+      "Using it for top-level destinations",
+      "Keeping the destination list small",
+      "Using it for deep one-off screens and transient actions",
+      "Showing selected state"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which older Material 2 component name maps to Material 3 navigation bar?",
+    "options": [
+      "BottomNavigation",
+      "Drawer",
+      "Snackbar",
+      "SegmentedButton"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When might you consider `NavigationRail` instead?",
+    "options": [
+      "When more space is available on larger layouts",
+      "Only when the app has one screen",
+      "Only for animations",
+      "Only for offline-first apps"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose navigation bar and Material 3 docs",
+      "Only Room docs",
+      "Only battery docs",
+      "Only Firebase docs"
+    ],
+    "ans": "a"
+  }
+]

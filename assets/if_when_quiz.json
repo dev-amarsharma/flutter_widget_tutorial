@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is special about Kotlin's `if` compared with Java's `if`?",
+    "options": [
+      "It can be used as an expression that returns a value",
+      "It only works with booleans stored in variables",
+      "It replaces all loops",
+      "It cannot use `else if`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When `if` is used as an expression, what is required?",
+    "options": [
+      "An `else` branch",
+      "A `when` block after it",
+      "A `return` keyword in every branch",
+      "A loop around the expression"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is `when` in Kotlin mainly used for?",
+    "options": [
+      "Conditional branching across multiple cases",
+      "Declaring nullable variables",
+      "Launching coroutines",
+      "Creating lists"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Kotlin construct is usually clearer than a long nested `if-else if` chain?",
+    "options": [
+      "`when`",
+      "`try`",
+      "`forEach`",
+      "`let`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which branch style is valid inside `when`?",
+    "options": [
+      "Matching a range with `in 1..10`",
+      "Using `case 1:` labels",
+      "Using `break` after every branch",
+      "Using only strings"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does it mean for a `when` expression to be exhaustive?",
+    "options": [
+      "All possible cases are handled",
+      "It contains at least five branches",
+      "It uses only enum values",
+      "It always ends with `return`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When can a `when` expression omit `else`?",
+    "options": [
+      "When all possible cases are already covered",
+      "When it has only one branch",
+      "When it returns `Unit`",
+      "When the subject is a String"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which operator is used in `when` to check a type?",
+    "options": [
+      "`is`",
+      "`as`",
+      "`in`",
+      "`==`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good use case for `when` without a subject?",
+    "options": [
+      "Evaluating several boolean conditions in order",
+      "Creating a list of branches",
+      "Replacing all loops",
+      "Checking only null values"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is `when` especially useful with sealed classes or enums?",
+    "options": [
+      "The compiler can help verify that all states are handled",
+      "It runs faster than all other Kotlin syntax",
+      "It removes the need for data classes",
+      "It can only be used there"
+    ],
+    "ans": "a"
+  }
+]

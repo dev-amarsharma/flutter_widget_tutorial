@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is a higher-order function?",
+    "options": [
+      "A function that takes another function as a parameter or returns one",
+      "A function with more than two parameters",
+      "A function declared inside a class only",
+      "A function that must be suspend"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which Kotlin feature is commonly used at higher-order function call sites?",
+    "options": [
+      "Lambda expressions",
+      "Manifest filters",
+      "Build variants",
+      "Room DAOs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a function type?",
+    "options": [
+      "(Int) -> String",
+      "Int:String",
+      "Int => String",
+      "Function<Int,String> only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `() -> Unit` represent?",
+    "options": [
+      "A function with no parameters that returns Unit",
+      "A nullable Int",
+      "A ViewModel factory",
+      "A dialog slot"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are higher-order functions useful?",
+    "options": [
+      "They let behavior be passed around as data",
+      "They remove all need for classes",
+      "They make functions untyped",
+      "They only work with collections"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a callable reference example?",
+    "options": [
+      "Int::times",
+      "Int=>times",
+      "times::Int::",
+      "times()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with higher-order functions?",
+    "options": [
+      "Using clear parameter names",
+      "Overcomplicating logic with too many nested lambdas",
+      "Using lambdas where appropriate",
+      "Designing typed callback APIs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Kotlin standard-style function is often used as an example of a higher-order function?",
+    "options": [
+      "fold",
+      "ordinal",
+      "valueOf",
+      "toString only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you consider when designing a public higher-order API?",
+    "options": [
+      "Readability of the call site and function-type parameter meaning",
+      "Only bytecode size",
+      "Only icon style",
+      "Only manifest package names"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official doc best supports this topic?",
+    "options": [
+      "Kotlin higher-order functions and lambdas documentation",
+      "Only Hilt docs",
+      "Only grid docs",
+      "Only app bundle docs"
+    ],
+    "ans": "a"
+  }
+]

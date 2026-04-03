@@ -1,51 +1,121 @@
 [
   {
-    "que": "val vs var: which statement is most accurate?",
+    "que": "Which Kotlin keyword declares a read-only reference?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "var",
+      "val",
+      "let",
+      "const"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for val vs var?",
+    "que": "Which keyword should you use when a value must be reassigned later?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "val",
+      "var",
+      "fun",
+      "class"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What happens if you try to reassign a `val` variable?",
+    "options": [
+      "It fails to compile",
+      "It works only in Android Studio",
+      "It works once per function",
+      "It becomes nullable"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with val vs var?",
+    "que": "Which statement about `val` is correct?",
     "options": [
-      "immutability",
-      "reassignment",
-      "hardware drivers",
-      "game engine shaders"
+      "`val` makes every object fully immutable",
+      "`val` prevents reassignment of the reference",
+      "`val` can be reassigned inside loops",
+      "`val` only works with strings"
     ],
     "ans": "b"
   },
   {
-    "que": "After studying val vs var, what should you do next?",
+    "que": "Given `val items = mutableListOf(1, 2)`, which operation is valid?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "items = mutableListOf(3)",
+      "items = null",
+      "items.add(3)",
+      "items++"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which choice is the best default in most Kotlin code?",
+    "options": [
+      "Always use `var` for flexibility",
+      "Use `val` unless reassignment is required",
+      "Never declare local variables",
+      "Use `var` for all constructor properties"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which constructor property is mutable?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "`class User(val id: String)`",
+      "`class User(name: String)`",
+      "`class User(var name: String)`",
+      "`class User(fun name: String)`"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which example should usually be a `val` in Compose?",
+    "options": [
+      "A computed label from function parameters",
+      "A counter intentionally reassigned in imperative logic",
+      "A mutable index stored for updates",
+      "A retry count changed after failures"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why can overusing `var` make code harder to maintain?",
+    "options": [
+      "It disables null safety",
+      "It prevents object construction",
+      "It increases accidental mutation and makes data flow harder to track",
+      "It breaks type inference"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement is valid Kotlin syntax?",
+    "options": [
+      "var score Int = 10",
+      "val score = 10",
+      "mutable score = 10",
+      "int score = 10"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "If you need a truly immutable collection, what should you consider in addition to using `val`?",
+    "options": [
+      "Only using top-level properties",
+      "Using an immutable data structure",
+      "Using `lateinit`",
+      "Using `open` classes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which official sources best explain `val` and `var` behavior?",
+    "options": [
+      "Kotlin basic syntax, properties, and classes documentation",
+      "Only AndroidManifest.xml",
+      "Only Gradle plugin docs",
+      "Only Play Store policy docs"
     ],
     "ans": "a"
   }

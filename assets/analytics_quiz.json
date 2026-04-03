@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is an analytics event?",
+    "options": [
+      "A UI layout file",
+      "A meaningful occurrence in the app that you want to measure",
+      "A Gradle task",
+      "A network permission"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which official Android-friendly analytics solution is commonly used with Firebase?",
+    "options": [
+      "Google Analytics for Firebase",
+      "JUnit Analytics",
+      "ADB Analytics",
+      "Room Analytics"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What do event parameters provide?",
+    "options": [
+      "Android version upgrades",
+      "Additional detail about the event",
+      "Compile-time optimization",
+      "Layout constraints"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is the best example of a useful analytics event?",
+    "options": [
+      "button_clicked_maybe",
+      "purchase_completed",
+      "random_debug_line",
+      "screen_thing_1"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What are user properties used for?",
+    "options": [
+      "Styling Compose text",
+      "Describing attributes of users for segmentation",
+      "Defining Room schema",
+      "Speeding up app startup"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is it a mistake to log every possible low-level UI action?",
+    "options": [
+      "It always crashes the app",
+      "It makes product insights noisier and harder to interpret",
+      "Firebase blocks all custom events",
+      "Android removes the events automatically"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a key privacy best practice?",
+    "options": [
+      "Log passwords for debugging",
+      "Send sensitive personal data in event names",
+      "Avoid sending personally identifiable information unnecessarily",
+      "Use analytics only in debug builds"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which code object is used to log events with parameters on Android?",
+    "options": [
+      "FirebaseAnalytics",
+      "NavController",
+      "ViewModelStore",
+      "SnackbarHostState"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the main purpose of analytics in product development?",
+    "options": [
+      "To replace all unit tests",
+      "To understand user behavior and support product decisions",
+      "To disable crashes",
+      "To manage app permissions"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which official sources are most relevant for this topic?",
+    "options": [
+      "Firebase Analytics docs and Android API reference",
+      "Only AndroidManifest.xml",
+      "Only Compose previews docs",
+      "Only Gradle wrapper docs"
+    ],
+    "ans": "a"
+  }
+]

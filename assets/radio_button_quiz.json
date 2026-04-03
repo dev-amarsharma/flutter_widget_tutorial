@@ -1,0 +1,52 @@
+[
+  {
+    "que": "Radio Button: which statement is most accurate?",
+    "options": [
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended learning level for Radio Button?",
+    "options": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which concept is directly associated with Radio Button?",
+    "options": [
+      "single-choice controls",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "After studying Radio Button, what should you do next?",
+    "options": [
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where is this topic mapped in this project?",
+    "options": [
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
+    ],
+    "ans": "a"
+  }
+]

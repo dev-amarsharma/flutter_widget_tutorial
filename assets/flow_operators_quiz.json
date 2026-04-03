@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What do intermediate Flow operators do?",
+    "options": [
+      "Transform an upstream flow and return a new downstream flow",
+      "Start collection immediately",
+      "Replace coroutines",
+      "Create app modules"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is an intermediate operator?",
+    "options": [
+      "map",
+      "collect",
+      "toList",
+      "first"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is a terminal operator?",
+    "options": [
+      "collect",
+      "filter",
+      "combine",
+      "transform"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens when you call `map` on a Flow?",
+    "options": [
+      "You define a new transformed flow, but do not start collection yet",
+      "The flow completes immediately",
+      "The app restarts",
+      "A database table is created"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which operator can combine corresponding values from two flows?",
+    "options": [
+      "zip",
+      "copy",
+      "require",
+      "draw"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which operator can combine the latest values from multiple flows?",
+    "options": [
+      "combine",
+      "ordinal",
+      "emitAllList",
+      "padding"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which family of operators is used for flattening flows of flows?",
+    "options": [
+      "flatMap operators",
+      "enum operators",
+      "DAO operators",
+      "dialog operators"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Flow operator mistake?",
+    "options": [
+      "Knowing that terminal operators start collection",
+      "Thinking `filter` or `map` starts execution",
+      "Using `collect` intentionally",
+      "Reading the docs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is readability important in operator chains?",
+    "options": [
+      "Because long chains can become hard to reason about",
+      "Because Flow cannot use many operators",
+      "Because operators are deprecated",
+      "Because only one operator is allowed"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official doc best supports this topic?",
+    "options": [
+      "Kotlin Flow documentation",
+      "Only app bundle docs",
+      "Only fragment docs",
+      "Only Espresso docs"
+    ],
+    "ans": "a"
+  }
+]

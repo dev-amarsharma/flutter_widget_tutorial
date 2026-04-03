@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What are the main input concepts Android highlights for gesture handling?",
+    "options": [
+      "Pointers, pointer events, and gestures",
+      "Rows, columns, and boxes",
+      "APKs, AABs, and manifests",
+      "Lists, maps, and sets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does Android recommend about choosing gesture APIs?",
+    "options": [
+      "Use the highest abstraction level that fits the problem",
+      "Always use low-level pointer input first",
+      "Never use clickable",
+      "Only use custom Canvas math"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a high-level gesture API in Compose?",
+    "options": [
+      "clickable",
+      "valueOf",
+      "copy",
+      "reduce"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API family offers lower-level custom gesture handling?",
+    "options": [
+      "pointerInput",
+      "DataStore",
+      "Room DAO",
+      "BuildConfig"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which detector can be used inside `pointerInput` for tap handling?",
+    "options": [
+      "detectTapGestures",
+      "detectBuildTypes",
+      "detectEnums",
+      "detectModules"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are high-level APIs often preferable when they fit?",
+    "options": [
+      "They often include accessibility and visual feedback",
+      "They remove all recomposition",
+      "They only work on phones",
+      "They replace state management"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common gesture-detection mistake?",
+    "options": [
+      "Using clickable for normal taps",
+      "Dropping to low-level pointer code without a real need",
+      "Testing gestures",
+      "Thinking about input devices"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why do event consumption and propagation matter?",
+    "options": [
+      "They affect how multiple UI layers respond to the same gesture stream",
+      "They only matter for app icons",
+      "They replace semantics",
+      "They control Gradle tasks"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which input devices can matter in Compose gesture handling?",
+    "options": [
+      "Touch, stylus, mouse, and trackpad",
+      "Only keyboards",
+      "Only gamepads",
+      "Only remote controls"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Understand gestures and pointer input in Compose",
+      "Only app bundle docs",
+      "Only Hilt docs",
+      "Only Room docs"
+    ],
+    "ans": "a"
+  }
+]

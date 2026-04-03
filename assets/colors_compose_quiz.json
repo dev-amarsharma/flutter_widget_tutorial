@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the Material 3 color model in Compose centered around?",
+    "options": [
+      "A color scheme with semantic roles",
+      "Only one primary hex value",
+      "Random per-screen palettes",
+      "XML color arrays only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is an example of a semantic color role?",
+    "options": [
+      "primary",
+      "drawWidth",
+      "workerState",
+      "routeName"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are semantic color roles useful?",
+    "options": [
+      "They help keep UI consistent across themes and components",
+      "They remove the need for design",
+      "They replace typography",
+      "They only matter in previews"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which pair represents a container/content relationship in Material 3?",
+    "options": [
+      "primary / onPrimary",
+      "button / list",
+      "row / column",
+      "map / set"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good Compose color practice?",
+    "options": [
+      "Read colors from `MaterialTheme.colorScheme`",
+      "Hardcode all colors inside each composable",
+      "Ignore dark theme entirely",
+      "Use only `primary` for every surface"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should you test both light and dark themes?",
+    "options": [
+      "To verify readability and contrast across theme modes",
+      "To reduce APK size",
+      "To disable dynamic color",
+      "To avoid using Material 3"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with colors in Compose?",
+    "options": [
+      "Using semantic theme roles",
+      "Considering contrast",
+      "Hardcoding colors throughout many composables",
+      "Using `colorScheme`"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which feature can adapt the theme palette on supported Android devices?",
+    "options": [
+      "Dynamic color",
+      "Room migration",
+      "Pointer input",
+      "ViewModelScope"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which role is used for content placed on top of a primary-colored container?",
+    "options": [
+      "onPrimary",
+      "onRoute",
+      "onMutableList",
+      "onCanvas"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Compose design systems and Material 3 docs",
+      "Only baseline profile docs",
+      "Only WorkManager docs",
+      "Only Firebase docs"
+    ],
+    "ans": "a"
+  }
+]

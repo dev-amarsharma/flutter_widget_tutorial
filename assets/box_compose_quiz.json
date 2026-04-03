@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the main purpose of `Box` in Compose?",
+    "options": [
+      "To stack elements on top of each other",
+      "To create a database",
+      "To navigate between screens",
+      "To log analytics events"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which layout is usually better when children should appear vertically one after another?",
+    "options": [
+      "Box",
+      "Column",
+      "Canvas",
+      "Dialog"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which layout is usually better when children should appear horizontally?",
+    "options": [
+      "Row",
+      "Box",
+      "Surface",
+      "Scaffold"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common real-world use of `Box`?",
+    "options": [
+      "Overlaying an icon on an image",
+      "Running Retrofit requests",
+      "Creating product flavors",
+      "Saving Room entities"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How can you align a child inside a `Box`?",
+    "options": [
+      "Using `Modifier.align(...)`",
+      "Using `Dispatchers.IO`",
+      "Using `rememberNavController()`",
+      "Using `@Entity`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good reason to choose `Box` over `Row` or `Column`?",
+    "options": [
+      "Children must overlap",
+      "The app uses Kotlin",
+      "The screen has text",
+      "The app uses coroutines"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about `Box` is true?",
+    "options": [
+      "It is for layered content",
+      "It only supports one child",
+      "It is deprecated in Compose",
+      "It is only for widgets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when using `Box`?",
+    "options": [
+      "Using it for overlap",
+      "Using it when a `Row` or `Column` would express structure more clearly",
+      "Combining it with alignment modifiers",
+      "Using it for badges"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which official docs best describe `Box`?",
+    "options": [
+      "Compose layout basics docs",
+      "Only WorkManager docs",
+      "Only Firebase docs",
+      "Only App Bundle docs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does Android emphasize about standard Compose layouts like `Box`, `Row`, and `Column`?",
+    "options": [
+      "They are common building blocks for straightforward UI layout",
+      "They only work in previews",
+      "They replace Material components entirely",
+      "They are only for desktop apps"
+    ],
+    "ans": "a"
+  }
+]

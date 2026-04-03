@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which startup mode is usually the slowest and should be optimized first?",
+    "options": [
+      "Hot start",
+      "Warm start",
+      "Cold start",
+      "Instant start"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a cold start?",
+    "options": [
+      "The app is already visible in the foreground",
+      "The app process is not in memory and must start from scratch",
+      "The app has no internet connection",
+      "The device is physically cold"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which Android library is recommended for measuring startup timing in benchmarks?",
+    "options": [
+      "Macrobenchmark",
+      "Navigation",
+      "Paging",
+      "Glance"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which build type should you use for realistic performance testing?",
+    "options": [
+      "Debug builds only",
+      "Release builds",
+      "Unit test builds only",
+      "Preview builds only"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does the Jetpack App Startup library help with?",
+    "options": [
+      "Animating composables",
+      "Consolidating and ordering startup initialization",
+      "Writing SQL queries",
+      "Replacing activities"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why is tracing startup useful?",
+    "options": [
+      "It shows what work happens during launch so bottlenecks can be identified",
+      "It removes the need for measurement",
+      "It disables main-thread work",
+      "It replaces profiling entirely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is a recommended startup optimization?",
+    "options": [
+      "Do all network and disk work before the first frame",
+      "Defer noncritical work until after the app is usable",
+      "Load every large image at startup",
+      "Benchmark only on debug builds"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does `reportFullyDrawn()` help communicate?",
+    "options": [
+      "That the app is fully drawn and ready for timing/reporting purposes",
+      "That the database migration finished",
+      "That analytics consent was granted",
+      "That the app entered Doze mode"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which performance tool is explicitly recommended for startup timing traces and benchmarking?",
+    "options": [
+      "Perfetto and Macrobenchmark",
+      "Only LiveData",
+      "Only Room inspector",
+      "Only Compose Preview"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when working on startup performance?",
+    "options": [
+      "Using traces and release builds",
+      "Deferring unnecessary work",
+      "Optimizing without measurement or focusing only on debug builds",
+      "Testing cold startup"
+    ],
+    "ans": "c"
+  }
+]

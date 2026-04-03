@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What are Kotlin data classes primarily used for?",
+    "options": [
+      "Holding data",
+      "Creating Gradle plugins only",
+      "Drawing Compose layouts",
+      "Defining AndroidManifest entries"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function is automatically generated for a Kotlin data class?",
+    "options": [
+      "copy()",
+      "navigate()",
+      "measure()",
+      "inflate()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of these is also generated automatically for a data class?",
+    "options": [
+      "equals() and hashCode()",
+      "startActivity()",
+      "onCreate()",
+      "launch()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is required for the primary constructor of a data class?",
+    "options": [
+      "At least one parameter marked `val` or `var`",
+      "No parameters at all",
+      "Only mutable parameters",
+      "Only private parameters"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can a data class be `abstract`?",
+    "options": [
+      "No",
+      "Yes",
+      "Only with one property",
+      "Only in Java interop"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of copy does `copy()` create?",
+    "options": [
+      "A shallow copy",
+      "A guaranteed deep copy",
+      "No copy at all",
+      "A database snapshot"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should you be careful with mutable objects inside data classes?",
+    "options": [
+      "Copies can still share references to those mutable objects",
+      "The compiler forbids them",
+      "They disable equals()",
+      "They remove destructuring support"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with data classes?",
+    "options": [
+      "Using them for value-like models",
+      "Assuming `copy()` performs a deep copy",
+      "Using immutable constructor properties",
+      "Using `copy()` for state updates"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which declaration is a valid data class?",
+    "options": [
+      "data class User(val name: String)",
+      "data class User()",
+      "data abstract class User(val name: String)",
+      "data class User(name: String)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Kotlin data classes and classes docs",
+      "Only Compose Canvas docs",
+      "Only app startup docs",
+      "Only CI docs"
+    ],
+    "ans": "a"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the main goal of battery optimization in Android apps?",
+    "options": [
+      "To maximize background work regardless of need",
+      "To perform useful work while minimizing unnecessary power usage",
+      "To disable networking entirely",
+      "To replace performance testing"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which issue is a core Android vitals concern related to battery for apps?",
+    "options": [
+      "Excessive partial wake locks",
+      "Too many font files",
+      "Too many sealed classes",
+      "Too many Compose previews"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which of the following is a common battery drain source?",
+    "options": [
+      "Repeated unnecessary background polling",
+      "Using `val` instead of `var`",
+      "Writing data classes",
+      "Adding comments to code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is WorkManager often preferred for background work?",
+    "options": [
+      "It integrates with Android scheduling behavior and helps avoid custom inefficient loops",
+      "It animates the UI",
+      "It replaces Retrofit",
+      "It disables standby buckets"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should you do with wake locks?",
+    "options": [
+      "Hold them indefinitely for reliability",
+      "Release them as soon as possible",
+      "Use them on every screen",
+      "Store them in the manifest"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How can Android system state affect background work?",
+    "options": [
+      "It cannot affect it at all",
+      "The system can defer or limit work based on power state and app state",
+      "It only affects XML layouts",
+      "It only affects Firebase analytics"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which behavior is better for battery life?",
+    "options": [
+      "Batching background work when possible",
+      "Running exact alarms constantly",
+      "Polling the server every few seconds",
+      "Keeping radios active without need"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should developers monitor Android vitals?",
+    "options": [
+      "To understand app quality issues including battery-related bad behaviors",
+      "To replace local testing",
+      "To compile the app",
+      "To generate navigation routes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake in battery optimization?",
+    "options": [
+      "Reducing unnecessary background work",
+      "Releasing wake locks promptly",
+      "Scheduling too many frequent jobs or alarms",
+      "Using system scheduling tools"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "Android vitals and power management docs",
+      "Only Compose animation docs",
+      "Only Firebase docs",
+      "Only Navigation docs"
+    ],
+    "ans": "a"
+  }
+]

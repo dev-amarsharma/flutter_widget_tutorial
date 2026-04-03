@@ -1,51 +1,101 @@
 [
   {
-    "que": "Hilt Dependency Injection: which statement is most accurate?",
+    "que": "What is Hilt?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "Android’s recommended DI library built on Dagger",
+      "A graphics API",
+      "A navigation component",
+      "A database engine"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `@HiltAndroidApp` annotate?",
+    "options": [
+      "The Application class",
+      "Only a Fragment",
+      "Only a DAO",
+      "Only a composable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `@HiltAndroidApp` trigger?",
+    "options": [
+      "Code generation for the application-level dependency container",
+      "Flow collection",
+      "Grid rendering",
+      "App store upload"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation marks Android classes that receive Hilt injection?",
+    "options": [
+      "@AndroidEntryPoint",
+      "@Composable",
+      "@Entity",
+      "@Serializable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When do you usually need a Hilt module with `@Provides` or `@Binds`?",
+    "options": [
+      "When Hilt cannot constructor-inject a type directly",
+      "For every class automatically",
+      "Only for enums",
+      "Only for Compose UI"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good Hilt practice?",
+    "options": [
+      "Prefer constructor injection where possible",
+      "Always use field injection first",
+      "Put all bindings in one giant module without scopes",
+      "Avoid thinking about component lifetimes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `@InstallIn(...)` define for a Hilt module?",
+    "options": [
+      "Which generated component the bindings belong to",
+      "Which app store to publish to",
+      "Which coroutine dispatcher to use",
+      "Which icon style to load"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common Hilt mistake?",
+    "options": [
+      "Aligning bindings with component lifetimes",
+      "Installing modules in the wrong component",
+      "Using constructor injection thoughtfully",
+      "Adding qualifiers when needed"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Hilt Dependency Injection?",
+    "que": "Why are qualifiers sometimes needed in Hilt?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "To distinguish multiple bindings of the same type",
+      "To enable recomposition",
+      "To define draw layers",
+      "To replace generics"
     ],
-    "ans": "c"
+    "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Hilt Dependency Injection?",
+    "que": "Which official docs best support this topic?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "After studying Hilt Dependency Injection, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Hilt Android and Android DI docs",
+      "Only Espresso docs",
+      "Only Flow docs",
+      "Only grid docs"
     ],
     "ans": "a"
   }

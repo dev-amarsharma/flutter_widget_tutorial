@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which loops does Kotlin support directly?",
+    "options": [
+      "`for`, `while`, and `do-while`",
+      "`foreach`, `repeat-until`, and `loop`",
+      "`switch-loop` only",
+      "Only `for`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the most common loop for iterating over collections in idiomatic Kotlin?",
+    "options": [
+      "`for`",
+      "`do-while`",
+      "`goto`",
+      "`switch`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which operator creates a closed range in Kotlin?",
+    "options": [
+      "`..`",
+      "`->`",
+      "`=>`",
+      "`::`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `downTo` help with?",
+    "options": [
+      "Iterating in reverse order",
+      "Creating a nullable list",
+      "Declaring a sealed class",
+      "Starting a coroutine"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `step` do in a range loop?",
+    "options": [
+      "Changes the increment between values",
+      "Adds padding to a layout",
+      "Starts a new function scope",
+      "Stops the loop immediately"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which approach is commonly used when you need both index and value in a loop?",
+    "options": [
+      "`withIndex()`",
+      "`lazy`",
+      "`lateinit`",
+      "`when`"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the key difference between `while` and `do-while`?",
+    "options": [
+      "`do-while` runs its body at least once before checking the condition",
+      "`while` always runs once even if false",
+      "`do-while` cannot use a condition",
+      "`while` only works with ranges"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `break` do in a loop?",
+    "options": [
+      "Terminates the nearest enclosing loop",
+      "Skips to the next iteration only",
+      "Restarts the loop",
+      "Returns a value from the file"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does `continue` do in a loop?",
+    "options": [
+      "Skips to the next iteration",
+      "Ends the entire function",
+      "Creates a new iterator",
+      "Converts a range into a list"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with loops in Kotlin?",
+    "options": [
+      "Using a more complex loop style when a clearer `for` loop would work",
+      "Iterating over a collection with `for`",
+      "Using `withIndex()` when needed",
+      "Using ranges for iteration"
+    ],
+    "ans": "a"
+  }
+]

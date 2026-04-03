@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does `collectAsState()` do in Compose?",
+    "options": [
+      "Collects a Flow and exposes the latest value as Compose State",
+      "Creates a Room database",
+      "Builds a navigation graph",
+      "Compiles a baseline profile"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is `collectAsState()` useful?",
+    "options": [
+      "It allows Compose to automatically recompose when stream values change",
+      "It removes all coroutine usage",
+      "It makes flows synchronous",
+      "It replaces ViewModel"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API does Android recommend for Flow collection in Android UI code?",
+    "options": [
+      "collectAsStateWithLifecycle()",
+      "collectAsState() only",
+      "observeForever()",
+      "runBlocking()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is `collectAsState()` still the right choice?",
+    "options": [
+      "For platform-agnostic Compose code",
+      "Only for Room entities",
+      "Only for XML layouts",
+      "Only for testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What kind of source does `collectAsState()` commonly consume?",
+    "options": [
+      "Flow",
+      "Manifest file",
+      "Drawable resource",
+      "APK bundle"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where should state streams usually come from?",
+    "options": [
+      "A ViewModel or state holder",
+      "Random global mutable variables",
+      "Only inside the composable body",
+      "Only from XML attributes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with Flow in Compose?",
+    "options": [
+      "Converting it to State for UI usage",
+      "Exposing UI-friendly streams",
+      "Starting expensive stream logic directly in the composable body",
+      "Using a ViewModel"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the returned value represent?",
+    "options": [
+      "The latest emitted value wrapped as Compose state",
+      "A NavController",
+      "A coroutine dispatcher",
+      "A baseline profile result"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why might an initial value be needed?",
+    "options": [
+      "To define what UI should show before the first emission when required",
+      "To enable Gradle sync",
+      "To create a button label",
+      "To install dependencies"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which official docs best support this topic?",
+    "options": [
+      "State in Compose and state-hoisting docs",
+      "Only app bundle docs",
+      "Only Canvas docs",
+      "Only battery docs"
+    ],
+    "ans": "a"
+  }
+]
