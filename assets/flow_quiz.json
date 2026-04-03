@@ -1,102 +1,102 @@
 [
   {
-    "que": "What does Kotlin Flow represent?",
+    "que": "In Flow, what is the primary goal?",
     "options": [
-      "An asynchronous stream of multiple values over time",
-      "A single immutable value only",
-      "A build variant",
-      "A custom layout API"
+      "emit asynchronous streams over time",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "avoid understanding requirements"
     ],
     "ans": "a"
   },
   {
-    "que": "What does it mean that flows are cold?",
+    "que": "Which API/concept is most central to Flow?",
     "options": [
-      "Their code does not run until they are collected",
-      "They only work offline",
-      "They run only on Dispatchers.IO",
-      "They are deprecated"
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "Flow"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "Which is a terminal Flow operator?",
+    "que": "What is a recommended best practice for Flow?",
     "options": [
-      "collect",
-      "map",
-      "filter",
-      "transform"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which are intermediate Flow operators?",
-    "options": [
-      "map and filter",
-      "collect and first only",
-      "launch and async",
-      "copy and data"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What starts a flow’s execution?",
-    "options": [
-      "A terminal operator such as `collect`",
-      "Declaring the function",
-      "Importing kotlinx.coroutines",
-      "Adding a ViewModel"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What happens when a cold flow is collected again?",
-    "options": [
-      "It starts fresh for that new collection",
-      "It cannot be collected twice",
-      "It becomes a hot stream automatically",
-      "It returns the old list directly"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a common Flow mistake?",
-    "options": [
-      "Remembering that flows are cold",
-      "Assuming a flow definition is already running eagerly",
-      "Using `collect`",
-      "Using `map`"
+      "mix unrelated responsibilities in one function",
+      "collect emissions in a coroutine",
+      "ignore edge/error states",
+      "optimize before verifying correctness"
     ],
     "ans": "b"
   },
   {
-    "que": "Which statement about Flow collection is true by default?",
+    "que": "Which is a common mistake when implementing Flow?",
     "options": [
-      "It is sequential unless special operators change that behavior",
-      "It is always parallel",
-      "It never suspends",
-      "It always runs on Main"
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "blocking thread while waiting for updates"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits Flow best?",
+    "options": [
+      "Use Flow only as theory with no implementation",
+      "Use Flow with clear state flow and testable logic",
+      "Use Flow while bypassing architecture boundaries",
+      "Use Flow and suppress all warnings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with Flow. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "copy an unknown snippet without context",
+      "skip running the app after changes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about Flow is most accurate?",
+    "options": [
+      "Flow should be applied identically in every layer",
+      "Flow is mainly about adding boilerplate",
+      "Flow is most effective when paired with clear ownership of state/data",
+      "Flow removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Flow, what would you flag?",
+    "options": [
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "traceable data flow between layers"
     ],
     "ans": "a"
   },
   {
-    "que": "Why is Flow useful?",
+    "que": "Which scenario is the strongest example of using Flow correctly?",
     "options": [
-      "It models asynchronous streams of changing values",
-      "It replaces all collections",
-      "It replaces Room and Retrofit entirely",
-      "It only works in tests"
+      "A small, working feature that demonstrates Flow in context",
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "an implementation with no error states"
     ],
     "ans": "a"
   },
   {
-    "que": "Which official doc best supports this topic?",
+    "que": "To learn Flow deeply, what should you do next?",
     "options": [
-      "Kotlin Flow documentation",
-      "Only fragment docs",
-      "Only Espresso docs",
-      "Only app bundle docs"
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using Flow patterns",
+      "skip verification to save time",
+      "avoid official references"
     ],
-    "ans": "a"
+    "ans": "b"
   }
 ]

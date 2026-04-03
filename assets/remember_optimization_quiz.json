@@ -1,52 +1,102 @@
 [
   {
-    "que": "Remember Optimization: which statement is most accurate?",
+    "que": "In remember Optimization, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Remember Optimization?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "avoid understanding requirements",
+      "skip state/data modeling",
+      "reduce unnecessary recomposition work",
+      "replace testing entirely"
     ],
     "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Remember Optimization?",
+    "que": "Which API/concept is most central to remember Optimization?",
     "options": [
-      "avoiding redundant work",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "derivedStateOf"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "After studying Remember Optimization, what should you do next?",
+    "que": "What is a recommended best practice for remember Optimization?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "keep stable parameters and memoize expensive work"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing remember Optimization?",
+    "options": [
+      "follow official docs for API usage",
+      "optimizing before measuring",
+      "write focused tests for behavior",
+      "keep boundaries clear"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "For production code, which approach fits remember Optimization best?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Use remember Optimization only as theory with no implementation",
+      "Use remember Optimization and suppress all warnings",
+      "Use remember Optimization while bypassing architecture boundaries",
+      "Use remember Optimization with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with remember Optimization. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/develop/ui/compose/performance) and implement a small sample",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about remember Optimization is most accurate?",
+    "options": [
+      "remember Optimization should be applied identically in every layer",
+      "remember Optimization is mainly about adding boilerplate",
+      "remember Optimization is most effective when paired with clear ownership of state/data",
+      "remember Optimization removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for remember Optimization, what would you flag?",
+    "options": [
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers",
+      "small pure functions with clear names"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using remember Optimization correctly?",
+    "options": [
+      "A small, working feature that demonstrates derivedStateOf in context",
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn remember Optimization deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using remember Optimization patterns",
+      "skip verification to save time",
+      "avoid official references"
+    ],
+    "ans": "b"
   }
 ]

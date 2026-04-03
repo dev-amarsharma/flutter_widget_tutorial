@@ -1,52 +1,102 @@
 [
   {
-    "que": "ProGuard and R8: which statement is most accurate?",
+    "que": "In R8 and ProGuard Rules, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "shrink/obfuscate/optimize release builds",
+      "skip state/data modeling"
     ],
-    "ans": "b"
+    "ans": "c"
   },
   {
-    "que": "What is the recommended learning level for ProGuard and R8?",
+    "que": "Which API/concept is most central to R8 and ProGuard Rules?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which concept is directly associated with ProGuard and R8?",
-    "options": [
-      "code shrinking and obfuscation",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "minifyEnabled",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks",
+      "random utility class name"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying ProGuard and R8, what should you do next?",
+    "que": "What is a recommended best practice for R8 and ProGuard Rules?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "add keep rules for reflection/serialization",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing R8 and ProGuard Rules?",
+    "options": [
+      "shipping debug builds to production",
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "For production code, which approach fits R8 and ProGuard Rules best?",
+    "options": [
+      "Use R8 and ProGuard Rules only as theory with no implementation",
+      "Use R8 and ProGuard Rules with clear state flow and testable logic",
+      "Use R8 and ProGuard Rules and suppress all warnings",
+      "Use R8 and ProGuard Rules while bypassing architecture boundaries"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "A teammate asks where to start with R8 and ProGuard Rules. What is best advice?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Read official docs (https://developer.android.com/build/shrink-code) and implement a small sample",
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which statement about R8 and ProGuard Rules is most accurate?",
+    "options": [
+      "R8 and ProGuard Rules is mainly about adding boilerplate",
+      "R8 and ProGuard Rules is most effective when paired with clear ownership of state/data",
+      "R8 and ProGuard Rules should be applied identically in every layer",
+      "R8 and ProGuard Rules removes the need for any testing"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "In a code review for R8 and ProGuard Rules, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using R8 and ProGuard Rules correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates minifyEnabled in context",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn R8 and ProGuard Rules deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using R8 and ProGuard Rules patterns",
+      "skip verification to save time"
+    ],
+    "ans": "c"
   }
 ]

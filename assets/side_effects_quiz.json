@@ -1,52 +1,102 @@
 [
   {
-    "que": "Side Effects: which statement is most accurate?",
+    "que": "In Side Effects in Compose, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Side Effects?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which concept is directly associated with Side Effects?",
-    "options": [
-      "effect handling",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "run work tied to composition lifecycle",
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Side Effects, what should you do next?",
+    "que": "Which API/concept is most central to Side Effects in Compose?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "LaunchedEffect / DisposableEffect"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Side Effects in Compose?",
+    "options": [
+      "optimize before verifying correctness",
+      "key effects correctly",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which is a common mistake when implementing Side Effects in Compose?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "keep boundaries clear",
+      "write focused tests for behavior",
+      "performing side effects directly in composable body",
+      "follow official docs for API usage"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Side Effects in Compose best?",
+    "options": [
+      "Use Side Effects in Compose and suppress all warnings",
+      "Use Side Effects in Compose only as theory with no implementation",
+      "Use Side Effects in Compose with clear state flow and testable logic",
+      "Use Side Effects in Compose while bypassing architecture boundaries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with Side Effects in Compose. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/develop/ui/compose/side-effects) and implement a small sample",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about Side Effects in Compose is most accurate?",
+    "options": [
+      "Side Effects in Compose is mainly about adding boilerplate",
+      "Side Effects in Compose should be applied identically in every layer",
+      "Side Effects in Compose is most effective when paired with clear ownership of state/data",
+      "Side Effects in Compose removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Side Effects in Compose, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Side Effects in Compose correctly?",
+    "options": [
+      "A small, working feature that demonstrates LaunchedEffect / DisposableEffect in context",
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "a slide deck with no runnable code"
     ],
     "ans": "a"
+  },
+  {
+    "que": "To learn Side Effects in Compose deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Side Effects in Compose patterns",
+      "skip verification to save time"
+    ],
+    "ans": "c"
   }
 ]

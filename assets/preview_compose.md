@@ -1,25 +1,32 @@
-# Preview Compose
+# Compose Preview
 
 ## Overview
-Preview Compose focuses on @Preview in the Jetpack Compose Basics path. It helps you build production-ready Android and Kotlin skills with smaller, testable steps.
+Compose Preview is a key topic for building reliable Android apps with Kotlin and Jetpack Compose.
 
-## When to use
-- When you are learning or applying compose concepts in this curriculum.
-- When the topics listed before this one in the track already make sense.
+## Learning goals
+- Understand what Compose Preview solves.
+- Know when to apply it in production code.
+- Avoid common implementation mistakes.
+
+## Key points
+- Start simple and keep responsibilities focused.
+- Prefer predictable state/data flow.
+- Validate behavior with tests and small iterations.
 
 ## Example
 ```kotlin
-val expanded = remember { mutableStateOf(false) }
+@Composable
+fun SampleScreen() {
+    // Apply Compose Preview here.
+}
 ```
 
-## Best practices
-- Keep examples small enough to understand in one read.
-- Connect this topic to the previous prerequisite before moving forward.
-- Validate behavior with tests or previews where the platform supports it.
-
 ## Common mistakes
-- Memorizing API names without understanding the lifecycle or state impact.
-- Skipping edge cases like nulls, cancellation, recomposition, or configuration changes.
+- Overcomplicating the first implementation.
+- Skipping edge cases and error handling.
+- Not measuring behavior (performance/tests) when needed.
 
-## Next step
-Complete the quiz file for this topic and implement a tiny sample in your project.
+## Official references
+- Primary: https://developer.android.com/develop/ui/compose/tooling/previews
+- Android docs hub: https://developer.android.com/
+- Kotlin docs hub: https://kotlinlang.org/docs/home.html

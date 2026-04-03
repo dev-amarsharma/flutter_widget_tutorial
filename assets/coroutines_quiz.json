@@ -1,102 +1,102 @@
 [
   {
-    "que": "What is a coroutine in Kotlin?",
+    "que": "In Coroutines, what is the primary goal?",
     "options": [
-      "A suspendable computation for asynchronous and concurrent code",
-      "A database schema",
-      "A navigation destination",
-      "A build variant"
+      "skip state/data modeling",
+      "replace testing entirely",
+      "write async code sequentially",
+      "avoid understanding requirements"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Why are coroutines considered lightweight compared with threads?",
+    "que": "Which API/concept is most central to Coroutines?",
     "options": [
-      "They can suspend without blocking a thread",
-      "They are always faster than any code",
-      "They do not need scopes",
-      "They only run on the main thread"
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "CoroutineScope.launch"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "Which keyword marks a suspending function?",
+    "que": "What is a recommended best practice for Coroutines?",
     "options": [
-      "suspend",
-      "async",
-      "mutable",
-      "static"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which Android guidance applies to coroutines?",
-    "options": [
-      "They are the recommended solution for asynchronous programming on Android",
-      "They are deprecated for Android UI work",
-      "They only work in tests",
-      "They replace Flow completely"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What does structured concurrency mean?",
-    "options": [
-      "Coroutines run within scopes with connected parent-child lifecycles",
-      "Every coroutine runs globally forever",
-      "Coroutines cannot be cancelled",
-      "Only one coroutine can exist at a time"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common coroutine builder?",
-    "options": [
-      "launch",
-      "inflate",
-      "render",
-      "measure"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which dispatcher is commonly used for blocking I/O work?",
-    "options": [
-      "Dispatchers.IO",
-      "Dispatchers.Main only",
-      "Dispatchers.None",
-      "Dispatchers.Render"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a common coroutine mistake?",
-    "options": [
-      "Using lifecycle-aware scopes",
-      "Launching unmanaged work in global scopes",
-      "Using suspend functions",
-      "Handling async work off the main thread"
+      "ignore edge/error states",
+      "structured concurrency with coroutine scopes",
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function"
     ],
     "ans": "b"
   },
   {
-    "que": "Why should Android apps avoid blocking the main thread?",
+    "que": "Which is a common mistake when implementing Coroutines?",
     "options": [
-      "Because it can make the app unresponsive",
-      "Because the compiler forbids UI",
-      "Because it disables recomposition",
-      "Because it breaks lists"
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "using GlobalScope for app logic",
+      "write focused tests for behavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Coroutines best?",
+    "options": [
+      "Use Coroutines and suppress all warnings",
+      "Use Coroutines only as theory with no implementation",
+      "Use Coroutines with clear state flow and testable logic",
+      "Use Coroutines while bypassing architecture boundaries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with Coroutines. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "copy an unknown snippet without context",
+      "skip running the app after changes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about Coroutines is most accurate?",
+    "options": [
+      "Coroutines is most effective when paired with clear ownership of state/data",
+      "Coroutines removes the need for any testing",
+      "Coroutines is mainly about adding boilerplate",
+      "Coroutines should be applied identically in every layer"
     ],
     "ans": "a"
   },
   {
-    "que": "Which official docs best support this topic?",
+    "que": "In a code review for Coroutines, what would you flag?",
     "options": [
-      "Kotlin coroutines docs and Android coroutines guide",
-      "Only Canvas docs",
-      "Only app bundle docs",
-      "Only Firebase docs"
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Coroutines correctly?",
+    "options": [
+      "A small, working feature that demonstrates CoroutineScope.launch in context",
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Coroutines deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Coroutines patterns"
+    ],
+    "ans": "d"
   }
 ]

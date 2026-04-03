@@ -1,52 +1,102 @@
 [
   {
-    "que": "Unit Testing: which statement is most accurate?",
+    "que": "In Unit Testing on Android, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "test business logic on JVM quickly"
     ],
-    "ans": "b"
+    "ans": "d"
   },
   {
-    "que": "What is the recommended learning level for Unit Testing?",
+    "que": "Which API/concept is most central to Unit Testing on Android?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "JUnit",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks",
+      "random utility class name"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a recommended best practice for Unit Testing on Android?",
+    "options": [
+      "mock dependencies and assert outcomes",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing Unit Testing on Android?",
+    "options": [
+      "requiring emulator for pure unit tests",
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "For production code, which approach fits Unit Testing on Android best?",
+    "options": [
+      "Use Unit Testing on Android while bypassing architecture boundaries",
+      "Use Unit Testing on Android and suppress all warnings",
+      "Use Unit Testing on Android only as theory with no implementation",
+      "Use Unit Testing on Android with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with Unit Testing on Android. What is best advice?",
+    "options": [
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/training/testing/local-tests) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Unit Testing on Android is most accurate?",
+    "options": [
+      "Unit Testing on Android should be applied identically in every layer",
+      "Unit Testing on Android removes the need for any testing",
+      "Unit Testing on Android is most effective when paired with clear ownership of state/data",
+      "Unit Testing on Android is mainly about adding boilerplate"
     ],
     "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Unit Testing?",
+    "que": "In a code review for Unit Testing on Android, what would you flag?",
     "options": [
-      "isolated business logic tests",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "traceable data flow between layers",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Unit Testing on Android correctly?",
+    "options": [
+      "A small, working feature that demonstrates JUnit in context",
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "a large refactor without tests"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying Unit Testing, what should you do next?",
+    "que": "To learn Unit Testing on Android deeply, what should you do next?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using Unit Testing on Android patterns",
+      "avoid official references",
+      "skip verification to save time"
     ],
     "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
-    ],
-    "ans": "a"
   }
 ]

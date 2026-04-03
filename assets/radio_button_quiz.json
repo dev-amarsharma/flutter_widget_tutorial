@@ -1,52 +1,102 @@
 [
   {
-    "que": "Radio Button: which statement is most accurate?",
+    "que": "In RadioButton in Compose, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "skip state/data modeling",
+      "avoid understanding requirements",
+      "select one option from a group",
+      "replace testing entirely"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to RadioButton in Compose?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "RadioButton"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for RadioButton in Compose?",
+    "options": [
+      "optimize before verifying correctness",
+      "hoist selected option state",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Radio Button?",
+    "que": "Which is a common mistake when implementing RadioButton in Compose?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "follow official docs for API usage",
+      "keep boundaries clear",
+      "using independent booleans for mutually exclusive choice",
+      "write focused tests for behavior"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Radio Button?",
+    "que": "For production code, which approach fits RadioButton in Compose best?",
     "options": [
-      "single-choice controls",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "After studying Radio Button, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "Use RadioButton in Compose while bypassing architecture boundaries",
+      "Use RadioButton in Compose with clear state flow and testable logic",
+      "Use RadioButton in Compose only as theory with no implementation",
+      "Use RadioButton in Compose and suppress all warnings"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "A teammate asks where to start with RadioButton in Compose. What is best advice?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/develop/ui/compose/components/radio-button) and implement a small sample",
+      "copy an unknown snippet without context"
     ],
-    "ans": "a"
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about RadioButton in Compose is most accurate?",
+    "options": [
+      "RadioButton in Compose removes the need for any testing",
+      "RadioButton in Compose is mainly about adding boilerplate",
+      "RadioButton in Compose should be applied identically in every layer",
+      "RadioButton in Compose is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for RadioButton in Compose, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using RadioButton in Compose correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates RadioButton in context",
+      "a large refactor without tests"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn RadioButton in Compose deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "avoid official references",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using RadioButton in Compose patterns"
+    ],
+    "ans": "d"
   }
 ]

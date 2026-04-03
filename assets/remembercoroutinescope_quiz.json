@@ -1,51 +1,101 @@
 [
   {
-    "que": "rememberCoroutineScope: which statement is most accurate?",
+    "que": "In rememberCoroutineScope, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "replace testing entirely",
+      "launch UI-triggered coroutines from composable",
+      "skip state/data modeling",
+      "avoid understanding requirements"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for rememberCoroutineScope?",
+    "que": "Which API/concept is most central to rememberCoroutineScope?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "rememberCoroutineScope",
+      "legacy XML-only patterns unrelated to this topic"
     ],
-    "ans": "b"
+    "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with rememberCoroutineScope?",
+    "que": "What is a recommended best practice for rememberCoroutineScope?",
     "options": [
-      "UI-scoped coroutine launching",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
+      "cancel work when composable leaves composition",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
     ],
     "ans": "a"
   },
   {
-    "que": "After studying rememberCoroutineScope, what should you do next?",
+    "que": "Which is a common mistake when implementing rememberCoroutineScope?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "creating unmanaged scopes in click handlers"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits rememberCoroutineScope best?",
+    "options": [
+      "Use rememberCoroutineScope and suppress all warnings",
+      "Use rememberCoroutineScope while bypassing architecture boundaries",
+      "Use rememberCoroutineScope with clear state flow and testable logic",
+      "Use rememberCoroutineScope only as theory with no implementation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with rememberCoroutineScope. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "Read official docs (https://developer.android.com/reference/kotlin/androidx/compose/runtime/package-summary#rememberCoroutineScope()) and implement a small sample",
+      "skip running the app after changes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about rememberCoroutineScope is most accurate?",
+    "options": [
+      "rememberCoroutineScope is most effective when paired with clear ownership of state/data",
+      "rememberCoroutineScope removes the need for any testing",
+      "rememberCoroutineScope should be applied identically in every layer",
+      "rememberCoroutineScope is mainly about adding boilerplate"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for rememberCoroutineScope, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "traceable data flow between layers"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "Which scenario is the strongest example of using rememberCoroutineScope correctly?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "A small, working feature that demonstrates rememberCoroutineScope in context",
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "a large refactor without tests"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn rememberCoroutineScope deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using rememberCoroutineScope patterns",
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references"
     ],
     "ans": "a"
   }

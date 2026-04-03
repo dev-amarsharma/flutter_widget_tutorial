@@ -1,52 +1,102 @@
 [
   {
-    "que": "Typography Compose: which statement is most accurate?",
+    "que": "In Typography in Compose, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "apply text styles consistently"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which API/concept is most central to Typography in Compose?",
+    "options": [
+      "random utility class name",
+      "MaterialTheme.typography",
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Typography Compose?",
+    "que": "What is a recommended best practice for Typography in Compose?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "use semantic text styles",
+      "optimize before verifying correctness"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Which concept is directly associated with Typography Compose?",
+    "que": "Which is a common mistake when implementing Typography in Compose?",
     "options": [
-      "type scales",
-      "hardware drivers",
-      "game engine shaders",
-      "spreadsheet macros"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "After studying Typography Compose, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "keep boundaries clear",
+      "hardcoding font sizes per screen",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "For production code, which approach fits Typography in Compose best?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "Use Typography in Compose with clear state flow and testable logic",
+      "Use Typography in Compose and suppress all warnings",
+      "Use Typography in Compose only as theory with no implementation",
+      "Use Typography in Compose while bypassing architecture boundaries"
     ],
     "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Typography in Compose. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/develop/ui/compose/designsystems/material3#typography) and implement a small sample",
+      "copy an unknown snippet without context"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Typography in Compose is most accurate?",
+    "options": [
+      "Typography in Compose is most effective when paired with clear ownership of state/data",
+      "Typography in Compose removes the need for any testing",
+      "Typography in Compose should be applied identically in every layer",
+      "Typography in Compose is mainly about adding boilerplate"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for Typography in Compose, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Typography in Compose correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates MaterialTheme.typography in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Typography in Compose deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Typography in Compose patterns"
+    ],
+    "ans": "d"
   }
 ]

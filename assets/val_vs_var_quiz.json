@@ -1,122 +1,102 @@
 [
   {
-    "que": "Which Kotlin keyword declares a read-only reference?",
+    "que": "In val vs var in Kotlin, what is the primary goal?",
     "options": [
-      "var",
+      "prefer immutable references by default",
+      "replace testing entirely",
+      "avoid understanding requirements",
+      "skip state/data modeling"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to val vs var in Kotlin?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
       "val",
-      "let",
-      "const"
+      "manual polling loop for all tasks",
+      "random utility class name"
     ],
     "ans": "b"
   },
   {
-    "que": "Which keyword should you use when a value must be reassigned later?",
+    "que": "What is a recommended best practice for val vs var in Kotlin?",
     "options": [
-      "val",
-      "var",
-      "fun",
-      "class"
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness",
+      "ignore edge/error states",
+      "use var only when reassignment is required"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing val vs var in Kotlin?",
+    "options": [
+      "keep boundaries clear",
+      "declaring everything var by habit",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
     ],
     "ans": "b"
   },
   {
-    "que": "What happens if you try to reassign a `val` variable?",
+    "que": "For production code, which approach fits val vs var in Kotlin best?",
     "options": [
-      "It fails to compile",
-      "It works only in Android Studio",
-      "It works once per function",
-      "It becomes nullable"
+      "Use val vs var in Kotlin while bypassing architecture boundaries",
+      "Use val vs var in Kotlin with clear state flow and testable logic",
+      "Use val vs var in Kotlin only as theory with no implementation",
+      "Use val vs var in Kotlin and suppress all warnings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with val vs var in Kotlin. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "Read official docs (https://kotlinlang.org/docs/basic-syntax.html#variables) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about val vs var in Kotlin is most accurate?",
+    "options": [
+      "val vs var in Kotlin is most effective when paired with clear ownership of state/data",
+      "val vs var in Kotlin removes the need for any testing",
+      "val vs var in Kotlin is mainly about adding boilerplate",
+      "val vs var in Kotlin should be applied identically in every layer"
     ],
     "ans": "a"
   },
   {
-    "que": "Which statement about `val` is correct?",
+    "que": "In a code review for val vs var in Kotlin, what would you flag?",
     "options": [
-      "`val` makes every object fully immutable",
-      "`val` prevents reassignment of the reference",
-      "`val` can be reassigned inside loops",
-      "`val` only works with strings"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Given `val items = mutableListOf(1, 2)`, which operation is valid?",
-    "options": [
-      "items = mutableListOf(3)",
-      "items = null",
-      "items.add(3)",
-      "items++"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which choice is the best default in most Kotlin code?",
-    "options": [
-      "Always use `var` for flexibility",
-      "Use `val` unless reassignment is required",
-      "Never declare local variables",
-      "Use `var` for all constructor properties"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which constructor property is mutable?",
-    "options": [
-      "`class User(val id: String)`",
-      "`class User(name: String)`",
-      "`class User(var name: String)`",
-      "`class User(fun name: String)`"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which example should usually be a `val` in Compose?",
-    "options": [
-      "A computed label from function parameters",
-      "A counter intentionally reassigned in imperative logic",
-      "A mutable index stored for updates",
-      "A retry count changed after failures"
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers"
     ],
     "ans": "a"
   },
   {
-    "que": "Why can overusing `var` make code harder to maintain?",
+    "que": "Which scenario is the strongest example of using val vs var in Kotlin correctly?",
     "options": [
-      "It disables null safety",
-      "It prevents object construction",
-      "It increases accidental mutation and makes data flow harder to track",
-      "It breaks type inference"
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates val in context"
     ],
-    "ans": "c"
+    "ans": "d"
   },
   {
-    "que": "Which statement is valid Kotlin syntax?",
+    "que": "To learn val vs var in Kotlin deeply, what should you do next?",
     "options": [
-      "var score Int = 10",
-      "val score = 10",
-      "mutable score = 10",
-      "int score = 10"
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using val vs var in Kotlin patterns",
+      "skip verification to save time",
+      "avoid official references"
     ],
     "ans": "b"
-  },
-  {
-    "que": "If you need a truly immutable collection, what should you consider in addition to using `val`?",
-    "options": [
-      "Only using top-level properties",
-      "Using an immutable data structure",
-      "Using `lateinit`",
-      "Using `open` classes"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which official sources best explain `val` and `var` behavior?",
-    "options": [
-      "Kotlin basic syntax, properties, and classes documentation",
-      "Only AndroidManifest.xml",
-      "Only Gradle plugin docs",
-      "Only Play Store policy docs"
-    ],
-    "ans": "a"
   }
 ]
