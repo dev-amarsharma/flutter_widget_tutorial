@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+
 import '../models/catalog_section.dart';
 import '../models/topic_manifest.dart';
 import 'app_config_service.dart';
@@ -249,7 +253,7 @@ class CatalogService {
 
       final fallbackSections =
           appConfigService.config.features.enableLegacyCatalogFallback
-          ? _legacySectionsExcluding(manifestAssetPaths)
+          ? await _loadLegacySectionsExcluding(manifestAssetPaths)
           : const <CatalogSection>[];
       if (manifestSections.isEmpty) {
         return fallbackSections;
@@ -258,18 +262,25 @@ class CatalogService {
       return [...manifestSections, ...fallbackSections];
     } catch (_) {
       if (appConfigService.config.features.enableLegacyCatalogFallback) {
-        return _legacySectionsExcluding(const <String>{});
+        return _loadLegacySectionsExcluding(const <String>{});
       }
       return const <CatalogSection>[];
     }
   }
 
-  List<CatalogSection> _legacySectionsExcluding(Set<String> excludedAssetPaths) {
+  Future<List<CatalogSection>> _loadLegacySectionsExcluding(
+    Set<String> excludedAssetPaths,
+  ) async {
+    final availableAssets = await _loadAvailableAssetPaths();
     return legacyCatalog
         .map((section) {
           final items = (section['widgets'] as List<dynamic>)
               .map((item) => item as Map<String, dynamic>)
-              .where((item) => !excludedAssetPaths.contains(item['asset'] as String))
+              .where((item) {
+                final assetPath = item['asset'] as String;
+                return !excludedAssetPaths.contains(assetPath) &&
+                    availableAssets.contains(assetPath);
+              })
               .map(
                 (item) => CatalogItem(
                   name: item['name'] as String,
@@ -295,6 +306,12 @@ class CatalogService {
         })
         .whereType<CatalogSection>()
         .toList();
+  }
+
+  Future<Set<String>> _loadAvailableAssetPaths() async {
+    final rawManifest = await rootBundle.loadString('AssetManifest.json');
+    final decoded = jsonDecode(rawManifest) as Map<String, dynamic>;
+    return decoded.keys.toSet();
   }
 }
 

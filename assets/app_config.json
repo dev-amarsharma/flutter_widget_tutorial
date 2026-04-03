@@ -6,7 +6,7 @@
   "description": "Learn Flutter with structured lessons, quizzes, and progress tracking.",
   "playStoreUrl": "https://play.google.com/store/apps/details?id=digimonk.flutter.tutorial",
   "features": {
-    "enableLegacyCatalogFallback": true
+    "enableLegacyCatalogFallback": false
   },
   "theme": {
     "primary": "#FF8C00",
