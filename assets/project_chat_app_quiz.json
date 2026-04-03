@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Project: Chat App, what is the primary goal?",
+    "options": [
+      "replace testing entirely",
+      "skip state/data modeling",
+      "implement real-time messaging flows",
+      "avoid understanding requirements"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to Project: Chat App?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "message timeline + typing state",
+      "manual polling loop for all tasks"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for Project: Chat App?",
+    "options": [
+      "optimize before verifying correctness",
+      "ignore edge/error states",
+      "mix unrelated responsibilities in one function",
+      "model UI state and delivery states clearly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Project: Chat App?",
+    "options": [
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "ignoring offline/retry behavior",
+      "follow official docs for API usage"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits Project: Chat App best?",
+    "options": [
+      "Use Project: Chat App with clear state flow and testable logic",
+      "Use Project: Chat App and suppress all warnings",
+      "Use Project: Chat App while bypassing architecture boundaries",
+      "Use Project: Chat App only as theory with no implementation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Project: Chat App. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/jetpack/guide) and implement a small sample",
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about Project: Chat App is most accurate?",
+    "options": [
+      "Project: Chat App is mainly about adding boilerplate",
+      "Project: Chat App removes the need for any testing",
+      "Project: Chat App should be applied identically in every layer",
+      "Project: Chat App is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Project: Chat App, what would you flag?",
+    "options": [
+      "Code that hides failures instead of handling them explicitly",
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Project: Chat App correctly?",
+    "options": [
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates message timeline + typing state in context",
+      "a slide deck with no runnable code"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn Project: Chat App deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "skip verification to save time",
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Project: Chat App patterns"
+    ],
+    "ans": "d"
+  }
+]

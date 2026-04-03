@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Kotlin Ranges, what is the primary goal?",
+    "options": [
+      "avoid understanding requirements",
+      "skip state/data modeling",
+      "replace testing entirely",
+      "express intervals and progressions"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which API/concept is most central to Kotlin Ranges?",
+    "options": [
+      ".. / until / downTo",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a recommended best practice for Kotlin Ranges?",
+    "options": [
+      "ignore edge/error states",
+      "use step for progression stride",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing Kotlin Ranges?",
+    "options": [
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "looping with magic numbers everywhere"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits Kotlin Ranges best?",
+    "options": [
+      "Use Kotlin Ranges and suppress all warnings",
+      "Use Kotlin Ranges with clear state flow and testable logic",
+      "Use Kotlin Ranges while bypassing architecture boundaries",
+      "Use Kotlin Ranges only as theory with no implementation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with Kotlin Ranges. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "skip running the app after changes",
+      "Read official docs (https://kotlinlang.org/docs/ranges.html) and implement a small sample",
+      "copy an unknown snippet without context"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about Kotlin Ranges is most accurate?",
+    "options": [
+      "Kotlin Ranges should be applied identically in every layer",
+      "Kotlin Ranges removes the need for any testing",
+      "Kotlin Ranges is mainly about adding boilerplate",
+      "Kotlin Ranges is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Kotlin Ranges, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Kotlin Ranges correctly?",
+    "options": [
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "A small, working feature that demonstrates .. / until / downTo in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn Kotlin Ranges deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using Kotlin Ranges patterns",
+      "skip verification to save time",
+      "avoid official references",
+      "memorize definitions only"
+    ],
+    "ans": "a"
+  }
+]

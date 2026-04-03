@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In Project: E-commerce App, what is the primary goal?",
+    "options": [
+      "build catalog/cart/checkout flows",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "avoid understanding requirements"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to Project: E-commerce App?",
+    "options": [
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "product list + cart state"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Project: E-commerce App?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "separate domain rules from UI"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing Project: E-commerce App?",
+    "options": [
+      "write focused tests for behavior",
+      "coupling pricing logic to widget code",
+      "keep boundaries clear",
+      "follow official docs for API usage"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "For production code, which approach fits Project: E-commerce App best?",
+    "options": [
+      "Use Project: E-commerce App with clear state flow and testable logic",
+      "Use Project: E-commerce App while bypassing architecture boundaries",
+      "Use Project: E-commerce App only as theory with no implementation",
+      "Use Project: E-commerce App and suppress all warnings"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A teammate asks where to start with Project: E-commerce App. What is best advice?",
+    "options": [
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/topic/architecture) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Project: E-commerce App is most accurate?",
+    "options": [
+      "Project: E-commerce App should be applied identically in every layer",
+      "Project: E-commerce App removes the need for any testing",
+      "Project: E-commerce App is mainly about adding boilerplate",
+      "Project: E-commerce App is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for Project: E-commerce App, what would you flag?",
+    "options": [
+      "small pure functions with clear names",
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Project: E-commerce App correctly?",
+    "options": [
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates product list + cart state in context",
+      "an implementation with no error states"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn Project: E-commerce App deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Project: E-commerce App patterns",
+      "memorize definitions only",
+      "skip verification to save time"
+    ],
+    "ans": "b"
+  }
+]

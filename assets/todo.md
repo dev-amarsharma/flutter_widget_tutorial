@@ -1,26 +1,33 @@
-# Build a Todo App Project
+# Project: Todo App
 
 ## Overview
-Capstone project combining Room, ViewModel, Flow/State, and Compose screens.
+Project: Todo App is a key topic for building reliable Android apps with Kotlin and Jetpack Compose.
 
-## When to use
-- In production Android apps using Kotlin/Compose stacks.
-- As a foundational concept for advanced topics in the manifest path.
+## Learning goals
+- Understand what Project: Todo App solves.
+- Know when to apply it in production code.
+- Avoid common implementation mistakes.
+
+## Key points
+- Start simple and keep responsibilities focused.
+- Prefer predictable state/data flow.
+- Validate behavior with tests and small iterations.
 
 ## Example
-```kotlin
-data class Todo(val id: Int, val title: String, val done: Boolean)
-// Build add/list/toggle/delete features using MVVM + Room
+```text
+Feature checklist:
+1) Define requirements
+2) Design data + UI state
+3) Implement incrementally
+4) Add tests and polish
 ```
 
-## Best practices
-- Keep functions small and focused.
-- Prefer readable names and explicit intent.
-- Validate behavior with tests where possible.
-
 ## Common mistakes
-- Skipping state/error handling.
-- Mixing too many responsibilities in one layer.
+- Overcomplicating the first implementation.
+- Skipping edge cases and error handling.
+- Not measuring behavior (performance/tests) when needed.
 
-## Next step
-Complete the quiz file for this topic and implement a tiny sample in your project.
+## Official references
+- Primary: https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state
+- Android docs hub: https://developer.android.com/
+- Kotlin docs hub: https://kotlinlang.org/docs/home.html

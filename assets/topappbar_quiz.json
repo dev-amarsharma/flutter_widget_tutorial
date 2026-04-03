@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In TopAppBar in Compose, what is the primary goal?",
+    "options": [
+      "show app bar actions/navigation",
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "skip state/data modeling"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to TopAppBar in Compose?",
+    "options": [
+      "TopAppBar",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "manual polling loop for all tasks"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a recommended best practice for TopAppBar in Compose?",
+    "options": [
+      "ignore edge/error states",
+      "optimize before verifying correctness",
+      "connect with Scaffold topBar slot",
+      "mix unrelated responsibilities in one function"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake when implementing TopAppBar in Compose?",
+    "options": [
+      "placing critical actions off-screen",
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "keep boundaries clear"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "For production code, which approach fits TopAppBar in Compose best?",
+    "options": [
+      "Use TopAppBar in Compose while bypassing architecture boundaries",
+      "Use TopAppBar in Compose and suppress all warnings",
+      "Use TopAppBar in Compose only as theory with no implementation",
+      "Use TopAppBar in Compose with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with TopAppBar in Compose. What is best advice?",
+    "options": [
+      "Read official docs (https://developer.android.com/develop/ui/compose/components/app-bars) and implement a small sample",
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "avoid feedback from tests/review"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which statement about TopAppBar in Compose is most accurate?",
+    "options": [
+      "TopAppBar in Compose should be applied identically in every layer",
+      "TopAppBar in Compose is mainly about adding boilerplate",
+      "TopAppBar in Compose is most effective when paired with clear ownership of state/data",
+      "TopAppBar in Compose removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for TopAppBar in Compose, what would you flag?",
+    "options": [
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers",
+      "small pure functions with clear names"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using TopAppBar in Compose correctly?",
+    "options": [
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates TopAppBar in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn TopAppBar in Compose deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using TopAppBar in Compose patterns",
+      "avoid official references"
+    ],
+    "ans": "c"
+  }
+]

@@ -1,52 +1,102 @@
 [
   {
-    "que": "Flow: which statement is most accurate?",
+    "que": "In Flow, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended learning level for Flow?",
-    "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which concept is directly associated with Flow?",
-    "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "After studying Flow, what should you do next?",
-    "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Where is this topic mapped in this project?",
-    "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "emit asynchronous streams over time",
+      "replace testing entirely",
+      "skip state/data modeling",
+      "avoid understanding requirements"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to Flow?",
+    "options": [
+      "manual polling loop for all tasks",
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "Flow"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Flow?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "collect emissions in a coroutine",
+      "ignore edge/error states",
+      "optimize before verifying correctness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing Flow?",
+    "options": [
+      "follow official docs for API usage",
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "blocking thread while waiting for updates"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "For production code, which approach fits Flow best?",
+    "options": [
+      "Use Flow only as theory with no implementation",
+      "Use Flow with clear state flow and testable logic",
+      "Use Flow while bypassing architecture boundaries",
+      "Use Flow and suppress all warnings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with Flow. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "Read official docs (https://developer.android.com/) and implement a small sample",
+      "copy an unknown snippet without context",
+      "skip running the app after changes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which statement about Flow is most accurate?",
+    "options": [
+      "Flow should be applied identically in every layer",
+      "Flow is mainly about adding boilerplate",
+      "Flow is most effective when paired with clear ownership of state/data",
+      "Flow removes the need for any testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Flow, what would you flag?",
+    "options": [
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "traceable data flow between layers"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Flow correctly?",
+    "options": [
+      "A small, working feature that demonstrates Flow in context",
+      "a large refactor without tests",
+      "a slide deck with no runnable code",
+      "an implementation with no error states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "To learn Flow deeply, what should you do next?",
+    "options": [
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using Flow patterns",
+      "skip verification to save time",
+      "avoid official references"
+    ],
+    "ans": "b"
   }
 ]

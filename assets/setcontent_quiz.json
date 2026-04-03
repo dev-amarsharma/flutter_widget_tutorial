@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In setContent in Compose, what is the primary goal?",
+    "options": [
+      "replace testing entirely",
+      "set Compose UI as activity content",
+      "avoid understanding requirements",
+      "skip state/data modeling"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which API/concept is most central to setContent in Compose?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "setContent { }"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for setContent in Compose?",
+    "options": [
+      "mix unrelated responsibilities in one function",
+      "place root composable inside setContent",
+      "ignore edge/error states",
+      "optimize before verifying correctness"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake when implementing setContent in Compose?",
+    "options": [
+      "write focused tests for behavior",
+      "keep boundaries clear",
+      "mixing XML and Compose without migration plan",
+      "follow official docs for API usage"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "For production code, which approach fits setContent in Compose best?",
+    "options": [
+      "Use setContent in Compose only as theory with no implementation",
+      "Use setContent in Compose while bypassing architecture boundaries",
+      "Use setContent in Compose and suppress all warnings",
+      "Use setContent in Compose with clear state flow and testable logic"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "A teammate asks where to start with setContent in Compose. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/jetpack/compose/setup) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about setContent in Compose is most accurate?",
+    "options": [
+      "setContent in Compose is most effective when paired with clear ownership of state/data",
+      "setContent in Compose is mainly about adding boilerplate",
+      "setContent in Compose should be applied identically in every layer",
+      "setContent in Compose removes the need for any testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for setContent in Compose, what would you flag?",
+    "options": [
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "traceable data flow between layers"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using setContent in Compose correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "a large refactor without tests",
+      "A small, working feature that demonstrates setContent { } in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn setContent in Compose deeply, what should you do next?",
+    "options": [
+      "Build, test, profile (if needed), and iterate using setContent in Compose patterns",
+      "skip verification to save time",
+      "avoid official references",
+      "memorize definitions only"
+    ],
+    "ans": "a"
+  }
+]

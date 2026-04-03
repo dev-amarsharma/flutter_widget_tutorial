@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In TextField in Compose, what is the primary goal?",
+    "options": [
+      "capture user text input",
+      "skip state/data modeling",
+      "avoid understanding requirements",
+      "replace testing entirely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API/concept is most central to TextField in Compose?",
+    "options": [
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "legacy XML-only patterns unrelated to this topic",
+      "TextField"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for TextField in Compose?",
+    "options": [
+      "hoist value state and validate input",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness",
+      "ignore edge/error states"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake when implementing TextField in Compose?",
+    "options": [
+      "storing input only in local mutable vars",
+      "write focused tests for behavior",
+      "follow official docs for API usage",
+      "keep boundaries clear"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "For production code, which approach fits TextField in Compose best?",
+    "options": [
+      "Use TextField in Compose and suppress all warnings",
+      "Use TextField in Compose only as theory with no implementation",
+      "Use TextField in Compose with clear state flow and testable logic",
+      "Use TextField in Compose while bypassing architecture boundaries"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "A teammate asks where to start with TextField in Compose. What is best advice?",
+    "options": [
+      "skip running the app after changes",
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "Read official docs (https://developer.android.com/develop/ui/compose/text/user-input) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about TextField in Compose is most accurate?",
+    "options": [
+      "TextField in Compose is most effective when paired with clear ownership of state/data",
+      "TextField in Compose removes the need for any testing",
+      "TextField in Compose is mainly about adding boilerplate",
+      "TextField in Compose should be applied identically in every layer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "In a code review for TextField in Compose, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "Code that hides failures instead of handling them explicitly",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which scenario is the strongest example of using TextField in Compose correctly?",
+    "options": [
+      "a large refactor without tests",
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates TextField in context"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "To learn TextField in Compose deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "skip verification to save time",
+      "memorize definitions only",
+      "Build, test, profile (if needed), and iterate using TextField in Compose patterns"
+    ],
+    "ans": "d"
+  }
+]

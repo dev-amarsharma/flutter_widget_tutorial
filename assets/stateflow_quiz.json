@@ -1,0 +1,102 @@
+[
+  {
+    "que": "In StateFlow, what is the primary goal?",
+    "options": [
+      "avoid understanding requirements",
+      "replace testing entirely",
+      "expose observable state holder from ViewModel",
+      "skip state/data modeling"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to StateFlow?",
+    "options": [
+      "manual polling loop for all tasks",
+      "random utility class name",
+      "StateFlow",
+      "legacy XML-only patterns unrelated to this topic"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a recommended best practice for StateFlow?",
+    "options": [
+      "optimize before verifying correctness",
+      "mix unrelated responsibilities in one function",
+      "ignore edge/error states",
+      "collect as state in UI"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake when implementing StateFlow?",
+    "options": [
+      "keep boundaries clear",
+      "using cold flows for always-on UI state",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "For production code, which approach fits StateFlow best?",
+    "options": [
+      "Use StateFlow only as theory with no implementation",
+      "Use StateFlow with clear state flow and testable logic",
+      "Use StateFlow while bypassing architecture boundaries",
+      "Use StateFlow and suppress all warnings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "A teammate asks where to start with StateFlow. What is best advice?",
+    "options": [
+      "avoid feedback from tests/review",
+      "copy an unknown snippet without context",
+      "Read official docs (https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/) and implement a small sample",
+      "skip running the app after changes"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which statement about StateFlow is most accurate?",
+    "options": [
+      "StateFlow is mainly about adding boilerplate",
+      "StateFlow removes the need for any testing",
+      "StateFlow should be applied identically in every layer",
+      "StateFlow is most effective when paired with clear ownership of state/data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "In a code review for StateFlow, what would you flag?",
+    "options": [
+      "traceable data flow between layers",
+      "explicit modeling of UI/data states",
+      "small pure functions with clear names",
+      "Code that hides failures instead of handling them explicitly"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which scenario is the strongest example of using StateFlow correctly?",
+    "options": [
+      "an implementation with no error states",
+      "a slide deck with no runnable code",
+      "A small, working feature that demonstrates StateFlow in context",
+      "a large refactor without tests"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "To learn StateFlow deeply, what should you do next?",
+    "options": [
+      "avoid official references",
+      "skip verification to save time",
+      "Build, test, profile (if needed), and iterate using StateFlow patterns",
+      "memorize definitions only"
+    ],
+    "ans": "c"
+  }
+]

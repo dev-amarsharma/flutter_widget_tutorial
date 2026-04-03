@@ -1,52 +1,102 @@
 [
   {
-    "que": "Composable Functions: which statement is most accurate?",
+    "que": "In Composable, what is the primary goal?",
     "options": [
-      "It is unrelated to Android development",
-      "It is a core topic in this curriculum",
-      "It only applies to iOS",
-      "It replaces all other topics"
+      "skip state/data modeling",
+      "avoid understanding requirements",
+      "mark a function as UI",
+      "replace testing entirely"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which API/concept is most central to Composable?",
+    "options": [
+      "legacy XML-only patterns unrelated to this topic",
+      "random utility class name",
+      "manual polling loop for all tasks",
+      "@Composable"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a recommended best practice for Composable?",
+    "options": [
+      "ignore edge/error states",
+      "keeping composables small and stateless by default",
+      "mix unrelated responsibilities in one function",
+      "optimize before verifying correctness"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended learning level for Composable Functions?",
+    "que": "Which is a common mistake when implementing Composable?",
     "options": [
-      "beginner",
-      "intermediate",
-      "advanced",
-      "expert"
+      "doing network calls directly in composable body",
+      "keep boundaries clear",
+      "follow official docs for API usage",
+      "write focused tests for behavior"
     ],
     "ans": "a"
   },
   {
-    "que": "Which concept is directly associated with Composable Functions?",
+    "que": "For production code, which approach fits Composable best?",
     "options": [
-      "core concept",
-      "usage",
-      "hardware drivers",
-      "game engine shaders"
+      "Use Composable while bypassing architecture boundaries",
+      "Use Composable with clear state flow and testable logic",
+      "Use Composable only as theory with no implementation",
+      "Use Composable and suppress all warnings"
     ],
     "ans": "b"
   },
   {
-    "que": "After studying Composable Functions, what should you do next?",
+    "que": "A teammate asks where to start with Composable. What is best advice?",
     "options": [
-      "Ignore practice",
-      "Apply it in a sample feature",
-      "Delete tests",
-      "Avoid documentation"
+      "copy an unknown snippet without context",
+      "avoid feedback from tests/review",
+      "skip running the app after changes",
+      "Read official docs (https://developer.android.com/) and implement a small sample"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which statement about Composable is most accurate?",
+    "options": [
+      "Composable is mainly about adding boilerplate",
+      "Composable removes the need for any testing",
+      "Composable is most effective when paired with clear ownership of state/data",
+      "Composable should be applied identically in every layer"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "In a code review for Composable, what would you flag?",
+    "options": [
+      "small pure functions with clear names",
+      "explicit modeling of UI/data states",
+      "Code that hides failures instead of handling them explicitly",
+      "traceable data flow between layers"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which scenario is the strongest example of using Composable correctly?",
+    "options": [
+      "an implementation with no error states",
+      "A small, working feature that demonstrates @Composable in context",
+      "a slide deck with no runnable code",
+      "a large refactor without tests"
     ],
     "ans": "b"
   },
   {
-    "que": "Where is this topic mapped in this project?",
+    "que": "To learn Composable deeply, what should you do next?",
     "options": [
-      "assets/topics_manifest.json",
-      "README only",
-      "AndroidManifest.xml",
-      "pubspec.lock"
+      "avoid official references",
+      "Build, test, profile (if needed), and iterate using Composable patterns",
+      "memorize definitions only",
+      "skip verification to save time"
     ],
-    "ans": "a"
+    "ans": "b"
   }
 ]
