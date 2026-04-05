@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Project: Social App, what is the primary goal?",
+    "que": "Project Social App: which statement is most accurate?",
     "options": [
-      "skip state/data modeling",
-      "avoid understanding requirements",
-      "replace testing entirely",
-      "deliver feed/profile/interactions"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which API/concept is most central to Project: Social App?",
-    "options": [
-      "legacy XML-only patterns unrelated to this topic",
-      "random utility class name",
-      "manual polling loop for all tasks",
-      "paginated feed + actions"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a recommended best practice for Project: Social App?",
-    "options": [
-      "ignore edge/error states",
-      "optimize before verifying correctness",
-      "design for eventual consistency",
-      "mix unrelated responsibilities in one function"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake when implementing Project: Social App?",
-    "options": [
-      "follow official docs for API usage",
-      "write focused tests for behavior",
-      "blocking UI on each remote action",
-      "keep boundaries clear"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "For production code, which approach fits Project: Social App best?",
-    "options": [
-      "Use Project: Social App and suppress all warnings",
-      "Use Project: Social App while bypassing architecture boundaries",
-      "Use Project: Social App with clear state flow and testable logic",
-      "Use Project: Social App only as theory with no implementation"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "A teammate asks where to start with Project: Social App. What is best advice?",
-    "options": [
-      "avoid feedback from tests/review",
-      "Read official docs (https://developer.android.com/develop/ui/compose/navigation) and implement a small sample",
-      "skip running the app after changes",
-      "copy an unknown snippet without context"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "Which statement about Project: Social App is most accurate?",
+    "que": "What is the recommended learning level for Project Social App?",
     "options": [
-      "Project: Social App should be applied identically in every layer",
-      "Project: Social App is mainly about adding boilerplate",
-      "Project: Social App removes the need for any testing",
-      "Project: Social App is most effective when paired with clear ownership of state/data"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "d"
   },
   {
-    "que": "In a code review for Project: Social App, what would you flag?",
+    "que": "Which concept is directly associated with Project Social App?",
     "options": [
-      "Code that hides failures instead of handling them explicitly",
-      "small pure functions with clear names",
-      "explicit modeling of UI/data states",
-      "traceable data flow between layers"
+      "feed and interaction features",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
     "ans": "a"
   },
   {
-    "que": "Which scenario is the strongest example of using Project: Social App correctly?",
+    "que": "After studying Project Social App, what should you do next?",
     "options": [
-      "an implementation with no error states",
-      "a slide deck with no runnable code",
-      "a large refactor without tests",
-      "A small, working feature that demonstrates paginated feed + actions in context"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
-    "ans": "d"
+    "ans": "b"
   },
   {
-    "que": "To learn Project: Social App deeply, what should you do next?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "skip verification to save time",
-      "avoid official references",
-      "Build, test, profile (if needed), and iterate using Project: Social App patterns",
-      "memorize definitions only"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "c"
+    "ans": "a"
   }
 ]

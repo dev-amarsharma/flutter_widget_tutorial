@@ -5,7 +5,7 @@ import 'dart:io';
 
 /// Service class for managing banner ads
 class BannerAdService {
-  static const String _bannerAdUnitId = 'ca-app-pub-7287011693739626/9731422228';
+  static const String _bannerAdUnitId = 'ca-app-pub-7287011693739626/5033449413';
   
   // Ad unit ID getter - returns actual ad unit ID
   // For testing, you can temporarily replace with test IDs:

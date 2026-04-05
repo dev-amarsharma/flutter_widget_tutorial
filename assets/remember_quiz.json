@@ -1,102 +1,52 @@
 [
   {
-    "que": "In remember in Compose, what is the primary goal?",
+    "que": "Remember: which statement is most accurate?",
     "options": [
-      "avoid understanding requirements",
-      "skip state/data modeling",
-      "store value across recompositions",
-      "replace testing entirely"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which API/concept is most central to remember in Compose?",
-    "options": [
-      "remember",
-      "manual polling loop for all tasks",
-      "legacy XML-only patterns unrelated to this topic",
-      "random utility class name"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a recommended best practice for remember in Compose?",
-    "options": [
-      "optimize before verifying correctness",
-      "keep ephemeral UI state in composition",
-      "mix unrelated responsibilities in one function",
-      "ignore edge/error states"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "Which is a common mistake when implementing remember in Compose?",
+    "que": "What is the recommended learning level for Remember?",
     "options": [
-      "expect remember to survive process death",
-      "write focused tests for behavior",
-      "follow official docs for API usage",
-      "keep boundaries clear"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "For production code, which approach fits remember in Compose best?",
-    "options": [
-      "Use remember in Compose and suppress all warnings",
-      "Use remember in Compose with clear state flow and testable logic",
-      "Use remember in Compose only as theory with no implementation",
-      "Use remember in Compose while bypassing architecture boundaries"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "b"
   },
   {
-    "que": "A teammate asks where to start with remember in Compose. What is best advice?",
+    "que": "Which concept is directly associated with Remember?",
     "options": [
-      "copy an unknown snippet without context",
-      "skip running the app after changes",
-      "avoid feedback from tests/review",
-      "Read official docs (https://developer.android.com/develop/ui/compose/state) and implement a small sample"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which statement about remember in Compose is most accurate?",
-    "options": [
-      "remember in Compose is mainly about adding boilerplate",
-      "remember in Compose should be applied identically in every layer",
-      "remember in Compose removes the need for any testing",
-      "remember in Compose is most effective when paired with clear ownership of state/data"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In a code review for remember in Compose, what would you flag?",
-    "options": [
-      "Code that hides failures instead of handling them explicitly",
-      "explicit modeling of UI/data states",
-      "small pure functions with clear names",
-      "traceable data flow between layers"
+      "remembered state",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
     "ans": "a"
   },
   {
-    "que": "Which scenario is the strongest example of using remember in Compose correctly?",
+    "que": "After studying Remember, what should you do next?",
     "options": [
-      "an implementation with no error states",
-      "a slide deck with no runnable code",
-      "A small, working feature that demonstrates remember in context",
-      "a large refactor without tests"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
-    "ans": "c"
+    "ans": "b"
   },
   {
-    "que": "To learn remember in Compose deeply, what should you do next?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "skip verification to save time",
-      "avoid official references",
-      "Build, test, profile (if needed), and iterate using remember in Compose patterns",
-      "memorize definitions only"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "c"
+    "ans": "a"
   }
 ]

@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Recomposition, what is the primary goal?",
+    "que": "Recomposition: which statement is most accurate?",
     "options": [
-      "replace testing entirely",
-      "re-run composables when observed state changes",
-      "skip state/data modeling",
-      "avoid understanding requirements"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "Which API/concept is most central to Recomposition?",
+    "que": "What is the recommended learning level for Recomposition?",
     "options": [
-      "recomposition",
-      "random utility class name",
-      "manual polling loop for all tasks",
-      "legacy XML-only patterns unrelated to this topic"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which concept is directly associated with Recomposition?",
+    "options": [
+      "recomposition behavior",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
     "ans": "a"
   },
   {
-    "que": "What is a recommended best practice for Recomposition?",
+    "que": "After studying Recomposition, what should you do next?",
     "options": [
-      "optimize before verifying correctness",
-      "ignore edge/error states",
-      "mix unrelated responsibilities in one function",
-      "read state as late as possible"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which is a common mistake when implementing Recomposition?",
-    "options": [
-      "follow official docs for API usage",
-      "write focused tests for behavior",
-      "keep boundaries clear",
-      "mutating state repeatedly during composition"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "For production code, which approach fits Recomposition best?",
-    "options": [
-      "Use Recomposition only as theory with no implementation",
-      "Use Recomposition while bypassing architecture boundaries",
-      "Use Recomposition with clear state flow and testable logic",
-      "Use Recomposition and suppress all warnings"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "A teammate asks where to start with Recomposition. What is best advice?",
-    "options": [
-      "avoid feedback from tests/review",
-      "copy an unknown snippet without context",
-      "skip running the app after changes",
-      "Read official docs (https://developer.android.com/develop/ui/compose/mental-model) and implement a small sample"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which statement about Recomposition is most accurate?",
-    "options": [
-      "Recomposition removes the need for any testing",
-      "Recomposition is most effective when paired with clear ownership of state/data",
-      "Recomposition is mainly about adding boilerplate",
-      "Recomposition should be applied identically in every layer"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
     "ans": "b"
   },
   {
-    "que": "In a code review for Recomposition, what would you flag?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "traceable data flow between layers",
-      "small pure functions with clear names",
-      "Code that hides failures instead of handling them explicitly",
-      "explicit modeling of UI/data states"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "c"
-  },
-  {
-    "que": "Which scenario is the strongest example of using Recomposition correctly?",
-    "options": [
-      "an implementation with no error states",
-      "a large refactor without tests",
-      "A small, working feature that demonstrates recomposition in context",
-      "a slide deck with no runnable code"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "To learn Recomposition deeply, what should you do next?",
-    "options": [
-      "skip verification to save time",
-      "memorize definitions only",
-      "Build, test, profile (if needed), and iterate using Recomposition patterns",
-      "avoid official references"
-    ],
-    "ans": "c"
+    "ans": "a"
   }
 ]

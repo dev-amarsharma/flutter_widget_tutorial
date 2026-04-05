@@ -1,33 +1,25 @@
-# Project: Social App
+# Project Social App
 
 ## Overview
-Project: Social App is a key topic for building reliable Android apps with Kotlin and Jetpack Compose.
+Project Social App focuses on feed and interaction features in the Real Projects path. It helps you build production-ready Android and Kotlin skills with smaller, testable steps.
 
-## Learning goals
-- Understand what Project: Social App solves.
-- Know when to apply it in production code.
-- Avoid common implementation mistakes.
-
-## Key points
-- Start simple and keep responsibilities focused.
-- Prefer predictable state/data flow.
-- Validate behavior with tests and small iterations.
+## When to use
+- When you are learning or applying project concepts in this curriculum.
+- When the topics listed before this one in the track already make sense.
 
 ## Example
-```text
-Feature checklist:
-1) Define requirements
-2) Design data + UI state
-3) Implement incrementally
-4) Add tests and polish
+```kotlin
+NavHost(navController, startDestination = "home")
 ```
 
-## Common mistakes
-- Overcomplicating the first implementation.
-- Skipping edge cases and error handling.
-- Not measuring behavior (performance/tests) when needed.
+## Best practices
+- Keep examples small enough to understand in one read.
+- Connect this topic to the previous prerequisite before moving forward.
+- Validate behavior with tests or previews where the platform supports it.
 
-## Official references
-- Primary: https://developer.android.com/develop/ui/compose/navigation
-- Android docs hub: https://developer.android.com/
-- Kotlin docs hub: https://kotlinlang.org/docs/home.html
+## Common mistakes
+- Memorizing API names without understanding the lifecycle or state impact.
+- Skipping edge cases like nulls, cancellation, recomposition, or configuration changes.
+
+## Next step
+Complete the quiz file for this topic and implement a tiny sample in your project.

@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Transition API in Compose, what is the primary goal?",
+    "que": "Transition API: which statement is most accurate?",
     "options": [
-      "skip state/data modeling",
-      "avoid understanding requirements",
-      "animate between UI states coherently",
-      "replace testing entirely"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which API/concept is most central to Transition API in Compose?",
-    "options": [
-      "legacy XML-only patterns unrelated to this topic",
-      "random utility class name",
-      "updateTransition",
-      "manual polling loop for all tasks"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is a recommended best practice for Transition API in Compose?",
-    "options": [
-      "mix unrelated responsibilities in one function",
-      "optimize before verifying correctness",
-      "animate related properties together",
-      "ignore edge/error states"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake when implementing Transition API in Compose?",
-    "options": [
-      "write focused tests for behavior",
-      "follow official docs for API usage",
-      "keep boundaries clear",
-      "animating every frame manually"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "For production code, which approach fits Transition API in Compose best?",
-    "options": [
-      "Use Transition API in Compose while bypassing architecture boundaries",
-      "Use Transition API in Compose and suppress all warnings",
-      "Use Transition API in Compose with clear state flow and testable logic",
-      "Use Transition API in Compose only as theory with no implementation"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "A teammate asks where to start with Transition API in Compose. What is best advice?",
-    "options": [
-      "copy an unknown snippet without context",
-      "Read official docs (https://developer.android.com/develop/ui/compose/animation/composables-modifiers) and implement a small sample",
-      "avoid feedback from tests/review",
-      "skip running the app after changes"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "Which statement about Transition API in Compose is most accurate?",
+    "que": "What is the recommended learning level for Transition API?",
     "options": [
-      "Transition API in Compose is mainly about adding boilerplate",
-      "Transition API in Compose should be applied identically in every layer",
-      "Transition API in Compose is most effective when paired with clear ownership of state/data",
-      "Transition API in Compose removes the need for any testing"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "c"
   },
   {
-    "que": "In a code review for Transition API in Compose, what would you flag?",
+    "que": "Which concept is directly associated with Transition API?",
     "options": [
-      "explicit modeling of UI/data states",
-      "Code that hides failures instead of handling them explicitly",
-      "small pure functions with clear names",
-      "traceable data flow between layers"
+      "coordinated transitions",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "After studying Transition API, what should you do next?",
+    "options": [
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
     "ans": "b"
   },
   {
-    "que": "Which scenario is the strongest example of using Transition API in Compose correctly?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "an implementation with no error states",
-      "A small, working feature that demonstrates updateTransition in context",
-      "a large refactor without tests",
-      "a slide deck with no runnable code"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "To learn Transition API in Compose deeply, what should you do next?",
-    "options": [
-      "avoid official references",
-      "memorize definitions only",
-      "skip verification to save time",
-      "Build, test, profile (if needed), and iterate using Transition API in Compose patterns"
-    ],
-    "ans": "d"
+    "ans": "a"
   }
 ]

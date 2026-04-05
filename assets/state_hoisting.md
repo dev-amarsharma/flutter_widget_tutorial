@@ -1,32 +1,27 @@
 # State Hoisting
 
 ## Overview
-State Hoisting is a key topic for building reliable Android apps with Kotlin and Jetpack Compose.
+State Hoisting focuses on state ownership in the State & Navigation path. It helps you build production-ready Android and Kotlin skills with smaller, testable steps.
 
-## Learning goals
-- Understand what State Hoisting solves.
-- Know when to apply it in production code.
-- Avoid common implementation mistakes.
-
-## Key points
-- Start simple and keep responsibilities focused.
-- Prefer predictable state/data flow.
-- Validate behavior with tests and small iterations.
+## When to use
+- When you are learning or applying architecture concepts in this curriculum.
+- When the topics listed before this one in the track already make sense.
 
 ## Example
 ```kotlin
-@Composable
-fun SampleScreen() {
-    // Apply State Hoisting here.
+interface UserRepository {
+  suspend fun loadUsers(): List<User>
 }
 ```
 
-## Common mistakes
-- Overcomplicating the first implementation.
-- Skipping edge cases and error handling.
-- Not measuring behavior (performance/tests) when needed.
+## Best practices
+- Keep examples small enough to understand in one read.
+- Connect this topic to the previous prerequisite before moving forward.
+- Validate behavior with tests or previews where the platform supports it.
 
-## Official references
-- Primary: https://developer.android.com/develop/ui/compose/state-hoisting
-- Android docs hub: https://developer.android.com/
-- Kotlin docs hub: https://kotlinlang.org/docs/home.html
+## Common mistakes
+- Memorizing API names without understanding the lifecycle or state impact.
+- Skipping edge cases like nulls, cancellation, recomposition, or configuration changes.
+
+## Next step
+Review `viewmodel_basics` next, then try the concept in a small sample.
