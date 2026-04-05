@@ -1,45 +1,42 @@
-# App Store Listing: Flutter Master
+# App Store Listing: Kotlin Compose Tutorial
 
 Use the following content for your Google Play Store listing.
 
 ## **App Name (30 characters max)**
-Flutter Widget Tutorial
+Kotlin Compose Tutorial
 
 ## **Short Description (80 characters max)**
-Master Flutter widgets with categorized guides, examples, and interactive quizzes.
+Learn Kotlin and Jetpack Compose with structured lessons, quizzes, and progress.
 
 ## **Full Description (4000 characters max)**
-🚀 **Master Flutter App Development with Ease!**
+Build a stronger Android foundation with Kotlin Compose Tutorial, a structured learning app focused on Kotlin, Jetpack Compose, Android fundamentals, architecture, testing, and release readiness.
 
-Are you looking to learn Flutter or sharpen your existing skills? **Flutter Master** is your ultimate companion for exploring the vast ecosystem of Flutter widgets. Whether you are a beginner starting your journey or an experienced developer looking for a quick reference, this app has everything you need.
+The app organizes its curriculum into 10 guided learning tracks with 160+ published topics, so you can move from basics to advanced concepts without jumping between scattered resources.
 
-**📚 Comprehensive Widget Catalog**
-Explore a well-organized library of Flutter widgets categorized for easy navigation:
-*   **Basic Widgets:** Text, Icon, Image, and more.
-*   **Layouts:** Row, Column, Stack, Wrap, and Container widgets.
-*   **Inputs & Forms:** TextField, Checkbox, Switch, and Form validation.
-*   **Buttons:** Elevated, Text, Outlined, and Floating Action Buttons.
-*   **Animations:** Implicit animations, Transitions, and Hero effects.
-*   **Navigation:** Routing, Bottom Navigation, Tabs, and Drawers.
-*   **Dialogs:** Alerts, SnackBars, and Bottom Sheets.
-*   **Cupertino:** iOS-style widgets for cross-platform fidelity.
+What you can do inside the app:
+* Read structured lessons for Kotlin foundations, Compose UI, state management, navigation, Android core APIs, data and networking, architecture, testing, performance, and real project ideas.
+* Open topic pages with level, category, type, estimated reading time, prerequisites, and related topics.
+* Practice with topic quizzes and category-level quiz flows to test what you learned.
+* Track your study progress with mark-as-read status, saved quiz scores, reading completion, and average quiz performance.
+* Search and filter the catalog to find lessons quickly.
+* Continue learning from locally bundled lesson content even when you are away from a connection.
 
-**🧠 Interactive Quizzes**
-Test your knowledge! Each widget category comes with a dedicated quiz to reinforce what you've learned. Challenge yourself and ensure you truly understand the concepts.
+Who this app is for:
+* Beginners starting Kotlin or Jetpack Compose.
+* Android developers refreshing fundamentals.
+* Interview candidates reviewing core Android and architecture concepts.
+* Learners who want a single mobile reference for study and self-testing.
 
-**GTD Progress Tracking**
-Stay motivated and track your learning journey:
-*   **Mark as Read:** Keep track of widgets you've studied.
-*   **Performance Dashboard:** Visualize your progress with detailed charts.
-*   **Quiz Scores:** Monitor your accuracy and improvement over time.
+Topics covered include:
+* Kotlin basics, collections, functions, generics, scope functions, and coroutines.
+* Compose UI elements, layouts, modifiers, theming, forms, dialogs, and navigation.
+* State, ViewModel, Flow, StateFlow, SharedFlow, and side effects.
+* Android permissions, intents, resources, build variants, and configuration changes.
+* Retrofit, Room, DataStore, pagination, offline-first patterns, and JSON handling.
+* MVVM, clean architecture, dependency injection, Hilt, modularization, and testing.
+* Performance profiling, startup optimization, Play Store release, analytics, and Crashlytics.
 
-**✨ Key Features**
-*   **Clean & Modern UI:** Built with Flutter, for Flutter developers.
-*   **Offline Access:** Browse documentation and take quizzes anywhere.
-*   **Code Examples:** Clear, concise usage examples for every widget.
-*   **Searchable List:** Find the widget you need in seconds.
-
-Start building beautiful, native-compiled applications today. **Download Flutter Master now and level up your Flutter skills!**
+If you want a practical Android learning companion with lessons, quizzes, and progress tracking in one place, Kotlin Compose Tutorial is built for that workflow.
 
 ---
 
@@ -52,4 +49,4 @@ Start building beautiful, native-compiled applications today. **Download Flutter
 *   **10-inch Tablet Screenshots:** At least 1 screenshot.
 
 ## **Keywords / Tags (Internal Use)**
-Flutter, Dart, Widget Catalog, Programming Tutorial, Coding Quiz, Learn Flutter, Mobile Development, Android Development, UI Toolkit, App Development Guide.
+Kotlin, Jetpack Compose, Android Tutorial, Android Quiz, Kotlin Quiz, Learn Android, Learn Kotlin, Compose Tutorial, Mobile Development, Android Architecture.

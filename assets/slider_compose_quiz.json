@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Slider in Compose, what is the primary goal?",
+    "que": "Slider Compose: which statement is most accurate?",
     "options": [
-      "select numeric value within range",
-      "skip state/data modeling",
-      "avoid understanding requirements",
-      "replace testing entirely"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended learning level for Slider Compose?",
+    "options": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "a"
   },
   {
-    "que": "Which API/concept is most central to Slider in Compose?",
+    "que": "Which concept is directly associated with Slider Compose?",
     "options": [
-      "random utility class name",
-      "manual polling loop for all tasks",
-      "Slider",
-      "legacy XML-only patterns unrelated to this topic"
+      "range selection",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
-    "ans": "c"
+    "ans": "a"
   },
   {
-    "que": "What is a recommended best practice for Slider in Compose?",
+    "que": "After studying Slider Compose, what should you do next?",
     "options": [
-      "ignore edge/error states",
-      "bind value and onValueChange state",
-      "mix unrelated responsibilities in one function",
-      "optimize before verifying correctness"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
     "ans": "b"
   },
   {
-    "que": "Which is a common mistake when implementing Slider in Compose?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "follow official docs for API usage",
-      "keep boundaries clear",
-      "write focused tests for behavior",
-      "using text input only for continuous adjustment"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "d"
-  },
-  {
-    "que": "For production code, which approach fits Slider in Compose best?",
-    "options": [
-      "Use Slider in Compose and suppress all warnings",
-      "Use Slider in Compose while bypassing architecture boundaries",
-      "Use Slider in Compose only as theory with no implementation",
-      "Use Slider in Compose with clear state flow and testable logic"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "A teammate asks where to start with Slider in Compose. What is best advice?",
-    "options": [
-      "avoid feedback from tests/review",
-      "skip running the app after changes",
-      "Read official docs (https://developer.android.com/develop/ui/compose/components/slider) and implement a small sample",
-      "copy an unknown snippet without context"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which statement about Slider in Compose is most accurate?",
-    "options": [
-      "Slider in Compose should be applied identically in every layer",
-      "Slider in Compose is mainly about adding boilerplate",
-      "Slider in Compose removes the need for any testing",
-      "Slider in Compose is most effective when paired with clear ownership of state/data"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "In a code review for Slider in Compose, what would you flag?",
-    "options": [
-      "explicit modeling of UI/data states",
-      "Code that hides failures instead of handling them explicitly",
-      "traceable data flow between layers",
-      "small pure functions with clear names"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which scenario is the strongest example of using Slider in Compose correctly?",
-    "options": [
-      "an implementation with no error states",
-      "a slide deck with no runnable code",
-      "A small, working feature that demonstrates Slider in context",
-      "a large refactor without tests"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "To learn Slider in Compose deeply, what should you do next?",
-    "options": [
-      "memorize definitions only",
-      "Build, test, profile (if needed), and iterate using Slider in Compose patterns",
-      "avoid official references",
-      "skip verification to save time"
-    ],
-    "ans": "b"
+    "ans": "a"
   }
 ]

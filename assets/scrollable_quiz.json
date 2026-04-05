@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Scrollable in Compose, what is the primary goal?",
+    "que": "Scrollable: which statement is most accurate?",
     "options": [
-      "replace testing entirely",
-      "allow content scrolling interaction",
-      "skip state/data modeling",
-      "avoid understanding requirements"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "Which API/concept is most central to Scrollable in Compose?",
+    "que": "What is the recommended learning level for Scrollable?",
     "options": [
-      "verticalScroll / LazyColumn",
-      "random utility class name",
-      "manual polling loop for all tasks",
-      "legacy XML-only patterns unrelated to this topic"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "a"
   },
   {
-    "que": "What is a recommended best practice for Scrollable in Compose?",
+    "que": "Which concept is directly associated with Scrollable?",
     "options": [
-      "ignore edge/error states",
-      "prefer lazy containers for large lists",
-      "optimize before verifying correctness",
-      "mix unrelated responsibilities in one function"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which is a common mistake when implementing Scrollable in Compose?",
-    "options": [
-      "keep boundaries clear",
-      "placing huge lists in non-lazy columns",
-      "write focused tests for behavior",
-      "follow official docs for API usage"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "For production code, which approach fits Scrollable in Compose best?",
-    "options": [
-      "Use Scrollable in Compose with clear state flow and testable logic",
-      "Use Scrollable in Compose only as theory with no implementation",
-      "Use Scrollable in Compose and suppress all warnings",
-      "Use Scrollable in Compose while bypassing architecture boundaries"
+      "scroll behavior",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
     "ans": "a"
   },
   {
-    "que": "A teammate asks where to start with Scrollable in Compose. What is best advice?",
+    "que": "After studying Scrollable, what should you do next?",
     "options": [
-      "avoid feedback from tests/review",
-      "Read official docs (https://developer.android.com/develop/ui/compose/touch-input/pointer-input/scroll) and implement a small sample",
-      "copy an unknown snippet without context",
-      "skip running the app after changes"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
     "ans": "b"
   },
   {
-    "que": "Which statement about Scrollable in Compose is most accurate?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "Scrollable in Compose should be applied identically in every layer",
-      "Scrollable in Compose removes the need for any testing",
-      "Scrollable in Compose is most effective when paired with clear ownership of state/data",
-      "Scrollable in Compose is mainly about adding boilerplate"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "In a code review for Scrollable in Compose, what would you flag?",
-    "options": [
-      "traceable data flow between layers",
-      "small pure functions with clear names",
-      "Code that hides failures instead of handling them explicitly",
-      "explicit modeling of UI/data states"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which scenario is the strongest example of using Scrollable in Compose correctly?",
-    "options": [
-      "A small, working feature that demonstrates verticalScroll / LazyColumn in context",
-      "a large refactor without tests",
-      "a slide deck with no runnable code",
-      "an implementation with no error states"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
     "ans": "a"
-  },
-  {
-    "que": "To learn Scrollable in Compose deeply, what should you do next?",
-    "options": [
-      "memorize definitions only",
-      "Build, test, profile (if needed), and iterate using Scrollable in Compose patterns",
-      "skip verification to save time",
-      "avoid official references"
-    ],
-    "ans": "b"
   }
 ]

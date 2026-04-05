@@ -1,34 +1,25 @@
-# Room Relationships
+# Room Relations
 
 ## Overview
-Room Relationships is a key topic for building reliable Android apps with Kotlin and Jetpack Compose.
+Room Relations focuses on Room relationships in the Data & Networking path. It helps you build production-ready Android and Kotlin skills with smaller, testable steps.
 
-## Learning goals
-- Understand what Room Relationships solves.
-- Know when to apply it in production code.
-- Avoid common implementation mistakes.
-
-## Key points
-- Start simple and keep responsibilities focused.
-- Prefer predictable state/data flow.
-- Validate behavior with tests and small iterations.
+## When to use
+- When you are learning or applying networking concepts in this curriculum.
+- When the topics listed before this one in the track already make sense.
 
 ## Example
 ```kotlin
-class ExampleRepository(
-    private val api: ExampleApi,
-    private val dao: ExampleDao
-) {
-    suspend fun refresh() { /* ... */ }
-}
+flow { emit(repository.fetch()) }
 ```
 
-## Common mistakes
-- Overcomplicating the first implementation.
-- Skipping edge cases and error handling.
-- Not measuring behavior (performance/tests) when needed.
+## Best practices
+- Keep examples small enough to understand in one read.
+- Connect this topic to the previous prerequisite before moving forward.
+- Validate behavior with tests or previews where the platform supports it.
 
-## Official references
-- Primary: https://developer.android.com/training/data-storage/room/relationships
-- Android docs hub: https://developer.android.com/
-- Kotlin docs hub: https://kotlinlang.org/docs/home.html
+## Common mistakes
+- Memorizing API names without understanding the lifecycle or state impact.
+- Skipping edge cases like nulls, cancellation, recomposition, or configuration changes.
+
+## Next step
+Complete the quiz file for this topic and implement a tiny sample in your project.

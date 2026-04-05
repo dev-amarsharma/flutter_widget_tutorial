@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Kotlin Type Inference, what is the primary goal?",
+    "que": "Type Inference: which statement is most accurate?",
     "options": [
-      "avoid understanding requirements",
-      "let compiler infer obvious types",
-      "skip state/data modeling",
-      "replace testing entirely"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "Which API/concept is most central to Kotlin Type Inference?",
+    "que": "What is the recommended learning level for Type Inference?",
     "options": [
-      "legacy XML-only patterns unrelated to this topic",
-      "manual polling loop for all tasks",
-      "type inference",
-      "random utility class name"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
-    "ans": "c"
+    "ans": "a"
   },
   {
-    "que": "What is a recommended best practice for Kotlin Type Inference?",
+    "que": "Which concept is directly associated with Type Inference?",
     "options": [
-      "optimize before verifying correctness",
-      "ignore edge/error states",
-      "add explicit types for public APIs",
-      "mix unrelated responsibilities in one function"
+      "compiler type inference",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
-    "ans": "c"
+    "ans": "a"
   },
   {
-    "que": "Which is a common mistake when implementing Kotlin Type Inference?",
+    "que": "After studying Type Inference, what should you do next?",
     "options": [
-      "keep boundaries clear",
-      "follow official docs for API usage",
-      "write focused tests for behavior",
-      "relying on unclear inferred types in interfaces"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "For production code, which approach fits Kotlin Type Inference best?",
-    "options": [
-      "Use Kotlin Type Inference and suppress all warnings",
-      "Use Kotlin Type Inference with clear state flow and testable logic",
-      "Use Kotlin Type Inference only as theory with no implementation",
-      "Use Kotlin Type Inference while bypassing architecture boundaries"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
     "ans": "b"
   },
   {
-    "que": "A teammate asks where to start with Kotlin Type Inference. What is best advice?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "skip running the app after changes",
-      "Read official docs (https://kotlinlang.org/docs/basic-types.html#type-inference) and implement a small sample",
-      "copy an unknown snippet without context",
-      "avoid feedback from tests/review"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "Which statement about Kotlin Type Inference is most accurate?",
-    "options": [
-      "Kotlin Type Inference removes the need for any testing",
-      "Kotlin Type Inference is most effective when paired with clear ownership of state/data",
-      "Kotlin Type Inference should be applied identically in every layer",
-      "Kotlin Type Inference is mainly about adding boilerplate"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In a code review for Kotlin Type Inference, what would you flag?",
-    "options": [
-      "traceable data flow between layers",
-      "small pure functions with clear names",
-      "Code that hides failures instead of handling them explicitly",
-      "explicit modeling of UI/data states"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which scenario is the strongest example of using Kotlin Type Inference correctly?",
-    "options": [
-      "a large refactor without tests",
-      "A small, working feature that demonstrates type inference in context",
-      "a slide deck with no runnable code",
-      "an implementation with no error states"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "To learn Kotlin Type Inference deeply, what should you do next?",
-    "options": [
-      "memorize definitions only",
-      "Build, test, profile (if needed), and iterate using Kotlin Type Inference patterns",
-      "skip verification to save time",
-      "avoid official references"
-    ],
-    "ans": "b"
+    "ans": "a"
   }
 ]

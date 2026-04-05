@@ -6,7 +6,7 @@ import 'dart:async';
 
 /// Service class for managing interstitial ads
 class InterstitialAdService {
-  static const String _interstitialAdUnitId = 'ca-app-pub-7287011693739626/7763734432';
+  static const String _interstitialAdUnitId = 'ca-app-pub-7287011693739626/5357611990';
   static const String _navigationCountKey = 'widget_page_navigation_count';
   
   InterstitialAd? _interstitialAd;

@@ -1,102 +1,52 @@
 [
   {
-    "que": "In State in Compose, what is the primary goal?",
+    "que": "State in Compose: which statement is most accurate?",
     "options": [
-      "avoid understanding requirements",
-      "skip state/data modeling",
-      "drive UI from immutable state snapshots",
-      "replace testing entirely"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which API/concept is most central to State in Compose?",
-    "options": [
-      "random utility class name",
-      "mutableStateOf",
-      "manual polling loop for all tasks",
-      "legacy XML-only patterns unrelated to this topic"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
     "ans": "b"
   },
   {
-    "que": "What is a recommended best practice for State in Compose?",
+    "que": "What is the recommended learning level for State in Compose?",
     "options": [
-      "ignore edge/error states",
-      "mix unrelated responsibilities in one function",
-      "single source of truth for UI state",
-      "optimize before verifying correctness"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake when implementing State in Compose?",
-    "options": [
-      "mutating random globals for rendering",
-      "write focused tests for behavior",
-      "keep boundaries clear",
-      "follow official docs for API usage"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "For production code, which approach fits State in Compose best?",
-    "options": [
-      "Use State in Compose with clear state flow and testable logic",
-      "Use State in Compose and suppress all warnings",
-      "Use State in Compose while bypassing architecture boundaries",
-      "Use State in Compose only as theory with no implementation"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "A teammate asks where to start with State in Compose. What is best advice?",
-    "options": [
-      "copy an unknown snippet without context",
-      "skip running the app after changes",
-      "avoid feedback from tests/review",
-      "Read official docs (https://developer.android.com/develop/ui/compose/state) and implement a small sample"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which statement about State in Compose is most accurate?",
-    "options": [
-      "State in Compose is most effective when paired with clear ownership of state/data",
-      "State in Compose removes the need for any testing",
-      "State in Compose should be applied identically in every layer",
-      "State in Compose is mainly about adding boilerplate"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "In a code review for State in Compose, what would you flag?",
-    "options": [
-      "explicit modeling of UI/data states",
-      "traceable data flow between layers",
-      "small pure functions with clear names",
-      "Code that hides failures instead of handling them explicitly"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which scenario is the strongest example of using State in Compose correctly?",
-    "options": [
-      "a slide deck with no runnable code",
-      "A small, working feature that demonstrates mutableStateOf in context",
-      "an implementation with no error states",
-      "a large refactor without tests"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "b"
   },
   {
-    "que": "To learn State in Compose deeply, what should you do next?",
+    "que": "Which concept is directly associated with State in Compose?",
     "options": [
-      "memorize definitions only",
-      "avoid official references",
-      "skip verification to save time",
-      "Build, test, profile (if needed), and iterate using State in Compose patterns"
+      "core concept",
+      "usage",
+      "hardware drivers",
+      "game engine shaders"
     ],
-    "ans": "d"
+    "ans": "b"
+  },
+  {
+    "que": "After studying State in Compose, what should you do next?",
+    "options": [
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where is this topic mapped in this project?",
+    "options": [
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
+    ],
+    "ans": "a"
   }
 ]

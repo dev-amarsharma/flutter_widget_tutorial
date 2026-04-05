@@ -1,0 +1,81 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="34" x2="944" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5F5"/>
+      <stop offset="1" stop-color="#FFE3E3"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="650" y1="66" x2="960" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA2027"/>
+      <stop offset="1" stop-color="#C41C22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF9B54"/>
+      <stop offset="1" stop-color="#FF6B35"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1024" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#C41C22" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="500" rx="0" fill="url(#bg)"/>
+
+  <circle cx="140" cy="88" r="72" fill="#FFD9D9"/>
+  <circle cx="934" cy="420" r="96" fill="#FFD2D2"/>
+  <circle cx="872" cy="96" r="52" fill="#FFE1C8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="602" y="44" width="374" height="412" rx="36" fill="url(#panel)"/>
+    <rect x="632" y="84" width="314" height="330" rx="28" fill="#FFF7F7"/>
+    <rect x="632" y="84" width="314" height="330" rx="28" stroke="#FFD7D7" stroke-width="4"/>
+
+    <rect x="662" y="116" width="70" height="18" rx="9" fill="#F7C3C3"/>
+    <rect x="744" y="116" width="54" height="18" rx="9" fill="#F7C3C3"/>
+    <rect x="810" y="116" width="78" height="18" rx="9" fill="#F7C3C3"/>
+
+    <rect x="684" y="168" width="210" height="124" rx="26" fill="#FFFFFF"/>
+    <rect x="684" y="168" width="210" height="124" rx="26" stroke="#F4D8D8" stroke-width="4"/>
+    <path d="M742 193L703 230L742 267" stroke="#EA2027" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M838 193L877 230L838 267" stroke="#EA2027" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M795 180L764 281" stroke="url(#accent)" stroke-width="22" stroke-linecap="round"/>
+
+    <rect x="672" y="324" width="84" height="14" rx="7" fill="#FFD3D3"/>
+    <rect x="766" y="324" width="62" height="14" rx="7" fill="url(#accent)"/>
+    <rect x="838" y="324" width="48" height="14" rx="7" fill="#FFD3D3"/>
+
+    <circle cx="858" cy="302" r="42" fill="url(#accent)"/>
+    <circle cx="858" cy="302" r="38" stroke="#FFE0C7" stroke-width="4"/>
+    <path d="M840 303L854 317L879 291" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <rect x="72" y="82" width="116" height="116" fill="#EA2027"/>
+    <rect x="90" y="100" width="80" height="80" rx="20" fill="#FFF7F7"/>
+    <rect x="90" y="100" width="80" height="80" rx="20" stroke="#FFD7D7" stroke-width="3"/>
+    <path d="M119 123L103 139L119 155" stroke="#EA2027" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M141 123L157 139L141 155" stroke="#EA2027" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M137 117L125 160" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <text x="72" y="246" fill="#EA2027" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Kotlin Compose</text>
+    <text x="72" y="298" fill="#1C1C1C" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Tutorial</text>
+    <text x="72" y="346" fill="#5E4A4A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400">Structured Android lessons, quizzes, and progress tracking</text>
+  </g>
+
+  <g>
+    <rect x="72" y="386" width="136" height="34" rx="17" fill="#EA2027"/>
+    <text x="96" y="409" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Jetpack Compose</text>
+
+    <rect x="224" y="386" width="76" height="34" rx="17" fill="#FFFFFF"/>
+    <rect x="224" y="386" width="76" height="34" rx="17" stroke="#F1CFCF" stroke-width="2"/>
+    <text x="247" y="409" fill="#C41C22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Kotlin</text>
+
+    <rect x="316" y="386" width="60" height="34" rx="17" fill="#FFFFFF"/>
+    <rect x="316" y="386" width="60" height="34" rx="17" stroke="#F1CFCF" stroke-width="2"/>
+    <text x="334" y="409" fill="#C41C22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Quiz</text>
+
+    <rect x="392" y="386" width="88" height="34" rx="17" fill="#FFFFFF"/>
+    <rect x="392" y="386" width="88" height="34" rx="17" stroke="#F1CFCF" stroke-width="2"/>
+    <text x="414" y="409" fill="#C41C22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Progress</text>
+  </g>
+</svg>

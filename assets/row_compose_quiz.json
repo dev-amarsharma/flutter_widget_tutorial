@@ -1,101 +1,51 @@
 [
   {
-    "que": "In Row in Compose, what is the primary goal?",
+    "que": "Row Compose: which statement is most accurate?",
     "options": [
-      "skip state/data modeling",
-      "avoid understanding requirements",
-      "replace testing entirely",
-      "place children horizontally"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
-    "ans": "d"
+    "ans": "b"
   },
   {
-    "que": "Which API/concept is most central to Row in Compose?",
+    "que": "What is the recommended learning level for Row Compose?",
     "options": [
-      "Row",
-      "random utility class name",
-      "legacy XML-only patterns unrelated to this topic",
-      "manual polling loop for all tasks"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a recommended best practice for Row in Compose?",
-    "options": [
-      "mix unrelated responsibilities in one function",
-      "optimize before verifying correctness",
-      "use horizontalArrangement and alignment",
-      "ignore edge/error states"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake when implementing Row in Compose?",
-    "options": [
-      "write focused tests for behavior",
-      "follow official docs for API usage",
-      "using nested padding hacks for layout",
-      "keep boundaries clear"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "For production code, which approach fits Row in Compose best?",
-    "options": [
-      "Use Row in Compose only as theory with no implementation",
-      "Use Row in Compose while bypassing architecture boundaries",
-      "Use Row in Compose with clear state flow and testable logic",
-      "Use Row in Compose and suppress all warnings"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "A teammate asks where to start with Row in Compose. What is best advice?",
-    "options": [
-      "copy an unknown snippet without context",
-      "avoid feedback from tests/review",
-      "Read official docs (https://developer.android.com/develop/ui/compose/layouts/basics) and implement a small sample",
-      "skip running the app after changes"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which statement about Row in Compose is most accurate?",
-    "options": [
-      "Row in Compose is most effective when paired with clear ownership of state/data",
-      "Row in Compose should be applied identically in every layer",
-      "Row in Compose removes the need for any testing",
-      "Row in Compose is mainly about adding boilerplate"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "a"
   },
   {
-    "que": "In a code review for Row in Compose, what would you flag?",
+    "que": "Which concept is directly associated with Row Compose?",
     "options": [
-      "explicit modeling of UI/data states",
-      "small pure functions with clear names",
-      "traceable data flow between layers",
-      "Code that hides failures instead of handling them explicitly"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which scenario is the strongest example of using Row in Compose correctly?",
-    "options": [
-      "A small, working feature that demonstrates Row in context",
-      "a slide deck with no runnable code",
-      "an implementation with no error states",
-      "a large refactor without tests"
+      "horizontal layout",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
     "ans": "a"
   },
   {
-    "que": "To learn Row in Compose deeply, what should you do next?",
+    "que": "After studying Row Compose, what should you do next?",
     "options": [
-      "Build, test, profile (if needed), and iterate using Row in Compose patterns",
-      "skip verification to save time",
-      "avoid official references",
-      "memorize definitions only"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Where is this topic mapped in this project?",
+    "options": [
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
     "ans": "a"
   }

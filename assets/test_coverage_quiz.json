@@ -1,102 +1,52 @@
 [
   {
-    "que": "In Test Coverage, what is the primary goal?",
+    "que": "Test Coverage: which statement is most accurate?",
     "options": [
-      "measure how much code tests execute",
-      "replace testing entirely",
-      "avoid understanding requirements",
-      "skip state/data modeling"
+      "It is unrelated to Android development",
+      "It is a core topic in this curriculum",
+      "It only applies to iOS",
+      "It replaces all other topics"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "Which API/concept is most central to Test Coverage?",
+    "que": "What is the recommended learning level for Test Coverage?",
     "options": [
-      "random utility class name",
-      "manual polling loop for all tasks",
-      "coverage report",
-      "legacy XML-only patterns unrelated to this topic"
+      "beginner",
+      "intermediate",
+      "advanced",
+      "expert"
     ],
     "ans": "c"
   },
   {
-    "que": "What is a recommended best practice for Test Coverage?",
+    "que": "Which concept is directly associated with Test Coverage?",
     "options": [
-      "ignore edge/error states",
-      "optimize before verifying correctness",
-      "mix unrelated responsibilities in one function",
-      "focus on meaningful behavior coverage"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which is a common mistake when implementing Test Coverage?",
-    "options": [
-      "keep boundaries clear",
-      "chasing 100% without quality assertions",
-      "follow official docs for API usage",
-      "write focused tests for behavior"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "For production code, which approach fits Test Coverage best?",
-    "options": [
-      "Use Test Coverage while bypassing architecture boundaries",
-      "Use Test Coverage with clear state flow and testable logic",
-      "Use Test Coverage and suppress all warnings",
-      "Use Test Coverage only as theory with no implementation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "A teammate asks where to start with Test Coverage. What is best advice?",
-    "options": [
-      "avoid feedback from tests/review",
-      "Read official docs (https://developer.android.com/studio/test/test-in-android-studio#view-test-coverage) and implement a small sample",
-      "copy an unknown snippet without context",
-      "skip running the app after changes"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which statement about Test Coverage is most accurate?",
-    "options": [
-      "Test Coverage removes the need for any testing",
-      "Test Coverage is most effective when paired with clear ownership of state/data",
-      "Test Coverage should be applied identically in every layer",
-      "Test Coverage is mainly about adding boilerplate"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "In a code review for Test Coverage, what would you flag?",
-    "options": [
-      "Code that hides failures instead of handling them explicitly",
-      "explicit modeling of UI/data states",
-      "traceable data flow between layers",
-      "small pure functions with clear names"
+      "coverage measurement",
+      "hardware drivers",
+      "game engine shaders",
+      "spreadsheet macros"
     ],
     "ans": "a"
   },
   {
-    "que": "Which scenario is the strongest example of using Test Coverage correctly?",
+    "que": "After studying Test Coverage, what should you do next?",
     "options": [
-      "a slide deck with no runnable code",
-      "a large refactor without tests",
-      "an implementation with no error states",
-      "A small, working feature that demonstrates coverage report in context"
+      "Ignore practice",
+      "Apply it in a sample feature",
+      "Delete tests",
+      "Avoid documentation"
     ],
-    "ans": "d"
+    "ans": "b"
   },
   {
-    "que": "To learn Test Coverage deeply, what should you do next?",
+    "que": "Where is this topic mapped in this project?",
     "options": [
-      "memorize definitions only",
-      "skip verification to save time",
-      "Build, test, profile (if needed), and iterate using Test Coverage patterns",
-      "avoid official references"
+      "assets/topics_manifest.json",
+      "README only",
+      "AndroidManifest.xml",
+      "pubspec.lock"
     ],
-    "ans": "c"
+    "ans": "a"
   }
 ]
