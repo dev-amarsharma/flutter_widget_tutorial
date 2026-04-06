@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Accessibility in web development?",
+    "options": [
+      "A database indexing method",
+      "A replacement for all CSS",
+      "A hardware-only feature",
+      "A core concept used in practical web projects"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why should developers learn Accessibility?",
+    "options": [
+      "It removes need for testing",
+      "It only matters for offline apps",
+      "It helps write clearer and more reliable code",
+      "It disables browser APIs"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Accessibility behavior?",
+    "options": [
+      "Official documentation/specifications",
+      "A single outdated screenshot",
+      "Unofficial social posts only",
+      "Random snippets without docs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Accessibility?",
+    "options": [
+      "Skip debugging tools",
+      "Memorize syntax without practice",
+      "Ignore edge cases",
+      "Build small examples and iterate"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake with Accessibility?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Testing realistic scenarios",
+      "Writing descriptive code",
+      "Reviewing official docs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for Accessibility?",
+    "options": [
+      "They improve maintainability",
+      "They prevent all runtime behavior",
+      "They increase bugs",
+      "They reduce readability"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When applying Accessibility, what should you prioritize first?",
+    "options": [
+      "Maximum complexity",
+      "Skipping validation",
+      "Avoiding all comments",
+      "Clarity and correctness"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What complements learning Accessibility effectively?",
+    "options": [
+      "Ignoring standards",
+      "Hands-on exercises with feedback",
+      "Only reading headings",
+      "Avoiding examples"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Accessibility?",
+    "options": [
+      "Rushing implementation",
+      "Checking assumptions and outputs",
+      "Copying code blindly",
+      "Skipping review"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Accessibility?",
+    "options": [
+      "Avoid updates in standards",
+      "Practice, review, and incremental improvement",
+      "Use one pattern forever",
+      "Depend on guesswork"
+    ],
+    "ans": "b"
+  }
+]

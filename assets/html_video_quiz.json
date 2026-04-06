@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Video in web development?",
+    "options": [
+      "A hardware-only feature",
+      "A replacement for all CSS",
+      "A core concept used in practical web projects",
+      "A database indexing method"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why should developers learn Video?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It only matters for offline apps",
+      "It disables browser APIs",
+      "It removes need for testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Video behavior?",
+    "options": [
+      "Random snippets without docs",
+      "Unofficial social posts only",
+      "Official documentation/specifications",
+      "A single outdated screenshot"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Video?",
+    "options": [
+      "Build small examples and iterate",
+      "Skip debugging tools",
+      "Ignore edge cases",
+      "Memorize syntax without practice"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake with Video?",
+    "options": [
+      "Reviewing official docs",
+      "Using it without understanding fundamentals",
+      "Writing descriptive code",
+      "Testing realistic scenarios"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How do best practices improve outcomes for Video?",
+    "options": [
+      "They increase bugs",
+      "They improve maintainability",
+      "They reduce readability",
+      "They prevent all runtime behavior"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When applying Video, what should you prioritize first?",
+    "options": [
+      "Skipping validation",
+      "Clarity and correctness",
+      "Maximum complexity",
+      "Avoiding all comments"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What complements learning Video effectively?",
+    "options": [
+      "Ignoring standards",
+      "Only reading headings",
+      "Avoiding examples",
+      "Hands-on exercises with feedback"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Video?",
+    "options": [
+      "Skipping review",
+      "Checking assumptions and outputs",
+      "Copying code blindly",
+      "Rushing implementation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Video?",
+    "options": [
+      "Use one pattern forever",
+      "Avoid updates in standards",
+      "Practice, review, and incremental improvement",
+      "Depend on guesswork"
+    ],
+    "ans": "c"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Hoisting in web development?",
+    "options": [
+      "A database indexing method",
+      "A hardware-only feature",
+      "A replacement for all CSS",
+      "A core concept used in practical web projects"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why should developers learn Hoisting?",
+    "options": [
+      "It only matters for offline apps",
+      "It removes need for testing",
+      "It disables browser APIs",
+      "It helps write clearer and more reliable code"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Hoisting behavior?",
+    "options": [
+      "Random snippets without docs",
+      "Unofficial social posts only",
+      "Official documentation/specifications",
+      "A single outdated screenshot"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Hoisting?",
+    "options": [
+      "Ignore edge cases",
+      "Skip debugging tools",
+      "Build small examples and iterate",
+      "Memorize syntax without practice"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake with Hoisting?",
+    "options": [
+      "Writing descriptive code",
+      "Testing realistic scenarios",
+      "Reviewing official docs",
+      "Using it without understanding fundamentals"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How do best practices improve outcomes for Hoisting?",
+    "options": [
+      "They reduce readability",
+      "They increase bugs",
+      "They improve maintainability",
+      "They prevent all runtime behavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When applying Hoisting, what should you prioritize first?",
+    "options": [
+      "Avoiding all comments",
+      "Maximum complexity",
+      "Skipping validation",
+      "Clarity and correctness"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What complements learning Hoisting effectively?",
+    "options": [
+      "Only reading headings",
+      "Hands-on exercises with feedback",
+      "Avoiding examples",
+      "Ignoring standards"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Hoisting?",
+    "options": [
+      "Rushing implementation",
+      "Copying code blindly",
+      "Skipping review",
+      "Checking assumptions and outputs"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Hoisting?",
+    "options": [
+      "Practice, review, and incremental improvement",
+      "Depend on guesswork",
+      "Avoid updates in standards",
+      "Use one pattern forever"
+    ],
+    "ans": "a"
+  }
+]

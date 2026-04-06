@@ -48,5 +48,55 @@
       "Using generic text fields for every case"
     ],
     "ans": "d"
+  },
+  {
+    "que": "What is the purpose of an HTML form?",
+    "options": [
+      "Collect user input",
+      "Style page layout",
+      "Load fonts",
+      "Control DNS"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which element pairs with input for accessible text labels?",
+    "options": [
+      "<caption>",
+      "<meta>",
+      "<label>",
+      "<legendary>"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which attribute makes an input mandatory?",
+    "options": [
+      "readonly",
+      "required",
+      "checked",
+      "hidden"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which input type validates email format in browsers?",
+    "options": [
+      "contact",
+      "text",
+      "email",
+      "mailbox"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does the form action attribute define?",
+    "options": [
+      "Input length",
+      "Submission URL",
+      "Theme color",
+      "Keyboard shortcut"
+    ],
+    "ans": "b"
   }
 ]

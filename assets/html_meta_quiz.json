@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Meta Tags in web development?",
+    "options": [
+      "A replacement for all CSS",
+      "A database indexing method",
+      "A hardware-only feature",
+      "A core concept used in practical web projects"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why should developers learn Meta Tags?",
+    "options": [
+      "It only matters for offline apps",
+      "It disables browser APIs",
+      "It helps write clearer and more reliable code",
+      "It removes need for testing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Meta Tags behavior?",
+    "options": [
+      "Random snippets without docs",
+      "A single outdated screenshot",
+      "Unofficial social posts only",
+      "Official documentation/specifications"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Meta Tags?",
+    "options": [
+      "Memorize syntax without practice",
+      "Build small examples and iterate",
+      "Ignore edge cases",
+      "Skip debugging tools"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake with Meta Tags?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Testing realistic scenarios",
+      "Reviewing official docs",
+      "Writing descriptive code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for Meta Tags?",
+    "options": [
+      "They improve maintainability",
+      "They increase bugs",
+      "They reduce readability",
+      "They prevent all runtime behavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When applying Meta Tags, what should you prioritize first?",
+    "options": [
+      "Maximum complexity",
+      "Avoiding all comments",
+      "Clarity and correctness",
+      "Skipping validation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What complements learning Meta Tags effectively?",
+    "options": [
+      "Only reading headings",
+      "Ignoring standards",
+      "Hands-on exercises with feedback",
+      "Avoiding examples"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Meta Tags?",
+    "options": [
+      "Rushing implementation",
+      "Skipping review",
+      "Copying code blindly",
+      "Checking assumptions and outputs"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Meta Tags?",
+    "options": [
+      "Depend on guesswork",
+      "Practice, review, and incremental improvement",
+      "Avoid updates in standards",
+      "Use one pattern forever"
+    ],
+    "ans": "b"
+  }
+]

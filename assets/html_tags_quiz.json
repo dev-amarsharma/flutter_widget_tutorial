@@ -48,5 +48,55 @@
       "Using semantic layout elements"
     ],
     "ans": "c"
+  },
+  {
+    "que": "What is an HTML tag?",
+    "options": [
+      "A JS runtime",
+      "A server log format",
+      "A markup token defining an element",
+      "A CSS variable"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which tag creates a paragraph?",
+    "options": [
+      "<para>",
+      "<pg>",
+      "<text>",
+      "<p>"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Most HTML elements have which structure?",
+    "options": [
+      "No syntax at all",
+      "Start and end tag",
+      "Only start tag always",
+      "Only end tag"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which tag is commonly used for a top-level heading?",
+    "options": [
+      "<h1>",
+      "<head>",
+      "<title>",
+      "<strong>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why use semantic tags?",
+    "options": [
+      "To add structure and meaning",
+      "To avoid accessibility",
+      "To replace URLs",
+      "For random styling only"
+    ],
+    "ans": "a"
   }
 ]
