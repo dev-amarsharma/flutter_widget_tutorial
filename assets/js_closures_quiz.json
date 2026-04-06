@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Closures in web development?",
+    "options": [
+      "A replacement for all CSS",
+      "A hardware-only feature",
+      "A core concept used in practical web projects",
+      "A database indexing method"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why should developers learn Closures?",
+    "options": [
+      "It removes need for testing",
+      "It helps write clearer and more reliable code",
+      "It only matters for offline apps",
+      "It disables browser APIs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Closures behavior?",
+    "options": [
+      "Unofficial social posts only",
+      "Official documentation/specifications",
+      "Random snippets without docs",
+      "A single outdated screenshot"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Closures?",
+    "options": [
+      "Ignore edge cases",
+      "Skip debugging tools",
+      "Build small examples and iterate",
+      "Memorize syntax without practice"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake with Closures?",
+    "options": [
+      "Writing descriptive code",
+      "Using it without understanding fundamentals",
+      "Testing realistic scenarios",
+      "Reviewing official docs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How do best practices improve outcomes for Closures?",
+    "options": [
+      "They reduce readability",
+      "They prevent all runtime behavior",
+      "They improve maintainability",
+      "They increase bugs"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When applying Closures, what should you prioritize first?",
+    "options": [
+      "Avoiding all comments",
+      "Skipping validation",
+      "Clarity and correctness",
+      "Maximum complexity"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What complements learning Closures effectively?",
+    "options": [
+      "Only reading headings",
+      "Ignoring standards",
+      "Avoiding examples",
+      "Hands-on exercises with feedback"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Closures?",
+    "options": [
+      "Checking assumptions and outputs",
+      "Rushing implementation",
+      "Skipping review",
+      "Copying code blindly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Closures?",
+    "options": [
+      "Depend on guesswork",
+      "Use one pattern forever",
+      "Practice, review, and incremental improvement",
+      "Avoid updates in standards"
+    ],
+    "ans": "c"
+  }
+]

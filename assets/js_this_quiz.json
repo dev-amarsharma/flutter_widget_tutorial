@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes this Keyword in web development?",
+    "options": [
+      "A core concept used in practical web projects",
+      "A replacement for all CSS",
+      "A database indexing method",
+      "A hardware-only feature"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should developers learn this Keyword?",
+    "options": [
+      "It removes need for testing",
+      "It only matters for offline apps",
+      "It disables browser APIs",
+      "It helps write clearer and more reliable code"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which source is most appropriate for verifying this Keyword behavior?",
+    "options": [
+      "Unofficial social posts only",
+      "Official documentation/specifications",
+      "A single outdated screenshot",
+      "Random snippets without docs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a good beginner strategy when studying this Keyword?",
+    "options": [
+      "Memorize syntax without practice",
+      "Skip debugging tools",
+      "Ignore edge cases",
+      "Build small examples and iterate"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a common mistake with this Keyword?",
+    "options": [
+      "Testing realistic scenarios",
+      "Reviewing official docs",
+      "Writing descriptive code",
+      "Using it without understanding fundamentals"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How do best practices improve outcomes for this Keyword?",
+    "options": [
+      "They prevent all runtime behavior",
+      "They improve maintainability",
+      "They increase bugs",
+      "They reduce readability"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When applying this Keyword, what should you prioritize first?",
+    "options": [
+      "Clarity and correctness",
+      "Maximum complexity",
+      "Skipping validation",
+      "Avoiding all comments"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What complements learning this Keyword effectively?",
+    "options": [
+      "Only reading headings",
+      "Ignoring standards",
+      "Avoiding examples",
+      "Hands-on exercises with feedback"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which habit helps avoid errors while using this Keyword?",
+    "options": [
+      "Copying code blindly",
+      "Checking assumptions and outputs",
+      "Skipping review",
+      "Rushing implementation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering this Keyword?",
+    "options": [
+      "Avoid updates in standards",
+      "Use one pattern forever",
+      "Depend on guesswork",
+      "Practice, review, and incremental improvement"
+    ],
+    "ans": "d"
+  }
+]
