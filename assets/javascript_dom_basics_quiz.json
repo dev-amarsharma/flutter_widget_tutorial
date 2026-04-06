@@ -1,0 +1,47 @@
+[
+  {
+    "que": "What does DOM stand for?",
+    "options": [
+      "Document Object Model",
+      "Data Output Method",
+      "Dynamic Order Manager",
+      "Display Object Map"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which method can select the first matching element by CSS selector?",
+    "options": [
+      "document.querySelector()",
+      "document.fetch()",
+      "window.parse()",
+      "console.create()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which property can update visible text content?",
+    "options": ["textContent", "href", "valueOf", "innerWidth"],
+    "ans": "a"
+  },
+  {
+    "que": "What does classList.add() do?",
+    "options": [
+      "Adds a CSS class to an element",
+      "Deletes the DOM tree",
+      "Fetches remote data",
+      "Submits a form"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why are DOM basics useful?",
+    "options": [
+      "They let JavaScript update page content",
+      "They replace HTML completely",
+      "They disable browser rendering",
+      "They remove the need for CSS"
+    ],
+    "ans": "a"
+  }
+]

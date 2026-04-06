@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is JavaScript primarily used for on web pages?",
+    "options": [
+      "Adding behavior and interactivity",
+      "Replacing HTML structure entirely",
+      "Compiling Android apps directly",
+      "Managing SQL databases in markup"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where does JavaScript commonly run?",
+    "options": [
+      "Only in spreadsheets",
+      "Only inside image editors",
+      "In browsers and server environments like Node.js",
+      "Only in CSS files"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which tag can include JavaScript in an HTML page?",
+    "options": [
+      "<script>",
+      "<style>",
+      "<label>",
+      "<article>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a good early JavaScript practice?",
+    "options": [
+      "Use descriptive names",
+      "Ignore console errors",
+      "Put every script inline forever",
+      "Replace all HTML with scripts"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which task is well suited for JavaScript?",
+    "options": [
+      "Reacting to button clicks",
+      "Defining all page semantics alone",
+      "Replacing CSS layout rules entirely",
+      "Avoiding browser interaction"
+    ],
+    "ans": "a"
+  }
+]

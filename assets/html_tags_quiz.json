@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is the benefit of semantic HTML?",
+    "options": [
+      "It removes the need for CSS",
+      "It gives elements clearer meaning",
+      "It only works on one browser",
+      "It prevents all layout bugs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which tag is most appropriate for the primary content area of a page?",
+    "options": [
+      "<main>",
+      "<meta>",
+      "<span>",
+      "<script>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the alt attribute do on an image?",
+    "options": [
+      "Changes the image size automatically",
+      "Adds animation",
+      "Describes the image for accessibility and fallback",
+      "Converts the image to a link"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which tag is commonly used for hyperlinks?",
+    "options": [
+      "<a>",
+      "<p>",
+      "<li>",
+      "<main>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common HTML structure mistake?",
+    "options": [
+      "Using clear indentation",
+      "Closing tags correctly",
+      "Breaking nesting order",
+      "Using semantic layout elements"
+    ],
+    "ans": "c"
+  }
+]

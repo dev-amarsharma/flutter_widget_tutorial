@@ -1,0 +1,37 @@
+[
+  {
+    "que": "Which tag usually wraps the primary page content?",
+    "options": ["<main>", "<meta>", "<style>", "<label>"],
+    "ans": "a"
+  },
+  {
+    "que": "Why use semantic layout elements?",
+    "options": [
+      "To give content clearer meaning",
+      "To replace JavaScript entirely",
+      "To disable accessibility tools",
+      "To avoid headings"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which tag is commonly used for site navigation?",
+    "options": ["<nav>", "<ol>", "<img>", "<dl>"],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common misuse of semantic tags?",
+    "options": [
+      "Using them only for styling without meaning",
+      "Using clear heading structure",
+      "Keeping sections readable",
+      "Choosing matching tags"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which semantic element often appears at the bottom of a page?",
+    "options": ["<footer>", "<head>", "<dt>", "<tbody>"],
+    "ans": "a"
+  }
+]

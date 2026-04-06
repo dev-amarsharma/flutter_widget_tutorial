@@ -2,3283 +2,369 @@
   "version": 1,
   "tracks": [
     {
-      "id": "kotlin_foundations",
-      "title": "Kotlin Foundations",
-      "description": "Core Kotlin language concepts.",
+      "id": "html_foundations",
+      "title": "HTML Foundations",
+      "description": "Core HTML structure and page building.",
       "level": "beginner",
       "topicIds": [
-        "kotlin_variables",
-        "val_vs_var",
-        "type_inference",
-        "primitive_types",
-        "null_safety",
-        "lateinit_lazy",
-        "type_casting",
-        "operators_kotlin",
-        "if_when",
-        "loops_kotlin",
-        "ranges",
-        "functions_kotlin",
-        "default_named_args",
-        "higher_order_functions",
-        "lambdas",
-        "collections_list",
-        "collections_set",
-        "collections_map",
-        "data_classes",
-        "sealed_classes",
-        "enums_kotlin",
-        "object_keyword",
-        "companion_object",
-        "extensions",
-        "generics_kotlin",
-        "inline_functions",
-        "scope_functions",
-        "exception_handling",
-        "coroutines_intro",
-        "suspend_functions"
+        "html_intro","html_tags","html_attributes","html_headings","html_paragraphs","html_lists","html_links","html_images","html_tables","html_forms","html_semantic"
       ]
     },
     {
-      "id": "compose_basics",
-      "title": "Jetpack Compose Basics",
-      "description": "UI building with Compose.",
+      "id": "html_advanced",
+      "title": "Advanced HTML",
+      "description": "Advanced HTML concepts.",
+      "level": "intermediate",
+      "topicIds": [
+        "html_meta","html_accessibility","html_seo","html_iframe","html_audio","html_video","html_canvas","html_svg","html_responsive","html_best_practices"
+      ]
+    },
+    {
+      "id": "javascript_foundations",
+      "title": "JavaScript Foundations",
+      "description": "Core JavaScript basics.",
       "level": "beginner",
       "topicIds": [
-        "compose_intro",
-        "setcontent",
-        "composable_basics",
-        "preview_compose",
-        "text_compose",
-        "image_compose",
-        "icon_compose",
-        "button_compose",
-        "modifier_basics",
-        "padding_size",
-        "background_border",
-        "clickable",
-        "scrollable",
-        "column_compose",
-        "row_compose",
-        "box_compose",
-        "spacer",
-        "lazycolumn",
-        "lazyrow",
-        "grid_lazy",
-        "textfield_compose",
-        "checkbox_switch",
-        "radio_button",
-        "slider_compose",
-        "dialog_compose",
-        "scaffold_compose",
-        "topappbar",
-        "bottom_navigation",
-        "material3_theme",
-        "dark_mode",
-        "typography_compose",
-        "shapes_compose",
-        "colors_compose"
+        "js_intro","js_variables","js_datatypes","js_operators","js_conditions","js_loops","js_functions","js_arrays","js_objects","js_dom","js_events","js_fetch"
       ]
     },
     {
-      "id": "state_and_navigation",
-      "title": "State & Navigation",
-      "description": "Managing UI state and navigation.",
+      "id": "javascript_intermediate",
+      "title": "JavaScript Intermediate",
+      "description": "Modern JavaScript.",
       "level": "intermediate",
       "topicIds": [
-        "state_intro",
-        "remember",
-        "remember_saveable",
-        "mutable_state",
-        "derived_state",
-        "state_hoisting",
-        "viewmodel_basics",
-        "livedata_vs_stateflow",
-        "stateflow",
-        "sharedflow",
-        "collect_as_state",
-        "side_effects",
-        "launchedeffect",
-        "disposableeffect",
-        "remembercoroutinescope",
-        "navigation_compose",
-        "navhost",
-        "nav_arguments",
-        "deep_links",
-        "backstack",
-        "multiple_nav_graphs"
+        "js_es6","js_arrow","js_destructuring","js_spread","js_modules","js_error","js_timers","js_local_storage","js_session_storage","js_json"
       ]
     },
     {
-      "id": "android_core",
-      "title": "Android Core",
-      "description": "Android fundamentals with modern APIs.",
-      "level": "intermediate",
-      "topicIds": [
-        "activity_lifecycle",
-        "fragment_basics",
-        "intent_basics",
-        "permissions_android",
-        "context_usage",
-        "resources_android",
-        "configuration_changes",
-        "multimodule_setup",
-        "gradle_basics",
-        "build_variants",
-        "proguard_r8"
-      ]
-    },
-    {
-      "id": "data_and_network",
-      "title": "Data & Networking",
-      "description": "APIs, storage, and data handling.",
-      "level": "intermediate",
-      "topicIds": [
-        "coroutines_basics",
-        "dispatcher_context",
-        "flow_basics",
-        "flow_operators",
-        "error_handling_flow",
-        "retrofit_setup",
-        "api_calls",
-        "interceptors",
-        "serialization_kotlinx",
-        "moshi_gson",
-        "json_parsing",
-        "pagination_basics",
-        "paging3",
-        "room_setup",
-        "entity_dao",
-        "room_relations",
-        "datastore_preferences",
-        "datastore_proto",
-        "caching_strategies",
-        "offline_first"
-      ]
-    },
-    {
-      "id": "architecture",
-      "title": "Architecture",
-      "description": "Scalable app architecture.",
+      "id": "javascript_advanced",
+      "title": "JavaScript Advanced",
+      "description": "Advanced JS concepts.",
       "level": "advanced",
       "topicIds": [
-        "mvvm_architecture",
-        "clean_architecture",
-        "usecases_domain",
-        "repository_pattern",
-        "dependency_injection_intro",
-        "hilt_setup",
-        "hilt_viewmodel",
-        "multi_module_architecture",
-        "feature_based_architecture",
-        "modularization"
-      ]
-    },
-    {
-      "id": "advanced_compose",
-      "title": "Advanced Compose",
-      "description": "Animations, performance, and custom UI.",
-      "level": "advanced",
-      "topicIds": [
-        "animation_basics",
-        "animate_state",
-        "transition_api",
-        "infinite_animation",
-        "gesture_detection",
-        "pointer_input",
-        "custom_layout",
-        "canvas_compose",
-        "draw_scope",
-        "graphics_layer",
-        "performance_compose",
-        "recomposition",
-        "remember_optimization"
-      ]
-    },
-    {
-      "id": "testing",
-      "title": "Testing",
-      "description": "Unit, UI, and integration testing.",
-      "level": "advanced",
-      "topicIds": [
-        "unit_testing",
-        "junit_basics",
-        "mockk_usage",
-        "coroutines_testing",
-        "flow_testing",
-        "compose_testing",
-        "ui_testing",
-        "espresso_basics",
-        "integration_testing",
-        "test_coverage"
-      ]
-    },
-    {
-      "id": "performance_and_release",
-      "title": "Performance & Release",
-      "description": "Optimization and deployment.",
-      "level": "advanced",
-      "topicIds": [
-        "app_startup",
-        "baseline_profiles",
-        "memory_leaks",
-        "profiling_android",
-        "battery_optimization",
-        "apk_vs_aab",
-        "play_store_release",
-        "ci_cd_android",
-        "crashlytics",
-        "analytics"
-      ]
-    },
-    {
-      "id": "projects",
-      "title": "Real Projects",
-      "description": "Hands-on production apps.",
-      "level": "expert",
-      "topicIds": [
-        "project_todo_app",
-        "project_notes_app",
-        "project_expense_tracker",
-        "project_chat_app",
-        "project_ecommerce_app",
-        "project_social_app"
+        "js_scope","js_hoisting","js_this","js_closures","js_prototypes","js_promises","js_async","js_event_loop","js_debounce","js_memory"
       ]
     }
   ],
   "topics": [
-    {
-      "id": "kotlin_variables",
-      "title": "Variables",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/kotlin_variables.md",
-      "quizAsset": "assets/kotlin_variables_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [
-        "val_vs_var"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "val_vs_var",
-      "title": "val vs var",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 6,
-      "lessonAsset": "assets/val_vs_var.md",
-      "quizAsset": "assets/val_vs_var_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "kotlin_variables"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "compose_intro",
-      "title": "Compose Introduction",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/compose_intro.md",
-      "quizAsset": "assets/compose_intro_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "composable_basics",
-      "title": "Composable Functions",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 10,
-      "lessonAsset": "assets/composable.md",
-      "quizAsset": "assets/composable_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "compose_intro"
-      ],
-      "relatedTopicIds": [
-        "state_intro"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "state_intro",
-      "title": "State in Compose",
-      "category": "compose",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 10,
-      "lessonAsset": "assets/state.md",
-      "quizAsset": "assets/state_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "composable_basics"
-      ],
-      "relatedTopicIds": [
-        "viewmodel_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "viewmodel_basics",
-      "title": "ViewModel",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/viewmodel.md",
-      "quizAsset": "assets/viewmodel_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "state_intro"
-      ],
-      "relatedTopicIds": [
-        "stateflow"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "coroutines_basics",
-      "title": "Coroutines",
-      "category": "kotlin",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/coroutines.md",
-      "quizAsset": "assets/coroutines_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [
-        "flow_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "flow_basics",
-      "title": "Flow",
-      "category": "kotlin",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/flow.md",
-      "quizAsset": "assets/flow_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "coroutines_basics"
-      ],
-      "relatedTopicIds": [
-        "stateflow"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "retrofit_setup",
-      "title": "Retrofit Setup",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/retrofit.md",
-      "quizAsset": "assets/retrofit_quiz.json",
-      "tags": [
-        "network"
-      ],
-      "prerequisites": [
-        "coroutines_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "room_setup",
-      "title": "Room Database",
-      "category": "storage",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/room.md",
-      "quizAsset": "assets/room_quiz.json",
-      "tags": [
-        "database"
-      ],
-      "prerequisites": [
-        "coroutines_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "hilt_setup",
-      "title": "Hilt Dependency Injection",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 15,
-      "lessonAsset": "assets/hilt.md",
-      "quizAsset": "assets/hilt_quiz.json",
-      "tags": [
-        "di"
-      ],
-      "prerequisites": [
-        "clean_architecture"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "compose_testing",
-      "title": "Compose Testing",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/compose_testing.md",
-      "quizAsset": "assets/compose_testing_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "composable_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "project_todo_app",
-      "title": "Build Todo App",
-      "category": "project",
-      "level": "expert",
-      "type": "project",
-      "estimatedMinutes": 60,
-      "lessonAsset": "assets/todo.md",
-      "quizAsset": "assets/todo_quiz.json",
-      "tags": [
-        "project"
-      ],
-      "prerequisites": [
-        "room_setup",
-        "viewmodel_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "type_inference",
-      "title": "Type Inference",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/type_inference.md",
-      "quizAsset": "assets/type_inference_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "val_vs_var"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "primitive_types",
-      "title": "Primitive Types",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/primitive_types.md",
-      "quizAsset": "assets/primitive_types_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "type_inference"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "null_safety",
-      "title": "Null Safety",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/null_safety.md",
-      "quizAsset": "assets/null_safety_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "primitive_types"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "lateinit_lazy",
-      "title": "Lateinit Lazy",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/lateinit_lazy.md",
-      "quizAsset": "assets/lateinit_lazy_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "null_safety"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "type_casting",
-      "title": "Type Casting",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/type_casting.md",
-      "quizAsset": "assets/type_casting_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "lateinit_lazy"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "operators_kotlin",
-      "title": "Operators Kotlin",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/operators_kotlin.md",
-      "quizAsset": "assets/operators_kotlin_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "type_casting"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "if_when",
-      "title": "If When",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/if_when.md",
-      "quizAsset": "assets/if_when_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "operators_kotlin"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "loops_kotlin",
-      "title": "Loops Kotlin",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/loops_kotlin.md",
-      "quizAsset": "assets/loops_kotlin_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "if_when"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "ranges",
-      "title": "Ranges",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/ranges.md",
-      "quizAsset": "assets/ranges_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "loops_kotlin"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "functions_kotlin",
-      "title": "Functions Kotlin",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/functions_kotlin.md",
-      "quizAsset": "assets/functions_kotlin_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "ranges"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "default_named_args",
-      "title": "Default Named Args",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/default_named_args.md",
-      "quizAsset": "assets/default_named_args_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "functions_kotlin"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "higher_order_functions",
-      "title": "Higher Order Functions",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/higher_order_functions.md",
-      "quizAsset": "assets/higher_order_functions_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "default_named_args"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "lambdas",
-      "title": "Lambdas",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/lambdas.md",
-      "quizAsset": "assets/lambdas_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "higher_order_functions"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "collections_list",
-      "title": "Collections List",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/collections_list.md",
-      "quizAsset": "assets/collections_list_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "lambdas"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "collections_set",
-      "title": "Collections Set",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/collections_set.md",
-      "quizAsset": "assets/collections_set_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "collections_list"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "collections_map",
-      "title": "Collections Map",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/collections_map.md",
-      "quizAsset": "assets/collections_map_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "collections_set"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "data_classes",
-      "title": "Data Classes",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/data_classes.md",
-      "quizAsset": "assets/data_classes_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "collections_map"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "sealed_classes",
-      "title": "Sealed Classes",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/sealed_classes.md",
-      "quizAsset": "assets/sealed_classes_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "data_classes"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "enums_kotlin",
-      "title": "Enums Kotlin",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/enums_kotlin.md",
-      "quizAsset": "assets/enums_kotlin_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "sealed_classes"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "object_keyword",
-      "title": "Object Keyword",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/object_keyword.md",
-      "quizAsset": "assets/object_keyword_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "enums_kotlin"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "companion_object",
-      "title": "Companion Object",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/companion_object.md",
-      "quizAsset": "assets/companion_object_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "object_keyword"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "extensions",
-      "title": "Extensions",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/extensions.md",
-      "quizAsset": "assets/extensions_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "companion_object"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "generics_kotlin",
-      "title": "Generics Kotlin",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/generics_kotlin.md",
-      "quizAsset": "assets/generics_kotlin_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "extensions"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "inline_functions",
-      "title": "Inline Functions",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/inline_functions.md",
-      "quizAsset": "assets/inline_functions_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "generics_kotlin"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "scope_functions",
-      "title": "Scope Functions",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/scope_functions.md",
-      "quizAsset": "assets/scope_functions_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "inline_functions"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "exception_handling",
-      "title": "Exception Handling",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/exception_handling.md",
-      "quizAsset": "assets/exception_handling_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "scope_functions"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "coroutines_intro",
-      "title": "Coroutines Intro",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/coroutines_intro.md",
-      "quizAsset": "assets/coroutines_intro_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "exception_handling"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "suspend_functions",
-      "title": "Suspend Functions",
-      "category": "kotlin",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/suspend_functions.md",
-      "quizAsset": "assets/suspend_functions_quiz.json",
-      "tags": [
-        "kotlin"
-      ],
-      "prerequisites": [
-        "coroutines_intro"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "setcontent",
-      "title": "setContent",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/setcontent.md",
-      "quizAsset": "assets/setcontent_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "compose_intro"
-      ],
-      "relatedTopicIds": [
-        "composable_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "preview_compose",
-      "title": "Preview Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/preview_compose.md",
-      "quizAsset": "assets/preview_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "composable_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "text_compose",
-      "title": "Text Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/text_compose.md",
-      "quizAsset": "assets/text_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "preview_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "image_compose",
-      "title": "Image Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/image_compose.md",
-      "quizAsset": "assets/image_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "text_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "icon_compose",
-      "title": "Icon Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/icon_compose.md",
-      "quizAsset": "assets/icon_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "image_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "button_compose",
-      "title": "Button Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/button_compose.md",
-      "quizAsset": "assets/button_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "icon_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "modifier_basics",
-      "title": "Modifier Basics",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/modifier_basics.md",
-      "quizAsset": "assets/modifier_basics_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "button_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "padding_size",
-      "title": "Padding Size",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/padding_size.md",
-      "quizAsset": "assets/padding_size_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "modifier_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "background_border",
-      "title": "Background Border",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/background_border.md",
-      "quizAsset": "assets/background_border_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "padding_size"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "clickable",
-      "title": "Clickable",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/clickable.md",
-      "quizAsset": "assets/clickable_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "background_border"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "scrollable",
-      "title": "Scrollable",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/scrollable.md",
-      "quizAsset": "assets/scrollable_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "clickable"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "column_compose",
-      "title": "Column Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/column_compose.md",
-      "quizAsset": "assets/column_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "scrollable"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "row_compose",
-      "title": "Row Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/row_compose.md",
-      "quizAsset": "assets/row_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "column_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "box_compose",
-      "title": "Box Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/box_compose.md",
-      "quizAsset": "assets/box_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "row_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "spacer",
-      "title": "Spacer",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/spacer.md",
-      "quizAsset": "assets/spacer_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "box_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "lazycolumn",
-      "title": "Lazycolumn",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/lazycolumn.md",
-      "quizAsset": "assets/lazycolumn_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "spacer"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "lazyrow",
-      "title": "Lazyrow",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/lazyrow.md",
-      "quizAsset": "assets/lazyrow_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "lazycolumn"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "grid_lazy",
-      "title": "Grid Lazy",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/grid_lazy.md",
-      "quizAsset": "assets/grid_lazy_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "lazyrow"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "textfield_compose",
-      "title": "Textfield Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/textfield_compose.md",
-      "quizAsset": "assets/textfield_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "grid_lazy"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "checkbox_switch",
-      "title": "Checkbox Switch",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/checkbox_switch.md",
-      "quizAsset": "assets/checkbox_switch_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "textfield_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "radio_button",
-      "title": "Radio Button",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/radio_button.md",
-      "quizAsset": "assets/radio_button_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "checkbox_switch"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "slider_compose",
-      "title": "Slider Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/slider_compose.md",
-      "quizAsset": "assets/slider_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "radio_button"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "dialog_compose",
-      "title": "Dialog Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/dialog_compose.md",
-      "quizAsset": "assets/dialog_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "slider_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "scaffold_compose",
-      "title": "Scaffold Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/scaffold_compose.md",
-      "quizAsset": "assets/scaffold_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "dialog_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "topappbar",
-      "title": "Top App Bar",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/topappbar.md",
-      "quizAsset": "assets/topappbar_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "scaffold_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "bottom_navigation",
-      "title": "Bottom Navigation",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/bottom_navigation.md",
-      "quizAsset": "assets/bottom_navigation_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "topappbar"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "material3_theme",
-      "title": "Material3 Theme",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/material3_theme.md",
-      "quizAsset": "assets/material3_theme_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "bottom_navigation"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "dark_mode",
-      "title": "Dark Mode",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/dark_mode.md",
-      "quizAsset": "assets/dark_mode_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "material3_theme"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "typography_compose",
-      "title": "Typography Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/typography_compose.md",
-      "quizAsset": "assets/typography_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "dark_mode"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "shapes_compose",
-      "title": "Shapes Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/shapes_compose.md",
-      "quizAsset": "assets/shapes_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "typography_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "colors_compose",
-      "title": "Colors Compose",
-      "category": "compose",
-      "level": "beginner",
-      "type": "concept",
-      "estimatedMinutes": 8,
-      "lessonAsset": "assets/colors_compose.md",
-      "quizAsset": "assets/colors_compose_quiz.json",
-      "tags": [
-        "compose"
-      ],
-      "prerequisites": [
-        "shapes_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "remember",
-      "title": "Remember",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/remember.md",
-      "quizAsset": "assets/remember_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "state_intro"
-      ],
-      "relatedTopicIds": [
-        "viewmodel_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "remember_saveable",
-      "title": "Remember Saveable",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/remember_saveable.md",
-      "quizAsset": "assets/remember_saveable_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "remember"
-      ],
-      "relatedTopicIds": [
-        "viewmodel_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "mutable_state",
-      "title": "Mutable State",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/mutable_state.md",
-      "quizAsset": "assets/mutable_state_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "remember_saveable"
-      ],
-      "relatedTopicIds": [
-        "viewmodel_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "derived_state",
-      "title": "Derived State",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/derived_state.md",
-      "quizAsset": "assets/derived_state_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "mutable_state"
-      ],
-      "relatedTopicIds": [
-        "viewmodel_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "state_hoisting",
-      "title": "State Hoisting",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/state_hoisting.md",
-      "quizAsset": "assets/state_hoisting_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "derived_state"
-      ],
-      "relatedTopicIds": [
-        "viewmodel_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "livedata_vs_stateflow",
-      "title": "LiveData vs StateFlow",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/livedata_vs_stateflow.md",
-      "quizAsset": "assets/livedata_vs_stateflow_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "viewmodel_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "stateflow",
-      "title": "StateFlow",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/stateflow.md",
-      "quizAsset": "assets/stateflow_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "livedata_vs_stateflow"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "sharedflow",
-      "title": "SharedFlow",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/sharedflow.md",
-      "quizAsset": "assets/sharedflow_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "stateflow"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "collect_as_state",
-      "title": "Collect As State",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/collect_as_state.md",
-      "quizAsset": "assets/collect_as_state_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "sharedflow"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "side_effects",
-      "title": "Side Effects",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/side_effects.md",
-      "quizAsset": "assets/side_effects_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "collect_as_state"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "launchedeffect",
-      "title": "LaunchedEffect",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/launchedeffect.md",
-      "quizAsset": "assets/launchedeffect_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "side_effects"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "disposableeffect",
-      "title": "DisposableEffect",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/disposableeffect.md",
-      "quizAsset": "assets/disposableeffect_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "launchedeffect"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "remembercoroutinescope",
-      "title": "rememberCoroutineScope",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/remembercoroutinescope.md",
-      "quizAsset": "assets/remembercoroutinescope_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "disposableeffect"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "navigation_compose",
-      "title": "Navigation Compose",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/navigation_compose.md",
-      "quizAsset": "assets/navigation_compose_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "remembercoroutinescope"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "navhost",
-      "title": "Navhost",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/navhost.md",
-      "quizAsset": "assets/navhost_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "navigation_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "nav_arguments",
-      "title": "Nav Arguments",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/nav_arguments.md",
-      "quizAsset": "assets/nav_arguments_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "navhost"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "deep_links",
-      "title": "Deep Links",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/deep_links.md",
-      "quizAsset": "assets/deep_links_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "nav_arguments"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "backstack",
-      "title": "Backstack",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/backstack.md",
-      "quizAsset": "assets/backstack_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "deep_links"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "multiple_nav_graphs",
-      "title": "Multiple Nav Graphs",
-      "category": "architecture",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/multiple_nav_graphs.md",
-      "quizAsset": "assets/multiple_nav_graphs_quiz.json",
-      "tags": [
-        "compose",
-        "state"
-      ],
-      "prerequisites": [
-        "backstack"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "activity_lifecycle",
-      "title": "Activity Lifecycle",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/activity_lifecycle.md",
-      "quizAsset": "assets/activity_lifecycle_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "fragment_basics",
-      "title": "Fragment Basics",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/fragment_basics.md",
-      "quizAsset": "assets/fragment_basics_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "activity_lifecycle"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "intent_basics",
-      "title": "Intent Basics",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/intent_basics.md",
-      "quizAsset": "assets/intent_basics_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "fragment_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "permissions_android",
-      "title": "Permissions Android",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/permissions_android.md",
-      "quizAsset": "assets/permissions_android_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "intent_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "context_usage",
-      "title": "Context Usage",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/context_usage.md",
-      "quizAsset": "assets/context_usage_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "permissions_android"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "resources_android",
-      "title": "Resources Android",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/resources_android.md",
-      "quizAsset": "assets/resources_android_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "context_usage"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "configuration_changes",
-      "title": "Configuration Changes",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/configuration_changes.md",
-      "quizAsset": "assets/configuration_changes_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "resources_android"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "multimodule_setup",
-      "title": "Multimodule Setup",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/multimodule_setup.md",
-      "quizAsset": "assets/multimodule_setup_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "configuration_changes"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "gradle_basics",
-      "title": "Gradle Basics",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/gradle_basics.md",
-      "quizAsset": "assets/gradle_basics_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "multimodule_setup"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "build_variants",
-      "title": "Build Variants",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/build_variants.md",
-      "quizAsset": "assets/build_variants_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "gradle_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "proguard_r8",
-      "title": "ProGuard and R8",
-      "category": "android",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/proguard_r8.md",
-      "quizAsset": "assets/proguard_r8_quiz.json",
-      "tags": [
-        "android"
-      ],
-      "prerequisites": [
-        "build_variants"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "dispatcher_context",
-      "title": "Dispatcher Context",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/dispatcher_context.md",
-      "quizAsset": "assets/dispatcher_context_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "coroutines_basics"
-      ],
-      "relatedTopicIds": [
-        "flow_basics"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "flow_operators",
-      "title": "Flow Operators",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/flow_operators.md",
-      "quizAsset": "assets/flow_operators_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "flow_basics"
-      ],
-      "relatedTopicIds": [
-        "retrofit_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "error_handling_flow",
-      "title": "Error Handling Flow",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/error_handling_flow.md",
-      "quizAsset": "assets/error_handling_flow_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "flow_operators"
-      ],
-      "relatedTopicIds": [
-        "retrofit_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "api_calls",
-      "title": "API Calls",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/api_calls.md",
-      "quizAsset": "assets/api_calls_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "retrofit_setup"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "interceptors",
-      "title": "Interceptors",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/interceptors.md",
-      "quizAsset": "assets/interceptors_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "api_calls"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "serialization_kotlinx",
-      "title": "Kotlinx Serialization",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/serialization_kotlinx.md",
-      "quizAsset": "assets/serialization_kotlinx_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "interceptors"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "moshi_gson",
-      "title": "Moshi vs Gson",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/moshi_gson.md",
-      "quizAsset": "assets/moshi_gson_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "serialization_kotlinx"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "json_parsing",
-      "title": "JSON Parsing",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/json_parsing.md",
-      "quizAsset": "assets/json_parsing_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "moshi_gson"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "pagination_basics",
-      "title": "Pagination Basics",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/pagination_basics.md",
-      "quizAsset": "assets/pagination_basics_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "json_parsing"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "paging3",
-      "title": "Paging 3",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/paging3.md",
-      "quizAsset": "assets/paging3_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "pagination_basics"
-      ],
-      "relatedTopicIds": [
-        "room_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "entity_dao",
-      "title": "Entity DAO",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/entity_dao.md",
-      "quizAsset": "assets/entity_dao_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "room_setup"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "room_relations",
-      "title": "Room Relations",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/room_relations.md",
-      "quizAsset": "assets/room_relations_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "entity_dao"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "datastore_preferences",
-      "title": "Datastore Preferences",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/datastore_preferences.md",
-      "quizAsset": "assets/datastore_preferences_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "room_relations"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "datastore_proto",
-      "title": "Datastore Proto",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/datastore_proto.md",
-      "quizAsset": "assets/datastore_proto_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "datastore_preferences"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "caching_strategies",
-      "title": "Caching Strategies",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/caching_strategies.md",
-      "quizAsset": "assets/caching_strategies_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "datastore_proto"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "offline_first",
-      "title": "Offline First",
-      "category": "networking",
-      "level": "intermediate",
-      "type": "concept",
-      "estimatedMinutes": 12,
-      "lessonAsset": "assets/offline_first.md",
-      "quizAsset": "assets/offline_first_quiz.json",
-      "tags": [
-        "data"
-      ],
-      "prerequisites": [
-        "caching_strategies"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "mvvm_architecture",
-      "title": "MVVM Architecture",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/mvvm_architecture.md",
-      "quizAsset": "assets/mvvm_architecture_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [
-        "hilt_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "clean_architecture",
-      "title": "Clean Architecture",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/clean_architecture.md",
-      "quizAsset": "assets/clean_architecture_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "mvvm_architecture"
-      ],
-      "relatedTopicIds": [
-        "hilt_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "usecases_domain",
-      "title": "Usecases Domain",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/usecases_domain.md",
-      "quizAsset": "assets/usecases_domain_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "clean_architecture"
-      ],
-      "relatedTopicIds": [
-        "hilt_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "repository_pattern",
-      "title": "Repository Pattern",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/repository_pattern.md",
-      "quizAsset": "assets/repository_pattern_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "usecases_domain"
-      ],
-      "relatedTopicIds": [
-        "hilt_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "dependency_injection_intro",
-      "title": "Dependency Injection Intro",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/dependency_injection_intro.md",
-      "quizAsset": "assets/dependency_injection_intro_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "repository_pattern"
-      ],
-      "relatedTopicIds": [
-        "hilt_setup"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "hilt_viewmodel",
-      "title": "Hilt Viewmodel",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/hilt_viewmodel.md",
-      "quizAsset": "assets/hilt_viewmodel_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "hilt_setup"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "multi_module_architecture",
-      "title": "Multi Module Architecture",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/multi_module_architecture.md",
-      "quizAsset": "assets/multi_module_architecture_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "hilt_viewmodel"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "feature_based_architecture",
-      "title": "Feature Based Architecture",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/feature_based_architecture.md",
-      "quizAsset": "assets/feature_based_architecture_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "multi_module_architecture"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "modularization",
-      "title": "Modularization",
-      "category": "architecture",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/modularization.md",
-      "quizAsset": "assets/modularization_quiz.json",
-      "tags": [
-        "architecture"
-      ],
-      "prerequisites": [
-        "feature_based_architecture"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "animation_basics",
-      "title": "Animation Basics",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/animation_basics.md",
-      "quizAsset": "assets/animation_basics_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "animate_state",
-      "title": "Animate State",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/animate_state.md",
-      "quizAsset": "assets/animate_state_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "animation_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "transition_api",
-      "title": "Transition API",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/transition_api.md",
-      "quizAsset": "assets/transition_api_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "animate_state"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "infinite_animation",
-      "title": "Infinite Animation",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/infinite_animation.md",
-      "quizAsset": "assets/infinite_animation_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "transition_api"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "gesture_detection",
-      "title": "Gesture Detection",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/gesture_detection.md",
-      "quizAsset": "assets/gesture_detection_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "infinite_animation"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "pointer_input",
-      "title": "Pointer Input",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/pointer_input.md",
-      "quizAsset": "assets/pointer_input_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "gesture_detection"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "custom_layout",
-      "title": "Custom Layout",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/custom_layout.md",
-      "quizAsset": "assets/custom_layout_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "pointer_input"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "canvas_compose",
-      "title": "Canvas Compose",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/canvas_compose.md",
-      "quizAsset": "assets/canvas_compose_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "custom_layout"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "draw_scope",
-      "title": "Draw Scope",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/draw_scope.md",
-      "quizAsset": "assets/draw_scope_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "canvas_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "graphics_layer",
-      "title": "Graphics Layer",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/graphics_layer.md",
-      "quizAsset": "assets/graphics_layer_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "draw_scope"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "performance_compose",
-      "title": "Performance Compose",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/performance_compose.md",
-      "quizAsset": "assets/performance_compose_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "graphics_layer"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "recomposition",
-      "title": "Recomposition",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/recomposition.md",
-      "quizAsset": "assets/recomposition_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "performance_compose"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "remember_optimization",
-      "title": "Remember Optimization",
-      "category": "compose",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/remember_optimization.md",
-      "quizAsset": "assets/remember_optimization_quiz.json",
-      "tags": [
-        "compose",
-        "advanced"
-      ],
-      "prerequisites": [
-        "recomposition"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "unit_testing",
-      "title": "Unit Testing",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/unit_testing.md",
-      "quizAsset": "assets/unit_testing_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [
-        "compose_testing"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "junit_basics",
-      "title": "JUnit Basics",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/junit_basics.md",
-      "quizAsset": "assets/junit_basics_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "unit_testing"
-      ],
-      "relatedTopicIds": [
-        "compose_testing"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "mockk_usage",
-      "title": "MockK Usage",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/mockk_usage.md",
-      "quizAsset": "assets/mockk_usage_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "junit_basics"
-      ],
-      "relatedTopicIds": [
-        "compose_testing"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "coroutines_testing",
-      "title": "Coroutines Testing",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/coroutines_testing.md",
-      "quizAsset": "assets/coroutines_testing_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "mockk_usage"
-      ],
-      "relatedTopicIds": [
-        "compose_testing"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "flow_testing",
-      "title": "Flow Testing",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/flow_testing.md",
-      "quizAsset": "assets/flow_testing_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "coroutines_testing"
-      ],
-      "relatedTopicIds": [
-        "compose_testing"
-      ],
-      "isPublished": true
-    },
-    {
-      "id": "ui_testing",
-      "title": "UI Testing",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/ui_testing.md",
-      "quizAsset": "assets/ui_testing_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "compose_testing"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "espresso_basics",
-      "title": "Espresso Basics",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/espresso_basics.md",
-      "quizAsset": "assets/espresso_basics_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "ui_testing"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "integration_testing",
-      "title": "Integration Testing",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/integration_testing.md",
-      "quizAsset": "assets/integration_testing_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "espresso_basics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "test_coverage",
-      "title": "Test Coverage",
-      "category": "testing",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/test_coverage.md",
-      "quizAsset": "assets/test_coverage_quiz.json",
-      "tags": [
-        "testing"
-      ],
-      "prerequisites": [
-        "integration_testing"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "app_startup",
-      "title": "App Startup",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/app_startup.md",
-      "quizAsset": "assets/app_startup_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "baseline_profiles",
-      "title": "Baseline Profiles",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/baseline_profiles.md",
-      "quizAsset": "assets/baseline_profiles_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "app_startup"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "memory_leaks",
-      "title": "Memory Leaks",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/memory_leaks.md",
-      "quizAsset": "assets/memory_leaks_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "baseline_profiles"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "profiling_android",
-      "title": "Profiling Android",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/profiling_android.md",
-      "quizAsset": "assets/profiling_android_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "memory_leaks"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "battery_optimization",
-      "title": "Battery Optimization",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/battery_optimization.md",
-      "quizAsset": "assets/battery_optimization_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "profiling_android"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "apk_vs_aab",
-      "title": "APK vs AAB",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/apk_vs_aab.md",
-      "quizAsset": "assets/apk_vs_aab_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "battery_optimization"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "play_store_release",
-      "title": "Play Store Release",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/play_store_release.md",
-      "quizAsset": "assets/play_store_release_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "apk_vs_aab"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "ci_cd_android",
-      "title": "CI/CD for Android",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/ci_cd_android.md",
-      "quizAsset": "assets/ci_cd_android_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "play_store_release"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "crashlytics",
-      "title": "Crashlytics",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/crashlytics.md",
-      "quizAsset": "assets/crashlytics_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "ci_cd_android"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "analytics",
-      "title": "Analytics",
-      "category": "performance",
-      "level": "advanced",
-      "type": "concept",
-      "estimatedMinutes": 14,
-      "lessonAsset": "assets/analytics.md",
-      "quizAsset": "assets/analytics_quiz.json",
-      "tags": [
-        "performance"
-      ],
-      "prerequisites": [
-        "crashlytics"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "project_notes_app",
-      "title": "Project Notes App",
-      "category": "project",
-      "level": "expert",
-      "type": "project",
-      "estimatedMinutes": 60,
-      "lessonAsset": "assets/project_notes_app.md",
-      "quizAsset": "assets/project_notes_app_quiz.json",
-      "tags": [
-        "project"
-      ],
-      "prerequisites": [
-        "project_todo_app"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "project_expense_tracker",
-      "title": "Project Expense Tracker",
-      "category": "project",
-      "level": "expert",
-      "type": "project",
-      "estimatedMinutes": 60,
-      "lessonAsset": "assets/project_expense_tracker.md",
-      "quizAsset": "assets/project_expense_tracker_quiz.json",
-      "tags": [
-        "project"
-      ],
-      "prerequisites": [
-        "project_notes_app"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "project_chat_app",
-      "title": "Project Chat App",
-      "category": "project",
-      "level": "expert",
-      "type": "project",
-      "estimatedMinutes": 60,
-      "lessonAsset": "assets/project_chat_app.md",
-      "quizAsset": "assets/project_chat_app_quiz.json",
-      "tags": [
-        "project"
-      ],
-      "prerequisites": [
-        "project_expense_tracker"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "project_ecommerce_app",
-      "title": "Project Ecommerce App",
-      "category": "project",
-      "level": "expert",
-      "type": "project",
-      "estimatedMinutes": 60,
-      "lessonAsset": "assets/project_ecommerce_app.md",
-      "quizAsset": "assets/project_ecommerce_app_quiz.json",
-      "tags": [
-        "project"
-      ],
-      "prerequisites": [
-        "project_chat_app"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    },
-    {
-      "id": "project_social_app",
-      "title": "Project Social App",
-      "category": "project",
-      "level": "expert",
-      "type": "project",
-      "estimatedMinutes": 60,
-      "lessonAsset": "assets/project_social_app.md",
-      "quizAsset": "assets/project_social_app_quiz.json",
-      "tags": [
-        "project"
-      ],
-      "prerequisites": [
-        "project_ecommerce_app"
-      ],
-      "relatedTopicIds": [],
-      "isPublished": true
-    }
+
+    { "id":"html_intro","title":"HTML Introduction","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_intro.md","quizAsset":"assets/html_intro_quiz.json","tags":["html"],"prerequisites":[],"relatedTopicIds":["html_tags"],"isPublished":true },
+    { "id":"html_tags","title":"HTML Tags","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_tags.md","quizAsset":"assets/html_tags_quiz.json","tags":["html"],"prerequisites":["html_intro"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_attributes","title":"HTML Attributes","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_attributes.md","quizAsset":"assets/html_attributes_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_headings","title":"HTML Headings","category":"web","level":"beginner","type":"concept","estimatedMinutes":6,"lessonAsset":"assets/html_headings.md","quizAsset":"assets/html_headings_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_paragraphs","title":"HTML Paragraphs","category":"web","level":"beginner","type":"concept","estimatedMinutes":6,"lessonAsset":"assets/html_paragraphs.md","quizAsset":"assets/html_paragraphs_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_lists","title":"HTML Lists","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_lists.md","quizAsset":"assets/html_lists_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_links","title":"HTML Links","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_links.md","quizAsset":"assets/html_links_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_images","title":"HTML Images","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_images.md","quizAsset":"assets/html_images_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_tables","title":"HTML Tables","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_tables.md","quizAsset":"assets/html_tables_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_forms","title":"HTML Forms","category":"web","level":"beginner","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/html_forms.md","quizAsset":"assets/html_forms_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":["js_events"],"isPublished":true },
+    { "id":"html_semantic","title":"Semantic HTML","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_semantic.md","quizAsset":"assets/html_semantic_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+
+    { "id":"html_meta","title":"Meta Tags","category":"web","level":"intermediate","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_meta.md","quizAsset":"assets/html_meta_quiz.json","tags":["html"],"prerequisites":["html_intro"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_accessibility","title":"Accessibility","category":"web","level":"intermediate","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_a11y.md","quizAsset":"assets/html_a11y_quiz.json","tags":["html"],"prerequisites":["html_semantic"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_seo","title":"SEO Basics","category":"web","level":"intermediate","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_seo.md","quizAsset":"assets/html_seo_quiz.json","tags":["html"],"prerequisites":["html_meta"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_iframe","title":"iFrame","category":"web","level":"intermediate","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_iframe.md","quizAsset":"assets/html_iframe_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_audio","title":"Audio","category":"web","level":"intermediate","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_audio.md","quizAsset":"assets/html_audio_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_video","title":"Video","category":"web","level":"intermediate","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/html_video.md","quizAsset":"assets/html_video_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_canvas","title":"Canvas","category":"web","level":"intermediate","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/html_canvas.md","quizAsset":"assets/html_canvas_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":["js_dom"],"isPublished":true },
+    { "id":"html_svg","title":"SVG","category":"web","level":"intermediate","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_svg.md","quizAsset":"assets/html_svg_quiz.json","tags":["html"],"prerequisites":["html_tags"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_responsive","title":"Responsive HTML","category":"web","level":"intermediate","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_responsive.md","quizAsset":"assets/html_responsive_quiz.json","tags":["html"],"prerequisites":["html_meta"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"html_best_practices","title":"Best Practices","category":"web","level":"intermediate","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/html_best.md","quizAsset":"assets/html_best_quiz.json","tags":["html"],"prerequisites":["html_semantic"],"relatedTopicIds":[],"isPublished":true },
+
+    { "id":"js_intro","title":"JavaScript Introduction","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/js_intro.md","quizAsset":"assets/js_intro_quiz.json","tags":["javascript"],"prerequisites":["html_intro"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_variables","title":"Variables","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/js_variables.md","quizAsset":"assets/js_variables_quiz.json","tags":["javascript"],"prerequisites":["js_intro"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_datatypes","title":"Data Types","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/js_datatypes.md","quizAsset":"assets/js_datatypes_quiz.json","tags":["javascript"],"prerequisites":["js_variables"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_operators","title":"Operators","category":"web","level":"beginner","type":"concept","estimatedMinutes":6,"lessonAsset":"assets/js_operators.md","quizAsset":"assets/js_operators_quiz.json","tags":["javascript"],"prerequisites":["js_variables"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_conditions","title":"Conditions","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/js_conditions.md","quizAsset":"assets/js_conditions_quiz.json","tags":["javascript"],"prerequisites":["js_operators"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_loops","title":"Loops","category":"web","level":"beginner","type":"concept","estimatedMinutes":8,"lessonAsset":"assets/js_loops.md","quizAsset":"assets/js_loops_quiz.json","tags":["javascript"],"prerequisites":["js_conditions"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_functions","title":"Functions","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/js_functions.md","quizAsset":"assets/js_functions_quiz.json","tags":["javascript"],"prerequisites":["js_variables"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_arrays","title":"Arrays","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/js_arrays.md","quizAsset":"assets/js_arrays_quiz.json","tags":["javascript"],"prerequisites":["js_variables"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_objects","title":"Objects","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/js_objects.md","quizAsset":"assets/js_objects_quiz.json","tags":["javascript"],"prerequisites":["js_arrays"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_dom","title":"DOM","category":"web","level":"beginner","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/js_dom.md","quizAsset":"assets/js_dom_quiz.json","tags":["javascript"],"prerequisites":["html_intro"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_events","title":"Events","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/js_events.md","quizAsset":"assets/js_events_quiz.json","tags":["javascript"],"prerequisites":["js_dom"],"relatedTopicIds":[],"isPublished":true },
+    { "id":"js_fetch","title":"Fetch API","category":"web","level":"beginner","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/js_fetch.md","quizAsset":"assets/js_fetch_quiz.json","tags":["javascript"],"prerequisites":["js_functions"],"relatedTopicIds":[],"isPublished":true },
+
+    {
+        "id": "js_es6",
+        "title": "ES6 Features",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 15,
+        "lessonAsset": "assets/js_es6.md",
+        "quizAsset": "assets/js_es6_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_variables"],
+        "relatedTopicIds": ["js_arrow"],
+        "isPublished": true
+      },
+      {
+        "id": "js_arrow",
+        "title": "Arrow Functions",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 12,
+        "lessonAsset": "assets/js_arrow.md",
+        "quizAsset": "assets/js_arrow_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_functions"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_destructuring",
+        "title": "Destructuring",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 12,
+        "lessonAsset": "assets/js_destructuring.md",
+        "quizAsset": "assets/js_destructuring_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_objects"],
+        "relatedTopicIds": ["js_spread"],
+        "isPublished": true
+      },
+      {
+        "id": "js_spread",
+        "title": "Spread & Rest",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 12,
+        "lessonAsset": "assets/js_spread.md",
+        "quizAsset": "assets/js_spread_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_destructuring"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_modules",
+        "title": "JavaScript Modules",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 14,
+        "lessonAsset": "assets/js_modules.md",
+        "quizAsset": "assets/js_modules_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_functions"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_error",
+        "title": "Error Handling",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 10,
+        "lessonAsset": "assets/js_error.md",
+        "quizAsset": "assets/js_error_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_functions"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_timers",
+        "title": "Timers (setTimeout & setInterval)",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 10,
+        "lessonAsset": "assets/js_timers.md",
+        "quizAsset": "assets/js_timers_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_events"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_local_storage",
+        "title": "Local Storage",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 10,
+        "lessonAsset": "assets/js_local_storage.md",
+        "quizAsset": "assets/js_local_storage_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_dom"],
+        "relatedTopicIds": ["js_session_storage"],
+        "isPublished": true
+      },
+      {
+        "id": "js_session_storage",
+        "title": "Session Storage",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 8,
+        "lessonAsset": "assets/js_session_storage.md",
+        "quizAsset": "assets/js_session_storage_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_local_storage"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_json",
+        "title": "JSON Handling",
+        "category": "web",
+        "level": "intermediate",
+        "type": "concept",
+        "estimatedMinutes": 10,
+        "lessonAsset": "assets/js_json.md",
+        "quizAsset": "assets/js_json_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_objects"],
+        "relatedTopicIds": ["js_fetch"],
+        "isPublished": true
+      },
+
+      {
+        "id": "js_scope",
+        "title": "Scope",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 14,
+        "lessonAsset": "assets/js_scope.md",
+        "quizAsset": "assets/js_scope_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_variables"],
+        "relatedTopicIds": ["js_hoisting"],
+        "isPublished": true
+      },
+      {
+        "id": "js_hoisting",
+        "title": "Hoisting",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 12,
+        "lessonAsset": "assets/js_hoisting.md",
+        "quizAsset": "assets/js_hoisting_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_scope"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_this",
+        "title": "this Keyword",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 14,
+        "lessonAsset": "assets/js_this.md",
+        "quizAsset": "assets/js_this_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_functions"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_closures",
+        "title": "Closures",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 16,
+        "lessonAsset": "assets/js_closures.md",
+        "quizAsset": "assets/js_closures_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_functions"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_prototypes",
+        "title": "Prototypes",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 16,
+        "lessonAsset": "assets/js_prototypes.md",
+        "quizAsset": "assets/js_prototypes_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_objects"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_promises",
+        "title": "Promises",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 16,
+        "lessonAsset": "assets/js_promises.md",
+        "quizAsset": "assets/js_promises_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_fetch"],
+        "relatedTopicIds": ["js_async"],
+        "isPublished": true
+      },
+      {
+        "id": "js_async",
+        "title": "Async/Await",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 16,
+        "lessonAsset": "assets/js_async.md",
+        "quizAsset": "assets/js_async_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_promises"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_event_loop",
+        "title": "Event Loop",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 16,
+        "lessonAsset": "assets/js_event_loop.md",
+        "quizAsset": "assets/js_event_loop_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_async"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_debounce",
+        "title": "Debounce & Throttle",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 14,
+        "lessonAsset": "assets/js_debounce.md",
+        "quizAsset": "assets/js_debounce_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_events"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      },
+      {
+        "id": "js_memory",
+        "title": "Memory Management",
+        "category": "web",
+        "level": "advanced",
+        "type": "concept",
+        "estimatedMinutes": 14,
+        "lessonAsset": "assets/js_memory.md",
+        "quizAsset": "assets/js_memory_quiz.json",
+        "tags": ["javascript"],
+        "prerequisites": ["js_closures"],
+        "relatedTopicIds": [],
+        "isPublished": true
+      }
   ]
 }

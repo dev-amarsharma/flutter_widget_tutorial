@@ -1,0 +1,42 @@
+[
+  {
+    "que": "Which attribute defines a link destination?",
+    "options": ["href", "src", "alt", "id"],
+    "ans": "a"
+  },
+  {
+    "que": "What does the alt attribute on an image do?",
+    "options": [
+      "Describes the image",
+      "Changes image format",
+      "Adds animation",
+      "Links the image to CSS"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which tag is used for images?",
+    "options": ["<img>", "<image>", "<picturebox>", "<src>"],
+    "ans": "a"
+  },
+  {
+    "que": "Which is better link text?",
+    "options": [
+      "Read the HTML guide",
+      "click here",
+      "go",
+      "open"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a relative path?",
+    "options": [
+      "A path to a file inside your project structure",
+      "A full URL only",
+      "An HTML tag",
+      "A browser event"
+    ],
+    "ans": "a"
+  }
+]
