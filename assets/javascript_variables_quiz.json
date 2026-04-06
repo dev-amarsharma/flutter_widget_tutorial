@@ -1,0 +1,52 @@
+[
+  {
+    "que": "Which declaration should usually be preferred by default in modern JavaScript?",
+    "options": [
+      "const",
+      "global",
+      "static",
+      "mutable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When is let appropriate?",
+    "options": [
+      "When the variable will be reassigned",
+      "When writing HTML structure",
+      "When replacing all functions",
+      "When a browser has no console"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is var less preferred in new code?",
+    "options": [
+      "It is not a JavaScript keyword",
+      "It has older function-scoping behavior",
+      "It can only store numbers",
+      "It works only in Node.js"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does block scope mean?",
+    "options": [
+      "A variable is available everywhere in the app",
+      "A variable only exists inside the block where it is declared",
+      "A variable can never change type",
+      "A variable is always stored on a server"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a good variable practice?",
+    "options": [
+      "Use descriptive names",
+      "Reuse one variable for unrelated values",
+      "Prefer var for all new code",
+      "Avoid const completely"
+    ],
+    "ans": "a"
+  }
+]

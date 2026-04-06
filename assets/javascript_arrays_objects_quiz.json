@@ -1,0 +1,42 @@
+[
+  {
+    "que": "What is an array best suited for?",
+    "options": [
+      "An ordered list of items",
+      "A single CSS color",
+      "An HTML tag name",
+      "A browser event"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is an object best suited for?",
+    "options": [
+      "Named properties about one thing",
+      "Only numeric indexes",
+      "Only DOM events",
+      "Only images"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which method commonly adds an item to the end of an array?",
+    "options": ["push()", "join()", "trim()", "bind()"],
+    "ans": "a"
+  },
+  {
+    "que": "How do you typically access an object property named name?",
+    "options": ["user.name", "user(0)", "user=>name", "name.user"],
+    "ans": "a"
+  },
+  {
+    "que": "When should you prefer an array over an object?",
+    "options": [
+      "When you need an ordered collection",
+      "When you need named fields only",
+      "When writing HTML attributes",
+      "When adding CSS classes"
+    ],
+    "ans": "a"
+  }
+]

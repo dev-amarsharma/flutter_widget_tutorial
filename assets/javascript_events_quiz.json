@@ -1,0 +1,47 @@
+[
+  {
+    "que": "What is an event in JavaScript?",
+    "options": [
+      "Something that happens in the browser and can trigger code",
+      "A CSS selector only",
+      "A database table",
+      "A file path type"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which method is commonly used to listen for events?",
+    "options": [
+      "addEventListener",
+      "appendChild",
+      "querySelectorAll",
+      "parseInt"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which event is commonly used for button presses?",
+    "options": ["click", "resize", "load", "hovered"],
+    "ans": "a"
+  },
+  {
+    "que": "What does event.preventDefault() do in a form submit handler?",
+    "options": [
+      "Stops the browser’s default submit behavior",
+      "Reloads the page immediately",
+      "Adds a CSS class",
+      "Deletes the form"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a good event-handling practice?",
+    "options": [
+      "Keep handlers focused",
+      "Put every action in one huge callback",
+      "Prevent default behavior all the time",
+      "Avoid naming functions"
+    ],
+    "ans": "a"
+  }
+]

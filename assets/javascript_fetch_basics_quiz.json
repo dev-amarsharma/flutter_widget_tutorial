@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is fetch() commonly used for?",
+    "options": [
+      "Requesting data from a server",
+      "Creating HTML tags directly",
+      "Replacing CSS files",
+      "Compiling Java code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does fetch() return?",
+    "options": [
+      "A promise",
+      "A CSS class",
+      "A database index",
+      "A raw HTML form"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which method commonly parses JSON from a response?",
+    "options": [
+      "response.json()",
+      "response.parseHtml()",
+      "response.arrayPush()",
+      "response.select()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should fetch logic consider errors?",
+    "options": [
+      "Network requests can fail",
+      "HTML never loads",
+      "Arrays stop working",
+      "Objects cannot hold data"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which modern syntax can make fetch code easier to read?",
+    "options": [
+      "async/await",
+      "inline CSS",
+      "table layout",
+      "alt text"
+    ],
+    "ans": "a"
+  }
+]

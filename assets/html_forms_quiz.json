@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What element groups input controls together?",
+    "options": [
+      "<table>",
+      "<form>",
+      "<section>",
+      "<figure>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why should inputs have labels?",
+    "options": [
+      "Only to add color",
+      "To improve clarity and accessibility",
+      "To stop JavaScript from running",
+      "To replace name attributes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which input type is best suited for email addresses?",
+    "options": [
+      "email",
+      "date",
+      "radio",
+      "range"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which attribute often defines where form data is sent?",
+    "options": [
+      "class",
+      "src",
+      "action",
+      "alt"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a common form mistake?",
+    "options": [
+      "Using meaningful labels",
+      "Grouping related fields",
+      "Choosing the correct input type",
+      "Using generic text fields for every case"
+    ],
+    "ans": "d"
+  }
+]

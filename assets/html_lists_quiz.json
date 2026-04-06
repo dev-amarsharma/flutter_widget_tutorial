@@ -1,0 +1,37 @@
+[
+  {
+    "que": "Which tag creates an unordered list?",
+    "options": ["<ul>", "<ol>", "<dl>", "<li>"],
+    "ans": "a"
+  },
+  {
+    "que": "When should you use an ordered list?",
+    "options": [
+      "When sequence matters",
+      "When adding images only",
+      "When writing CSS",
+      "When loading JavaScript"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which tag represents one item inside a list?",
+    "options": ["<li>", "<item>", "<entry>", "<section>"],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good practice for lists?",
+    "options": [
+      "Choose list type based on meaning",
+      "Use paragraphs instead of lists for grouped items",
+      "Avoid list items completely",
+      "Use ordered lists for everything"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which HTML element is used for term-description pairs?",
+    "options": ["<dl>", "<ul>", "<nav>", "<main>"],
+    "ans": "a"
+  }
+]

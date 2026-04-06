@@ -27,6 +27,25 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:323754460228:android:b8d91974d80df2a5232811",
+        "android_client_info": {
+          "package_name": "com.grittyapps.results"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbRoz4KI18fSs1LHkqs24_3wf03VBoto8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:323754460228:android:c5dbf5f3f47d9739232811",
         "android_client_info": {
           "package_name": "digimonk.compose.tutorial"

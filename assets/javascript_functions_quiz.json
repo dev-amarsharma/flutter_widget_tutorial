@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is a main benefit of using functions?",
+    "options": [
+      "They make logic reusable",
+      "They remove the need for variables",
+      "They replace HTML tags",
+      "They stop all runtime errors"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What are parameters in a function?",
+    "options": [
+      "The final returned result only",
+      "The inputs a function receives",
+      "The CSS styles for a function",
+      "The browser cache entries"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is an example of an arrow function?",
+    "options": [
+      "const add = (a, b) => a + b;",
+      "<function add></function>",
+      "function => add(a, b)",
+      "add := a + b"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a function design best practice?",
+    "options": [
+      "Give it a clear behavior-based name",
+      "Make every function handle every task",
+      "Avoid return values completely",
+      "Hide all logic in one long callback chain"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake with functions?",
+    "options": [
+      "Breaking large logic into smaller units",
+      "Using descriptive names",
+      "Writing one giant function with many responsibilities",
+      "Returning computed values"
+    ],
+    "ans": "c"
+  }
+]

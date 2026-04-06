@@ -1,0 +1,52 @@
+[
+  {
+    "que": "What is HTML mainly used for?",
+    "options": [
+      "Defining page structure and content",
+      "Running database queries",
+      "Replacing all CSS and JavaScript",
+      "Managing server deployment"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which section usually contains content visible to users?",
+    "options": [
+      "<meta>",
+      "<head>",
+      "<body>",
+      "<title>"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does <!DOCTYPE html> communicate?",
+    "options": [
+      "The page should use modern HTML parsing rules",
+      "The page is only for mobile",
+      "The page has no CSS",
+      "The browser should disable JavaScript"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which technology is primarily responsible for page styling?",
+    "options": [
+      "HTML",
+      "CSS",
+      "SQL",
+      "Git"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a good HTML practice?",
+    "options": [
+      "Use semantic elements for meaning",
+      "Put page content inside <head>",
+      "Skip heading hierarchy completely",
+      "Use HTML to replace all scripting"
+    ],
+    "ans": "a"
+  }
+]
