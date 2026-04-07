@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Memory Management in web development?",
+    "options": [
+      "A replacement for all CSS",
+      "A core concept used in practical web projects",
+      "A database indexing method",
+      "A hardware-only feature"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why should developers learn Memory Management?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It removes need for testing",
+      "It only matters for offline apps",
+      "It disables browser APIs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Memory Management behavior?",
+    "options": [
+      "Official documentation/specifications",
+      "A single outdated screenshot",
+      "Unofficial social posts only",
+      "Random snippets without docs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Memory Management?",
+    "options": [
+      "Skip debugging tools",
+      "Ignore edge cases",
+      "Build small examples and iterate",
+      "Memorize syntax without practice"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake with Memory Management?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Reviewing official docs",
+      "Testing realistic scenarios",
+      "Writing descriptive code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for Memory Management?",
+    "options": [
+      "They improve maintainability",
+      "They reduce readability",
+      "They increase bugs",
+      "They prevent all runtime behavior"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When applying Memory Management, what should you prioritize first?",
+    "options": [
+      "Clarity and correctness",
+      "Skipping validation",
+      "Maximum complexity",
+      "Avoiding all comments"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What complements learning Memory Management effectively?",
+    "options": [
+      "Avoiding examples",
+      "Hands-on exercises with feedback",
+      "Ignoring standards",
+      "Only reading headings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Memory Management?",
+    "options": [
+      "Skipping review",
+      "Copying code blindly",
+      "Checking assumptions and outputs",
+      "Rushing implementation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Memory Management?",
+    "options": [
+      "Avoid updates in standards",
+      "Use one pattern forever",
+      "Depend on guesswork",
+      "Practice, review, and incremental improvement"
+    ],
+    "ans": "d"
+  }
+]

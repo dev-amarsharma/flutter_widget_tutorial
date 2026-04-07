@@ -1,7 +1,12 @@
 [
   {
     "que": "Which tag creates an unordered list?",
-    "options": ["<ul>", "<ol>", "<dl>", "<li>"],
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<dl>",
+      "<li>"
+    ],
     "ans": "a"
   },
   {
@@ -16,7 +21,12 @@
   },
   {
     "que": "Which tag represents one item inside a list?",
-    "options": ["<li>", "<item>", "<entry>", "<section>"],
+    "options": [
+      "<li>",
+      "<item>",
+      "<entry>",
+      "<section>"
+    ],
     "ans": "a"
   },
   {
@@ -31,7 +41,62 @@
   },
   {
     "que": "Which HTML element is used for term-description pairs?",
-    "options": ["<dl>", "<ul>", "<nav>", "<main>"],
+    "options": [
+      "<dl>",
+      "<ul>",
+      "<nav>",
+      "<main>"
+    ],
     "ans": "a"
+  },
+  {
+    "que": "Which tag creates an unordered list?",
+    "options": [
+      "<list>",
+      "<ol>",
+      "<ul>",
+      "<li>"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which tag is used for each list item?",
+    "options": [
+      "<l>",
+      "<li>",
+      "<listitem>",
+      "<item>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Ordered lists are best for:",
+    "options": [
+      "Images only",
+      "Metadata",
+      "Steps in sequence",
+      "Navigation bars only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Can lists be nested in HTML?",
+    "options": [
+      "Yes, by placing a list inside <li>",
+      "Only in tables",
+      "No, never",
+      "Only with CSS"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is valid list structure?",
+    "options": [
+      "<ul><p>One</p></ul>",
+      "<ol><div>One</div></ol>",
+      "<li><ul>One</ul></li>",
+      "<ul><li>One</li></ul>"
+    ],
+    "ans": "d"
   }
 ]

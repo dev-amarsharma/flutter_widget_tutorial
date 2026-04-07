@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Spread & Rest in web development?",
+    "options": [
+      "A hardware-only feature",
+      "A replacement for all CSS",
+      "A core concept used in practical web projects",
+      "A database indexing method"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why should developers learn Spread & Rest?",
+    "options": [
+      "It only matters for offline apps",
+      "It removes need for testing",
+      "It disables browser APIs",
+      "It helps write clearer and more reliable code"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Spread & Rest behavior?",
+    "options": [
+      "Random snippets without docs",
+      "A single outdated screenshot",
+      "Official documentation/specifications",
+      "Unofficial social posts only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Spread & Rest?",
+    "options": [
+      "Build small examples and iterate",
+      "Memorize syntax without practice",
+      "Skip debugging tools",
+      "Ignore edge cases"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake with Spread & Rest?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Reviewing official docs",
+      "Writing descriptive code",
+      "Testing realistic scenarios"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for Spread & Rest?",
+    "options": [
+      "They reduce readability",
+      "They increase bugs",
+      "They prevent all runtime behavior",
+      "They improve maintainability"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "When applying Spread & Rest, what should you prioritize first?",
+    "options": [
+      "Skipping validation",
+      "Avoiding all comments",
+      "Maximum complexity",
+      "Clarity and correctness"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What complements learning Spread & Rest effectively?",
+    "options": [
+      "Avoiding examples",
+      "Ignoring standards",
+      "Only reading headings",
+      "Hands-on exercises with feedback"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Spread & Rest?",
+    "options": [
+      "Copying code blindly",
+      "Skipping review",
+      "Checking assumptions and outputs",
+      "Rushing implementation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Spread & Rest?",
+    "options": [
+      "Practice, review, and incremental improvement",
+      "Use one pattern forever",
+      "Avoid updates in standards",
+      "Depend on guesswork"
+    ],
+    "ans": "a"
+  }
+]

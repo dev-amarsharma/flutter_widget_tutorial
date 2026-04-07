@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Promises in web development?",
+    "options": [
+      "A hardware-only feature",
+      "A database indexing method",
+      "A replacement for all CSS",
+      "A core concept used in practical web projects"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why should developers learn Promises?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It disables browser APIs",
+      "It removes need for testing",
+      "It only matters for offline apps"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Promises behavior?",
+    "options": [
+      "Official documentation/specifications",
+      "Unofficial social posts only",
+      "Random snippets without docs",
+      "A single outdated screenshot"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Promises?",
+    "options": [
+      "Ignore edge cases",
+      "Skip debugging tools",
+      "Build small examples and iterate",
+      "Memorize syntax without practice"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake with Promises?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Reviewing official docs",
+      "Writing descriptive code",
+      "Testing realistic scenarios"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for Promises?",
+    "options": [
+      "They increase bugs",
+      "They prevent all runtime behavior",
+      "They reduce readability",
+      "They improve maintainability"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "When applying Promises, what should you prioritize first?",
+    "options": [
+      "Maximum complexity",
+      "Clarity and correctness",
+      "Avoiding all comments",
+      "Skipping validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What complements learning Promises effectively?",
+    "options": [
+      "Hands-on exercises with feedback",
+      "Ignoring standards",
+      "Only reading headings",
+      "Avoiding examples"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Promises?",
+    "options": [
+      "Checking assumptions and outputs",
+      "Skipping review",
+      "Rushing implementation",
+      "Copying code blindly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Promises?",
+    "options": [
+      "Use one pattern forever",
+      "Practice, review, and incremental improvement",
+      "Depend on guesswork",
+      "Avoid updates in standards"
+    ],
+    "ans": "b"
+  }
+]

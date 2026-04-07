@@ -48,5 +48,55 @@
       "Use HTML to replace all scripting"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Which file extension is commonly used for HTML documents?",
+    "options": [
+      ".json",
+      ".css",
+      ".html",
+      ".js"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does a browser do with HTML?",
+    "options": [
+      "Renders structured content",
+      "Encrypts it by default",
+      "Turns it into images only",
+      "Compiles it into SQL"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which element contains metadata and title?",
+    "options": [
+      "<head>",
+      "<body>",
+      "<footer>",
+      "<main>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the role of CSS in web development?",
+    "options": [
+      "Provide DNS records",
+      "Handle database joins",
+      "Structure content",
+      "Style presentation"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which is a semantic HTML element?",
+    "options": [
+      "<article>",
+      "<div>",
+      "<span>",
+      "<font>"
+    ],
+    "ans": "a"
   }
 ]

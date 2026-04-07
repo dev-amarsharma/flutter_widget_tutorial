@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Event Loop in web development?",
+    "options": [
+      "A database indexing method",
+      "A hardware-only feature",
+      "A replacement for all CSS",
+      "A core concept used in practical web projects"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why should developers learn Event Loop?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It disables browser APIs",
+      "It only matters for offline apps",
+      "It removes need for testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Event Loop behavior?",
+    "options": [
+      "A single outdated screenshot",
+      "Official documentation/specifications",
+      "Random snippets without docs",
+      "Unofficial social posts only"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Event Loop?",
+    "options": [
+      "Ignore edge cases",
+      "Build small examples and iterate",
+      "Memorize syntax without practice",
+      "Skip debugging tools"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake with Event Loop?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Reviewing official docs",
+      "Testing realistic scenarios",
+      "Writing descriptive code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for Event Loop?",
+    "options": [
+      "They reduce readability",
+      "They improve maintainability",
+      "They prevent all runtime behavior",
+      "They increase bugs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When applying Event Loop, what should you prioritize first?",
+    "options": [
+      "Skipping validation",
+      "Avoiding all comments",
+      "Clarity and correctness",
+      "Maximum complexity"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What complements learning Event Loop effectively?",
+    "options": [
+      "Hands-on exercises with feedback",
+      "Avoiding examples",
+      "Only reading headings",
+      "Ignoring standards"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Event Loop?",
+    "options": [
+      "Skipping review",
+      "Rushing implementation",
+      "Checking assumptions and outputs",
+      "Copying code blindly"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Event Loop?",
+    "options": [
+      "Avoid updates in standards",
+      "Depend on guesswork",
+      "Use one pattern forever",
+      "Practice, review, and incremental improvement"
+    ],
+    "ans": "d"
+  }
+]

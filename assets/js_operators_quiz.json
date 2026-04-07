@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Operators in web development?",
+    "options": [
+      "A hardware-only feature",
+      "A replacement for all CSS",
+      "A core concept used in practical web projects",
+      "A database indexing method"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why should developers learn Operators?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It only matters for offline apps",
+      "It removes need for testing",
+      "It disables browser APIs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Operators behavior?",
+    "options": [
+      "Unofficial social posts only",
+      "A single outdated screenshot",
+      "Random snippets without docs",
+      "Official documentation/specifications"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Operators?",
+    "options": [
+      "Skip debugging tools",
+      "Ignore edge cases",
+      "Build small examples and iterate",
+      "Memorize syntax without practice"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which is a common mistake with Operators?",
+    "options": [
+      "Reviewing official docs",
+      "Using it without understanding fundamentals",
+      "Writing descriptive code",
+      "Testing realistic scenarios"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How do best practices improve outcomes for Operators?",
+    "options": [
+      "They increase bugs",
+      "They prevent all runtime behavior",
+      "They improve maintainability",
+      "They reduce readability"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When applying Operators, what should you prioritize first?",
+    "options": [
+      "Maximum complexity",
+      "Avoiding all comments",
+      "Skipping validation",
+      "Clarity and correctness"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What complements learning Operators effectively?",
+    "options": [
+      "Ignoring standards",
+      "Only reading headings",
+      "Hands-on exercises with feedback",
+      "Avoiding examples"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Operators?",
+    "options": [
+      "Checking assumptions and outputs",
+      "Skipping review",
+      "Rushing implementation",
+      "Copying code blindly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Operators?",
+    "options": [
+      "Depend on guesswork",
+      "Use one pattern forever",
+      "Avoid updates in standards",
+      "Practice, review, and incremental improvement"
+    ],
+    "ans": "d"
+  }
+]
