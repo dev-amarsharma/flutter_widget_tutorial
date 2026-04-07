@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes HTML Images in web development?",
+    "options": [
+      "A database indexing method",
+      "A core concept used in practical web projects",
+      "A hardware-only feature",
+      "A replacement for all CSS"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why should developers learn HTML Images?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It only matters for offline apps",
+      "It disables browser APIs",
+      "It removes need for testing"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying HTML Images behavior?",
+    "options": [
+      "Unofficial social posts only",
+      "Random snippets without docs",
+      "Official documentation/specifications",
+      "A single outdated screenshot"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good beginner strategy when studying HTML Images?",
+    "options": [
+      "Build small examples and iterate",
+      "Ignore edge cases",
+      "Memorize syntax without practice",
+      "Skip debugging tools"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which is a common mistake with HTML Images?",
+    "options": [
+      "Writing descriptive code",
+      "Reviewing official docs",
+      "Testing realistic scenarios",
+      "Using it without understanding fundamentals"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How do best practices improve outcomes for HTML Images?",
+    "options": [
+      "They increase bugs",
+      "They improve maintainability",
+      "They prevent all runtime behavior",
+      "They reduce readability"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When applying HTML Images, what should you prioritize first?",
+    "options": [
+      "Maximum complexity",
+      "Clarity and correctness",
+      "Avoiding all comments",
+      "Skipping validation"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What complements learning HTML Images effectively?",
+    "options": [
+      "Avoiding examples",
+      "Hands-on exercises with feedback",
+      "Ignoring standards",
+      "Only reading headings"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which habit helps avoid errors while using HTML Images?",
+    "options": [
+      "Copying code blindly",
+      "Rushing implementation",
+      "Skipping review",
+      "Checking assumptions and outputs"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering HTML Images?",
+    "options": [
+      "Use one pattern forever",
+      "Depend on guesswork",
+      "Avoid updates in standards",
+      "Practice, review, and incremental improvement"
+    ],
+    "ans": "d"
+  }
+]

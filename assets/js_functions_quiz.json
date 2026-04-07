@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes Functions in web development?",
+    "options": [
+      "A core concept used in practical web projects",
+      "A database indexing method",
+      "A hardware-only feature",
+      "A replacement for all CSS"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should developers learn Functions?",
+    "options": [
+      "It helps write clearer and more reliable code",
+      "It only matters for offline apps",
+      "It removes need for testing",
+      "It disables browser APIs"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which source is most appropriate for verifying Functions behavior?",
+    "options": [
+      "Random snippets without docs",
+      "A single outdated screenshot",
+      "Official documentation/specifications",
+      "Unofficial social posts only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is a good beginner strategy when studying Functions?",
+    "options": [
+      "Skip debugging tools",
+      "Build small examples and iterate",
+      "Ignore edge cases",
+      "Memorize syntax without practice"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake with Functions?",
+    "options": [
+      "Writing descriptive code",
+      "Testing realistic scenarios",
+      "Reviewing official docs",
+      "Using it without understanding fundamentals"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How do best practices improve outcomes for Functions?",
+    "options": [
+      "They reduce readability",
+      "They increase bugs",
+      "They improve maintainability",
+      "They prevent all runtime behavior"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When applying Functions, what should you prioritize first?",
+    "options": [
+      "Maximum complexity",
+      "Avoiding all comments",
+      "Clarity and correctness",
+      "Skipping validation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What complements learning Functions effectively?",
+    "options": [
+      "Only reading headings",
+      "Ignoring standards",
+      "Avoiding examples",
+      "Hands-on exercises with feedback"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which habit helps avoid errors while using Functions?",
+    "options": [
+      "Rushing implementation",
+      "Checking assumptions and outputs",
+      "Skipping review",
+      "Copying code blindly"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering Functions?",
+    "options": [
+      "Practice, review, and incremental improvement",
+      "Depend on guesswork",
+      "Avoid updates in standards",
+      "Use one pattern forever"
+    ],
+    "ans": "a"
+  }
+]

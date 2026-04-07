@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What best describes JavaScript Modules in web development?",
+    "options": [
+      "A hardware-only feature",
+      "A core concept used in practical web projects",
+      "A database indexing method",
+      "A replacement for all CSS"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why should developers learn JavaScript Modules?",
+    "options": [
+      "It removes need for testing",
+      "It disables browser APIs",
+      "It helps write clearer and more reliable code",
+      "It only matters for offline apps"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which source is most appropriate for verifying JavaScript Modules behavior?",
+    "options": [
+      "Official documentation/specifications",
+      "Random snippets without docs",
+      "Unofficial social posts only",
+      "A single outdated screenshot"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a good beginner strategy when studying JavaScript Modules?",
+    "options": [
+      "Skip debugging tools",
+      "Build small examples and iterate",
+      "Ignore edge cases",
+      "Memorize syntax without practice"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which is a common mistake with JavaScript Modules?",
+    "options": [
+      "Using it without understanding fundamentals",
+      "Reviewing official docs",
+      "Writing descriptive code",
+      "Testing realistic scenarios"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do best practices improve outcomes for JavaScript Modules?",
+    "options": [
+      "They prevent all runtime behavior",
+      "They reduce readability",
+      "They increase bugs",
+      "They improve maintainability"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "When applying JavaScript Modules, what should you prioritize first?",
+    "options": [
+      "Clarity and correctness",
+      "Skipping validation",
+      "Avoiding all comments",
+      "Maximum complexity"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What complements learning JavaScript Modules effectively?",
+    "options": [
+      "Only reading headings",
+      "Hands-on exercises with feedback",
+      "Avoiding examples",
+      "Ignoring standards"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Which habit helps avoid errors while using JavaScript Modules?",
+    "options": [
+      "Skipping review",
+      "Copying code blindly",
+      "Checking assumptions and outputs",
+      "Rushing implementation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is the recommended long-term approach to mastering JavaScript Modules?",
+    "options": [
+      "Avoid updates in standards",
+      "Practice, review, and incremental improvement",
+      "Use one pattern forever",
+      "Depend on guesswork"
+    ],
+    "ans": "b"
+  }
+]
