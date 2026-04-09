@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Best Practices in web development?",
     "options": [
-      "A core concept used in practical web projects",
-      "A hardware-only feature",
-      "A database indexing method",
-      "A replacement for all CSS"
+      "Using only inline styles",
+      "Ignoring structure",
+      "Using elements that convey meaning",
+      "Using divs for everything"
     ],
-    "ans": "a"
+    "que": "What is semantic HTML?",
+    "ans": "c"
   },
   {
-    "que": "Why should developers learn Best Practices?",
     "options": [
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It removes need for testing"
+      "To reduce file size",
+      "To add more features",
+      "To make it look better",
+      "To ensure it follows standards"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Best Practices behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Official documentation/specifications"
-    ],
+    "que": "Why should you validate HTML?",
     "ans": "d"
   },
   {
-    "que": "What is a good beginner strategy when studying Best Practices?",
     "options": [
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Ignore edge cases",
-      "Memorize syntax without practice"
+      "To explain code for developers",
+      "To add styles",
+      "To create links",
+      "To display text to users"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "Which is a common mistake with Best Practices?",
-    "options": [
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Testing realistic scenarios",
-      "Writing descriptive code"
-    ],
+    "que": "What is the purpose of comments in HTML?",
     "ans": "a"
   },
   {
-    "que": "How do best practices improve outcomes for Best Practices?",
     "options": [
-      "They increase bugs",
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They reduce readability"
+      "Using images only",
+      "Using tables for layout",
+      "Using bold text",
+      "Using proper headings"
     ],
+    "que": "Which is better for accessibility?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Comments",
+      "Semantic elements",
+      "Validation",
+      "Deprecated elements"
+    ],
+    "que": "What should you avoid in HTML?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "To mix with JavaScript",
+      "For better maintainability",
+      "To inline styles",
+      "To avoid CSS"
+    ],
+    "que": "Why use external CSS?",
     "ans": "b"
   },
   {
-    "que": "When applying Best Practices, what should you prioritize first?",
     "options": [
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Avoiding all comments",
-      "Skipping validation"
+      "To define styles",
+      "To specify HTML version",
+      "To add scripts",
+      "To set the title"
     ],
+    "que": "What is the role of DOCTYPE?",
     "ans": "b"
   },
   {
-    "que": "What complements learning Best Practices effectively?",
     "options": [
-      "Hands-on exercises with feedback",
-      "Avoiding examples",
-      "Ignoring standards",
-      "Only reading headings"
+      "For faster loading",
+      "To use more images",
+      "To ignore caching",
+      "To add more content"
     ],
+    "que": "Why minimize HTTP requests?",
     "ans": "a"
   },
   {
-    "que": "Which habit helps avoid errors while using Best Practices?",
     "options": [
-      "Rushing implementation",
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Skipping review"
+      "Ignoring older browsers",
+      "Starting with advanced features",
+      "Starting with basics and adding features",
+      "Using only JavaScript"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering Best Practices?",
-    "options": [
-      "Use one pattern forever",
-      "Avoid updates in standards",
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork"
-    ],
+    "que": "What is progressive enhancement?",
     "ans": "c"
+  },
+  {
+    "options": [
+      "To add captions",
+      "For accessibility",
+      "To make images larger",
+      "To replace text"
+    ],
+    "que": "Why use alt text on images?",
+    "ans": "b"
   }
 ]

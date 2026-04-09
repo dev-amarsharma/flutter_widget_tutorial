@@ -1,46 +1,101 @@
 [
   {
-    "que": "What is an event in JavaScript?",
+    "que": "What is an event?",
     "options": [
-      "Something that happens in the browser and can trigger code",
-      "A CSS selector only",
-      "A database table",
-      "A file path type"
+      "Object",
+      "Function call",
+      "Action that occurs",
+      "Variable"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to handle click event?",
+    "options": [
+      "onClick = handler",
+      "click(handler)",
+      "addEventListener('click', handler)",
+      "handleClick(handler)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is event.target?",
+    "options": [
+      "Event handler",
+      "Event type",
+      "Element that triggered event",
+      "Parent element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does preventDefault() do?",
+    "options": [
+      "Stops event bubbling",
+      "Stops default action",
+      "Adds handler",
+      "Removes handler"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is event bubbling?",
+    "options": [
+      "Event propagates down",
+      "Event stops",
+      "Event repeats",
+      "Event propagates up"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to stop propagation?",
+    "options": [
+      "cancelEvent()",
+      "stopPropagation()",
+      "preventDefault()",
+      "stopEvent()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is event delegation?",
+    "options": [
+      "Handle events on parent",
+      "Handle on window",
+      "Handle on child",
+      "Handle on document"
     ],
     "ans": "a"
   },
   {
-    "que": "Which method is commonly used to listen for events?",
+    "que": "What is keydown event?",
     "options": [
-      "addEventListener",
-      "appendChild",
-      "querySelectorAll",
-      "parseInt"
+      "Key released",
+      "Key typed",
+      "Key pressed",
+      "Key pressed down"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "Which event is commonly used for button presses?",
-    "options": ["click", "resize", "load", "hovered"],
-    "ans": "a"
-  },
-  {
-    "que": "What does event.preventDefault() do in a form submit handler?",
+    "que": "What is submit event?",
     "options": [
-      "Stops the browser’s default submit behavior",
-      "Reloads the page immediately",
-      "Adds a CSS class",
-      "Deletes the form"
+      "Input change",
+      "Page load",
+      "Button click",
+      "Form submission"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "Which is a good event-handling practice?",
+    "que": "How to remove event listener?",
     "options": [
-      "Keep handlers focused",
-      "Put every action in one huge callback",
-      "Prevent default behavior all the time",
-      "Avoid naming functions"
+      "removeEventListener()",
+      "unlisten()",
+      "off()",
+      "detachEvent()"
     ],
     "ans": "a"
   }

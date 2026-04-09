@@ -2,40 +2,100 @@
   {
     "que": "What is an array best suited for?",
     "options": [
-      "An ordered list of items",
+      "A browser event",
       "A single CSS color",
-      "An HTML tag name",
-      "A browser event"
+      "An ordered list of items",
+      "An HTML tag name"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
     "que": "What is an object best suited for?",
     "options": [
-      "Named properties about one thing",
+      "Only images",
       "Only numeric indexes",
-      "Only DOM events",
-      "Only images"
+      "Named properties about one thing",
+      "Only DOM events"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
     "que": "Which method commonly adds an item to the end of an array?",
-    "options": ["push()", "join()", "trim()", "bind()"],
-    "ans": "a"
+    "options": [
+      "trim()",
+      "bind()",
+      "push()",
+      "join()"
+    ],
+    "ans": "c"
   },
   {
     "que": "How do you typically access an object property named name?",
-    "options": ["user.name", "user(0)", "user=>name", "name.user"],
-    "ans": "a"
+    "options": [
+      "name.user",
+      "user.name",
+      "user(0)",
+      "user=>name"
+    ],
+    "ans": "b"
   },
   {
     "que": "When should you prefer an array over an object?",
     "options": [
-      "When you need an ordered collection",
-      "When you need named fields only",
+      "When adding CSS classes",
       "When writing HTML attributes",
-      "When adding CSS classes"
+      "When you need an ordered collection",
+      "When you need named fields only"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which array method creates a new array by transforming each item?",
+    "options": [
+      "filter()",
+      "map()",
+      "slice()",
+      "concat()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How do you check if a value exists in an array?",
+    "options": [
+      "includes()",
+      "replace()",
+      "toString()",
+      "sort()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the correct syntax to create an empty object?",
+    "options": [
+      "{}",
+      "[]",
+      "()",
+      "<>"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which object method returns an array of property names?",
+    "options": [
+      "Object.keys()",
+      "Object.values()",
+      "Object.assign()",
+      "Object.create()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the correct way to remove the first item from an array?",
+    "options": [
+      "shift()",
+      "pop()",
+      "unshift()",
+      "splice()"
     ],
     "ans": "a"
   }

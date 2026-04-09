@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes HTML Tables in web development?",
     "options": [
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects",
-      "A database indexing method"
+      "<tab>",
+      "<grid>",
+      "<table>",
+      "<data>"
     ],
+    "que": "Which element creates tables?",
     "ans": "c"
   },
   {
-    "que": "Why should developers learn HTML Tables?",
     "options": [
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It helps write clearer and more reliable code",
-      "It only matters for offline apps"
+      "Table cell",
+      "Table header",
+      "Table column",
+      "Table row"
     ],
-    "ans": "c"
-  },
-  {
-    "que": "Which source is most appropriate for verifying HTML Tables behavior?",
-    "options": [
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Official documentation/specifications",
-      "Unofficial social posts only"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is a good beginner strategy when studying HTML Tables?",
-    "options": [
-      "Ignore edge cases",
-      "Memorize syntax without practice",
-      "Skip debugging tools",
-      "Build small examples and iterate"
-    ],
+    "que": "What does <tr> define?",
     "ans": "d"
   },
   {
-    "que": "Which is a common mistake with HTML Tables?",
     "options": [
-      "Writing descriptive code",
-      "Testing realistic scenarios",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs"
+      "<header>",
+      "<head>",
+      "<th>",
+      "<td>"
     ],
+    "que": "Which element for table headers?",
     "ans": "c"
   },
   {
-    "que": "How do best practices improve outcomes for HTML Tables?",
     "options": [
-      "They improve maintainability",
-      "They reduce readability",
-      "They prevent all runtime behavior",
-      "They increase bugs"
+      "Table body",
+      "Table row",
+      "Table data cell",
+      "Table header"
     ],
+    "que": "What is <td> for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<top>",
+      "<head>",
+      "<thead>",
+      "<header>"
+    ],
+    "que": "Which element groups header rows?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Table body rows",
+      "All rows",
+      "Footer rows",
+      "Header rows"
+    ],
+    "que": "What does <tbody> contain?",
     "ans": "a"
   },
   {
-    "que": "When applying HTML Tables, what should you prioritize first?",
     "options": [
-      "Skipping validation",
-      "Maximum complexity",
-      "Avoiding all comments",
-      "Clarity and correctness"
+      "<desc>",
+      "<label>",
+      "<caption>",
+      "<title>"
     ],
-    "ans": "d"
+    "que": "Which element for table captions?",
+    "ans": "c"
   },
   {
-    "que": "What complements learning HTML Tables effectively?",
     "options": [
-      "Ignoring standards",
-      "Hands-on exercises with feedback",
-      "Avoiding examples",
-      "Only reading headings"
+      "Spans multiple columns",
+      "Sets height",
+      "Sets width",
+      "Spans rows"
     ],
-    "ans": "b"
+    "que": "What does 'colspan' do?",
+    "ans": "a"
   },
   {
-    "que": "Which habit helps avoid errors while using HTML Tables?",
     "options": [
-      "Skipping review",
-      "Rushing implementation",
-      "Copying code blindly",
-      "Checking assumptions and outputs"
+      "padding",
+      "margin",
+      "cellpadding",
+      "space"
     ],
-    "ans": "d"
+    "que": "Which attribute for cell padding?",
+    "ans": "c"
   },
   {
-    "que": "What is the recommended long-term approach to mastering HTML Tables?",
     "options": [
-      "Depend on guesswork",
-      "Avoid updates in standards",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement"
+      "Accessibility and semantics",
+      "Styling",
+      "Size",
+      "Position"
     ],
-    "ans": "d"
+    "que": "Why use <th> over <td>?",
+    "ans": "a"
   }
 ]

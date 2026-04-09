@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes SVG in web development?",
     "options": [
-      "A core concept used in practical web projects",
-      "A replacement for all CSS",
-      "A database indexing method",
-      "A hardware-only feature"
+      "Scalable Vector Graphics",
+      "Simple Vector Graphics",
+      "Standard Vector Graphics",
+      "Scalable Visual Graphics"
     ],
+    "que": "What does SVG stand for?",
     "ans": "a"
   },
   {
-    "que": "Why should developers learn SVG?",
     "options": [
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code"
+      "<image>",
+      "<vector>",
+      "<svg>",
+      "<graphic>"
     ],
+    "que": "Which element defines SVG?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Videos",
+      "Vector graphics",
+      "Photos",
+      "Audio"
+    ],
+    "que": "What is SVG used for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "size",
+      "width",
+      "dimension",
+      "w"
+    ],
+    "que": "Which attribute sets SVG width?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Square",
+      "Circle shape",
+      "Triangle",
+      "Line"
+    ],
+    "que": "What does <circle> create?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<box>",
+      "<square>",
+      "<shape>",
+      "<rect>"
+    ],
+    "que": "Which element draws rectangles?",
     "ans": "d"
   },
   {
-    "que": "Which source is most appropriate for verifying SVG behavior?",
     "options": [
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Random snippets without docs"
+      "Distance",
+      "Path definition",
+      "Direction",
+      "Dimension"
     ],
-    "ans": "c"
-  },
-  {
-    "que": "What is a good beginner strategy when studying SVG?",
-    "options": [
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Ignore edge cases",
-      "Memorize syntax without practice"
-    ],
+    "que": "What is the 'd' attribute for?",
     "ans": "b"
   },
   {
-    "que": "Which is a common mistake with SVG?",
     "options": [
-      "Testing realistic scenarios",
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs"
+      "color",
+      "style",
+      "background",
+      "fill"
     ],
-    "ans": "c"
-  },
-  {
-    "que": "How do best practices improve outcomes for SVG?",
-    "options": [
-      "They increase bugs",
-      "They reduce readability",
-      "They improve maintainability",
-      "They prevent all runtime behavior"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "When applying SVG, what should you prioritize first?",
-    "options": [
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Avoiding all comments",
-      "Skipping validation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What complements learning SVG effectively?",
-    "options": [
-      "Only reading headings",
-      "Ignoring standards",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
-    ],
+    "que": "Which property sets fill color?",
     "ans": "d"
   },
   {
-    "que": "Which habit helps avoid errors while using SVG?",
     "options": [
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Rushing implementation"
+      "Shape",
+      "Fill color",
+      "Size",
+      "Outline color"
     ],
-    "ans": "c"
+    "que": "What does 'stroke' define?",
+    "ans": "d"
   },
   {
-    "que": "What is the recommended long-term approach to mastering SVG?",
     "options": [
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork",
-      "Avoid updates in standards"
+      "Supports animation",
+      "Smaller files",
+      "Better for photos",
+      "Scales without quality loss"
     ],
-    "ans": "b"
+    "que": "Why use SVG over raster?",
+    "ans": "d"
   }
 ]

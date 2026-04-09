@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes SEO Basics in web development?",
     "options": [
-      "A database indexing method",
-      "A core concept used in practical web projects",
-      "A hardware-only feature",
-      "A replacement for all CSS"
+      "Search Enhancement Online",
+      "Site Enhancement Option",
+      "Search Engine Optimization",
+      "Site Engine Optimization"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "Why should developers learn SEO Basics?",
-    "options": [
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It only matters for offline apps"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which source is most appropriate for verifying SEO Basics behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying SEO Basics?",
-    "options": [
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Memorize syntax without practice",
-      "Build small examples and iterate"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which is a common mistake with SEO Basics?",
-    "options": [
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Testing realistic scenarios",
-      "Writing descriptive code"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "How do best practices improve outcomes for SEO Basics?",
-    "options": [
-      "They increase bugs",
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They improve maintainability"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "When applying SEO Basics, what should you prioritize first?",
-    "options": [
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Avoiding all comments",
-      "Skipping validation"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What complements learning SEO Basics effectively?",
-    "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Hands-on exercises with feedback",
-      "Avoiding examples"
-    ],
+    "que": "What does SEO stand for?",
     "ans": "c"
   },
   {
-    "que": "Which habit helps avoid errors while using SEO Basics?",
     "options": [
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Rushing implementation",
-      "Copying code blindly"
+      "<title>",
+      "<link>",
+      "<h1>",
+      "<meta>"
     ],
+    "que": "Which tag is most important for SEO?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Author",
+      "Search result snippet",
+      "Page title",
+      "Keywords"
+    ],
+    "que": "What is meta description?",
     "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering SEO Basics?",
     "options": [
-      "Avoid updates in standards",
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever",
-      "Depend on guesswork"
+      "Content structure",
+      "Styling",
+      "Links",
+      "Navigation"
     ],
-    "ans": "b"
+    "que": "Why use heading hierarchy?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Accessibility",
+      "Page speed",
+      "Image SEO",
+      "Mobile"
+    ],
+    "que": "What does alt text help with?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "rel=\"canonical\"",
+      "link",
+      "canonical",
+      "url"
+    ],
+    "que": "Which attribute for canonical URL?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "CSS classes",
+      "JavaScript",
+      "HTML tags",
+      "Schema markup"
+    ],
+    "que": "What is structured data?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Search engines understand meaning",
+      "Faster rendering",
+      "Better caching",
+      "Smaller files"
+    ],
+    "que": "Why use semantic HTML for SEO?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Controls indexing",
+      "Sets language",
+      "Adds keywords",
+      "Defines viewport"
+    ],
+    "que": "What does 'robots' meta do?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "All of the above",
+      "Mobile",
+      "User experience",
+      "Better rankings"
+    ],
+    "que": "Why optimize page speed?",
+    "ans": "a"
   }
 ]

@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Video in web development?",
     "options": [
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects",
-      "A database indexing method"
+      "<movie>",
+      "<media>",
+      "<video>",
+      "<play>"
     ],
+    "que": "Which element embeds video?",
     "ans": "c"
   },
   {
-    "que": "Why should developers learn Video?",
     "options": [
-      "It helps write clearer and more reliable code",
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It removes need for testing"
+      "src",
+      "source",
+      "url",
+      "file"
     ],
+    "que": "What attribute sets video source?",
     "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying Video behavior?",
     "options": [
-      "Random snippets without docs",
-      "Unofficial social posts only",
-      "Official documentation/specifications",
-      "A single outdated screenshot"
+      "interface",
+      "buttons",
+      "controls",
+      "panel"
     ],
+    "que": "Which attribute shows controls?",
     "ans": "c"
   },
   {
-    "que": "What is a good beginner strategy when studying Video?",
     "options": [
-      "Build small examples and iterate",
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Memorize syntax without practice"
+      "Mutes video",
+      "Loops video",
+      "Pauses video",
+      "Starts automatically"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common mistake with Video?",
-    "options": [
-      "Reviewing official docs",
-      "Using it without understanding fundamentals",
-      "Writing descriptive code",
-      "Testing realistic scenarios"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "How do best practices improve outcomes for Video?",
-    "options": [
-      "They increase bugs",
-      "They improve maintainability",
-      "They reduce readability",
-      "They prevent all runtime behavior"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "When applying Video, what should you prioritize first?",
-    "options": [
-      "Skipping validation",
-      "Clarity and correctness",
-      "Maximum complexity",
-      "Avoiding all comments"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What complements learning Video effectively?",
-    "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
-    ],
+    "que": "What does 'autoplay' do?",
     "ans": "d"
   },
   {
-    "que": "Which habit helps avoid errors while using Video?",
     "options": [
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Rushing implementation"
+      "continue",
+      "cycle",
+      "loop",
+      "repeat"
     ],
+    "que": "Which attribute for looping?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Speed",
+      "Loading behavior",
+      "Quality",
+      "Volume"
+    ],
+    "que": "What is 'preload' for?",
     "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Video?",
     "options": [
-      "Use one pattern forever",
-      "Avoid updates in standards",
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork"
+      "MOV",
+      "MP4, WebM, OGG",
+      "AVI",
+      "WMV"
     ],
-    "ans": "c"
+    "que": "Which formats supported?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<alt>",
+      "<source>",
+      "<text>",
+      "<fallback>"
+    ],
+    "que": "What provides fallback?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "text",
+      "<track>",
+      "subtitles",
+      "caption"
+    ],
+    "que": "Which attribute for subtitles?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Overlay",
+      "Thumbnail image",
+      "Background",
+      "Border"
+    ],
+    "que": "Why use poster attribute?",
+    "ans": "b"
   }
 ]

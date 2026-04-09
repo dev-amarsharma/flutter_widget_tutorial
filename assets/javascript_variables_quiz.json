@@ -1,52 +1,102 @@
 [
   {
-    "que": "Which declaration should usually be preferred by default in modern JavaScript?",
+    "que": "What is var?",
     "options": [
-      "const",
-      "global",
-      "static",
-      "mutable"
+      "Function-scoped variable",
+      "Global",
+      "Constant",
+      "Block-scoped"
     ],
     "ans": "a"
   },
   {
-    "que": "When is let appropriate?",
+    "que": "What is let?",
     "options": [
-      "When the variable will be reassigned",
-      "When writing HTML structure",
-      "When replacing all functions",
-      "When a browser has no console"
+      "Global",
+      "Function-scoped",
+      "Constant",
+      "Block-scoped variable"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "Why is var less preferred in new code?",
+    "que": "What is const?",
     "options": [
-      "It is not a JavaScript keyword",
-      "It has older function-scoping behavior",
-      "It can only store numbers",
-      "It works only in Node.js"
+      "Function",
+      "Variable",
+      "Constant value",
+      "Object"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is hoisting?",
+    "options": [
+      "Values moved up",
+      "Declarations moved up",
+      "Code executed",
+      "Variables deleted"
     ],
     "ans": "b"
   },
   {
-    "que": "What does block scope mean?",
+    "que": "What is temporal dead zone?",
     "options": [
-      "A variable is available everywhere in the app",
-      "A variable only exists inside the block where it is declared",
-      "A variable can never change type",
-      "A variable is always stored on a server"
+      "Time before declaration",
+      "After declaration",
+      "During execution",
+      "After execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is undefined?",
+    "options": [
+      "Unassigned value",
+      "Error",
+      "Zero",
+      "Null value"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is null?",
+    "options": [
+      "Empty string",
+      "Intentional absence",
+      "Error",
+      "Unassigned"
     ],
     "ans": "b"
   },
   {
-    "que": "Which is a good variable practice?",
+    "que": "What is scope?",
     "options": [
-      "Use descriptive names",
-      "Reuse one variable for unrelated values",
-      "Prefer var for all new code",
-      "Avoid const completely"
+      "Function",
+      "Variable visibility",
+      "File",
+      "Code block"
     ],
-    "ans": "a"
+    "ans": "b"
+  },
+  {
+    "que": "What is global scope?",
+    "options": [
+      "Inside block",
+      "Accessible everywhere",
+      "Inside function",
+      "Nowhere"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is local scope?",
+    "options": [
+      "Global",
+      "Inside function/block",
+      "Nowhere",
+      "Everywhere"
+    ],
+    "ans": "b"
   }
 ]

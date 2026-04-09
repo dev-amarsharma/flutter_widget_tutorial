@@ -1,36 +1,56 @@
-# Session Storage
+
+# JavaScript Session Storage
 
 ## Overview
-sessionStorage stores data for one tab session and clears when tab closes.
+`sessionStorage` stores data for the current tab and clears it when the tab closes.
 
 ## Why this topic matters
-Learning Session Storage helps you write cleaner, more maintainable code and improves real-world development confidence.
+Session storage is useful for temporary page state such as form drafts or UI settings.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Use `setItem(key, value)` to store strings.
+- Read values with `getItem(key)`.
+- Remove items with `removeItem(key)`.
+- Data lasts only for the current browser tab session.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("Session Storage"));
+```js
+sessionStorage.setItem("draft", "Hello")
+const draft = sessionStorage.getItem("draft")
+console.log(draft)
+sessionStorage.removeItem("draft")
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Save a preference to session storage.
+2. Read it back and use it on page load.
+3. Store a small object with JSON.
+4. Remove the value when it is no longer needed.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

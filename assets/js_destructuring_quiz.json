@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Destructuring in web development?",
+    "que": "What is destructuring?",
     "options": [
-      "A core concept used in practical web projects",
-      "A database indexing method",
-      "A replacement for all CSS",
-      "A hardware-only feature"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Why should developers learn Destructuring?",
-    "options": [
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It helps write clearer and more reliable code"
+      "Sort values",
+      "Create arrays/objects",
+      "Delete values",
+      "Extract values from arrays/objects"
     ],
     "ans": "d"
   },
   {
-    "que": "Which source is most appropriate for verifying Destructuring behavior?",
+    "que": "How to destructure array?",
     "options": [
-      "Official documentation/specifications",
-      "Random snippets without docs",
-      "Unofficial social posts only",
-      "A single outdated screenshot"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Destructuring?",
-    "options": [
-      "Memorize syntax without practice",
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Ignore edge cases"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake with Destructuring?",
-    "options": [
-      "Testing realistic scenarios",
-      "Reviewing official docs",
-      "Writing descriptive code",
-      "Using it without understanding fundamentals"
+      "const {a, b} = array",
+      "const array = [a, b]",
+      "const a, b = array",
+      "const [a, b] = array"
     ],
     "ans": "d"
   },
   {
-    "que": "How do best practices improve outcomes for Destructuring?",
+    "que": "How to destructure object?",
     "options": [
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They improve maintainability",
-      "They increase bugs"
+      "const a, b = object",
+      "const [a, b] = object",
+      "const object = {a, b}",
+      "const {a, b} = object"
     ],
-    "ans": "c"
+    "ans": "d"
   },
   {
-    "que": "When applying Destructuring, what should you prioritize first?",
+    "que": "What is default value?",
     "options": [
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Skipping validation"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What complements learning Destructuring effectively?",
-    "options": [
-      "Only reading headings",
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Avoiding examples"
+      "Null value",
+      "Value if undefined",
+      "Initial value",
+      "Final value"
     ],
     "ans": "b"
   },
   {
-    "que": "Which habit helps avoid errors while using Destructuring?",
+    "que": "What is rest in destructuring?",
     "options": [
-      "Checking assumptions and outputs",
-      "Rushing implementation",
-      "Copying code blindly",
-      "Skipping review"
+      "First values",
+      "All values",
+      "Remaining values",
+      "No values"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Can rename in object destructuring?",
+    "options": [
+      "With comma",
+      "With equals",
+      "No",
+      "Yes, with colon"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is nested destructuring?",
+    "options": [
+      "Simple destructuring",
+      "Destructure nested structures",
+      "Object only",
+      "Array only"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is parameter destructuring?",
+    "options": [
+      "Destructure in function params",
+      "Destructure in return",
+      "Destructure in if",
+      "Destructure in loop"
     ],
     "ans": "a"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Destructuring?",
+    "que": "What happens if no match?",
     "options": [
-      "Depend on guesswork",
-      "Avoid updates in standards",
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever"
+      "Undefined",
+      "Empty",
+      "Error",
+      "Null"
     ],
-    "ans": "c"
+    "ans": "a"
+  },
+  {
+    "que": "Why use destructuring?",
+    "options": [
+      "Performance",
+      "Security",
+      "Memory",
+      "Cleaner code"
+    ],
+    "ans": "d"
   }
 ]

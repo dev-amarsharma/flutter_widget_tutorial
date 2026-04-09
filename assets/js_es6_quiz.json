@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes ES6 Features in web development?",
+    "que": "What is ES6?",
     "options": [
-      "A core concept used in practical web projects",
-      "A database indexing method",
-      "A hardware-only feature",
-      "A replacement for all CSS"
+      "ECMAScript 2015",
+      "Modern JS",
+      "JavaScript 6",
+      "ECMAScript 6"
     ],
     "ans": "a"
   },
   {
-    "que": "Why should developers learn ES6 Features?",
+    "que": "What is let?",
     "options": [
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It only matters for offline apps"
+      "Block-scoped variable",
+      "Constant",
+      "Global",
+      "Function-scoped"
     ],
     "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying ES6 Features behavior?",
+    "que": "What is const?",
     "options": [
-      "Official documentation/specifications",
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Unofficial social posts only"
+      "Block-scoped constant",
+      "Function",
+      "Variable",
+      "Global"
     ],
     "ans": "a"
   },
   {
-    "que": "What is a good beginner strategy when studying ES6 Features?",
+    "que": "What is arrow function?",
     "options": [
-      "Memorize syntax without practice",
-      "Ignore edge cases",
-      "Build small examples and iterate",
-      "Skip debugging tools"
+      "=> {}",
+      "() -> {}",
+      "() => {}",
+      "function() {}"
     ],
     "ans": "c"
   },
   {
-    "que": "Which is a common mistake with ES6 Features?",
+    "que": "What is template literal?",
     "options": [
-      "Reviewing official docs",
-      "Using it without understanding fundamentals",
-      "Writing descriptive code",
-      "Testing realistic scenarios"
+      "string + var",
+      "\"string\" + var",
+      "`string ${var}`",
+      "'string' + var"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is destructuring?",
+    "options": [
+      "Sort values",
+      "Extract values",
+      "Create values",
+      "Delete values"
     ],
     "ans": "b"
   },
   {
-    "que": "How do best practices improve outcomes for ES6 Features?",
+    "que": "What is spread operator?",
     "options": [
-      "They improve maintainability",
-      "They reduce readability",
-      "They increase bugs",
-      "They prevent all runtime behavior"
+      "..object",
+      "...object",
+      "..array",
+      "...array"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "When applying ES6 Features, what should you prioritize first?",
+    "que": "What is rest parameter?",
     "options": [
-      "Clarity and correctness",
-      "Skipping validation",
-      "Avoiding all comments",
-      "Maximum complexity"
+      "..args",
+      "...args",
+      "...params",
+      "..params"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "What complements learning ES6 Features effectively?",
+    "que": "What is class?",
     "options": [
-      "Avoiding examples",
-      "Ignoring standards",
-      "Hands-on exercises with feedback",
-      "Only reading headings"
+      "Variable",
+      "Blueprint for objects",
+      "Function",
+      "Object"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is module?",
+    "options": [
+      "Function",
+      "Class",
+      "Reusable code file",
+      "Variable"
     ],
     "ans": "c"
-  },
-  {
-    "que": "Which habit helps avoid errors while using ES6 Features?",
-    "options": [
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Skipping review",
-      "Rushing implementation"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering ES6 Features?",
-    "options": [
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards",
-      "Use one pattern forever",
-      "Depend on guesswork"
-    ],
-    "ans": "a"
   }
 ]

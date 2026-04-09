@@ -1,36 +1,58 @@
-# DOM
+
+# JavaScript DOM Manipulation
 
 ## Overview
-DOM APIs let JavaScript read and update HTML elements dynamically.
+DOM manipulation changes page elements, content, and styles using JavaScript.
 
 ## Why this topic matters
-Learning DOM helps you write cleaner, more maintainable code and improves real-world development confidence.
+Updating the DOM enables dynamic content, interactive interfaces, and responsive behavior.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Select elements with `querySelector`.
+- Change content with `textContent` and `innerHTML`.
+- Modify classes with `classList`.
+- Create and remove elements programmatically.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("DOM"));
+```js
+const card = document.querySelector(".card")
+card.textContent = "Updated content"
+card.classList.add("active")
+const badge = document.createElement("span")
+badge.textContent = "New"
+card.appendChild(badge)
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Select an element and update its text.
+2. Add a CSS class to an element.
+3. Create and append a new DOM element.
+4. Remove an element after a delay.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

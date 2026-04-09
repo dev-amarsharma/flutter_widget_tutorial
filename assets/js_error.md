@@ -1,36 +1,60 @@
-# Error Handling
+
+# JavaScript Error Handling
 
 ## Overview
-Error handling with `try/catch/finally` improves resilience and debugging.
+Error handling helps your code respond to unexpected problems instead of failing silently.
 
 ## Why this topic matters
-Learning Error Handling helps you write cleaner, more maintainable code and improves real-world development confidence.
+Robust error handling makes applications more reliable and easier to debug.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Use `try`, `catch`, and `finally`.
+- Throw custom errors with `throw`.
+- Inspect `error.message` and `error.name`.
+- Handle promise rejections with `.catch()`.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+try {
+  const result = JSON.parse("invalid json")
+  console.log(result)
+} catch (error) {
+  console.error("Parsing failed:", error.message)
+} finally {
+  console.log("Cleanup done")
 }
-
-console.log(explainTopic("Error Handling"));
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Parse JSON with `try/catch`.
+2. Throw an error for invalid input.
+3. Handle a rejected promise.
+4. Use `finally` for cleanup.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

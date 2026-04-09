@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Fetch API in web development?",
+    "que": "What does fetch() do?",
     "options": [
-      "A replacement for all CSS",
-      "A database indexing method",
-      "A core concept used in practical web projects",
-      "A hardware-only feature"
+      "Handles error",
+      "Creates promise",
+      "Parses JSON",
+      "Makes HTTP request"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does fetch() return?",
+    "options": [
+      "String",
+      "JSON",
+      "Promise<Response>",
+      "Response"
     ],
     "ans": "c"
   },
   {
-    "que": "Why should developers learn Fetch API?",
+    "que": "How to get JSON?",
     "options": [
-      "It helps write clearer and more reliable code",
-      "It removes need for testing",
-      "It disables browser APIs",
-      "It only matters for offline apps"
+      "response.json()",
+      "response.text()",
+      "response.data()",
+      "response.parse()"
     ],
     "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying Fetch API behavior?",
+    "que": "What is response.ok?",
     "options": [
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Unofficial social posts only",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Fetch API?",
-    "options": [
-      "Ignore edge cases",
-      "Memorize syntax without practice",
-      "Skip debugging tools",
-      "Build small examples and iterate"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which is a common mistake with Fetch API?",
-    "options": [
-      "Writing descriptive code",
-      "Testing realistic scenarios",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs"
+      "True for success",
+      "True for JSON",
+      "True for 200-299",
+      "True for text"
     ],
     "ans": "c"
   },
   {
-    "que": "How do best practices improve outcomes for Fetch API?",
+    "que": "How to handle error?",
     "options": [
-      "They reduce readability",
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They increase bugs"
+      "Switch",
+      "Check response.ok or catch",
+      "Try/catch only",
+      "If/else"
     ],
     "ans": "b"
   },
   {
-    "que": "When applying Fetch API, what should you prioritize first?",
+    "que": "What is async/await?",
     "options": [
-      "Skipping validation",
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Avoiding all comments"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What complements learning Fetch API effectively?",
-    "options": [
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Avoiding examples",
-      "Only reading headings"
+      "Syntactic sugar",
+      "New promise",
+      "Generator",
+      "Callback"
     ],
     "ans": "a"
   },
   {
-    "que": "Which habit helps avoid errors while using Fetch API?",
+    "que": "Can await be top-level?",
     "options": [
-      "Rushing implementation",
-      "Skipping review",
-      "Copying code blindly",
-      "Checking assumptions and outputs"
+      "Yes",
+      "In modules",
+      "In functions",
+      "No"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.all?",
+    "options": [
+      "Resolve all",
+      "Wait for all",
+      "Wait for first",
+      "Reject all"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.race?",
+    "options": [
+      "Reject first",
+      "Wait for all",
+      "Resolve first",
+      "Wait for first settle"
     ],
     "ans": "d"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Fetch API?",
+    "que": "How to send POST?",
     "options": [
-      "Depend on guesswork",
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever",
-      "Avoid updates in standards"
+      "fetch(url, {method: 'POST'})",
+      "fetch(url, 'POST')",
+      "send(url, 'POST')",
+      "post(url)"
     ],
-    "ans": "b"
+    "ans": "a"
   }
 ]

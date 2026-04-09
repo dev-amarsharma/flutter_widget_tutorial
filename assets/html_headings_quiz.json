@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes HTML Headings in web development?",
     "options": [
-      "A database indexing method",
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A core concept used in practical web projects"
+      "To structure content hierarchy",
+      "To add links",
+      "To make text bold",
+      "To create lists"
     ],
-    "ans": "d"
-  },
-  {
-    "que": "Why should developers learn HTML Headings?",
-    "options": [
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code",
-      "It removes need for testing"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which source is most appropriate for verifying HTML Headings behavior?",
-    "options": [
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Unofficial social posts only"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is a good beginner strategy when studying HTML Headings?",
-    "options": [
-      "Build small examples and iterate",
-      "Skip debugging tools",
-      "Memorize syntax without practice",
-      "Ignore edge cases"
-    ],
+    "que": "What is the purpose of HTML headings?",
     "ans": "a"
   },
   {
-    "que": "Which is a common mistake with HTML Headings?",
     "options": [
-      "Writing descriptive code",
-      "Reviewing official docs",
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios"
+      "<h3>",
+      "<h1>",
+      "<h2>",
+      "<h6>"
     ],
-    "ans": "c"
-  },
-  {
-    "que": "How do best practices improve outcomes for HTML Headings?",
-    "options": [
-      "They increase bugs",
-      "They prevent all runtime behavior",
-      "They improve maintainability",
-      "They reduce readability"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "When applying HTML Headings, what should you prioritize first?",
-    "options": [
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Skipping validation"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What complements learning HTML Headings effectively?",
-    "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which habit helps avoid errors while using HTML Headings?",
-    "options": [
-      "Rushing implementation",
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Skipping review"
-    ],
+    "que": "Which heading level is the most important?",
     "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering HTML Headings?",
     "options": [
-      "Avoid updates in standards",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork"
+      "4",
+      "6",
+      "5",
+      "7"
     ],
+    "que": "How many heading levels are there?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<h1>",
+      "<p>",
+      "<h2>",
+      "<h3>"
+    ],
+    "que": "What should follow <h1>?",
     "ans": "c"
+  },
+  {
+    "options": [
+      "To add more headings",
+      "To make text smaller",
+      "To save space",
+      "For accessibility and structure"
+    ],
+    "que": "Why avoid skipping heading levels?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "<h1>",
+      "<heading>",
+      "<header>",
+      "<title>"
+    ],
+    "que": "Which element is for page title?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Navigation and structure",
+      "Links",
+      "Styling",
+      "Images"
+    ],
+    "que": "What does screen readers use headings for?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Only text",
+      "Only links",
+      "No",
+      "Yes"
+    ],
+    "que": "Can headings contain other elements?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Bold and sized",
+      "Underlined",
+      "Italic",
+      "Normal text"
+    ],
+    "que": "What is the default styling of headings?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "For semantic meaning",
+      "To avoid CSS",
+      "For links",
+      "For styling only"
+    ],
+    "que": "Why use headings instead of <b> or <strong>?",
+    "ans": "a"
   }
 ]

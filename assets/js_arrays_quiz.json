@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Arrays in web development?",
+    "que": "What is an array?",
     "options": [
-      "A core concept used in practical web projects",
-      "A replacement for all CSS",
-      "A database indexing method",
-      "A hardware-only feature"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Why should developers learn Arrays?",
-    "options": [
-      "It helps write clearer and more reliable code",
-      "It removes need for testing",
-      "It only matters for offline apps",
-      "It disables browser APIs"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Arrays behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Arrays?",
-    "options": [
-      "Ignore edge cases",
-      "Skip debugging tools",
-      "Memorize syntax without practice",
-      "Build small examples and iterate"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which is a common mistake with Arrays?",
-    "options": [
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios",
-      "Reviewing official docs"
+      "Object",
+      "Ordered list of values",
+      "Unordered list",
+      "Single value"
     ],
     "ans": "b"
   },
   {
-    "que": "How do best practices improve outcomes for Arrays?",
+    "que": "How to create an array?",
     "options": [
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They increase bugs"
+      "{}",
+      "<>",
+      "()",
+      "[] or new Array()"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "When applying Arrays, what should you prioritize first?",
+    "que": "What is array index?",
     "options": [
-      "Clarity and correctness",
-      "Maximum complexity",
-      "Skipping validation",
-      "Avoiding all comments"
+      "Position starting from 1",
+      "Value",
+      "Name",
+      "Position starting from 0"
     ],
-    "ans": "a"
+    "ans": "d"
   },
   {
-    "que": "What complements learning Arrays effectively?",
+    "que": "Which method adds to end?",
     "options": [
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which habit helps avoid errors while using Arrays?",
-    "options": [
-      "Checking assumptions and outputs",
-      "Rushing implementation",
-      "Skipping review",
-      "Copying code blindly"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering Arrays?",
-    "options": [
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards"
+      "append()",
+      "add()",
+      "push()",
+      "insert()"
     ],
     "ans": "c"
+  },
+  {
+    "que": "Which method removes from end?",
+    "options": [
+      "shift()",
+      "remove()",
+      "delete()",
+      "pop()"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does length property give?",
+    "options": [
+      "First element",
+      "Type",
+      "Last index",
+      "Number of elements"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is forEach?",
+    "options": [
+      "Function",
+      "Variable",
+      "Loop type",
+      "Method to iterate"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does map() return?",
+    "options": [
+      "Nothing",
+      "New array with results",
+      "Same array",
+      "Single value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does filter() do?",
+    "options": [
+      "Removes elements",
+      "Sorts elements",
+      "Creates array with matching elements",
+      "Finds element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does reduce() do?",
+    "options": [
+      "Reduces to single value",
+      "Multiplies values",
+      "Increases values",
+      "Divides values"
+    ],
+    "ans": "a"
   }
 ]

@@ -1,36 +1,61 @@
-# Memory Management
+
+# JavaScript Memory Management
 
 ## Overview
-Memory management involves references, garbage collection, and leak prevention patterns.
+JavaScript manages memory automatically, freeing values that are no longer reachable.
 
 ## Why this topic matters
-Learning Memory Management helps you write cleaner, more maintainable code and improves real-world development confidence.
+Memory awareness helps you avoid leaks and write more efficient code, especially in long-running apps.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Primitives are stored by value.
+- Objects and arrays are stored by reference.
+- Garbage collection removes unreachable values.
+- Closures and global references can keep memory alive.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+function createCounter() {
+  let count = 0
+  return function() {
+    count += 1
+    return count
+  }
 }
-
-console.log(explainTopic("Memory Management"));
+const counter = createCounter()
+console.log(counter())
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Create a closure and observe its retained state.
+2. Remove an event listener when a node is removed.
+3. Clear a timer with `clearTimeout`.
+4. Avoid global objects for temporary data.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

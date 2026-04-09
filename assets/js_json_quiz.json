@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes JSON Handling in web development?",
+    "que": "What does JSON stand for?",
     "options": [
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects",
-      "A database indexing method"
+      "Java Standard Object Notation",
+      "JavaScript Object Notation",
+      "Java Script Object Node",
+      "JavaScript Standard Object Node"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is JSON?",
+    "options": [
+      "Data format",
+      "Markup language",
+      "Styling language",
+      "Programming language"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does JSON.parse() do?",
+    "options": [
+      "Converts object to string",
+      "Formats JSON",
+      "Validates JSON",
+      "Converts JSON string to object"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does JSON.stringify() do?",
+    "options": [
+      "Converts object to JSON string",
+      "Converts string to object",
+      "Validates JSON",
+      "Formats JSON"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What types does JSON support?",
+    "options": [
+      "function, symbol, undefined",
+      "all types",
+      "date, regex",
+      "object, array, string, number, boolean, null"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What happens to undefined?",
+    "options": [
+      "Error",
+      "String",
+      "Omitted in stringify",
+      "Becomes null"
     ],
     "ans": "c"
   },
   {
-    "que": "Why should developers learn JSON Handling?",
+    "que": "What happens to function?",
     "options": [
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It only matters for offline apps",
-      "It removes need for testing"
+      "Omitted in stringify",
+      "Becomes null",
+      "String",
+      "Error"
     ],
     "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying JSON Handling behavior?",
+    "que": "What is JSON schema?",
     "options": [
-      "Official documentation/specifications",
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Random snippets without docs"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a good beginner strategy when studying JSON Handling?",
-    "options": [
-      "Memorize syntax without practice",
-      "Build small examples and iterate",
-      "Ignore edge cases",
-      "Skip debugging tools"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which is a common mistake with JSON Handling?",
-    "options": [
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Writing descriptive code",
-      "Testing realistic scenarios"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "How do best practices improve outcomes for JSON Handling?",
-    "options": [
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They increase bugs"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "When applying JSON Handling, what should you prioritize first?",
-    "options": [
-      "Maximum complexity",
-      "Skipping validation",
-      "Avoiding all comments",
-      "Clarity and correctness"
+      "Stringifies JSON",
+      "Parses JSON",
+      "Validates JSON",
+      "Describes JSON structure"
     ],
     "ans": "d"
   },
   {
-    "que": "What complements learning JSON Handling effectively?",
+    "que": "Is JSON a subset of JS?",
     "options": [
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples"
+      "Sometimes",
+      "Depends",
+      "Yes",
+      "No"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why use JSON?",
+    "options": [
+      "All of above",
+      "Data interchange",
+      "Storage",
+      "API responses"
     ],
     "ans": "a"
-  },
-  {
-    "que": "Which habit helps avoid errors while using JSON Handling?",
-    "options": [
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Rushing implementation",
-      "Copying code blindly"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering JSON Handling?",
-    "options": [
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Avoid updates in standards",
-      "Practice, review, and incremental improvement"
-    ],
-    "ans": "d"
   }
 ]

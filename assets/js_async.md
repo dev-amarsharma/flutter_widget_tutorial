@@ -1,36 +1,62 @@
-# Async/Await
+
+# JavaScript Async/Await
 
 ## Overview
-`async/await` makes promise-based code easier to read and maintain.
+`async` and `await` help you write asynchronous code that is easier to read.
 
 ## Why this topic matters
-Learning Async/Await helps you write cleaner, more maintainable code and improves real-world development confidence.
+Async/await improves promise handling and makes asynchronous flows more straightforward.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Mark functions with `async`.
+- Use `await` to wait for a promise.
+- Handle errors with `try/catch`.
+- Keep async functions focused.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+async function load() {
+  try {
+    const response = await fetch("https://api.example.com/data")
+    const data = await response.json()
+    console.log(data)
+  } catch (error) {
+    console.error(error)
+  }
 }
-
-console.log(explainTopic("Async/Await"));
+load()
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Create an async function that awaits a promise.
+2. Use `try/catch` around `await`.
+3. Log a failure when the promise rejects.
+4. Use `Promise.all()` for parallel requests.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

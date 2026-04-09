@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes DOM in web development?",
+    "que": "What is DOM?",
     "options": [
-      "A replacement for all CSS",
-      "A core concept used in practical web projects",
-      "A database indexing method",
-      "A hardware-only feature"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Why should developers learn DOM?",
-    "options": [
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It only matters for offline apps"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which source is most appropriate for verifying DOM behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying DOM?",
-    "options": [
-      "Build small examples and iterate",
-      "Memorize syntax without practice",
-      "Ignore edge cases",
-      "Skip debugging tools"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common mistake with DOM?",
-    "options": [
-      "Writing descriptive code",
-      "Reviewing official docs",
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios"
+      "Document Oriented Model",
+      "Document Object Method",
+      "Document Object Model",
+      "Data Object Model"
     ],
     "ans": "c"
   },
   {
-    "que": "How do best practices improve outcomes for DOM?",
+    "que": "How to select by ID?",
     "options": [
-      "They increase bugs",
-      "They reduce readability",
-      "They prevent all runtime behavior",
-      "They improve maintainability"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "When applying DOM, what should you prioritize first?",
-    "options": [
-      "Skipping validation",
-      "Avoiding all comments",
-      "Clarity and correctness",
-      "Maximum complexity"
+      "querySelector()",
+      "getElementByClass()",
+      "getElementById()",
+      "getElementsByTagName()"
     ],
     "ans": "c"
   },
   {
-    "que": "What complements learning DOM effectively?",
+    "que": "What does querySelector() return?",
     "options": [
-      "Ignoring standards",
-      "Hands-on exercises with feedback",
-      "Only reading headings",
-      "Avoiding examples"
+      "First element",
+      "Array",
+      "All elements",
+      "List"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "Which habit helps avoid errors while using DOM?",
+    "que": "How to change text?",
     "options": [
-      "Rushing implementation",
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Skipping review"
+      "textContent",
+      "attribute",
+      "value",
+      "innerHTML"
     ],
-    "ans": "b"
+    "ans": "a"
   },
   {
-    "que": "What is the recommended long-term approach to mastering DOM?",
+    "que": "What is innerHTML?",
     "options": [
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards"
+      "HTML string",
+      "Text string",
+      "Attribute",
+      "Value"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to add event?",
+    "options": [
+      "attach()",
+      "listen()",
+      "addEventListener()",
+      "onEvent()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does createElement() do?",
+    "options": [
+      "Selects element",
+      "Removes element",
+      "Updates element",
+      "Creates element"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to append?",
+    "options": [
+      "addChild()",
+      "insert()",
+      "push()",
+      "appendChild()"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is classList?",
+    "options": [
+      "Manage classes",
+      "List elements",
+      "List attributes",
+      "List children"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to remove element?",
+    "options": [
+      "delete()",
+      "erase()",
+      "remove()",
+      "clear()"
     ],
     "ans": "c"
   }

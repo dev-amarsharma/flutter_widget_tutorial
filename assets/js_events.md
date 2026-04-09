@@ -1,36 +1,57 @@
-# Events
+
+# JavaScript Events
 
 ## Overview
-Events trigger code when users interact with the page (click, input, submit, keydown).
+Events represent user interactions and browser lifecycle changes, triggering JavaScript handlers.
 
 ## Why this topic matters
-Learning Events helps you write cleaner, more maintainable code and improves real-world development confidence.
+Most interactive pages depend on event handling to respond to clicks, input, and navigation.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Use `addEventListener` to respond to events.
+- Events bubble and can be stopped.
+- `event.target` identifies the source element.
+- `preventDefault()` cancels default actions.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("Events"));
+```js
+const button = document.querySelector("button")
+button.addEventListener("click", event => {
+  console.log("Button clicked", event.target)
+})
+window.addEventListener("resize", () => console.log("Window resized"))
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Add a click event listener to a button.
+2. Log the clicked element using `event.target`.
+3. Prevent default form behavior.
+4. Delegate clicks from a parent element.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

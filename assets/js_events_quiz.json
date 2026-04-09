@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes Events in web development?",
+    "que": "What is event?",
     "options": [
-      "A core concept used in practical web projects",
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A database indexing method"
+      "User action or occurrence",
+      "Function",
+      "Variable",
+      "Object"
     ],
     "ans": "a"
   },
   {
-    "que": "Why should developers learn Events?",
+    "que": "How to add listener?",
     "options": [
-      "It removes need for testing",
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code",
-      "It only matters for offline apps"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Events behavior?",
-    "options": [
-      "Random snippets without docs",
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Events?",
-    "options": [
-      "Build small examples and iterate",
-      "Skip debugging tools",
-      "Memorize syntax without practice",
-      "Ignore edge cases"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common mistake with Events?",
-    "options": [
-      "Reviewing official docs",
-      "Testing realistic scenarios",
-      "Using it without understanding fundamentals",
-      "Writing descriptive code"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "How do best practices improve outcomes for Events?",
-    "options": [
-      "They increase bugs",
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They reduce readability"
+      "attach()",
+      "addEventListener()",
+      "onEvent()",
+      "listen()"
     ],
     "ans": "b"
   },
   {
-    "que": "When applying Events, what should you prioritize first?",
+    "que": "What is event object?",
     "options": [
-      "Clarity and correctness",
-      "Maximum complexity",
-      "Skipping validation",
-      "Avoiding all comments"
+      "Contains event info",
+      "Event type",
+      "Event handler",
+      "Event target"
     ],
     "ans": "a"
   },
   {
-    "que": "What complements learning Events effectively?",
+    "que": "What is event.target?",
     "options": [
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Avoiding examples",
-      "Only reading headings"
+      "Parent",
+      "Element that triggered",
+      "Event type",
+      "Handler"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "Which habit helps avoid errors while using Events?",
+    "que": "What does preventDefault() do?",
     "options": [
-      "Rushing implementation",
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs"
+      "Stops bubbling",
+      "Removes listener",
+      "Adds listener",
+      "Stops default action"
     ],
     "ans": "d"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Events?",
+    "que": "What is bubbling?",
     "options": [
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Avoid updates in standards"
+      "Event propagates up",
+      "Event propagates down",
+      "Event repeats",
+      "Event stops"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to stop bubbling?",
+    "options": [
+      "stopPropagation()",
+      "preventDefault()",
+      "cancel()",
+      "stopEvent()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is capturing?",
+    "options": [
+      "Event propagates up",
+      "Event repeats",
+      "Event propagates down",
+      "Event stops"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is event delegation?",
+    "options": [
+      "Handle on parent",
+      "Handle on child",
+      "Handle on window",
+      "Handle on document"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to remove listener?",
+    "options": [
+      "removeEventListener()",
+      "unlisten()",
+      "off()",
+      "detach()"
     ],
     "ans": "a"
   }

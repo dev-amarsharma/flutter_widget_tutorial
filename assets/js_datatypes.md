@@ -1,36 +1,57 @@
-# Data Types
+
+# JavaScript Data Types
 
 ## Overview
-Key data types include string, number, boolean, null, undefined, symbol, bigint, object.
+JavaScript has primitive types and reference types, each with different behavior.
 
 ## Why this topic matters
-Learning Data Types helps you write cleaner, more maintainable code and improves real-world development confidence.
+Recognizing data types helps you write correct comparisons and avoid type-related bugs.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Primitives: string, number, boolean, null, undefined, symbol, BigInt.
+- Objects and arrays are reference types.
+- Use `typeof` to inspect values.
+- `null` means empty, while `undefined` means unassigned.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("Data Types"));
+```js
+const text = "Hello"
+const amount = 42
+const active = true
+const user = { name: "Asha" }
+console.log(typeof text, typeof user)
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Log the type of several values.
+2. Compare `null` and `undefined`.
+3. Create an array and an object and inspect their types.
+4. Use `BigInt` for a very large integer.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

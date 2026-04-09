@@ -1,36 +1,60 @@
-# Conditions
+
+# JavaScript Conditions
 
 ## Overview
-Conditional logic (`if`, `else`, `switch`) controls execution paths based on conditions.
+Conditional statements choose between different actions based on expressions.
 
 ## Why this topic matters
-Learning Conditions helps you write cleaner, more maintainable code and improves real-world development confidence.
+Conditions let your code branch and make decisions based on user input and state.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Use `if`, `else if`, and `else`.
+- Use `switch` for multiple discrete cases.
+- Understand truthy and falsy values.
+- Prefer `===` over `==` for comparisons.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+const score = 85
+if (score >= 90) {
+  console.log("Excellent")
+} else if (score >= 75) {
+  console.log("Good")
+} else {
+  console.log("Needs improvement")
 }
-
-console.log(explainTopic("Conditions"));
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Check whether a number is positive.
+2. Use `switch` for weekday names.
+3. Compare values with `===`.
+4. Use a ternary for a simple assignment.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

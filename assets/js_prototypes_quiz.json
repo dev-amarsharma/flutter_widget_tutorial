@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes Prototypes in web development?",
+    "que": "What is prototype?",
     "options": [
-      "A core concept used in practical web projects",
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A database indexing method"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Why should developers learn Prototypes?",
-    "options": [
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code",
-      "It removes need for testing",
-      "It disables browser APIs"
+      "Static properties",
+      "Shared object properties",
+      "Dynamic properties",
+      "Own properties"
     ],
     "ans": "b"
   },
   {
-    "que": "Which source is most appropriate for verifying Prototypes behavior?",
+    "que": "What is __proto__?",
     "options": [
-      "Official documentation/specifications",
-      "A single outdated screenshot",
-      "Unofficial social posts only",
-      "Random snippets without docs"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Prototypes?",
-    "options": [
-      "Build small examples and iterate",
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Memorize syntax without practice"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common mistake with Prototypes?",
-    "options": [
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Testing realistic scenarios"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "How do best practices improve outcomes for Prototypes?",
-    "options": [
-      "They reduce readability",
-      "They improve maintainability",
-      "They increase bugs",
-      "They prevent all runtime behavior"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "When applying Prototypes, what should you prioritize first?",
-    "options": [
-      "Skipping validation",
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Avoiding all comments"
+      "Own property",
+      "Static property",
+      "Prototype reference",
+      "Dynamic property"
     ],
     "ans": "c"
   },
   {
-    "que": "What complements learning Prototypes effectively?",
+    "que": "What is prototype chain?",
     "options": [
-      "Avoiding examples",
-      "Ignoring standards",
-      "Only reading headings",
-      "Hands-on exercises with feedback"
+      "Chain of methods",
+      "Chain of objects",
+      "Chain of properties",
+      "Chain of prototypes"
     ],
     "ans": "d"
   },
   {
-    "que": "Which habit helps avoid errors while using Prototypes?",
+    "que": "How to add to prototype?",
     "options": [
-      "Copying code blindly",
-      "Checking assumptions and outputs",
-      "Skipping review",
-      "Rushing implementation"
+      "object.method = function",
+      "Object.method = function",
+      "prototype.method = function",
+      "Object.prototype.method = function"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is constructor?",
+    "options": [
+      "Function that creates object",
+      "Method",
+      "Object itself",
+      "Prototype"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is instanceof?",
+    "options": [
+      "Checks type",
+      "Checks value",
+      "Checks property",
+      "Checks prototype chain"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is Object.create()?",
+    "options": [
+      "Creates prototype",
+      "Creates constructor",
+      "Creates method",
+      "Creates object with prototype"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is class?",
+    "options": [
+      "New inheritance",
+      "Different from prototype",
+      "Replaces prototype",
+      "Syntactic sugar for prototype"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why use prototypes?",
+    "options": [
+      "Memory efficiency",
+      "All of above",
+      "Code reuse",
+      "Inheritance"
     ],
     "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Prototypes?",
+    "que": "What is prototypal inheritance?",
     "options": [
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards",
-      "Depend on guesswork"
+      "Variables inherit",
+      "Objects inherit from objects",
+      "Functions inherit",
+      "Classes inherit from classes"
     ],
     "ans": "b"
   }

@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Conditions in web development?",
+    "que": "What is if statement?",
     "options": [
-      "A core concept used in practical web projects",
-      "A replacement for all CSS",
-      "A database indexing method",
-      "A hardware-only feature"
+      "Conditional execution",
+      "Function",
+      "Loop",
+      "Variable"
     ],
     "ans": "a"
   },
   {
-    "que": "Why should developers learn Conditions?",
+    "que": "What is else?",
     "options": [
-      "It removes need for testing",
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Conditions behavior?",
-    "options": [
-      "Official documentation/specifications",
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Random snippets without docs"
+      "Alternative branch",
+      "Function",
+      "Loop",
+      "Same as if"
     ],
     "ans": "a"
   },
   {
-    "que": "What is a good beginner strategy when studying Conditions?",
+    "que": "What is else if?",
     "options": [
-      "Ignore edge cases",
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Memorize syntax without practice"
+      "Additional condition",
+      "Nested if",
+      "Loop",
+      "Function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is switch?",
+    "options": [
+      "Loop",
+      "Function",
+      "Multiple conditions",
+      "Single condition"
     ],
     "ans": "c"
   },
   {
-    "que": "Which is a common mistake with Conditions?",
+    "que": "What is case in switch?",
     "options": [
-      "Writing descriptive code",
-      "Testing realistic scenarios",
-      "Reviewing official docs",
-      "Using it without understanding fundamentals"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "How do best practices improve outcomes for Conditions?",
-    "options": [
-      "They increase bugs",
-      "They prevent all runtime behavior",
-      "They improve maintainability",
-      "They reduce readability"
+      "Variable",
+      "Condition",
+      "Value to match",
+      "Function"
     ],
     "ans": "c"
   },
   {
-    "que": "When applying Conditions, what should you prioritize first?",
+    "que": "What is default in switch?",
     "options": [
-      "Skipping validation",
-      "Maximum complexity",
-      "Avoiding all comments",
-      "Clarity and correctness"
+      "First case",
+      "Fallback case",
+      "Last case",
+      "Error case"
     ],
-    "ans": "d"
+    "ans": "b"
   },
   {
-    "que": "What complements learning Conditions effectively?",
+    "que": "What is ternary operator?",
     "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Hands-on exercises with feedback",
-      "Avoiding examples"
+      "condition ? true : false",
+      "condition ? false : true",
+      "false ? condition : true",
+      "true ? condition : false"
     ],
-    "ans": "c"
+    "ans": "a"
   },
   {
-    "que": "Which habit helps avoid errors while using Conditions?",
+    "que": "What are truthy values?",
     "options": [
-      "Rushing implementation",
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs"
+      "Always false",
+      "Values considered true",
+      "Undefined",
+      "Always true"
     ],
-    "ans": "d"
+    "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Conditions?",
+    "que": "What are falsy values?",
     "options": [
-      "Use one pattern forever",
-      "Depend on guesswork",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards"
+      "Always true",
+      "Values considered false",
+      "Defined",
+      "Always false"
     ],
-    "ans": "c"
+    "ans": "b"
+  },
+  {
+    "que": "What is short-circuiting?",
+    "options": [
+      "Reverse evaluation",
+      "&& and || evaluation",
+      "Skip evaluation",
+      "Fast evaluation"
+    ],
+    "ans": "b"
   }
 ]
