@@ -1,102 +1,102 @@
 [
   {
-    "que": "What is the benefit of semantic HTML?",
     "options": [
-      "It removes the need for CSS",
-      "It gives elements clearer meaning",
-      "It only works on one browser",
-      "It prevents all layout bugs"
+      "Content",
+      "Attributes",
+      "Element markers",
+      "Styles"
     ],
+    "que": "What are HTML tags?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<span>",
+      "<img>",
+      "<div>",
+      "<p>"
+    ],
+    "que": "Which is a self-closing tag?",
     "ans": "b"
   },
   {
-    "que": "Which tag is most appropriate for the primary content area of a page?",
     "options": [
-      "<main>",
-      "<meta>",
-      "<span>",
-      "<script>"
+      "Closing slash",
+      "Attributes",
+      "Content",
+      "Element name"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "What does the alt attribute do on an image?",
-    "options": [
-      "Changes the image size automatically",
-      "Adds animation",
-      "Describes the image for accessibility and fallback",
-      "Converts the image to a link"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which tag is commonly used for hyperlinks?",
-    "options": [
-      "<a>",
-      "<p>",
-      "<li>",
-      "<main>"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common HTML structure mistake?",
-    "options": [
-      "Using clear indentation",
-      "Closing tags correctly",
-      "Breaking nesting order",
-      "Using semantic layout elements"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is an HTML tag?",
-    "options": [
-      "A JS runtime",
-      "A server log format",
-      "A markup token defining an element",
-      "A CSS variable"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which tag creates a paragraph?",
-    "options": [
-      "<para>",
-      "<pg>",
-      "<text>",
-      "<p>"
-    ],
+    "que": "What do opening tags contain?",
     "ans": "d"
   },
   {
-    "que": "Most HTML elements have which structure?",
     "options": [
-      "No syntax at all",
-      "Start and end tag",
-      "Only start tag always",
-      "Only end tag"
+      "</>",
+      "</tag>",
+      "< />",
+      "</ >"
     ],
+    "que": "Which symbol closes tags?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Additional info in tags",
+      "Tag styles",
+      "Tag names",
+      "Tag content"
+    ],
+    "que": "What are attributes?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "<tag=value>",
+      "<tag attr value>",
+      "<tag attr=\"value\">",
+      "<tag attr=value>"
+    ],
+    "que": "Which is correct syntax?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Single tags",
+      "Tags inside tags",
+      "Tags outside",
+      "Tags beside tags"
+    ],
+    "que": "What is nesting?",
     "ans": "b"
   },
   {
-    "que": "Which tag is commonly used for a top-level heading?",
     "options": [
-      "<h1>",
-      "<head>",
-      "<title>",
-      "<strong>"
+      "Void elements",
+      "Container elements",
+      "Block elements",
+      "Inline elements"
     ],
+    "que": "Which tags don't need closing?",
     "ans": "a"
   },
   {
-    "que": "Why use semantic tags?",
     "options": [
-      "To add structure and meaning",
-      "To avoid accessibility",
-      "To replace URLs",
-      "For random styling only"
+      "Tags are case sensitive",
+      "Only content",
+      "Only attributes",
+      "Tags are not case sensitive"
     ],
-    "ans": "a"
+    "que": "What is case sensitivity?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Reduce size",
+      "Change appearance",
+      "Check syntax",
+      "Add features"
+    ],
+    "que": "Why validate HTML?",
+    "ans": "c"
   }
 ]

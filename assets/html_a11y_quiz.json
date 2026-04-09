@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Accessibility in web development?",
     "options": [
-      "A database indexing method",
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A core concept used in practical web projects"
+      "World Content Access Group",
+      "Web Content Accessibility Guidelines",
+      "Wide Content Accessibility Guidelines",
+      "Web Compliance Accessibility Guide"
     ],
-    "ans": "d"
+    "que": "What does WCAG stand for?",
+    "ans": "b"
   },
   {
-    "que": "Why should developers learn Accessibility?",
     "options": [
-      "It removes need for testing",
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs"
+      "desc",
+      "title",
+      "alt",
+      "text"
     ],
+    "que": "Which attribute is used for alternative text on images?",
     "ans": "c"
   },
   {
-    "que": "Which source is most appropriate for verifying Accessibility behavior?",
     "options": [
-      "Official documentation/specifications",
-      "A single outdated screenshot",
-      "Unofficial social posts only",
-      "Random snippets without docs"
+      "To set the font language",
+      "To specify the language of the content",
+      "To define the script language",
+      "To indicate the encoding"
     ],
-    "ans": "a"
+    "que": "What is the purpose of the 'lang' attribute in HTML?",
+    "ans": "b"
   },
   {
-    "que": "What is a good beginner strategy when studying Accessibility?",
     "options": [
-      "Skip debugging tools",
-      "Memorize syntax without practice",
-      "Ignore edge cases",
-      "Build small examples and iterate"
+      "<announce>",
+      "<aria-live>",
+      "<screen-reader>",
+      "<sr>"
     ],
+    "que": "Which HTML element is used for screen reader announcements?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "2:1",
+      "5:1",
+      "4.5:1",
+      "3:1"
+    ],
+    "que": "What is the minimum contrast ratio required for text accessibility?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "keyboard",
+      "navindex",
+      "keynav",
+      "tabindex"
+    ],
+    "que": "Which attribute helps with keyboard navigation?",
     "ans": "d"
   },
   {
-    "que": "Which is a common mistake with Accessibility?",
     "options": [
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios",
-      "Writing descriptive code",
-      "Reviewing official docs"
+      "Advanced Rich Internet Apps",
+      "Automated Responsive Interface Applications",
+      "Accessible Responsive Internet Applications",
+      "Accessible Rich Internet Applications"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "How do best practices improve outcomes for Accessibility?",
-    "options": [
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They increase bugs",
-      "They reduce readability"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "When applying Accessibility, what should you prioritize first?",
-    "options": [
-      "Maximum complexity",
-      "Skipping validation",
-      "Avoiding all comments",
-      "Clarity and correctness"
-    ],
+    "que": "What does ARIA stand for?",
     "ans": "d"
   },
   {
-    "que": "What complements learning Accessibility effectively?",
     "options": [
-      "Ignoring standards",
-      "Hands-on exercises with feedback",
-      "Only reading headings",
-      "Avoiding examples"
+      "<header>",
+      "<heading>",
+      "<h1> to <h6>",
+      "<title>"
     ],
-    "ans": "b"
+    "que": "Which element should be used for headings to maintain structure?",
+    "ans": "c"
   },
   {
-    "que": "Which habit helps avoid errors while using Accessibility?",
     "options": [
-      "Rushing implementation",
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Skipping review"
+      "To specify the layout role",
+      "To assign a CSS role",
+      "To set the color role",
+      "To define the semantic role of an element"
     ],
-    "ans": "b"
+    "que": "What is the role of the 'role' attribute in ARIA?",
+    "ans": "d"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Accessibility?",
     "options": [
-      "Avoid updates in standards",
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever",
-      "Depend on guesswork"
+      "Because colors require JavaScript",
+      "Because colors fade over time",
+      "Because colorblind users may not distinguish colors",
+      "Because colors are not semantic"
     ],
-    "ans": "b"
+    "que": "Why is color alone not sufficient for conveying information?",
+    "ans": "c"
   }
 ]

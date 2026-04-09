@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes iFrame in web development?",
     "options": [
-      "A hardware-only feature",
-      "A core concept used in practical web projects",
-      "A database indexing method",
-      "A replacement for all CSS"
+      "Creates a frame",
+      "Displays images",
+      "Embeds another HTML page",
+      "Links to pages"
     ],
-    "ans": "b"
-  },
-  {
-    "que": "Why should developers learn iFrame?",
-    "options": [
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It helps write clearer and more reliable code"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which source is most appropriate for verifying iFrame behavior?",
-    "options": [
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Unofficial social posts only",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying iFrame?",
-    "options": [
-      "Memorize syntax without practice",
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Build small examples and iterate"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which is a common mistake with iFrame?",
-    "options": [
-      "Testing realistic scenarios",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Writing descriptive code"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "How do best practices improve outcomes for iFrame?",
-    "options": [
-      "They improve maintainability",
-      "They reduce readability",
-      "They increase bugs",
-      "They prevent all runtime behavior"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "When applying iFrame, what should you prioritize first?",
-    "options": [
-      "Avoiding all comments",
-      "Skipping validation",
-      "Maximum complexity",
-      "Clarity and correctness"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What complements learning iFrame effectively?",
-    "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Hands-on exercises with feedback",
-      "Avoiding examples"
-    ],
+    "que": "What does <iframe> do?",
     "ans": "c"
   },
   {
-    "que": "Which habit helps avoid errors while using iFrame?",
     "options": [
-      "Skipping review",
-      "Copying code blindly",
-      "Rushing implementation",
-      "Checking assumptions and outputs"
+      "url",
+      "src",
+      "link",
+      "source"
     ],
+    "que": "Which attribute sets the iframe source?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Sets border width",
+      "Sets iframe width",
+      "Sets content width",
+      "Sets page width"
+    ],
+    "que": "What is the 'width' attribute for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "To enable scrolling",
+      "To add borders",
+      "To set colors",
+      "For security restrictions"
+    ],
+    "que": "Why use 'sandbox' attribute?",
     "ans": "d"
   },
   {
-    "que": "What is the recommended long-term approach to mastering iFrame?",
     "options": [
-      "Avoid updates in standards",
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement"
+      "Enables scripts",
+      "Sets full width",
+      "Enables full screen mode",
+      "Allows all content"
     ],
+    "que": "What does 'allowfullscreen' do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "scrolling",
+      "scroll",
+      "auto",
+      "overflow"
+    ],
+    "que": "Which attribute controls scrolling?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Visible",
+      "None",
+      "Solid",
+      "Dotted"
+    ],
+    "que": "What is the default iframe border?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "They require JavaScript",
+      "They are slow",
+      "They don't work",
+      "SEO and accessibility issues"
+    ],
+    "que": "Why avoid iframes for navigation?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Setting title",
+      "Adding alt text",
+      "Targeting links",
+      "Defining id"
+    ],
+    "que": "What is the 'name' attribute used for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Only local files",
+      "Only same domain",
+      "No",
+      "Yes"
+    ],
+    "que": "Can iframes load external sites?",
     "ans": "d"
   }
 ]

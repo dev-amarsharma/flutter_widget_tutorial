@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Hoisting in web development?",
+    "que": "What is hoisting?",
     "options": [
-      "A database indexing method",
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects"
+      "Values moved to top",
+      "Variables deleted",
+      "Code executed",
+      "Declarations moved to top"
     ],
     "ans": "d"
   },
   {
-    "que": "Why should developers learn Hoisting?",
+    "que": "What is hoisted?",
     "options": [
-      "It only matters for offline apps",
-      "It removes need for testing",
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Hoisting behavior?",
-    "options": [
-      "Random snippets without docs",
-      "Unofficial social posts only",
-      "Official documentation/specifications",
-      "A single outdated screenshot"
+      "Expressions",
+      "Assignments",
+      "var, function declarations",
+      "let, const"
     ],
     "ans": "c"
   },
   {
-    "que": "What is a good beginner strategy when studying Hoisting?",
+    "que": "What is temporal dead zone?",
     "options": [
-      "Ignore edge cases",
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Memorize syntax without practice"
+      "After declaration",
+      "During execution",
+      "Before let/const declaration",
+      "After execution"
     ],
     "ans": "c"
   },
   {
-    "que": "Which is a common mistake with Hoisting?",
+    "que": "What happens with var?",
     "options": [
-      "Writing descriptive code",
-      "Testing realistic scenarios",
-      "Reviewing official docs",
-      "Using it without understanding fundamentals"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "How do best practices improve outcomes for Hoisting?",
-    "options": [
-      "They reduce readability",
-      "They increase bugs",
-      "They improve maintainability",
-      "They prevent all runtime behavior"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "When applying Hoisting, what should you prioritize first?",
-    "options": [
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Skipping validation",
-      "Clarity and correctness"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What complements learning Hoisting effectively?",
-    "options": [
-      "Only reading headings",
-      "Hands-on exercises with feedback",
-      "Avoiding examples",
-      "Ignoring standards"
+      "Hoisted with value",
+      "Hoisted with undefined",
+      "Error",
+      "Not hoisted"
     ],
     "ans": "b"
   },
   {
-    "que": "Which habit helps avoid errors while using Hoisting?",
+    "que": "What happens with let?",
     "options": [
-      "Rushing implementation",
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs"
+      "Not hoisted",
+      "Error",
+      "Hoisted but not initialized",
+      "Hoisted with undefined"
     ],
-    "ans": "d"
+    "ans": "c"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Hoisting?",
+    "que": "What happens with const?",
     "options": [
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork",
-      "Avoid updates in standards",
-      "Use one pattern forever"
+      "Hoisted with undefined",
+      "Hoisted but not initialized",
+      "Error",
+      "Not hoisted"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What about function declarations?",
+    "options": [
+      "Not hoisted",
+      "Hoisted without",
+      "Hoisted with definition",
+      "Error"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What about function expressions?",
+    "options": [
+      "Depends",
+      "Not hoisted",
+      "Error",
+      "Hoisted"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why avoid hoisting reliance?",
+    "options": [
+      "All of above",
+      "Modern JS",
+      "Better practices",
+      "Confusing code"
     ],
     "ans": "a"
+  },
+  {
+    "que": "What is strict mode?",
+    "options": [
+      "Allows hoisting",
+      "Changes hoisting",
+      "Prevents some errors",
+      "Disables hoisting"
+    ],
+    "ans": "c"
   }
 ]

@@ -1,102 +1,102 @@
 [
   {
-    "que": "What is HTML mainly used for?",
     "options": [
-      "Defining page structure and content",
-      "Running database queries",
-      "Replacing all CSS and JavaScript",
-      "Managing server deployment"
+      "Hyperlink and Text Markup Language",
+      "HyperText Markup Language",
+      "High Tech Modern Language",
+      "Home Tool Markup Language"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "Which section usually contains content visible to users?",
-    "options": [
-      "<meta>",
-      "<head>",
-      "<body>",
-      "<title>"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What does <!DOCTYPE html> communicate?",
-    "options": [
-      "The page should use modern HTML parsing rules",
-      "The page is only for mobile",
-      "The page has no CSS",
-      "The browser should disable JavaScript"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which technology is primarily responsible for page styling?",
-    "options": [
-      "HTML",
-      "CSS",
-      "SQL",
-      "Git"
-    ],
+    "que": "What does HTML stand for?",
     "ans": "b"
   },
   {
-    "que": "Which is a good HTML practice?",
     "options": [
-      "Use semantic elements for meaning",
-      "Put page content inside <head>",
-      "Skip heading hierarchy completely",
-      "Use HTML to replace all scripting"
+      "To structure web content",
+      "To add interactivity",
+      "To store data",
+      "To style web pages"
     ],
+    "que": "What is the purpose of HTML?",
     "ans": "a"
   },
   {
-    "que": "Which file extension is commonly used for HTML documents?",
     "options": [
-      ".json",
-      ".css",
-      ".html",
-      ".js"
+      "<body>",
+      "<html>",
+      "<title>",
+      "<head>"
     ],
+    "que": "Which tag contains the page title?",
     "ans": "c"
   },
   {
-    "que": "What does a browser do with HTML?",
     "options": [
-      "Renders structured content",
-      "Encrypts it by default",
-      "Turns it into images only",
-      "Compiles it into SQL"
+      "<body>",
+      "<head>",
+      "<html>",
+      "<div>"
     ],
-    "ans": "a"
+    "que": "What is the root element?",
+    "ans": "c"
   },
   {
-    "que": "Which element contains metadata and title?",
     "options": [
       "<head>",
       "<body>",
-      "<footer>",
-      "<main>"
+      "<title>",
+      "<meta>"
     ],
-    "ans": "a"
+    "que": "Which section contains visible content?",
+    "ans": "b"
   },
   {
-    "que": "What is the role of CSS in web development?",
     "options": [
-      "Provide DNS records",
-      "Handle database joins",
-      "Structure content",
-      "Style presentation"
+      "Language",
+      "Page title",
+      "Content type",
+      "HTML version"
     ],
+    "que": "What does DOCTYPE declare?",
     "ans": "d"
   },
   {
-    "que": "Which is a semantic HTML element?",
     "options": [
-      "<article>",
-      "<div>",
+      "<text>",
       "<span>",
-      "<font>"
+      "<div>",
+      "<p>"
     ],
+    "que": "Which tag is for paragraphs?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "CSS rules",
+      "Only tags",
+      "Tags with content",
+      "Only content"
+    ],
+    "que": "What are HTML elements?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "To ensure standards compliance",
+      "To change appearance",
+      "To add features",
+      "To reduce size"
+    ],
+    "que": "Why validate HTML?",
     "ans": "a"
+  },
+  {
+    "options": [
+      "Script elements",
+      "Stylistic elements",
+      "Generic elements",
+      "Meaningful element names"
+    ],
+    "que": "What is semantic HTML?",
+    "ans": "d"
   }
 ]

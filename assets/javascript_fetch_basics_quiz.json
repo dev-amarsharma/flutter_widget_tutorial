@@ -1,51 +1,101 @@
 [
   {
-    "que": "What is fetch() commonly used for?",
+    "que": "What does fetch() do?",
     "options": [
-      "Requesting data from a server",
-      "Creating HTML tags directly",
-      "Replacing CSS files",
-      "Compiling Java code"
+      "Makes HTTP request",
+      "Creates promise",
+      "Handles error",
+      "Parses JSON"
     ],
     "ans": "a"
   },
   {
     "que": "What does fetch() return?",
     "options": [
-      "A promise",
-      "A CSS class",
-      "A database index",
-      "A raw HTML form"
+      "JSON data",
+      "String",
+      "Promise",
+      "Response object"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "Which method commonly parses JSON from a response?",
+    "que": "How to get JSON from response?",
     "options": [
+      "response.parse()",
+      "response.data()",
       "response.json()",
-      "response.parseHtml()",
-      "response.arrayPush()",
-      "response.select()"
+      "response.text()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is response.ok?",
+    "options": [
+      "True if status 200-299",
+      "True if text",
+      "True if JSON",
+      "True if success"
     ],
     "ans": "a"
   },
   {
-    "que": "Why should fetch logic consider errors?",
+    "que": "How to handle fetch error?",
     "options": [
-      "Network requests can fail",
-      "HTML never loads",
-      "Arrays stop working",
-      "Objects cannot hold data"
+      "If/else",
+      "Try/catch only",
+      "Switch",
+      "Check response.ok or catch"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is async function?",
+    "options": [
+      "Function that returns promise",
+      "Synchronous function",
+      "Callback function",
+      "Event handler"
     ],
     "ans": "a"
   },
   {
-    "que": "Which modern syntax can make fetch code easier to read?",
+    "que": "What does await do?",
     "options": [
-      "async/await",
-      "inline CSS",
-      "table layout",
-      "alt text"
+      "Returns value",
+      "Waits for promise",
+      "Throws error",
+      "Calls function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is try/catch for?",
+    "options": [
+      "Conditional code",
+      "Loop code",
+      "Handle errors",
+      "Function code"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is finally block?",
+    "options": [
+      "Runs on success",
+      "Runs always",
+      "Runs first",
+      "Runs on error"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to fetch with POST?",
+    "options": [
+      "fetch(url, {method: 'POST'})",
+      "send(url, 'POST')",
+      "fetch(url, 'POST')",
+      "post(url)"
     ],
     "ans": "a"
   }

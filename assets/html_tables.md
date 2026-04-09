@@ -1,32 +1,122 @@
 # HTML Tables
 
 ## Overview
-Use tables for tabular data, not layout. Include `<caption>`, `<th>`, and proper row/column structure.
+HTML tables present tabular data in rows and columns.
+Use tables for spreadsheets, pricing grids, schedules, and any data that belongs in a grid structure.
 
 ## Why this topic matters
-Learning HTML Tables helps you write cleaner, more maintainable code and improves real-world development confidence.
+Tables communicate structured information clearly and accessibly.
+Using the correct table markup improves usability for screen readers and allows browsers to render data effectively.
 
-## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+---
 
-## Example
+## Table structure
 ```html
-<h1>Welcome</h1>
-<p>Build pages with clear structure.</p>
+<table>
+  <caption>Monthly sales report</caption>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$5,000</td>
+    </tr>
+  </tbody>
+</table>
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+### Important table elements
+- `<table>` — root table container.
+- `<caption>` — describes the table purpose.
+- `<thead>` — header row group.
+- `<tbody>` — body rows.
+- `<tfoot>` — footer rows (optional).
+- `<tr>` — table row.
+- `<th>` — header cell.
+- `<td>` — data cell.
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+---
+
+## Accessible table headers
+Use `<th>` for header cells and `scope` when needed.
+
+```html
+<tr>
+  <th scope="col">Product</th>
+  <th scope="col">Price</th>
+</tr>
+```
+
+---
+
+## Avoid tables for layout
+Do not use tables to create page layouts or design elements.
+Use CSS layout techniques instead and reserve tables for true tabular data.
+
+---
+
+## Real example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table example</title>
+  </head>
+  <body>
+    <h1>Team availability</h1>
+
+    <table>
+      <caption>Weekly team availability</caption>
+      <thead>
+        <tr>
+          <th scope="col">Day</th>
+          <th scope="col">Available</th>
+          <th scope="col">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Yes</td>
+          <td>Morning meeting</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>No</td>
+          <td>Offsite workshop</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+```
+
+---
+
+## Common mistakes to avoid
+- Using tables for page layout instead of data.
+- Omitting a `<caption>` for data tables.
+- Leaving out `<th>` header cells.
+- Mixing unrelated content inside table cells.
+- Not using `<thead>`, `<tbody>`, or `<tfoot>` for larger tables.
+
+---
+
+## Quick practice
+1. Create a table with a caption and header row.
+2. Add three rows of data with `<td>` cells.
+3. Use `scope="col"` on header cells.
+4. Avoid using tables for a page layout.
+
+---
 
 ## Official references
-- MDN HTML reference: https://developer.mozilla.org/en-US/docs/Web/HTML
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+- MDN: `<table>` element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+- MDN: Table elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#table_sections

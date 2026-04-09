@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Timers (setTimeout & setInterval) in web development?",
+    "que": "What is setTimeout?",
     "options": [
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A core concept used in practical web projects",
-      "A database indexing method"
+      "Delays execution",
+      "Stops execution",
+      "Pauses execution",
+      "Repeats execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is setInterval?",
+    "options": [
+      "Repeats execution",
+      "Delays execution",
+      "Pauses execution",
+      "Stops execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to cancel setTimeout?",
+    "options": [
+      "clearTimeout(id)",
+      "endTimeout(id)",
+      "cancelTimeout(id)",
+      "stopTimeout(id)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to cancel setInterval?",
+    "options": [
+      "stopInterval(id)",
+      "clearInterval(id)",
+      "endInterval(id)",
+      "cancelInterval(id)"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does setTimeout return?",
+    "options": [
+      "Promise",
+      "Timer ID",
+      "Undefined",
+      "Function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does setInterval return?",
+    "options": [
+      "Timer ID",
+      "Promise",
+      "Undefined",
+      "Function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Are timers precise?",
+    "options": [
+      "Always late",
+      "Depends",
+      "No, minimum delay",
+      "Yes, exact"
     ],
     "ans": "c"
   },
   {
-    "que": "Why should developers learn Timers (setTimeout & setInterval)?",
+    "que": "What is minimum delay?",
     "options": [
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code",
-      "It removes need for testing",
-      "It only matters for offline apps"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Timers (setTimeout & setInterval) behavior?",
-    "options": [
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Unofficial social posts only",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Timers (setTimeout & setInterval)?",
-    "options": [
-      "Build small examples and iterate",
-      "Memorize syntax without practice",
-      "Ignore edge cases",
-      "Skip debugging tools"
+      "4ms in browsers",
+      "10ms",
+      "1ms",
+      "0ms"
     ],
     "ans": "a"
   },
   {
-    "que": "Which is a common mistake with Timers (setTimeout & setInterval)?",
+    "que": "Can timers be nested?",
     "options": [
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Testing realistic scenarios"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "How do best practices improve outcomes for Timers (setTimeout & setInterval)?",
-    "options": [
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They increase bugs",
-      "They improve maintainability"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "When applying Timers (setTimeout & setInterval), what should you prioritize first?",
-    "options": [
-      "Maximum complexity",
-      "Clarity and correctness",
-      "Skipping validation",
-      "Avoiding all comments"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What complements learning Timers (setTimeout & setInterval) effectively?",
-    "options": [
-      "Only reading headings",
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Avoiding examples"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which habit helps avoid errors while using Timers (setTimeout & setInterval)?",
-    "options": [
-      "Copying code blindly",
-      "Checking assumptions and outputs",
-      "Rushing implementation",
-      "Skipping review"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering Timers (setTimeout & setInterval)?",
-    "options": [
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever",
-      "Avoid updates in standards",
-      "Depend on guesswork"
+      "Yes",
+      "No",
+      "Only setInterval",
+      "Only setTimeout"
     ],
     "ans": "a"
+  },
+  {
+    "que": "Why use timers?",
+    "options": [
+      "Poll",
+      "Animate",
+      "Defer execution",
+      "All of above"
+    ],
+    "ans": "d"
   }
 ]

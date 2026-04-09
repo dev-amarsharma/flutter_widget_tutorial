@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Semantic HTML in web development?",
     "options": [
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A database indexing method",
-      "A core concept used in practical web projects"
+      "Script elements",
+      "Elements with meaning",
+      "Styling elements",
+      "Generic containers"
     ],
+    "que": "What are semantic elements?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<b>",
+      "<div>",
+      "<span>",
+      "<h1>"
+    ],
+    "que": "Which is a semantic heading?",
     "ans": "d"
   },
   {
-    "que": "Why should developers learn Semantic HTML?",
     "options": [
-      "It removes need for testing",
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code"
+      "List item",
+      "Any content",
+      "Independent content",
+      "Form field"
     ],
-    "ans": "d"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Semantic HTML behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Random snippets without docs"
-    ],
+    "que": "What does <article> define?",
     "ans": "c"
   },
   {
-    "que": "What is a good beginner strategy when studying Semantic HTML?",
     "options": [
-      "Memorize syntax without practice",
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Build small examples and iterate"
+      "<list>",
+      "<menu>",
+      "<links>",
+      "<nav>"
     ],
+    "que": "Which element for navigation?",
     "ans": "d"
   },
   {
-    "que": "Which is a common mistake with Semantic HTML?",
     "options": [
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios",
-      "Reviewing official docs",
-      "Writing descriptive code"
+      "Main content",
+      "Related content",
+      "Footer",
+      "Header"
     ],
-    "ans": "a"
+    "que": "What is <aside> for?",
+    "ans": "b"
   },
   {
-    "que": "How do best practices improve outcomes for Semantic HTML?",
     "options": [
-      "They reduce readability",
-      "They prevent all runtime behavior",
-      "They increase bugs",
-      "They improve maintainability"
+      "<div>",
+      "<block>",
+      "<section>",
+      "<group>"
     ],
+    "que": "Which element groups content?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Main content",
+      "Footer",
+      "Sidebar",
+      "Introductory content"
+    ],
+    "que": "What does <header> contain?",
     "ans": "d"
   },
   {
-    "que": "When applying Semantic HTML, what should you prioritize first?",
     "options": [
-      "Clarity and correctness",
-      "Maximum complexity",
-      "Avoiding all comments",
-      "Skipping validation"
+      "<end>",
+      "<bottom>",
+      "<footer>",
+      "<close>"
     ],
-    "ans": "a"
+    "que": "Which element for page footer?",
+    "ans": "c"
   },
   {
-    "que": "What complements learning Semantic HTML effectively?",
     "options": [
-      "Ignoring standards",
-      "Hands-on exercises with feedback",
-      "Only reading headings",
-      "Avoiding examples"
+      "Links",
+      "Any image",
+      "Text",
+      "Illustrations"
     ],
-    "ans": "b"
+    "que": "What is <figure> used for?",
+    "ans": "d"
   },
   {
-    "que": "Which habit helps avoid errors while using Semantic HTML?",
     "options": [
-      "Checking assumptions and outputs",
-      "Skipping review",
-      "Copying code blindly",
-      "Rushing implementation"
+      "Easier styling",
+      "Faster loading",
+      "Better accessibility",
+      "Smaller files"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering Semantic HTML?",
-    "options": [
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards",
-      "Depend on guesswork"
-    ],
-    "ans": "b"
+    "que": "Why prefer semantic HTML?",
+    "ans": "c"
   }
 ]

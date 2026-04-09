@@ -1,37 +1,102 @@
 [
   {
-    "que": "Which tag usually wraps the primary page content?",
-    "options": ["<main>", "<meta>", "<style>", "<label>"],
-    "ans": "a"
-  },
-  {
-    "que": "Why use semantic layout elements?",
     "options": [
-      "To give content clearer meaning",
-      "To replace JavaScript entirely",
-      "To disable accessibility tools",
-      "To avoid headings"
+      "Stylistic elements",
+      "Generic divs",
+      "Script elements",
+      "Meaningful element names"
     ],
-    "ans": "a"
+    "que": "What is semantic HTML?",
+    "ans": "d"
   },
   {
-    "que": "Which tag is commonly used for site navigation?",
-    "options": ["<nav>", "<ol>", "<img>", "<dl>"],
-    "ans": "a"
-  },
-  {
-    "que": "What is a common misuse of semantic tags?",
     "options": [
-      "Using them only for styling without meaning",
-      "Using clear heading structure",
-      "Keeping sections readable",
-      "Choosing matching tags"
+      "<head>",
+      "<banner>",
+      "<top>",
+      "<header>"
     ],
+    "que": "Which element defines page header?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Main content",
+      "Navigation links",
+      "Footer",
+      "Sidebar"
+    ],
+    "que": "What does <nav> contain?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<section>",
+      "<body>",
+      "<content>",
+      "<main>"
+    ],
+    "que": "Which element is for main content?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Footer",
+      "Header",
+      "Sidebar content",
+      "Main content"
+    ],
+    "que": "What is <aside> used for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<section>",
+      "<article>",
+      "<part>",
+      "<div>"
+    ],
+    "que": "Which element defines sections?",
     "ans": "a"
   },
   {
-    "que": "Which semantic element often appears at the bottom of a page?",
-    "options": ["<footer>", "<head>", "<dt>", "<tbody>"],
+    "options": [
+      "Self-contained content",
+      "Form content",
+      "List content",
+      "Any content"
+    ],
+    "que": "What does <article> represent?",
     "ans": "a"
+  },
+  {
+    "options": [
+      "<bottom>",
+      "<end>",
+      "<footer>",
+      "<close>"
+    ],
+    "que": "Which element is for page footer?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Illustrations with captions",
+      "Any image",
+      "Diagrams",
+      "Charts"
+    ],
+    "que": "What is the purpose of <figure>?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Speed",
+      "Accessibility and SEO",
+      "Styling",
+      "Size"
+    ],
+    "que": "Why use semantic elements?",
+    "ans": "b"
   }
 ]

@@ -1,33 +1,24 @@
 # HTML Introduction
 
 ## Overview
-HTML stands for HyperText Markup Language. It is the standard language used to describe the structure of a web page.
+HTML (HyperText Markup Language) describes the structure and content of a web page.
+It uses elements and attributes to create headings, paragraphs, links, images, forms, and other page sections.
 
-HTML does not handle styling or complex behavior by itself. Instead:
+HTML is responsible for structure; CSS handles presentation, and JavaScript handles behavior.
 
-- HTML defines content and structure.
-- CSS controls presentation and layout.
-- JavaScript adds behavior and interactivity.
+---
 
-## What HTML does
-HTML organizes page content into meaningful elements such as:
+## Why this topic matters
+HTML is the foundation of web development.
+A strong understanding of HTML makes it easier to build accessible, maintainable, and search-friendly web pages.
 
-- headings,
-- paragraphs,
-- links,
-- images,
-- lists,
-- forms,
-- sections of a page.
-
-Browsers read HTML and render the page based on the elements and their attributes.
-
-## A simple page
-
+## Core document structure
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Page</title>
   </head>
   <body>
@@ -37,41 +28,65 @@ Browsers read HTML and render the page based on the elements and their attribute
 </html>
 ```
 
-## Core document parts
-
-- `<!DOCTYPE html>` tells the browser to use modern HTML.
+### Key parts
+- `<!DOCTYPE html>` tells the browser to use HTML5.
 - `<html>` wraps the entire document.
-- `<head>` contains metadata such as the page title.
-- `<body>` contains the visible content shown to users.
+- `<head>` holds metadata, title, and links to styles or scripts.
+- `<body>` contains the visible content.
 
-## Common use cases
-HTML is used to build:
+---
 
-- landing pages,
-- blog posts,
-- dashboards,
-- forms,
-- e-commerce pages,
-- documentation websites.
+## What HTML can describe
+HTML organizes content into meaningful elements such as:
+- headings (`<h1>`–`<h6>`),
+- paragraphs (`<p>`),
+- links (`<a>`),
+- images (`<img>`),
+- lists (`<ul>`, `<ol>`, `<li>`),
+- forms (`<form>`, `<input>`, `<button>`),
+- sections (`<section>`, `<article>`, `<nav>`).
 
-## Best practices
+---
 
-- Use semantic tags when possible.
-- Keep the document structure clear and readable.
-- Use heading levels in order.
-- Prefer meaningful element names over generic wrappers.
+## Semantic HTML
+Use semantic tags to give meaning to content.
+Semantic HTML improves accessibility and helps tools like search engines understand your page.
 
-## Common mistakes
+Example:
+```html
+<header>
+  <h1>Welcome</h1>
+</header>
+<main>
+  <article>
+    <h2>About this page</h2>
+    <p>This is a simple HTML introduction.</p>
+  </article>
+</main>
+<footer>
+  <p>Copyright 2026</p>
+</footer>
+```
 
-- Forgetting the document structure.
-- Using headings only for visual size instead of meaning.
-- Putting visible page content inside `<head>`.
-- Treating HTML as a styling language.
+---
 
-## Practice
-1. Create a page with one heading and two paragraphs.
-2. Add a link and an image.
-3. Inspect the page in a browser and identify the `head` and `body`.
+## Common mistakes to avoid
+- Leaving out `<!DOCTYPE html>`.
+- Putting visible content inside `<head>`.
+- Using tags purely for styling instead of structure.
+- Skipping heading levels or using headings only to change text size.
+- Forgetting `lang="en"` on the `<html>` element.
 
-## References
-- MDN HTML guide: https://developer.mozilla.org/en-US/docs/Web/HTML
+---
+
+## Quick practice
+1. Build a simple page with a title, heading, paragraph, link, and image.
+2. Add `lang="en"` and meta viewport tags.
+3. Use semantic sections like `<header>`, `<main>`, and `<footer>`.
+4. View the page source and identify each HTML element.
+
+---
+
+## Official references
+- MDN: HTML introduction: https://developer.mozilla.org/en-US/docs/Web/HTML
+- MDN: HTML basics: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML

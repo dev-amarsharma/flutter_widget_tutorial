@@ -2,46 +2,101 @@
   {
     "que": "What does DOM stand for?",
     "options": [
+      "Document Object Method",
       "Document Object Model",
-      "Data Output Method",
-      "Dynamic Order Manager",
-      "Display Object Map"
+      "Document Oriented Model",
+      "Data Object Model"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "Which method can select the first matching element by CSS selector?",
+    "que": "How to select element by ID?",
     "options": [
-      "document.querySelector()",
-      "document.fetch()",
-      "window.parse()",
-      "console.create()"
+      "getElementById()",
+      "getElementsByTagName()",
+      "querySelector()",
+      "getElementByClass()"
     ],
     "ans": "a"
   },
   {
-    "que": "Which property can update visible text content?",
-    "options": ["textContent", "href", "valueOf", "innerWidth"],
-    "ans": "a"
-  },
-  {
-    "que": "What does classList.add() do?",
+    "que": "What does querySelector() return?",
     "options": [
-      "Adds a CSS class to an element",
-      "Deletes the DOM tree",
-      "Fetches remote data",
-      "Submits a form"
+      "Element array",
+      "First matching element",
+      "All matching elements",
+      "Node list"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "Why are DOM basics useful?",
+    "que": "How to change element text?",
     "options": [
-      "They let JavaScript update page content",
-      "They replace HTML completely",
-      "They disable browser rendering",
-      "They remove the need for CSS"
+      "element.innerHTML = 'text'",
+      "element.value = 'text'",
+      "element.text = 'text'",
+      "element.textContent = 'text'"
     ],
-    "ans": "a"
+    "ans": "d"
+  },
+  {
+    "que": "What is innerHTML?",
+    "options": [
+      "Attribute value",
+      "Element value",
+      "Text content",
+      "HTML content as string"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to add event listener?",
+    "options": [
+      "attachEvent()",
+      "listenEvent()",
+      "addEventListener()",
+      "onEvent()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does createElement() do?",
+    "options": [
+      "Removes element",
+      "Updates element",
+      "Creates new element",
+      "Selects element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to append child?",
+    "options": [
+      "insertChild()",
+      "appendChild()",
+      "pushChild()",
+      "addChild()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is document.body?",
+    "options": [
+      "Head element",
+      "Document root",
+      "Body element",
+      "HTML element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to get element by class?",
+    "options": [
+      "querySelectorAll('.class')",
+      "getClassElements()",
+      "getElementByClass()",
+      "getElementsByClassName()"
+    ],
+    "ans": "d"
   }
 ]

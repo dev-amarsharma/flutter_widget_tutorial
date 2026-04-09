@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Local Storage in web development?",
+    "que": "What is localStorage?",
     "options": [
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects",
-      "A database indexing method"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Why should developers learn Local Storage?",
-    "options": [
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It only matters for offline apps"
+      "Browser storage",
+      "Memory storage",
+      "Server storage",
+      "File storage"
     ],
     "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying Local Storage behavior?",
+    "que": "How to store data?",
     "options": [
-      "Official documentation/specifications",
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Unofficial social posts only"
+      "localStorage.setItem(key, value)",
+      "localStorage.add(key, value)",
+      "localStorage.put(key, value)",
+      "localStorage[key] = value"
     ],
     "ans": "a"
   },
   {
-    "que": "What is a good beginner strategy when studying Local Storage?",
+    "que": "How to get data?",
     "options": [
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Memorize syntax without practice",
-      "Build small examples and iterate"
+      "localStorage[key]",
+      "localStorage.get(key)",
+      "localStorage.read(key)",
+      "localStorage.getItem(key)"
     ],
     "ans": "d"
   },
   {
-    "que": "Which is a common mistake with Local Storage?",
+    "que": "How to remove data?",
     "options": [
-      "Using it without understanding fundamentals",
-      "Writing descriptive code",
-      "Testing realistic scenarios",
-      "Reviewing official docs"
+      "localStorage.delete(key)",
+      "localStorage.removeItem(key)",
+      "localStorage.clear(key)",
+      "delete localStorage[key]"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to clear all?",
+    "options": [
+      "localStorage.clear()",
+      "localStorage.removeAll()",
+      "localStorage.empty()",
+      "localStorage.deleteAll()"
     ],
     "ans": "a"
   },
   {
-    "que": "How do best practices improve outcomes for Local Storage?",
+    "que": "What type are values?",
     "options": [
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They increase bugs",
-      "They reduce readability"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "When applying Local Storage, what should you prioritize first?",
-    "options": [
-      "Clarity and correctness",
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Skipping validation"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "What complements learning Local Storage effectively?",
-    "options": [
-      "Avoiding examples",
-      "Ignoring standards",
-      "Hands-on exercises with feedback",
-      "Only reading headings"
+      "Numbers",
+      "Booleans",
+      "Strings",
+      "Objects"
     ],
     "ans": "c"
   },
   {
-    "que": "Which habit helps avoid errors while using Local Storage?",
+    "que": "How to store object?",
     "options": [
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Rushing implementation"
+      "Object.stringify()",
+      "JSON.stringify()",
+      "JSON.parse()",
+      "Object.toString()"
     ],
-    "ans": "c"
+    "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Local Storage?",
+    "que": "How to retrieve object?",
     "options": [
-      "Avoid updates in standards",
-      "Depend on guesswork",
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever"
+      "Object.parse()",
+      "JSON.parse()",
+      "JSON.stringify()",
+      "Object.fromString()"
     ],
-    "ans": "c"
+    "ans": "b"
+  },
+  {
+    "que": "What is storage limit?",
+    "options": [
+      "1MB",
+      "Unlimited",
+      "100MB",
+      "5-10MB"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Does it persist?",
+    "options": [
+      "No, tab only",
+      "Yes, across sessions",
+      "No, page only",
+      "No, session only"
+    ],
+    "ans": "b"
   }
 ]

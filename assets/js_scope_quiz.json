@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Scope in web development?",
+    "que": "What is scope?",
     "options": [
-      "A database indexing method",
-      "A hardware-only feature",
-      "A core concept used in practical web projects",
-      "A replacement for all CSS"
+      "Function",
+      "File",
+      "Code block",
+      "Variable accessibility"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is global scope?",
+    "options": [
+      "Inside block",
+      "Inside function",
+      "Accessible everywhere",
+      "Nowhere"
     ],
     "ans": "c"
   },
   {
-    "que": "Why should developers learn Scope?",
+    "que": "What is function scope?",
     "options": [
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It removes need for testing"
+      "Global",
+      "Module",
+      "Block",
+      "Inside function"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is block scope?",
+    "options": [
+      "Inside {}",
+      "Global",
+      "Module",
+      "Inside function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is lexical scope?",
+    "options": [
+      "Based on runtime",
+      "Based on context",
+      "Based on code structure",
+      "Based on call"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is closure?",
+    "options": [
+      "Closed function",
+      "Function with outer scope access",
+      "Global function",
+      "Local function"
     ],
     "ans": "b"
   },
   {
-    "que": "Which source is most appropriate for verifying Scope behavior?",
+    "que": "What is var scope?",
     "options": [
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Unofficial social posts only",
-      "Official documentation/specifications"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Scope?",
-    "options": [
-      "Build small examples and iterate",
-      "Ignore edge cases",
-      "Memorize syntax without practice",
-      "Skip debugging tools"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which is a common mistake with Scope?",
-    "options": [
-      "Writing descriptive code",
-      "Reviewing official docs",
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios"
+      "Module scope",
+      "Global scope",
+      "Function scope",
+      "Block scope"
     ],
     "ans": "c"
   },
   {
-    "que": "How do best practices improve outcomes for Scope?",
+    "que": "What is let scope?",
     "options": [
-      "They prevent all runtime behavior",
-      "They increase bugs",
-      "They reduce readability",
-      "They improve maintainability"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "When applying Scope, what should you prioritize first?",
-    "options": [
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Skipping validation",
-      "Clarity and correctness"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What complements learning Scope effectively?",
-    "options": [
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which habit helps avoid errors while using Scope?",
-    "options": [
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Rushing implementation"
+      "Global scope",
+      "Function scope",
+      "Block scope",
+      "Module scope"
     ],
     "ans": "c"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Scope?",
+    "que": "What is const scope?",
     "options": [
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards",
-      "Depend on guesswork",
-      "Use one pattern forever"
+      "Function scope",
+      "Module scope",
+      "Block scope",
+      "Global scope"
     ],
-    "ans": "a"
+    "ans": "c"
+  },
+  {
+    "que": "What is module scope?",
+    "options": [
+      "Block",
+      "Global",
+      "Inside module file",
+      "Function"
+    ],
+    "ans": "c"
   }
 ]

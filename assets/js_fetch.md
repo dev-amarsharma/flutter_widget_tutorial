@@ -1,36 +1,59 @@
-# Fetch API
+
+# JavaScript Fetch API
 
 ## Overview
-Fetch API performs HTTP requests with promise-based async flow.
+The Fetch API is the modern standard for making network requests from browser JavaScript.
 
 ## Why this topic matters
-Learning Fetch API helps you write cleaner, more maintainable code and improves real-world development confidence.
+Fetch is used for APIs, AJAX, and loading remote resources in client-side applications.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- `fetch(url)` returns a promise for the response.
+- Use `response.json()` for JSON data.
+- Handle HTTP errors and network failures.
+- Send request bodies with `POST` and headers.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("Fetch API"));
+```js
+fetch("https://api.example.com/data")
+  .then(response => {
+    if (!response.ok) throw new Error("HTTP error")
+    return response.json()
+  })
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Fetch data from an API and log it.
+2. Check `response.ok` before parsing.
+3. Send JSON in a POST request.
+4. Handle errors with `.catch()`.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

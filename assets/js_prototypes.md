@@ -1,36 +1,60 @@
-# Prototypes
+
+# JavaScript Prototypes
 
 ## Overview
-Prototypes enable inheritance by linking objects to shared behavior.
+Prototypes allow objects to inherit properties and methods from other objects.
 
 ## Why this topic matters
-Learning Prototypes helps you write cleaner, more maintainable code and improves real-world development confidence.
+Prototypes are the mechanism behind JavaScript’s inheritance model and shared behavior.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Every object has a prototype.
+- Constructor functions and classes set prototypes.
+- Methods on the prototype are shared by instances.
+- `Object.create()` makes objects with a specific prototype.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+function Person(name) {
+  this.name = name
 }
-
-console.log(explainTopic("Prototypes"));
+Person.prototype.greet = function() {
+  return `Hello, ${this.name}`
+}
+const alice = new Person("Alice")
+console.log(alice.greet())
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Create a constructor function and add a prototype method.
+2. Create two instances and call the shared method.
+3. Inspect `instanceof` for an object.
+4. Avoid modifying built-in prototypes like `Array.prototype`.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

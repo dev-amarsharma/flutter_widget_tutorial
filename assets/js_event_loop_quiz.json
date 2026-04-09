@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes Event Loop in web development?",
+    "que": "What is event loop?",
     "options": [
-      "A database indexing method",
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects"
+      "Handles async operations",
+      "Handles sync operations",
+      "Handles loops",
+      "Handles events"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is call stack?",
+    "options": [
+      "Microtask queue",
+      "Callback queue",
+      "Event queue",
+      "Execution stack"
     ],
     "ans": "d"
   },
   {
-    "que": "Why should developers learn Event Loop?",
+    "que": "What is task queue?",
     "options": [
-      "It helps write clearer and more reliable code",
-      "It disables browser APIs",
-      "It only matters for offline apps",
-      "It removes need for testing"
+      "Callback queue",
+      "Event queue",
+      "Microtask queue",
+      "Call stack"
     ],
     "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying Event Loop behavior?",
+    "que": "What is microtask queue?",
     "options": [
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Random snippets without docs",
-      "Unofficial social posts only"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Event Loop?",
-    "options": [
-      "Ignore edge cases",
-      "Build small examples and iterate",
-      "Memorize syntax without practice",
-      "Skip debugging tools"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which is a common mistake with Event Loop?",
-    "options": [
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Testing realistic scenarios",
-      "Writing descriptive code"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "How do best practices improve outcomes for Event Loop?",
-    "options": [
-      "They reduce readability",
-      "They improve maintainability",
-      "They prevent all runtime behavior",
-      "They increase bugs"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "When applying Event Loop, what should you prioritize first?",
-    "options": [
-      "Skipping validation",
-      "Avoiding all comments",
-      "Clarity and correctness",
-      "Maximum complexity"
+      "Same as task",
+      "Lower priority",
+      "Higher priority queue",
+      "For events"
     ],
     "ans": "c"
   },
   {
-    "que": "What complements learning Event Loop effectively?",
+    "que": "What executes first?",
     "options": [
-      "Hands-on exercises with feedback",
-      "Avoiding examples",
-      "Only reading headings",
-      "Ignoring standards"
+      "Call stack",
+      "Event loop",
+      "Microtask queue",
+      "Task queue"
     ],
     "ans": "a"
   },
   {
-    "que": "Which habit helps avoid errors while using Event Loop?",
+    "que": "When does event loop run?",
     "options": [
-      "Skipping review",
-      "Rushing implementation",
-      "Checking assumptions and outputs",
-      "Copying code blindly"
+      "After call stack empty",
+      "On events",
+      "Always",
+      "On timers"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is setTimeout?",
+    "options": [
+      "Executes immediately",
+      "Adds to task queue",
+      "Adds to microtask",
+      "Blocks"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.then?",
+    "options": [
+      "Blocks",
+      "Adds to task queue",
+      "Adds to microtask queue",
+      "Executes immediately"
     ],
     "ans": "c"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Event Loop?",
+    "que": "Why understand event loop?",
     "options": [
-      "Avoid updates in standards",
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement"
+      "Write better code",
+      "Predict execution order",
+      "All of above",
+      "Debug async"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is blocking?",
+    "options": [
+      "Async operation",
+      "Event operation",
+      "Short operation",
+      "Long sync operation"
     ],
     "ans": "d"
   }

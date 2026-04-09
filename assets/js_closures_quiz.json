@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes Closures in web development?",
+    "que": "What is closure?",
     "options": [
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A core concept used in practical web projects",
-      "A database indexing method"
+      "Closed function",
+      "Local function",
+      "Function with access to outer scope",
+      "Global function"
     ],
     "ans": "c"
   },
   {
-    "que": "Why should developers learn Closures?",
+    "que": "What is lexical scope?",
     "options": [
-      "It removes need for testing",
-      "It helps write clearer and more reliable code",
-      "It only matters for offline apps",
-      "It disables browser APIs"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Closures behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "Official documentation/specifications",
-      "Random snippets without docs",
-      "A single outdated screenshot"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Closures?",
-    "options": [
-      "Ignore edge cases",
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Memorize syntax without practice"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake with Closures?",
-    "options": [
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Testing realistic scenarios",
-      "Reviewing official docs"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "How do best practices improve outcomes for Closures?",
-    "options": [
-      "They reduce readability",
-      "They prevent all runtime behavior",
-      "They improve maintainability",
-      "They increase bugs"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "When applying Closures, what should you prioritize first?",
-    "options": [
-      "Avoiding all comments",
-      "Skipping validation",
-      "Clarity and correctness",
-      "Maximum complexity"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What complements learning Closures effectively?",
-    "options": [
-      "Only reading headings",
-      "Ignoring standards",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
+      "Based on runtime",
+      "Based on call",
+      "Based on context",
+      "Based on code structure"
     ],
     "ans": "d"
   },
   {
-    "que": "Which habit helps avoid errors while using Closures?",
+    "que": "What does closure remember?",
     "options": [
-      "Checking assumptions and outputs",
-      "Rushing implementation",
-      "Skipping review",
-      "Copying code blindly"
+      "Parameters",
+      "Own variables",
+      "Variables from outer scope",
+      "Global variables"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is scope chain?",
+    "options": [
+      "Chain of functions",
+      "Chain of variables",
+      "Chain of scopes",
+      "Chain of calls"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is private variable?",
+    "options": [
+      "Accessible everywhere",
+      "In function",
+      "Inaccessible from outside",
+      "In block"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to create closure?",
+    "options": [
+      "Arrow function",
+      "Global function",
+      "Function inside function",
+      "Function outside"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is module pattern?",
+    "options": [
+      "Callback",
+      "IIFE with return",
+      "Function declaration",
+      "Arrow function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is IIFE?",
+    "options": [
+      "Immediately Invoked Function Expression",
+      "Inline Function",
+      "Instant Function",
+      "Internal Function"
     ],
     "ans": "a"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Closures?",
+    "que": "Why use closures?",
     "options": [
-      "Depend on guesswork",
-      "Use one pattern forever",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards"
+      "Performance",
+      "Encapsulation, data hiding",
+      "Syntax",
+      "Compatibility"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is garbage collection?",
+    "options": [
+      "Memory deallocation",
+      "Memory allocation",
+      "Automatic memory management",
+      "Manual memory"
     ],
     "ans": "c"
   }

@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes Async/Await in web development?",
+    "que": "What is async function?",
     "options": [
-      "A hardware-only feature",
-      "A database indexing method",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Why should developers learn Async/Await?",
-    "options": [
-      "It disables browser APIs",
-      "It only matters for offline apps",
-      "It helps write clearer and more reliable code",
-      "It removes need for testing"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which source is most appropriate for verifying Async/Await behavior?",
-    "options": [
-      "Unofficial social posts only",
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Random snippets without docs"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Async/Await?",
-    "options": [
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Build small examples and iterate",
-      "Memorize syntax without practice"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake with Async/Await?",
-    "options": [
-      "Reviewing official docs",
-      "Writing descriptive code",
-      "Testing realistic scenarios",
-      "Using it without understanding fundamentals"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "How do best practices improve outcomes for Async/Await?",
-    "options": [
-      "They prevent all runtime behavior",
-      "They improve maintainability",
-      "They increase bugs",
-      "They reduce readability"
+      "Callback",
+      "Returns promise",
+      "Synchronous",
+      "Generator"
     ],
     "ans": "b"
   },
   {
-    "que": "When applying Async/Await, what should you prioritize first?",
+    "que": "What does await do?",
     "options": [
-      "Clarity and correctness",
-      "Maximum complexity",
-      "Avoiding all comments",
-      "Skipping validation"
+      "Calls function",
+      "Waits for promise",
+      "Throws error",
+      "Returns value"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "What complements learning Async/Await effectively?",
+    "que": "What is promise?",
     "options": [
-      "Only reading headings",
-      "Ignoring standards",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
+      "Function",
+      "Current value",
+      "Error",
+      "Future value"
     ],
     "ans": "d"
   },
   {
-    "que": "Which habit helps avoid errors while using Async/Await?",
+    "que": "What are promise states?",
     "options": [
-      "Checking assumptions and outputs",
-      "Skipping review",
-      "Copying code blindly",
-      "Rushing implementation"
+      "init, process, finish",
+      "start, middle, end",
+      "running, done, error",
+      "pending, fulfilled, rejected"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does then() do?",
+    "options": [
+      "Creates promise",
+      "Resolves promise",
+      "Handles rejection",
+      "Handles fulfillment"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does catch() do?",
+    "options": [
+      "Creates promise",
+      "Handles fulfillment",
+      "Resolves promise",
+      "Handles rejection"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does finally() do?",
+    "options": [
+      "Runs always",
+      "Runs on success",
+      "Runs on error",
+      "Runs first"
     ],
     "ans": "a"
   },
   {
-    "que": "What is the recommended long-term approach to mastering Async/Await?",
+    "que": "What is Promise.all?",
     "options": [
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork",
-      "Avoid updates in standards",
-      "Use one pattern forever"
+      "Waits for all",
+      "Rejects all",
+      "Waits for first",
+      "Resolves all"
     ],
     "ans": "a"
+  },
+  {
+    "que": "What is Promise.race?",
+    "options": [
+      "Waits for first settle",
+      "Resolves first",
+      "Rejects first",
+      "Waits for all"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is async/await?",
+    "options": [
+      "Generator style",
+      "New promise type",
+      "Callback style",
+      "Syntactic sugar for promises"
+    ],
+    "ans": "d"
   }
 ]

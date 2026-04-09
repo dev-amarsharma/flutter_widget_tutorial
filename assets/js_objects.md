@@ -1,36 +1,60 @@
-# Objects
+
+# JavaScript Objects
 
 ## Overview
-Objects store key-value pairs and model structured data.
+Objects are collections of key/value pairs that model structured data.
 
 ## Why this topic matters
-Learning Objects helps you write cleaner, more maintainable code and improves real-world development confidence.
+Objects let you represent entities, settings, and records with properties and methods.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Create objects with `{}`.
+- Access properties with dot or bracket notation.
+- Define methods to add behavior.
+- Objects can inherit from prototypes.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+const user = {
+  name: "Asha",
+  age: 30,
+  greet() {
+    return `Hi, ${this.name}`
+  }
 }
-
-console.log(explainTopic("Objects"));
+console.log(user.greet())
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Create an object with properties and a method.
+2. Access a property using bracket notation.
+3. Add a new property to the object.
+4. Use `Object.keys()` to list all keys.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

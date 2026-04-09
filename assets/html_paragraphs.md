@@ -1,32 +1,81 @@
 # HTML Paragraphs
 
 ## Overview
-Paragraphs (`<p>`) group related sentences and improve readability for users and assistive technologies.
+The `<p>` element defines a paragraph of text.
+It groups related sentences into a readable block and provides semantic meaning for browsers and assistive technologies.
 
 ## Why this topic matters
-Learning HTML Paragraphs helps you write cleaner, more maintainable code and improves real-world development confidence.
+Paragraphs are the most common way to structure body text on the web.
+Good paragraph markup improves readability and keeps content accessible.
 
-## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+---
 
-## Example
+## Paragraph basics
 ```html
-<h1>Welcome</h1>
-<p>Build pages with clear structure.</p>
+<p>This is a paragraph of text. It wraps sentences that belong together.</p>
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+### When to use `<p>`
+- For regular body text.
+- Inside articles, blog posts, descriptions, and content blocks.
+- As a container for short inline elements like links, emphasis, and small formatting.
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+---
+
+## Inserting other elements
+Paragraphs can contain inline elements such as `<a>`, `<strong>`, and `<em>`.
+Block-level elements should not be placed inside `<p>`.
+
+```html
+<p>
+  Read the <a href="https://developer.mozilla.org">MDN Web Docs</a> for HTML guidance.
+</p>
+```
+
+---
+
+## Accessibility and semantics
+Paragraphs help screen readers present text as coherent blocks.
+Use paragraphs for actual text content rather than for spacing or layout.
+
+---
+
+## Real example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph example</title>
+  </head>
+  <body>
+    <h1>About our product</h1>
+    <p>Our product helps teams collaborate more efficiently by combining documents, chat, and tasks in one place.</p>
+    <p>It is built with simplicity in mind and works across desktop and mobile devices.</p>
+  </body>
+</html>
+```
+
+---
+
+## Common mistakes to avoid
+- Using `<p>` for non-text layout elements like `<div>`-style spacing.
+- Nesting block elements such as `<div>` or `<section>` inside `<p>`.
+- Adding paragraph tags around individual words for styling.
+- Leaving content outside of any paragraph when it should be grouped.
+
+---
+
+## Quick practice
+1. Write two paragraphs describing your favorite feature.
+2. Include a link and emphasized text inside one paragraph.
+3. Check that paragraphs are separate content blocks in the rendered page.
+4. Avoid using `<p>` for headings or lists.
+
+---
 
 ## Official references
-- MDN HTML reference: https://developer.mozilla.org/en-US/docs/Web/HTML
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+- MDN: `<p>` element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+- MDN: HTML text fundamentals: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals

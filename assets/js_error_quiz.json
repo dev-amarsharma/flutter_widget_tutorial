@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes Error Handling in web development?",
+    "que": "What is try?",
     "options": [
-      "A core concept used in practical web projects",
-      "A database indexing method",
-      "A hardware-only feature",
-      "A replacement for all CSS"
+      "Block for success",
+      "Block for catch",
+      "Block for error",
+      "Block to test"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is catch?",
+    "options": [
+      "Block for success",
+      "Block for finally",
+      "Block for errors",
+      "Block for test"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is finally?",
+    "options": [
+      "Block for success",
+      "Block for errors",
+      "Block for test",
+      "Block that always runs"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is throw?",
+    "options": [
+      "Throws error",
+      "Catches error",
+      "Handles error",
+      "Ignores error"
     ],
     "ans": "a"
   },
   {
-    "que": "Why should developers learn Error Handling?",
+    "que": "What is Error object?",
     "options": [
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code",
-      "It removes need for testing",
-      "It only matters for offline apps"
+      "Has code",
+      "All of above",
+      "Has message and name",
+      "Has stack"
     ],
     "ans": "b"
   },
   {
-    "que": "Which source is most appropriate for verifying Error Handling behavior?",
+    "que": "What is ReferenceError?",
     "options": [
-      "Official documentation/specifications",
-      "Unofficial social posts only",
-      "Random snippets without docs",
-      "A single outdated screenshot"
+      "Range error",
+      "Undefined variable",
+      "Type error",
+      "Syntax error"
     ],
-    "ans": "a"
+    "ans": "b"
   },
   {
-    "que": "What is a good beginner strategy when studying Error Handling?",
+    "que": "What is TypeError?",
     "options": [
-      "Ignore edge cases",
-      "Skip debugging tools",
-      "Build small examples and iterate",
-      "Memorize syntax without practice"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "Which is a common mistake with Error Handling?",
-    "options": [
-      "Testing realistic scenarios",
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs"
+      "Range error",
+      "Undefined variable",
+      "Wrong type operation",
+      "Syntax error"
     ],
     "ans": "c"
   },
   {
-    "que": "How do best practices improve outcomes for Error Handling?",
+    "que": "What is SyntaxError?",
     "options": [
-      "They reduce readability",
-      "They prevent all runtime behavior",
-      "They increase bugs",
-      "They improve maintainability"
+      "Range",
+      "Undefined",
+      "Wrong type",
+      "Invalid syntax"
     ],
     "ans": "d"
   },
   {
-    "que": "When applying Error Handling, what should you prioritize first?",
+    "que": "How to create custom error?",
     "options": [
-      "Clarity and correctness",
-      "Avoiding all comments",
-      "Skipping validation",
-      "Maximum complexity"
+      "new Error('message')",
+      "throw 'message'",
+      "catch 'message'",
+      "Error('message')"
     ],
     "ans": "a"
   },
   {
-    "que": "What complements learning Error Handling effectively?",
+    "que": "Why handle errors?",
     "options": [
-      "Hands-on exercises with feedback",
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which habit helps avoid errors while using Error Handling?",
-    "options": [
-      "Rushing implementation",
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering Error Handling?",
-    "options": [
-      "Use one pattern forever",
-      "Depend on guesswork",
-      "Practice, review, and incremental improvement",
-      "Avoid updates in standards"
+      "Graceful failure",
+      "User experience",
+      "All of above",
+      "Debugging"
     ],
     "ans": "c"
   }

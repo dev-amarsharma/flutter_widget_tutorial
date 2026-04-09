@@ -1,52 +1,102 @@
 [
   {
-    "que": "What is a main benefit of using functions?",
+    "que": "How to declare function?",
     "options": [
-      "They make logic reusable",
-      "They remove the need for variables",
-      "They replace HTML tags",
-      "They stop all runtime errors"
+      "declare name() {}",
+      "func name() {}",
+      "function name() {}",
+      "def name() {}"
     ],
-    "ans": "a"
+    "ans": "c"
   },
   {
-    "que": "What are parameters in a function?",
+    "que": "What is function expression?",
     "options": [
-      "The final returned result only",
-      "The inputs a function receives",
-      "The CSS styles for a function",
-      "The browser cache entries"
+      "function f() {}",
+      "const f = function() {}",
+      "f = function() {}",
+      "var f = function() {}"
     ],
     "ans": "b"
   },
   {
-    "que": "Which is an example of an arrow function?",
+    "que": "What does return do?",
     "options": [
-      "const add = (a, b) => a + b;",
-      "<function add></function>",
-      "function => add(a, b)",
-      "add := a + b"
+      "Returns value from function",
+      "Restarts function",
+      "Continues function",
+      "Exits function"
     ],
     "ans": "a"
   },
   {
-    "que": "Which is a function design best practice?",
+    "que": "What are parameters?",
     "options": [
-      "Give it a clear behavior-based name",
-      "Make every function handle every task",
-      "Avoid return values completely",
-      "Hide all logic in one long callback chain"
+      "Input values",
+      "Global variables",
+      "Output values",
+      "Local variables"
     ],
     "ans": "a"
   },
   {
-    "que": "What is a common mistake with functions?",
+    "que": "What is scope?",
     "options": [
-      "Breaking large logic into smaller units",
-      "Using descriptive names",
-      "Writing one giant function with many responsibilities",
-      "Returning computed values"
+      "Function size",
+      "Variable accessibility",
+      "Execution time",
+      "Code length"
     ],
-    "ans": "c"
+    "ans": "b"
+  },
+  {
+    "que": "What is arrow function?",
+    "options": [
+      "=> {}",
+      "() => {}",
+      "() -> {}",
+      "function() {}"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is callback?",
+    "options": [
+      "Function passed as argument",
+      "Function called",
+      "Function defined",
+      "Function returned"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is higher-order function?",
+    "options": [
+      "Built-in function",
+      "Takes or returns function",
+      "Simple function",
+      "Anonymous function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is recursion?",
+    "options": [
+      "Function returns",
+      "Function loops",
+      "Function calls other",
+      "Function calls itself"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is IIFE?",
+    "options": [
+      "Internal Function Expression",
+      "Instant Function Execution",
+      "Inline Function Expression",
+      "Immediately Invoked Function Expression"
+    ],
+    "ans": "d"
   }
 ]

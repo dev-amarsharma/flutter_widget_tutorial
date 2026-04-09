@@ -1,36 +1,63 @@
-# Debounce & Throttle
+
+# JavaScript Debounce & Throttle
 
 ## Overview
-Debounce/throttle limit high-frequency event handlers to improve performance.
+Debounce and throttle limit how often a function runs for performance-sensitive events.
 
 ## Why this topic matters
-Learning Debounce & Throttle helps you write cleaner, more maintainable code and improves real-world development confidence.
+These techniques reduce work for frequent events like scrolling, resizing, and typing.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Debounce delays execution until activity stops.
+- Throttle runs at most once per interval.
+- Both are useful for event handlers.
+- Debounce is ideal for input validation and resize events.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+function debounce(fn, delay) {
+  let timer
+  return (...args) => {
+    clearTimeout(timer)
+    timer = setTimeout(() => fn(...args), delay)
+  }
 }
-
-console.log(explainTopic("Debounce & Throttle"));
+const handleResize = debounce(() => {
+  console.log("Resized")
+}, 250)
+window.addEventListener("resize", handleResize)
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Create a debounced resize handler.
+2. Throttle a scroll callback.
+3. Compare the number of function calls with and without debounce.
+4. Clear timers when no longer needed.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://web.dev/articles/optimize-input-delay
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

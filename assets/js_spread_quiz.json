@@ -1,101 +1,101 @@
 [
   {
-    "que": "What best describes Spread & Rest in web development?",
+    "que": "What is spread operator?",
     "options": [
-      "A hardware-only feature",
-      "A replacement for all CSS",
-      "A core concept used in practical web projects",
-      "A database indexing method"
+      "... packs iterable",
+      "... expands iterable",
+      ".. expands",
+      ".. packs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to spread array?",
+    "options": [
+      "[newItem, array...]",
+      "[...array]",
+      "[...array, newItem]",
+      "[array...]"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to spread object?",
+    "options": [
+      "{object...}",
+      "{newProp: value, object...}",
+      "{...object}",
+      "{...object, newProp: value}"
     ],
     "ans": "c"
   },
   {
-    "que": "Why should developers learn Spread & Rest?",
+    "que": "What is rest parameter?",
     "options": [
-      "It only matters for offline apps",
-      "It removes need for testing",
-      "It disables browser APIs",
-      "It helps write clearer and more reliable code"
+      "... spreads arguments",
+      ".. collects",
+      ".. spreads",
+      "... collects arguments"
     ],
     "ans": "d"
   },
   {
-    "que": "Which source is most appropriate for verifying Spread & Rest behavior?",
+    "que": "How to use rest in function?",
     "options": [
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Unofficial social posts only"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is a good beginner strategy when studying Spread & Rest?",
-    "options": [
-      "Build small examples and iterate",
-      "Memorize syntax without practice",
-      "Skip debugging tools",
-      "Ignore edge cases"
+      "function f(...args)",
+      "function f(args...)",
+      "function f(args...) {}",
+      "function f(...args) {}"
     ],
     "ans": "a"
   },
   {
-    "que": "Which is a common mistake with Spread & Rest?",
+    "que": "What is shallow copy?",
     "options": [
-      "Using it without understanding fundamentals",
-      "Reviewing official docs",
-      "Writing descriptive code",
-      "Testing realistic scenarios"
+      "Deep copy",
+      "Copies references",
+      "No copy",
+      "Copies values"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to copy array?",
+    "options": [
+      "[...array]",
+      "array.slice()",
+      "Array.from(array)",
+      "All of above"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to merge arrays?",
+    "options": [
+      "arr1.push(...arr2)",
+      "All of above",
+      "arr1.concat(arr2)",
+      "[...arr1, ...arr2]"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to merge objects?",
+    "options": [
+      "{...obj1, ...obj2}",
+      "obj1 + obj2",
+      "obj1.merge(obj2)",
+      "Object.assign({}, obj1, obj2)"
     ],
     "ans": "a"
   },
   {
-    "que": "How do best practices improve outcomes for Spread & Rest?",
+    "que": "When to use spread?",
     "options": [
-      "They reduce readability",
-      "They increase bugs",
-      "They prevent all runtime behavior",
-      "They improve maintainability"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "When applying Spread & Rest, what should you prioritize first?",
-    "options": [
-      "Skipping validation",
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Clarity and correctness"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What complements learning Spread & Rest effectively?",
-    "options": [
-      "Avoiding examples",
-      "Ignoring standards",
-      "Only reading headings",
-      "Hands-on exercises with feedback"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which habit helps avoid errors while using Spread & Rest?",
-    "options": [
-      "Copying code blindly",
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Rushing implementation"
-    ],
-    "ans": "c"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering Spread & Rest?",
-    "options": [
-      "Practice, review, and incremental improvement",
-      "Use one pattern forever",
-      "Avoid updates in standards",
-      "Depend on guesswork"
+      "Copy, merge, expand",
+      "Map, reduce",
+      "Sort, filter",
+      "Pack, collect"
     ],
     "ans": "a"
   }

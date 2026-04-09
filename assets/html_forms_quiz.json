@@ -1,102 +1,102 @@
 [
   {
-    "que": "What element groups input controls together?",
     "options": [
-      "<table>",
+      "<data>",
       "<form>",
-      "<section>",
-      "<figure>"
+      "<field>",
+      "<input>"
     ],
+    "que": "Which element creates an HTML form?",
     "ans": "b"
   },
   {
-    "que": "Why should inputs have labels?",
     "options": [
-      "Only to add color",
-      "To improve clarity and accessibility",
-      "To stop JavaScript from running",
-      "To replace name attributes"
-    ],
-    "ans": "b"
-  },
-  {
-    "que": "Which input type is best suited for email addresses?",
-    "options": [
-      "email",
-      "date",
-      "radio",
-      "range"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which attribute often defines where form data is sent?",
-    "options": [
-      "class",
-      "src",
+      "target",
+      "method",
       "action",
-      "alt"
+      "send"
     ],
+    "que": "What attribute specifies where form data is sent?",
     "ans": "c"
   },
   {
-    "que": "What is a common form mistake?",
     "options": [
-      "Using meaningful labels",
-      "Grouping related fields",
-      "Choosing the correct input type",
-      "Using generic text fields for every case"
+      "text",
+      "mail",
+      "address",
+      "email"
     ],
+    "que": "Which input type is for email addresses?",
     "ans": "d"
   },
   {
-    "que": "What is the purpose of an HTML form?",
     "options": [
-      "Collect user input",
-      "Style page layout",
-      "Load fonts",
-      "Control DNS"
+      "Defines the placeholder",
+      "Sets the field type",
+      "Makes the field mandatory",
+      "Specifies the value"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "Which element pairs with input for accessible text labels?",
-    "options": [
-      "<caption>",
-      "<meta>",
-      "<label>",
-      "<legendary>"
-    ],
+    "que": "What does the 'required' attribute do?",
     "ans": "c"
   },
   {
-    "que": "Which attribute makes an input mandatory?",
     "options": [
-      "readonly",
-      "required",
-      "checked",
-      "hidden"
+      "<dropdown>",
+      "<list>",
+      "<select>",
+      "<option>"
     ],
+    "que": "Which element creates a dropdown?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Specifies validation",
+      "Identifies the field in submitted data",
+      "Sets the display label",
+      "Defines the input type"
+    ],
+    "que": "What is the purpose of the 'name' attribute?",
     "ans": "b"
   },
   {
-    "que": "Which input type validates email format in browsers?",
     "options": [
-      "contact",
+      "secure",
+      "hidden",
+      "password",
+      "text"
+    ],
+    "que": "Which input type is for passwords?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Creates a button",
+      "Sets focus",
+      "Adds a title",
+      "Associates text with a form control"
+    ],
+    "que": "What does <label> do?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "help",
+      "hint",
       "text",
-      "email",
-      "mailbox"
+      "placeholder"
     ],
-    "ans": "c"
+    "que": "Which attribute provides hint text?",
+    "ans": "d"
   },
   {
-    "que": "What does the form action attribute define?",
     "options": [
-      "Input length",
-      "Submission URL",
-      "Theme color",
-      "Keyboard shortcut"
+      "Defines input types",
+      "Sets form action",
+      "Specifies HTTP method (GET/POST)",
+      "Controls validation"
     ],
-    "ans": "b"
+    "que": "What is the 'method' attribute for?",
+    "ans": "c"
   }
 ]

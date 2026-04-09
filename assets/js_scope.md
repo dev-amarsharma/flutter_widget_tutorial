@@ -1,36 +1,58 @@
-# Scope
+
+# JavaScript Scope
 
 ## Overview
-Scope determines where variables are accessible (block, function, global).
+Scope determines where variables and functions are available in code.
 
 ## Why this topic matters
-Learning Scope helps you write cleaner, more maintainable code and improves real-world development confidence.
+Scope prevents name collisions and controls which values can be accessed from different parts of a program.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Global scope is available throughout the page.
+- Function scope contains variables declared inside functions.
+- Block scope applies to `let` and `const` inside `{}`.
+- The scope chain resolves identifiers from inner to outer scopes.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
+```js
+const globalValue = 10
+function showValue() {
+  const localValue = 5
+  console.log(globalValue, localValue)
 }
-
-console.log(explainTopic("Scope"));
+showValue()
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Declare a `const` in global scope and log it inside a function.
+2. Declare a `let` inside a block and show it is not available outside.
+3. Compare `var` scope with `let` scope.
+4. Avoid reusing variable names in nested scopes.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Glossary/Scope
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

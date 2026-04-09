@@ -1,36 +1,57 @@
-# Destructuring
+
+# JavaScript Destructuring
 
 ## Overview
-Destructuring extracts values from arrays/objects into variables.
+Destructuring extracts values from arrays or objects into variables with concise syntax.
 
 ## Why this topic matters
-Learning Destructuring helps you write cleaner, more maintainable code and improves real-world development confidence.
+Destructuring reduces repetitive property access and makes assignments more readable.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- Use array destructuring with `[]`.
+- Use object destructuring with `{}`.
+- Provide default values for missing fields.
+- Use aliases to rename extracted values.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("Destructuring"));
+```js
+const point = [10, 20]
+const [x, y] = point
+const user = { name: "Asha", role: "developer" }
+const { name, role } = user
+console.log(name, role)
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Keep code readable and consistent.
+2. Use the right feature for the job.
+3. Prefer modern JavaScript syntax where appropriate.
+4. Test your code in the browser or console.
+
+---
+
+## Common mistakes to avoid
+1. Ignoring edge cases.
+2. Using outdated syntax without reason.
+3. Writing overly complex code.
+4. Forgetting to handle errors or invalid input.
+
+---
+
+## Quick practice
+1. Destructure the first two items of an array.
+2. Extract object properties into variables.
+3. Use a default value for missing data.
+4. Destructure function parameters.
+
+---
 
 ## Official references
 - MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
+- MDN JavaScript reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

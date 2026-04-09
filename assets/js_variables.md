@@ -1,36 +1,56 @@
-# Variables
+# JavaScript Variables
 
 ## Overview
-Variables store values. Use `const` by default, `let` when reassignment is needed.
+Variables store values so your code can refer to them by name. JavaScript supports `const`, `let`, and `var`, with `const` and `let` as the modern choices.
 
 ## Why this topic matters
-Learning Variables helps you write cleaner, more maintainable code and improves real-world development confidence.
+Variables are the fundamental way to manage data and state in programs. Choosing the correct declaration affects readability, scope, and behavior.
+
+---
 
 ## Core concepts
-- Learn the definition and common use cases.
-- Understand the most-used syntax and patterns.
-- Know common mistakes and how to avoid them.
+- `const` declares values that should not be reassigned.
+- `let` declares variables that may change later.
+- `var` is function-scoped and is generally avoided in modern code.
+- Use descriptive names and avoid global variables when possible.
+
+---
 
 ## Example
-```javascript
-function explainTopic(name) {
-  return `Now learning: ${name}`;
-}
-
-console.log(explainTopic("Variables"));
+```js
+const name = "Asha"
+let count = 1
+count = count + 1
+console.log(`${name} has ${count} notifications`)
 ```
 
-## Best practices
-- Prefer readable, consistent code style.
-- Validate behavior in real browser/devtools scenarios.
-- Combine this topic with semantic and accessible patterns.
+---
 
-## Practice ideas
-1. Build a small demo focused on this topic.
-2. Test edge cases and invalid inputs.
-3. Refactor your demo for clarity and accessibility.
+## Best practices
+1. Prefer `const` for values that do not change.
+2. Use `let` only when reassignment is required.
+3. Keep variable names descriptive and consistent.
+4. Avoid unnecessary global variables.
+
+---
+
+## Common mistakes to avoid
+1. Redeclaring the same variable using `var`, `let`, or `const` incorrectly.
+2. Using `const` for values that need to change.
+3. Forgetting that `const` objects and arrays can still mutate their contents.
+4. Naming variables too generically.
+
+---
+
+## Quick practice
+1. Declare a `const` and log it.
+2. Declare a `let`, update it, and log the result.
+3. Convert a `var` example to `let`/`const`.
+4. Use a template literal to combine text and variables.
+
+---
 
 ## Official references
-- MDN JavaScript guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
-- ECMAScript specification: https://tc39.es/ecma262/
-- Topic-specific reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations
+- MDN `const`: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+- MDN `let`: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+- MDN variable scope: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations

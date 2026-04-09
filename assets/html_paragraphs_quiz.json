@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes HTML Paragraphs in web development?",
     "options": [
-      "A database indexing method",
-      "A replacement for all CSS",
-      "A hardware-only feature",
-      "A core concept used in practical web projects"
+      "<p>",
+      "<text>",
+      "<para>",
+      "<div>"
     ],
-    "ans": "d"
+    "que": "Which element creates paragraphs?",
+    "ans": "a"
   },
   {
-    "que": "Why should developers learn HTML Paragraphs?",
     "options": [
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It removes need for testing",
-      "It helps write clearer and more reliable code"
+      "Line break",
+      "New line",
+      "Space",
+      "Paragraph break"
     ],
-    "ans": "d"
+    "que": "What does <br> do?",
+    "ans": "a"
   },
   {
-    "que": "Which source is most appropriate for verifying HTML Paragraphs behavior?",
     "options": [
-      "A single outdated screenshot",
-      "Random snippets without docs",
-      "Unofficial social posts only",
-      "Official documentation/specifications"
+      "<div>",
+      "<span>",
+      "<pre>",
+      "<p>"
     ],
-    "ans": "d"
-  },
-  {
-    "que": "What is a good beginner strategy when studying HTML Paragraphs?",
-    "options": [
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Build small examples and iterate",
-      "Memorize syntax without practice"
-    ],
+    "que": "Which element preserves whitespace?",
     "ans": "c"
   },
   {
-    "que": "Which is a common mistake with HTML Paragraphs?",
     "options": [
-      "Testing realistic scenarios",
-      "Writing descriptive code",
-      "Using it without understanding fundamentals",
-      "Reviewing official docs"
+      "Short quotes",
+      "Lists",
+      "Quoted text",
+      "Code"
     ],
+    "que": "What is <blockquote> for?",
     "ans": "c"
   },
   {
-    "que": "How do best practices improve outcomes for HTML Paragraphs?",
     "options": [
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They improve maintainability",
-      "They increase bugs"
+      "<strong>",
+      "<i>",
+      "<em>",
+      "<b>"
     ],
+    "que": "Which tag is for emphasized text?",
     "ans": "c"
   },
   {
-    "que": "When applying HTML Paragraphs, what should you prioritize first?",
     "options": [
-      "Maximum complexity",
-      "Skipping validation",
-      "Avoiding all comments",
-      "Clarity and correctness"
+      "Emphasis",
+      "Bold text",
+      "Strong importance",
+      "Highlight"
     ],
-    "ans": "d"
+    "que": "What does <strong> indicate?",
+    "ans": "c"
   },
   {
-    "que": "What complements learning HTML Paragraphs effectively?",
     "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
+      "<source>",
+      "<ref>",
+      "<cite>",
+      "<quote>"
     ],
-    "ans": "d"
+    "que": "Which element is for citations?",
+    "ans": "c"
   },
   {
-    "que": "Which habit helps avoid errors while using HTML Paragraphs?",
     "options": [
-      "Skipping review",
-      "Checking assumptions and outputs",
-      "Copying code blindly",
-      "Rushing implementation"
+      "Short forms",
+      "Abbreviations",
+      "All of the above",
+      "Acronyms"
     ],
+    "que": "What is <abbr> used for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<remove>",
+      "<del>",
+      "<strike>",
+      "<out>"
+    ],
+    "que": "Which tag marks deleted text?",
     "ans": "b"
   },
   {
-    "que": "What is the recommended long-term approach to mastering HTML Paragraphs?",
     "options": [
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork",
-      "Avoid updates in standards",
-      "Use one pattern forever"
+      "Added content",
+      "Inserted text",
+      "Important text",
+      "New text"
     ],
-    "ans": "a"
+    "que": "What does <ins> indicate?",
+    "ans": "b"
   }
 ]

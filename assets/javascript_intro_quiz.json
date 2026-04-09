@@ -1,52 +1,102 @@
 [
   {
-    "que": "What is JavaScript primarily used for on web pages?",
+    "que": "What is JavaScript?",
     "options": [
-      "Adding behavior and interactivity",
-      "Replacing HTML structure entirely",
-      "Compiling Android apps directly",
-      "Managing SQL databases in markup"
+      "Styling language",
+      "Markup language",
+      "Database language",
+      "Programming language for web"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Where does JS run?",
+    "options": [
+      "Browser and server",
+      "Desktop",
+      "Only server",
+      "Only browser"
     ],
     "ans": "a"
   },
   {
-    "que": "Where does JavaScript commonly run?",
+    "que": "How to include JS?",
     "options": [
-      "Only in spreadsheets",
-      "Only inside image editors",
-      "In browsers and server environments like Node.js",
-      "Only in CSS files"
+      "<js>",
+      "<script>",
+      "<javascript>",
+      "<code>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is console.log?",
+    "options": [
+      "Prints to page",
+      "Prints to console",
+      "Logs error",
+      "Alerts user"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is variable?",
+    "options": [
+      "Creates object",
+      "Defines function",
+      "Executes code",
+      "Stores value"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is const?",
+    "options": [
+      "Function",
+      "Object",
+      "Constant variable",
+      "Variable"
     ],
     "ans": "c"
   },
   {
-    "que": "Which tag can include JavaScript in an HTML page?",
+    "que": "What is let?",
     "options": [
-      "<script>",
-      "<style>",
-      "<label>",
-      "<article>"
+      "Block-scoped variable",
+      "Global variable",
+      "Function",
+      "Constant"
     ],
     "ans": "a"
   },
   {
-    "que": "Which is a good early JavaScript practice?",
+    "que": "What is if statement?",
     "options": [
-      "Use descriptive names",
-      "Ignore console errors",
-      "Put every script inline forever",
-      "Replace all HTML with scripts"
+      "Conditional execution",
+      "Loop",
+      "Function",
+      "Variable"
     ],
     "ans": "a"
   },
   {
-    "que": "Which task is well suited for JavaScript?",
+    "que": "What is array?",
     "options": [
-      "Reacting to button clicks",
-      "Defining all page semantics alone",
-      "Replacing CSS layout rules entirely",
-      "Avoiding browser interaction"
+      "Function",
+      "Object",
+      "List of values",
+      "Single value"
     ],
-    "ans": "a"
+    "ans": "c"
+  },
+  {
+    "que": "What is object?",
+    "options": [
+      "List",
+      "Function",
+      "Value",
+      "Key-value collection"
+    ],
+    "ans": "d"
   }
 ]

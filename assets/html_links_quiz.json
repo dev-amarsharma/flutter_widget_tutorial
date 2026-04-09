@@ -1,102 +1,102 @@
 [
   {
-    "que": "What best describes HTML Links in web development?",
     "options": [
-      "A core concept used in practical web projects",
-      "A database indexing method",
-      "A hardware-only feature",
-      "A replacement for all CSS"
+      "<link>",
+      "<url>",
+      "<a>",
+      "<href>"
     ],
-    "ans": "a"
-  },
-  {
-    "que": "Why should developers learn HTML Links?",
-    "options": [
-      "It helps write clearer and more reliable code",
-      "It only matters for offline apps",
-      "It disables browser APIs",
-      "It removes need for testing"
-    ],
-    "ans": "a"
-  },
-  {
-    "que": "Which source is most appropriate for verifying HTML Links behavior?",
-    "options": [
-      "Random snippets without docs",
-      "A single outdated screenshot",
-      "Official documentation/specifications",
-      "Unofficial social posts only"
-    ],
+    "que": "Which element creates hyperlinks?",
     "ans": "c"
   },
   {
-    "que": "What is a good beginner strategy when studying HTML Links?",
     "options": [
-      "Skip debugging tools",
-      "Ignore edge cases",
-      "Memorize syntax without practice",
-      "Build small examples and iterate"
+      "url",
+      "src",
+      "href",
+      "link"
     ],
+    "que": "What attribute specifies the URL?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "new",
+      "open",
+      "tab",
+      "target=\"_blank\""
+    ],
+    "que": "Which attribute opens in new tab?",
     "ans": "d"
   },
   {
-    "que": "Which is a common mistake with HTML Links?",
     "options": [
-      "Reviewing official docs",
-      "Testing realistic scenarios",
-      "Writing descriptive code",
-      "Using it without understanding fundamentals"
+      "Anchor",
+      "External domain",
+      "Full URL",
+      "Path from current file"
     ],
+    "que": "What is a relative link?",
     "ans": "d"
   },
   {
-    "que": "How do best practices improve outcomes for HTML Links?",
     "options": [
-      "They increase bugs",
-      "They prevent all runtime behavior",
-      "They reduce readability",
-      "They improve maintainability"
+      "title",
+      "desc",
+      "hint",
+      "alt"
     ],
-    "ans": "d"
-  },
-  {
-    "que": "When applying HTML Links, what should you prioritize first?",
-    "options": [
-      "Skipping validation",
-      "Avoiding all comments",
-      "Maximum complexity",
-      "Clarity and correctness"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What complements learning HTML Links effectively?",
-    "options": [
-      "Ignoring standards",
-      "Only reading headings",
-      "Avoiding examples",
-      "Hands-on exercises with feedback"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "Which habit helps avoid errors while using HTML Links?",
-    "options": [
-      "Skipping review",
-      "Copying code blindly",
-      "Rushing implementation",
-      "Checking assumptions and outputs"
-    ],
-    "ans": "d"
-  },
-  {
-    "que": "What is the recommended long-term approach to mastering HTML Links?",
-    "options": [
-      "Practice, review, and incremental improvement",
-      "Depend on guesswork",
-      "Avoid updates in standards",
-      "Use one pattern forever"
-    ],
+    "que": "Which attribute provides tooltip?",
     "ans": "a"
+  },
+  {
+    "options": [
+      "File link",
+      "Email link",
+      "Web link",
+      "Phone link"
+    ],
+    "que": "What does 'mailto:' create?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Styling",
+      "Accessibility and SEO",
+      "Speed",
+      "Size"
+    ],
+    "que": "Why use descriptive link text?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Download",
+      "External page",
+      "Links to page section",
+      "Image"
+    ],
+    "que": "What is an anchor link?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "download",
+      "file",
+      "save",
+      "export"
+    ],
+    "que": "Which attribute for download?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Opens faster",
+      "Prevents tracking",
+      "Security for external links",
+      "Adds icon"
+    ],
+    "que": "What does 'rel=\"noopener\"' do?",
+    "ans": "c"
   }
 ]
