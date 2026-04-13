@@ -1,81 +1,93 @@
 <svg width="1024" height="500" viewBox="0 0 1024 500" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="72" y1="34" x2="944" y2="470" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF5F5"/>
-      <stop offset="1" stop-color="#FFE3E3"/>
+    <linearGradient id="bg" x1="48" y1="28" x2="952" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F1"/>
+      <stop offset="1" stop-color="#F4E9D8"/>
     </linearGradient>
-    <linearGradient id="panel" x1="650" y1="66" x2="960" y2="432" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EA2027"/>
-      <stop offset="1" stop-color="#C41C22"/>
+    <linearGradient id="panel" x1="650" y1="56" x2="970" y2="444" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182338"/>
+      <stop offset="1" stop-color="#0B1220"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#FF9B54"/>
-      <stop offset="1" stop-color="#FF6B35"/>
+    <linearGradient id="html" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF7A18"/>
+      <stop offset="1" stop-color="#F04D23"/>
+    </linearGradient>
+    <linearGradient id="js" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFE66D"/>
+      <stop offset="1" stop-color="#F7C948"/>
     </linearGradient>
     <filter id="shadow" x="0" y="0" width="1024" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#C41C22" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#182338" flood-opacity="0.16"/>
     </filter>
   </defs>
 
-  <rect width="1024" height="500" rx="0" fill="url(#bg)"/>
+  <rect width="1024" height="500" fill="url(#bg)"/>
 
-  <circle cx="140" cy="88" r="72" fill="#FFD9D9"/>
-  <circle cx="934" cy="420" r="96" fill="#FFD2D2"/>
-  <circle cx="872" cy="96" r="52" fill="#FFE1C8"/>
+  <circle cx="130" cy="104" r="64" fill="#FFE1C6"/>
+  <circle cx="958" cy="404" r="90" fill="#D9E1F2"/>
+  <circle cx="864" cy="88" r="42" fill="#FFF0B3"/>
 
   <g filter="url(#shadow)">
-    <rect x="602" y="44" width="374" height="412" rx="36" fill="url(#panel)"/>
-    <rect x="632" y="84" width="314" height="330" rx="28" fill="#FFF7F7"/>
-    <rect x="632" y="84" width="314" height="330" rx="28" stroke="#FFD7D7" stroke-width="4"/>
+    <rect x="596" y="44" width="380" height="412" rx="42" fill="url(#panel)"/>
+    <rect x="622" y="70" width="328" height="360" rx="34" stroke="#24324A" stroke-width="4"/>
 
-    <rect x="662" y="116" width="70" height="18" rx="9" fill="#F7C3C3"/>
-    <rect x="744" y="116" width="54" height="18" rx="9" fill="#F7C3C3"/>
-    <rect x="810" y="116" width="78" height="18" rx="9" fill="#F7C3C3"/>
+    <circle cx="664" cy="100" r="10" fill="#FF7A18"/>
+    <circle cx="694" cy="100" r="10" fill="#FFD166"/>
+    <circle cx="724" cy="100" r="10" fill="#7BD389"/>
 
-    <rect x="684" y="168" width="210" height="124" rx="26" fill="#FFFFFF"/>
-    <rect x="684" y="168" width="210" height="124" rx="26" stroke="#F4D8D8" stroke-width="4"/>
-    <path d="M742 193L703 230L742 267" stroke="#EA2027" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M838 193L877 230L838 267" stroke="#EA2027" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M795 180L764 281" stroke="url(#accent)" stroke-width="22" stroke-linecap="round"/>
+    <rect x="650" y="132" width="272" height="226" rx="40" fill="#F7F4ED"/>
+    <rect x="650" y="132" width="272" height="226" rx="40" stroke="#E7DCC8" stroke-width="4"/>
 
-    <rect x="672" y="324" width="84" height="14" rx="7" fill="#FFD3D3"/>
-    <rect x="766" y="324" width="62" height="14" rx="7" fill="url(#accent)"/>
-    <rect x="838" y="324" width="48" height="14" rx="7" fill="#FFD3D3"/>
+    <path d="M735 192L690 244L735 296" stroke="url(#html)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M841 192L886 244L841 296" stroke="#1F2937" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M806 172L768 318" stroke="url(#html)" stroke-width="28" stroke-linecap="round"/>
 
-    <circle cx="858" cy="302" r="42" fill="url(#accent)"/>
-    <circle cx="858" cy="302" r="38" stroke="#FFE0C7" stroke-width="4"/>
-    <path d="M840 303L854 317L879 291" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(792 108)">
+      <rect x="0" y="0" width="108" height="78" rx="24" fill="url(#js)"/>
+      <rect x="0" y="0" width="108" height="78" rx="24" stroke="#F4D03F" stroke-width="4"/>
+      <path d="M41 24V48C41 61 34 70 20 70" stroke="#151515" stroke-width="10" stroke-linecap="round"/>
+      <path d="M65 56C68 63 74 67 84 67C94 67 101 63 101 56C101 48 95 44 87 40L79 37C70 33 64 28 64 20C64 11 72 4 85 4C94 4 102 8 106 16" stroke="#151515" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <rect x="680" y="386" width="76" height="12" rx="6" fill="#30415F"/>
+    <rect x="768" y="386" width="56" height="12" rx="6" fill="#FF7A18"/>
+    <rect x="836" y="386" width="42" height="12" rx="6" fill="#F7C948"/>
   </g>
 
   <g>
-    <rect x="72" y="82" width="116" height="116" fill="#EA2027"/>
-    <rect x="90" y="100" width="80" height="80" rx="20" fill="#FFF7F7"/>
-    <rect x="90" y="100" width="80" height="80" rx="20" stroke="#FFD7D7" stroke-width="3"/>
-    <path d="M119 123L103 139L119 155" stroke="#EA2027" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M141 123L157 139L141 155" stroke="#EA2027" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M137 117L125 160" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+    <rect x="72" y="86" width="116" height="116" rx="32" fill="#182338"/>
+    <rect x="80" y="94" width="100" height="100" rx="28" stroke="#24324A" stroke-width="3"/>
+    <circle cx="108" cy="116" r="6" fill="#FF7A18"/>
+    <circle cx="126" cy="116" r="6" fill="#FFD166"/>
+    <circle cx="144" cy="116" r="6" fill="#7BD389"/>
+    <rect x="96" y="130" width="68" height="48" rx="16" fill="#F7F4ED"/>
+    <rect x="96" y="130" width="68" height="48" rx="16" stroke="#E7DCC8" stroke-width="2"/>
+    <path d="M121 142L109 154L121 166" stroke="url(#html)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M143 142L155 154L143 166" stroke="#1F2937" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M137 138L128 170" stroke="url(#html)" stroke-width="7" stroke-linecap="round"/>
+    <rect x="140" y="104" width="28" height="22" rx="8" fill="url(#js)"/>
+    <text x="145" y="119" fill="#1A1A1A" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">JS</text>
   </g>
 
   <g>
-    <text x="72" y="246" fill="#EA2027" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Kotlin Compose</text>
-    <text x="72" y="298" fill="#1C1C1C" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Tutorial</text>
-    <text x="72" y="346" fill="#5E4A4A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400">Structured Android lessons, quizzes, and progress tracking</text>
+    <text x="72" y="252" fill="#182338" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">HTML JS</text>
+    <text x="72" y="308" fill="#182338" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">Learning Hub</text>
+    <text x="72" y="352" fill="#5B5F67" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400">Structured HTML and JavaScript lessons, quizzes, and progress tracking</text>
   </g>
 
   <g>
-    <rect x="72" y="386" width="136" height="34" rx="17" fill="#EA2027"/>
-    <text x="96" y="409" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Jetpack Compose</text>
+    <rect x="72" y="388" width="86" height="36" rx="18" fill="#FF7A18"/>
+    <text x="96" y="412" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">HTML</text>
 
-    <rect x="224" y="386" width="76" height="34" rx="17" fill="#FFFFFF"/>
-    <rect x="224" y="386" width="76" height="34" rx="17" stroke="#F1CFCF" stroke-width="2"/>
-    <text x="247" y="409" fill="#C41C22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Kotlin</text>
+    <rect x="172" y="388" width="62" height="36" rx="18" fill="#F7C948"/>
+    <text x="191" y="412" fill="#1B1B1B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">JS</text>
 
-    <rect x="316" y="386" width="60" height="34" rx="17" fill="#FFFFFF"/>
-    <rect x="316" y="386" width="60" height="34" rx="17" stroke="#F1CFCF" stroke-width="2"/>
-    <text x="334" y="409" fill="#C41C22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Quiz</text>
+    <rect x="248" y="388" width="68" height="36" rx="18" fill="#FFFFFF"/>
+    <rect x="248" y="388" width="68" height="36" rx="18" stroke="#E3D7C5" stroke-width="2"/>
+    <text x="268" y="412" fill="#182338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Quiz</text>
 
-    <rect x="392" y="386" width="88" height="34" rx="17" fill="#FFFFFF"/>
-    <rect x="392" y="386" width="88" height="34" rx="17" stroke="#F1CFCF" stroke-width="2"/>
-    <text x="414" y="409" fill="#C41C22" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Progress</text>
+    <rect x="330" y="388" width="94" height="36" rx="18" fill="#FFFFFF"/>
+    <rect x="330" y="388" width="94" height="36" rx="18" stroke="#E3D7C5" stroke-width="2"/>
+    <text x="353" y="412" fill="#182338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Progress</text>
   </g>
 </svg>

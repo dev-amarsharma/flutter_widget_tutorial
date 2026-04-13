@@ -1,20 +1,20 @@
-# App Store Listing: Kotlin Compose Tutorial
+# App Store Listing: HTML JS Learning Hub
 
 Use the following content for your Google Play Store listing.
 
 ## **App Name (30 characters max)**
-Kotlin Compose Tutorial
+HTML JS Learning Hub
 
 ## **Short Description (80 characters max)**
-Learn Kotlin and Jetpack Compose with structured lessons, quizzes, and progress.
+Learn HTML and JavaScript with guided lessons, quizzes, and hands-on practice.
 
 ## **Full Description (4000 characters max)**
-Build a stronger Android foundation with Kotlin Compose Tutorial, a structured learning app focused on Kotlin, Jetpack Compose, Android fundamentals, architecture, testing, and release readiness.
+Build strong front-end fundamentals with HTML JS Learning Hub, a structured learning app focused on HTML, JavaScript, and practical web development skills.
 
-The app organizes its curriculum into 10 guided learning tracks with 160+ published topics, so you can move from basics to advanced concepts without jumping between scattered resources.
+The app organizes its curriculum into guided learning tracks, so you can move from beginner concepts to real-world web development without jumping across scattered tutorials.
 
 What you can do inside the app:
-* Read structured lessons for Kotlin foundations, Compose UI, state management, navigation, Android core APIs, data and networking, architecture, testing, performance, and real project ideas.
+* Read structured lessons for HTML basics, page structure, forms, semantic tags, JavaScript fundamentals, DOM manipulation, events, functions, arrays, objects, and real project ideas.
 * Open topic pages with level, category, type, estimated reading time, prerequisites, and related topics.
 * Practice with topic quizzes and category-level quiz flows to test what you learned.
 * Track your study progress with mark-as-read status, saved quiz scores, reading completion, and average quiz performance.
@@ -22,21 +22,21 @@ What you can do inside the app:
 * Continue learning from locally bundled lesson content even when you are away from a connection.
 
 Who this app is for:
-* Beginners starting Kotlin or Jetpack Compose.
-* Android developers refreshing fundamentals.
-* Interview candidates reviewing core Android and architecture concepts.
-* Learners who want a single mobile reference for study and self-testing.
+* Beginners starting web development.
+* Students learning HTML and JavaScript for school, college, or self-study.
+* Developers who want to refresh front-end fundamentals.
+* Learners who want one mobile app for study, review, and self-testing.
 
 Topics covered include:
-* Kotlin basics, collections, functions, generics, scope functions, and coroutines.
-* Compose UI elements, layouts, modifiers, theming, forms, dialogs, and navigation.
-* State, ViewModel, Flow, StateFlow, SharedFlow, and side effects.
-* Android permissions, intents, resources, build variants, and configuration changes.
-* Retrofit, Room, DataStore, pagination, offline-first patterns, and JSON handling.
-* MVVM, clean architecture, dependency injection, Hilt, modularization, and testing.
-* Performance profiling, startup optimization, Play Store release, analytics, and Crashlytics.
+* HTML elements, headings, paragraphs, links, images, lists, tables, and forms.
+* Semantic HTML, page layout, accessibility basics, and responsive structure.
+* JavaScript syntax, variables, data types, operators, conditions, loops, and functions.
+* Arrays, objects, scope, callbacks, ES6 concepts, and error handling.
+* DOM selection, event handling, form validation, and interactive UI behavior.
+* JSON basics, APIs, async concepts, and practical browser-side scripting patterns.
+* Small project ideas and quiz-based revision to reinforce concepts.
 
-If you want a practical Android learning companion with lessons, quizzes, and progress tracking in one place, Kotlin Compose Tutorial is built for that workflow.
+If you want a practical HTML and JavaScript learning companion with lessons, quizzes, and progress tracking in one place, HTML JS Learning Hub is built for that workflow.
 
 ---
 
@@ -49,4 +49,4 @@ If you want a practical Android learning companion with lessons, quizzes, and pr
 *   **10-inch Tablet Screenshots:** At least 1 screenshot.
 
 ## **Keywords / Tags (Internal Use)**
-Kotlin, Jetpack Compose, Android Tutorial, Android Quiz, Kotlin Quiz, Learn Android, Learn Kotlin, Compose Tutorial, Mobile Development, Android Architecture.
+HTML, JavaScript, Learn HTML, Learn JavaScript, Web Development, HTML Tutorial, JavaScript Tutorial, Coding Quiz, Frontend Learning, Web Design Basics.

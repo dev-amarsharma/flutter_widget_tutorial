@@ -1,8 +1,8 @@
 # Privacy Policy
 
-**Effective date:** April 5, 2026
+**Effective date:** April 12, 2026
 
-This Privacy Policy explains how **DigiMonk Team** collects, uses, and protects information when you use **Kotlin Compose Tutorial**.
+This Privacy Policy explains how **DigiMonk Team** collects, uses, and protects information when you use **HTML JS Learning Hub**.
 
 If you have any questions, contact us at **grittyapps@gmail.com**.
 
@@ -10,16 +10,16 @@ Website: **https://mantraandsloka.web.app/**
 
 ## 1. Information We Collect
 
-Kotlin Compose Tutorial is designed to work with minimal personal data collection.
+HTML JS Learning Hub is designed to work with minimal personal data collection.
 
 The app may process the following types of information:
 
 - **App usage and progress data stored locally on your device**
-  This includes lesson read status, quiz scores, and related learning progress saved using on-device storage.
+  This includes lesson read status, quiz scores, performance summaries, and related learning progress saved using on-device storage.
 - **Advertising-related data**
   The app uses Google Mobile Ads to display banner, interstitial, and rewarded ads. Google and its partners may collect device and advertising-related information in accordance with their own policies.
 - **Basic connectivity status**
-  The app may check whether your device has an internet connection before loading certain quiz or ad-related flows.
+  The app may check whether your device has an internet connection before loading certain content or ad-related flows.
 - **Shared content initiated by you**
   If you use sharing features, the app may pass app-related text to the platform sharing sheet selected by you.
 
@@ -27,7 +27,7 @@ The app may process the following types of information:
 
 We use information to:
 
-- provide lesson, quiz, and progress-tracking features,
+- provide HTML and JavaScript lessons, quizzes, and progress-tracking features,
 - remember your in-app progress on your device,
 - load and show ads,
 - enable app sharing when you choose to share,
@@ -45,7 +45,7 @@ This information is stored locally and is not intended to identify you personall
 
 ## 4. Advertising
 
-Kotlin Compose Tutorial uses **Google AdMob / Google Mobile Ads**.
+HTML JS Learning Hub uses **Google AdMob / Google Mobile Ads**.
 
 Third-party advertising providers may collect and process information such as:
 
@@ -101,6 +101,7 @@ We take reasonable steps to limit unnecessary data handling. However, no method 
 The app may rely on third-party services, including:
 
 - Google Mobile Ads / AdMob
+- Google Play services used by the Android platform and ad delivery stack
 - Platform sharing tools provided by Android or other device software
 
 These third-party services have their own terms and privacy policies.
@@ -116,3 +117,12 @@ If you have questions or requests regarding this Privacy Policy, contact:
 **DigiMonk Team**  
 Email: **grittyapps@gmail.com**  
 Website: **https://mantraandsloka.web.app/**
+
+$ keytool -export -rfc -keystore AndroidUniversalKeyStore.jks -alias dev_amarsharma -file upload_certificate.pem
+**java -jar pepk.jar \
+--keystore=release.jks \
+--alias=Dev_amarsharma \
+--output=output.zip \
+--rsa-aes-encryption \
+--encryption-key-path=encryption_public_key.pem \
+--include-cert**

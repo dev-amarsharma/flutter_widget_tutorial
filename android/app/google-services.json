@@ -27,9 +27,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:323754460228:android:b8d91974d80df2a5232811",
+        "mobilesdk_app_id": "1:323754460228:android:aef4509edfe708fe232811",
         "android_client_info": {
-          "package_name": "com.grittyapps.results"
+          "package_name": "digimonk.app.htmljs"
         }
       },
       "oauth_client": [],

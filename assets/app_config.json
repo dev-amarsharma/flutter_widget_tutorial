@@ -1,10 +1,10 @@
 {
-  "appName": "Kotlin Compose Tutorial",
-  "materialAppTitle": "Kotlin Compose Tutorial",
-  "catalogTitle": "Kotlin Compose Tutorial",
+  "appName": "HTML JS Learning Hub",
+  "materialAppTitle": "HTML JS Learning Hub",
+  "catalogTitle": "HTML JS Learning Hub",
   "primaryTopic": "Android",
-  "description": "Learn Android compose with structured lessons, quizzes, and progress tracking.",
-  "playStoreUrl": "https://play.google.com/store/apps/details?id=digimonk.compose.tutorial",
+  "description": "Learn HTML Javascript with structured lessons, quizzes, and progress tracking.",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.grittyapps.results",
   "features": {
     "enableLegacyCatalogFallback": false
   },

@@ -5,7 +5,7 @@ import 'dart:io';
 /// Service class for managing rewarded ads
 /// Follows AdMob policies for rewarded ad implementation
 class RewardedAdService {
-  static const String _rewardedAdUnitId = 'ca-app-pub-7287011693739626/3720367745';
+  static const String _rewardedAdUnitId = 'ca-app-pub-7287011693739626/2067438949';
   
   RewardedAd? _rewardedAd;
   bool _isLoading = false;
