@@ -1,16 +1,20 @@
-# flutter_tutorial
+# HTML JS Learning Hub
 
-A new Flutter project.
+Flutter app for learning HTML and JavaScript through structured lessons, quizzes, and progress tracking.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+The app includes:
 
-A few resources to get you started if this is your first Flutter project:
+- HTML and JavaScript topic lessons bundled as local markdown assets
+- Quiz flows for each topic
+- Progress and performance tracking stored on device
+- AdMob banner, interstitial, and rewarded ads
+- App sharing and offline-friendly learning content
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Development
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter project root: `/Users/amarsharma/git_personal/FlutterTutorial`
+- Main Android app label: `HTML JS Learning Hub`
+- Content assets: `assets/`
+- Branding assets: `assets/branding/`

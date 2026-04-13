@@ -884,59 +884,59 @@ class _AnswerButton extends StatelessWidget {
 }
 
 /// Sample quiz data for testing
-/// 
+///
 /// This is embedded in the code for easy testing.
-/// In production, you would load this from a JSON file or API.
+/// In production, you would load this from a JSON file or asset bundle.
 final List<Map<String, dynamic>> sampleQuizData = [
   {
-    "que": "What is Flutter?",
+    "que": "What does HTML stand for?",
     "options": [
-      "A mobile app development framework",
-      "A database management system",
-      "A web server framework",
-      "A programming language"
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyper Transfer Markup Language",
+      "Home Tool Markup Language"
     ],
     "ans": 0
   },
   {
-    "que": "Which programming language does Flutter use?",
+    "que": "Which language is commonly used to add interactivity to web pages?",
     "options": [
-      "Java",
-      "Dart",
-      "Kotlin",
-      "Swift"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQL"
+    ],
+    "ans": 2
+  },
+  {
+    "que": "Which HTML tag is commonly used for the largest page heading?",
+    "options": [
+      "<heading>",
+      "<h1>",
+      "<head>",
+      "<title>"
     ],
     "ans": 1
   },
   {
-    "que": "What is a Widget in Flutter?",
+    "que": "Which JavaScript keyword is used to declare a block-scoped variable?",
     "options": [
-      "A UI component",
-      "A database table",
-      "A network request",
-      "A file system"
-    ],
-    "ans": 0
-  },
-  {
-    "que": "What is the main function used for in Flutter?",
-    "options": [
-      "To define routes",
-      "To initialize the app",
-      "To handle user input",
-      "To manage state"
+      "var",
+      "let",
+      "define",
+      "constvar"
     ],
     "ans": 1
   },
   {
-    "que": "Which widget is used for layout in Flutter?",
+    "que": "Which method is commonly used to select an element by ID in JavaScript?",
     "options": [
-      "Container",
-      "Row and Column",
-      "Text",
-      "Button"
+      "queryElement()",
+      "getElementByName()",
+      "getElementById()",
+      "selectById()"
     ],
-    "ans": 1
+    "ans": 2
   },
   {
     "que": "What is Hot Reload in Flutter?",
