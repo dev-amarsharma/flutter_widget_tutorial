@@ -1,0 +1,77 @@
+# Handoff Prompt: Add AdMob Meta Mediation Support to Flutter Android App
+
+You are working in a Flutter project that already uses AdMob through the `google_mobile_ads` Flutter plugin. The AdMob account has been configured for mediation with Meta Audience Network. Do the app-side Android integration needed so the Google Mobile Ads SDK can request ads from Meta through mediation.
+
+## Goal
+
+Add the Meta Audience Network mediation adapter and Google Advertising ID dependency to the Flutter app's Android module, then verify the Android build.
+
+## Required Changes
+
+1. Open the Flutter project's Android app Gradle file:
+   - Groovy projects: `android/app/build.gradle`
+   - Kotlin DSL projects: `android/app/build.gradle.kts`
+
+2. In the app-level `dependencies` block, add:
+
+   Groovy:
+
+   ```gradle
+   implementation 'com.google.ads.mediation:facebook:6.21.0.3'
+   implementation 'com.google.android.gms:play-services-ads-identifier:18.2.0'
+   ```
+
+   Kotlin DSL:
+
+   ```kotlin
+   implementation("com.google.ads.mediation:facebook:6.21.0.3")
+   implementation("com.google.android.gms:play-services-ads-identifier:18.2.0")
+   ```
+
+3. Confirm the project has Google Maven enabled. It is usually in one of these files:
+   - `android/settings.gradle`
+   - `android/settings.gradle.kts`
+   - `android/build.gradle`
+
+   Required repository:
+
+   ```gradle
+   google()
+   ```
+
+4. Confirm the Android manifest has the AdMob application id metadata. It is usually in `android/app/src/main/AndroidManifest.xml` inside the `<application>` tag:
+
+   ```xml
+   <meta-data
+       android:name="com.google.android.gms.ads.APPLICATION_ID"
+       android:value="ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY" />
+   ```
+
+   Keep the real app id already configured for the project. Do not replace it with the placeholder.
+
+5. Do not add Meta ad loading code in Dart. For AdMob mediation, the app continues loading ads through `google_mobile_ads`; AdMob decides when to serve Meta ads based on mediation configuration.
+
+## Verification
+
+Run these commands from the Flutter project root:
+
+```bash
+flutter pub get
+flutter build apk --debug
+```
+
+If you want a faster Android-only verification after dependencies are already synced:
+
+```bash
+cd android
+./gradlew :app:processDebugMainManifest
+./gradlew :app:assembleDebug
+```
+
+Expected result: the Android debug build completes successfully and Gradle resolves `com.google.ads.mediation:facebook:6.21.0.3`.
+
+## Notes
+
+- Keep any existing `google_mobile_ads` Flutter dependency in `pubspec.yaml`; do not remove or replace it.
+- Keep the existing Google Mobile Ads Android SDK version managed by the Flutter plugin unless the project explicitly pins it elsewhere.
+- If dependency resolution fails, verify that `google()` is present in Gradle repositories and that the Android Gradle plugin setup matches the Flutter project's existing style.

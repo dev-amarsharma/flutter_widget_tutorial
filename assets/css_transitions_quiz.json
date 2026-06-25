@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["CSS transitions interpolate between two style states over time", "CSS transitions require JavaScript to work", "CSS transitions only work on color properties", "CSS transitions replace @keyframes completely"],
+    "que": "Which statement correctly describes CSS transitions?",
+    "ans": "a"
+  },
+  {
+    "options": ["transition: property timing duration delay", "transition: property duration timing-function delay", "transition: duration property delay timing", "transition: timing property duration delay"],
+    "que": "What is the correct order of values in the transition shorthand?",
+    "ans": "b"
+  },
+  {
+    "options": ["ease", "linear", "constant", "steady"],
+    "que": "Which timing function makes a transition move at constant speed from start to finish?",
+    "ans": "b"
+  },
+  {
+    "options": ["transition: all 0.3s ease", "transition: everything 0.3s", "transition: * 0.3s ease", "transition-all: 0.3s ease"],
+    "que": "Which declaration transitions ALL properties when they change?",
+    "ans": "a"
+  },
+  {
+    "options": ["@animation { }", "@keyframes animName { }", "@frames animName { }", "@transition animName { }"],
+    "que": "What is the correct CSS syntax to define a multi-step animation?",
+    "ans": "b"
+  },
+  {
+    "options": ["animation: name duration timing fill-mode", "animation-name and animation-duration separately only", "animation: name duration timing-function delay iteration direction fill-mode", "animate: name 1s"],
+    "que": "Which best describes the full animation shorthand?",
+    "ans": "c"
+  },
+  {
+    "options": ["forwards", "persist", "keep", "stay"],
+    "que": "Which animation fill-mode value keeps the element in its final state after the animation ends?",
+    "ans": "a"
+  },
+  {
+    "options": ["transform: move(50px)", "transform: translateX(50px)", "position: translate(50px)", "left: 50px"],
+    "que": "Which CSS declaration moves an element 50px to the right without affecting the layout?",
+    "ans": "b"
+  },
+  {
+    "options": ["infinite", "loop", "repeat", "forever"],
+    "que": "Which animation iteration-count value causes an animation to loop indefinitely?",
+    "ans": "a"
+  },
+  {
+    "options": ["Animating transform and opacity is most performant", "Animating width and height is preferred over transform", "Animating all properties with transition: all is recommended", "JavaScript animations are always faster than CSS animations"],
+    "que": "Which practice leads to the best animation performance?",
+    "ans": "a"
+  }
+]

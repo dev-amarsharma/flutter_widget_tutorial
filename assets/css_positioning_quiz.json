@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["static", "relative", "absolute", "fixed"],
+    "que": "Which is the default value of the CSS position property?",
+    "ans": "a"
+  },
+  {
+    "options": ["position: absolute", "position: relative", "position: fixed", "position: sticky"],
+    "que": "Which position value keeps the element in normal flow but allows it to be offset, while preserving its original space?",
+    "ans": "b"
+  },
+  {
+    "options": ["The nearest parent with display: block", "The nearest ancestor with a non-static position", "Always the <body> element", "The viewport"],
+    "que": "An absolutely positioned element is placed relative to what?",
+    "ans": "b"
+  },
+  {
+    "options": ["position: fixed", "position: absolute", "position: sticky", "position: pinned"],
+    "que": "Which position value keeps an element in place relative to the viewport even when the page is scrolled?",
+    "ans": "a"
+  },
+  {
+    "options": ["position: fixed with z-index: 1", "position: sticky with a top/bottom offset", "position: absolute with overflow: scroll", "position: relative with scroll: sticky"],
+    "que": "Which CSS combination creates an element that sticks during scroll but stays in normal flow?",
+    "ans": "b"
+  },
+  {
+    "options": ["z-index works on any element", "z-index only works on positioned elements (position ≠ static)", "z-index controls opacity", "Higher z-index always wins regardless of stacking context"],
+    "que": "Which statement about z-index is correct?",
+    "ans": "b"
+  },
+  {
+    "options": ["position: relative on both parent and child", "position: relative on parent, position: absolute on child", "position: absolute on both", "position: static on parent, position: absolute on child"],
+    "que": "How do you position a child element in the top-right corner of its parent container?",
+    "ans": "b"
+  },
+  {
+    "options": ["top: 0; left: 0 only", "top: 50%; left: 50%; transform: translate(-50%, -50%)", "margin: auto on the element", "top: center; left: center"],
+    "que": "Which technique correctly centers an absolutely positioned element both horizontally and vertically?",
+    "ans": "b"
+  },
+  {
+    "options": ["A new stacking context cannot be created by children", "Elements with transforms always create a new stacking context", "z-index: 0 disables stacking contexts", "Only position: fixed creates a stacking context"],
+    "que": "Which correctly describes stacking context creation?",
+    "ans": "b"
+  },
+  {
+    "options": ["It has no effect on sticky", "top is required for sticky positioning to activate", "top must be 0 for sticky to work", "top: auto enables sticky on all elements"],
+    "que": "What is the role of the 'top' property when using position: sticky?",
+    "ans": "b"
+  }
+]

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/catalog_section.dart';
+import '../services/achievement_service.dart';
+import '../services/analytics_service.dart';
 import '../services/catalog_service.dart';
 import '../services/app_share_service.dart';
 import '../services/app_config_service.dart';
@@ -18,10 +20,42 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
 
+  int _totalLessons = 0;
+  int _readLessons = 0;
+  int _avgScore = 0;
+
   @override
   void initState() {
     super.initState();
-    _sectionsFuture = catalogService.loadCatalogSections();
+    _sectionsFuture = catalogService.loadCatalogSections().then((sections) {
+      int total = 0, read = 0, scoreSum = 0, scoreCount = 0;
+      for (final section in sections) {
+        for (final item in section.items) {
+          total++;
+          if (performanceService.isRead(
+            topicId: item.topicId,
+            assetPath: item.assetPath,
+          )) read++;
+          final score = performanceService.getQuizScore(
+            topicId: item.topicId,
+            assetPath: item.assetPath,
+          );
+          if (score != null) {
+            scoreCount++;
+            scoreSum += score;
+          }
+        }
+      }
+      if (mounted) {
+        setState(() {
+          _totalLessons = total;
+          _readLessons = read;
+          _avgScore = scoreCount > 0 ? scoreSum ~/ scoreCount : 0;
+        });
+      }
+      return sections;
+    });
+    analyticsService.logScreenView('performance');
   }
 
   @override
@@ -57,7 +91,7 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade50,
+      backgroundColor: Theme.of(context).colorScheme.background,
       bottomNavigationBar: const SafeArea(
         top: false,
         child: BannerAdWidget(),
@@ -91,13 +125,21 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.share, color: Colors.white),
-            tooltip: 'Share app',
+            tooltip: 'Share progress',
             onPressed: () {
-              appShareService.shareApp(
-                context,
-                extraText:
-                    'Track your ${appConfigService.config.primaryTopic} learning progress with lessons and quizzes.',
+              final readPct = _totalLessons > 0
+                  ? (_readLessons / _totalLessons * 100).round()
+                  : 0;
+              final streak = performanceService.streakCount;
+              final levelName = performanceService.levelName;
+              final extra = StringBuffer(
+                'I\'ve completed $readPct% of ${appConfigService.config.appName} lessons'
+                ' ($_readLessons/$_totalLessons)',
               );
+              if (_avgScore > 0) extra.write(' with an avg quiz score of $_avgScore%');
+              if (streak > 0) extra.write('. $streak-day learning streak');
+              extra.write('. Level: $levelName. Can you keep up?');
+              appShareService.shareApp(context, extraText: extra.toString());
             },
           ),
         ],
@@ -210,12 +252,27 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
                               'Attempted: $attemptedQuizzes',
                               Icons.emoji_events,
                             ),
+                            Container(
+                              width: 1,
+                              height: 50,
+                              color: Colors.white24,
+                            ),
+                            _buildStatItem(
+                              'Day Streak',
+                              '${performanceService.streakCount}',
+                              performanceService.streakCount == 1
+                                  ? 'day'
+                                  : 'days',
+                              Icons.local_fire_department,
+                            ),
                           ],
                         ),
                       ],
                     ),
                   ),
                 ),
+                _buildXpLevelCard(),
+                _buildAchievementsSection(),
                 const Padding(
                   padding: EdgeInsets.only(left: 4, bottom: 16),
                   child: Text(
@@ -255,6 +312,229 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
             ),
           );
         },
+      ),
+    );
+  }
+
+  Widget _buildXpLevelCard() {
+    final level = performanceService.level;
+    final levelName = performanceService.levelName;
+    final totalXp = performanceService.totalXp;
+    final progress = performanceService.levelProgress;
+    final xpToNext = performanceService.xpToNextLevel;
+    final isMaxLevel = level >= xpThresholds.length - 1;
+
+    final levelColors = [
+      [Colors.grey.shade400, Colors.grey.shade600],
+      [Colors.green.shade400, Colors.green.shade700],
+      [Colors.blue.shade400, Colors.blue.shade700],
+      [Colors.purple.shade400, Colors.purple.shade700],
+      [Colors.orange.shade400, Colors.deepOrange.shade600],
+      [Colors.amber.shade400, Colors.red.shade600],
+    ];
+    final colors = levelColors[level.clamp(0, levelColors.length - 1)];
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 24),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [colors[0], colors[1]],
+        ),
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: colors[0].withOpacity(0.4),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.military_tech,
+                    color: Colors.white,
+                    size: 28,
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        levelName,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        '$totalXp XP total',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.85),
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 6,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.25),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'Lv. $level',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(6),
+              child: LinearProgressIndicator(
+                value: progress,
+                backgroundColor: Colors.white.withOpacity(0.25),
+                valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                minHeight: 8,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              isMaxLevel
+                  ? 'Max level reached!'
+                  : '$xpToNext XP to ${levelNames[(level + 1).clamp(0, levelNames.length - 1)]}',
+              style: TextStyle(
+                color: Colors.white.withOpacity(0.9),
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAchievementsSection() {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 24),
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.military_tech, color: Colors.amber, size: 22),
+              const SizedBox(width: 8),
+              const Text(
+                'Achievements',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
+                ),
+              ),
+              const Spacer(),
+              Text(
+                '${achievementService.unlockedIds.length}/${allAchievements.length}',
+                style: TextStyle(
+                  fontSize: 13,
+                  color: Colors.grey.shade600,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Wrap(
+            spacing: 12,
+            runSpacing: 12,
+            children: allAchievements.map((a) {
+              final unlocked = achievementService.isUnlocked(a.id);
+              return Tooltip(
+                message: a.description,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: 52,
+                      height: 52,
+                      decoration: BoxDecoration(
+                        color: unlocked
+                            ? a.color.withOpacity(0.15)
+                            : Colors.grey.shade100,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: unlocked
+                              ? a.color.withOpacity(0.5)
+                              : Colors.grey.shade300,
+                          width: 2,
+                        ),
+                      ),
+                      child: Icon(
+                        unlocked ? a.icon : Icons.lock_outline,
+                        color: unlocked ? a.color : Colors.grey.shade400,
+                        size: 24,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    SizedBox(
+                      width: 60,
+                      child: Text(
+                        a.name,
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w600,
+                          color:
+                              unlocked ? Colors.black87 : Colors.grey.shade400,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            }).toList(),
+          ),
+        ],
       ),
     );
   }

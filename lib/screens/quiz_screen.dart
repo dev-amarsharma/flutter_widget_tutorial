@@ -45,11 +45,15 @@ class QuizScreen extends StatefulWidget {
   /// Whether an ad was shown before starting the quiz
   final bool adShownAtStart;
 
+  /// Optional title used in the share message (e.g. category name)
+  final String? quizTitle;
+
   const QuizScreen({
     super.key,
     required this.questions,
     this.timerDurationSeconds = 30,
     this.adShownAtStart = false,
+    this.quizTitle,
   });
 
   @override
@@ -408,6 +412,36 @@ class _QuizScreenState extends State<QuizScreen> {
                     Colors.purple,
                   ),
                 ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.white, width: 1.5),
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                icon: const Icon(Icons.share, size: 18),
+                label: const Text(
+                  'Share Score',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+                onPressed: () {
+                  final title = widget.quizTitle ??
+                      appConfigService.config.primaryTopic;
+                  appShareService.shareApp(
+                    context,
+                    extraText:
+                        'I scored $percentage% on the $title quiz! '
+                        '(${result.correctAnswers}/${result.totalQuestions} correct) '
+                        'Can you beat my score?',
+                  );
+                },
               ),
             ),
           ],

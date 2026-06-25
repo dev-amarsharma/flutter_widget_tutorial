@@ -1,0 +1,52 @@
+[
+  {
+    "options": [".header", "#header", "header", "*header"],
+    "que": "Which selector targets an element with id=\"header\"?",
+    "ans": "b"
+  },
+  {
+    "options": ["#button", ".button", "button", "*button"],
+    "que": "Which selector is reusable and can apply to many elements?",
+    "ans": "b"
+  },
+  {
+    "options": ["div span", "div > span", "div + span", "div ~ span"],
+    "que": "Which combinator selects all <span> elements anywhere inside a <div>?",
+    "ans": "a"
+  },
+  {
+    "options": ["div span", "div > span", "div + span", "div ~ span"],
+    "que": "Which combinator selects only direct <span> children of a <div>?",
+    "ans": "b"
+  },
+  {
+    "options": ["h2 span", "h2 > p", "h2 + p", "h2 ~ p"],
+    "que": "Which selector targets a <p> element that immediately follows an <h2>?",
+    "ans": "c"
+  },
+  {
+    "options": ["input.required", "input[required]", "input#required", "input:required"],
+    "que": "Which selector targets an <input> element that has a 'required' attribute?",
+    "ans": "b"
+  },
+  {
+    "options": ["0-0-0-1", "0-0-1-0", "0-1-0-0", "1-0-0-0"],
+    "que": "What is the specificity score of an ID selector?",
+    "ans": "c"
+  },
+  {
+    "options": ["Element selector", "Class selector", "ID selector", "Universal selector"],
+    "que": "Which selector type has the highest specificity among the listed options?",
+    "ans": "c"
+  },
+  {
+    "options": ["It targets all elements on the page", "It targets elements with a class", "It targets the document root", "It only targets block elements"],
+    "que": "What does the universal selector (*) do?",
+    "ans": "a"
+  },
+  {
+    "options": ["The first rule wins", "The rule with the most declarations wins", "The rule with higher specificity wins; if equal, the last rule wins", "Inline styles never override external styles"],
+    "que": "When two rules target the same element with equal specificity, which applies?",
+    "ans": "c"
+  }
+]
