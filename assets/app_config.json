@@ -20,5 +20,18 @@
     "icon": "#C41C22",
     "fabBackground": "#EA2027",
     "fabForeground": "#FFFFFF"
+  },
+  "darkTheme": {
+    "primary": "#EA2027",
+    "onPrimary": "#FFFFFF",
+    "secondary": "#FF6B6B",
+    "onSecondary": "#FFFFFF",
+    "background": "#121212",
+    "onBackground": "#F0F0F0",
+    "surface": "#1E1E1E",
+    "onSurface": "#F0F0F0",
+    "icon": "#FF6B6B",
+    "fabBackground": "#EA2027",
+    "fabForeground": "#FFFFFF"
   }
 }

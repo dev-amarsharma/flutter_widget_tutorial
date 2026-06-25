@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["color", "background-color", "text-color", "fill"],
+    "que": "Which CSS property sets the color of text?",
+    "ans": "a"
+  },
+  {
+    "options": ["rgb(255, 0, 0)", "#FF0000", "hsl(0, 100%, 50%)", "All of these represent red"],
+    "que": "Which of these CSS values does NOT represent the color red?",
+    "ans": "d"
+  },
+  {
+    "options": ["0 to 100", "0 to 255", "0 to 1", "0 to 360"],
+    "que": "In HSL notation, what is the range for the hue value?",
+    "ans": "d"
+  },
+  {
+    "options": ["rgba(0, 0, 0, 0.5) is 50% transparent black", "rgba only works with named colors", "The alpha value ranges from 0 to 255", "rgba is not valid CSS"],
+    "que": "Which statement about rgba() colors is correct?",
+    "ans": "a"
+  },
+  {
+    "options": ["linear-gradient(red, blue)", "gradient(red, blue)", "bg-gradient(red, blue)", "color-gradient(red, blue)"],
+    "que": "Which creates a valid CSS linear gradient from red to blue?",
+    "ans": "a"
+  },
+  {
+    "options": ["background-size: cover", "background-size: contain", "background-repeat: no-repeat", "background-position: center"],
+    "que": "Which background-size value scales an image to fill the element, potentially cropping it?",
+    "ans": "a"
+  },
+  {
+    "options": ["#369 is shorthand for #336699", "#369 equals #333666999", "#369 is not valid CSS", "#369 is only for grayscale"],
+    "que": "What does the 3-character hex value #369 expand to?",
+    "ans": "a"
+  },
+  {
+    "options": ["background-image: url('photo.jpg')", "background-image: 'photo.jpg'", "image: url('photo.jpg')", "background: image('photo.jpg')"],
+    "que": "Which is the correct CSS syntax for setting a background image?",
+    "ans": "a"
+  },
+  {
+    "options": ["hsl(204, 70%, 53%)", "hsl(70%, 204, 53%)", "hsl(53%, 204, 70%)", "hsl(204, 53, 70)"],
+    "que": "Which is valid HSL syntax for a color with hue 204, saturation 70%, lightness 53%?",
+    "ans": "a"
+  },
+  {
+    "options": ["radial-gradient(circle, white, gray)", "circle-gradient(white, gray)", "radial(white, gray)", "gradient-radial(white, gray)"],
+    "que": "Which correctly creates a circular radial gradient from white to gray?",
+    "ans": "a"
+  }
+]

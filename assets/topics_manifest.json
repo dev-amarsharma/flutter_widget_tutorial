@@ -45,6 +45,20 @@
       "topicIds": [
         "js_scope","js_hoisting","js_this","js_closures","js_prototypes","js_promises","js_async","js_event_loop","js_debounce","js_memory"
       ]
+    },
+    {
+      "id": "css_foundations",
+      "title": "CSS Foundations",
+      "description": "Core CSS syntax, selectors, box model, and layout.",
+      "level": "beginner",
+      "topicIds": ["css_intro","css_selectors","css_box_model","css_colors","css_typography","css_layout","css_flexbox","css_grid","css_responsive","css_transitions"]
+    },
+    {
+      "id": "css_advanced",
+      "title": "CSS Advanced",
+      "description": "Advanced CSS techniques and modern features.",
+      "level": "intermediate",
+      "topicIds": ["css_variables","css_pseudo","css_positioning","css_specificity"]
     }
   ],
   "topics": [
@@ -365,6 +379,22 @@
         "prerequisites": ["js_closures"],
         "relatedTopicIds": [],
         "isPublished": true
-      }
+      },
+
+      { "id":"css_intro","title":"CSS Introduction","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_intro.md","quizAsset":"assets/css_intro_quiz.json","tags":["css"],"prerequisites":["html_intro"],"relatedTopicIds":["css_selectors"],"isPublished":true },
+      { "id":"css_selectors","title":"CSS Selectors","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_selectors.md","quizAsset":"assets/css_selectors_quiz.json","tags":["css"],"prerequisites":["css_intro"],"relatedTopicIds":["css_specificity"],"isPublished":true },
+      { "id":"css_box_model","title":"CSS Box Model","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_box_model.md","quizAsset":"assets/css_box_model_quiz.json","tags":["css"],"prerequisites":["css_selectors"],"relatedTopicIds":[],"isPublished":true },
+      { "id":"css_colors","title":"Colors & Backgrounds","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_colors.md","quizAsset":"assets/css_colors_quiz.json","tags":["css"],"prerequisites":["css_intro"],"relatedTopicIds":[],"isPublished":true },
+      { "id":"css_typography","title":"Typography & Fonts","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_typography.md","quizAsset":"assets/css_typography_quiz.json","tags":["css"],"prerequisites":["css_intro"],"relatedTopicIds":[],"isPublished":true },
+      { "id":"css_layout","title":"Display & Visibility","category":"web","level":"beginner","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_layout.md","quizAsset":"assets/css_layout_quiz.json","tags":["css"],"prerequisites":["css_box_model"],"relatedTopicIds":["css_flexbox"],"isPublished":true },
+      { "id":"css_flexbox","title":"Flexbox","category":"web","level":"beginner","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/css_flexbox.md","quizAsset":"assets/css_flexbox_quiz.json","tags":["css"],"prerequisites":["css_layout"],"relatedTopicIds":["css_grid"],"isPublished":true },
+      { "id":"css_grid","title":"CSS Grid","category":"web","level":"beginner","type":"concept","estimatedMinutes":14,"lessonAsset":"assets/css_grid.md","quizAsset":"assets/css_grid_quiz.json","tags":["css"],"prerequisites":["css_flexbox"],"relatedTopicIds":[],"isPublished":true },
+      { "id":"css_responsive","title":"Responsive Design","category":"web","level":"beginner","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/css_responsive.md","quizAsset":"assets/css_responsive_quiz.json","tags":["css"],"prerequisites":["css_layout"],"relatedTopicIds":["css_grid"],"isPublished":true },
+      { "id":"css_transitions","title":"Transitions & Animations","category":"web","level":"beginner","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/css_transitions.md","quizAsset":"assets/css_transitions_quiz.json","tags":["css"],"prerequisites":["css_selectors"],"relatedTopicIds":[],"isPublished":true },
+
+      { "id":"css_variables","title":"CSS Variables","category":"web","level":"intermediate","type":"concept","estimatedMinutes":10,"lessonAsset":"assets/css_variables.md","quizAsset":"assets/css_variables_quiz.json","tags":["css"],"prerequisites":["css_intro"],"relatedTopicIds":["css_specificity"],"isPublished":true },
+      { "id":"css_pseudo","title":"Pseudo-classes & Pseudo-elements","category":"web","level":"intermediate","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/css_pseudo.md","quizAsset":"assets/css_pseudo_quiz.json","tags":["css"],"prerequisites":["css_selectors"],"relatedTopicIds":["css_transitions"],"isPublished":true },
+      { "id":"css_positioning","title":"CSS Positioning","category":"web","level":"intermediate","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/css_positioning.md","quizAsset":"assets/css_positioning_quiz.json","tags":["css"],"prerequisites":["css_box_model"],"relatedTopicIds":["css_flexbox"],"isPublished":true },
+      { "id":"css_specificity","title":"Specificity & Cascade","category":"web","level":"intermediate","type":"concept","estimatedMinutes":12,"lessonAsset":"assets/css_specificity.md","quizAsset":"assets/css_specificity_quiz.json","tags":["css"],"prerequisites":["css_selectors"],"relatedTopicIds":[],"isPublished":true }
   ]
 }

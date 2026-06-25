@@ -9,6 +9,7 @@ class AppConfig {
   final String playStoreUrl;
   final AppFeatures features;
   final AppThemeConfig theme;
+  final AppThemeConfig darkTheme;
 
   const AppConfig({
     required this.appName,
@@ -19,6 +20,7 @@ class AppConfig {
     required this.playStoreUrl,
     required this.features,
     required this.theme,
+    required this.darkTheme,
   });
 
   factory AppConfig.fromJson(Map<String, dynamic> json) {
@@ -42,6 +44,9 @@ class AppConfig {
       ),
       theme: AppThemeConfig.fromJson(
         json['theme'] as Map<String, dynamic>? ?? const {},
+      ),
+      darkTheme: AppThemeConfig.fromJsonDark(
+        json['darkTheme'] as Map<String, dynamic>? ?? const {},
       ),
     );
   }
@@ -106,6 +111,43 @@ class AppThemeConfig {
       fabBackground: _parseColor(
         json['fabBackground'] as String?,
         const Color(0xFF795548),
+      ),
+      fabForeground: _parseColor(
+        json['fabForeground'] as String?,
+        Colors.white,
+      ),
+    );
+  }
+
+  factory AppThemeConfig.fromJsonDark(Map<String, dynamic> json) {
+    return AppThemeConfig(
+      primary: _parseColor(json['primary'] as String?, const Color(0xFFEA2027)),
+      onPrimary: _parseColor(json['onPrimary'] as String?, Colors.white),
+      secondary: _parseColor(
+        json['secondary'] as String?,
+        const Color(0xFFFF6B6B),
+      ),
+      onSecondary: _parseColor(json['onSecondary'] as String?, Colors.white),
+      background: _parseColor(
+        json['background'] as String?,
+        const Color(0xFF121212),
+      ),
+      onBackground: _parseColor(
+        json['onBackground'] as String?,
+        const Color(0xFFF0F0F0),
+      ),
+      surface: _parseColor(
+        json['surface'] as String?,
+        const Color(0xFF1E1E1E),
+      ),
+      onSurface: _parseColor(
+        json['onSurface'] as String?,
+        const Color(0xFFF0F0F0),
+      ),
+      icon: _parseColor(json['icon'] as String?, const Color(0xFFFF6B6B)),
+      fabBackground: _parseColor(
+        json['fabBackground'] as String?,
+        const Color(0xFFEA2027),
       ),
       fabForeground: _parseColor(
         json['fabForeground'] as String?,

@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application
         android:label="HTML JS Learning Hub"
         android:name="${applicationName}"
@@ -34,6 +35,10 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7287011693739626~1651383819"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
@@ -45,5 +50,7 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.facebook.lite" />
     </queries>
 </manifest>

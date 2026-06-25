@@ -1,12 +1,11 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter/foundation.dart';
-import 'dart:io';
 import 'dart:async';
+import 'purchase_service.dart';
+import '../config/ad_config.dart';
 
 /// Service class for managing interstitial ads
 class InterstitialAdService {
-  static const String _interstitialAdUnitId = 'ca-app-pub-7287011693739626/3386604489';
   static const String _navigationCountKey = 'widget_page_navigation_count';
   
   InterstitialAd? _interstitialAd;
@@ -14,22 +13,6 @@ class InterstitialAdService {
   bool _isAdReady = false;
   Completer<void>? _adCompleter;
   Completer<bool>? _loadCompleter;
-
-  // Ad unit ID getter - returns actual ad unit ID
-  // For testing, you can temporarily replace with test IDs:
-  // Android: 'ca-app-pub-3940256099942544/1033173712'
-  // iOS: 'ca-app-pub-3940256099942544/4411468910'
-  static String get interstitialAdUnitId {
-    // In debug mode, you might want to use test ad unit IDs
-    if (kDebugMode) {
-      if (Platform.isAndroid) {
-        return 'ca-app-pub-3940256099942544/1033173712';
-      } else if (Platform.isIOS) {
-        return 'ca-app-pub-3940256099942544/4411468910';
-      }
-    }
-    return _interstitialAdUnitId;
-  }
 
   /// Load an interstitial ad
   /// Returns a Future that completes with true if loaded successfully, false otherwise
@@ -46,7 +29,7 @@ class InterstitialAdService {
     _loadCompleter = Completer<bool>();
 
     await InterstitialAd.load(
-      adUnitId: interstitialAdUnitId,
+      adUnitId: AdConfig.interstitial,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
@@ -104,6 +87,7 @@ class InterstitialAdService {
   /// Show the interstitial ad if it's ready, or load and then show
   /// Returns a Future that completes when the ad is dismissed or failed to show
   Future<bool> showInterstitialAd({bool forceLoad = false}) async {
+    if (purchaseService.adsRemoved.value) return false;
     if (forceLoad && !_isAdReady) {
       print('Forcing ad load before showing');
       await loadInterstitialAd();

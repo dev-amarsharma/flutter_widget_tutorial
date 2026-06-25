@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["(0,0,1)", "(0,1,0)", "(1,0,0)", "(0,1,1)"],
+    "que": "What is the specificity score of a single ID selector like #header?",
+    "ans": "c"
+  },
+  {
+    "options": ["(0,0,1)", "(0,1,0)", "(0,1,1)", "(1,1,0)"],
+    "que": "What is the specificity score of the selector 'p.intro'?",
+    "ans": "c"
+  },
+  {
+    "options": ["The rule with more declarations wins", "The last rule in the file wins when specificity is equal", "The first rule in the file always wins", "Rules with shorter selectors win"],
+    "que": "When two CSS rules have identical specificity and origin, how does the cascade resolve the conflict?",
+    "ans": "b"
+  },
+  {
+    "options": ["It is always the winning rule regardless of specificity", "It overrides all author styles including other !important rules", "It overrides all author styles except user-agent !important", "It only overrides inline styles"],
+    "que": "What does !important do in a CSS rule?",
+    "ans": "c"
+  },
+  {
+    "options": ["color, font-size, display", "color, font-family, line-height", "margin, padding, border", "width, height, overflow"],
+    "que": "Which group of properties is inherited by child elements by default?",
+    "ans": "b"
+  },
+  {
+    "options": ["(0,0,3)", "(0,3,0)", "(0,1,2)", "(0,2,1)"],
+    "que": "What is the specificity of the selector 'div.card p'?",
+    "ans": "c"
+  },
+  {
+    "options": ["color: inherit", "color: parent", "color: copy", "color: pass-down"],
+    "que": "Which declaration forces an element to inherit its color from its parent even if the property is not normally inherited?",
+    "ans": "a"
+  },
+  {
+    "options": ["origin > specificity > source order", "source order > specificity > origin", "specificity > origin > source order", "origin > source order > specificity"],
+    "que": "In what order does the CSS cascade algorithm evaluate rules (highest to lowest priority)?",
+    "ans": "a"
+  },
+  {
+    "options": ["color: initial resets to parent color", "color: initial resets to the browser's default value", "color: initial removes the color property", "color: initial is invalid CSS"],
+    "que": "What does the 'initial' keyword do when used as a CSS value?",
+    "ans": "b"
+  },
+  {
+    "options": ["Use IDs for maximum specificity control", "Avoid !important in your own styles; fix specificity architecture instead", "Always use inline styles to guarantee precedence", "Chain many selectors together to win specificity battles"],
+    "que": "Which is a best practice for managing CSS specificity?",
+    "ans": "b"
+  }
+]
