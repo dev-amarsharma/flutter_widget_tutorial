@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<p>",
+      "<text>",
+      "<para>",
+      "<div>"
+    ],
+    "que": "Which element creates paragraphs?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Line break",
+      "New line",
+      "Space",
+      "Paragraph break"
+    ],
+    "que": "What does <br> do?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "<div>",
+      "<span>",
+      "<pre>",
+      "<p>"
+    ],
+    "que": "Which element preserves whitespace?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Short quotes",
+      "Lists",
+      "Quoted text",
+      "Code"
+    ],
+    "que": "What is <blockquote> for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<strong>",
+      "<i>",
+      "<em>",
+      "<b>"
+    ],
+    "que": "Which tag is for emphasized text?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Emphasis",
+      "Bold text",
+      "Strong importance",
+      "Highlight"
+    ],
+    "que": "What does <strong> indicate?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<source>",
+      "<ref>",
+      "<cite>",
+      "<quote>"
+    ],
+    "que": "Which element is for citations?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Short forms",
+      "Abbreviations",
+      "All of the above",
+      "Acronyms"
+    ],
+    "que": "What is <abbr> used for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<remove>",
+      "<del>",
+      "<strike>",
+      "<out>"
+    ],
+    "que": "Which tag marks deleted text?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Added content",
+      "Inserted text",
+      "Important text",
+      "New text"
+    ],
+    "que": "What does <ins> indicate?",
+    "ans": "b"
+  }
+]

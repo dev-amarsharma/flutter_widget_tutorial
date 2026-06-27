@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is var?",
+    "options": [
+      "Function-scoped variable",
+      "Global",
+      "Constant",
+      "Block-scoped"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is let?",
+    "options": [
+      "Global",
+      "Function-scoped",
+      "Constant",
+      "Block-scoped variable"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is const?",
+    "options": [
+      "Function",
+      "Variable",
+      "Constant value",
+      "Object"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is hoisting?",
+    "options": [
+      "Values moved up",
+      "Declarations moved up",
+      "Code executed",
+      "Variables deleted"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is temporal dead zone?",
+    "options": [
+      "Time before declaration",
+      "After declaration",
+      "During execution",
+      "After execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is undefined?",
+    "options": [
+      "Unassigned value",
+      "Error",
+      "Zero",
+      "Null value"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is null?",
+    "options": [
+      "Empty string",
+      "Intentional absence",
+      "Error",
+      "Unassigned"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is scope?",
+    "options": [
+      "Function",
+      "Variable visibility",
+      "File",
+      "Code block"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is global scope?",
+    "options": [
+      "Inside block",
+      "Accessible everywhere",
+      "Inside function",
+      "Nowhere"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is local scope?",
+    "options": [
+      "Global",
+      "Inside function/block",
+      "Nowhere",
+      "Everywhere"
+    ],
+    "ans": "b"
+  }
+]

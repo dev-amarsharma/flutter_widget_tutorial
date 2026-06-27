@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["display: flex on the items", "display: flex on the parent container", "flex: 1 on the parent container", "flex-direction on the items"],
+    "que": "How do you activate a Flexbox layout for a group of elements?",
+    "ans": "b"
+  },
+  {
+    "options": ["justify-content", "align-items", "flex-direction", "flex-wrap"],
+    "que": "Which property aligns flex items along the MAIN axis?",
+    "ans": "a"
+  },
+  {
+    "options": ["justify-content", "align-items", "align-self", "flex-grow"],
+    "que": "Which property aligns flex items along the CROSS axis?",
+    "ans": "b"
+  },
+  {
+    "options": ["flex-direction: vertical", "flex-direction: column", "flex-direction: down", "flex-direction: stack"],
+    "que": "Which value makes flex items stack vertically top-to-bottom?",
+    "ans": "b"
+  },
+  {
+    "options": ["space-between distributes items with no extra space at edges", "space-between adds equal space on all sides of each item", "space-between only works with three items", "space-between is the same as space-around"],
+    "que": "Which description of justify-content: space-between is correct?",
+    "ans": "a"
+  },
+  {
+    "options": ["flex-wrap: overflow", "flex-wrap: auto", "flex-wrap: wrap", "flex-wrap: break"],
+    "que": "Which value allows flex items to wrap to the next line when the container is too small?",
+    "ans": "c"
+  },
+  {
+    "options": ["gap", "margin", "padding", "spacing"],
+    "que": "Which CSS property sets the space between flex items directly?",
+    "ans": "a"
+  },
+  {
+    "options": ["flex-grow: 0 means the item will not grow", "flex-grow: 1 means the item is exactly 1px wide", "flex-grow stops items from shrinking", "flex-grow controls the item's z-index"],
+    "que": "What does flex-grow: 0 mean for a flex item?",
+    "ans": "a"
+  },
+  {
+    "options": ["justify-content: center and align-items: center on the container with height set", "center: true on the item", "flex-center on the container", "align: center on the item"],
+    "que": "What is the simplest way to center an item both horizontally and vertically in a flex container?",
+    "ans": "a"
+  },
+  {
+    "options": ["order: -1 makes the item hidden", "order controls the visual order without changing the HTML", "order only works on the first item", "order changes flex-direction"],
+    "que": "What does the 'order' property do on a flex item?",
+    "ans": "b"
+  }
+]

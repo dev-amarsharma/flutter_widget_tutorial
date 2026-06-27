@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is async function?",
+    "options": [
+      "Callback",
+      "Returns promise",
+      "Synchronous",
+      "Generator"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does await do?",
+    "options": [
+      "Calls function",
+      "Waits for promise",
+      "Throws error",
+      "Returns value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is promise?",
+    "options": [
+      "Function",
+      "Current value",
+      "Error",
+      "Future value"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What are promise states?",
+    "options": [
+      "init, process, finish",
+      "start, middle, end",
+      "running, done, error",
+      "pending, fulfilled, rejected"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does then() do?",
+    "options": [
+      "Creates promise",
+      "Resolves promise",
+      "Handles rejection",
+      "Handles fulfillment"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does catch() do?",
+    "options": [
+      "Creates promise",
+      "Handles fulfillment",
+      "Resolves promise",
+      "Handles rejection"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does finally() do?",
+    "options": [
+      "Runs always",
+      "Runs on success",
+      "Runs on error",
+      "Runs first"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is Promise.all?",
+    "options": [
+      "Waits for all",
+      "Rejects all",
+      "Waits for first",
+      "Resolves all"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is Promise.race?",
+    "options": [
+      "Waits for first settle",
+      "Resolves first",
+      "Rejects first",
+      "Waits for all"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is async/await?",
+    "options": [
+      "Generator style",
+      "New promise type",
+      "Callback style",
+      "Syntactic sugar for promises"
+    ],
+    "ans": "d"
+  }
+]

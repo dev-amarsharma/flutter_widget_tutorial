@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "que": "Which element creates links?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "href",
+      "url",
+      "src",
+      "dest"
+    ],
+    "que": "What attribute specifies link destination?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "external",
+      "target=\"_blank\"",
+      "newtab",
+      "open"
+    ],
+    "que": "Which attribute opens links in new tab?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Displays images",
+      "Uploads images",
+      "Links images",
+      "Creates galleries"
+    ],
+    "que": "What does <img> do?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "File size",
+      "Accessibility",
+      "SEO",
+      "Loading speed"
+    ],
+    "que": "Why use alt text on images?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "External link",
+      "Path from current page",
+      "Full URL",
+      "Anchor link"
+    ],
+    "que": "What is a relative link?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "alt",
+      "text",
+      "title",
+      "desc"
+    ],
+    "que": "Which attribute makes links accessible?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Links to email",
+      "Creates form",
+      "Opens email client",
+      "Sends email"
+    ],
+    "que": "What does 'mailto:' do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Smaller files",
+      "Better quality",
+      "Different screen sizes",
+      "Faster loading"
+    ],
+    "que": "Why use responsive images?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Links to page section",
+      "Download link",
+      "Image link",
+      "External link"
+    ],
+    "que": "What is an anchor link?",
+    "ans": "a"
+  }
+]

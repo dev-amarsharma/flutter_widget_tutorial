@@ -1,0 +1,102 @@
+[
+  {
+    "que": "How to declare function?",
+    "options": [
+      "declare name() {}",
+      "func name() {}",
+      "function name() {}",
+      "def name() {}"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is function expression?",
+    "options": [
+      "function f() {}",
+      "const f = function() {}",
+      "f = function() {}",
+      "var f = function() {}"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does return do?",
+    "options": [
+      "Returns value from function",
+      "Restarts function",
+      "Continues function",
+      "Exits function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What are parameters?",
+    "options": [
+      "Input values",
+      "Global variables",
+      "Output values",
+      "Local variables"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is scope?",
+    "options": [
+      "Function size",
+      "Variable accessibility",
+      "Execution time",
+      "Code length"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is arrow function?",
+    "options": [
+      "=> {}",
+      "() => {}",
+      "() -> {}",
+      "function() {}"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is callback?",
+    "options": [
+      "Function passed as argument",
+      "Function called",
+      "Function defined",
+      "Function returned"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is higher-order function?",
+    "options": [
+      "Built-in function",
+      "Takes or returns function",
+      "Simple function",
+      "Anonymous function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is recursion?",
+    "options": [
+      "Function returns",
+      "Function loops",
+      "Function calls other",
+      "Function calls itself"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is IIFE?",
+    "options": [
+      "Internal Function Expression",
+      "Instant Function Execution",
+      "Inline Function Expression",
+      "Immediately Invoked Function Expression"
+    ],
+    "ans": "d"
+  }
+]

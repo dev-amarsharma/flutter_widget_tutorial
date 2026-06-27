@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Script elements",
+      "Elements with meaning",
+      "Styling elements",
+      "Generic containers"
+    ],
+    "que": "What are semantic elements?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<b>",
+      "<div>",
+      "<span>",
+      "<h1>"
+    ],
+    "que": "Which is a semantic heading?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "List item",
+      "Any content",
+      "Independent content",
+      "Form field"
+    ],
+    "que": "What does <article> define?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<list>",
+      "<menu>",
+      "<links>",
+      "<nav>"
+    ],
+    "que": "Which element for navigation?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Main content",
+      "Related content",
+      "Footer",
+      "Header"
+    ],
+    "que": "What is <aside> for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<div>",
+      "<block>",
+      "<section>",
+      "<group>"
+    ],
+    "que": "Which element groups content?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Main content",
+      "Footer",
+      "Sidebar",
+      "Introductory content"
+    ],
+    "que": "What does <header> contain?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "<end>",
+      "<bottom>",
+      "<footer>",
+      "<close>"
+    ],
+    "que": "Which element for page footer?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Links",
+      "Any image",
+      "Text",
+      "Illustrations"
+    ],
+    "que": "What is <figure> used for?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Easier styling",
+      "Faster loading",
+      "Better accessibility",
+      "Smaller files"
+    ],
+    "que": "Why prefer semantic HTML?",
+    "ans": "c"
+  }
+]

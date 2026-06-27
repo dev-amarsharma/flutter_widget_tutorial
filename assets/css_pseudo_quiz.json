@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["a:hover", "a::hover", "a.hover", "hover(a)"],
+    "que": "Which CSS selector applies styles when the user's mouse moves over an <a> element?",
+    "ans": "a"
+  },
+  {
+    "options": [":focus", "::focus", ":selected", ":active"],
+    "que": "Which pseudo-class targets an element when it receives keyboard focus?",
+    "ans": "a"
+  },
+  {
+    "options": ["::before and ::after use single colon by standard", "::before and ::after use double colon by standard", ":before and :after are the only valid forms", "Pseudo-elements don't use colons"],
+    "que": "What is the correct CSS standard notation for pseudo-elements?",
+    "ans": "b"
+  },
+  {
+    "options": ["display: block", "content: ''", "position: absolute", "visibility: visible"],
+    "que": "Which property is REQUIRED for a ::before or ::after pseudo-element to render?",
+    "ans": "b"
+  },
+  {
+    "options": ["li:first-child", "li:first", "li:position(1)", "li:index(0)"],
+    "que": "Which selector targets the first <li> element inside its parent?",
+    "ans": "a"
+  },
+  {
+    "options": ["li:nth-child(2n)", "li:nth-child(even)", "li:even", "Both a and b are correct"],
+    "que": "Which CSS selectors correctly target all even-numbered list items?",
+    "ans": "d"
+  },
+  {
+    "options": ["p:not(.skip)", "p:exclude(.skip)", "p:without(.skip)", "p[class!=skip]"],
+    "que": "Which selector matches all <p> elements that do NOT have the class 'skip'?",
+    "ans": "a"
+  },
+  {
+    "options": ["::first-letter", "::first-char", ":first-letter", "::letter(1)"],
+    "que": "Which pseudo-element allows you to style only the first letter of a paragraph?",
+    "ans": "a"
+  },
+  {
+    "options": ["::placeholder", ":placeholder-text", "::input-placeholder", ":placeholder"],
+    "que": "Which pseudo-element styles the placeholder text inside an input field?",
+    "ans": "a"
+  },
+  {
+    "options": [":is() keeps highest specificity of its list; :where() has zero specificity", ":where() has higher specificity than :is()", "They have identical specificity behavior", ":is() has zero specificity; :where() keeps highest"],
+    "que": "What is the key difference between :is() and :where() in terms of specificity?",
+    "ans": "a"
+  }
+]

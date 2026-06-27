@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is module?",
+    "options": [
+      "Function",
+      "Class",
+      "Reusable code file",
+      "Variable"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to export?",
+    "options": [
+      "All of above",
+      "exports",
+      "module.exports",
+      "export"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to import?",
+    "options": [
+      "include()",
+      "import",
+      "load()",
+      "require()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is default export?",
+    "options": [
+      "Single main export",
+      "Named export",
+      "No export",
+      "All exports"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is named export?",
+    "options": [
+      "Single export",
+      "Multiple exports",
+      "Default export",
+      "No export"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is CommonJS?",
+    "options": [
+      "AMD",
+      "import/export",
+      "UMD",
+      "require/module.exports"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is ES modules?",
+    "options": [
+      "import/export",
+      "require/module.exports",
+      "AMD",
+      "UMD"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is tree shaking?",
+    "options": [
+      "Bundles code",
+      "Optimizes code",
+      "Removes unused code",
+      "Adds code"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is bundler?",
+    "options": [
+      "Exports modules",
+      "Loads modules",
+      "Combines modules",
+      "Splits modules"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why use modules?",
+    "options": [
+      "Compatibility",
+      "Organization and reuse",
+      "Performance",
+      "All of above"
+    ],
+    "ans": "d"
+  }
+]

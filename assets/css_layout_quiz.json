@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["inline", "block", "inline-block", "flex"],
+    "que": "Which display value makes an element take up the full width and start on a new line?",
+    "ans": "b"
+  },
+  {
+    "options": ["inline", "block", "inline-block", "none"],
+    "que": "A <span> is display:inline by default. Which value would let you set a fixed width on it while keeping it in the text flow?",
+    "ans": "c"
+  },
+  {
+    "options": ["It hides the element but keeps its space", "It removes the element and its space from the layout", "It makes the element transparent", "It only hides the element on mobile"],
+    "que": "What does 'display: none' do?",
+    "ans": "b"
+  },
+  {
+    "options": ["display: none", "visibility: hidden", "opacity: 0", "display: invisible"],
+    "que": "Which property hides an element but still reserves its space in the layout?",
+    "ans": "b"
+  },
+  {
+    "options": ["overflow: clip", "overflow: auto", "overflow: scroll", "overflow: hidden"],
+    "que": "Which overflow value shows a scrollbar only when content actually overflows?",
+    "ans": "b"
+  },
+  {
+    "options": ["A <div> is inline by default", "A <span> is block by default", "A <p> is block by default", "A <strong> is block by default"],
+    "que": "Which statement is correct about default display values?",
+    "ans": "c"
+  },
+  {
+    "options": ["width and height have no effect on inline elements", "inline elements create a new line", "inline elements respect all four margin sides", "inline elements are the same as inline-block"],
+    "que": "Which statement is true about display:inline elements?",
+    "ans": "a"
+  },
+  {
+    "options": ["float: none", "float: clear", "clear: both", "clearfix: true"],
+    "que": "Which CSS property value is used to stop elements from wrapping around a floated element?",
+    "ans": "c"
+  },
+  {
+    "options": ["overflow: visible", "overflow: hidden", "overflow: scroll", "overflow: auto"],
+    "que": "Which overflow value clips content that exceeds the container, with no scrollbar?",
+    "ans": "b"
+  },
+  {
+    "options": ["Flexbox and Grid are recommended for modern layouts", "Float is the modern way to create layouts", "display: inline-block creates grid layouts", "overflow: flex enables flexible layouts"],
+    "que": "What is the recommended modern approach for creating complex page layouts?",
+    "ans": "a"
+  }
+]

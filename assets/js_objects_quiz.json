@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is object?",
+    "options": [
+      "List",
+      "Value",
+      "Function",
+      "Key-value collection"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to create object?",
+    "options": [
+      "<>",
+      "{}",
+      "[]",
+      "()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to access property?",
+    "options": [
+      "object.key or object['key']",
+      "object[key]",
+      "object{key}",
+      "object(key)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to add property?",
+    "options": [
+      "object.insert(newKey, value)",
+      "object.push(newKey, value)",
+      "object.newKey = value",
+      "object.add(newKey, value)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to delete property?",
+    "options": [
+      "object.delete(key)",
+      "delete object.key",
+      "object.erase(key)",
+      "object.remove(key)"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is method?",
+    "options": [
+      "Function property",
+      "Key property",
+      "Object property",
+      "Value property"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is this?",
+    "options": [
+      "Global object",
+      "Parent object",
+      "Current object",
+      "Child object"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is prototype?",
+    "options": [
+      "Shared properties",
+      "Static properties",
+      "Own properties",
+      "Dynamic properties"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is Object.keys()?",
+    "options": [
+      "Array of values",
+      "String",
+      "Object",
+      "Array of keys"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is JSON?",
+    "options": [
+      "Array notation",
+      "Object notation",
+      "Variable notation",
+      "Function notation"
+    ],
+    "ans": "b"
+  }
+]

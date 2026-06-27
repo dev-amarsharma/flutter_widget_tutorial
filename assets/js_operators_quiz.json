@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is arithmetic operator?",
+    "options": [
+      "&, |, ^",
+      "+, -, *, /, %",
+      "=, ==, ===",
+      "&&, ||, !"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is assignment operator?",
+    "options": [
+      "%=",
+      "+=, -=",
+      "=",
+      "*=, /="
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is comparison operator?",
+    "options": [
+      "==, ===, !=, !==, <, >",
+      "+, -, *, /",
+      "&&, ||",
+      "&, |"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is === vs ==",
+    "options": [
+      "Assignment vs equality",
+      "Strict vs loose equality",
+      "Logical vs bitwise",
+      "Arithmetic vs comparison"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is logical operator?",
+    "options": [
+      "&, |",
+      "+, -, *, /",
+      "==, ===",
+      "&&, ||, !"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is ternary operator?",
+    "options": [
+      "condition ? false : true",
+      "true ? condition : false",
+      "false ? condition : true",
+      "condition ? true : false"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is bitwise operator?",
+    "options": [
+      "&&, ||",
+      "==, ===",
+      "+, -, *, /",
+      "&, |, ^, ~, <<, >>"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is typeof?",
+    "options": [
+      "Comparison",
+      "Logical",
+      "Arithmetic",
+      "Type operator"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is instanceof?",
+    "options": [
+      "Value check",
+      "Equality check",
+      "Prototype check",
+      "Type check"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is operator precedence?",
+    "options": [
+      "Order of execution",
+      "Order of assignment",
+      "Order of comparison",
+      "Order of evaluation"
+    ],
+    "ans": "d"
+  }
+]

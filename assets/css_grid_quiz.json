@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["display: grid on items", "display: grid on the parent container", "grid: true on items", "grid-layout on the parent"],
+    "que": "How do you create a CSS Grid container?",
+    "ans": "b"
+  },
+  {
+    "options": ["fixed pixels", "fractional unit of available space", "font-relative unit", "viewport fraction"],
+    "que": "What does the 'fr' unit represent in CSS Grid?",
+    "ans": "b"
+  },
+  {
+    "options": ["repeat(3, 1fr)", "grid-columns: 3", "columns: repeat(3)", "3fr 3fr 3fr"],
+    "que": "Which creates three equal-width columns using the repeat() function?",
+    "ans": "a"
+  },
+  {
+    "options": ["grid-column: 1 / 3 spans 3 columns", "grid-column: 1 / 3 spans from line 1 to line 3 (2 columns wide)", "grid-column: 1 / 3 means column index 3", "grid-column: 1 / 3 is invalid CSS"],
+    "que": "What does grid-column: 1 / 3 mean?",
+    "ans": "b"
+  },
+  {
+    "options": ["grid-column: 1 / last", "grid-column: all", "grid-column: 1 / -1", "grid-column: full"],
+    "que": "Which declaration spans a grid item across all columns?",
+    "ans": "c"
+  },
+  {
+    "options": ["grid-template-areas", "grid-area-names", "grid-layout-names", "template-areas"],
+    "que": "Which CSS property lets you define named regions like 'header', 'sidebar', and 'main' in a grid?",
+    "ans": "a"
+  },
+  {
+    "options": ["auto-fill and auto-fit behave identically", "auto-fill collapses empty tracks; auto-fit keeps them", "auto-fit collapses empty tracks; auto-fill keeps them", "Only auto-fill works with minmax()"],
+    "que": "What is the key difference between auto-fill and auto-fit?",
+    "ans": "c"
+  },
+  {
+    "options": ["gap", "margin", "padding", "grid-spacing"],
+    "que": "Which property adds space between grid rows and columns?",
+    "ans": "a"
+  },
+  {
+    "options": ["justify-items aligns along columns; align-items aligns along rows", "justify-items aligns items horizontally in their cell; align-items aligns vertically", "They are both the same property", "justify-items only works on the first row"],
+    "que": "What is the difference between justify-items and align-items in a grid container?",
+    "ans": "b"
+  },
+  {
+    "options": ["repeat(auto-fit, minmax(200px, 1fr))", "repeat(responsive, 200px)", "grid-template-columns: auto", "repeat(fill, 200px 1fr)"],
+    "que": "Which declaration creates a fully responsive grid where columns are at least 200px wide and grow to fill space?",
+    "ans": "a"
+  }
+]

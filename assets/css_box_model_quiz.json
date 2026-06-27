@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["margin, border, padding, content", "content, padding, border, margin", "padding, margin, border, content", "border, content, padding, margin"],
+    "que": "What is the correct order of the CSS box model layers from innermost to outermost?",
+    "ans": "b"
+  },
+  {
+    "options": ["content-box", "border-box", "padding-box", "margin-box"],
+    "que": "With the default box-sizing value, what does the 'width' property define?",
+    "ans": "a"
+  },
+  {
+    "options": ["The padding area", "The content area only", "The content + padding + border areas", "The full element including margin"],
+    "que": "When box-sizing is set to border-box, what does 'width' include?",
+    "ans": "c"
+  },
+  {
+    "options": ["Margin", "Padding", "Border", "Content"],
+    "que": "Which layer inherits the element's background color?",
+    "ans": "b"
+  },
+  {
+    "options": ["Margin", "Padding", "Border", "Content"],
+    "que": "Which layer is transparent and creates space outside the border?",
+    "ans": "a"
+  },
+  {
+    "options": ["top, bottom, left, right", "top, right, bottom, left", "left, right, top, bottom", "top, left, bottom, right"],
+    "que": "When four values are given to padding/margin shorthand, what order are they applied?",
+    "ans": "b"
+  },
+  {
+    "options": ["50px", "30px", "20px", "10px"],
+    "que": "If one block has margin-bottom: 30px and the next has margin-top: 20px, what is the actual gap between them?",
+    "ans": "b"
+  },
+  {
+    "options": ["margin: auto centers block elements horizontally", "margin: auto works on inline elements", "margin: auto only affects padding", "margin: auto removes all spacing"],
+    "que": "What does 'margin: auto' do on a block element with a defined width?",
+    "ans": "a"
+  },
+  {
+    "options": ["width: 300px", "width: 340px", "width: 344px", "width: 320px"],
+    "que": "An element has width:300px, padding:20px, border:2px. With box-sizing:content-box, what is the total rendered width?",
+    "ans": "c"
+  },
+  {
+    "options": ["padding: 10px 20px 30px 40px", "padding: 10px, 20px, 30px, 40px", "padding: top=10 right=20 bottom=30 left=40", "padding-top: 10; padding-right: 20;"],
+    "que": "Which is the correct shorthand to set padding: top 10px, right 20px, bottom 30px, left 40px?",
+    "ans": "a"
+  }
+]

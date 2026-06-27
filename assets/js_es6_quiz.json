@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is ES6?",
+    "options": [
+      "ECMAScript 2015",
+      "Modern JS",
+      "JavaScript 6",
+      "ECMAScript 6"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is let?",
+    "options": [
+      "Block-scoped variable",
+      "Constant",
+      "Global",
+      "Function-scoped"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is const?",
+    "options": [
+      "Block-scoped constant",
+      "Function",
+      "Variable",
+      "Global"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is arrow function?",
+    "options": [
+      "=> {}",
+      "() -> {}",
+      "() => {}",
+      "function() {}"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is template literal?",
+    "options": [
+      "string + var",
+      "\"string\" + var",
+      "`string ${var}`",
+      "'string' + var"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is destructuring?",
+    "options": [
+      "Sort values",
+      "Extract values",
+      "Create values",
+      "Delete values"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is spread operator?",
+    "options": [
+      "..object",
+      "...object",
+      "..array",
+      "...array"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is rest parameter?",
+    "options": [
+      "..args",
+      "...args",
+      "...params",
+      "..params"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is class?",
+    "options": [
+      "Variable",
+      "Blueprint for objects",
+      "Function",
+      "Object"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is module?",
+    "options": [
+      "Function",
+      "Class",
+      "Reusable code file",
+      "Variable"
+    ],
+    "ans": "c"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is promise?",
+    "options": [
+      "Future value",
+      "Current value",
+      "Function",
+      "Error"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What are promise states?",
+    "options": [
+      "pending, fulfilled, rejected",
+      "running, done, error",
+      "start, middle, end",
+      "init, process, finish"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does then() do?",
+    "options": [
+      "Handles fulfillment",
+      "Resolves promise",
+      "Handles rejection",
+      "Creates promise"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does catch() do?",
+    "options": [
+      "Resolves promise",
+      "Handles fulfillment",
+      "Handles rejection",
+      "Creates promise"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does finally() do?",
+    "options": [
+      "Runs first",
+      "Runs on success",
+      "Runs on error",
+      "Runs always"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to create promise?",
+    "options": [
+      "makePromise()",
+      "new Promise()",
+      "Promise()",
+      "createPromise()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.resolve()?",
+    "options": [
+      "Resolves existing",
+      "Creates pending",
+      "Creates rejected",
+      "Creates resolved promise"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is Promise.reject()?",
+    "options": [
+      "Creates pending",
+      "Creates resolved",
+      "Creates rejected promise",
+      "Rejects existing"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is Promise.all?",
+    "options": [
+      "Rejects all",
+      "Waits for first",
+      "Resolves all",
+      "Waits for all"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is Promise.race?",
+    "options": [
+      "Waits for all",
+      "Resolves first",
+      "Waits for first settle",
+      "Rejects first"
+    ],
+    "ans": "c"
+  }
+]

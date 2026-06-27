@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Creates a frame",
+      "Displays images",
+      "Embeds another HTML page",
+      "Links to pages"
+    ],
+    "que": "What does <iframe> do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "url",
+      "src",
+      "link",
+      "source"
+    ],
+    "que": "Which attribute sets the iframe source?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Sets border width",
+      "Sets iframe width",
+      "Sets content width",
+      "Sets page width"
+    ],
+    "que": "What is the 'width' attribute for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "To enable scrolling",
+      "To add borders",
+      "To set colors",
+      "For security restrictions"
+    ],
+    "que": "Why use 'sandbox' attribute?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Enables scripts",
+      "Sets full width",
+      "Enables full screen mode",
+      "Allows all content"
+    ],
+    "que": "What does 'allowfullscreen' do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "scrolling",
+      "scroll",
+      "auto",
+      "overflow"
+    ],
+    "que": "Which attribute controls scrolling?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Visible",
+      "None",
+      "Solid",
+      "Dotted"
+    ],
+    "que": "What is the default iframe border?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "They require JavaScript",
+      "They are slow",
+      "They don't work",
+      "SEO and accessibility issues"
+    ],
+    "que": "Why avoid iframes for navigation?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Setting title",
+      "Adding alt text",
+      "Targeting links",
+      "Defining id"
+    ],
+    "que": "What is the 'name' attribute used for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Only local files",
+      "Only same domain",
+      "No",
+      "Yes"
+    ],
+    "que": "Can iframes load external sites?",
+    "ans": "d"
+  }
+]

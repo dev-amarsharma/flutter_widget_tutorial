@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is closure?",
+    "options": [
+      "Closed function",
+      "Local function",
+      "Function with access to outer scope",
+      "Global function"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is lexical scope?",
+    "options": [
+      "Based on runtime",
+      "Based on call",
+      "Based on context",
+      "Based on code structure"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does closure remember?",
+    "options": [
+      "Parameters",
+      "Own variables",
+      "Variables from outer scope",
+      "Global variables"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is scope chain?",
+    "options": [
+      "Chain of functions",
+      "Chain of variables",
+      "Chain of scopes",
+      "Chain of calls"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is private variable?",
+    "options": [
+      "Accessible everywhere",
+      "In function",
+      "Inaccessible from outside",
+      "In block"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to create closure?",
+    "options": [
+      "Arrow function",
+      "Global function",
+      "Function inside function",
+      "Function outside"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is module pattern?",
+    "options": [
+      "Callback",
+      "IIFE with return",
+      "Function declaration",
+      "Arrow function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is IIFE?",
+    "options": [
+      "Immediately Invoked Function Expression",
+      "Inline Function",
+      "Instant Function",
+      "Internal Function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why use closures?",
+    "options": [
+      "Performance",
+      "Encapsulation, data hiding",
+      "Syntax",
+      "Compatibility"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is garbage collection?",
+    "options": [
+      "Memory deallocation",
+      "Memory allocation",
+      "Automatic memory management",
+      "Manual memory"
+    ],
+    "ans": "c"
+  }
+]

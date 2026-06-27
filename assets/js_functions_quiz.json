@@ -1,0 +1,102 @@
+[
+  {
+    "que": "How to declare function?",
+    "options": [
+      "func name() {}",
+      "def name() {}",
+      "function name() {}",
+      "declare name() {}"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is function expression?",
+    "options": [
+      "function f() {}",
+      "var f = function() {}",
+      "const f = function() {}",
+      "f = function() {}"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does return do?",
+    "options": [
+      "Exits function",
+      "Returns value",
+      "Restarts",
+      "Continues"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What are parameters?",
+    "options": [
+      "Output values",
+      "Global vars",
+      "Local vars",
+      "Input values"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is scope?",
+    "options": [
+      "Time",
+      "Variable accessibility",
+      "Function size",
+      "Code length"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is arrow function?",
+    "options": [
+      "() -> {}",
+      "() => {}",
+      "=> {}",
+      "function() {}"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is callback?",
+    "options": [
+      "Function defined",
+      "Function as argument",
+      "Function called",
+      "Function returned"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is higher-order function?",
+    "options": [
+      "Takes/returns function",
+      "Simple function",
+      "Built-in",
+      "Anonymous"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is recursion?",
+    "options": [
+      "Loops",
+      "Returns",
+      "Calls other",
+      "Calls itself"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is IIFE?",
+    "options": [
+      "Inline Function",
+      "Immediately Invoked Function Expression",
+      "Internal Function",
+      "Instant Function"
+    ],
+    "ans": "b"
+  }
+]

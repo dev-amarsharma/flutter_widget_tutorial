@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "To structure content hierarchy",
+      "To add links",
+      "To make text bold",
+      "To create lists"
+    ],
+    "que": "What is the purpose of HTML headings?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "<h3>",
+      "<h1>",
+      "<h2>",
+      "<h6>"
+    ],
+    "que": "Which heading level is the most important?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "4",
+      "6",
+      "5",
+      "7"
+    ],
+    "que": "How many heading levels are there?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<h1>",
+      "<p>",
+      "<h2>",
+      "<h3>"
+    ],
+    "que": "What should follow <h1>?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "To add more headings",
+      "To make text smaller",
+      "To save space",
+      "For accessibility and structure"
+    ],
+    "que": "Why avoid skipping heading levels?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "<h1>",
+      "<heading>",
+      "<header>",
+      "<title>"
+    ],
+    "que": "Which element is for page title?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Navigation and structure",
+      "Links",
+      "Styling",
+      "Images"
+    ],
+    "que": "What does screen readers use headings for?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Only text",
+      "Only links",
+      "No",
+      "Yes"
+    ],
+    "que": "Can headings contain other elements?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Bold and sized",
+      "Underlined",
+      "Italic",
+      "Normal text"
+    ],
+    "que": "What is the default styling of headings?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "For semantic meaning",
+      "To avoid CSS",
+      "For links",
+      "For styling only"
+    ],
+    "que": "Why use headings instead of <b> or <strong>?",
+    "ans": "a"
+  }
+]

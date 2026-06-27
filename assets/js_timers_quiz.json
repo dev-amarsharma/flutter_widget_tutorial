@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is setTimeout?",
+    "options": [
+      "Delays execution",
+      "Stops execution",
+      "Pauses execution",
+      "Repeats execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is setInterval?",
+    "options": [
+      "Repeats execution",
+      "Delays execution",
+      "Pauses execution",
+      "Stops execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to cancel setTimeout?",
+    "options": [
+      "clearTimeout(id)",
+      "endTimeout(id)",
+      "cancelTimeout(id)",
+      "stopTimeout(id)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to cancel setInterval?",
+    "options": [
+      "stopInterval(id)",
+      "clearInterval(id)",
+      "endInterval(id)",
+      "cancelInterval(id)"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does setTimeout return?",
+    "options": [
+      "Promise",
+      "Timer ID",
+      "Undefined",
+      "Function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does setInterval return?",
+    "options": [
+      "Timer ID",
+      "Promise",
+      "Undefined",
+      "Function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Are timers precise?",
+    "options": [
+      "Always late",
+      "Depends",
+      "No, minimum delay",
+      "Yes, exact"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is minimum delay?",
+    "options": [
+      "4ms in browsers",
+      "10ms",
+      "1ms",
+      "0ms"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can timers be nested?",
+    "options": [
+      "Yes",
+      "No",
+      "Only setInterval",
+      "Only setTimeout"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why use timers?",
+    "options": [
+      "Poll",
+      "Animate",
+      "Defer execution",
+      "All of above"
+    ],
+    "ans": "d"
+  }
+]

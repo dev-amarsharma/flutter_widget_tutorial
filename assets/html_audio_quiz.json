@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<play>",
+      "<media>",
+      "<audio>",
+      "<sound>"
+    ],
+    "que": "Which HTML element is used for embedding audio?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "source",
+      "src",
+      "file",
+      "url"
+    ],
+    "que": "What attribute specifies the audio file source?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "interface",
+      "controls",
+      "play",
+      "buttons"
+    ],
+    "que": "Which attribute enables audio controls?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Loops the audio",
+      "Starts playing automatically",
+      "Mutes the audio",
+      "Pauses the audio"
+    ],
+    "que": "What does the 'autoplay' attribute do?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "continue",
+      "cycle",
+      "repeat",
+      "loop"
+    ],
+    "que": "Which attribute makes audio loop continuously?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Defines the duration",
+      "Controls the speed",
+      "Sets the volume",
+      "Specifies how the audio should be loaded"
+    ],
+    "que": "What is the purpose of the 'preload' attribute?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "MP3",
+      "OGG",
+      "WAV",
+      "All of the above"
+    ],
+    "que": "Which format is widely supported for HTML audio?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "<source>",
+      "<fallback>",
+      "<text>",
+      "<alt>"
+    ],
+    "que": "What element provides fallback content for unsupported audio?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "volume",
+      "amp",
+      "sound",
+      "level"
+    ],
+    "que": "Which attribute sets the audio volume?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Pauses audio",
+      "Starts the audio muted",
+      "Disables audio",
+      "Sets volume to zero"
+    ],
+    "que": "What does the 'muted' attribute do?",
+    "ans": "b"
+  }
+]

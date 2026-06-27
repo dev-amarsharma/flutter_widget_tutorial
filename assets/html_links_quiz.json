@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<link>",
+      "<url>",
+      "<a>",
+      "<href>"
+    ],
+    "que": "Which element creates hyperlinks?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "url",
+      "src",
+      "href",
+      "link"
+    ],
+    "que": "What attribute specifies the URL?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "new",
+      "open",
+      "tab",
+      "target=\"_blank\""
+    ],
+    "que": "Which attribute opens in new tab?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Anchor",
+      "External domain",
+      "Full URL",
+      "Path from current file"
+    ],
+    "que": "What is a relative link?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "title",
+      "desc",
+      "hint",
+      "alt"
+    ],
+    "que": "Which attribute provides tooltip?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "File link",
+      "Email link",
+      "Web link",
+      "Phone link"
+    ],
+    "que": "What does 'mailto:' create?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Styling",
+      "Accessibility and SEO",
+      "Speed",
+      "Size"
+    ],
+    "que": "Why use descriptive link text?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Download",
+      "External page",
+      "Links to page section",
+      "Image"
+    ],
+    "que": "What is an anchor link?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "download",
+      "file",
+      "save",
+      "export"
+    ],
+    "que": "Which attribute for download?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Opens faster",
+      "Prevents tracking",
+      "Security for external links",
+      "Adds icon"
+    ],
+    "que": "What does 'rel=\"noopener\"' do?",
+    "ans": "c"
+  }
+]

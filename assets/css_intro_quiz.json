@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["HyperText Markup Language", "Cascading Style Sheets", "Creative Styling Syntax", "Content Structure System"],
+    "que": "What does CSS stand for?",
+    "ans": "b"
+  },
+  {
+    "options": ["JavaScript", "HTML", "CSS", "PHP"],
+    "que": "Which language is used to control the visual appearance of a webpage?",
+    "ans": "c"
+  },
+  {
+    "options": ["<css>", "<style>", "<script>", "<link>"],
+    "que": "Which HTML tag is used to link an external CSS stylesheet?",
+    "ans": "d"
+  },
+  {
+    "options": ["selector { property: value; }", "property: value { selector; }", "value { selector: property; }", "selector: property { value; }"],
+    "que": "Which is the correct format for a CSS rule?",
+    "ans": "a"
+  },
+  {
+    "options": ["Semicolons separate declarations inside a block", "Semicolons are optional in CSS", "Semicolons end the entire rule", "Semicolons go before property names"],
+    "que": "What is the role of semicolons in CSS?",
+    "ans": "a"
+  },
+  {
+    "options": ["Inline styles have the lowest priority", "External stylesheets always override inline styles", "Inline styles have the highest priority among author styles", "All three methods have equal priority"],
+    "que": "How does an inline style compare in priority to external and internal stylesheets?",
+    "ans": "c"
+  },
+  {
+    "options": ["Every CSS property is inherited", "Only layout properties like margin are inherited", "Properties like color and font-family are inherited by children", "Inheritance never applies in CSS"],
+    "que": "Which statement about CSS inheritance is correct?",
+    "ans": "c"
+  },
+  {
+    "options": ["Place the CSS inside <body>", "Use a <script> tag", "Use <link rel=\"stylesheet\" href=\"file.css\"> inside <head>", "Write CSS directly in the HTML tag using 'class'"],
+    "que": "What is the recommended way to include CSS in an HTML document?",
+    "ans": "c"
+  },
+  {
+    "options": ["Specificity, then origin, then order", "Origin, then specificity, then order", "Order, then origin, then specificity", "Font, then color, then layout"],
+    "que": "What is the correct priority order when the CSS cascade resolves conflicts?",
+    "ans": "b"
+  },
+  {
+    "options": ["The first rule in the file always wins", "The last matching rule wins when specificity and origin are equal", "Browser defaults always win", "Properties with longer names win"],
+    "que": "When two CSS rules have the same specificity and origin, which one applies?",
+    "ans": "b"
+  }
+]

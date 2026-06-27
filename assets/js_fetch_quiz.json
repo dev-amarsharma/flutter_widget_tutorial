@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does fetch() do?",
+    "options": [
+      "Handles error",
+      "Creates promise",
+      "Parses JSON",
+      "Makes HTTP request"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does fetch() return?",
+    "options": [
+      "String",
+      "JSON",
+      "Promise<Response>",
+      "Response"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to get JSON?",
+    "options": [
+      "response.json()",
+      "response.text()",
+      "response.data()",
+      "response.parse()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is response.ok?",
+    "options": [
+      "True for success",
+      "True for JSON",
+      "True for 200-299",
+      "True for text"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to handle error?",
+    "options": [
+      "Switch",
+      "Check response.ok or catch",
+      "Try/catch only",
+      "If/else"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is async/await?",
+    "options": [
+      "Syntactic sugar",
+      "New promise",
+      "Generator",
+      "Callback"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can await be top-level?",
+    "options": [
+      "Yes",
+      "In modules",
+      "In functions",
+      "No"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.all?",
+    "options": [
+      "Resolve all",
+      "Wait for all",
+      "Wait for first",
+      "Reject all"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.race?",
+    "options": [
+      "Reject first",
+      "Wait for all",
+      "Resolve first",
+      "Wait for first settle"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to send POST?",
+    "options": [
+      "fetch(url, {method: 'POST'})",
+      "fetch(url, 'POST')",
+      "send(url, 'POST')",
+      "post(url)"
+    ],
+    "ans": "a"
+  }
+]

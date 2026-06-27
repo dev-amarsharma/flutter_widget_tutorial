@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is localStorage?",
+    "options": [
+      "Browser storage",
+      "Memory storage",
+      "Server storage",
+      "File storage"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to store data?",
+    "options": [
+      "localStorage.setItem(key, value)",
+      "localStorage.add(key, value)",
+      "localStorage.put(key, value)",
+      "localStorage[key] = value"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to get data?",
+    "options": [
+      "localStorage[key]",
+      "localStorage.get(key)",
+      "localStorage.read(key)",
+      "localStorage.getItem(key)"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to remove data?",
+    "options": [
+      "localStorage.delete(key)",
+      "localStorage.removeItem(key)",
+      "localStorage.clear(key)",
+      "delete localStorage[key]"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to clear all?",
+    "options": [
+      "localStorage.clear()",
+      "localStorage.removeAll()",
+      "localStorage.empty()",
+      "localStorage.deleteAll()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What type are values?",
+    "options": [
+      "Numbers",
+      "Booleans",
+      "Strings",
+      "Objects"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to store object?",
+    "options": [
+      "Object.stringify()",
+      "JSON.stringify()",
+      "JSON.parse()",
+      "Object.toString()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to retrieve object?",
+    "options": [
+      "Object.parse()",
+      "JSON.parse()",
+      "JSON.stringify()",
+      "Object.fromString()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is storage limit?",
+    "options": [
+      "1MB",
+      "Unlimited",
+      "100MB",
+      "5-10MB"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Does it persist?",
+    "options": [
+      "No, tab only",
+      "Yes, across sessions",
+      "No, page only",
+      "No, session only"
+    ],
+    "ans": "b"
+  }
+]

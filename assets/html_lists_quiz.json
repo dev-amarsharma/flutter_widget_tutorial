@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<list>",
+      "<ul>",
+      "<li>",
+      "<ol>"
+    ],
+    "que": "Which element creates unordered lists?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "List type",
+      "Unordered list",
+      "List item",
+      "Ordered list"
+    ],
+    "que": "What does <ol> stand for?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "<item>",
+      "<ul>",
+      "<li>",
+      "<ol>"
+    ],
+    "que": "Which element defines list items?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Number",
+      "None",
+      "Bullet",
+      "Letter"
+    ],
+    "que": "What is the default marker for <ul>?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "marker",
+      "start",
+      "type",
+      "style"
+    ],
+    "que": "Which attribute changes <ol> numbering?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<desc>",
+      "<dl>",
+      "<dd>",
+      "<dt>"
+    ],
+    "que": "What is a description list?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<dd>",
+      "<dt>",
+      "<dl>",
+      "<term>"
+    ],
+    "que": "Which element defines terms in <dl>?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Only <ol>",
+      "Only <ul>",
+      "Yes",
+      "No"
+    ],
+    "que": "Can lists be nested?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "List marker",
+      "List type",
+      "List content",
+      "List style"
+    ],
+    "que": "What does <li> contain?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Accessibility and structure",
+      "Size",
+      "Styling",
+      "Speed"
+    ],
+    "que": "Why use semantic lists?",
+    "ans": "a"
+  }
+]

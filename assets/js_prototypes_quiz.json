@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is prototype?",
+    "options": [
+      "Static properties",
+      "Shared object properties",
+      "Dynamic properties",
+      "Own properties"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is __proto__?",
+    "options": [
+      "Own property",
+      "Static property",
+      "Prototype reference",
+      "Dynamic property"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is prototype chain?",
+    "options": [
+      "Chain of methods",
+      "Chain of objects",
+      "Chain of properties",
+      "Chain of prototypes"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to add to prototype?",
+    "options": [
+      "object.method = function",
+      "Object.method = function",
+      "prototype.method = function",
+      "Object.prototype.method = function"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is constructor?",
+    "options": [
+      "Function that creates object",
+      "Method",
+      "Object itself",
+      "Prototype"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is instanceof?",
+    "options": [
+      "Checks type",
+      "Checks value",
+      "Checks property",
+      "Checks prototype chain"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is Object.create()?",
+    "options": [
+      "Creates prototype",
+      "Creates constructor",
+      "Creates method",
+      "Creates object with prototype"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is class?",
+    "options": [
+      "New inheritance",
+      "Different from prototype",
+      "Replaces prototype",
+      "Syntactic sugar for prototype"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why use prototypes?",
+    "options": [
+      "Memory efficiency",
+      "All of above",
+      "Code reuse",
+      "Inheritance"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is prototypal inheritance?",
+    "options": [
+      "Variables inherit",
+      "Objects inherit from objects",
+      "Functions inherit",
+      "Classes inherit from classes"
+    ],
+    "ans": "b"
+  }
+]

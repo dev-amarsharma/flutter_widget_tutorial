@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is destructuring?",
+    "options": [
+      "Sort values",
+      "Create arrays/objects",
+      "Delete values",
+      "Extract values from arrays/objects"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to destructure array?",
+    "options": [
+      "const {a, b} = array",
+      "const array = [a, b]",
+      "const a, b = array",
+      "const [a, b] = array"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to destructure object?",
+    "options": [
+      "const a, b = object",
+      "const [a, b] = object",
+      "const object = {a, b}",
+      "const {a, b} = object"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is default value?",
+    "options": [
+      "Null value",
+      "Value if undefined",
+      "Initial value",
+      "Final value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is rest in destructuring?",
+    "options": [
+      "First values",
+      "All values",
+      "Remaining values",
+      "No values"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Can rename in object destructuring?",
+    "options": [
+      "With comma",
+      "With equals",
+      "No",
+      "Yes, with colon"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is nested destructuring?",
+    "options": [
+      "Simple destructuring",
+      "Destructure nested structures",
+      "Object only",
+      "Array only"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is parameter destructuring?",
+    "options": [
+      "Destructure in function params",
+      "Destructure in return",
+      "Destructure in if",
+      "Destructure in loop"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What happens if no match?",
+    "options": [
+      "Undefined",
+      "Empty",
+      "Error",
+      "Null"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why use destructuring?",
+    "options": [
+      "Performance",
+      "Security",
+      "Memory",
+      "Cleaner code"
+    ],
+    "ans": "d"
+  }
+]

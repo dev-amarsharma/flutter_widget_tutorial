@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is hoisting?",
+    "options": [
+      "Values moved to top",
+      "Variables deleted",
+      "Code executed",
+      "Declarations moved to top"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is hoisted?",
+    "options": [
+      "Expressions",
+      "Assignments",
+      "var, function declarations",
+      "let, const"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is temporal dead zone?",
+    "options": [
+      "After declaration",
+      "During execution",
+      "Before let/const declaration",
+      "After execution"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What happens with var?",
+    "options": [
+      "Hoisted with value",
+      "Hoisted with undefined",
+      "Error",
+      "Not hoisted"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What happens with let?",
+    "options": [
+      "Not hoisted",
+      "Error",
+      "Hoisted but not initialized",
+      "Hoisted with undefined"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What happens with const?",
+    "options": [
+      "Hoisted with undefined",
+      "Hoisted but not initialized",
+      "Error",
+      "Not hoisted"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What about function declarations?",
+    "options": [
+      "Not hoisted",
+      "Hoisted without",
+      "Hoisted with definition",
+      "Error"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What about function expressions?",
+    "options": [
+      "Depends",
+      "Not hoisted",
+      "Error",
+      "Hoisted"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Why avoid hoisting reliance?",
+    "options": [
+      "All of above",
+      "Modern JS",
+      "Better practices",
+      "Confusing code"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is strict mode?",
+    "options": [
+      "Allows hoisting",
+      "Changes hoisting",
+      "Prevents some errors",
+      "Disables hoisting"
+    ],
+    "ans": "c"
+  }
+]

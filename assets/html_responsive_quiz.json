@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Desktop only",
+      "Mobile only",
+      "Fixed width",
+      "Adapts to screen sizes"
+    ],
+    "que": "What is responsive design?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "viewport",
+      "responsive",
+      "scale",
+      "device"
+    ],
+    "que": "Which meta tag sets viewport?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Sets width",
+      "Sets height",
+      "Sets initial zoom",
+      "Sets scale"
+    ],
+    "que": "What does 'initial-scale=1' do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Apply CSS based on conditions",
+      "Add scripts",
+      "Set fonts",
+      "Load images"
+    ],
+    "que": "Why use media queries?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Fixed pixels",
+      "Only em",
+      "Uses percentages",
+      "Only rem"
+    ],
+    "que": "What is fluid layout?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "vw/vh",
+      "em",
+      "px",
+      "pt"
+    ],
+    "que": "Which unit is relative to viewport?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Content from being too narrow",
+      "Text from wrapping",
+      "Images from loading",
+      "Content from being too wide"
+    ],
+    "que": "What does 'max-width' prevent?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Only SVG",
+      "Scale with container",
+      "Only PNG",
+      "Fixed size"
+    ],
+    "que": "Why use flexible images?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Design for mobile first",
+      "All sizes equal",
+      "Tablet first",
+      "Desktop first"
+    ],
+    "que": "What is mobile-first design?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0",
+      "All of the above"
+    ],
+    "que": "Which CSS property hides content?",
+    "ans": "d"
+  }
+]

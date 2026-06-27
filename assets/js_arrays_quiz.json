@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is an array?",
+    "options": [
+      "Object",
+      "Ordered list of values",
+      "Unordered list",
+      "Single value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to create an array?",
+    "options": [
+      "{}",
+      "<>",
+      "()",
+      "[] or new Array()"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is array index?",
+    "options": [
+      "Position starting from 1",
+      "Value",
+      "Name",
+      "Position starting from 0"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Which method adds to end?",
+    "options": [
+      "append()",
+      "add()",
+      "push()",
+      "insert()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Which method removes from end?",
+    "options": [
+      "shift()",
+      "remove()",
+      "delete()",
+      "pop()"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does length property give?",
+    "options": [
+      "First element",
+      "Type",
+      "Last index",
+      "Number of elements"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is forEach?",
+    "options": [
+      "Function",
+      "Variable",
+      "Loop type",
+      "Method to iterate"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does map() return?",
+    "options": [
+      "Nothing",
+      "New array with results",
+      "Same array",
+      "Single value"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does filter() do?",
+    "options": [
+      "Removes elements",
+      "Sorts elements",
+      "Creates array with matching elements",
+      "Finds element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does reduce() do?",
+    "options": [
+      "Reduces to single value",
+      "Multiplies values",
+      "Increases values",
+      "Divides values"
+    ],
+    "ans": "a"
+  }
+]

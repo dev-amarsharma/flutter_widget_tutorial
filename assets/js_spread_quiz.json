@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is spread operator?",
+    "options": [
+      "... packs iterable",
+      "... expands iterable",
+      ".. expands",
+      ".. packs"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to spread array?",
+    "options": [
+      "[newItem, array...]",
+      "[...array]",
+      "[...array, newItem]",
+      "[array...]"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to spread object?",
+    "options": [
+      "{object...}",
+      "{newProp: value, object...}",
+      "{...object}",
+      "{...object, newProp: value}"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is rest parameter?",
+    "options": [
+      "... spreads arguments",
+      ".. collects",
+      ".. spreads",
+      "... collects arguments"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to use rest in function?",
+    "options": [
+      "function f(...args)",
+      "function f(args...)",
+      "function f(args...) {}",
+      "function f(...args) {}"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is shallow copy?",
+    "options": [
+      "Deep copy",
+      "Copies references",
+      "No copy",
+      "Copies values"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to copy array?",
+    "options": [
+      "[...array]",
+      "array.slice()",
+      "Array.from(array)",
+      "All of above"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to merge arrays?",
+    "options": [
+      "arr1.push(...arr2)",
+      "All of above",
+      "arr1.concat(arr2)",
+      "[...arr1, ...arr2]"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to merge objects?",
+    "options": [
+      "{...obj1, ...obj2}",
+      "obj1 + obj2",
+      "obj1.merge(obj2)",
+      "Object.assign({}, obj1, obj2)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When to use spread?",
+    "options": [
+      "Copy, merge, expand",
+      "Map, reduce",
+      "Sort, filter",
+      "Pack, collect"
+    ],
+    "ans": "a"
+  }
+]

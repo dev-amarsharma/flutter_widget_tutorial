@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is garbage collection?",
+    "options": [
+      "Manual memory",
+      "Memory deallocation",
+      "Automatic memory management",
+      "Memory allocation"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is memory leak?",
+    "options": [
+      "Used memory",
+      "Released memory",
+      "Allocated memory",
+      "Unreleased memory"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What causes memory leaks?",
+    "options": [
+      "No references",
+      "Unremoved references",
+      "Removed references",
+      "Weak references"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is reference?",
+    "options": [
+      "Memory address",
+      "Object itself",
+      "Variable name",
+      "Pointer to object"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is heap?",
+    "options": [
+      "Static memory",
+      "Dynamic memory",
+      "Stack memory",
+      "Code memory"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is stack?",
+    "options": [
+      "Dynamic memory",
+      "Global memory",
+      "Function call memory",
+      "Object memory"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is closure memory?",
+    "options": [
+      "Own variables",
+      "Releases variables",
+      "Retains outer variables",
+      "No variables"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to avoid leaks?",
+    "options": [
+      "Add references",
+      "Use closures",
+      "Remove references",
+      "Use globals"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is WeakMap?",
+    "options": [
+      "Weak references",
+      "Map references",
+      "No references",
+      "Strong references"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why care about memory?",
+    "options": [
+      "Syntax",
+      "Compatibility",
+      "Code size",
+      "Performance and stability"
+    ],
+    "ans": "d"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["serif", "sans-serif", "monospace", "All of the above are generic font families"],
+    "que": "Which of these is NOT a CSS generic font family keyword?",
+    "ans": "d"
+  },
+  {
+    "options": ["1rem equals 1px", "1rem equals the parent element's font size", "1rem equals the root element's font size", "1rem equals 10px always"],
+    "que": "What does the 'rem' unit in CSS refer to?",
+    "ans": "c"
+  },
+  {
+    "options": ["100", "400", "700", "900"],
+    "que": "What numeric font-weight value is equivalent to 'bold'?",
+    "ans": "c"
+  },
+  {
+    "options": ["font-style: bold", "font-style: italic", "font-weight: italic", "text-style: italic"],
+    "que": "Which CSS property and value makes text italic?",
+    "ans": "b"
+  },
+  {
+    "options": ["line-height: 1.6px", "line-height: 1.6em", "line-height: 1.6", "line-height: 16px"],
+    "que": "Which is the recommended way to set line-height for scalable typography?",
+    "ans": "c"
+  },
+  {
+    "options": ["text-align: middle", "text-align: center", "text-position: center", "align: center"],
+    "que": "Which property centers text horizontally within its container?",
+    "ans": "b"
+  },
+  {
+    "options": ["text-transform: uppercase", "text-transform: caps", "font-case: upper", "text-case: uppercase"],
+    "que": "Which CSS declaration transforms all text to uppercase?",
+    "ans": "a"
+  },
+  {
+    "options": ["font-family: Roboto", "font-family: 'Roboto'", "font-family: \"Roboto\", sans-serif", "font-family: Roboto, sans-serif"],
+    "que": "How should you reference a Google Font named 'Roboto' with a fallback?",
+    "ans": "d"
+  },
+  {
+    "options": ["letter-spacing", "word-spacing", "text-spacing", "character-spacing"],
+    "que": "Which CSS property adjusts the space between individual characters?",
+    "ans": "a"
+  },
+  {
+    "options": ["font-size: 10px", "font-size: 1rem", "font-size: 100%", "font-size: 1em"],
+    "que": "Which font-size value is most accessible because it respects the user's browser font preference?",
+    "ans": "b"
+  }
+]

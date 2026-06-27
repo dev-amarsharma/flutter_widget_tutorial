@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What are primitive types?",
+    "options": [
+      "null, undefined",
+      "object, array",
+      "string, number, boolean, etc.",
+      "function, class"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is typeof?",
+    "options": [
+      "Returns value",
+      "Returns array",
+      "Returns type string",
+      "Returns object"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is string?",
+    "options": [
+      "Text data",
+      "Boolean data",
+      "Object data",
+      "Number data"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is number?",
+    "options": [
+      "Boolean data",
+      "Text data",
+      "Object data",
+      "Numeric data"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is boolean?",
+    "options": [
+      "Text",
+      "Number",
+      "Object",
+      "true or false"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is undefined?",
+    "options": [
+      "Null value",
+      "Error",
+      "Zero",
+      "Unassigned value"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is null?",
+    "options": [
+      "Error",
+      "Unassigned",
+      "Empty string",
+      "Intentional absence"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is symbol?",
+    "options": [
+      "Unique identifier",
+      "String",
+      "Number",
+      "Object"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is BigInt?",
+    "options": [
+      "Float",
+      "Large integer",
+      "Small number",
+      "String"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is object?",
+    "options": [
+      "Function",
+      "Primitive type",
+      "Reference type",
+      "Array"
+    ],
+    "ans": "c"
+  }
+]

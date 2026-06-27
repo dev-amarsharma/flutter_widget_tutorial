@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Scalable Vector Graphics",
+      "Simple Vector Graphics",
+      "Standard Vector Graphics",
+      "Scalable Visual Graphics"
+    ],
+    "que": "What does SVG stand for?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "<image>",
+      "<vector>",
+      "<svg>",
+      "<graphic>"
+    ],
+    "que": "Which element defines SVG?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Videos",
+      "Vector graphics",
+      "Photos",
+      "Audio"
+    ],
+    "que": "What is SVG used for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "size",
+      "width",
+      "dimension",
+      "w"
+    ],
+    "que": "Which attribute sets SVG width?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Square",
+      "Circle shape",
+      "Triangle",
+      "Line"
+    ],
+    "que": "What does <circle> create?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<box>",
+      "<square>",
+      "<shape>",
+      "<rect>"
+    ],
+    "que": "Which element draws rectangles?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Distance",
+      "Path definition",
+      "Direction",
+      "Dimension"
+    ],
+    "que": "What is the 'd' attribute for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "color",
+      "style",
+      "background",
+      "fill"
+    ],
+    "que": "Which property sets fill color?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Shape",
+      "Fill color",
+      "Size",
+      "Outline color"
+    ],
+    "que": "What does 'stroke' define?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Supports animation",
+      "Smaller files",
+      "Better for photos",
+      "Scales without quality loss"
+    ],
+    "que": "Why use SVG over raster?",
+    "ans": "d"
+  }
+]

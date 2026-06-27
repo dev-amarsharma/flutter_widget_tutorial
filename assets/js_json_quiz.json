@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does JSON stand for?",
+    "options": [
+      "Java Standard Object Notation",
+      "JavaScript Object Notation",
+      "Java Script Object Node",
+      "JavaScript Standard Object Node"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is JSON?",
+    "options": [
+      "Data format",
+      "Markup language",
+      "Styling language",
+      "Programming language"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does JSON.parse() do?",
+    "options": [
+      "Converts object to string",
+      "Formats JSON",
+      "Validates JSON",
+      "Converts JSON string to object"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What does JSON.stringify() do?",
+    "options": [
+      "Converts object to JSON string",
+      "Converts string to object",
+      "Validates JSON",
+      "Formats JSON"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What types does JSON support?",
+    "options": [
+      "function, symbol, undefined",
+      "all types",
+      "date, regex",
+      "object, array, string, number, boolean, null"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What happens to undefined?",
+    "options": [
+      "Error",
+      "String",
+      "Omitted in stringify",
+      "Becomes null"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What happens to function?",
+    "options": [
+      "Omitted in stringify",
+      "Becomes null",
+      "String",
+      "Error"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is JSON schema?",
+    "options": [
+      "Stringifies JSON",
+      "Parses JSON",
+      "Validates JSON",
+      "Describes JSON structure"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Is JSON a subset of JS?",
+    "options": [
+      "Sometimes",
+      "Depends",
+      "Yes",
+      "No"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why use JSON?",
+    "options": [
+      "All of above",
+      "Data interchange",
+      "Storage",
+      "API responses"
+    ],
+    "ans": "a"
+  }
+]

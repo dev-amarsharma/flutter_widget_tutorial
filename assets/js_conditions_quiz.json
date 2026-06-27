@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is if statement?",
+    "options": [
+      "Conditional execution",
+      "Function",
+      "Loop",
+      "Variable"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is else?",
+    "options": [
+      "Alternative branch",
+      "Function",
+      "Loop",
+      "Same as if"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is else if?",
+    "options": [
+      "Additional condition",
+      "Nested if",
+      "Loop",
+      "Function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is switch?",
+    "options": [
+      "Loop",
+      "Function",
+      "Multiple conditions",
+      "Single condition"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is case in switch?",
+    "options": [
+      "Variable",
+      "Condition",
+      "Value to match",
+      "Function"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is default in switch?",
+    "options": [
+      "First case",
+      "Fallback case",
+      "Last case",
+      "Error case"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is ternary operator?",
+    "options": [
+      "condition ? true : false",
+      "condition ? false : true",
+      "false ? condition : true",
+      "true ? condition : false"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What are truthy values?",
+    "options": [
+      "Always false",
+      "Values considered true",
+      "Undefined",
+      "Always true"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What are falsy values?",
+    "options": [
+      "Always true",
+      "Values considered false",
+      "Defined",
+      "Always false"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is short-circuiting?",
+    "options": [
+      "Reverse evaluation",
+      "&& and || evaluation",
+      "Skip evaluation",
+      "Fast evaluation"
+    ],
+    "ans": "b"
+  }
+]

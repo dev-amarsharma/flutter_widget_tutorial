@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["$primary-color", "--primary-color", "-primary-color", "var-primary-color"],
+    "que": "What is the correct syntax to define a CSS custom property named 'primary-color'?",
+    "ans": "b"
+  },
+  {
+    "options": ["color: --primary-color", "color: $(--primary-color)", "color: var(--primary-color)", "color: @primary-color"],
+    "que": "How do you use a CSS custom property named '--primary-color'?",
+    "ans": "c"
+  },
+  {
+    "options": [":root", "*", "html", "body"],
+    "que": "Which selector is typically used to define globally available CSS variables?",
+    "ans": "a"
+  },
+  {
+    "options": ["color: var(--text, #333)", "color: var(--text || #333)", "color: var(--text, default: #333)", "color: var(--text) or #333"],
+    "que": "Which is the correct syntax to use a CSS variable with a fallback of #333?",
+    "ans": "a"
+  },
+  {
+    "options": ["CSS variables cannot be overridden in child selectors", "A variable defined in a scoped selector overrides :root for elements inside that selector", "CSS variables only work in :root", "Scoped variables require JavaScript to work"],
+    "que": "What happens when a CSS variable is redefined inside a scoped selector?",
+    "ans": "b"
+  },
+  {
+    "options": ["CSS variables are case-insensitive", "CSS variables are case-sensitive (--Color differs from --color)", "CSS variables can start with a single dash", "CSS variables cannot be used for spacing values"],
+    "que": "Which statement about CSS variable names is correct?",
+    "ans": "b"
+  },
+  {
+    "options": ["document.documentElement.style.setProperty('--color', 'red')", "CSS.setVariable('--color', 'red')", "document.style.variable('--color', 'red')", "setProperty(document, '--color', 'red')"],
+    "que": "Which JavaScript code correctly sets a CSS custom property?",
+    "ans": "a"
+  },
+  {
+    "options": ["CSS variables work inside media query conditions", "You can use CSS variables for media query breakpoint values directly", "CSS variables cannot be used as media query values", "CSS variables in media queries require the @var rule"],
+    "que": "Can CSS custom properties be used as values inside media query conditions?",
+    "ans": "c"
+  },
+  {
+    "options": ["They are inherited by child elements", "They do not participate in inheritance", "Only color variables are inherited", "Variables are inherited only when using !important"],
+    "que": "How do CSS custom properties behave with respect to inheritance?",
+    "ans": "a"
+  },
+  {
+    "options": ["They require a preprocessor like Sass", "They are native browser features with no build step needed", "They only work in modern frameworks", "They cannot be changed at runtime"],
+    "que": "What is a key advantage of CSS custom properties over preprocessor variables?",
+    "ans": "b"
+  }
+]

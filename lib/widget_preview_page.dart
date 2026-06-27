@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:flutter_highlight/flutter_highlight.dart';
+import 'package:flutter_highlight/themes/github.dart';
+import 'package:flutter_highlight/themes/atom-one-dark.dart';
+import 'package:markdown/markdown.dart' as md;
 import 'dart:convert';
 import 'widgets/banner_ad_widget.dart';
 import 'services/interstitial_ad_service.dart';
@@ -9,10 +13,13 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'models/quiz_question.dart';
 import 'models/topic_manifest.dart';
 import 'screens/quiz_screen.dart' show QuizScreen, QuizResult;
+import 'services/achievement_service.dart';
+import 'services/analytics_service.dart';
 import 'services/performance_service.dart';
 import 'services/app_share_service.dart';
 import 'services/app_config_service.dart';
 import 'services/topics_manifest_repository.dart';
+import 'screens/code_playground_screen.dart';
 
 class WidgetPreviewPage extends StatefulWidget {
   final String assetPath;
@@ -51,6 +58,11 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
     interstitialAdService.handleWidgetPageNavigation();
     // Load rewarded ad
     rewardedAdService.loadRewardedAd();
+    analyticsService.logLessonOpened(
+      widget.topicId ?? widget.assetPath,
+      widget.title ?? widget.assetPath,
+    );
+    analyticsService.logScreenView('lesson_detail');
   }
 
   Future<void> _loadTopicMetadata() async {
@@ -202,6 +214,30 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
           result.totalQuestions,
           topicId: widget.topicId ?? _topicMetadata?.id,
         );
+        analyticsService.logQuizCompleted(
+          topicId: widget.topicId ?? widget.assetPath,
+          score: result.correctAnswers,
+          totalQuestions: result.totalQuestions,
+        );
+        final newAchievements = await achievementService.checkAndUnlock(
+          readCount: performanceService.readAssets.length,
+          streakCount: performanceService.streakCount,
+          totalXp: performanceService.totalXp,
+          level: performanceService.level,
+          quizScores: performanceService.quizScores,
+        );
+        if (mounted) {
+          for (final a in newAchievements) {
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+              content: Row(children: [
+                Icon(a.icon, color: a.color, size: 20),
+                const SizedBox(width: 8),
+                Text('Achievement unlocked: ${a.name}!'),
+              ]),
+              duration: const Duration(seconds: 3),
+            ));
+          }
+        }
 
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -251,6 +287,7 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
       assetPath: widget.assetPath,
     );
 
+    final isDark = theme.brightness == Brightness.dark;
     final styleSheet = MarkdownStyleSheet.fromTheme(theme).copyWith(
       h1: TextStyle(
         fontSize: 28,
@@ -262,6 +299,11 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
         fontWeight: FontWeight.bold,
         color: theme.colorScheme.secondary,
       ),
+      h3: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: theme.colorScheme.secondary,
+      ),
       p: TextStyle(
         fontSize: 16,
         height: 1.6,
@@ -269,17 +311,30 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
       ),
       code: TextStyle(
         fontFamily: 'monospace',
-        fontSize: 12,
-        color: theme.colorScheme.secondary,
+        fontSize: 13,
+        color: isDark ? Colors.orange.shade200 : Colors.deepOrange.shade700,
+        backgroundColor: isDark ? Colors.white12 : Colors.orange.shade50,
       ),
       codeblockDecoration: BoxDecoration(
-        color: theme.colorScheme.primary.withOpacity(0.08),
+        color: isDark ? const Color(0xFF282C34) : const Color(0xFFF6F8FA),
         borderRadius: const BorderRadius.all(Radius.circular(8)),
-        border: Border.all(color: theme.dividerColor),
+        border: Border.all(
+          color: isDark ? Colors.white12 : Colors.black12,
+        ),
       ),
       a: TextStyle(
         color: theme.colorScheme.secondary,
         decoration: TextDecoration.underline,
+      ),
+      blockquoteDecoration: BoxDecoration(
+        color: isDark ? Colors.white10 : Colors.orange.shade50,
+        borderRadius: BorderRadius.circular(4),
+        border: Border(
+          left: BorderSide(
+            color: theme.colorScheme.primary,
+            width: 4,
+          ),
+        ),
       ),
     );
 
@@ -295,6 +350,17 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
             theme.appBarTheme.backgroundColor ?? theme.colorScheme.primary,
         titleTextStyle: theme.appBarTheme.titleTextStyle,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.code_rounded),
+            tooltip: 'Code Playground',
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const CodePlaygroundScreen(),
+                ),
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.share),
             tooltip: 'Share app',
@@ -312,12 +378,30 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
             onPressed:
                 isRead
                     ? null
-                    : () {
+                    : () async {
                         widget.onMarkAsRead(
                           widget.assetPath,
                           topicId: widget.topicId ?? _topicMetadata?.id,
                         );
                         setState(() {});
+                        final newly = await achievementService.checkAndUnlock(
+                          readCount: performanceService.readAssets.length,
+                          streakCount: performanceService.streakCount,
+                          totalXp: performanceService.totalXp,
+                          level: performanceService.level,
+                          quizScores: performanceService.quizScores,
+                        );
+                        if (!context.mounted) return;
+                        for (final a in newly) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            content: Row(children: [
+                              Icon(a.icon, color: a.color, size: 20),
+                              const SizedBox(width: 8),
+                              Text('Achievement unlocked: ${a.name}!'),
+                            ]),
+                            duration: const Duration(seconds: 3),
+                          ));
+                        }
                       },
           ),
         ],
@@ -337,6 +421,9 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
                   child: Markdown(
                     data: _markdownData!,
                     styleSheet: styleSheet,
+                    builders: {
+                      'pre': _CodeBlockBuilder(isDark: isDark),
+                    },
                     onTapLink: (text, href, title) async {
                       if (href != null &&
                           href.startsWith('assets/') &&
@@ -508,6 +595,120 @@ class _WidgetPreviewPageState extends State<WidgetPreviewPage> {
           fontSize: 12,
           fontWeight: FontWeight.w700,
         ),
+      ),
+    );
+  }
+}
+
+class _CodeBlockBuilder extends MarkdownElementBuilder {
+  final bool isDark;
+  _CodeBlockBuilder({required this.isDark});
+
+  @override
+  Widget? visitElementAfter(md.Element element, TextStyle? preferredStyle) {
+    var code = element.textContent;
+    if (code.endsWith('\n')) code = code.substring(0, code.length - 1);
+
+    String language = 'plaintext';
+    if (element.children != null && element.children!.isNotEmpty) {
+      final first = element.children!.first;
+      if (first is md.Element) {
+        final cls = first.attributes['class'];
+        if (cls != null && cls.startsWith('language-')) {
+          language = cls.replaceFirst('language-', '');
+        }
+      }
+    }
+
+    return _CopyableCodeBlock(code: code, language: language, isDark: isDark);
+  }
+}
+
+class _CopyableCodeBlock extends StatefulWidget {
+  final String code;
+  final String language;
+  final bool isDark;
+
+  const _CopyableCodeBlock({
+    required this.code,
+    required this.language,
+    required this.isDark,
+  });
+
+  @override
+  State<_CopyableCodeBlock> createState() => _CopyableCodeBlockState();
+}
+
+class _CopyableCodeBlockState extends State<_CopyableCodeBlock> {
+  bool _copied = false;
+
+  static const _webLanguages = {'html', 'css', 'js', 'javascript'};
+
+  void _openPlayground(BuildContext context) {
+    final lang = widget.language.toLowerCase();
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (_) => CodePlaygroundScreen(
+        initialHtml: lang == 'html' ? widget.code : null,
+        initialCss: lang == 'css' ? widget.code : null,
+        initialJs:
+            (lang == 'js' || lang == 'javascript') ? widget.code : null,
+      ),
+    ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final lang = widget.language.toLowerCase();
+    final isWebLang = _webLanguages.contains(lang);
+    final buttonColor = widget.isDark ? Colors.white60 : Colors.black38;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: Stack(
+        children: [
+          HighlightView(
+            widget.code,
+            language: widget.language,
+            theme: widget.isDark ? atomOneDarkTheme : githubTheme,
+            padding: EdgeInsets.fromLTRB(12, 12, isWebLang ? 84 : 44, 12),
+            textStyle: const TextStyle(
+              fontFamily: 'monospace',
+              fontSize: 13,
+              height: 1.5,
+            ),
+          ),
+          Positioned(
+            top: 4,
+            right: 4,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (isWebLang)
+                  IconButton(
+                    icon: const Icon(Icons.play_circle_outline_rounded, size: 16),
+                    color: Colors.deepOrange.shade300,
+                    tooltip: 'Try it in Playground',
+                    onPressed: () => _openPlayground(context),
+                  ),
+                IconButton(
+                  icon: Icon(
+                    _copied ? Icons.check_rounded : Icons.copy_rounded,
+                    size: 16,
+                  ),
+                  color: buttonColor,
+                  tooltip: _copied ? 'Copied!' : 'Copy code',
+                  onPressed: () {
+                    Clipboard.setData(ClipboardData(text: widget.code));
+                    setState(() => _copied = true);
+                    Future.delayed(const Duration(seconds: 2), () {
+                      if (mounted) setState(() => _copied = false);
+                    });
+                  },
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

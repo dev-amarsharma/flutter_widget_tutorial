@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is arrow function?",
+    "options": [
+      "() -> {}",
+      "() => {}",
+      "function() {}",
+      "=> {}"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is lexical this?",
+    "options": [
+      "Inherits from outer scope",
+      "Undefined this",
+      "Global this",
+      "Own this"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can arrow functions be constructors?",
+    "options": [
+      "Depends",
+      "No",
+      "Yes",
+      "Sometimes"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What if single parameter?",
+    "options": [
+      "Must use parentheses",
+      "Use braces",
+      "Use brackets",
+      "Can omit parentheses"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What if single expression?",
+    "options": [
+      "Must use braces",
+      "Can omit braces and return",
+      "Must use return",
+      "Use brackets"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is implicit return?",
+    "options": [
+      "Optional return",
+      "No return keyword needed",
+      "Must use return",
+      "No return"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "Do arrow functions have arguments?",
+    "options": [
+      "No",
+      "Yes",
+      "Depends",
+      "Sometimes"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Can arrow functions be named?",
+    "options": [
+      "Yes",
+      "Depends",
+      "Sometimes",
+      "No, always anonymous"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What about super in arrow?",
+    "options": [
+      "Own super",
+      "Global super",
+      "Uses lexical super",
+      "No super"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "When to use arrow functions?",
+    "options": [
+      "Constructors, methods",
+      "Callbacks, short functions",
+      "Event handlers",
+      "Global functions"
+    ],
+    "ans": "b"
+  }
+]

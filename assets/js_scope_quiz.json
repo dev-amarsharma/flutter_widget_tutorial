@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is scope?",
+    "options": [
+      "Function",
+      "File",
+      "Code block",
+      "Variable accessibility"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is global scope?",
+    "options": [
+      "Inside block",
+      "Inside function",
+      "Accessible everywhere",
+      "Nowhere"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is function scope?",
+    "options": [
+      "Global",
+      "Module",
+      "Block",
+      "Inside function"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is block scope?",
+    "options": [
+      "Inside {}",
+      "Global",
+      "Module",
+      "Inside function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is lexical scope?",
+    "options": [
+      "Based on runtime",
+      "Based on context",
+      "Based on code structure",
+      "Based on call"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is closure?",
+    "options": [
+      "Closed function",
+      "Function with outer scope access",
+      "Global function",
+      "Local function"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is var scope?",
+    "options": [
+      "Module scope",
+      "Global scope",
+      "Function scope",
+      "Block scope"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is let scope?",
+    "options": [
+      "Global scope",
+      "Function scope",
+      "Block scope",
+      "Module scope"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is const scope?",
+    "options": [
+      "Function scope",
+      "Module scope",
+      "Block scope",
+      "Global scope"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is module scope?",
+    "options": [
+      "Block",
+      "Global",
+      "Inside module file",
+      "Function"
+    ],
+    "ans": "c"
+  }
+]

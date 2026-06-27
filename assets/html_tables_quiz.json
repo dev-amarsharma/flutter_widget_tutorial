@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<tab>",
+      "<grid>",
+      "<table>",
+      "<data>"
+    ],
+    "que": "Which element creates tables?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Table cell",
+      "Table header",
+      "Table column",
+      "Table row"
+    ],
+    "que": "What does <tr> define?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "<header>",
+      "<head>",
+      "<th>",
+      "<td>"
+    ],
+    "que": "Which element for table headers?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Table body",
+      "Table row",
+      "Table data cell",
+      "Table header"
+    ],
+    "que": "What is <td> for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<top>",
+      "<head>",
+      "<thead>",
+      "<header>"
+    ],
+    "que": "Which element groups header rows?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Table body rows",
+      "All rows",
+      "Footer rows",
+      "Header rows"
+    ],
+    "que": "What does <tbody> contain?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "<desc>",
+      "<label>",
+      "<caption>",
+      "<title>"
+    ],
+    "que": "Which element for table captions?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Spans multiple columns",
+      "Sets height",
+      "Sets width",
+      "Spans rows"
+    ],
+    "que": "What does 'colspan' do?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "padding",
+      "margin",
+      "cellpadding",
+      "space"
+    ],
+    "que": "Which attribute for cell padding?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Accessibility and semantics",
+      "Styling",
+      "Size",
+      "Position"
+    ],
+    "que": "Why use <th> over <td>?",
+    "ans": "a"
+  }
+]

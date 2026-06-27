@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is sessionStorage?",
+    "options": [
+      "File storage",
+      "Memory storage",
+      "Session-only storage",
+      "Persistent storage"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to store data?",
+    "options": [
+      "sessionStorage[key] = value",
+      "sessionStorage.add(key, value)",
+      "sessionStorage.put(key, value)",
+      "sessionStorage.setItem(key, value)"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to get data?",
+    "options": [
+      "sessionStorage[key]",
+      "sessionStorage.get(key)",
+      "sessionStorage.getItem(key)",
+      "sessionStorage.read(key)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to remove data?",
+    "options": [
+      "sessionStorage.delete(key)",
+      "delete sessionStorage[key]",
+      "sessionStorage.removeItem(key)",
+      "sessionStorage.clear(key)"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to clear all?",
+    "options": [
+      "sessionStorage.deleteAll()",
+      "sessionStorage.removeAll()",
+      "sessionStorage.clear()",
+      "sessionStorage.empty()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What type are values?",
+    "options": [
+      "Numbers",
+      "Strings",
+      "Objects",
+      "Booleans"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to store object?",
+    "options": [
+      "Object.toString()",
+      "JSON.stringify()",
+      "JSON.parse()",
+      "Object.stringify()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to retrieve object?",
+    "options": [
+      "JSON.stringify()",
+      "Object.parse()",
+      "JSON.parse()",
+      "Object.fromString()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is storage limit?",
+    "options": [
+      "Unlimited",
+      "1MB",
+      "100MB",
+      "5-10MB"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Does it persist?",
+    "options": [
+      "Yes, across sessions",
+      "No, session only",
+      "No, tab only",
+      "No, page only"
+    ],
+    "ans": "b"
+  }
+]

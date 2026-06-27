@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<data>",
+      "<form>",
+      "<field>",
+      "<input>"
+    ],
+    "que": "Which element creates an HTML form?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "target",
+      "method",
+      "action",
+      "send"
+    ],
+    "que": "What attribute specifies where form data is sent?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "text",
+      "mail",
+      "address",
+      "email"
+    ],
+    "que": "Which input type is for email addresses?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Defines the placeholder",
+      "Sets the field type",
+      "Makes the field mandatory",
+      "Specifies the value"
+    ],
+    "que": "What does the 'required' attribute do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<dropdown>",
+      "<list>",
+      "<select>",
+      "<option>"
+    ],
+    "que": "Which element creates a dropdown?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Specifies validation",
+      "Identifies the field in submitted data",
+      "Sets the display label",
+      "Defines the input type"
+    ],
+    "que": "What is the purpose of the 'name' attribute?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "secure",
+      "hidden",
+      "password",
+      "text"
+    ],
+    "que": "Which input type is for passwords?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Creates a button",
+      "Sets focus",
+      "Adds a title",
+      "Associates text with a form control"
+    ],
+    "que": "What does <label> do?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "help",
+      "hint",
+      "text",
+      "placeholder"
+    ],
+    "que": "Which attribute provides hint text?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Defines input types",
+      "Sets form action",
+      "Specifies HTTP method (GET/POST)",
+      "Controls validation"
+    ],
+    "que": "What is the 'method' attribute for?",
+    "ans": "c"
+  }
+]

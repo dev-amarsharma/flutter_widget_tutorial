@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<movie>",
+      "<media>",
+      "<video>",
+      "<play>"
+    ],
+    "que": "Which element embeds video?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "src",
+      "source",
+      "url",
+      "file"
+    ],
+    "que": "What attribute sets video source?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "interface",
+      "buttons",
+      "controls",
+      "panel"
+    ],
+    "que": "Which attribute shows controls?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Mutes video",
+      "Loops video",
+      "Pauses video",
+      "Starts automatically"
+    ],
+    "que": "What does 'autoplay' do?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "continue",
+      "cycle",
+      "loop",
+      "repeat"
+    ],
+    "que": "Which attribute for looping?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Speed",
+      "Loading behavior",
+      "Quality",
+      "Volume"
+    ],
+    "que": "What is 'preload' for?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "MOV",
+      "MP4, WebM, OGG",
+      "AVI",
+      "WMV"
+    ],
+    "que": "Which formats supported?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "<alt>",
+      "<source>",
+      "<text>",
+      "<fallback>"
+    ],
+    "que": "What provides fallback?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "text",
+      "<track>",
+      "subtitles",
+      "caption"
+    ],
+    "que": "Which attribute for subtitles?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Overlay",
+      "Thumbnail image",
+      "Background",
+      "Border"
+    ],
+    "que": "Why use poster attribute?",
+    "ans": "b"
+  }
+]

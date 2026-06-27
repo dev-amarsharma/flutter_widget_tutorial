@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Using only inline styles",
+      "Ignoring structure",
+      "Using elements that convey meaning",
+      "Using divs for everything"
+    ],
+    "que": "What is semantic HTML?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "To reduce file size",
+      "To add more features",
+      "To make it look better",
+      "To ensure it follows standards"
+    ],
+    "que": "Why should you validate HTML?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "To explain code for developers",
+      "To add styles",
+      "To create links",
+      "To display text to users"
+    ],
+    "que": "What is the purpose of comments in HTML?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Using images only",
+      "Using tables for layout",
+      "Using bold text",
+      "Using proper headings"
+    ],
+    "que": "Which is better for accessibility?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Comments",
+      "Semantic elements",
+      "Validation",
+      "Deprecated elements"
+    ],
+    "que": "What should you avoid in HTML?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "To mix with JavaScript",
+      "For better maintainability",
+      "To inline styles",
+      "To avoid CSS"
+    ],
+    "que": "Why use external CSS?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "To define styles",
+      "To specify HTML version",
+      "To add scripts",
+      "To set the title"
+    ],
+    "que": "What is the role of DOCTYPE?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "For faster loading",
+      "To use more images",
+      "To ignore caching",
+      "To add more content"
+    ],
+    "que": "Why minimize HTTP requests?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Ignoring older browsers",
+      "Starting with advanced features",
+      "Starting with basics and adding features",
+      "Using only JavaScript"
+    ],
+    "que": "What is progressive enhancement?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "To add captions",
+      "For accessibility",
+      "To make images larger",
+      "To replace text"
+    ],
+    "que": "Why use alt text on images?",
+    "ans": "b"
+  }
+]

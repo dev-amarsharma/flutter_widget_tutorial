@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Content",
+      "Attributes",
+      "Element markers",
+      "Styles"
+    ],
+    "que": "What are HTML tags?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<span>",
+      "<img>",
+      "<div>",
+      "<p>"
+    ],
+    "que": "Which is a self-closing tag?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Closing slash",
+      "Attributes",
+      "Content",
+      "Element name"
+    ],
+    "que": "What do opening tags contain?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "</>",
+      "</tag>",
+      "< />",
+      "</ >"
+    ],
+    "que": "Which symbol closes tags?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Additional info in tags",
+      "Tag styles",
+      "Tag names",
+      "Tag content"
+    ],
+    "que": "What are attributes?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "<tag=value>",
+      "<tag attr value>",
+      "<tag attr=\"value\">",
+      "<tag attr=value>"
+    ],
+    "que": "Which is correct syntax?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Single tags",
+      "Tags inside tags",
+      "Tags outside",
+      "Tags beside tags"
+    ],
+    "que": "What is nesting?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Void elements",
+      "Container elements",
+      "Block elements",
+      "Inline elements"
+    ],
+    "que": "Which tags don't need closing?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Tags are case sensitive",
+      "Only content",
+      "Only attributes",
+      "Tags are not case sensitive"
+    ],
+    "que": "What is case sensitivity?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Reduce size",
+      "Change appearance",
+      "Check syntax",
+      "Add features"
+    ],
+    "que": "Why validate HTML?",
+    "ans": "c"
+  }
+]

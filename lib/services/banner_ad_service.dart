@@ -1,28 +1,9 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
-import 'dart:io';
+import '../config/ad_config.dart';
 
 /// Service class for managing banner ads
 class BannerAdService {
-  static const String _bannerAdUnitId = 'ca-app-pub-7287011693739626/5033449413';
-  
-  // Ad unit ID getter - returns actual ad unit ID
-  // For testing, you can temporarily replace with test IDs:
-  // Android: 'ca-app-pub-3940256099942544/6300978111'
-  // iOS: 'ca-app-pub-3940256099942544/2934735716'
-  static String get bannerAdUnitId {
-    // In debug mode, you might want to use test ad unit IDs
-    if (kDebugMode) {
-      if (Platform.isAndroid) {
-        return 'ca-app-pub-3940256099942544/6300978111';
-      } else if (Platform.isIOS) {
-        return 'ca-app-pub-3940256099942544/2934735716';
-      }
-    }
-    return _bannerAdUnitId;
-  }
-
   /// Creates a BannerAd with the specified ad unit ID
   static BannerAd createBannerAd({
     required AdSize adSize,
@@ -30,7 +11,7 @@ class BannerAdService {
     void Function(Ad)? onAdLoaded,
   }) {
     return BannerAd(
-      adUnitId: bannerAdUnitId,
+      adUnitId: AdConfig.banner,
       size: adSize,
       request: const AdRequest(),
       listener: BannerAdListener(

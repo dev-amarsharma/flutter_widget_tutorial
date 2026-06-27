@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<title>",
+      "<body>",
+      "<html>",
+      "<head>"
+    ],
+    "que": "Where are meta tags placed?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Sets language",
+      "Sets title",
+      "Sets description",
+      "Sets character encoding"
+    ],
+    "que": "What does <meta charset> do?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "viewport",
+      "scale",
+      "device",
+      "width"
+    ],
+    "que": "Which meta tag sets viewport?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Search engine snippets",
+      "Author",
+      "Page title",
+      "Keywords"
+    ],
+    "que": "What is meta description for?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "value",
+      "content",
+      "data",
+      "text"
+    ],
+    "que": "Which attribute specifies meta content?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Defines protocol",
+      "HTTP header equivalent",
+      "Sets HTTP method",
+      "Adds security"
+    ],
+    "que": "What does 'http-equiv' do?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Page styling",
+      "Navigation",
+      "SEO (though less important now)",
+      "Content structure"
+    ],
+    "que": "Why use meta keywords?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Site owner",
+      "Developer",
+      "Page author",
+      "Content creator"
+    ],
+    "que": "What is the 'author' meta for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "nofollow",
+      "robots",
+      "none",
+      "noindex"
+    ],
+    "que": "Which meta prevents indexing?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Updates content",
+      "Redirects or refreshes page",
+      "Refreshes cache",
+      "Reloads styles"
+    ],
+    "que": "What does 'refresh' meta do?",
+    "ans": "b"
+  }
+]

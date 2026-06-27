@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What does DOM stand for?",
+    "options": [
+      "Document Object Method",
+      "Document Object Model",
+      "Document Oriented Model",
+      "Data Object Model"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to select element by ID?",
+    "options": [
+      "getElementById()",
+      "getElementsByTagName()",
+      "querySelector()",
+      "getElementByClass()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does querySelector() return?",
+    "options": [
+      "Element array",
+      "First matching element",
+      "All matching elements",
+      "Node list"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "How to change element text?",
+    "options": [
+      "element.innerHTML = 'text'",
+      "element.value = 'text'",
+      "element.text = 'text'",
+      "element.textContent = 'text'"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is innerHTML?",
+    "options": [
+      "Attribute value",
+      "Element value",
+      "Text content",
+      "HTML content as string"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to add event listener?",
+    "options": [
+      "attachEvent()",
+      "listenEvent()",
+      "addEventListener()",
+      "onEvent()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does createElement() do?",
+    "options": [
+      "Removes element",
+      "Updates element",
+      "Creates new element",
+      "Selects element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to append child?",
+    "options": [
+      "insertChild()",
+      "appendChild()",
+      "pushChild()",
+      "addChild()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is document.body?",
+    "options": [
+      "Head element",
+      "Document root",
+      "Body element",
+      "HTML element"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to get element by class?",
+    "options": [
+      "querySelectorAll('.class')",
+      "getClassElements()",
+      "getElementByClass()",
+      "getElementsByClassName()"
+    ],
+    "ans": "d"
+  }
+]

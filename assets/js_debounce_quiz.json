@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is debouncing?",
+    "options": [
+      "Stops execution",
+      "Delays execution until inactivity",
+      "Executes immediately",
+      "Executes repeatedly"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is throttling?",
+    "options": [
+      "Limits execution rate",
+      "Stops execution",
+      "Repeats execution",
+      "Delays execution"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When to use debounce?",
+    "options": [
+      "Scroll events",
+      "Input events like search",
+      "Load events",
+      "Click events"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "When to use throttle?",
+    "options": [
+      "Click events",
+      "Scroll, resize events",
+      "Load events",
+      "Input events"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is setTimeout?",
+    "options": [
+      "Calls immediately",
+      "Repeats call",
+      "Schedules function call",
+      "Cancels call"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is clearTimeout?",
+    "options": [
+      "Repeats call",
+      "Schedules call",
+      "Calls immediately",
+      "Cancels scheduled call"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to implement debounce?",
+    "options": [
+      "Clear and set timeout",
+      "Clear only",
+      "No timeout",
+      "Set timeout only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is leading edge?",
+    "options": [
+      "Execute at start",
+      "Execute in middle",
+      "Execute at end",
+      "Don't execute"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is trailing edge?",
+    "options": [
+      "Execute at start",
+      "Execute in middle",
+      "Don't execute",
+      "Execute at end"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why use debounce/throttle?",
+    "options": [
+      "Compatibility",
+      "Syntax",
+      "Performance optimization",
+      "Code size"
+    ],
+    "ans": "c"
+  }
+]

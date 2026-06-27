@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is DOM?",
+    "options": [
+      "Document Oriented Model",
+      "Document Object Method",
+      "Document Object Model",
+      "Data Object Model"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "How to select by ID?",
+    "options": [
+      "querySelector()",
+      "getElementByClass()",
+      "getElementById()",
+      "getElementsByTagName()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does querySelector() return?",
+    "options": [
+      "First element",
+      "Array",
+      "All elements",
+      "List"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to change text?",
+    "options": [
+      "textContent",
+      "attribute",
+      "value",
+      "innerHTML"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is innerHTML?",
+    "options": [
+      "HTML string",
+      "Text string",
+      "Attribute",
+      "Value"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to add event?",
+    "options": [
+      "attach()",
+      "listen()",
+      "addEventListener()",
+      "onEvent()"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What does createElement() do?",
+    "options": [
+      "Selects element",
+      "Removes element",
+      "Updates element",
+      "Creates element"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to append?",
+    "options": [
+      "addChild()",
+      "insert()",
+      "push()",
+      "appendChild()"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is classList?",
+    "options": [
+      "Manage classes",
+      "List elements",
+      "List attributes",
+      "List children"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to remove element?",
+    "options": [
+      "delete()",
+      "erase()",
+      "remove()",
+      "clear()"
+    ],
+    "ans": "c"
+  }
+]

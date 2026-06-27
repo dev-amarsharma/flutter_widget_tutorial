@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is event?",
+    "options": [
+      "User action or occurrence",
+      "Function",
+      "Variable",
+      "Object"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to add listener?",
+    "options": [
+      "attach()",
+      "addEventListener()",
+      "onEvent()",
+      "listen()"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is event object?",
+    "options": [
+      "Contains event info",
+      "Event type",
+      "Event handler",
+      "Event target"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is event.target?",
+    "options": [
+      "Parent",
+      "Element that triggered",
+      "Event type",
+      "Handler"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What does preventDefault() do?",
+    "options": [
+      "Stops bubbling",
+      "Removes listener",
+      "Adds listener",
+      "Stops default action"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is bubbling?",
+    "options": [
+      "Event propagates up",
+      "Event propagates down",
+      "Event repeats",
+      "Event stops"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to stop bubbling?",
+    "options": [
+      "stopPropagation()",
+      "preventDefault()",
+      "cancel()",
+      "stopEvent()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is capturing?",
+    "options": [
+      "Event propagates up",
+      "Event repeats",
+      "Event propagates down",
+      "Event stops"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is event delegation?",
+    "options": [
+      "Handle on parent",
+      "Handle on child",
+      "Handle on window",
+      "Handle on document"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How to remove listener?",
+    "options": [
+      "removeEventListener()",
+      "unlisten()",
+      "off()",
+      "detach()"
+    ],
+    "ans": "a"
+  }
+]

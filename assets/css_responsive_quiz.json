@@ -1,0 +1,52 @@
+[
+  {
+    "options": ["<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">", "<meta name=\"mobile\" content=\"true\">", "<meta charset=\"responsive\">", "<meta viewport=\"device-width\">"],
+    "que": "Which HTML meta tag is essential for responsive design on mobile devices?",
+    "ans": "a"
+  },
+  {
+    "options": ["@media screen { }", "@media (max-width: 768px) { }", "@responsive (768px) { }", "@breakpoint(768px) { }"],
+    "que": "Which is valid CSS syntax for a media query targeting screens up to 768px wide?",
+    "ans": "b"
+  },
+  {
+    "options": ["Mobile-first uses max-width queries", "Mobile-first starts with styles for the smallest screen and adds complexity with min-width queries", "Mobile-first means creating a separate mobile site", "Mobile-first is the same as desktop-first"],
+    "que": "What is the mobile-first approach in responsive design?",
+    "ans": "b"
+  },
+  {
+    "options": ["min-width", "max-width", "exact-width", "screen-width"],
+    "que": "In a mobile-first approach, which media feature keyword is typically used to add styles for larger screens?",
+    "ans": "a"
+  },
+  {
+    "options": ["max-width: 100%", "width: auto", "max-width: 100%; height: auto", "responsive: true"],
+    "que": "Which CSS rule makes images responsive so they never exceed their container width?",
+    "ans": "c"
+  },
+  {
+    "options": ["It makes images larger on mobile", "Mobile browsers render pages as desktop-width and scale down without it", "It sets the font size to device pixels", "It enables touch events"],
+    "que": "What happens if you omit the viewport meta tag on a mobile browser?",
+    "ans": "b"
+  },
+  {
+    "options": ["@media (orientation: portrait)", "@media (orientation: vertical)", "@media (screen: portrait)", "@media (mode: portrait)"],
+    "que": "Which media query targets devices in portrait orientation?",
+    "ans": "a"
+  },
+  {
+    "options": ["clamp(1rem, 2.5vw, 1.5rem)", "font-size: responsive", "font-size: fluid(1rem, 1.5rem)", "font-size: vw(2.5)"],
+    "que": "Which CSS value creates a fluid font size that scales between a minimum and maximum?",
+    "ans": "a"
+  },
+  {
+    "options": ["@media (prefers-color-scheme: dark)", "@media (theme: dark)", "@media (color-mode: dark)", "@media (dark-mode: true)"],
+    "que": "Which media query detects if the user prefers a dark color scheme?",
+    "ans": "a"
+  },
+  {
+    "options": ["320px", "480px", "768px", "1024px"],
+    "que": "Which breakpoint is commonly used to target tablets in a mobile-first layout?",
+    "ans": "c"
+  }
+]

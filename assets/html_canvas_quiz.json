@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Creating forms",
+      "Displaying images",
+      "Playing videos",
+      "Drawing graphics with JavaScript"
+    ],
+    "que": "What is the HTML <canvas> element used for?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "createContext('2d')",
+      "getContext('2d')",
+      "getCanvas('2d')",
+      "drawContext('2d')"
+    ],
+    "que": "Which method gets the 2D rendering context?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Draws an outline rectangle",
+      "Clears the canvas",
+      "Sets the fill color",
+      "Draws a filled rectangle"
+    ],
+    "que": "What does the fillRect method do?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "fillStyle",
+      "background",
+      "color",
+      "style"
+    ],
+    "que": "Which property sets the fill color?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Starts a new path",
+      "Saves the path",
+      "Clears the path",
+      "Ends a path"
+    ],
+    "que": "What is the purpose of beginPath?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "drawLine",
+      "lineTo",
+      "pathTo",
+      "moveTo"
+    ],
+    "que": "Which method draws a line to a point?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Draws the outline of the current path",
+      "Saves the drawing",
+      "Fills the path",
+      "Clears the canvas"
+    ],
+    "que": "What does stroke() do?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "arc",
+      "circle",
+      "round",
+      "curve"
+    ],
+    "que": "Which method draws an arc?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "JavaScript methods",
+      "CSS properties",
+      "Attributes set in HTML",
+      "Default 300x150"
+    ],
+    "que": "What is the canvas width and height?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "To display images",
+      "To add text",
+      "For browsers that don't support it",
+      "To play audio"
+    ],
+    "que": "Why provide fallback content for canvas?",
+    "ans": "c"
+  }
+]

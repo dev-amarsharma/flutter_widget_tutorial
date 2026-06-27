@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "<image>",
+      "<photo>",
+      "<pic>",
+      "<img>"
+    ],
+    "que": "Which element displays images?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "url",
+      "file",
+      "src",
+      "source"
+    ],
+    "que": "What attribute specifies the image source?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "For loading",
+      "For styling",
+      "For accessibility",
+      "For sizing"
+    ],
+    "que": "Why is 'alt' text important?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "w",
+      "dimension",
+      "width",
+      "size"
+    ],
+    "que": "Which attribute sets image width?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Prevents loading",
+      "Defers loading until needed",
+      "Loads in background",
+      "Loads immediately"
+    ],
+    "que": "What does 'loading=\"lazy\"' do?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Only PNG",
+      "JPEG, PNG, GIF, SVG",
+      "Only GIF",
+      "Only JPEG"
+    ],
+    "que": "Which formats are supported?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Filename",
+      "Caption",
+      "Tooltip text",
+      "Alt text"
+    ],
+    "que": "What is the 'title' attribute for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "For faster loading",
+      "For different screen sizes",
+      "For smaller files",
+      "For better quality"
+    ],
+    "que": "Why use responsive images?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Adds borders",
+      "Displays single image",
+      "Provides multiple sources",
+      "Creates gallery"
+    ],
+    "que": "What does <picture> element do?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Alt text is shown",
+      "Page breaks",
+      "Error message",
+      "Blank space"
+    ],
+    "que": "What happens if image fails to load?",
+    "ans": "a"
+  }
+]

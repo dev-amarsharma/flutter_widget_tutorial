@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is this?",
+    "options": [
+      "Function object",
+      "Current execution context",
+      "Variable",
+      "Global object"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is this in global?",
+    "options": [
+      "window (non-strict)",
+      "null",
+      "global",
+      "undefined (strict)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is this in function?",
+    "options": [
+      "window (non-strict)",
+      "caller",
+      "callee",
+      "undefined (strict)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is this in method?",
+    "options": [
+      "Function",
+      "Owning object",
+      "Prototype",
+      "Global"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is this in arrow?",
+    "options": [
+      "Lexical this",
+      "Global this",
+      "Own this",
+      "Undefined"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is call()?",
+    "options": [
+      "Binds this",
+      "Sets this",
+      "Calls function",
+      "Sets this and calls"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is apply()?",
+    "options": [
+      "Binds this",
+      "Sets this",
+      "Calls function",
+      "Sets this and calls with array"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is bind()?",
+    "options": [
+      "Sets this",
+      "Calls function",
+      "Returns function with bound this",
+      "Applies this"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is new?",
+    "options": [
+      "Calls function",
+      "Sets this",
+      "Binds this",
+      "Creates object with this"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Why understand this?",
+    "options": [
+      "Correct context",
+      "All of above",
+      "Better code",
+      "Avoid bugs"
+    ],
+    "ans": "b"
+  }
+]

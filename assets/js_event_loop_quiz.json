@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is event loop?",
+    "options": [
+      "Handles async operations",
+      "Handles sync operations",
+      "Handles loops",
+      "Handles events"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is call stack?",
+    "options": [
+      "Microtask queue",
+      "Callback queue",
+      "Event queue",
+      "Execution stack"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "What is task queue?",
+    "options": [
+      "Callback queue",
+      "Event queue",
+      "Microtask queue",
+      "Call stack"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is microtask queue?",
+    "options": [
+      "Same as task",
+      "Lower priority",
+      "Higher priority queue",
+      "For events"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What executes first?",
+    "options": [
+      "Call stack",
+      "Event loop",
+      "Microtask queue",
+      "Task queue"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When does event loop run?",
+    "options": [
+      "After call stack empty",
+      "On events",
+      "Always",
+      "On timers"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is setTimeout?",
+    "options": [
+      "Executes immediately",
+      "Adds to task queue",
+      "Adds to microtask",
+      "Blocks"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is Promise.then?",
+    "options": [
+      "Blocks",
+      "Adds to task queue",
+      "Adds to microtask queue",
+      "Executes immediately"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "Why understand event loop?",
+    "options": [
+      "Write better code",
+      "Predict execution order",
+      "All of above",
+      "Debug async"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is blocking?",
+    "options": [
+      "Async operation",
+      "Event operation",
+      "Short operation",
+      "Long sync operation"
+    ],
+    "ans": "d"
+  }
+]

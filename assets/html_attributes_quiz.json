@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "The content inside an element",
+      "The closing tag of an element",
+      "The type of element",
+      "Additional information about an element"
+    ],
+    "que": "What is an HTML attribute?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "src",
+      "link",
+      "href",
+      "url"
+    ],
+    "que": "Which attribute is used to specify the URL in a link?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Sets the element ID",
+      "Defines the element type",
+      "Specifies the element size",
+      "Assigns a class name for CSS styling"
+    ],
+    "que": "What does the 'class' attribute do?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "key",
+      "name",
+      "id",
+      "unique"
+    ],
+    "que": "Which attribute provides a unique identifier for an element?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Sets the image source",
+      "Defines image width",
+      "Provides alternative text for images",
+      "Specifies image height"
+    ],
+    "que": "What is the purpose of the 'alt' attribute?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "value",
+      "input",
+      "type",
+      "form"
+    ],
+    "que": "Which attribute is used for form input types?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Defines the element title",
+      "Provides additional information on hover",
+      "Sets the page title",
+      "Specifies the document title"
+    ],
+    "que": "What does the 'title' attribute do?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "dimension",
+      "size",
+      "width",
+      "w"
+    ],
+    "que": "Which attribute controls the width of an image?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "Storing custom data",
+      "Specifying HTML data",
+      "Defining CSS data",
+      "Setting JavaScript data"
+    ],
+    "que": "What is the 'data-*' attribute used for?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "culture",
+      "locale",
+      "lang",
+      "language"
+    ],
+    "que": "Which attribute is used to specify the language of the content?",
+    "ans": "c"
+  }
+]

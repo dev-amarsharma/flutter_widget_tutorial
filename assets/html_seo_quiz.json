@@ -1,0 +1,102 @@
+[
+  {
+    "options": [
+      "Search Enhancement Online",
+      "Site Enhancement Option",
+      "Search Engine Optimization",
+      "Site Engine Optimization"
+    ],
+    "que": "What does SEO stand for?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "<title>",
+      "<link>",
+      "<h1>",
+      "<meta>"
+    ],
+    "que": "Which tag is most important for SEO?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Author",
+      "Search result snippet",
+      "Page title",
+      "Keywords"
+    ],
+    "que": "What is meta description?",
+    "ans": "b"
+  },
+  {
+    "options": [
+      "Content structure",
+      "Styling",
+      "Links",
+      "Navigation"
+    ],
+    "que": "Why use heading hierarchy?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Accessibility",
+      "Page speed",
+      "Image SEO",
+      "Mobile"
+    ],
+    "que": "What does alt text help with?",
+    "ans": "c"
+  },
+  {
+    "options": [
+      "rel=\"canonical\"",
+      "link",
+      "canonical",
+      "url"
+    ],
+    "que": "Which attribute for canonical URL?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "CSS classes",
+      "JavaScript",
+      "HTML tags",
+      "Schema markup"
+    ],
+    "que": "What is structured data?",
+    "ans": "d"
+  },
+  {
+    "options": [
+      "Search engines understand meaning",
+      "Faster rendering",
+      "Better caching",
+      "Smaller files"
+    ],
+    "que": "Why use semantic HTML for SEO?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "Controls indexing",
+      "Sets language",
+      "Adds keywords",
+      "Defines viewport"
+    ],
+    "que": "What does 'robots' meta do?",
+    "ans": "a"
+  },
+  {
+    "options": [
+      "All of the above",
+      "Mobile",
+      "User experience",
+      "Better rankings"
+    ],
+    "que": "Why optimize page speed?",
+    "ans": "a"
+  }
+]

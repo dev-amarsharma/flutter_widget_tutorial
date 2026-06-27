@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is JavaScript?",
+    "options": [
+      "Database language",
+      "Styling language",
+      "Markup language",
+      "Programming language for web"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "Where does JS run?",
+    "options": [
+      "Only server",
+      "Desktop",
+      "Only browser",
+      "Browser and server"
+    ],
+    "ans": "d"
+  },
+  {
+    "que": "How to include JS?",
+    "options": [
+      "<js>",
+      "<script>",
+      "<code>",
+      "<javascript>"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is console.log?",
+    "options": [
+      "Prints to console",
+      "Alerts user",
+      "Prints to page",
+      "Logs error"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is variable?",
+    "options": [
+      "Stores value",
+      "Executes code",
+      "Creates object",
+      "Defines function"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is const?",
+    "options": [
+      "Object",
+      "Variable",
+      "Constant variable",
+      "Function"
+    ],
+    "ans": "c"
+  },
+  {
+    "que": "What is let?",
+    "options": [
+      "Block-scoped variable",
+      "Global variable",
+      "Function",
+      "Constant"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is if statement?",
+    "options": [
+      "Function",
+      "Conditional execution",
+      "Variable",
+      "Loop"
+    ],
+    "ans": "b"
+  },
+  {
+    "que": "What is array?",
+    "options": [
+      "List of values",
+      "Single value",
+      "Function",
+      "Object"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is object?",
+    "options": [
+      "Value",
+      "List",
+      "Key-value collection",
+      "Function"
+    ],
+    "ans": "c"
+  }
+]
