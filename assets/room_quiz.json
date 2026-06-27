@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is Room in Android?",
+    "options": [
+      "A persistence library built on top of SQLite",
+      "A networking client",
+      "A Compose layout",
+      "A dependency injection framework"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which three components make up a Room database?",
+    "options": [
+      "Entity, DAO, and Database",
+      "Activity, Fragment, and View",
+      "Model, View, and Controller",
+      "Composable, State, and Effect"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation defines a Room table?",
+    "options": [
+      "@Entity",
+      "@Composable",
+      "@Singleton",
+      "@Provides"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation marks the class that extends RoomDatabase?",
+    "options": [
+      "@Database",
+      "@Dao",
+      "@Query",
+      "@Inject"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which builder creates a Room database instance?",
+    "options": [
+      "Room.databaseBuilder(...)",
+      "SQLiteOpenHelper(...)",
+      "DatabaseFactory.create(...)",
+      "Room.newInstance(...)"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why should you keep a single database instance?",
+    "options": [
+      "Building a database is expensive",
+      "Room only allows one query per app",
+      "Instances cannot be reused",
+      "It disables migrations"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do you keep Room queries off the main thread?",
+    "options": [
+      "Use suspend functions or return Flow",
+      "Run them in onCreate",
+      "Disable coroutines",
+      "Use a destructive migration"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is an advantage of returning Flow from a query?",
+    "options": [
+      "The UI re-emits when the table changes",
+      "It blocks the main thread",
+      "It deletes old rows",
+      "It removes the need for an entity"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What must you do when changing the database schema?",
+    "options": [
+      "Increase the version and provide a Migration",
+      "Delete the entity class",
+      "Lower the version number",
+      "Remove the DAO"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why avoid fallbackToDestructiveMigration() in production?",
+    "options": [
+      "It wipes existing user data",
+      "It slows down builds only",
+      "It disables the DAO",
+      "It is required for every release"
+    ],
+    "ans": "a"
+  }
+]

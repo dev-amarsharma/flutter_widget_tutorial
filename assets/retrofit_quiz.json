@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is Retrofit?",
+    "options": [
+      "A type-safe HTTP client for Android",
+      "A database library",
+      "A Compose layout",
+      "An image loader"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which library does Retrofit build on top of?",
+    "options": [
+      "OkHttp",
+      "Room",
+      "Coil",
+      "Hilt"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do you describe an API in Retrofit?",
+    "options": [
+      "As a Kotlin interface with annotations",
+      "As an XML layout",
+      "As a SQL table",
+      "As a Gradle task"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the role of a converter such as Moshi?",
+    "options": [
+      "Turning JSON into Kotlin objects",
+      "Drawing the UI",
+      "Managing the database",
+      "Handling navigation"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation substitutes a value into the URL path?",
+    "options": [
+      "@Path",
+      "@Body",
+      "@Header",
+      "@Field"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which annotation adds a query parameter?",
+    "options": [
+      "@Query",
+      "@Path",
+      "@GET",
+      "@Url"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why mark API functions as suspend?",
+    "options": [
+      "To run calls off the main thread with coroutines",
+      "To cache responses on disk",
+      "To make them synchronous",
+      "To disable error handling"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is required of the baseUrl in Retrofit?",
+    "options": [
+      "It must end with a trailing slash",
+      "It must be http only",
+      "It must omit the scheme",
+      "It must contain a query string"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which permission is needed to make network requests?",
+    "options": [
+      "android.permission.INTERNET",
+      "android.permission.CAMERA",
+      "android.permission.READ_CONTACTS",
+      "android.permission.VIBRATE"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a common mistake when using Retrofit?",
+    "options": [
+      "Calling network functions on the main thread",
+      "Reusing a single instance",
+      "Adding a converter factory",
+      "Handling exceptions"
+    ],
+    "ans": "a"
+  }
+]

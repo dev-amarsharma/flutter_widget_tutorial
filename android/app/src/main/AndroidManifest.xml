@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application
-        android:label="HTML JS Learning Hub"
+        android:label="Kotlin Compose Tutorial"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -35,7 +35,7 @@
         <!-- Google Mobile Ads App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-7287011693739626~1651383819"/>
+            android:value="ca-app-pub-7287011693739626~8120775629"/>
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>

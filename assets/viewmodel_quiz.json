@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What is the defining feature of a ViewModel?",
+    "options": [
+      "It survives configuration changes",
+      "It draws the UI",
+      "It replaces the database",
+      "It handles navigation only"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is state in a ViewModel not lost on rotation?",
+    "options": [
+      "The ViewModel is scoped beyond the Activity instance",
+      "Rotation never destroys the Activity",
+      "Android disables rotation",
+      "State is saved to disk automatically"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How should mutable state usually be exposed from a ViewModel?",
+    "options": [
+      "As a read-only StateFlow or State",
+      "As a public mutable field",
+      "As a global variable",
+      "It should not be exposed at all"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which scope is automatically cancelled when a ViewModel is cleared?",
+    "options": [
+      "viewModelScope",
+      "GlobalScope",
+      "lifecycleScope",
+      "MainScope"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How do you obtain a correctly scoped ViewModel in Compose?",
+    "options": [
+      "viewModel()",
+      "ViewModel()",
+      "remember { ViewModel() }",
+      "Application.get()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What should a ViewModel NOT hold a reference to?",
+    "options": [
+      "A View, Activity, or Context",
+      "A StateFlow",
+      "A repository",
+      "A data class"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why is holding a View reference in a ViewModel dangerous?",
+    "options": [
+      "It can cause a memory leak",
+      "It speeds up the UI too much",
+      "It disables coroutines",
+      "It is actually required"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function safely collects a Flow in Compose with lifecycle awareness?",
+    "options": [
+      "collectAsStateWithLifecycle()",
+      "collect()",
+      "launchIn()",
+      "observeForever()"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where should screen business logic live?",
+    "options": [
+      "In the ViewModel",
+      "In the composable's body",
+      "In the manifest",
+      "In the Application class"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "When you need application Context in a ViewModel, what can you use?",
+    "options": [
+      "AndroidViewModel",
+      "A static Activity reference",
+      "A View field",
+      "GlobalScope"
+    ],
+    "ans": "a"
+  }
+]

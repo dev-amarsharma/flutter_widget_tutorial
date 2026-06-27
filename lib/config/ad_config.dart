@@ -7,11 +7,14 @@ class AdConfig {
   AdConfig._();
 
   // ── Production IDs ───────────────────────────────────────────────────────
-  static const String _bannerProd       = 'ca-app-pub-7287011693739626/9731422228';
-  static const String _interstitialProd = 'ca-app-pub-7287011693739626/7763734432';
-  static const String _rewardedProd     = 'ca-app-pub-7287011693739626/3632484903';
-  static const String _appOpenProd      = 'ca-app-pub-7287011693739626/7534237633';
-  static const String _nativeProd       = 'ca-app-pub-7287011693739626/3384138399';
+  // NOTE: The AdMob app ID (ca-app-pub-7287011693739626~8120775629) is declared
+  // natively in AndroidManifest.xml (com.google.android.gms.ads.APPLICATION_ID),
+  // not here. This class only holds ad *unit* IDs.
+  static const String _bannerProd = 'ca-app-pub-7287011693739626/5033449413';
+  static const String _interstitialProd = 'ca-app-pub-7287011693739626/5357611990';
+  static const String _appOpenProd = 'ca-app-pub-7287011693739626/7276207012';
+  static const String _rewardedProd = 'ca-app-pub-7287011693739626/3720367745';
+  static const String _nativeProd = 'ca-app-pub-7287011693739626/4722104945';
 
   // ── Public getters (test IDs in debug, production IDs in release) ────────
   static String get banner {

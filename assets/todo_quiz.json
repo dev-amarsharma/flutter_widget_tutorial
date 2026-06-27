@@ -1,0 +1,102 @@
+[
+  {
+    "que": "Which three technologies does this Todo project combine?",
+    "options": [
+      "Compose, ViewModel, and Room",
+      "XML, AsyncTask, and SQLite raw",
+      "Retrofit, Glide, and Dagger",
+      "Fragments, LiveData, and Realm"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the single source of truth for the task list?",
+    "options": [
+      "The Room database",
+      "A variable in the composable",
+      "A static list",
+      "The Activity"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why does the DAO return Flow<List<Task>>?",
+    "options": [
+      "So the UI updates automatically when data changes",
+      "To block the main thread",
+      "To avoid using a ViewModel",
+      "To disable persistence"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How is the database Flow exposed to the UI from the ViewModel?",
+    "options": [
+      "As a StateFlow via stateIn",
+      "As a raw mutable list",
+      "As a global variable",
+      "As an Intent extra"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where do the add, toggle, and delete operations run?",
+    "options": [
+      "In viewModelScope coroutines",
+      "On the main thread directly",
+      "In the composable body",
+      "In the manifest"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "How should a task be marked complete?",
+    "options": [
+      "Update a copy with isDone toggled",
+      "Mutate the original object in place",
+      "Delete and re-add it synchronously",
+      "Edit the database file directly"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which composable efficiently displays the scrolling task list?",
+    "options": [
+      "LazyColumn",
+      "Column",
+      "Box",
+      "Spacer"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why provide a stable key for each list item?",
+    "options": [
+      "To make recomposition efficient",
+      "To encrypt the data",
+      "To enable networking",
+      "To skip the database"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What keeps the composables reusable and testable?",
+    "options": [
+      "Hoisting state into the ViewModel",
+      "Storing state inside each composable",
+      "Using global mutable variables",
+      "Avoiding the ViewModel entirely"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is a reasonable stretch goal for this app?",
+    "options": [
+      "Swipe-to-delete with an empty state",
+      "Removing Room persistence",
+      "Blocking the UI thread",
+      "Hardcoding the task list"
+    ],
+    "ans": "a"
+  }
+]

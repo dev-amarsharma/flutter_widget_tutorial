@@ -1,0 +1,102 @@
+[
+  {
+    "que": "What happens when observable state changes in Compose?",
+    "options": [
+      "Affected composables recompose",
+      "The app restarts",
+      "Nothing until the next launch",
+      "The Activity is recreated"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which function creates state that Compose can observe?",
+    "options": [
+      "mutableStateOf",
+      "lazy",
+      "lateinit",
+      "launch"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does remember do?",
+    "options": [
+      "Stores state across recompositions",
+      "Saves state to disk",
+      "Starts a coroutine",
+      "Creates a database"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Why does mutating a plain variable not update the UI?",
+    "options": [
+      "It is not observable state",
+      "Compose ignores all variables",
+      "Variables are read-only",
+      "It throws an exception"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Which API keeps simple state across a screen rotation?",
+    "options": [
+      "rememberSaveable",
+      "remember",
+      "mutableStateOf",
+      "derivedStateOf"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is state hoisting?",
+    "options": [
+      "Moving state up to the caller and passing it down",
+      "Deleting all state",
+      "Caching state on disk",
+      "Running state on a background thread"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "A hoisted, stateless composable typically receives what?",
+    "options": [
+      "A value and a change callback",
+      "A database instance",
+      "An Activity reference",
+      "A navigation graph"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What is the recommended data flow pattern in Compose?",
+    "options": [
+      "State down, events up",
+      "State up, events down",
+      "State and events both down",
+      "No flow at all"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "Where should screen-level business state usually live?",
+    "options": [
+      "In a ViewModel",
+      "In a deeply nested composable",
+      "In a global variable",
+      "In the manifest"
+    ],
+    "ans": "a"
+  },
+  {
+    "que": "What does the `by` keyword enable with state?",
+    "options": [
+      "Reading and writing without .value",
+      "Disabling recomposition",
+      "Saving to a file",
+      "Creating a new thread"
+    ],
+    "ans": "a"
+  }
+]
