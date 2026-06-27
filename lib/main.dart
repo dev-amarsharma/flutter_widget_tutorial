@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'models/app_config.dart';
 import 'screens/onboarding_screen.dart';
@@ -355,6 +356,14 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
                     icon: const Icon(Icons.delete_outline),
                     tooltip: 'Clear read history',
                     onPressed: () => _confirmAndClearHistory(context),
+                  ),
+                  ExpandableFabAction(
+                    icon: const Icon(Icons.apps),
+                    tooltip: 'More apps',
+                    onPressed: () => launchUrl(
+                      Uri.parse('https://mantraandsloka.web.app/'),
+                      mode: LaunchMode.externalApplication,
+                    ),
                   ),
                 ],
               ),

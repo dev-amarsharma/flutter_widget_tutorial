@@ -34,7 +34,7 @@ class NotificationService {
     } catch (_) {}
 
     const androidInit = AndroidInitializationSettings('@mipmap/ic_launcher');
-    await _plugin.initialize(const InitializationSettings(android: androidInit));
+    await _plugin.initialize(settings: const InitializationSettings(android: androidInit));
 
     final prefs = await SharedPreferences.getInstance();
     _enabled = prefs.getBool(_prefEnabled) ?? false;
@@ -66,10 +66,10 @@ class NotificationService {
     final n = message.notification;
     if (n == null) return;
     _plugin.show(
-      0,
-      n.title,
-      n.body,
-      const NotificationDetails(
+      id: 0,
+      title: n.title,
+      body: n.body,
+      notificationDetails: const NotificationDetails(
         android: AndroidNotificationDetails(
           _channelId,
           _channelName,
@@ -97,12 +97,12 @@ class NotificationService {
     if (enabled) {
       await _scheduleDailyNotification();
     } else {
-      await _plugin.cancel(_dailyNotifId);
+      await _plugin.cancel(id: _dailyNotifId);
     }
   }
 
   Future<void> _scheduleDailyNotification() async {
-    await _plugin.cancel(_dailyNotifId);
+    await _plugin.cancel(id: _dailyNotifId);
 
     final now = tz.TZDateTime.now(tz.local);
     var scheduled = tz.TZDateTime(
@@ -118,11 +118,11 @@ class NotificationService {
     }
 
     await _plugin.zonedSchedule(
-      _dailyNotifId,
-      'Time to learn!',
-      'Continue your HTML & JavaScript journey — just 5 minutes today.',
-      scheduled,
-      const NotificationDetails(
+      id: _dailyNotifId,
+      title: 'Time to learn!',
+      body: 'Continue your HTML & JavaScript journey — just 5 minutes today.',
+      scheduledDate: scheduled,
+      notificationDetails: const NotificationDetails(
         android: AndroidNotificationDetails(
           _channelId,
           _channelName,
@@ -132,8 +132,6 @@ class NotificationService {
         ),
       ),
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
     );
   }
