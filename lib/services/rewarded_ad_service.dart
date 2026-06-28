@@ -1,4 +1,5 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'app_open_ad_service.dart';
 import '../config/ad_config.dart';
 
 /// Service class for managing rewarded ads
@@ -41,6 +42,8 @@ class RewardedAdService {
             // Set full screen content callback
             ad.fullScreenContentCallback = FullScreenContentCallback(
               onAdDismissedFullScreenContent: (ad) {
+                // Keep App Open suppressed across the resume that fires now.
+                appOpenAdService.setFullScreenAdShowing(false);
                 ad.dispose();
                 _rewardedAd = null;
                 _isAdReady = false;
@@ -54,6 +57,7 @@ class RewardedAdService {
                 );
               },
               onAdFailedToShowFullScreenContent: (ad, error) {
+                appOpenAdService.setFullScreenAdShowing(false);
                 ad.dispose();
                 _rewardedAd = null;
                 _isAdReady = false;
@@ -68,7 +72,8 @@ class RewardedAdService {
                 );
               },
               onAdShowedFullScreenContent: (ad) {
-                // Ad is showing
+                // Prevent the App Open ad from showing when this closes.
+                appOpenAdService.setFullScreenAdShowing(true);
               },
             );
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
 import 'app_config_service.dart';
+import 'app_open_ad_service.dart';
 
 class AppShareService {
   const AppShareService();
@@ -10,6 +11,9 @@ class AppShareService {
     BuildContext context, {
     String? extraText,
   }) async {
+    // The native share sheet backgrounds the app; don't let the resume
+    // afterwards trigger an App Open ad.
+    appOpenAdService.suppressNextResume();
     final config = appConfigService.config;
     final defaultMessage =
         'Check out ${config.appName}. ${config.description}'

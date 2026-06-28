@@ -174,6 +174,8 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
                 ),
                 onPressed: () async {
                   Navigator.of(sheetContext).pop();
+                  // The billing sheet backgrounds the app; suppress App Open.
+                  appOpenAdService.suppressNextResume();
                   final ok = await purchaseService.buyRemoveAds();
                   if (!ok && mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -191,6 +193,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
             TextButton(
               onPressed: () async {
                 Navigator.of(sheetContext).pop();
+                appOpenAdService.suppressNextResume();
                 await purchaseService.restorePurchases();
               },
               child: const Text('Restore Purchase'),
@@ -282,10 +285,15 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               ExpandableFabAction(
                 icon: const Icon(Icons.apps),
                 tooltip: 'More apps',
-                onPressed: () => launchUrl(
-                  Uri.parse('https://mantraandsloka.web.app/'),
-                  mode: LaunchMode.externalApplication,
-                ),
+                onPressed: () {
+                  // Opening an external page backgrounds the app; suppress the
+                  // App Open ad on the resume that follows.
+                  appOpenAdService.suppressNextResume();
+                  launchUrl(
+                    Uri.parse('https://mantraandsloka.web.app/'),
+                    mode: LaunchMode.externalApplication,
+                  );
+                },
               ),
             ],
           ),

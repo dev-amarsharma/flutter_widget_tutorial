@@ -1,6 +1,7 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
+import 'app_open_ad_service.dart';
 import 'purchase_service.dart';
 import '../config/ad_config.dart';
 
@@ -40,6 +41,8 @@ class InterstitialAdService {
           // Set full screen content callback
           ad.fullScreenContentCallback = FullScreenContentCallback(
             onAdDismissedFullScreenContent: (ad) {
+              // Keep App Open suppressed across the resume that fires now.
+              appOpenAdService.setFullScreenAdShowing(false);
               ad.dispose();
               _interstitialAd = null;
               _isAdReady = false;
@@ -49,6 +52,7 @@ class InterstitialAdService {
               loadInterstitialAd();
             },
             onAdFailedToShowFullScreenContent: (ad, error) {
+              appOpenAdService.setFullScreenAdShowing(false);
               ad.dispose();
               _interstitialAd = null;
               _isAdReady = false;
@@ -59,7 +63,8 @@ class InterstitialAdService {
               loadInterstitialAd();
             },
             onAdShowedFullScreenContent: (ad) {
-              // Ad is showing
+              // Prevent the App Open ad from showing when the interstitial closes.
+              appOpenAdService.setFullScreenAdShowing(true);
             },
           );
 
