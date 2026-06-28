@@ -13,6 +13,7 @@ import 'services/app_config_service.dart';
 import 'services/performance_service.dart';
 import 'services/rewarded_ad_service.dart';
 import 'widgets/custom_dialog.dart';
+import 'widgets/native_ad_widget.dart';
 
 class WidgetCatalogPage extends StatefulWidget {
   final void Function(CatalogItem item) onOpenWidget;
@@ -583,7 +584,21 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
                         )
                       : SliverList(
                           delegate: SliverChildBuilderDelegate((context, index) {
-                            final section = filteredSections[index];
+                            // Inject a native ad after every [adInterval] sections.
+                            const int adInterval = 4;
+                            final bool isAdSlot =
+                                index % (adInterval + 1) == adInterval;
+                            if (isAdSlot) {
+                              return const NativeAdWidget();
+                            }
+                            // Map the display index back to a section index,
+                            // accounting for the ad slots inserted above.
+                            final sectionIndex =
+                                index - (index ~/ (adInterval + 1));
+                            if (sectionIndex >= filteredSections.length) {
+                              return const SizedBox.shrink();
+                            }
+                            final section = filteredSections[sectionIndex];
                             final readCount = section.items
                                 .where(
                                   (item) => performanceService.isRead(
@@ -868,7 +883,9 @@ class _WidgetCatalogPageState extends State<WidgetCatalogPage> {
                                 ),
                               ),
                             );
-                          }, childCount: filteredSections.length),
+                          },
+                              childCount: filteredSections.length +
+                                  (filteredSections.length ~/ 4)),
                         ),
         ),
       ],

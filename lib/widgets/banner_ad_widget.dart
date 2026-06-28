@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../services/banner_ad_service.dart';
+import '../services/purchase_service.dart';
 
 /// Reusable widget that displays a banner ad at the bottom of the screen
 class BannerAdWidget extends StatefulWidget {
@@ -20,12 +21,29 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    _loadBannerAd();
+    purchaseService.adsRemoved.addListener(_onAdsRemovedChanged);
+    if (!purchaseService.adsRemoved.value) {
+      _loadBannerAd();
+    }
+  }
+
+  /// Disposes the banner immediately when the user buys "Remove Ads".
+  void _onAdsRemovedChanged() {
+    if (!purchaseService.adsRemoved.value) return;
+    _bannerAd?.dispose();
+    _bannerAd = null;
+    if (mounted) {
+      setState(() {
+        _isAdLoaded = false;
+        _isAdError = false;
+      });
+    }
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
+    if (purchaseService.adsRemoved.value) return;
     if (state == AppLifecycleState.paused) {
       _bannerAd?.dispose();
     } else if (state == AppLifecycleState.resumed) {
@@ -57,12 +75,18 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    purchaseService.adsRemoved.removeListener(_onAdsRemovedChanged);
     _bannerAd?.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    if (purchaseService.adsRemoved.value) {
+      // User purchased "Remove Ads" — never show a banner (and no placeholder).
+      return const SizedBox.shrink();
+    }
+
     if (_isAdError) {
       // Don't show anything if ad failed to load
       return const SizedBox.shrink();

@@ -1,21 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'models/app_config.dart';
 import 'screens/performance_screen.dart';
 import 'services/app_config_service.dart';
+import 'services/app_open_ad_service.dart';
+import 'services/app_share_service.dart';
 import 'services/interstitial_ad_service.dart';
 import 'services/performance_service.dart';
+import 'services/purchase_service.dart';
 import 'widget_catalog_page.dart';
 import 'widget_preview_page.dart';
 import 'widgets/banner_ad_widget.dart';
 import 'widgets/custom_dialog.dart';
+import 'widgets/expandable_fab.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // Lock the app to portrait orientation only.
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
   await performanceService.init();
   await appConfigService.loadConfig();
+  await purchaseService.init();
   await MobileAds.instance.initialize();
 
   final requestConfiguration = RequestConfiguration(
@@ -24,6 +37,9 @@ void main() async {
   MobileAds.instance.updateRequestConfiguration(requestConfiguration);
 
   await interstitialAdService.loadInterstitialAd();
+
+  // Pre-load the App Open ad during startup so it is ready on first resume.
+  appOpenAdService.loadAd();
 
   runApp(const MyApp());
 }
@@ -90,13 +106,126 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
   Set<String> _readAssets = {};
 
   @override
   void initState() {
     super.initState();
     _readAssets = performanceService.readAssets;
+    WidgetsBinding.instance.addObserver(this);
+    // Try to show the App Open ad once the first frame is rendered.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) appOpenAdService.showAdIfAvailable();
+    });
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    if (state == AppLifecycleState.resumed) {
+      appOpenAdService.showAdIfAvailable();
+    }
+  }
+
+  /// Bottom sheet offering the one-time "Remove Ads" purchase and restore.
+  Future<void> _showRemoveAdsSheet(BuildContext context) async {
+    await showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (sheetContext) => Padding(
+        padding: const EdgeInsets.fromLTRB(24, 8, 24, 32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.block, size: 48, color: Colors.deepOrange),
+            const SizedBox(height: 12),
+            Text(
+              'Remove All Ads',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge
+                  ?.copyWith(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'Enjoy an ad-free experience with a one-time purchase. '
+              'Banners, interstitials, and app-open ads will be removed.',
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: () async {
+                  Navigator.of(sheetContext).pop();
+                  final ok = await purchaseService.buyRemoveAds();
+                  if (!ok && mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text(
+                          'Purchase is unavailable right now. Please try again later.',
+                        ),
+                      ),
+                    );
+                  }
+                },
+                child: const Text('Remove Ads'),
+              ),
+            ),
+            TextButton(
+              onPressed: () async {
+                Navigator.of(sheetContext).pop();
+                await purchaseService.restorePurchases();
+              },
+              child: const Text('Restore Purchase'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Confirms before clearing all "read" history, then refreshes the list.
+  Future<void> _confirmAndClearHistory(BuildContext context) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => CustomDialog(
+        title: 'Clear read history?',
+        message:
+            'This will clear all saved "read" marks. This action cannot be undone.',
+        icon: Icons.delete_outline,
+        iconColor: Colors.deepOrange,
+        primaryButtonText: 'Clear',
+        onPrimaryPressed: () => Navigator.of(dialogContext).pop(true),
+        secondaryButtonText: 'Cancel',
+        onSecondaryPressed: () => Navigator.of(dialogContext).pop(false),
+      ),
+    );
+
+    if (confirmed == true) {
+      await performanceService.clearAll();
+      if (mounted) {
+        setState(() {
+          _readAssets = performanceService.readAssets;
+        });
+      }
+    }
   }
 
   @override
@@ -120,17 +249,46 @@ class _MyHomePageState extends State<MyHomePage> {
         return shouldExit ?? false;
       },
       child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const PerformanceScreen(),
+        floatingActionButton: ValueListenableBuilder<bool>(
+          valueListenable: purchaseService.adsRemoved,
+          builder: (context, adsRemoved, _) => ExpandableFab(
+            distance: 128,
+            actions: [
+              ExpandableFabAction(
+                icon: const Icon(Icons.bar_chart),
+                tooltip: 'My Performance',
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => const PerformanceScreen(),
+                  ),
+                ),
               ),
-            );
-          },
-          child: const Icon(Icons.bar_chart),
-          tooltip: 'My Performance',
+              if (!adsRemoved)
+                ExpandableFabAction(
+                  icon: const Icon(Icons.block),
+                  tooltip: 'Remove all ads',
+                  onPressed: () => _showRemoveAdsSheet(context),
+                ),
+              ExpandableFabAction(
+                icon: const Icon(Icons.share),
+                tooltip: 'Share app',
+                onPressed: () => appShareService.shareApp(context),
+              ),
+              ExpandableFabAction(
+                icon: const Icon(Icons.delete_outline),
+                tooltip: 'Clear read history',
+                onPressed: () => _confirmAndClearHistory(context),
+              ),
+              ExpandableFabAction(
+                icon: const Icon(Icons.apps),
+                tooltip: 'More apps',
+                onPressed: () => launchUrl(
+                  Uri.parse('https://mantraandsloka.web.app/'),
+                  mode: LaunchMode.externalApplication,
+                ),
+              ),
+            ],
+          ),
         ),
         bottomNavigationBar: const SafeArea(
           top: false,

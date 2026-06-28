@@ -1,31 +1,15 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:flutter/foundation.dart';
-import 'dart:io';
+import '../config/ad_config.dart';
 
 /// Service class for managing rewarded ads
 /// Follows AdMob policies for rewarded ad implementation
 class RewardedAdService {
-  static const String _rewardedAdUnitId = 'ca-app-pub-7287011693739626/3632484903';
-  
   RewardedAd? _rewardedAd;
   bool _isLoading = false;
   bool _isAdReady = false;
   Function(RewardItem)? _onRewardEarned;
   Function()? _onAdDismissed;
   Function(String)? _onAdFailed;
-
-  // Ad unit ID getter
-  static String get rewardedAdUnitId {
-    // For testing, you can temporarily replace with test IDs:
-    if (kDebugMode) {
-      if (Platform.isAndroid) {
-        return 'ca-app-pub-3940256099942544/5224354917';
-      } else if (Platform.isIOS) {
-        return 'ca-app-pub-3940256099942544/1712485313';
-      }
-    }
-    return _rewardedAdUnitId;
-  }
 
   /// Load a rewarded ad
   /// Returns true if loading started, false if already loading or ready
@@ -46,7 +30,7 @@ class RewardedAdService {
 
     try {
       await RewardedAd.load(
-        adUnitId: rewardedAdUnitId,
+        adUnitId: AdConfig.rewarded,
         request: const AdRequest(),
         rewardedAdLoadCallback: RewardedAdLoadCallback(
           onAdLoaded: (ad) {
