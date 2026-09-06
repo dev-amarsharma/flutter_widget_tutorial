@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -8,6 +9,7 @@ import 'screens/performance_screen.dart';
 import 'services/app_config_service.dart';
 import 'services/app_open_ad_service.dart';
 import 'services/app_share_service.dart';
+import 'services/consent_service.dart';
 import 'services/interstitial_ad_service.dart';
 import 'services/performance_service.dart';
 import 'services/purchase_service.dart';
@@ -16,6 +18,9 @@ import 'widget_preview_page.dart';
 import 'widgets/banner_ad_widget.dart';
 import 'widgets/custom_dialog.dart';
 import 'widgets/expandable_fab.dart';
+
+/// Devices that receive test ads (and the UMP debug geography) in debug builds.
+const List<String> kAdTestDeviceIds = ['B4B7D2919335B10A2648BC0F5DF2296C'];
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,14 +37,22 @@ void main() async {
   await MobileAds.instance.initialize();
 
   final requestConfiguration = RequestConfiguration(
-    testDeviceIds: ['B4B7D2919335B10A2648BC0F5DF2296C'],
+    testDeviceIds: kAdTestDeviceIds,
   );
   MobileAds.instance.updateRequestConfiguration(requestConfiguration);
 
-  await interstitialAdService.loadInterstitialAd();
+  // Read the cached UMP consent state. This is a local read, so startup is not
+  // held up by the network; the fresh update runs from the home screen.
+  await consentService.refresh();
 
-  // Pre-load the App Open ad during startup so it is ready on first resume.
-  appOpenAdService.loadAd();
+  // Only preload ads when the user hasn't purchased "Remove Ads" and consent
+  // allows ad requests.
+  if (!purchaseService.adsRemoved.value && consentService.canRequestAds.value) {
+    await interstitialAdService.loadInterstitialAd();
+
+    // Pre-load the App Open ad during startup so it is ready on first resume.
+    appOpenAdService.loadAd();
+  }
 
   runApp(const MyApp());
 }
@@ -117,7 +130,22 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
     // Try to show the App Open ad once the first frame is rendered.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) appOpenAdService.showAdIfAvailable();
+      _refreshConsentAndAds();
     });
+  }
+
+  /// Refreshes the UMP consent info, shows the consent form when the user's
+  /// region requires one, and (re)starts ad preloading once consent allows it.
+  Future<void> _refreshConsentAndAds() async {
+    await consentService.init(testDeviceIds: kAdTestDeviceIds);
+    await consentService.showFormIfRequired();
+    if (!mounted) return;
+    if (purchaseService.adsRemoved.value) return;
+    if (!consentService.canRequestAds.value) return;
+
+    // Consent may have arrived only now, so the startup preloads were skipped.
+    interstitialAdService.loadInterstitialAd();
+    await appOpenAdService.loadAd();
   }
 
   @override
@@ -254,48 +282,77 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
       child: Scaffold(
         floatingActionButton: ValueListenableBuilder<bool>(
           valueListenable: purchaseService.adsRemoved,
-          builder: (context, adsRemoved, _) => ExpandableFab(
-            distance: 128,
-            actions: [
-              ExpandableFabAction(
-                icon: const Icon(Icons.bar_chart),
-                tooltip: 'My Performance',
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => const PerformanceScreen(),
+          builder: (context, adsRemoved, _) => ValueListenableBuilder<bool>(
+            valueListenable: consentService.privacyOptionsRequired,
+            builder: (context, privacyOptionsRequired, __) => ExpandableFab(
+              distance: 128,
+              actions: [
+                ExpandableFabAction(
+                  icon: const Icon(Icons.bar_chart),
+                  tooltip: 'My Performance',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const PerformanceScreen(),
+                    ),
                   ),
                 ),
-              ),
-              if (!adsRemoved)
+                if (!adsRemoved)
+                  ExpandableFabAction(
+                    icon: const Icon(Icons.block),
+                    tooltip: 'Remove all ads',
+                    onPressed: () => _showRemoveAdsSheet(context),
+                  ),
                 ExpandableFabAction(
-                  icon: const Icon(Icons.block),
-                  tooltip: 'Remove all ads',
-                  onPressed: () => _showRemoveAdsSheet(context),
+                  icon: const Icon(Icons.share),
+                  tooltip: 'Share app',
+                  onPressed: () => appShareService.shareApp(context),
                 ),
-              ExpandableFabAction(
-                icon: const Icon(Icons.share),
-                tooltip: 'Share app',
-                onPressed: () => appShareService.shareApp(context),
-              ),
-              ExpandableFabAction(
-                icon: const Icon(Icons.delete_outline),
-                tooltip: 'Clear read history',
-                onPressed: () => _confirmAndClearHistory(context),
-              ),
-              ExpandableFabAction(
-                icon: const Icon(Icons.apps),
-                tooltip: 'More apps',
-                onPressed: () {
-                  // Opening an external page backgrounds the app; suppress the
-                  // App Open ad on the resume that follows.
-                  appOpenAdService.suppressNextResume();
-                  launchUrl(
-                    Uri.parse('https://mantraandsloka.web.app/'),
-                    mode: LaunchMode.externalApplication,
-                  );
-                },
-              ),
-            ],
+                ExpandableFabAction(
+                  icon: const Icon(Icons.delete_outline),
+                  tooltip: 'Clear read history',
+                  onPressed: () => _confirmAndClearHistory(context),
+                ),
+                ExpandableFabAction(
+                  icon: const Icon(Icons.apps),
+                  tooltip: 'More apps',
+                  onPressed: () {
+                    // Opening an external page backgrounds the app; suppress
+                    // the App Open ad on the resume that follows.
+                    appOpenAdService.suppressNextResume();
+                    launchUrl(
+                      Uri.parse('https://mantraandsloka.web.app/'),
+                      mode: LaunchMode.externalApplication,
+                    );
+                  },
+                ),
+                // GDPR requires a persistent entry point back to the consent
+                // choices wherever the UMP says one is needed.
+                if (privacyOptionsRequired)
+                  ExpandableFabAction(
+                    icon: const Icon(Icons.privacy_tip_outlined),
+                    tooltip: 'Privacy options',
+                    onPressed: () {
+                      appOpenAdService.suppressNextResume();
+                      consentService.showPrivacyOptionsForm();
+                    },
+                  ),
+                // Debug-only: verify mediation adapters (incl. Meta Audience
+                // Network) with the Google Mobile Ads Ad Inspector.
+                if (kDebugMode)
+                  ExpandableFabAction(
+                    icon: const Icon(Icons.travel_explore),
+                    tooltip: 'Ad inspector',
+                    onPressed: () {
+                      appOpenAdService.suppressNextResume();
+                      MobileAds.instance.openAdInspector((error) {
+                        if (error != null) {
+                          debugPrint('Ad inspector error: ${error.message}');
+                        }
+                      });
+                    },
+                  ),
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: const SafeArea(

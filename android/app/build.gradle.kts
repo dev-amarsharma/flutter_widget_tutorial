@@ -29,7 +29,9 @@ val flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "
 
 android {
     namespace = "app.flutter.tutorial.flutter_tutorial"
-    compileSdk = flutter.compileSdkVersion
+    // Pinned: google_mobile_ads / in_app_purchase / webview_flutter all
+    // require API 36; don't rely on flutter.compileSdkVersion tracking it.
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

@@ -2,6 +2,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
 import 'app_open_ad_service.dart';
+import 'consent_service.dart';
 import 'purchase_service.dart';
 import '../config/ad_config.dart';
 
@@ -18,6 +19,11 @@ class InterstitialAdService {
   /// Load an interstitial ad
   /// Returns a Future that completes with true if loaded successfully, false otherwise
   Future<bool> loadInterstitialAd() async {
+    // No ad request may go out before the UMP consent signal allows it.
+    if (!consentService.canRequestAds.value) {
+      return false;
+    }
+
     if (_isAdReady) {
       return true;
     }

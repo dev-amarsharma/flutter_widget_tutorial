@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Meta (Facebook) Audience Network App ID, used by the AdMob mediation
+         adapter. Replace with this app's own Meta App ID from the Meta
+         Business / Audience Network dashboard before release. -->
+    <string name="facebook_app_id">2783133625389783</string>
+</resources>

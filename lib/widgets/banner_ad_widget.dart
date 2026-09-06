@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../services/banner_ad_service.dart';
+import '../services/consent_service.dart';
 import '../services/purchase_service.dart';
 
 /// Reusable widget that displays a banner ad at the bottom of the screen
@@ -22,9 +23,22 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     purchaseService.adsRemoved.addListener(_onAdsRemovedChanged);
-    if (!purchaseService.adsRemoved.value) {
-      _loadBannerAd();
-    }
+    consentService.canRequestAds.addListener(_onConsentChanged);
+    _maybeLoadBannerAd();
+  }
+
+  /// Loads the banner only when the purchase and consent gates both allow it.
+  void _maybeLoadBannerAd() {
+    if (purchaseService.adsRemoved.value) return;
+    if (!consentService.canRequestAds.value) return;
+    if (_bannerAd != null) return;
+    _loadBannerAd();
+  }
+
+  /// The consent form can resolve after this widget was built; load then.
+  void _onConsentChanged() {
+    if (!mounted) return;
+    _maybeLoadBannerAd();
   }
 
   /// Disposes the banner immediately when the user buys "Remove Ads".
@@ -46,9 +60,11 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
     if (purchaseService.adsRemoved.value) return;
     if (state == AppLifecycleState.paused) {
       _bannerAd?.dispose();
+      _bannerAd = null;
+      _isAdLoaded = false;
     } else if (state == AppLifecycleState.resumed) {
       if (!_isAdLoaded && !_isAdError) {
-        _loadBannerAd();
+        _maybeLoadBannerAd();
       }
     }
   }
@@ -56,6 +72,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
   void _loadBannerAd() {
     _bannerAd = BannerAdService.createStandardBanner(
       onAdLoaded: (ad) {
+        if (!mounted) return;
         setState(() {
           _isAdLoaded = true;
           _isAdError = false;
@@ -63,11 +80,13 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
       },
       onAdFailedToLoad: (ad, error) {
         ad.dispose();
+        _bannerAd = null;
+        if (!mounted) return;
         setState(() {
           _isAdLoaded = false;
           _isAdError = true;
         });
-        print('Banner ad failed to load: ${error.message}');
+        debugPrint('Banner ad failed to load: ${error.message}');
       },
     );
   }
@@ -76,6 +95,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     purchaseService.adsRemoved.removeListener(_onAdsRemovedChanged);
+    consentService.canRequestAds.removeListener(_onConsentChanged);
     _bannerAd?.dispose();
     super.dispose();
   }
@@ -89,6 +109,12 @@ class _BannerAdWidgetState extends State<BannerAdWidget>
 
     if (_isAdError) {
       // Don't show anything if ad failed to load
+      return const SizedBox.shrink();
+    }
+
+    if (!consentService.canRequestAds.value && !_isAdLoaded) {
+      // Consent not resolved yet — no request has gone out, so show nothing
+      // rather than an indefinite placeholder.
       return const SizedBox.shrink();
     }
 

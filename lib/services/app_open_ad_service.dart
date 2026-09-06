@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'consent_service.dart';
 import 'purchase_service.dart';
 import '../config/ad_config.dart';
 
@@ -59,6 +60,8 @@ class AppOpenAdService {
   /// Load an App Open ad. No-op if one is already cached or loading.
   Future<void> loadAd() async {
     if (purchaseService.adsRemoved.value) return;
+    // No ad request may go out before the UMP consent signal allows it.
+    if (!consentService.canRequestAds.value) return;
     if (_isLoading || _isAdAvailable) return;
     _isLoading = true;
 

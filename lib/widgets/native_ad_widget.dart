@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import '../services/consent_service.dart';
 import '../services/purchase_service.dart';
 import '../config/ad_config.dart';
 
@@ -19,7 +20,31 @@ class _NativeAdWidgetState extends State<NativeAdWidget> {
   @override
   void initState() {
     super.initState();
-    if (!purchaseService.adsRemoved.value) _loadAd();
+    consentService.canRequestAds.addListener(_onConsentChanged);
+    purchaseService.adsRemoved.addListener(_onAdsRemovedChanged);
+    _maybeLoadAd();
+  }
+
+  /// Loads only when the purchase and consent gates both allow it.
+  void _maybeLoadAd() {
+    if (purchaseService.adsRemoved.value) return;
+    if (!consentService.canRequestAds.value) return;
+    if (_ad != null) return;
+    _loadAd();
+  }
+
+  /// The consent form can resolve after this widget was built; load then.
+  void _onConsentChanged() {
+    if (!mounted) return;
+    _maybeLoadAd();
+  }
+
+  /// Drops the ad immediately when the user buys "Remove Ads".
+  void _onAdsRemovedChanged() {
+    if (!purchaseService.adsRemoved.value) return;
+    _ad?.dispose();
+    _ad = null;
+    if (mounted) setState(() => _loaded = false);
   }
 
   void _loadAd() {
@@ -31,7 +56,10 @@ class _NativeAdWidgetState extends State<NativeAdWidget> {
           if (!mounted) return;
           setState(() => _loaded = true);
         },
-        onAdFailedToLoad: (ad, _) => ad.dispose(),
+        onAdFailedToLoad: (ad, _) {
+          ad.dispose();
+          _ad = null;
+        },
       ),
       request: const AdRequest(),
     );
@@ -41,6 +69,8 @@ class _NativeAdWidgetState extends State<NativeAdWidget> {
 
   @override
   void dispose() {
+    consentService.canRequestAds.removeListener(_onConsentChanged);
+    purchaseService.adsRemoved.removeListener(_onAdsRemovedChanged);
     _ad?.dispose();
     super.dispose();
   }

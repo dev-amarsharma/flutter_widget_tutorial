@@ -1,5 +1,6 @@
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'app_open_ad_service.dart';
+import 'consent_service.dart';
 import '../config/ad_config.dart';
 
 /// Service class for managing rewarded ads
@@ -19,6 +20,11 @@ class RewardedAdService {
     Function()? onAdDismissed,
     Function(String)? onAdFailed,
   }) async {
+    // No ad request may go out before the UMP consent signal allows it.
+    if (!consentService.canRequestAds.value) {
+      return false;
+    }
+
     if (_isLoading || _isAdReady) {
       return false;
     }
